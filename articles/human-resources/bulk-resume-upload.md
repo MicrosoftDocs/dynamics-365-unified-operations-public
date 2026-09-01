@@ -25,6 +25,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Set up the Bulk resume upload AI feature in Dynamics 365 Human Resources Recruiting add-on (preview)
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [This article is prerelease documentation and is subject to change.]
 
 This article describes the Bulk resume upload AI feature in Microsoft Dynamics 365 Human Resources Recruiting add-on.

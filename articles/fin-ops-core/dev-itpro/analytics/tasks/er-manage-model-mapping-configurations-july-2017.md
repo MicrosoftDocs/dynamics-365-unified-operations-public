@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Manage ER model mapping in separate ER configurations
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The following steps explain how a user assigned to the System administrator or Electronic reporting developer role can manage Electronic reporting (ER) model mappings in separate ER configurations. In this task guide, you create required ER configurations for the sample company, Litware, Inc. To complete this task guide, you must first complete the steps in the [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md) article.
 

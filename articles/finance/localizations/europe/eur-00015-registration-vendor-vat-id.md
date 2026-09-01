@@ -15,7 +15,7 @@ ms.search.form: VendTable, LogisticsPostalAddress, RegNumTaxIdLookup
 
 # EUR-00015 Registration of vendor VAT ID
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to add VAT registration IDs and a tax exempt number to a vendor account. This process is similar for legal entities and customers in all European countries and regions.
 

@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 
 # Differences between Planning Optimization and the deprecated master planning engine
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 When you transition from the deprecated built-in master planning engine to Planning Optimization, you might notice differences in planned orders, quantities, and dates. Use this article and the related resources to identify whether an issue you're experiencing is due to an expected difference, an unsupported feature, or a parameter change.
 

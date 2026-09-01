@@ -17,7 +17,7 @@ ms.custom:
 
 # Warehouse set up
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to set up a warehouse to be used with a new channel in Microsoft Dynamics 365 Commerce.
 

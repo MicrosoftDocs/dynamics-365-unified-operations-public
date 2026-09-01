@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 8.1
 
 # Russia overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about functionality that supports Russian regulations. 
 

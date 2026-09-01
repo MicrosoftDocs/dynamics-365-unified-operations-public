@@ -17,7 +17,7 @@ ms.custom:
 
 # Code migration - Context menu code
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A programming model is required for context menus (shortcut menus). This article outlines the process for migrating context menu code from Microsoft Dynamics AX 2012 to finance and operations. It also includes user experience (UX) guidelines for context menus.
 

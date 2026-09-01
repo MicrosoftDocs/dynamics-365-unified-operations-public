@@ -14,7 +14,7 @@ ms.search.region: Global
 
 # VAT declaration (Austria)
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to set up and generate an advance value-added tax (VAT) declaration U30 for Austria in the official XML format. It also describes how to preview the VAT declaration in Microsoft Excel.
 

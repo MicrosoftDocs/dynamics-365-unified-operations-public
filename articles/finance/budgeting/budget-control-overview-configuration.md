@@ -19,7 +19,7 @@ ms.assetid: be964167-43bc-431d-9adb-48bff32d68d5
 
 # Budget control overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article introduces the budget control feature and provides information to help you configure budget control to optimize management of your organization's financial resources.
 

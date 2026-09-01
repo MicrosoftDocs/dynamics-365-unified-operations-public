@@ -13,7 +13,7 @@ ms.search.form: ITMContainersListPage, ITMContainers
 
 # Manage shipping containers
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Shipping containers are used to group together goods that are physically grouped together. They're also used in cases where costs must be shared only across those goods, usually because they're physically together.
 

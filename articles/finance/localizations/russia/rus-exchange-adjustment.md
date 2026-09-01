@@ -14,7 +14,7 @@ ms.search.validFrom: 2019-06-28
 
 # Exchange adjustment
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with bank exchange adjustments for Russia in Microsoft Dynamics 365 Finance.
 

@@ -15,7 +15,7 @@ ms.search.form: CustFreeInvoice, CustTableLookup, CustPostInvoiceJob, EInvoiceCF
 
 # MX-00010 Post a free text invoice
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to use the **Free text invoice** form to create and post an electronic Comprobante Fiscal Digital por Internet (CFDI) customer invoice in Microsoft Dynamics 365 Finance.
 

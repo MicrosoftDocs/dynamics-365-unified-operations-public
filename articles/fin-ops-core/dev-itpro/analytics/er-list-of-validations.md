@@ -17,7 +17,7 @@ ms.assetid:
 
 # List of validations
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The following table provides an overview of the validations that ER provides.
 For more information about these validations, use the links in the first column to go to the relevant sections of this article.

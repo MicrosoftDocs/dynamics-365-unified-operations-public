@@ -16,7 +16,7 @@ ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 
 # VALUEIN ER function
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The `VALUEIN` function checks whether the specified input matches any value of a specified item in the specified list. It returns **TRUE** if the specified input matches the result of running the specified expression for at least one record of the specified list. Otherwise, it returns **FALSE**.
 

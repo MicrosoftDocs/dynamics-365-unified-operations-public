@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 
 # Configure format 1012 file for Colombia
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Set up and issue a format 1012 file. The file lists company investments you provide to the tax authority. The process outputs two files: an XML file that meets official tax requirements, and an Excel file for internal control.
 

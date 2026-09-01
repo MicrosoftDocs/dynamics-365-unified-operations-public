@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 10.0.37
 
 # Export customer electronic invoices
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to configure and use electronic invoices in Microsoft Dynamics 365 Finance for Türkiye.
 

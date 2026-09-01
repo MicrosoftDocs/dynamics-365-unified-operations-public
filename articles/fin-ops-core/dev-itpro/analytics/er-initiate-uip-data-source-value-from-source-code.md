@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 8
 
 # Initialize data source values of the USER INPUT PARAMETER type from source code
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When you design ER model mapping and ER format components, use the data sources of the *User input parameter* type to get the necessary values at runtime before the execution of an ER format begins. You can programmatically turn off this dialog box when another page provides the required parameters or when an ER format runs in unattended (batch) mode. When the ER dialog box is turned off, you must initialize the data source values of the *User input parameter* type from source code.
 

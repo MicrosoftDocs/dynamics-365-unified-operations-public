@@ -11,7 +11,7 @@ ms.author: v-federicohe
 
 # Configure printing for the Ecuador Sales book by establishment report
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The **Ecuador Sales book by establishment** report is the record document that businesses use to keep a record of their sales transactions for each active establishment. Although the specific value-added tax (VAT) report requirements might vary from one country or region to another, they typically include the transaction date, customer information, and tax information details.
 

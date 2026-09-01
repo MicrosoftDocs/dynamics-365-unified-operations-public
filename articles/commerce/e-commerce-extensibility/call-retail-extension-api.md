@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Call Retail Server extension APIs
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to call Microsoft Dynamics 365 Retail Server extension application programming interfaces (APIs) from data actions, or directly from module code.
 

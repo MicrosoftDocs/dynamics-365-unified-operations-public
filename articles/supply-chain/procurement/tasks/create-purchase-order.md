@@ -13,7 +13,7 @@ ms.custom:
 
 # Create a purchase order
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article shows you how to create a purchase order manually. The system often creates purchase orders automatically as a result of master planning, direct delivery, and other processes. A purchasing agents also create purchase orders. This procedure includes sample values based on the USMF demo data company.
 

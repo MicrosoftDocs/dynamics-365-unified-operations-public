@@ -11,7 +11,7 @@ ms.search.form: WHSManualSalesLinePicking, WHSManualInventTransferLinePicking, I
 
 # Manually handle sales and transfer line picking exceptions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Manual handling of sales and transfer line picking exceptions enables administrators to fix issues that are caused by corrupted sales and transfer order data. It lets trusted users manually pick (or unpick) inventory transactions that are related to sales and transfer order lines while warehouse processes are already in progress.
 

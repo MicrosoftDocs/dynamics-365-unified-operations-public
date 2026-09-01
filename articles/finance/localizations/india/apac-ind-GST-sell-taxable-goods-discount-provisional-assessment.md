@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Sales of taxable goods that have a discount and a provisional assessment
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 ## Create a sales order
 

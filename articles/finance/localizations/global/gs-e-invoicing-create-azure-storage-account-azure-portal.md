@@ -14,7 +14,7 @@ ms.custom:
 
 # Configure an Azure storage account in the Azure portal
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The Electronic Invoicing service stores all electronic files it generates or processes in containers within your Microsoft Azure storage account. To ensure that the Electronic Invoicing service can access these containers, you must provide the shared access signature (SAS) token of the storage account to the service. To keep the token secure, don't provide the SAS token directly. Instead, store it in an Azure Key Vault and provide a Key Vault secret.
 

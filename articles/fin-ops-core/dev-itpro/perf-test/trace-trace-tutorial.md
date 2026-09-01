@@ -15,7 +15,7 @@ ms.assetid: 607c1810-f872-4b23-a2c7-ee01522d90e3
 
 # Capture a trace
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This tutorial provides guidelines for taking traces in Microsoft Dynamics 365 finance and operations apps.
 

@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-10-28
 
 # Depreciation methods (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with the various fixed asset depreciation methods for Russia in Microsoft Dynamics 365 Finance.
 

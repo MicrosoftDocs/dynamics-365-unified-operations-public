@@ -12,7 +12,7 @@ ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProdu
 
 # Maintain BOM for a product configuration model
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Running this procedure requires an existing product configuration model. The High end speaker model in the demo company USMF is used to create this procedure.
 

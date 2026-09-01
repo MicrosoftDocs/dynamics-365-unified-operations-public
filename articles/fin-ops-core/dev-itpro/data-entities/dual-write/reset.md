@@ -17,7 +17,7 @@ ms.dyn365.ops.version: F&O 10.0.30 PU54
 
 # Reset dual-write connections
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You configure the dual-write connection between finance and operations apps and Microsoft Power Platform in Microsoft Dynamics Lifecycle Services by using the Power Platform integration setup. For more information about this initial configuration, see [Dual-write setup from Lifecycle Services](./lcs-setup.md). After you configure the connection, you might want to clear the dual-write connections and configuration, and start again from scratch. Alternatively, you might encounter a stuck state. In these cases, the dual-write platform lets you clear and reset all dual-write connections and configuration, so that you can set up dual-write again for the environment.
 

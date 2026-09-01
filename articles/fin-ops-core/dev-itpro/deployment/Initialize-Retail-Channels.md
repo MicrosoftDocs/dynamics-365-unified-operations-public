@@ -14,7 +14,7 @@ ms.custom:
 
 # Initialize Commerce Scale Unit (cloud)
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to initialize Commerce Scale Unit (CSU) (cloud) in Microsoft Dynamics 365 Commerce.
 

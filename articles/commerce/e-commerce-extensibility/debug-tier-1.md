@@ -15,7 +15,7 @@ ms.custom:
 
 # Configure an e-commerce development environment against a Commerce cloud environment
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to set up an e-commerce online development environment to debug against a Microsoft Dynamics 365 Commerce cloud development environment.
 

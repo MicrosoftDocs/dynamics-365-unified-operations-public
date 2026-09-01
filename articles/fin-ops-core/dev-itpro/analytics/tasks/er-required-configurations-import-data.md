@@ -15,7 +15,7 @@ ms.search.form: DefaultDashboard, ERWorkspace, ERSolutionTable, ERDataModelDesig
 
 # ER Create required configurations to import data from an external file
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The following steps explain how a user in the System administrator or Electronic reporting developer role can design Electronic reporting (ER) configurations to import data into the application from an external file. In this example, you create the required ER configurations for the sample company, Litware, Inc. To complete these steps, you must first complete the steps in the task guide, "ER Create a configuration provider and mark it as active." You can complete these steps by using the USMF data set. You must also download and save the following files locally:
 

@@ -14,7 +14,7 @@ ms.custom:
 
 # Checkout module error reference codes
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes the checkout module error codes that appear in user-facing error messages in Microsoft Dynamics 365 Commerce.
 

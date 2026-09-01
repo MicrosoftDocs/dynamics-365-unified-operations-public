@@ -13,7 +13,7 @@ ms.custom:
 
 # Create a procurement catalog
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create a procurement catalog. This task would typically be carried out by a procurement professional. You'll also learn how employees can use the catalog when they create a requisition. Before you can create a catalog, there must be a procurement category hierarchy in your system. The hierarchy is inherited by the new catalog, along with all the products that are in the hierarchy. You can use this guide in demo data company USMF where the procurement category hierarchy and other sample data are available.
 

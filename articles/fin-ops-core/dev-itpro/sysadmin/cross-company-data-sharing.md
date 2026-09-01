@@ -15,7 +15,7 @@ ms.assetid: 0bbe7453-624f-4551-a1d0-842484067311
 
 # Cross-company data sharing
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about cross-company data sharing. Cross-company sharing is a mechanism for sharing reference and group data among companies in a finance and operations deployment. This feature resembles the virtual companies feature in Microsoft Dynamics AX 2012.
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # MX-00006 Set up sales tax code
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to create the tax report category codes and assign a tax report category code to a sales tax code for use in sales, purchase, and summary tax reports. Use these categories to group all transactions as required by the authorities.
 

@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0
 
 # Regulatory updates
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article lists the regulatory updates that are planned and released in Dynamics 365 Finance supported localizations. Delivery timelines might change, and projected functionality might be different or might not be released. For more information, see [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332).
 

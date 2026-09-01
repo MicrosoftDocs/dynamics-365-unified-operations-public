@@ -16,7 +16,7 @@ ms.dyn365.ops.version:
 
 # Clear reversal company transactions in advanced bank reconciliation 
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to clear reversal company transactions in advanced bank reconciliation using the **Modern bank reconciliation** feature. 
 

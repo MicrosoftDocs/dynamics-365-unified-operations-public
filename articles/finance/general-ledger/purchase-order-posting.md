@@ -13,6 +13,8 @@ ms.search.form: InventPosting, InventTrans
 
 # Purchase order posting
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 The **Purchase order** tab on the **Inventory posting profiles** page controls how purchase orders post to the general ledger. Two main activities post to the general ledger for a purchase order:
 
 - Product receipt

@@ -12,6 +12,8 @@ ms.reviewer: johnmichalak
 
 # Edit the properties of connected Dataverse environments
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 When you enable Microsoft Power Platform Integration, you tightly connect the finance and operations apps environment and the customer engagements apps environment. Administrators should regard these two platforms as one environment that has multiple apps. This article describes how Power Platform Integration affects the process of editing the properties of an environment.
 
 > [!IMPORTANT]

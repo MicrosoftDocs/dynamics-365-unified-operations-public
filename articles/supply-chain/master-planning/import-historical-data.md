@@ -13,7 +13,7 @@ ms.assetid: 59c0d269-9db0-48e7-b8c7-9a388781a9ca
 
 # Import historical data for demand forecasts
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!INCLUDE [demand-planning-banner](../includes/demand-planning-banner.md)]
 
 To help guarantee the accuracy of demand forecasts, you must have as much historical demand data as you can get per item or item allocation key. If the historical demand data isn't already imported, use the **Historical external demand** (ReqDemPlanHistoricalExternalDemandEntity) data entity in Dynamics 365 Supply Chain Management to import it.

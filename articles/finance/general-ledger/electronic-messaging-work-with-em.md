@@ -14,7 +14,7 @@ ms.dyn365.ops.version: 10.0.21
 
 # Work with the Electronic messages functionality
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 If you're working at the message level, the **Electronic messages** page (**Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic messages**) is more useful. If you're working at the data collection or message item level, the **Electronic message items** page (**Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic message items**) is more useful.
 

@@ -15,7 +15,7 @@ ms.custom:
 
 # Set up Azure Key Vault for secure key management
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to set up Azure Key Vault to provide secure key management in Microsoft Dynamics 365 Commerce.
 

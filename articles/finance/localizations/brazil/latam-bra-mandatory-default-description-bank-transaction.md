@@ -16,7 +16,7 @@ ms.assetid: 92223189-69a8-4a40-b867-ef9b4f14c23d
 
 # Mandatory default descriptions for posting of bank transactions
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The **(Brazil) Mandatory bank transaction description** feature lets you require that descriptions be entered in bank account reconciliation transactions. In this way, you can prevent bank transaction journals from being posted if they contain transaction lines that have no description.
 

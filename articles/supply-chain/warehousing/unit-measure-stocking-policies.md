@@ -12,7 +12,7 @@ ms.assetid: 4b5ca875-9a06-416d-9ac0-cc3ab8f7338e
 
 # Unit of measure and stocking policies
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how default units, unit sequences, and unit conversions are used in warehouse processes.
 

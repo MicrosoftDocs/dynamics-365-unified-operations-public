@@ -16,7 +16,7 @@ ms.assetid: 895b5127-01d6-4495-b127-343387b743aa
 
 # Advanced formatting options in financial reporting
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 When you create a report in financial reporting, use extra formatting functions. These functions include filters for dimensions, restrictions for columns and reporting units, nonprinting rows, and IF/THEN/ELSE statements in calculations.
 

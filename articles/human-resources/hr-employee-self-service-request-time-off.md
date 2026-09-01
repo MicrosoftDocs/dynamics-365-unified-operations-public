@@ -25,6 +25,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Request time off
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 In Dynamics 365 Human Resources, you can submit requests for time off, view your vacation and leave balances, and see the status of your leave requests.

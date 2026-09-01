@@ -15,7 +15,7 @@ ms.custom:
 
 # MY-00004 Manage vendor Debit note and Credit note for GST
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create and print vendor debit note and credit note tax invoices for Lithuania in Microsoft Dynamics 365 Finance.
 

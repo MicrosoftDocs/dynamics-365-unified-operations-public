@@ -24,6 +24,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Position Union Agreement entity
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 > [!NOTE]
 > The functionality that's noted in this article is available as of Microsoft Dynamics 365 Human Resources version 10.0.39.
 

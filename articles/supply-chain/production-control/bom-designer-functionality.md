@@ -13,7 +13,7 @@ ms.custom:
 
 # BOM designer functionality
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how you can use the BOM designer page to design and work with tree structures for bills of materials (BOMs). To choose different configurations and specify what information appears on the lines of the tree, select **Setup**.
 

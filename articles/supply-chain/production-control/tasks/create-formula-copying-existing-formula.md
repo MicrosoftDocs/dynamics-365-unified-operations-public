@@ -12,7 +12,7 @@ ms.search.form: BOMTable, BOMRouteCopyDialog, HcmWorkerLookUp
 
 # Create a formula by copying from an existing formula
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to quickly create a new formula by copying from an existing formula. You can use the demo data companies USMF, USP2, or USPI to create this procedure.
 

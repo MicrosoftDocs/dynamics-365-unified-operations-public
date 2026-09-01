@@ -13,7 +13,7 @@ ms.custom:
 
 # Quality management tests
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to create tests that you can use for quality orders in Microsoft Dynamics 365 Supply Chain Management.
 

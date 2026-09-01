@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 # Work with prospects in prospect-to-cash with Dynamics 365 Sales
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management uses dual-write to integrate with Dynamics 365 Sales. This capability includes the ability to integrate accounts of the *Prospect* type into the quotation and qualification process across the two systems. The combined solution enables companies to integrate the prospect lifecycle and quotation process flow across Sales and Supply Chain Management. Therefore, it allows for fewer touch points, better efficiency, and more transparency.
 

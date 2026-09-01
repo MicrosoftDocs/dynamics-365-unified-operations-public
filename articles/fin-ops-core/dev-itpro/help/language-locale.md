@@ -14,6 +14,8 @@ ms.dyn365.ops.version: Operations
 
 # Language and locale descriptors in Help
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 The client that finance and operations apps use supports multiple languages and locales. To add Help content for one or more locales to the in-product **Help** pane, make sure that the following conditions are met:
 
 - The value of the **ms.locale** property in each HTML file matches the locale of the content.

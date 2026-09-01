@@ -16,7 +16,7 @@ ms.assetid: 9df13adf-aa9d-4f6b-bde6-25a214611692
 
 # Budget control statistics report vs. Budget analysis report
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about the **Budget control statistics** and **Budget analysis** reports that are available in the **Budgeting** module.
 

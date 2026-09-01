@@ -15,7 +15,7 @@ ms.search.form: TaxItemGroup, DefaultDashboard, EcoResProductDetailsExtended, Pr
 
 # GB-00002 Set up item sales tax groups for reverse charge VAT
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up item sales tax groups and assign the default values to procurements categories subject to reverse charge VAT for the United Kingdom in Microsoft Dynamics 365 Finance.
 

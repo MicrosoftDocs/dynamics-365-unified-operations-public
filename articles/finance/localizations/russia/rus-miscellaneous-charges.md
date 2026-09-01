@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-10-28
 
 # Allocation of miscellaneous charges in proportion to weight and volume
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to allocate miscellaneous charges for Russia in Microsoft Dynamics 365 Finance.
 

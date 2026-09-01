@@ -12,6 +12,8 @@ audience: Application User
 
 # Reports in Business performance analytics
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article describes the financial reports that are available in Business performance analytics. These reports provide a detailed overview of an organization's financial health, so that stakeholders can make informed decisions and drive business success. To better understand these reports, stakeholders can use the slicer, filter pane, and drill-in functions. The availability of these functions depends on the report. Slicers are filters that are available directly on the report page, whereas users must open the filter pane to access the filters in it. When users hover over a table, the drill-in functionality is available in the upper right. Users must first select the direction that they want to drill in. They can then select a data point to reference where they want to drill from.
 
 All reports use a data model in Microsoft Power BI. You can also easily customize them to suit the needs of your organization. For more information, see [Create business performance analytics reports](how-to-create-and-edit-reports.md).

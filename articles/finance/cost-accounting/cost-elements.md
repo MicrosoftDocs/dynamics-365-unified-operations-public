@@ -16,7 +16,7 @@ ms.assetid: 1eda0e62-760b-4737-9dfd-3c3c38d80c1a
 
 # Cost element dimensions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 As a core pillar in cost accounting, use cost element dimensions to categorize and track where costs flow.
 

@@ -14,7 +14,7 @@ ms.custom:
 ---
 # Push products from distribution center to store using buyer's push
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to create and process a buyer's push to distribute products from one location to one or many stores in Microsoft Dynamics 365 Commerce.
 

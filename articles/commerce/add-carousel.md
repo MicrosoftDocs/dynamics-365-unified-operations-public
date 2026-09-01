@@ -14,7 +14,7 @@ ms.custom:
 
 # Carousel module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article covers carousel modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 

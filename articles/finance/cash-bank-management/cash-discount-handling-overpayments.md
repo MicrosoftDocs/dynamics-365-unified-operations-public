@@ -16,7 +16,7 @@ ms.assetid: a94d0fd0-57ba-4054-93c8-519d01d50e19
 
 # Cash discounts for overpayments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides scenarios that show how a payment is handled when the customer takes a cash discount but also overpays. 
 

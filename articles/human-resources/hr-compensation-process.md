@@ -25,6 +25,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Process compensation
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Compensation processing calculates new base compensation amounts for your employees based on equity adjustments, merit increase targets, and performance. This article covers the basic flow of compensation processing for fixed compensation plans without factoring an employee's performance.

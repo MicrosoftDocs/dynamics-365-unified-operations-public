@@ -16,7 +16,7 @@ ms.assetid: b8876f83-8772-4f2a-b277-12724e2a0c44
 
 # Recalculate replacement costs and insured values for fixed asset groups
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to update the replacement costs and insured values for fixed assets.
 

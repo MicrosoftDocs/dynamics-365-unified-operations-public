@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.9
 
 # SPED fiscal ICMS-IPI layout 014
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and generate the SPED fiscal statement layout 014. This layout is applicable as of January 2020 under the practical guide, **EFD-ICMS/IPI – version 3.0.3**.
 

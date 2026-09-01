@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.13
 
 # Collections process automation
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to set up collections process strategies that automatically identify customer invoices that require an email reminder, collection activity (such as a phone call), or a collection letter to send to the customer.
 

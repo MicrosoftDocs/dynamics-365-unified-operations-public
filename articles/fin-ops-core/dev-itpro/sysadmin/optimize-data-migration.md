@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.13
 
 # Optimize data migration for finance and operations apps
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Data migration is a key success factor in almost every implementation. Some customers are primarily concerned about the speed of data migration, especially if there's a vast amount of data and a small cutover window. You can also use the [Data migration framework](../data-entities/data-entities-data-packages.md) to move data as part of business requirements and operations.
 

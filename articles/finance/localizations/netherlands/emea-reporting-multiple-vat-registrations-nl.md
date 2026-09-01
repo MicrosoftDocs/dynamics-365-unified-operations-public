@@ -14,7 +14,7 @@ ms.search.validFrom: 2023-04-10
 
 # Support for multiple VAT registration numbers in reporting for Netherlands
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to support multiple value-added tax (VAT) registration numbers in reporting for Netherlands in Microsoft Dynamics 365 Finance, and provides information about the regulatory reports for Netherlands that are available for legal entities that use multiple VAT registration numbers functionality.
 

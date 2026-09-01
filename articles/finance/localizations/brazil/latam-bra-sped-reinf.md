@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-11-30
 
 # SPED-Reinf events
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 All the information that the SPED-Reinf provides about taxes and contributions in a given assessment period is known as a *movement*. Therefore, every movement can contain one or more events.
 

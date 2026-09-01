@@ -14,7 +14,7 @@ ms.dyn365.ops.version: 10.0.36
 
 # Financial tags developer overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Financial tags are user-defined fields that you use to track extra subledger or external information on accounting entries. An organization can create up to 20 tags per company for data they want to track on accounting entries. Configure tags at **General Ledger > Chart of Accounts > Financial Tags**.
 

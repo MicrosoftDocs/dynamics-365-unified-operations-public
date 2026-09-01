@@ -14,7 +14,7 @@ ms.search.form: DimensionFocus, LedgerTrialBalanceListPage
 
 # Best practices for managing financial dimension sets
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article suggests practices for managing dimension set balances that help keep trial balance reports, balance initialization, and financial reports running efficiently. Misuse of dimension sets can degrade system performance for all users.
 

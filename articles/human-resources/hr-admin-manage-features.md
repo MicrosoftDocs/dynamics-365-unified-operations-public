@@ -25,6 +25,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Manage features in Human Resources
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 The **Feature management** workspace provides a list of features delivered in each release. By default, new features are turned off. Use the workspace to turn them on and view the documentation for them. For more information about Feature management, see [Feature management overview](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).

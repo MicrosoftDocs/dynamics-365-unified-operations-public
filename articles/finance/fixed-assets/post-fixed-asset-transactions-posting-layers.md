@@ -16,7 +16,7 @@ ms.assetid: 7dabde57-0843-47c3-85ef-f36b6f472e30
 
 # Post fixed asset transactions to posting layers
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of posting layer functionality for fixed asset transactions.
 

@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-10-28
 
 # Set up an inventory profile
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up inventory profiles for Russia in Microsoft Dynamics 365 Finance.
 

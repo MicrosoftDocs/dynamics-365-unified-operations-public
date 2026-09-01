@@ -19,7 +19,7 @@ ms.assetid: 836ddd01-cc34-45c3-a4b0-20647357dbc6
 
 # Create workflows overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to create a workflow.
 

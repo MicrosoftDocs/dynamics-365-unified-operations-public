@@ -16,7 +16,7 @@ ms.assetid: c6d387ac-91fd-40c0-aaaa-809f2793d28b
 
 # Set up benefit accrual plans
 
-[!include [banner](../../../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../../../finance/includes/banner.md)]
 
 This article describes the process for setting up benefit accrual plans. It includes information about how to gather information and enroll workers.
 

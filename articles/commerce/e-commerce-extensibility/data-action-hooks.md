@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Data action hooks
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to hook into pre- and post-data action events to further process data if needed in Microsoft Dynamics 365 Commerce.
 

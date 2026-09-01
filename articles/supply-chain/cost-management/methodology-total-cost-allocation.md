@@ -13,7 +13,7 @@ ms.custom:
 
 # Total cost allocation method
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Total cost allocation (TCA) is a method of calculating the cost between the main formula item for a batch order and the co-products that are defined for the formula. This method is dynamic. It calculates the cost as a weighted average between the quantities that are reported as finished for the formula item and the co-products. When TCA is used, you don't have to review cost allocations for every batch order. If TCA isn't used, the formula calculation uses existing functionality.
 

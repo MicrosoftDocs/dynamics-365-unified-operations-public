@@ -12,7 +12,7 @@ ms.search.form:
 
 # Rolling forecasts
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Rolling forecasts let you establish a regular schedule that your time series follow to automatically update and extend their forecast horizon based on the latest data and assumptions. Rolling forecasts help align the demand planning process with the changing business environment. They also help improve the accuracy and reliability of the forecasts.
 

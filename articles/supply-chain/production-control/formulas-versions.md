@@ -15,7 +15,7 @@ ms.search.form: PlanActivity, ReqSupplyDemandSchedule, EcoResProductProdTypeForm
 
 # Formulas and formula versions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A formula defines the materials, ingredients, and outcomes of a specific process in process manufacturing. Together with the corresponding route, the formula defines the whole process in process manufacturing. Formulas are used to plan and produce products in process manufacturing.
 

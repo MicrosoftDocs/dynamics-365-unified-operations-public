@@ -13,7 +13,7 @@ ms.custom:
 
 # Haptic feedback through external wearable devices
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The Warehouse Management mobile can provide haptic feedback through external wearable devices. This capability helps workers stay focused on the task at hand by providing instant, haptic responses without requiring workers to check the mobile device screen. The functionality is hardware-agnostic and supports a growing range of scanning peripherals from multiple manufacturers.
 

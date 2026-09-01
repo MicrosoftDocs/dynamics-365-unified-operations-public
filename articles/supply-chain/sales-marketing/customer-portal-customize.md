@@ -12,7 +12,7 @@ ms.search.form:
 
 # Customize and use the Customer portal
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 This article describes the different pages that available in the Customer portal out of the box. It explains what the pages do and how you can customize them.

@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Fiscal document text placeholders for Brazil
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Fiscal document text placeholders are predefined tags that represent specific values. You can include the placeholders in the **Text** field on the **Fiscal document source texts** page when you create a fiscal document source text.
 

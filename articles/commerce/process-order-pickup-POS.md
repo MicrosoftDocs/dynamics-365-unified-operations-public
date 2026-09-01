@@ -14,7 +14,7 @@ ms.custom:
 
 # Process customer order pickups in POS
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains the functionality for processing customer order pickups in Microsoft Dynamics 365 Commerce point of sale (POS).
 

@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Configure sales and purchase invoices for Bolivia
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to start to use fiscal documents that are specific to Bolivia through the Latin American (LATAM) features in sales and purchase transactions. The LATAM localization uses the concept of *document classes* to refer to fiscal documents such as invoices, credit notes, and debit notes. These documents might have to be completed with specific information, such as the typification, sales point, branch, invoice number structure, and additional fields that should be completed.
 

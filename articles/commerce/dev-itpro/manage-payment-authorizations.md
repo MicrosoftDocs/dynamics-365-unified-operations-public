@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Manage payment authorizations
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of payment authorization expiration ranges and common payment authorization parameters in Microsoft Dynamics 365 Commerce.
 

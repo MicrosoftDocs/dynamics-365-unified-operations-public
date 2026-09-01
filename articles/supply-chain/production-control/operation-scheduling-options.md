@@ -13,7 +13,7 @@ ms.custom:
 
 # Operations scheduling options
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the options for operations scheduling. Use operations scheduling to provide a general estimate of the production process over time.
 

@@ -12,7 +12,7 @@ ms.search.form: SMADispatchBoard
 
 # Reassign activities
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to reassign service activities from one worker to another worker. You can reassign service activities from one worker to another worker even if those workers are assigned to different dispatch teams.
 

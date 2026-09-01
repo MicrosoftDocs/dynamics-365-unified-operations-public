@@ -13,7 +13,7 @@ ms.custom:
 
 # Quality check
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The *Quality check* feature lets warehouse workers do quick spot checks for quality while they receive items to the inbound dock area. These spot checks are beneficial when workers inspect packaging or other easily recognizable parts of an item. The feature guides workers to take a quick look to see whether anything is obviously faulty or damaged before they stock the inventory in its putaway location.
 

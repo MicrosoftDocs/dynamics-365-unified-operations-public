@@ -13,7 +13,7 @@ ms.dyn365.ops.version: 10.0.29
 
 # Proactive quality updates overview
 
-[!include[banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article provides information about proactive quality updates (PQUs). It explains what they are and why they're used, and describes some of their benefits.
 

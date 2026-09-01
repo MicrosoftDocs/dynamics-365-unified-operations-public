@@ -17,7 +17,7 @@ ms.assetid: 76b7ca45-93d4-45cc-b191-66ee63afa1fd
 
 # Organizations and organizational hierarchies overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 An organization is a group of people who work together to carry out a business process or achieve a goal. Organizational hierarchies show the relationships between the organizations that make up your business.
 

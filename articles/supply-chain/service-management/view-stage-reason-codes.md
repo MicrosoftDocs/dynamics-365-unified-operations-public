@@ -13,7 +13,7 @@ ms.search.form: SMAServiceOrderTable
 
 # View stage reason codes 
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 View and modify the list of stage reasons for a service order. Use stage reasons to indicate the reason for the status of a service order. For example, you can create a **Canceled** stage that is assigned a reason code of **Canceled by the customer**.

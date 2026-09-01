@@ -16,7 +16,7 @@ ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 
 # Threshold limit and exception threshold limit
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes the threshold and exception limits for Tax Deducted at Source (TDS). The TDS on invoices and payments is always calculated considering the threshold limit and exception threshold limit defined for the TDS tax components on the **Withholding tax components** page. The TDS tax components are attached to TDS tax codes, which are included in the TDS tax groups. The TDS tax groups are attached to vendors and customers to calculate TDS at the invoice-level or payment-level.
 

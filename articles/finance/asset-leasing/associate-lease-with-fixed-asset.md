@@ -16,7 +16,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 # Associate fixed assets with leases
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to associate an existing fixed asset with a new lease. When you associate a fixed asset with a lease, the right-of-use (ROU) asset value at initial recognition is the acquisition cost of the fixed asset.
 

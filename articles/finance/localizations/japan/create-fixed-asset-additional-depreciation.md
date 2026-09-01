@@ -15,7 +15,7 @@ ms.custom:
 
 # Create a fixed asset with additional depreciation
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create a fixed asset with additional depreciation for Japan in Microsoft Dynamics 365 Finance.
 

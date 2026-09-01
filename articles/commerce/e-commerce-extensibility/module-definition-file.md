@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Module definition file
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the module definition file in Microsoft Dynamics 365 Commerce.
 

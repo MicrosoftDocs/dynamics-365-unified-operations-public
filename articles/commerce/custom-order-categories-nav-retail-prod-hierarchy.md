@@ -16,7 +16,7 @@ ms.custom:
 # Change the sort order for merchandising entities
 
 
-[!Include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to control the display order for various merchandising-related entities in Dynamics 365 Commerce.
 

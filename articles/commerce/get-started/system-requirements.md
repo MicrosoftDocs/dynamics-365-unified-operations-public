@@ -14,7 +14,7 @@ ms.custom:
 
 # System requirements for cloud deployments of Dynamics 365 Commerce
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article lists the system requirements for cloud deployments of the current version of Dynamics 365 Commerce. Before you install Commerce, verify that the system you're working with meets or exceeds the minimum network, hardware, and software requirements.
 

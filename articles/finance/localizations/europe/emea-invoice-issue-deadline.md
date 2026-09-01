@@ -15,7 +15,7 @@ ms.search.form: CustParameters, LedgerInvoiceIssueDueDateSetup_W
 
 # Invoice issue deadline
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up parameters to calculate the due dates for issuing customer invoices and vendor invoices in the European Union (EU).
 

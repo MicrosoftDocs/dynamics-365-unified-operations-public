@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-11-30
 
 # Declaration 347 report
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to generate the Declaration 347 report in Microsoft Dynamics 365 Finance. Legal entities with their primary address in Spain can use this report.
 

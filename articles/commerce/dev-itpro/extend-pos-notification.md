@@ -14,7 +14,7 @@ ms.custom:
 
 # Show custom notifications in the POS
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to add custom notifications in Microsoft Dynamics 365 Commerce point of sale (POS). This article applies to Microsoft Dynamics 365 Finance, Enterprise edition 7.3 and Dynamics 365 for Retail 7.3, and later versions that have the latest binary fix.
 

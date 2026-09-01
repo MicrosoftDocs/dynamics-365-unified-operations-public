@@ -13,7 +13,7 @@ ms.custom:
 
 # Compare active, estimated, and realized costs on a production order
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to view reasons for high production variance for a production order. The demo data company used to create this procedure is USMF. This procedure is intended for the cost controller.
 

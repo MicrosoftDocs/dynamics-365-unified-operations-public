@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 10.0.9
 
 # What's new or changed in Dynamics 365 Finance 
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 ## Releases of Dynamics 365 Finance
 To see what's new or changed in each release of Dynamics 365 Finance, see the following topics.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Warehouse management only mode overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 *Warehouse management only mode* lets you set up a legal entity in Microsoft Dynamics 365 Supply Chain Management that's dedicated to warehouse management processes. This legal entity can then provide warehousing services to other legal entities in Supply Chain Management. Alternatively, it can provide warehousing services to external enterprise resource planning (ERP) systems or order management systems. There are two basic scenarios:
 

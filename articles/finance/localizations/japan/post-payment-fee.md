@@ -15,7 +15,7 @@ ms.custom:
 
 # Generate and post payment fee
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to generate and post a payment fee for Japan in Microsoft Dynamics 365 Finance.
 

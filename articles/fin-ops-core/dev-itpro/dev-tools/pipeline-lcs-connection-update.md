@@ -15,6 +15,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Update Lifecycle Services Connection authentication tasks to MSAL in Azure Pipelines
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 By default, new versions of the Microsoft Azure DevOps tasks for Dynamics 365 support the [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview#languages-and-frameworks) and use it by default for authentication.
 
 ## Update existing service connections

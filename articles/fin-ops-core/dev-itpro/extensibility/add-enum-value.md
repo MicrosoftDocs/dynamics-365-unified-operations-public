@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 9
 
 # Add values to enums through extension
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 To add new values to an enum, extend the enum. You can extend any enum that's marked as **Extensible** (**IsExtensible = true**). You can find the extensibility information in the **Properties** window in Visual Studio, as shown in the following illustration.
 

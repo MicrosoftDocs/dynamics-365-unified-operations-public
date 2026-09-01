@@ -13,7 +13,7 @@ ms.search.form:
 
 # Intercompany planning groups for demand forecasting
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!INCLUDE [demand-planning-banner](../includes/demand-planning-banner.md)]
 
 This article describes how you can use intercompany planning groups during the demand forecasting process.

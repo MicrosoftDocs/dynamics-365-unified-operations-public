@@ -24,6 +24,9 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Update process
+
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [LCS freeze](includes/lcs-freeze-banner.md)]
 
 > [!IMPORTANT]

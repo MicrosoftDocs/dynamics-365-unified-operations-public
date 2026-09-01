@@ -13,7 +13,7 @@ ms.search.form:
 
 # Advanced bar code scanner configuration
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 On most mobile devices, the Warehouse Management mobile app can capture scanned bar code input right out of the box. Therefore, you just have to install the app, set up the connection to Microsoft Dynamics 365 Supply Chain Management, and start scanning. However, some devices require advanced configuration before their bar code scanner hardware can interact correctly with the Warehouse Management app.
 

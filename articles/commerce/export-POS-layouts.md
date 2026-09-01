@@ -13,7 +13,7 @@ ms.search.validFrom: 2024-01-20
 
 # Export POS screen layouts for import to a new environment
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to export point of sale (POS) screen layouts for import to a new environment in Microsoft Dynamics 365 Commerce.
 

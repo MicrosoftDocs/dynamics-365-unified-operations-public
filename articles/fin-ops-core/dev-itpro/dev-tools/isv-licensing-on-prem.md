@@ -19,7 +19,7 @@ ms.service: dynamics-365-op
 
 # Independent software vendor (ISV) licensing (on-premises)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to import independent software vendor (ISV) licenses into an on-premises deployment.
 

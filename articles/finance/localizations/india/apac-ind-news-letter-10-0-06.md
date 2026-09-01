@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.6
 
 # What's new or changed for India GST in 10.0.06 (November 2019)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article summarizes the new features and critical bug fixes released in version 10.0.06 for India. For more information about the shipped features, see [What's new or changed in finance and operations version 10.0.6](../../../fin-ops-core/dev-itpro/get-started/whats-new-changed-10-0-6.md).
 

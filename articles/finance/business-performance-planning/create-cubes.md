@@ -15,7 +15,7 @@ ms.dyn365.ops.version:
 
 # Business performance planning cubes
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Key terms
 

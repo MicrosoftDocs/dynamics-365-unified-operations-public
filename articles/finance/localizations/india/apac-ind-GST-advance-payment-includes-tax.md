@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Advance payments that include tax
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Complete the following procedures to create a customer advance payment journal, and then validate the tax information and financial entries.
 

@@ -12,7 +12,7 @@ ms.search.form: WHSPostMethod,WHSWaveTemplateTable,WHSLoadMixGroup,WHSLoadBuildT
 
 # Advanced load building during wave
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Advanced wave load building automatically assigns shipments to existing waves during wave execution. Therefore, you can create meaningful loads that represent trucks without having to use the outbound load planning workbench. This capability is useful for businesses that want to use the concept of loads to track and plan the shipment of goods in a truck/trailer, but that don't want to manually create those loads every day.
 

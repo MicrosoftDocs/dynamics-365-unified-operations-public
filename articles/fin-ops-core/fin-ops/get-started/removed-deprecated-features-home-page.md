@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.18
 
 # Removed or deprecated features home page
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Removed or deprecated features in finance and operations apps
 The following topics provide information about removed or deprecated features in finance and operations apps:

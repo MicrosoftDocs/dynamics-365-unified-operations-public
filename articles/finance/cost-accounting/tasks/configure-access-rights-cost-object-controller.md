@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure access rights for a cost object controller
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Use this procedure to configure access rights for a cost object controller. This recording uses the USP2 demo data company.
 

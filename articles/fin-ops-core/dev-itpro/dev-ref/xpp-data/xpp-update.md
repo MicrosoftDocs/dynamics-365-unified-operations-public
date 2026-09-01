@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Update data
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You can use SQL statements, either interactively or in source code, to update one or more rows in a table that is stored in the database.
 

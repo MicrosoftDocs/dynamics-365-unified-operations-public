@@ -16,7 +16,7 @@ ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 
 # REVERSE ER function
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The `REVERSE` function returns the specified list as a *Record list* value in reversed sort order.
 

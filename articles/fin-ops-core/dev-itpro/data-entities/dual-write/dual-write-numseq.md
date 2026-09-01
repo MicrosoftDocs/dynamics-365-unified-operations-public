@@ -15,6 +15,8 @@ ms.search.validFrom: 2023-01-12
 
 # Configure number sequences and autonumber columns when using dual-write
 
+[!INCLUDE [banner](../../../../includes/banner.md)]
+
 By default, the [number sequences](../../../fin-ops/organization-administration/number-sequence-overview.md) in finance and operations apps and the [autonumber columns](/powerapps/maker/data-platform/autonumber-fields) in customer engagement apps aren't connected. In a scenario that involves a multimastered table, you must either plan for separate number sequence formats or create a range for each application. Here are some examples:
 
 - In the finance and operations app, use F0001, F0002, and F0003. In the customer engagement app, use C0001, C0002, and C0003.

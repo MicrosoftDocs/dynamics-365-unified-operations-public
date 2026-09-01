@@ -15,7 +15,7 @@ ms.custom:
 
 # Set up an alternate dataflow for recommendations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to configure an environment by using an alternate dataflow to provide data to the recommendations service.
 

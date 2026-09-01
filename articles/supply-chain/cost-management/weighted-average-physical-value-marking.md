@@ -13,7 +13,7 @@ ms.custom:
 
 # Weighted average with physical value and marking
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Weighted average is an inventory model based on an average that results from the multiplication of each component (item transaction) by a factor (cost price) reflecting its importance (quantity). Another way to say this is that weighted average is an inventory model that assigns the cost of issue transactions based on the mean value of all inventory received during the period, plus any on-hand inventory from the previous period.
 

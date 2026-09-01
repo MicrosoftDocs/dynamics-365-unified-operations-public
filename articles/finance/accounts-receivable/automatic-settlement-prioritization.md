@@ -16,7 +16,7 @@ ms.assetid: e7837cf6-ec69-44b4-8d47-eba38d5c7b1f
 
 # Automatic settlement and prioritization
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how transactions are settled if you select **Automatic settlement** on the **Accounts receivable parameters** or **Accounts payable parameters** pages. It also explains how automatic settlement can be used together with settlement priority.
 

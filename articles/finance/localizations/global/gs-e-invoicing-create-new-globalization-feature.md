@@ -14,7 +14,7 @@ ms.custom:
 
 # Create Globalization features
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You can create an Electronic invoicing feature from scratch, or you can base it on an existing feature. When you create a feature from scratch, you must manually add Electronic reporting (ER) configurations and other components, such as the feature setup and application setup details. When you create a feature based on an existing feature, the new feature inherits all the base feature's configurations and parameters. You can review what's copied from the base feature to the new feature.
 

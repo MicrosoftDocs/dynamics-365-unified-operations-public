@@ -16,7 +16,7 @@ ms.custom:
 
 # Personalize the user experience
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article explains how you can personalize the app and covers the following subjects:
 

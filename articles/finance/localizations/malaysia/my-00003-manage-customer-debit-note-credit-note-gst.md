@@ -15,7 +15,7 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PCProductLooku
 
 # MY-00003 Manage customer debit and credit notes for GST
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to print a Malaysian goods and services tax (GST) invoice for a credit or debit notes in Microsoft Dynamics 365 Finance.
 

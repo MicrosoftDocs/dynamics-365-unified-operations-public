@@ -14,7 +14,7 @@ ms.search.validFrom: 2019-06-28
 
 # Credit note corrections (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create credit note corrections in accounts receivable and accounts payable for Russia in Microsoft Dynamics 365 Finance.
 

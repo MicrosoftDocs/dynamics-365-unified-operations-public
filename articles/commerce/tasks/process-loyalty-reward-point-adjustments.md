@@ -14,7 +14,7 @@ ms.custom:
 ---
 # Process loyalty reward point adjustments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to look up loyalty card information and adjust loyalty reward points in Microsoft Dynamics 365 Commerce.
 

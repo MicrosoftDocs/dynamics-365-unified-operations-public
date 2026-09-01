@@ -14,7 +14,7 @@ ms.search.region: Poland
 
 # Set up the SAF Fixed Assets Tax report (JPK_KR_ST)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to set up and generate the SAF Fixed Assets Tax report (JPK_KR_ST) for Poland in Microsoft Dynamics 365 Finance. The report produces the JPK audit file required by the Polish Ministry of Finance, providing fixed asset analytics for accounting and tax purposes based on the existing Assets Roll Forward report, exported in the extended JPK structure (SAF-T concept).
 

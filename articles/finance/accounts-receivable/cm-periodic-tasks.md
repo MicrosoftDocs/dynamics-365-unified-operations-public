@@ -16,7 +16,7 @@ ms.dyn365.ops.version:
 
 # Periodic credit management tasks
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the periodic tasks that are part of the process of managing credit limits for customers.
 

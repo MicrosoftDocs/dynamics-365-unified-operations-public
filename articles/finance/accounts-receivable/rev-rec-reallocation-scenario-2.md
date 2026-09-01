@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.14
 
 # Revenue recognition reallocation – Scenario 2
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article goes through a reallocation scenario where two sales orders are entered, and then the customer adds an item to the contract after first sales order is invoiced. When a new item is added to a contract, it can be added either to a new sales order or to the existing sales order.
 

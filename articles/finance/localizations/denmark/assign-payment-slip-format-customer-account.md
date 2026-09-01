@@ -15,7 +15,7 @@ ms.custom:
 
 # Assign a payment slip format to a customer account
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to set up the payment slip attachment format for customers in Denmark by using Microsoft Dynamics 365 Finance. This functionality is available for legal entities whose primary address is in Denmark.
 

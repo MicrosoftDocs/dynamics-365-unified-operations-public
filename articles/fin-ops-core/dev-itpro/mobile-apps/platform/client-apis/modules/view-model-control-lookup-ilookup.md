@@ -13,7 +13,7 @@ ms.custom:
 
 # Lookup module
 
-[!include [banner](../../../../includes/banner.md)]
+[!INCLUDE [banner](../../../../includes/banner.md)]
 [!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 A lookup is an input control that is used to select an input from a list of options.

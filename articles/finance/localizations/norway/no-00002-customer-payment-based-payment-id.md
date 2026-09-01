@@ -15,7 +15,7 @@ ms.custom:
 
 # NO-00002 Customer payment based on payment ID
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and maintain Norwegian payment IDs in Microsoft Dynamics 365 Finance.
 

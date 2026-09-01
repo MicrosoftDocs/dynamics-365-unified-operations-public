@@ -14,6 +14,8 @@ ms.custom:
 
 # Manage Dynamics 365 Commerce deployments in Power Platform admin center (preview)
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 > [!IMPORTANT]
 > This experience is currently available as part of a public preview release. Features, regions, user interface labels, and available lifecycle actions can change before general availability. The content and the functionality too are subject to change.
 

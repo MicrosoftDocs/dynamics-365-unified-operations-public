@@ -16,7 +16,7 @@ ms.assetid: bcc395db-7c00-4151-9340-e83415cb0882
 
 # ISR declaration report and supporting processes for Mexico
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 In Mexico, all individuals and corporations must file a monthly Impuesto sobre la renta (ISR) declaration report. This article provides information about generating this report.
 

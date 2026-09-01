@@ -15,7 +15,7 @@ ms.assetid:
 
 # Add new inventory dimensions through extension
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides a high-level overview of how to add new inventory dimensions through extensions. It also includes information about how to access a sample application that contains an actual implementation.
 

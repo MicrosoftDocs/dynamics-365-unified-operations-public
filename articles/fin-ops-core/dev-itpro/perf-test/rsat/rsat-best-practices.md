@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Regression suite automation tool best practices
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes best practices and common use cases for the Regression suite automation tool (RSAT) and Task recorder.
 

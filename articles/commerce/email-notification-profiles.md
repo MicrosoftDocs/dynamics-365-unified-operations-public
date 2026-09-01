@@ -14,7 +14,7 @@ ms.custom:
 
 # Set up an email notification profile
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to create an email notification profile in Microsoft Dynamics 365 Commerce.
 

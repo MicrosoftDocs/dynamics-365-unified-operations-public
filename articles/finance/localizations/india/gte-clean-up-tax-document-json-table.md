@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.14
 
 # Clean up the TaxDocumentJSON table
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 ## Supported versions
 

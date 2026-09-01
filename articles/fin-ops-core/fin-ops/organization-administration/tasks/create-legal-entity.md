@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Create a legal entity
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 A legal entity is an organization that a legal authority identifies through registration. Legal entities can enter into contracts and must prepare statements that report on their performance. The following procedure explains how to create a legal entity. The demo data company used to create this procedure is USMF.
 

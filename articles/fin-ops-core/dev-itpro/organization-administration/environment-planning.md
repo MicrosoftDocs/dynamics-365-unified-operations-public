@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Finance and operations
 
 # Environment planning
 
-[!include[banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 [!include [Lifecycle Services deprecation](../includes/lcs-deprecation.md)]
 [!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 

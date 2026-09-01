@@ -13,7 +13,7 @@ ms.custom:
 
 # Create and edit sales quotations
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure demonstrates how to create and update a sales quotation.
 

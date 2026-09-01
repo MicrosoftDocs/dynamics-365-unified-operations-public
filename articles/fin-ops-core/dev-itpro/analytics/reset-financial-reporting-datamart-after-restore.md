@@ -17,7 +17,7 @@ ms.custom:
 
 # Reset the Financial reporting data mart
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to reset the Financial reporting data mart for Microsoft Dynamics 365 Finance. You can reset the data mart in multiple ways, depending on your role and access to the client or infrastructure.
 
@@ -549,8 +549,10 @@ JOIN [Scheduling].[TaskState] ts ON ts.[TaskId] = t.[Id]
 LEFT JOIN [Scheduling].[TaskCategory] tc ON tc.[Id] = t.[CategoryId]
 JOIN [Scheduling].[TaskType] tt ON t.[TypeId] = tt.[Id]
 WHERE tt.[Id] IN ('D81C1197-D486-4FB7-AF8C-078C110893A0', '55D3F71A-2618-4EAE-9AA6-D48767B974D8') -- 'Maintenance Task', 'Map Task'
-------------------------------------------
-------------------------------------------
+---
+---------------------------------------
+---
+---------------------------------------
 PRINT 'Reset the map tokens'
 UPDATE [Connector].[Map] SET InitalLoad = 0, ReaderToken=NULL, LastQuerySuccess='1900-01-01' WHERE MapId IN (SELECT t.[Id]
 FROM [Scheduling].[Task] t with(nolock)
@@ -573,8 +575,10 @@ WHERE Id in (SELECT [id] from @triggerIds WHERE taskTypeId = '55D3F71A-2618-4EAE
 PRINT 'Enable the Maintenance Task'
 UPDATE [Scheduling].[Trigger] SET IsEnabled = 1, RunImmediately = 0, StartBoundary = GETDATE() WHERE Id in
 (SELECT [id] from @triggerIds WHERE taskTypeId = 'D81C1197-D486-4FB7-AF8C-078C110893A0')
-------------------------------------------
-------------------------------------------
+---
+---------------------------------------
+---
+---------------------------------------
 
 UPDATE [Servicing].[ServicingLock] SET [Value] = 0 WHERE [Value] = 1
 IF EXISTS(SELECT TOP 1 1 FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = 'Scheduling' COLLATE DATABASE_DEFAULT AND TABLE_NAME = 'SchedulerRegister' COLLATE DATABASE_DEFAULT AND COLUMN_NAME = 'ServicingMode' COLLATE DATABASE_DEFAULT)

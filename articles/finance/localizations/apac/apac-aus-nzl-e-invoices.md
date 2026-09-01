@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 10.0.36
 
 # Customer electronic invoices in Australia and New Zealand
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure and issue customer electronic invoices by using the Australian and New Zealand extension of the [Pan-European Public Procurement Online (PEPPOL)](https://docs.peppol.eu/poacc/billing/3.0/) format specification.
 

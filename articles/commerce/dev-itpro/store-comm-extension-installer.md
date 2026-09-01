@@ -15,7 +15,7 @@ ms.custom:
 
 # Create a Store Commerce extension installer package
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to create a Microsoft Dynamics 365 Commerce Store Commerce extension installer package.
 

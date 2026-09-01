@@ -13,7 +13,7 @@ ms.search.form: WHSParameters
 
 # Release to warehouse rule
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The *Release to warehouse rule* feature provides flexibility during release to the warehouse. It adds a configuration option for each warehouse. Use this option to specify whether partially reserved order lines can be released for that warehouse. This feature works together with advanced cross-docking functionality in situations where part of an order line quantity is marked against a supply source, but the remaining part can be processed in the warehouse. Therefore, the line can be released so that warehouse processing of the available inventory quantity can continue.
 

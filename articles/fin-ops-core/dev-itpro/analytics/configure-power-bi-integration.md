@@ -18,7 +18,7 @@ ms.custom: sfi-image-nochange
 
 # Configure PowerBI.com integration
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Overview
 

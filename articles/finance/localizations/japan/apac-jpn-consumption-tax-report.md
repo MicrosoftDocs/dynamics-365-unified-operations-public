@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Japan consumption tax report
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and generate the Japan Consumption Tax (JCT) return report for legal entities in Japan.
 

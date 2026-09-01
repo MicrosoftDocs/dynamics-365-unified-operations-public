@@ -16,7 +16,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 # Dual reporting
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an example that shows how you can fulfill the requirements for both International Financial Reporting Standard (IFRS) reporting and statutory reporting in Asset leasing. Familiarity with posting layers in Microsoft Dynamics 365 Finance is required and makes the example easier to understand.
 

@@ -11,7 +11,7 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 
 # Intercompany batch and serial numbers
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Companies that use serial numbers or batch numbers to trace their items must also keep track of the serial numbers and batch numbers of picked items. The intercompany functionality automates the push/pull of serial numbers and batch numbers from one company to another. When you register the batch numbers and serial numbers for the items on an intercompany sales order, you can set up the program to push these numbers automatically to the intercompany purchase order and original sales order. You set up the relevant parameters on the **Intercompany** page for the sales order:
 

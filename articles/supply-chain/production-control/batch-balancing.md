@@ -13,7 +13,7 @@ ms.custom:
 
 # Batch balancing
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how the batch balancing process works.
 

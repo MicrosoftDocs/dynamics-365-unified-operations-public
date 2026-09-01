@@ -12,7 +12,7 @@ ms.search.form: WHSInventFixedLocation, WHSSlotDemandLocated, WHSSlotDemand, WHS
 
 # Warehouse slotting
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Several warehouse slotting features help warehouse managers intelligently plan picking locations before they release orders to the warehouse and create picking work.
 

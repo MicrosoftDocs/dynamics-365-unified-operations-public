@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Set up security governance parameters
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to set up various parameters related to the security governance feature. These parameters are useful for licensing reports and user aging reports.
 

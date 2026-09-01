@@ -16,7 +16,7 @@ ms.assetid: 194ca8fd-5e20-4464-9c85-08d2b5ff63ca
 
 # Configure and send email
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. This article is divided into sections for administrators and users to make it easy to find relevant information.
 

@@ -16,7 +16,7 @@ ms.assetid: 0b8149b5-32c5-4518-9ebd-09c9fd7f4cfc
 
 # Importing vouchers by using the General journal entity
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article provides tips for importing data into the General journal by using the General journal entity. Find technical information about the entity in [General journal entity](../../dev-itpro/data-entities/entity-general-journal.md).
 

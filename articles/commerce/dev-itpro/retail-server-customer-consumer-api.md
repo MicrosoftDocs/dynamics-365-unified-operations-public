@@ -14,7 +14,7 @@ ms.custom:
 
 # Commerce Scale Unit customer and consumer APIs
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the Commerce Scale Unit (CSU) application programming interfaces (APIs) that are available across various roles and that various clients can use. The focus is on customer-facing application clients and e-commerce clients.
 

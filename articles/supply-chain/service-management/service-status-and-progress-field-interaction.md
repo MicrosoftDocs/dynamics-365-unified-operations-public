@@ -13,7 +13,7 @@ ms.search.form: SMAServiceOrderTable
 
 # Service status and progress field interaction
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 On the **Service orders** page, the **Progress** field on the service order header reflects the status of the whole service order, and the **Status** reports the status of individual service order lines.
 

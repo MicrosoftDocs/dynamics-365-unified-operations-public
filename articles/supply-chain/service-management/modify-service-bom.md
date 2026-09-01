@@ -14,7 +14,7 @@ ms.custom:
 
 # Modify a Service BOM
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can record the history of an element in a service bill of materials (BOM). Every time that you update a BOM line, a history line is created in the **History** pane. The history line shows the current state of the BOM line.
 

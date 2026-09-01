@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Build the Customer form
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In this lab you’ll create a Master Details form and apply the appropriate form pattern and subpatterns. A Master Details form shows primary data that has many fields. For example, the form that you create will show customer information.
 

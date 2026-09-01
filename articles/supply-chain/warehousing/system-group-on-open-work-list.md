@@ -11,7 +11,7 @@ ms.search.form:  WHSRFMenuItem
 
 # System grouping on an open work list
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 By using a system grouping field, you can filter an open work list without having to edit the mobile device menu item.
 Where it applies, system grouping works for filtering a work list on a single work header field. You cannot use system grouping to filter on line level fields.

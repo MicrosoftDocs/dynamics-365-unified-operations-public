@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Create accrual schemes
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create an accrual scheme. This task uses the USMF demo company.
 

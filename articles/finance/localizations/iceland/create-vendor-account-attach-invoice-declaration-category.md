@@ -15,7 +15,7 @@ ms.search.form: VendTable, DirPartyLookup
 
 # Create a vendor account and attach the invoice declaration category
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create a vendor with configuration for an invoice declaration in Microsoft Dynamics 365 Finance.
 

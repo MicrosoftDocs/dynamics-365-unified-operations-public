@@ -12,7 +12,7 @@ ms.search.form: WHSRFMenuItemCycleCount, WHSCycleCountThreshold, WHSCycleCountPl
 
 # Define cycle counting
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Cycle counting is a warehouse process that you can use to audit on-hand inventory items. This task recording shows how to set up the default counting work priority, enable a mobile device menu item to process both picking and counting operations, enable a counting threshold trigger when a location becomes empty, and enable a cycle counting plan for a specific item in a specific warehouse. Typically, a warehouse manager performs these tasks. You can go through this procedure in the USMF demo data company or in your own data.
 

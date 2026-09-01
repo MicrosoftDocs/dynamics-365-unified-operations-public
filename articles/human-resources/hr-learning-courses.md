@@ -25,6 +25,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Create a course
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Human resources administrators and managers can use the courses features to maintain information about the training that they offer to workers.

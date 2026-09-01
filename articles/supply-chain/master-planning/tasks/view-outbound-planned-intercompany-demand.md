@@ -10,7 +10,7 @@ ms.author: henrikan
 ---
 # View outbound planned intercompany demand
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to view all the planned orders that will be fulfilled by an intercompany vendor. The demo data company used to create this procedure is DEMF.
 

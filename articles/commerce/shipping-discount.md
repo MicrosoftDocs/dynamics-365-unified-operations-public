@@ -14,7 +14,7 @@ ms.custom:
 
 # Shipping discount
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides an overview of shipping discount capabilities in Microsoft Dynamics 365 Commerce.
 

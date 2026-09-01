@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.31
 
 # Account structure activation performance enhancement
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This performance enhancement helps you activate account structures faster by running multiple transaction updates at the same time. After the structure validates, the system marks the structure as active. Transaction processing can continue while the system updates existing unposted transactions to the new structure. Because transaction updates might take some time, you can track the status of your activation by selecting **View activation status** in the grid on the **Account structures** page. You can also view your activation status by selecting **View** on the Action Pane and then selecting **Activation status** on the drop-down menu.
 

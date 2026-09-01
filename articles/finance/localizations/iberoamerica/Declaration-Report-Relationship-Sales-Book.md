@@ -11,7 +11,7 @@ ms.author: v-cpicon
 
 # Configure printing for the Declaration Reports Relationship Sales Book for Venezuela
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and generate the Declaration Reports Relationship Sales Book for Venezuela in Microsoft Dynamics 365 Finance.
 

@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Sales tax reports for Poland
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about Polish value-added tax (VAT) reporting and the information that VAT registers for Poland legally require.
 

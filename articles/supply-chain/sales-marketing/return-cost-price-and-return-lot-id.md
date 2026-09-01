@@ -13,7 +13,7 @@ ms.search.form: ReturnTableListPage, ReturnInventTransIdLookup, ReturnItemNumLoo
 
 # Return cost price and return lot ID
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The cost of products returned to inventory is calculated by using the current cost of the products. However, you might want the cost of the returned products to equal the cost of the products at the time when you sold the products to the customer. You can set this cost by using the **Return lot ID** field on the **Line details** FastTab in the **Sales order** form.
 

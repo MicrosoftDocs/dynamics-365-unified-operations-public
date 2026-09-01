@@ -13,7 +13,7 @@ ms.search.region: Hungary
 
 # Sales tax reports for Hungary
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about the **Sales tax declaration information** and **Itemized VAT statement** reports. You can generate these Microsoft Excel reports and use them to create the value-added tax (VAT) returns that you must submit to the tax authorities.
 

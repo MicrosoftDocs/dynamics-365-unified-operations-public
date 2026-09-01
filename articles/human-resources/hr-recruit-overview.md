@@ -23,6 +23,8 @@ ms.dyn365.ops.version: Version 10.0.27
 ---
 # Dynamics 365 Human Resources recruitment
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 In human resources management, recruitment is the process of finding and hiring the best and most qualified candidate for a job opening. It can also be defined as the process for searching for prospective employees.

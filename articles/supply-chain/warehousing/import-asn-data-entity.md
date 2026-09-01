@@ -13,7 +13,7 @@ ms.search.form: WHSInboundASNV3Entity, WHSInboundASNEntity, DMFEntity, WHSInboun
 
 # Import inbound ASNs through data entities
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Advanced shipping notices (ASNs) notify you about vendor deliveries. They help the sender describe the contents of a shipment and provide additional information about it, such as the items and packaging.
 

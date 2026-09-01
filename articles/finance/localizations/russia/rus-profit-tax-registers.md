@@ -13,7 +13,7 @@ ms.search.region: Russia
 
 # Create tax registers and the tax register journal
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create tax registers and the tax register journal for Russia in Microsoft Dynamics 365 Finance.
 

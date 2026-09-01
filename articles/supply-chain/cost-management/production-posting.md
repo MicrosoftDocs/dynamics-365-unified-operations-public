@@ -13,7 +13,7 @@ ms.custom:
 
 # Production posting
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about different types of postings in the production process.
 

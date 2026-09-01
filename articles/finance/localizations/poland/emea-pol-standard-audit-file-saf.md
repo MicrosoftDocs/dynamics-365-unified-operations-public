@@ -17,7 +17,7 @@ ms.assetid: b85c4019-f682-45bf-9a0d-c7549a2f1274
 
 # Standard audit file, SAF (Jednolity Plik Kontrolny, JPK) for Poland overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Poland's Jednolity Plik Kontrolny (JPK) (in English, Standard audit file \[SAF\]) system is a standardized electronic reporting framework that is designed to enhance tax compliance and streamline communication between businesses and the tax authorities. It requires the submission of various datasets in XML format to ensure uniformity, machine readability, and ease of processing.
 

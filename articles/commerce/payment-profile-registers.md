@@ -12,6 +12,8 @@ ms.search.region: Global
 
 # Set up payment profiles for registers
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 This article explains how to create and assign payment profiles to control which payment methods are available on a point of sale (POS) register and in what display order they appear.
 
 ## Overview

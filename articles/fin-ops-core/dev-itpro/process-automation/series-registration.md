@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Series registration
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Every process must have a *series*. The concept of a series in process automation resembles the concept of a meeting series in Microsoft Outlook. However, a series in process automation is a series of scheduled runs of a process. For most scheduled process types, users create the series in the user interface (UI), and series registration never has to be implemented. However, if the process that is being implemented is a schedule series, you can skip this task.
 

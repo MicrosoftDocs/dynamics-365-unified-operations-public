@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Dynamics 365 Commerce online SDK FAQ
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides answers to frequently asked questions about the Dynamics 365 Commerce online software development kit (SDK).
 

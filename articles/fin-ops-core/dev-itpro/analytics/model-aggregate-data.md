@@ -15,7 +15,7 @@ ms.assetid: b91f6ad9-31dc-4717-82bf-5fd2a466c100
 
 # Model aggregate data
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This tutorial shows you how to model aggregate data.
 

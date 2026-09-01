@@ -14,7 +14,7 @@ ms.custom:
 
 # Set up a Microsoft Entra External ID for user site authentication
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to set up your Microsoft Entra External ID tenant for user site authentication in Microsoft Dynamics 365 Commerce.
 

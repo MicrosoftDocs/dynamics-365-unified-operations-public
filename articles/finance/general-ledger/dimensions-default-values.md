@@ -26,7 +26,7 @@ ms.dyn365.ops.version: 10.0.17
 
 # Default financial dimensions on financial journals
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the rules that define how financial dimension values are set on transactions that are entered through financial journals (but not through inventory journals or project journals). It also includes details for scenarios where fixed dimensions are used.
 

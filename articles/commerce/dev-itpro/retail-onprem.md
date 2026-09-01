@@ -14,7 +14,7 @@ ms.service: dynamics-365-op
 
 # Commerce capabilities that are available in on-premises deployments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article lists the capabilities available in on-premises deployments of Microsoft Dynamics 365 Commerce.
 

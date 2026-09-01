@@ -12,7 +12,7 @@ ms.search.form:
 
 # Price attributes overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 One of the key functions of a price manager is to work together with the product manager to accomplish the following tasks:
 

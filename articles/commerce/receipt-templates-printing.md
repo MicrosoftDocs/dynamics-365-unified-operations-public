@@ -16,7 +16,7 @@ ms.custom:
 
 # Set up and design receipt formats
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to set up and design form layouts to control how receipts, invoices, and other documents print in Microsoft Dynamics 365 Commerce. Dynamics 365 Commerce includes a form layout designer that you can use to easily create and modify various kinds of form layouts.
 

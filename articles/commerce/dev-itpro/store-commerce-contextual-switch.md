@@ -14,7 +14,7 @@ ms.search.validFrom: 2026-05-07
 
 # Launch Store Commerce app by using custom protocol URLs
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how external applications can launch the Dynamics 365 Commerce Store Commerce app and invoke specific business actions, such as adding items to cart or recalling orders, to complete a workflow or transaction.
 

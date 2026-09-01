@@ -1,4 +1,4 @@
-﻿---
+---
 title: Display seamless sync information on custom forms in Dynamics 365 Sales
 description: Learn how to modify custom forms in Dynamics 365 Sales to display seamless sync information
 author: AditiPattanaik
@@ -13,7 +13,7 @@ ms.custom:
 
 # Display seamless sync information on custom forms in Dynamics 365 Sales
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 With [seamless sync](../../../fin-ops/data-entities/add-efficiency-in-quote-to-cash-seamless-sync.md), users who work on sales orders and sales quotations in Dynamics 365 Sales can view the results of calculations that the Supply Chain Management pricing engine does, without having to take any extra steps to get prices, discounts, and totals. As users work in Sales, all the necessary data and calculation results are seamlessly synced between systems as required.
 

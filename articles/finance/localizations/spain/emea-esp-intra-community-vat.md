@@ -15,7 +15,7 @@ ms.search.form: VendFormletterParameters, VendParameters, TaxTrans
 
 # Intra-community VAT for Spain
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to enable and use the intracommunity value-added tax (VAT) functionality in Microsoft Dynamics 365 Finance. It includes information about how to turn on the functionality, calculate and print intracommunity VAT amounts, and review posted intracommunity VAT amounts.
 

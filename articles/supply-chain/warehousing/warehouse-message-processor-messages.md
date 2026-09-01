@@ -12,7 +12,7 @@ ms.search.form: SysMessageProcessor, SysMessageProcessorMessage, BusinessEventsW
 
 # Message processor messages for warehouse management processes
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Message processor messages are used for processes that run asynchronously. For example, you can use a message processor message to post a sales packing slip when the last shipment container is closed as part of a [manual packing process](packing-containers.md) or by [Warehouse management only mode](wms-only-mode-overview.md) to create *inbound shipment orders* and *outbound shipment orders*.
 

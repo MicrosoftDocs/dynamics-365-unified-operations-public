@@ -16,6 +16,8 @@ ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 
 # Customer aging report
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 The **Customer aging** report shows the balances that are due from customers, sorted by date interval or aging period.
 
 When you generate this report, it displays the following default parameters. Use these parameters to filter the data that appears on the report. For more information, see [Set up collections](set-up-collections.md).

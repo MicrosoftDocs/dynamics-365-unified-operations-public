@@ -23,6 +23,7 @@ ms.dyn365.ops.version: Human Resources
 
 # Benefit employee plan status
 
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]

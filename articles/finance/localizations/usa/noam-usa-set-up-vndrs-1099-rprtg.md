@@ -15,7 +15,7 @@ ms.search.form: PSNCanadianHSTTaxFeature
 
 # Set up vendors for 1099 reporting
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up vendor records so that a 1099 box is associated with a main account in Microsoft Dynamics 365 Finance. 
 

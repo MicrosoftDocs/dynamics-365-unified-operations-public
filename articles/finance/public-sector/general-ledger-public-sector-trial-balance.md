@@ -15,7 +15,7 @@ ms.search.industry: public sector
 
 # Trial balance with transactional detail report
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the default report for trial balances. The **Trial balance with transactional detail** report generates a trial balance and includes the detailed transactions that were posted to each ledger account. By selecting specific unposted transactions to include, you can use the report to generate a provisional trial balance together with detailed transactions.
 

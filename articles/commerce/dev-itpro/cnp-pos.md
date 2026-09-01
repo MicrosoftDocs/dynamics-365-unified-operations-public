@@ -14,7 +14,7 @@ ms.custom:
 
 # Process credit cards without a hardware station
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to configure the Microsoft Dynamics 365 Commerce point of sale (POS) to process "card not present" transactions in POS clients that don't include a hardware station. This feature specifically targets emerging scenarios such as curbside pickup.
 

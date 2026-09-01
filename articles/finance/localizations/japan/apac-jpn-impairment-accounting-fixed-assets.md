@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Impairment accounting for fixed assets for Japan
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about impairment accounting for fixed assets in Japan.
 

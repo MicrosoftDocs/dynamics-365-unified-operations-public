@@ -14,7 +14,7 @@ ms.custom:
 
 # Product search in the point of sale (POS)
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides an overview of improvements that Microsoft made to product search functionality in Microsoft Dynamics 365 Commerce.
 

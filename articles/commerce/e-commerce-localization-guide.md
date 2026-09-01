@@ -15,7 +15,7 @@ ms.custom:
 
 # Dynamics 365 Commerce e-commerce localization guide
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to localize a Microsoft Dynamics 365 Commerce e-commerce site into additional languages and configure the site to support multiple channels, and also covers the concepts and terminology related to the process.
 

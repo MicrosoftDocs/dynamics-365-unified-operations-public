@@ -15,6 +15,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create deployable packages in Azure Pipelines
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 If you want to deploy customizations to an environment, a deployable package is required in Microsoft Dynamics Lifecycle Services. You can create this package by using Azure Pipelines during a build or release process.
 
 This article assumes a working knowledge of [Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started).

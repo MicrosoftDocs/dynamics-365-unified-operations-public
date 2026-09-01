@@ -15,7 +15,7 @@ ms.search.form: OMLegalEntity, CustFormletterParameters
 
 # Set up payment slip format for project invoices
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to attach printed payment slips to project invoices and provide a payment reference for posting and settlement in Microsoft Dynamics 365 Finance.
 

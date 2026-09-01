@@ -17,7 +17,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # What's new or changed in finance and operations apps version 10.0.5 (October 2019)
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 
 This article describes features that are either new or changed in finance and operations apps, including Microsoft Dynamics 365 Finance and Microsoft Dynamics 365 Supply Chain Management version 10.0.5. This version has a build number of 10.0.197. While the general availability date is in October, the new features are available for early release in August. For more information about version 10.0.5, see [Additional resources](#additional-resources).

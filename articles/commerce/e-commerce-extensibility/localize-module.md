@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Localize a module
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to localize modules and general module information in Microsoft Dynamics 365 Commerce.
 

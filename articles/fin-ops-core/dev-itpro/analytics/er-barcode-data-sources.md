@@ -16,7 +16,7 @@ ms.assetid:
 
 # Use Barcode data sources to generate bar code images
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can use the [Electronic reporting (ER)](general-electronic-reporting.md) framework to design ER format components that you can run to generate electronic and printable outbound documents that you require. To generate an outbound document in Microsoft Office format, you must specify the layout of the report by using either a Microsoft Excel document or a Microsoft Word document as a report template. The [ER Operations designer](general-electronic-reporting.md#building-a-format-that-uses-a-data-model-as-a-base) lets you attach an Excel or Word document as a template for an ER format. The following named elements in the attached template are associated with the elements of the configured format component:
 

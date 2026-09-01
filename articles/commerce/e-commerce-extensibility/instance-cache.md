@@ -14,7 +14,7 @@ ms.custom:
 
 # Data action instance cache
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to use the data action instance cache to reduce the size of data action payloads sent to client browsers in Microsoft Dynamics 365 Commerce.
 

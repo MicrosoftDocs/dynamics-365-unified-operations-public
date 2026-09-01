@@ -18,7 +18,7 @@ ms.assetid: af07d122-5694-4de6-96bf-7bf5478b0175
 
 # Configure system parameters to report sales tax books for Italy
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure system parameters to report sales tax books for legal entities in Italy.
 

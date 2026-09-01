@@ -13,7 +13,7 @@ ms.reviewer: johnmichalak
 
 # Create a sales tax payment
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The settle and post sales tax job procedure settles sales tax balances on the sales tax accounts, and offsets them to the sales tax settlement account for a given period.
 

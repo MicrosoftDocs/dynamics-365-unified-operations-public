@@ -17,7 +17,7 @@ ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 
 # Change page layout properties of a template in ER destinations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can configure an ER destination for an ER format component that's designed to use a template in a Microsoft Office (Excel or Word) format for report generation.
 If you aren't the owner of this format and you need to change page layout properties of the format's template, you can change the page layout properties of the template at runtime to avoid creating and maintaining the derived format configuration. To do this, set up the desired properties as part of the settings of the configured ER destination. When you run an ER format and execute an ER destination that's configured to use certain page layout properties, the values of page layout properties of the executed destination are applied to the template you use, replacing the original template's properties. You can configure different destinations for the same format's component configuring different page layout properties for the template in use.

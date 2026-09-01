@@ -15,7 +15,7 @@ ms.search.form: VendPaymMode
 
 # Set up method of payment for ISO20022 credit transfer
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The following procedure explains how to set up a vendor method of payment for a ISO20022 credit transfer or any other payment type using electronic reporting to generate a file in Microsoft Dynamics 365 Finance.
 

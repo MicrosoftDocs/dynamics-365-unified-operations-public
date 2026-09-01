@@ -17,7 +17,7 @@ ms.assetid:
 
 # NEWGUID ER function
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The `NEWGUID` function generates a new globally unique identifier (GUID) and returns it as a *[GUID](er-formula-supported-data-types-primitive.md#guid)* value.
 

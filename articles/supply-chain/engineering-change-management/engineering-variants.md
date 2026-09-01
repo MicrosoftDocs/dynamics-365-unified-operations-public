@@ -11,7 +11,7 @@ ms.search.form:
 
 # Generate variants for engineering products
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to generate variants for engineering products.
 

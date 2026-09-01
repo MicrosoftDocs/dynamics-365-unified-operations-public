@@ -23,6 +23,7 @@ ms.dyn365.ops.version: Human Resources
 
 # Recruiting request position
 
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]

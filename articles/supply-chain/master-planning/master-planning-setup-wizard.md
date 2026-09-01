@@ -12,7 +12,7 @@ ms.search.form: ReqCreatePlanWorkspace
 
 # Master planning setup wizard
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides a guide for the **Master planning setup wizard**. It explains how parameter suggestions are calculated and also provides examples that show how different companies set up master planning, based on their business needs.
 

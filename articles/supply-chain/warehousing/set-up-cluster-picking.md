@@ -12,7 +12,7 @@ ms.search.form:
 
 # Set up cluster picking
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to enable workers to use their mobile devices to group picking work into clusters, so that they can pick items from a single location for multiple work orders at the same time. This process is called *cluster picking*.
 

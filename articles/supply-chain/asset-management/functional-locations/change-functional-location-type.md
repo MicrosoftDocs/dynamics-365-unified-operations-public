@@ -13,7 +13,7 @@ ms.custom:
 
 # Change the type of existing functional locations
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to change the [functional location type](../setup-for-functional-locations/functional-location-types.md) of an existing functional location.
 

@@ -14,7 +14,7 @@ ms.search.validFrom: 2017-06-30
 
 # Preview a VAT declaration in Excel format
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to set up a value-added tax (VAT) declaration for Denmark and preview it in Microsoft Excel.
 

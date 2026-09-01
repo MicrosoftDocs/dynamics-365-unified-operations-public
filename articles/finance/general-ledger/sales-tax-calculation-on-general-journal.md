@@ -16,7 +16,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 # Sales tax calculation on general journal lines
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how sales taxes are calculated for different types of accounts (vendor, customer, ledger, and project) on general journal lines.
 

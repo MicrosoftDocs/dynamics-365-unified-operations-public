@@ -16,6 +16,8 @@ ms.dyn365.ops.version: 10.0.24
 
 # Workflow history summary
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article explains how to enable the optional **Summary by Copilot** field on any **Workflow history** page in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 
 ## Turn on Copilot support for the Workflow history page

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.30
 
 # Documents pending accounting
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to use the functionality on the **Documents pending accounting** page.
 

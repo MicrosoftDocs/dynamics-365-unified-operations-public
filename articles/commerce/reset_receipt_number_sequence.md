@@ -15,7 +15,7 @@ ms.custom:
 
 # Configure and manage receipt numbers 
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to configure and manage receipt numbers in Microsoft Dynamics 365 Commerce.
 

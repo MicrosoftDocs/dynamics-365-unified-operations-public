@@ -16,7 +16,7 @@ ms.assetid: 60ce2f9f-73a7-4903-89da-6af7d681cc7a
 
 # Set up work schedules and leave
 
-[!include [banner](../../../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../../../finance/includes/banner.md)]
 
 This article describes the processes for creating working time templates, working time calendars, and leave types, and the process for putting workers on leave.
 

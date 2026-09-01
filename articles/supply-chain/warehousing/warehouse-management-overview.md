@@ -13,7 +13,7 @@ ms.custom:
 
 # Warehouse management overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The Warehouse management module lets you manage warehouse processes in manufacturing, distribution, and retail companies. This module has a wide range of features to support the warehouse facility at an optimal level, at any time. Warehouse management is fully integrated with other business processes such as transportation, manufacturing, quality control, purchase, transfer, sales, and returns.
 

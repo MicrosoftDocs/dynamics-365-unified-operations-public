@@ -14,7 +14,7 @@ ms.custom:
 
 # Fiscal registration service integration sample for Austria
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article provides an overview of the fiscal integration sample for Austria in Microsoft Dynamics 365 Commerce.
 

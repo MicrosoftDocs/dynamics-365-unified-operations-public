@@ -16,7 +16,7 @@ ms.assetid: 0411cb4d-f83a-4c0f-b8a3-9ba152b66e0d
 
 # Set up work cycles and work periods
 
-[!include [banner](../../../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../../../finance/includes/banner.md)]
 
 This article explains how to set up work cycles and work periods. You use work cycles to specify the frequency of work periods. Some earnings, such as the regular-rate overtime premiums that are required by the Fair Labor Standards Act (FLSA), are based on work periods, not pay periods.
 

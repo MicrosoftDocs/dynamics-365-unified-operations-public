@@ -17,7 +17,7 @@ ms.custom:
 
 # Configure high availability for SQL Server Reporting Services (SSRS) nodes
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to configure multiple Microsoft SQL Server Reporting Services (SSRS) nodes for Dynamics 365 Finance + Operations (on-premises) deployments.
 

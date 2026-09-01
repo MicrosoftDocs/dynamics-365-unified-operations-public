@@ -14,7 +14,7 @@ ms.reviewer: twheeloc
 
 [This article is prerelease documentation and is subject to change.]
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and manage dual-write async in Microsoft Dynamics 365 finance and operations apps.
 

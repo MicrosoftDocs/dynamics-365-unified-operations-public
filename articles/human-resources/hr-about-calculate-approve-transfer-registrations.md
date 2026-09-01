@@ -12,6 +12,8 @@ ms.search.region: Global
 
 # Calculate, approve, and transfer registrations
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 You can create and manage time and attendance registrations. Registrations made by workers must be calculated, approved, and transferred daily. During that process, any registration errors can be corrected, missing registrations can be added, and incorrect registrations can be deleted.
 
 > [!TIP]

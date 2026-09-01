@@ -16,6 +16,8 @@ ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ---
 # Vendor aging data storage
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article describes the process of using external storage for vendor aging data. In Microsoft Dynamics 365 Finance, the **Vendor aging data storage** process makes the output available for export to an external system. When you run the process, the same aging report options are available to external systems. The details are included in the exported data.
 
 It can be useful to make vendor aging data available to an external system for storage in cases where the output contains a large number of transactions. If the existing **Vendor aging** report times out because there's too much data, this feature provides an alternative way to get the same data.

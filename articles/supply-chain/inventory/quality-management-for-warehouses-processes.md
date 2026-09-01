@@ -13,7 +13,7 @@ ms.custom:
 
 # Quality management for warehouse processes
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The *Quality management for warehouse processes* feature lets you integrate item sampling controls into the warehouse receiving process by using warehouse management processes (WMS). You can automatically generate warehouse work to move inventory to the quality control location, based on a percentage, a fixed quantity, or every *n*th license plate. After you complete a quality order, you can automatically generate work to move inventory to the next location in the process, depending on the quality results.
 

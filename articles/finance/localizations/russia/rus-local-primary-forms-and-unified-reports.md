@@ -14,7 +14,7 @@ ms.search.validFrom: 2019-03-01
 
 # Cash - Local primary forms and unified reports
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with cash transaction reports that are available for companies with Russian context in Microsoft Dynamics 365 Finance.
 

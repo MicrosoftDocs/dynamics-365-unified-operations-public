@@ -13,7 +13,7 @@ ms.custom:
 
 # Provide mixed-reality Guides for workers in production
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Workers in production processes will benefit from relevant instructions that are provided at the right time in the context of their work. *Instructions* apply in several domains of work, including: assembly, service, operations, certification, and safety. Across all of these core business functions, ongoing training instructions can help empower workers to achieve more and work better.
 

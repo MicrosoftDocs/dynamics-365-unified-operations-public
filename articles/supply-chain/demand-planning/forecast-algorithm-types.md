@@ -12,7 +12,7 @@ ms.search.form:
 
 # Demand forecasting algorithms
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Demand planning in Microsoft Dynamics 365 Supply Chain Management includes four popular demand forecasting algorithms: *auto-ARIMA*, *ETS*, *Prophet*, and *XGBoost*.
 

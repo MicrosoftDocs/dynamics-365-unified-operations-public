@@ -13,6 +13,8 @@ ms.reviewer: twheeloc
 
 # Data mart resets FAQ
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article provides answers to some frequently asked questions about data mart resets. Resetting the data mart can be a time-consuming process. Depending on your circumstances, it might not be the solution you need. Therefore, this article includes information about circumstances where resetting the data mart might help and also circumstances where it's unlikely to help.
 
 ## What is a data mart reset?

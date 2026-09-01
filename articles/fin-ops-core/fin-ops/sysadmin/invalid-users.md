@@ -11,6 +11,8 @@ ms.reviewer: twheeloc
 
 # Invalid users in Dynamics 365 Finance
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 Users in any Microsoft Dynamics 365 finance and operations environment must comply with Microsoft guidelines to avoid sign-in failures. Starting with Dynamics 365 Finance version 10.0.39, administrators can use the **Invalid users** page to view details about invalid users.
 
 To view invalid users, follow these steps:

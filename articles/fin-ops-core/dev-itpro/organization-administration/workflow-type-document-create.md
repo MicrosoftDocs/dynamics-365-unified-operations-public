@@ -15,7 +15,7 @@ ms.assetid:
 
 # Create a workflow document class
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 You define table fields in a query to create workflow conditions. In a typical scenario, you use calculated fields to determine the behavior of a workflow. For example, you can use a dynamic sales total of all records in a table as a workflow condition to determine whether the step should be used. However, a limitation of queries is that you can't define calculated fields in the queries themselves. To overcome this query limitation, you must use a workflow document class. This article describes how to create a workflow document class.
 

@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 
 # Print the Inventory and balance report for Chile
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The article describes how to set up and print the **Inventory and balance** report for Chile.
 

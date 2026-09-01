@@ -16,7 +16,7 @@ ms.custom:
 
 # Financial reconciliation in retail stores
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains financial reconciliation in retail stores for Microsoft Dynamics 365 Commerce POS.
 

@@ -13,7 +13,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Choosing the correct extended data type (EDT) for financial dimension foreign keys
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When you create fields with foreign keys to financial dimension tables, select the correct extended data type (EDT). The dimension framework needs both the foreign key relation and the correct EDT to work properly. If you use the wrong EDT, you can cause data corruption and unintended behavioral differences within the application.
 

@@ -16,7 +16,7 @@ ms.assetid: 403857a3-bebb-4ff7-b1b5-c88f41fc18ae
 
 # One-time vendors in the public sector
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about how to create a one-time vendor and invoice, and how to import and create multiple one-time vendors and invoices.
 

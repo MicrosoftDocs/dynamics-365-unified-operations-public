@@ -16,7 +16,7 @@ ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 
 # Manage access to network printers across legal entities
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
 > The Carbon Flighting Service manages access to the System administration utility. Only system admins can access the **System network printers management** page.

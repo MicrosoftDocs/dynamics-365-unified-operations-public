@@ -18,7 +18,7 @@ ms.assetid: 6b61e08c-aa8b-40c0-b904-9bca4e8096e7
 
 # Configure settlement
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 How and when transactions settle can be complex subjects, so it's essential that you understand and correctly define the parameters to meet your business requirements. This article describes the parameters that are used for settlement for both Accounts payable and Accounts receivable.
 

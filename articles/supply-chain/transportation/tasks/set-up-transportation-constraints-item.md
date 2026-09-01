@@ -13,7 +13,7 @@ ms.custom:
 
 # Set up transportation constraints for an item
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure sets up a transportation constraint to prevent a selected item from being transported through a selected hub. A Transportation coordinator typically carries out this task.
 

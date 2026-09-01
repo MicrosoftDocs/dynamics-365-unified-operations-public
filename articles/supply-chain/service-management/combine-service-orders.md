@@ -12,7 +12,7 @@ ms.search.form: SMAServiceOrderTable
 
 # Combine service orders
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When you create service order lines automatically on the **Service agreements** page, you can choose one of the following options to specify how you want to group them:
 

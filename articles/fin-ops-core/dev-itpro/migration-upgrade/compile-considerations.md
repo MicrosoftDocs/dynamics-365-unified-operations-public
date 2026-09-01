@@ -16,7 +16,7 @@ ms.assetid: e48d7424-371a-49ee-882c-07b7ceb00183
 
 # Plan and prepare for compiling code against the latest update
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 With the rollout of the One Version servicing plan, Microsoft is committed to backward compatibility from a binary and functional perspective. For detailed information about One Version, see [One Version service updates FAQ](../../fin-ops/get-started/one-version.md). Even with backward compatibility as a priority, some development activities require code changes. Some of those situations are described in the following sections. 
 

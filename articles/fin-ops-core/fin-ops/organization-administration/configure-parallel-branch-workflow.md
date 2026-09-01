@@ -16,7 +16,7 @@ ms.assetid: dfdae2b8-6a4f-4760-b339-b755c66f3f89
 
 # Configure parallel branches in a workflow
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 To configure a parallel branch, use the workflow editor.
 

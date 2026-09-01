@@ -12,7 +12,7 @@ ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 
 # Quality management test instruments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to create test instruments or instrument types that you can use for tests on quality orders in Microsoft Dynamics 365 Supply Chain Management.
 

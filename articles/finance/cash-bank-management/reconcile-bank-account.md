@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.5
 
 # Reconcile a bank account
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When you receive a bank statement, you should periodically reconcile legal entity bank transactions with the transactions on the bank statement.
 

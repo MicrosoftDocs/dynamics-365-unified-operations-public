@@ -12,7 +12,7 @@ ms.search.form:
 
 # Design forecast models
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 *Forecast models* let you arrange and configure steps to define the forecast that a forecast profile makes. Each model presents a flowchart that graphically represents the calculation that the model does.
 

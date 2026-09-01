@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Generate the GSTR report data for tax returns
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 ## Generate the GSTR1 report data
 

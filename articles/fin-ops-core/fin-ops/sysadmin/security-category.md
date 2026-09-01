@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Set up security categories
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 ## Security categories
 

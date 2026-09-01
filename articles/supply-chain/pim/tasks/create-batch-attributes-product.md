@@ -12,7 +12,7 @@ ms.search.form: PdsBatchAttrib
 
 # Create batch attributes for a product
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to create a batch attribute, assign default value ranges, and include the attribute in a group. The demo data company used to create this procedure is the USP2 Company.
 

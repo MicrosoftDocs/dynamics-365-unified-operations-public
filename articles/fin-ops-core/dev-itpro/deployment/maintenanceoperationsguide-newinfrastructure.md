@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 8.1.1
 
 # Maintenance operations for deployments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
 This article explains how to perform maintenance operations for an environment that you deployed by using the [self-service deployment](infrastructure-stack.md) experience.

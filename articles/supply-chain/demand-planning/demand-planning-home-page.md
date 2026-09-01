@@ -13,7 +13,7 @@ ms.custom:
 
 # Demand planning home page
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Inaccurate forecasts and demand plans can lead to lost revenue and inefficiency in the supply chain. However, forecasts that are infused with intelligence lead to more accurate and effective demand plans. You can measure the direct impact in improved revenue and fewer stockouts. Operating expenses go down in supply chains that require fewer fire drills.
 

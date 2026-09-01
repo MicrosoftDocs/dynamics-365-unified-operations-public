@@ -14,7 +14,7 @@ ms.custom:
 
 # Support for multiple VAT registration numbers in reporting for Estonia
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about the regulatory reports for Estonia that legal entities can access when they use the functionality for multiple value-added tax (VAT) registration numbers. For more information about this functionality, the prerequisites that must be met before you use it, and the required setup, see [Multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md).
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Master planning for products with limited shelf life
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Shelf life is the amount of time that a product can be stored until it can no longer be used or sold. For products that have a limited shelf life, you'll probably use a first-expire, first-out (FEFO) warehouse strategy, which prioritizes the consumption and sale of items based on their remaining shelf life. This warehouse strategy is relevant for food, medicines, and other goods that are characterized by a short storage time. According to FEFO, items in the warehouse are stored like goods on a supermarket shelf: products that have a long shelf life are placed deep into the shelves, so that products that have a shorter remaining shelf life are shipped first.
 

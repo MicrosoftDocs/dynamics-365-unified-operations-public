@@ -15,7 +15,7 @@ ms.custom:
 
 # View transactions on settlement for Eastern Europe
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about the **Transactions on settlement** page for customers and vendors.
 

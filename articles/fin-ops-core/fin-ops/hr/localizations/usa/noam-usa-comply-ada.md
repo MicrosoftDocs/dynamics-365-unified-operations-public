@@ -16,7 +16,7 @@ ms.assetid: 42504e87-7cb1-42e0-8a8b-9bc91fb54095
 
 # Comply with the Americans with Disabilities Act (ADA)
 
-[!include [banner](../../../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../../../finance/includes/banner.md)]
 
 This article describes features that can help your organization comply with the Americans with Disabilities Act (ADA). This information applies only to legal entities that do business in the United States.
 

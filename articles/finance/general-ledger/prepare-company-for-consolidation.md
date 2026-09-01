@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 8.0.1
 
 # Prepare a legal entity for the consolidation process
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 During a consolidation, you gather transactions from several sets of legal entity accounts into a single set of legal entity accounts. This article explains how to prepare a legal entity for a consolidation.
 

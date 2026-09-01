@@ -12,7 +12,7 @@ audience: Application User
 
 # Access Business performance analytics
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to access Business performance analytics.
 

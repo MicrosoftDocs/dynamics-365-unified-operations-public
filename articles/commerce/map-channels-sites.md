@@ -15,6 +15,8 @@ ms.custom:
 
 # Map channels to e-commerce sites
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 This article describes some of the more common channel mapping scenarios in Microsoft Dynamics 365 Commerce that you can extrapolate for most other business requirements.
 
 Dynamics 365 Commerce supports many business scenarios for mapping [online channels](#channels) that have a configured set of products, prices, and discounts to [e-commerce site](#e-commerce-sites) experiences for customers.

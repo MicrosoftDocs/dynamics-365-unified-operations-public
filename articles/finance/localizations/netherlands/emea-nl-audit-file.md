@@ -15,7 +15,7 @@ ms.search.form: TaxEvatParameters_NL
 
 # Audit file (XML Auditfile Financieel, XAF)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and generate the audit file for legal entities in the Netherlands in Microsoft Dynamics 365 Finance.
 

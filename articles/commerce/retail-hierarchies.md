@@ -16,7 +16,7 @@ ms.custom:
 
 # Commerce hierarchies
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes the different types of hierarchies in Microsoft Dynamics 365 Commerce.
 

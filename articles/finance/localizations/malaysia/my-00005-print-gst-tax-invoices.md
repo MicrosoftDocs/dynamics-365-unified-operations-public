@@ -16,7 +16,7 @@ ms.custom:
 
 # MY-00005 Print GST tax invoices
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to print a GST tax invoice for Malaysia in Microsoft Dynamics 365 Finance.
 

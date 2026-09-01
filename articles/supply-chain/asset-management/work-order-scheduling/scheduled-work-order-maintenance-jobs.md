@@ -12,7 +12,7 @@ ms.search.form:
 
 # Scheduled work order maintenance jobs
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
  
 

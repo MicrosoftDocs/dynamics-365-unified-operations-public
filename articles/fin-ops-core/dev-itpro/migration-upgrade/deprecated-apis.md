@@ -15,7 +15,7 @@ ms.assetid: 15d78841-7ea9-4553-905b-ff850d176d4d
 
 # Deprecated APIs
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides a list of deprecated APIs and migration guidance for some of the deprecated APIs.
 

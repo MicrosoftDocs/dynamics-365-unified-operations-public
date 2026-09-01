@@ -16,7 +16,7 @@ ms.dyn365.ops.version:
 
 # Credit limit adjustments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Credit limit adjustments let credit managers update the credit limits and expiration dates of a single customer, a group of customers, or all customers through a posting process. You can add credit limit adjustment entries to update customers and customer credit groups, or use them to calculate automatic credit limits. You can review the entries, send them for approval through a workflow, and post them to customer accounts.
 

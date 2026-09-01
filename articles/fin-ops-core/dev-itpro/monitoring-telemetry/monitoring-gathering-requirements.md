@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Gather monitoring requirements
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 To build an effective monitoring and telemetry solution in finance and operations apps, define the correct set of requirements. This approach also ensures that the solution aligns with your team's needs and delivers actionable insights that help maintain the health of your applications. Use the information in this article to establish a strong foundation for your monitoring and telemetry strategy.
 

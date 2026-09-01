@@ -15,7 +15,7 @@ ms.assetid: 94d555d7-28f3-4d94-91b4-6038e2be5047
 
 # Customize field descriptions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how you can customize existing field descriptions and add your own descriptions.
 

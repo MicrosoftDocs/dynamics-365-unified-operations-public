@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Create a collection letter sequence
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Use this procedure to create a collection letter sequence. This task uses the USMF demo company.
 

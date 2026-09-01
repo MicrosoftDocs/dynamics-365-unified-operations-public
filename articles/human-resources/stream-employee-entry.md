@@ -24,6 +24,8 @@ ms.dyn365.ops.version:
 
 # Streamlined employee navigation and entry
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 Dynamics 365 Human Resources enables efficient entry of employee and employment data. You can quickly update work history information for past, active, and future employees and contractors.
 
 > [!NOTE]

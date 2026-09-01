@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Platform update 34
 ---
 # Platform updates for version 10.0.10 of finance and operations apps (May 2020)
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article lists the platform updates for version 10.0.10 of finance and operations apps. (These updates were formally referred to as *Platform update 34*.) This version has a build number of 7.0.5600 and is available on the following schedule:
 

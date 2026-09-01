@@ -15,7 +15,7 @@ ms.search.validFrom: 2019-07-15
 
 # Integrated vendor master
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The term *vendor* refers to a supplier organization, or a sole proprietor who supplies goods or services to a business. Although *vendor* is an established concept in Microsoft Dynamics 365 Supply Chain Management, no vendor concept exists in customer engagement apps. However, you can overload the **Account/Contact** table to store vendor information. The integrated vendor master introduces an explicit vendor concept in customer engagement apps. You can either use the new vendor design or store vendor data in the **Account/Contact** table. Dual-write supports both approaches.
 
@@ -39,7 +39,8 @@ If you want to continue to store vendor data in the **Account/Contact** table, y
 Vendor data includes all information about the vendor, such as the vendor group, addresses, contact information, payment profile, and invoice profile. A collection of table maps work together during vendor data interaction, as shown in the following table.
 
 | Finance and operations apps | Customer engagement apps     | Description |
-----------------------------|-----------------------------|------------
+---
+-------------------------|-----------------------------|------------
 | [CDS Contacts V2](mapping-reference.md#115) | contacts | This template synchronizes all primary, secondary, and tertiary contact information, for both customers and vendors. |
 | [Name affixes](mapping-reference.md#155) | msdyn_nameaffixes | This template synchronizes name affixes reference data, for both customers and vendors. |
 | [Payment day lines CDS V2](mapping-reference.md#157) | msdyn_paymentdaylines | This template synchronizes payment day lines reference data, for both customers and vendors. |

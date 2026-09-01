@@ -15,7 +15,7 @@ ms.custom:
 
 # Calculation of tax exemption
 
-[!include [banner](../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../finance/includes/banner.md)]
 
 This article describes functionality for tax exemption calculations in Microsoft Dynamics 365 Commerce point of sale (POS) and call center.
 

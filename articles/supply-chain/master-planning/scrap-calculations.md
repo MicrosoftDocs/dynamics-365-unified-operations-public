@@ -12,7 +12,7 @@ ms.search.form: Route, RouteTable, EcoResProductDetailsExtended, BOMConsistOf, B
 
 # Set up scrap to calculate raw material requirements
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to set up your bills of materials (BOMs), formulas, and route operations to record the quantity of raw material that's scrapped during manufacturing. The master planning engine can then use this information to calculate the quantity of raw materials that must be purchased to produce the desired quantity of the final product.
 

@@ -12,7 +12,7 @@ ms.search.form:
 
 # Receive partial deliveries of returned items
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Partial deliveries are defined in terms of return order lines, not return order shipments.
 

@@ -15,7 +15,7 @@ ms.assetid: 18634bb5-3341-42f2-9cc9-7b04708b506b
 
 # Compensation and benefits Power BI content
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the Compensation and Benefits Power BI content. 
 

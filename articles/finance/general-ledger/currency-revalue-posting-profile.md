@@ -16,6 +16,8 @@ ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 
 # Currency revaluation posting profiles
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 A currency revaluation posting profile lets you post a currency revaluation adjustment to different accounts per module (**General ledger**, **Accounts payable**, **Accounts receivable**, and **Bank**). For each module, you can post to a more granular level, where you can define a currency revaluation posting account per currency code and the lowest level of ledger account, vendor, customer, or bank. The differentiation can be for unrealized gain or loss for all modules. The realized gain or loss is available only for Accounts payable and Accounts receivable.
 
 In different countries (such as the Republic of Türkiye), the realized gain or loss accounts can be used in the invoicing process to account for differences between the settled invoice and payment transactions. Learn more in [Exchange difference invoicing](../localizations/turkiye/emea-tur-exchange-difference-invoicing.md).

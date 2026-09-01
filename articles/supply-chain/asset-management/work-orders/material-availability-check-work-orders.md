@@ -12,7 +12,7 @@ ms.search.form: EntAssetWorkOrderMaterialAvailability, EntAssetWorkOrderTable
 
 # Material availability check for work orders
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Supervisors can do a material availability check for work orders. This process is relevant for organizations that want to confirm that all the required spare parts are available before workers start maintenance work. For example, a supervisor is responsible for all corrective maintenance at a manufacturing site. As a standard procedure, the supervisor checks whether all the materials that are required for each work order are available. After availability is confirmed, the supervisor releases the materials to maintenance workers for processing.
 

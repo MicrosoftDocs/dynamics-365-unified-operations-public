@@ -16,7 +16,7 @@ ms.assetid: 8e214c95-616b-4ee1-b5a4-fa5ce5147f2c
 
 # Configuration keys and data entities
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 Before you use data entities to import or export data, determine the impact of configuration keys on the data entities that you plan to use.
 

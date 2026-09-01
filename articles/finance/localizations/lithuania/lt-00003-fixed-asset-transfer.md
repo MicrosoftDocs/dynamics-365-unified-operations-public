@@ -15,7 +15,7 @@ ms.search.form: VehicleModelTable_W, LtInvoiceAutoNumberingGroups, LtInvoiceAuto
 
 # LT-00003 Generate a fixed asset transfer between warehouses document
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to move a fixed asset from one department to another and verify the transfer with a packing slip in Microsoft Dynamics 365 Finance.
 

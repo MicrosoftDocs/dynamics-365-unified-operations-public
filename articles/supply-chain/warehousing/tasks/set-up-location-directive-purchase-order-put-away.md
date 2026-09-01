@@ -13,7 +13,7 @@ ms.custom:
 
 # Set up a location directive for purchase order putaway
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up a simple location directive. The example that's shown creates a location directive to be used to determine where to put items that have been received for a purchase order.
 

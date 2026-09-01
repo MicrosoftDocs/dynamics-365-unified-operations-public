@@ -17,7 +17,7 @@ ms.custom:
 
 # File upload control
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 This article provides information about the file upload control. This control lets users upload files.

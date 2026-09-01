@@ -15,7 +15,7 @@ ms.custom:
 
 # Add custom controls to POS views
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how you can enhance the information that appears in Microsoft Dynamics 365 Commerce POS views by adding custom controls.
 

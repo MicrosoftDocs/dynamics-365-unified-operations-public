@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Test data actions with mocks
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to test data actions with mock data in Microsoft Dynamics 365 Commerce.
 

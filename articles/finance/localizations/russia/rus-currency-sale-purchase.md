@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-10-28
 
 # Foreign currency sales, purchases, and transfers
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to register transactions for the sale, purchase, and transfer of currency in Russia in Microsoft Dynamics 365 Finance.
 

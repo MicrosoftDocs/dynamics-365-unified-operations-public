@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.8
 
 # Tax invoice for goods delivered for free
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to manage goods that you deliver free of charge. The **Tax invoice for goods delivered for free** feature enables you to generate invoices that include the words "Free invoice." The total of these invoices equals the tax amount only.
 

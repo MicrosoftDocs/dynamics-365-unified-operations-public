@@ -12,7 +12,7 @@ ms.search.form: EntAssetStatusCalculate, EntAssetStatus
 
 # Maintenance status
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
  
 

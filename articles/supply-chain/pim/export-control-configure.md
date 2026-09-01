@@ -12,7 +12,7 @@ ms.search.form: COOExportControlParameters
 
 # Enable and configure advanced export management
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Prerequisites
 

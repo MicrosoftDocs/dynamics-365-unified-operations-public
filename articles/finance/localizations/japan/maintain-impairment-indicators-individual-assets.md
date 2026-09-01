@@ -15,7 +15,7 @@ ms.custom:
 
 # Maintain impairment indicators on individual assets
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to maintain impairment indicators on individual assets for Japan in Microsoft Dynamics 365 Finance.
 

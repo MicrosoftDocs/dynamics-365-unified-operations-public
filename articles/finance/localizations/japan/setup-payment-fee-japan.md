@@ -17,7 +17,7 @@ ms.custom:
 
 # Set up payment fee for Japan
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up a payment fee for Japan in Microsoft Dynamics 365 Finance.
 

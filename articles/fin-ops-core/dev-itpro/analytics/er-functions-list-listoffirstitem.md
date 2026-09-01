@@ -16,7 +16,7 @@ ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 
 # LISTOFFIRSTITEM ER function
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The `LISTOFFIRSTITEM` function returns a *Record list* value that consists of only the first record of the specified list.
 

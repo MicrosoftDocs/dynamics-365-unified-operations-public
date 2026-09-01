@@ -13,7 +13,7 @@ ms.custom:
 
 # Reserve inventory quantities
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the different options that are available for reserving inventory.
 

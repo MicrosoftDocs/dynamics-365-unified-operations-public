@@ -14,7 +14,7 @@ ms.custom:
 
 # Clean up time series data
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Almost every operation that changes a time series in Demand planning—such as running a transformation, calculation, or forecast—creates a new version. This version history is valuable, but over time, unused versions and entire time series that you no longer need accumulate and consume storage.
 

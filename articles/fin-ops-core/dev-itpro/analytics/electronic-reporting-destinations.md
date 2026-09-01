@@ -17,7 +17,7 @@ ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 
 # Electronic reporting (ER) destinations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You configure a destination for each Electronic reporting (ER) format configuration and its output component (a folder or a file). Users who have appropriate access rights can also modify destination settings at runtime. This article explains ER destination management, the types of destinations that are supported, and security considerations.
 

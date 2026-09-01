@@ -15,7 +15,7 @@ ms.custom:
 
 # Define asset idle period and validate depreciation process
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Learn how to define the fixed asset idle period and validate depreciation process for Japan in Microsoft Dynamics 365 Finance.
 

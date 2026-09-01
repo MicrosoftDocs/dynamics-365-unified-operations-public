@@ -16,7 +16,7 @@ ms.search.region: Global
 
 # Architecture of Copilot in finance and operations apps
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Copilot in finance and operations apps builds on [Microsoft Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio), which provides the central AI orchestration of the Copilot capabilities. This framework lets you extend the capabilities to create powerful AI-powered experiences in finance and operations apps. 
 

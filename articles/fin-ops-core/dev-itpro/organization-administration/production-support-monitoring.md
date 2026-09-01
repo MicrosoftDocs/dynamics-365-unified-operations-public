@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.14
 
 # Production support and monitoring
 
-[!include[banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 To ensure a good experience during the implementation of a project and after go-live, understand the different types of servicing that are available and how to get the correct support for every scenario. This article explains how to engage each type of support and learn about some of the available tools.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Inventory locations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Inventory locations determine where you store and pick items in warehouses that don't use warehouse management processes (WMS).
 

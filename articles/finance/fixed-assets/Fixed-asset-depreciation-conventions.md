@@ -18,7 +18,7 @@ ms.assetid: 36d1112d-921c-4fff-abe0-0ff2429848d3
 
 # Fixed asset depreciation conventions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes depreciation conventions for fixed assets. Use depreciation conventions to determine when and how to calculate depreciation for both the year when you acquire the fixed asset and the year when you dispose of the fixed asset.
 

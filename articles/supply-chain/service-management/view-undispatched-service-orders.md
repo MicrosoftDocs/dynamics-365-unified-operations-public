@@ -13,7 +13,7 @@ ms.search.form: SMADispatchBoard
 
 # View undispatched service orders
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to view activities in a service order that don’t have a worker assigned to them from a dispatch team.
 

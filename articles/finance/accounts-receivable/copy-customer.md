@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 8.1
 
 # Copy customers by using shared number sequences
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use shared number sequences to assign customer IDs. When you use shared number sequences, you can copy customers from one legal entity to another legal entity and use the same customer IDs in both legal entities.
 

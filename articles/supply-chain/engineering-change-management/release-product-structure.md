@@ -12,7 +12,7 @@ ms.search.form: EngChgProductReleaseSiteBulkEdit, EngChgProductReleaseSendListPa
 
 # Release product structures
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 To ensure that engineering-relevant product data can be easily reused in different legal entities, release complete product structures in addition to releasing products together with their engineering versions. You can release multilevel bill of materials (BOM) structures together with the parent in a single release action. In this case, the BOM and the lower-level products are also released.
 

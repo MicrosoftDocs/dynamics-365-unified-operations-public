@@ -13,7 +13,7 @@ ms.custom:
 
 # Simulate cost changes by using a costing version for planned costs
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how you can simulate the effects of cost changes on a manufactured item’s calculated costs by using a separate costing version for planned costs.
 

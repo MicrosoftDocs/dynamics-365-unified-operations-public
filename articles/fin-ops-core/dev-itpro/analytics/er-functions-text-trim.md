@@ -16,7 +16,7 @@ ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 
 # TRIM ER function
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The `TRIM` function returns the specified text string as a *String* value after it replaces tab, carriage return, line feed, and form feed characters with a single space character. It also removes leading and trailing spaces and removes multiple spaces between words.
 

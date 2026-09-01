@@ -14,7 +14,7 @@ ms.custom:
 
 # Fulfill service agreements overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the tasks to fulfill service agreements. The article also lists the pages that are associated with each business process component and discusses the tasks that are associated with each business process component.
 

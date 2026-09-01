@@ -15,7 +15,7 @@ ms.custom:
 
 # Develop and establish service agreements overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Service agreements let you define the resources that are used in a typical service visit and how those resources are invoiced to the customer.
 

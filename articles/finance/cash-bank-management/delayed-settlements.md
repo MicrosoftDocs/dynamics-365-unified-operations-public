@@ -15,6 +15,8 @@ ms.dyn365.ops.version:
 ---
 # Decouple settlement from payment journal posting
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 When you use delayed settlement, you can post customer and vendor payment journals successfully even if the related settlement can't be completed. The payment posts immediately, and the settlement is queued and processed separately - either automatically in the background or manually from a dedicated page.
 
 This article describes the **Decouple settlement from journal posting** feature. After you turn on the feature in **Feature management**, you can enable it on the specific customer payment and vendor payment journals where you want the behavior.

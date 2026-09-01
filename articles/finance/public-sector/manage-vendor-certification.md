@@ -14,7 +14,7 @@ ms.dyn365.ops.version: 10.0.18
 
 # Maintain vendor certification
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the steps that your vendors can use to  maintain their certifications using the **Vendor collaboration workspace**. Examples of certifications might include a Woman Business Enterprise (WBE) or a Leadership in Energy and Environment Design (LEED) company. Vendors need to enter certification information in the **Vendor information** workspace. From there, vendors select **More details**, and then select **Certifications**.
 

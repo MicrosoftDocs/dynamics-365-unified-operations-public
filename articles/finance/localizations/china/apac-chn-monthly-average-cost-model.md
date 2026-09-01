@@ -17,7 +17,7 @@ ms.assetid: 1f7abefa-8f87-4aa7-8eca-51974f91068d
 
 # Monthly average cost model for China
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Inventory costing determines the cost or monetary value of warehoused inventory items.
 

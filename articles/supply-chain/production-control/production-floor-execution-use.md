@@ -13,7 +13,7 @@ ms.custom:
 
 # How workers use the production floor execution interface
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The production floor execution interface is optimized for touch interaction. Its design provides visual contrast that meets accessibility requirements for shop floor environments. However, it also enables multiple jobs to be started in parallel from a job list. This capability is also known as *job bundling*. Additionally, from a job list, workers can open a guide that was created in Microsoft Dynamics 365 Guide. In this way, they can get visual instructions on a HoloLens.
 

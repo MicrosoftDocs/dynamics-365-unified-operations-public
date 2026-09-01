@@ -14,7 +14,7 @@ ms.custom:
 
 # Commerce Chat with Omnichannel for Customer Service module
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the *Commerce Chat with Omnichannel for Customer Service* module in Microsoft Dynamics 365 Commerce.
 

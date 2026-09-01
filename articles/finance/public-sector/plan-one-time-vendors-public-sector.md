@@ -16,7 +16,7 @@ ms.assetid: 936570cb-932f-4027-b3c7-2235ad79bc1c
 
 # Plan for one-time vendors in the public sector
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to prepare to import and create multiple one-time vendors and invoices.
 

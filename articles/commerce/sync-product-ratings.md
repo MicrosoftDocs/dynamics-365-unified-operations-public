@@ -14,7 +14,7 @@ ms.custom:
 
 # Sync product ratings in Dynamics 365 Commerce
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to sync product ratings in Microsoft Dynamics 365 Commerce.
 

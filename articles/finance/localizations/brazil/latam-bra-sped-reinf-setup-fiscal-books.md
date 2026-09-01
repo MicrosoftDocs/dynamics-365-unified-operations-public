@@ -14,6 +14,8 @@ ms.search.validFrom: 2016-11-30
 
 # Set up fiscal books
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article explains how to set up the **Fiscal books** module to generate and issue events to the tax authorities. 
 
 ## Set up service types

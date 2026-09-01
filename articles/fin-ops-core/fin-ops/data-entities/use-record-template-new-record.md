@@ -14,7 +14,7 @@ ms.search.form: AssetTable, SysRecordTemplateSelect
 ---
 # Use record template to create a new record
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This procedure shows how to use a previously defined record template to create a new record. To complete this procedure, you must first complete the "Create a record template to facilitate data entry" procedure.
 

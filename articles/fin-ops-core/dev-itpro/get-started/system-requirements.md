@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Platform update 8
 
 # System requirements for cloud deployments
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article lists the system requirements for the current version of finance and operations apps. Verify that your system meets or exceeds the minimum network, hardware, and software requirements.
 

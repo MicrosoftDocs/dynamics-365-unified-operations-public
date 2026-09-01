@@ -13,7 +13,7 @@ ms.search.form: WHSMobileDeviceQueueEvent
 
 # Create transfer orders from the warehouse app
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This feature enables warehouse workers to create and process transfer orders directly from the Warehouse Management mobile app. The worker starts by selecting the destination warehouse. Then, they can scan one or more license plates by using the app to add license plates to the transfer order. When the warehouse worker selects **Complete order**, a batch job creates the required transfer order and order lines based on the on-hand inventory registered for those license plates.
 

@@ -16,7 +16,7 @@ ms.assetid: 2bb96ac4-0cef-4f66-a953-bd82c117247b
 
 # System administration home page
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article points to content for system administrators of finance and operations. This content helps you configure the system so that it works smoothly and effectively for your organization.
 

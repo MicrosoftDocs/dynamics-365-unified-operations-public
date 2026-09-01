@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Add custom resources to your customization code
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to add custom static resources to your customization code so they're accessible in your Microsoft Dynamics 365 Commerce theme.
 

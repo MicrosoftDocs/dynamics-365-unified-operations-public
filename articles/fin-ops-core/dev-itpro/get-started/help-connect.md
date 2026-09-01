@@ -16,7 +16,7 @@ ms.assetid: 0b9c8630-9474-4473-80fd-7db5d54b2275
 
 # Configure the Help experience for finance and operations apps
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 [!INCLUDE [PEAP](../../../includes/peap-3.md)]
 

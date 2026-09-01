@@ -13,7 +13,7 @@ ms.custom:
 
 # Procurement FAQ
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides answers to frequently asked questions (FAQs) about the procurement functionality of Supply Chain Management.
 

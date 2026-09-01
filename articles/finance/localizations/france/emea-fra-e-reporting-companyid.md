@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Seller and buyer identification (CompanyId) in French e-reporting
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how the French e-reporting (electronic reporting of transactions) feature determines and reports the party identifier, `CompanyId`, and its scheme identifier, `schemeId`, for the **Seller** and **Buyer** nodes of a transaction. Use this information to understand which value is reported for each party, why a specific scheme code is used, and where the reported value comes from in Dynamics 365 Finance.
 

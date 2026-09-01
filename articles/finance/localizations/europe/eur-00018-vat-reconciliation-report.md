@@ -14,7 +14,7 @@ ms.search.form: MainAccountLookup
 ---
 # EUR-00018 VAT reconciliation report
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to generate a tax reconciliation report for Icelandic and Norwegian legal entities by using Microsoft Dynamics 365 Finance.
 

@@ -13,7 +13,7 @@ ms.search.region: France
 
 # Generate an FEC in Dynamics 365 Finance
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 To generate a Fichier des écritures comptables (FEC) audit file, follow these steps:
 

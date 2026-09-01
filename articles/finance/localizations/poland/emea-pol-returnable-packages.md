@@ -14,7 +14,7 @@ ms.assetid: decdb3af-9fc3-4aff-add1-bbb9d2eadc27
 
 # Returnable packaging for Poland
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and use returnable packaging for Poland in Microsoft Dynamics 365 Finance.
 

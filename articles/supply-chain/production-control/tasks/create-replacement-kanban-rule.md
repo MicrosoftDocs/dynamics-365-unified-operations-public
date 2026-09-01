@@ -12,7 +12,7 @@ ms.search.form: KanbanRules, KanbanRuleDuplicate
 
 # Create a replacement kanban rule
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure focuses on replacing an existing kanban rule with a new kanban rule on a specific date. This is useful when changes in the production flow or replenishment rules need to be coordinated and scheduled. The demo data company used to create procedure is USMF. This procedure is intended for the process engineer or the value stream manager when they prepare production for a changed production flow or a new replenishment rule. This task replaces kanban rule 000022 with a new rule and increases the maximum quantity from 48 to 100 for the new rule.
 

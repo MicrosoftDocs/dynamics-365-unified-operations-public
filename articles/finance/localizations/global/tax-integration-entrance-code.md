@@ -12,7 +12,7 @@ ms.custom:
 
 # Entrance code to tax integration
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to integrate a new transaction into tax integration. Before you start to use tax integration, you need some "entrance code" so that you can bypass the legacy tax engine and use the new logic instead. This article describes how to introduce this entrance code.
 
@@ -139,4 +139,3 @@ protected void setFieldsForTaxIntegrationDocumentObject(TaxIntegrationDocumentOb
 }
 ```
 
-[!include [banner](../../includes/banner.md)]

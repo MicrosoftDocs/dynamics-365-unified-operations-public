@@ -15,7 +15,7 @@ ms.search.validFrom: 2021-05-31
 
 # Enable batch retries
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Implementation of a retry mechanism in finance and Ooerations Batch is vital for maintaining robust data processing. A retry mechanism provides fault tolerance by automatically handling transient errors. Therefore, it ensures uninterrupted operation without requiring manual intervention. In addition, it enhances data integrity by reprocessing incomplete or failed transactions. Therefore, it reduces the risk of data loss. By minimizing downtime and manual intervention, a retry mechanism improves operational efficiency, so that batch processing can proceed smoothly, despite intermittent errors or disruptions.
 

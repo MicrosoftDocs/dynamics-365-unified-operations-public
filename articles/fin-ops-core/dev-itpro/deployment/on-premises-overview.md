@@ -15,7 +15,7 @@ ms.service: dynamics-365-op
 ---
 # On-premises deployment overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 Finance + Operations (on-premises) supports running business processes in customer data centers. With this deployment option, application servers and the Microsoft SQL Server database run in the customer’s data center. Customers and partners use Microsoft Dynamics Lifecycle Services to manage their on-premises deployments. Lifecycle Services is an application management portal that provides tools and services for managing the application lifecycle of your implementations in the cloud and on-premises. Lifecycle Services features, such as business process modeling, software deployment and patching, and monitoring and diagnostics, help support on-premises deployments.
 

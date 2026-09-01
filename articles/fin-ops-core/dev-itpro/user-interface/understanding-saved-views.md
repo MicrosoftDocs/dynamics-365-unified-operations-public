@@ -15,7 +15,7 @@ ms.custom:
 
 # Build forms that fully utilize saved views
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Saved views are an important expansion of personalization capabilities finance and operations applications. While the [Saved views](../../fin-ops/get-started/saved-views.md) article provides general details about this feature, this article focuses on the more technical elements of saved views as well as aspects of form development that may be impacted by views.
 

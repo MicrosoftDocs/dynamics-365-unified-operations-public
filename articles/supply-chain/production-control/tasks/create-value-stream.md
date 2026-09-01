@@ -12,7 +12,7 @@ ms.search.form: OMOperatingUnit, DefaultDashboard
 
 # Create a value stream
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Value streams are operating units, that group one or multiple production flows. To define a production flow, you first must define a value stream.
 

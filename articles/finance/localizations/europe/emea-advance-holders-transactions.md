@@ -15,7 +15,7 @@ ms.search.form: HcmWorkerAdvHolderTableListPage_RU
 
 # Advance holder transactions
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You can post transactions for workers who are advance holders by using advance holder accounts. You can track all advance holder transactions by using the worker ID specified for each advance holder. This number is retrieved as an account number for advance holder transactions in the **General journals** and **Advance holder transactions** pages.
 

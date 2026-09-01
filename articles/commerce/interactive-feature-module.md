@@ -14,7 +14,7 @@ ms.custom:
 
 # Interactive feature module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes interactive feature modules and explains how to add them to site pages in Microsoft Dynamics 365 Commerce.
 

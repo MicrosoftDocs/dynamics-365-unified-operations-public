@@ -12,7 +12,7 @@ ms.custom:
 
 # Exchange rate type for sales tax
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains the logic for exchange rate type setup and calculation for sales tax.
 

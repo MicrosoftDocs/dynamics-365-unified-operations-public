@@ -17,6 +17,8 @@ ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 
 # Vendor aging report
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 The **Vendor aging** report shows the balances that are due to vendors. Balances on the report are sorted either by date interval or by aging period definition.
 
 ## How to filter the data on this report

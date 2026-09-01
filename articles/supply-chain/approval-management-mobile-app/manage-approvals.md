@@ -13,7 +13,7 @@ ms.custom:
 
 # Manage approvals using the Approvals Management mobile app
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to use the Approvals Management mobile app to approve, reject, or delegate approval requests.
 

@@ -16,7 +16,7 @@ ms.service: dynamics-365-op
 
 # Configure batch-only and interactive-only AOS nodes in on-premises deployments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
 > This feature is supported starting in application update 10.0.12, Platform update 36.

@@ -14,7 +14,7 @@ ms.search.form: TaxRegistrationType, TaxRegistrationTypeCreate, TaxRegistrationL
 ---
 # EUR-00015 Set up VAT ID
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up VAT ID registration prerequisites such as setting up a registration type and assigning it to a registration category in Microsoft Dynamics 365 Finance.
 

@@ -15,7 +15,7 @@ ms.custom:
 
 # Create client plugins for Copilot in finance and operations apps
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 *Client plugins*, or client actions, are Microsoft Copilot plugins that invoke client code and are available for users in the context of client experiences for finance and operations apps. Developers can define plugins that convert the functionality, operations, and business logic of the X++ code base into actions that users can invoke and communicate with in natural language through the Copilot interface. For example, through client plugins, Copilot in finance and operations apps can be extended to let users enter natural language prompts in Copilot to perform application actions, fill in form values, or ask questions that require calculations and business logic from the application.
 

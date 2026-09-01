@@ -16,7 +16,7 @@ ms.assetid: ba523585-bab1-49c9-b6c9-6db1403494d9
 
 # Development tools tutorial
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This tutorial tours the Fleet Management solution in Visual Studio and introduces you to the development tools.
 

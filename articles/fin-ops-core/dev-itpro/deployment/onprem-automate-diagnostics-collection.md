@@ -17,7 +17,7 @@ ms.service: dynamics-365-op
 
 # Microsoft Dynamics 365 Finance + Operations (on-premises) automated diagnostics collection
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to quickly collect information that's required to troubleshoot problems in your environment. Diagnostics collection uses a new set of PowerShell scripts that are available as of version 2.19.0 of the infrastructure scripts. For more information about how to update your scripts, see [Update the infrastructure scripts](obtain-infrascripts-onprem.md#update-the-infrastructure-scripts).
 

@@ -15,7 +15,7 @@ ms.search.form: CustPosting, VendParameters
 
 # CFDI layout version 4.0
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 If your organization uses electronic invoices that a third-party digital signature service provider (PAC) validates and certifies, enable electronic invoicing by using the fields in the **CFDI** area of the **Electronic invoice parameters** page.
 

@@ -12,7 +12,7 @@ ms.search.form: ReqCreatePlanWorkspace
 
 # Set up master plans for the deprecated planning engine
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes various important strategies and parameters that are used to set up master plans when you are using the deprecated planning engine. It includes an overview of the types of plans that are used by master planning and explains which plan strategy you should use, depending on your business requirements. It also describes the main parameters that affect the plan and explains how those parameters influence the planned orders that are suggested.
 

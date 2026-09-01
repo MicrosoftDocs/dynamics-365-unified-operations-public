@@ -16,7 +16,7 @@ ms.assetid: 6b8e3420-b4c9-4e02-9588-598fe6d3df0d
 
 # Settle a partial vendor payment and the final payment in full before the discount date
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article walks you through a scenario where partial payments are made for a vendor invoice, and a cash discount is taken.
 

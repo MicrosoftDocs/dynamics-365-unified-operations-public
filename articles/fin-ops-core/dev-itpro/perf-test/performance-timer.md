@@ -16,7 +16,7 @@ ms.custom: sfi-image-nochange
 
 # Performance timer
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the Performance timer, which is a tool that helps you to determine why your system's performance might be slow.
 

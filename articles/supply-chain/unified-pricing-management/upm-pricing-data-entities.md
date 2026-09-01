@@ -13,7 +13,7 @@ ms.custom:
 
 # Pricing data import and export entities
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management and Dynamics 365 Commerce use the data management framework (DMF) for import and export. The following articles provide more information about it:
 

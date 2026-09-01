@@ -15,7 +15,7 @@ ms.custom:
 
 # Inquiry on deductible expenses
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to run an inquiry on deductible expenses for Japan in Microsoft Dynamics 365 Finance.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Establish a connection from a CLM system to Supply Chain Management
 
-[!include [banner](../../../includes/banner.md)]
+[!INCLUDE [banner](../../../includes/banner.md)]
 
 This article explains how a third-party contract lifecycle management (CLM) provider can simplify the process of establishing connections by efficiently configuring the contract management parameters in Microsoft Dynamics 365 Supply Chain Management and initiating the connection. The process can be initiated from the CLM system. It seamlessly transfers all the required configuration settings to the Supply Chain Management system.
 

@@ -14,7 +14,7 @@ ms.search.validFrom: 2021-02-05
 
 # NT2020.006 – Intermediary sales digital platform for NF-e
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 A sale can occur even when the customer isn't physically present. Instead, a digital platform or marketplace serves as an intermediary for the transaction. In these scenarios, the XML of the electronic fiscal document model 55 (NF-e) that you issue from the sale must contain a new tag to indicate that an intermediary participated in the operation.
 

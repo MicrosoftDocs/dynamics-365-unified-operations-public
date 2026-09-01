@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.12
 
 # Calculating Canadian Harmonized Sales Tax
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This feature helps your organization comply with Canadian Harmonized Sales Tax (HST) rules. The HST helps public sector entities maintain compliance with Canadian tax policies. Some Canadian provinces use the HST, and it's a combination of the Goods and Services Tax and the Provincial Sales Tax.
 Public sector entities can recover portions of the HST if they pay the tax to vendors, depending on the intent of the purchase. The financial dimension values and main account on a transaction line on a purchase document (for example, a purchase requisition, purchase order, or vendor invoice) designate the intent.

@@ -16,6 +16,8 @@ ms.dyn365.ops.version: 10.0.24
 
 # Establishments and registration IDs in General journals
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 Starting in Dynamics 365 Finance version 10.0.48, you can enable the **Establishment and Registration ID governance on invoices** feature in Feature management to control how establishments and registration IDs are applied to invoices across finance workflows.
 
 This feature introduces validation rules that determine:

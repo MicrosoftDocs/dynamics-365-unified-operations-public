@@ -11,7 +11,7 @@ ms.search.form: DataManagementWorkspace, WHSWaveTemplateTable, WHSWorkTemplateTa
 
 # Data entity support for user-configurable queries in warehouse management
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 One challenge of user-configurable queries is the interaction with data entities. Because the queries are packed in a way that isn't readable by users, it's difficult to make changes to them through the data entities. To address this issue, special JavaScript Object Notation (JSON) fields are added to the warehouse data entities that have user-configurable queries. All relevant warehouse entities are updated with support for these JSON fields.
 

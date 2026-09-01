@@ -14,7 +14,7 @@ ms.custom:
 
 # Customer search
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes customer search capabilities in Microsoft Dynamics 365 Commerce.
 

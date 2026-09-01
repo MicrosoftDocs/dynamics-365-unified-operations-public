@@ -17,7 +17,7 @@ ms.custom:
 
 # Out-of-box security reports
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Finance and operations apps provide a set of rich security reports to help you understand the set of security roles running in your environment and the set of users assigned to each role. In addition to the reports noted in this article, developers can generate a workbook containing all user security privileges for all roles by using **Visual Studio > Dynamics 365 > Addins > View related objects and licenses for all roles**.
 

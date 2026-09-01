@@ -14,7 +14,7 @@ ms.service: dynamics-365-op
 
 # Migrate to issuer store validation and dedicated cluster certificate for Service Fabric
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to migrate an existing Dynamics 365 Finance + Operations (on-premises) Service Fabric cluster from the pinned certificate issuer validation model to the issuer store model, and how to adopt the new dedicated **ServiceFabricCluster** certificate. Together, these changes provide more reliable certificate validation, simplify certificate rotations (no more hardcoded or pinned issuer), and prepare your cluster for the upcoming public CA restriction on dual EKU certificates.
 

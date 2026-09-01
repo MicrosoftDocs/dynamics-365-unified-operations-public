@@ -13,7 +13,7 @@ ms.custom:
 
 # Cost transaction entities
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Apportionment
 

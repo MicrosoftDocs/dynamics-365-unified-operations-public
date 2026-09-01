@@ -13,7 +13,7 @@ ms.custom:
 
 # Set up a warehouse by using a warehouse configuration template
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to set up a warehouse by using a warehouse configuration template. There are several predefined configuration templates that you can use. For information about how to use these templates, see [Configuration data templates](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
 

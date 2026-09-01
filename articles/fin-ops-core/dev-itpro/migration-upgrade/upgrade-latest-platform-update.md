@@ -15,7 +15,7 @@ ms.assetid: a70a4f28-9269-4b35-bc29-1edba0b92d83
 
 # Apply the latest platform update to environments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to apply the latest platform release to your finance and operations environment.
 

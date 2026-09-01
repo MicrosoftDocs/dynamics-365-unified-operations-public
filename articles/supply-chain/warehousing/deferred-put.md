@@ -12,7 +12,7 @@ ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask
 
 # Deferred processing of warehouse work
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the functionality that makes deferred processing of put operations for warehouse work available in Dynamics 365 Supply Chain Management.
 

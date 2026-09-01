@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Set up a process hierarchy, roles, and privileges
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 A *process hierarchy* provides a way to organize and manage the business processes in your company. After you define the process hierarchy for your company, you can assign various tasks, and define roles, entry points, and privileges according to the business requirements.
 

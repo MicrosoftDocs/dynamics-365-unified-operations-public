@@ -13,7 +13,7 @@ ms.search.region: Finland
 
 # Sales tax report for Finland
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and generate the sales tax report for legal entities in Finland in Microsoft Dynamics 365 Finance.
 

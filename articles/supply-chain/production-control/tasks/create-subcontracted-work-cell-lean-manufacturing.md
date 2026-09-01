@@ -12,7 +12,7 @@ ms.search.form:
 
 # Create a subcontracted work cell for lean manufacturing
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 To model subcontracted work for lean manufacturing, you must create a work cell that is associated with the vendor that provides the work. A subcontracted work cell is linked to the vendor through the association of a resource of the Vendor type. If you play this recording in the USMF demo company, you can select vendor account ID 1002 and site 1.
 

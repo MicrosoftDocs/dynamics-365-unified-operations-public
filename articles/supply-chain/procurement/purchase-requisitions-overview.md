@@ -15,7 +15,7 @@ ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetail
 
 # Purchase requisition overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the purchase requisition workflow and the different statuses that a purchase requisition can have.
 

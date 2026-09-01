@@ -16,7 +16,7 @@ ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 
 # NULLCONTAINER ER function
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The `NULLCONTAINER` function returns a null *Container (record)* value that has the same structure as the specified record list or record.
 

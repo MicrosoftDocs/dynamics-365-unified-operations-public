@@ -17,7 +17,7 @@ ms.assetid: 10f56dea-ea2d-48ea-9622-4ef715eb1179
 
 # Maintain vendor bank account information
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Vendors can use the Vendor collaboration functionality to maintain their bank account information. This article explains how to add and maintain bank information for vendors that you do business with.
 

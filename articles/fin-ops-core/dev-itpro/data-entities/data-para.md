@@ -12,7 +12,7 @@ ms.reviewer: twheeloc
 
 # Data import/export framework parameters
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the Data import/export framework parameters and options for data import and export.
 

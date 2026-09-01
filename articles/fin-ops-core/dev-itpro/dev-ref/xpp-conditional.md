@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ conditional statements
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the conditional statements in X++. The conditional statements are **if**, **if**...**else**, and **switch**. The ternary operator (**?:**) provides a value based on the provided expression. Use conditional statements to specify whether a statement is executed (with the **if** statement), or which statement is executed (with the **if**..**else**). Different conditional statements offer advantages in different situations.
 

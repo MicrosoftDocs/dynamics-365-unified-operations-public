@@ -14,7 +14,7 @@ ms.custom:
 
 # Task management overview
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides an overview of task management for managers and workers in Microsoft Dynamics 365 Commerce.
 

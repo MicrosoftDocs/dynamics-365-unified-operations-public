@@ -16,6 +16,8 @@ ms.custom:
 
 # Connect an experiment and edit variations
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 This article describes how to connect an experiment in Microsoft Dynamics 365 Commerce and make changes to your variations so that they align with your hypothesis.
 
 The following diagram shows all of the steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. Additional steps are covered in separate articles.

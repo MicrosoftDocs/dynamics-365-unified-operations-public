@@ -17,7 +17,7 @@ ms.custom:
 
 # Images on a page or in a grid
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the steps for displaying images on a page or in a grid. The article also provides background about some of the ways that images can be used, and the APIs that are used.  
 

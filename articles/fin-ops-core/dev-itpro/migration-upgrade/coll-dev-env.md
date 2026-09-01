@@ -14,7 +14,7 @@ ms.search.form: 2022-04-08
 
 # Change the database collation for development environments
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 **SQL\_Latin1\_General\_CP1\_CI\_AS** is the only supported database collation in finance and operations apps. For self-service environments, the Data migration toolkit handles collation conversion as part of the SQL replication process. However, for development environments (Tier 1 cloud-hosted environments), the database collation must be changed before the data upgrade is run. This article describes how to change the collation.
 

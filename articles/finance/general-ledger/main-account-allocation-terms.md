@@ -16,7 +16,7 @@ ms.assetid: 04c8548a-0af9-492b-954b-946b4f8ca023
 
 # Allocation terms
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about using allocation terms on a main account. Use allocation terms to distribute amounts across multiple ledger account combinations. They help ensure that expenses or revenues are charged to the correct object in accounting.
 

@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Insert data
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Use SQL statements, either interactively or in source code, to insert one or more rows into tables that the database stores.
 

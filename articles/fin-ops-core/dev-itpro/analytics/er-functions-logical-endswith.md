@@ -16,7 +16,7 @@ ms.assetid:
 
 # ENDSWITH ER function
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The `ENDSWITH` function determines whether the specified input ends with the specified text. It returns a *Boolean* value of **TRUE** if the specified input ends with the specified text. Otherwise, it returns a *Boolean* value of **FALSE**.
 

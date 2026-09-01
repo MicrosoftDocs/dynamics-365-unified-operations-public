@@ -13,6 +13,8 @@ ms.search.form: business-performance-analytics
 
 # Build an agent with ERP Analytics MCP in Copilot Studio (preview)
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 The Dynamics 365 ERP Analytics MCP server enables AI agents to access and analyze [Business performance analytics](business-performance-analytics-home-page.md) data through natural language. This article provides guidance and best practices for building an agent with the ERP Analytics MCP server in [Microsoft Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio).
 
 > [!IMPORTANT]

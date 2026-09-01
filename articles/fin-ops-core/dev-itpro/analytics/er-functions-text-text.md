@@ -16,7 +16,7 @@ ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 
 # TEXT ER function
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The `TEXT` function returns the specified number as a *String* value after it converts the number to a text string that's formatted according to the server locale settings of the current application instance.
 

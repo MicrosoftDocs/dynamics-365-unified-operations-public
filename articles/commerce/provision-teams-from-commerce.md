@@ -14,7 +14,7 @@ ms.custom:
 
 # Provision Microsoft Teams from Dynamics 365 Commerce
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to provision Microsoft Teams by using organizational data from Microsoft Dynamics 365 Commerce.
 

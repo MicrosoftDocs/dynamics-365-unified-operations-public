@@ -12,7 +12,7 @@ ms.search.form:
 
 # Use a QR code to connect the mobile app to Supply Chain Management
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The Warehouse Management mobile app supports QR code configuration to simplify the connection setup process. Instead of manually entering connection details, you can scan a QR code that contains all the required configuration information.
 

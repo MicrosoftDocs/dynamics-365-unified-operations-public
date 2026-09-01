@@ -14,7 +14,7 @@ ms.custom:
 
 # Cookie consent module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains cookie consent modules and how to add them to site pages in Microsoft Dynamics 365 Commerce.
 

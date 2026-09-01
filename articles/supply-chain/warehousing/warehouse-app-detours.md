@@ -13,7 +13,7 @@ ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour, WHS
 
 # Configure detours for steps in mobile device menu items
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to configure detours for menu items so that workers can "park" the current task, perform another task, and then return to the original task without losing any information.
 

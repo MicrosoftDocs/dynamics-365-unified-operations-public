@@ -13,7 +13,7 @@ ms.custom:
 ---
 # System requirements for a Dynamics 365 Commerce online extensibility development environment
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article lists the system requirements for setting up a Microsoft Dynamics 365 Commerce online extensibility development environment.
 

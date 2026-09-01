@@ -25,6 +25,7 @@ ms.custom: sfi-image-nochange
 
 # Restrict editing of personal information
 
+[!INCLUDE [banner](../includes/banner.md)]
 
 [!include [applies to](../includes/applies-to-hr.md)]
 

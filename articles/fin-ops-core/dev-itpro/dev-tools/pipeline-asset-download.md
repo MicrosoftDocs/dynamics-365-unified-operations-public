@@ -15,6 +15,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Download assets by using Azure Pipelines
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 You can automate the download of assets from the Asset library in Microsoft Dynamics Lifecycle Services by using the **Dynamics Lifecycle Services Asset Download** task in Azure DevOps.
 
 This article assumes that you have a working knowledge of [Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started).

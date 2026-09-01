@@ -16,7 +16,7 @@ ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
 
 # Customize embedded reports in analytical workspaces
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Analytical workspaces
 

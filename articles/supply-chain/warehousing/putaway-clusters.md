@@ -12,7 +12,7 @@ ms.search.form:
 
 # Putaway clusters
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Putaway clusters offer a way to pick multiple license plates at the same time and then take them for putaway in different locations. This process is often referred to as a *milk run*. Putaway clusters can be very useful for retail businesses, where license plates typically aren't full pallets of inventory.
 

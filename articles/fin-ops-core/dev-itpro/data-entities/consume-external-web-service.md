@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Consume external web services
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Consume web services by adding new class libraries. In Microsoft Dynamics AX 2012, you could consume web services from X++ code by adding Microsoft Visual Studio projects as a reference and by using **Aif::CreateServiceClient**. This scenario is supported, but the steps changed. Application Integration Framework (AIF) is no longer supported.
 

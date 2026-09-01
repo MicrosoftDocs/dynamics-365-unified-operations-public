@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Sales of non-GST goods
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 1. Go to **Accounts receivable** \> **Sales orders** \> **All sales orders**.
 1. Create a sales order, and define value-added tax (VAT) tax groups.

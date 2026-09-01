@@ -15,7 +15,7 @@ ms.custom:
 
 # Inquiries of the asset retirement obligation related transactions
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Learn how to view asset retirement obligation (ARO) related amounts and transactions for Japan in Microsoft Dynamics 365 Finance.
 

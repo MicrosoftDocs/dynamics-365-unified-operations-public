@@ -13,7 +13,7 @@ ms.search.region: Global
 
 # Danish Intrastat
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You can use the **Intrastat** page to generate and report information about trade among European Union (EU) countries/region. The Danish Intrastat declaration contains information about the trade of goods for reporting.
 

@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-06-30
 
 # Create and post a sales complementary fiscal document (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to create a sales complementary fiscal document to adjust a sales fiscal document generated for an incorrect price in Brazil with Microsoft Dynamics 365 Finance.
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.15
 
 # Restrict editing of accounting distributions on invoices
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to require that the financial dimensions on a purchase order (PO) match the dimensions on the corresponding vendor invoice. You can set up specific financial dimensions that must match between a PO and an invoice that is created from it. For example, you can require that all financial dimensions match between POs and invoices. On invoices that are associated with a PO, you can't change the general ledger accounts on the invoice detail lines so that they differ from the accounts that were entered on the PO lines.
 

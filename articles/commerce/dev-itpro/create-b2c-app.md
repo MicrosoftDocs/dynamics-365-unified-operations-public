@@ -14,7 +14,7 @@ ms.custom:
 
 # Create a B2C application
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to create a Microsoft Dynamics 365 Commerce business-to-consumer (B2C) application in the Microsoft Azure portal.
 

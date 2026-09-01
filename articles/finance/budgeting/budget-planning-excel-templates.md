@@ -20,7 +20,7 @@ ms.custom:
 
 # Budget planning templates for Excel
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to create Microsoft Excel templates that can be used with budget plans.
 

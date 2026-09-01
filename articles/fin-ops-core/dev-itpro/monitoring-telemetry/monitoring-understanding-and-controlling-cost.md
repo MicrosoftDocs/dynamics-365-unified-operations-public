@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Understand and control costs
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 It's crucial to manage telemetry costs in finance and operations apps because sending data to Azure Application Insights incurs charges based on many factors. By implementing effective strategies, you can help control these expenses and maintain robust monitoring. The Microsoft Dynamics 365 Application Insights team and the [!INCLUDE[appinsights](./includes/azure-application-insights-name.md)] team provide the guidelines and resources in this article.
 

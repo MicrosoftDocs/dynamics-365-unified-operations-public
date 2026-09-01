@@ -13,7 +13,7 @@ ms.custom:
 
 # Rebate management posting setup
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Rebate management posting profiles are used to determine posting entries for Rebate management calculation lines. When a posting profile is selected on the deal header, it applies to all deal lines.
 

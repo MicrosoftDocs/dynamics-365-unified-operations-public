@@ -25,6 +25,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure personal contact eligibility options
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This article explains how to configure the types of personal contacts that you can use in benefits in Microsoft Dynamics 365 Human Resources. Personal contacts are the individuals who are covered under your plans (dependents) or who benefit from your plans (beneficiaries). Dependents are typically spouses or children. Beneficiaries can be spouses, children, trusts, or parents.

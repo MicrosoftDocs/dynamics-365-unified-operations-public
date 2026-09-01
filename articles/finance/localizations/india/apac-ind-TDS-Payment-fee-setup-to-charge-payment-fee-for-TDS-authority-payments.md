@@ -14,7 +14,7 @@ ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 
 # Set up payment fees for TDS authority payments
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up payment fees that are charged for Tax Deducted at Source (TDS) authority payments.
 

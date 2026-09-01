@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 7.3
 
 # What's new or changed in Dynamics 365 Finance and Operations, Enterprise edition 7.3
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article describes features that are new or changed in Microsoft Dynamics 365 Finance and Operations, Enterprise edition 7.3. This version was released in December 2017 and has a build number of 7.3.11971.56116.
 

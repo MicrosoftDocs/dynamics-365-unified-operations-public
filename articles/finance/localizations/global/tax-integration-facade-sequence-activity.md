@@ -12,7 +12,7 @@ ms.custom:
 
 # Facade, sequence, and activities in tax integration
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The **facade** controls the tax integration flow through a **sequence** that maintains a list of **activities**. This article introduces these three classes in tax integration.
 

@@ -13,7 +13,7 @@ ms.reviewer: johnmichalak
 
 # Advanced notes management
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The Advanced notes management feature lets you set up predefined notes that apply to all or specific customers, vendors, and products. You can then add these notes to specific business documents.
 

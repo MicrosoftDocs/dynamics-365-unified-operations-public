@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 2019-6-30
 
 # Business events and Microsoft Power Automate
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure and consume a business event from a Microsoft Power Automate endpoint by using the **When a Business Event occurs** trigger of the finance and operations connector.
 

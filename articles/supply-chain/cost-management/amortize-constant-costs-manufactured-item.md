@@ -13,7 +13,7 @@ ms.custom:
 
 # Amortize constant costs for a manufactured item
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A manufactured item's constant costs reflect the operation setup times and the components that have a constant quantity or a constant scrap amount.
 

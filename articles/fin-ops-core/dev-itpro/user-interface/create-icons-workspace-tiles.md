@@ -18,7 +18,7 @@ ms.assetid: 4f78c3a4-011f-4ebd-bada-98e77d43821e
 
 # Create icons for workspace tiles
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides guidelines and recommendations for creating and assigning icons to custom workspace tiles.  
 

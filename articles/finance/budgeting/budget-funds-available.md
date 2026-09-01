@@ -17,7 +17,7 @@ ms.assetid: be964167-43bc-431d-9adb-48bff32d68d5
 
 # Budget funds available
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article helps you configure budget control to optimize management of your organization's financial resources.
 

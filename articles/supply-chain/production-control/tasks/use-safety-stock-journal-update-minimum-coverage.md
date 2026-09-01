@@ -12,7 +12,7 @@ ms.search.form: ReqItemJournalName, ReqItemJournalSafetyStock, EcoResProductInfo
 
 # Use the safety stock journal to update minimum coverage
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to calculate minimum coverage proposals based on historical transactions and then update the item coverage with the proposals. This is done using the safety stock journal. The demo data company used to create this task is USMF. This task is intended for the production planner, to help maintain minimum coverage.
 

@@ -14,7 +14,7 @@ ms.custom:
 
 # Customer attributes
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how you can use configurations to add new fields to the customer master record in Microsoft Dynamics 365 Commerce.
 

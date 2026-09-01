@@ -11,7 +11,7 @@ ms.search.form:
 
 # Recalculate line net amounts when importing sales orders and quotations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes whether and how the system recalculates line net amounts when sales orders and quotations are imported. It also explains how you can control the behavior in different versions of Microsoft Dynamics 365 Supply Chain Management.
 

@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 17
 
 # AX 2009 migration – Import packages
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can import data for a group of logically related entities that are sequenced in the correct order. You have three options for importing Microsoft Dynamics AX 2009 data that you want to migrate:
 

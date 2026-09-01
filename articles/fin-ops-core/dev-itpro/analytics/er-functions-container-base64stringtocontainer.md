@@ -16,7 +16,7 @@ ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 
 # Base64StringToContainer ER function
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The `BASE64STRINGTOCONTAINER` [function](er-formula-language.md#Functions) converts the specified input of the *String* type to a data item of the *[Container](er-functions-category-container.md)* type.
 

@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.8
 
 # Improved inquiry on debit/credit settlement
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how you can view invoice and payment settlement information in a convenient and simple format.
 

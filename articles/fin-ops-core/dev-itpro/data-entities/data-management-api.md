@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Platform update 5
 
 # Data management package REST API
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the Data management framework's package representational state transfer (REST) application programming interface (API). The package API lets you integrate by using data packages. You can use the REST API with both cloud deployments and on-premises deployments.
 

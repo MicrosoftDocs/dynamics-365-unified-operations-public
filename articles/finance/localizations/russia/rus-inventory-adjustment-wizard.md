@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-10-28
 
 # Inventory adjustment wizard
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with the Inventory adjustment wizard used to adjust on-hand inventory and transactions for Russia in Microsoft Dynamics 365 Finance.
 

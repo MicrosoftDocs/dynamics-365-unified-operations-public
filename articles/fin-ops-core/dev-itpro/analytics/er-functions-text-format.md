@@ -16,7 +16,7 @@ ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 
 # FORMAT ER function
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The `FORMAT` function returns the specified string as a *String* value after it formats the string by substituting any occurrences of **%N** with the *N*th argument.
 

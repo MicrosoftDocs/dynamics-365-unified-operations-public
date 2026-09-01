@@ -16,7 +16,7 @@ ms.assetid: b85c4019-f682-45bf-9a0d-c7549a2f1274
 
 # Prepare for JPK_KR_PD reporting
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to prepare for JPK_KR_PD reporting in legal entities in Poland in Microsoft Dynamics 365 Finance.
 

@@ -16,6 +16,8 @@ ms.dyn365.ops.version: 10.0.25
 
 # Reporting currency out of balance when the year-end close is run
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 The **Awareness between ledger settlement** feature, along with its associated features **Automate ledger settlement process** and **Post foreign currency realized gains/losses for ledger settlements**, is found on the **General Ledger parameters**, specifically under the **Ledger settlements** tab. Manage these features through the **Enable advanced awareness options**, **Enable process automation for ledger settlement**, and **Enable post currency realized gains/losses for ledger settlements** parameters.
 
 When you select the **Enable advanced awareness options** parameter, settled ledger transactions no longer appear in the opening balance of the next fiscal year when the general ledger year-end close runs. The exclusion of settled ledger transactions might present a challenge for customers at year-end close if a reporting currency is defined for the ledger.

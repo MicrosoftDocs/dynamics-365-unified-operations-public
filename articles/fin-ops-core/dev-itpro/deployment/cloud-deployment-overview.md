@@ -18,7 +18,7 @@ ms.dyn365.ops.version: Platform Update 8
 
 # Cloud deployment overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 To work with Microsoft to deploy finance and operations apps in the cloud, you need to understand the environment and subscription that you're deploying to, who can perform which tasks, and the data and customizations that you need to manage.
 Sign up for the Full Microsoft FastTrack for Dynamics 365 to help speed your deployment and implementation. This program provides training and consulting to help you realize business value faster. For more information, see [Microsoft FastTrack](/dynamics365/fasttrack/). If you choose to use the Essentials FastTrack program instead, use the Implementation Project Methodology in Microsoft Dynamics 365 Lifecycle Services to help you manage your implementation project.

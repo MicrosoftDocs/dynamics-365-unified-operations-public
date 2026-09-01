@@ -16,7 +16,7 @@ ms.dyn365.ops.version:
 
 # Post TDS/TCS on non-filers at a higher rate of tax
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to post Tax Deducted at Source (TDS) and Tax Collected at Source (TCS) on non-filers at a higher rate of tax in Microsoft Dynamics 365.
 Section 206AB of the Income Tax Act was recently introduced by the Finance Act, 2021. It applies to any sum or income, or the amount paid, payable, or credited by one person (referred to as the deductee) to a "specified person." A "specified person" is someone who didn't file income tax returns for the two assessment years that are relevant to the two previous years that immediately precede the previous year in which tax must be either deducted or collected.

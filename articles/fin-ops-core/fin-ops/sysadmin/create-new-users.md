@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Create new users
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 Before you can access finance and operations apps, an admin must add you to the **Users** page (**System administration \> Users \> Users**). Users include internal employees of your organization, or external customers and vendors. You can import or manually add users. All users must have the correct license for compliant use.
 

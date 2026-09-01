@@ -17,7 +17,7 @@ ms.custom:
 
 # On-premises diagnostics
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The Microsoft Dynamics 365 team monitors the health and performance of the Azure Services that provide functionality for cloud-based customers by using state-of-the-art Azure diagnostic tools. For customers who implement Finance + Operations (on-premises) and want to monitor the health and performance of their on-premises solution, several third-party offerings are available.
 

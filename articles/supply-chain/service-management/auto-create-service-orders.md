@@ -13,7 +13,7 @@ ms.custom:
 
 # Automatically create service orders
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can generate service orders that are based on a service agreement for the valid period of the service agreement.
 

@@ -11,7 +11,7 @@ ms.search.form: IoTIntCoreScenarioManagement, IoTIntCoreNotification, IoTIntMfgR
 
 # Machine status scenario (preview)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 

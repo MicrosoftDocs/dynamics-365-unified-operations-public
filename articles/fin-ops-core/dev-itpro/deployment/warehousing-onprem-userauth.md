@@ -14,7 +14,7 @@ ms.service: dynamics-365-op
 
 # User-based authentication for the Warehouse Management mobile app in on-premises deployments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The Warehouse Management mobile app supports the following types of user-based authentication methods:
 

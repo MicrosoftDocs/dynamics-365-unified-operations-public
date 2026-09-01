@@ -13,7 +13,7 @@ ms.date: 03/05/2026
 
 # Chat with finance and operations data (preview)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 The Microsoft agent platform enables you to chat with your finance and operations data to enable users to ask questions of an agent that derives the answers from the structured finance and operations data to which the user has access. You can enable this feature in Copilot Studio by adding finance and operations data as knowledge sources to your agents to give you the flexibility to add the right knowledge for your desired agent experiences. For more information, see [Knowledge sources overview](/microsoft-copilot-studio/knowledge-copilot-studio)

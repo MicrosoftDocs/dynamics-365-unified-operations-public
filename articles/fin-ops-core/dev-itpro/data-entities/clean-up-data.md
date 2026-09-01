@@ -12,7 +12,7 @@ ms.reviewer: twheeloc
 
 # Clean up data management job history
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Clean up data
 

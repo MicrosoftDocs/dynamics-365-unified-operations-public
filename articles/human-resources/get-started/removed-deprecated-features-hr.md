@@ -24,6 +24,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Removed or deprecated features in Dynamics 365 Human resources
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article describes features that have been removed, or that are planned for removal from Microsoft Dynamics 365 Human resources.
 
 - A *removed* feature is no longer available in the product.

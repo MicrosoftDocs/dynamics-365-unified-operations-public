@@ -15,7 +15,7 @@ ms.custom:
 
 # Sales on commission
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with sales on commission for Russia in Microsoft Dynamics 365 Finance.
 

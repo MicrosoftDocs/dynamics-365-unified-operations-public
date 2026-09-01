@@ -13,7 +13,7 @@ ms.custom:
 
 # Action messages
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 An action message is a system-generated suggestion to change an existing planned, approved, or firmed order.
 

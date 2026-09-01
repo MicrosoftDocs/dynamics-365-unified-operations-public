@@ -13,7 +13,7 @@ ms.custom:
 
 # List module
 
-[!include [banner](../../../../includes/banner.md)]
+[!INCLUDE [banner](../../../../includes/banner.md)]
 [!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 A list is a control that contains any numbers of rows.

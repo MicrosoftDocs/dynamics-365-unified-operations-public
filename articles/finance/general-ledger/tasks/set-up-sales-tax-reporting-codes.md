@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Set up sales tax reporting codes
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The **Sales tax reporting codes** refer to a field number that's listed on a sales tax report. They are used on country/region-specific report layouts. They're also used on the Sales tax payment by code report. That report shows sales tax amounts for a settlement period summarized for each reporting code. After you create **Sales tax reporting codes**, you can refer to those codes on the **Report setup** FastTabs, which you can access from the **Sales tax code** page. 
 

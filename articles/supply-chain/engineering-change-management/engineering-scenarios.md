@@ -13,7 +13,7 @@ ms.custom:
 
 # Engineering change management feature walkthrough
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an end-to-end walkthrough that shows how to work with engineering change management. It goes through each of the most important scenarios:
 

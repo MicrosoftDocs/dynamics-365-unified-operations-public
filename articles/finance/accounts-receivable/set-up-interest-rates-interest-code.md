@@ -16,7 +16,7 @@ ms.assetid: 3b945333-1eaf-4658-ab5a-1a7791a7eb40
 
 # Set up interest rates for an interest code
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Interest codes contain settings that determine when to charge interest and how to calculate it on overdue accounts.
 

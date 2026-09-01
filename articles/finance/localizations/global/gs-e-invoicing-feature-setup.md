@@ -14,7 +14,7 @@ ms.custom:
 
 # Configure feature setups
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 To set up the generation of electronic files and other processing steps (such as digitally signing files, submitting them to the government web service and receiving a response, or storing them), set up the processing pipeline, applicability rules, and variables for Electronic invoicing features.
 

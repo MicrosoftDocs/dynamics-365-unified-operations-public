@@ -13,7 +13,7 @@ ms.custom:
 
 # Advanced export management overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Companies that trade internationally in goods that are subject to external regulations and internal policies must keep track of many rules and policies. The advanced export management solution lets you express these rules, even complex ones, by using formulas that are similar to the formulas in Microsoft Excel. The system then ensures that the rules are honored throughout the sales and fulfillment process.
 

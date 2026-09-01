@@ -20,7 +20,7 @@ ms.dyn365.ops.version: Release 10
 ---
 # What's new or changed in Dynamics 365 for Retail (April 2019)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes features that are new or changed in Microsoft Dynamics 365 Retail (April 2019). 
 

@@ -16,7 +16,7 @@ ms.assetid: 9cc37003-adf1-413d-b2b2-2badcf512e3b
 
 # Set up and process recurring invoices
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to set up and process recurring invoices. Use recurring invoices when you need to bill customers for the same amount regularly.
 

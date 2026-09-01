@@ -17,7 +17,7 @@ ms.custom:
 
 # Loyalty overview
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides an overview of the loyalty capabilities in Microsoft Dynamics 365 Commerce.
 

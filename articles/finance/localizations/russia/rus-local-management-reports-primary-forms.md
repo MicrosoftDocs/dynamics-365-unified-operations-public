@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-10-31
 
 # Advance holders reports
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The following reports are available for advance holders in Russia.
 

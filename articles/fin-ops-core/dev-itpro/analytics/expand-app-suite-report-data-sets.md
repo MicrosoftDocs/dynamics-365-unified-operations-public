@@ -15,7 +15,7 @@ ms.assetid: 7810ee2c-e012-4a0f-992c-840e626bf437
 
 # Expand Application Suite report data sets
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article shows how to expand an existing report data set that uses X++ business logic in a report data provider (RDP) class.
 

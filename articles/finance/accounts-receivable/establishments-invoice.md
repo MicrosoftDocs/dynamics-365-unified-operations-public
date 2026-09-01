@@ -10,6 +10,8 @@ ms.topic: concept-article
 
 # Establishment behavior by invoice type
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article explains how Dynamics 365 Finance applies establishments and registration IDs to customer invoices and free text invoices. It covers defaulting behavior, validation rules, and relevant accounts receivable parameter considerations. These capabilities support regulatory compliance scenarios such as French electronic invoicing (e-invoicing).
 
 ## What is an establishment?

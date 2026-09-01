@@ -13,7 +13,7 @@ ms.custom:
 
 # Cost entries
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about cost entries and when they're created. A cost entry is a record that registers the quantity and cost of a given event.
 

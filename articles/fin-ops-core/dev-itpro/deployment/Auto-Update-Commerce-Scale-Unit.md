@@ -13,7 +13,7 @@ ms.custom:
 
 # Autoupdate for Commerce Scale Unit (cloud)
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This feature currently applies to cloud-hosted Commerce Scale Unit (CSU). Self-hosted CSU isn't included and must self-update.
 

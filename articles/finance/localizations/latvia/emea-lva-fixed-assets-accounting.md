@@ -17,7 +17,7 @@ ms.assetid: cbf94106-2c1b-45dd-8734-18a2a56a4682
 
 # Fixed assets accounting for tax purposes
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about the tax depreciation functionality for Latvia, including the tax depreciation setup and calculation and printing the tax depreciation report.
 > [!NOTE]

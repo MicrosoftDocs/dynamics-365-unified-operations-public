@@ -16,7 +16,7 @@ ms.assetid: 5c2378fe-cb34-4a81-a940-57d4e13eb282
 
 # Build and debug projects
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In this tutorial, you learn how to use the tools in Visual Studio to analyze and debug code in the Fleet Management application. You go through a simple developer scenario in which you set breakpoints, modify some code, and build the result.
 

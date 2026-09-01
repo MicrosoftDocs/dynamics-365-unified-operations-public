@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Change theme module strings
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to change module library strings from within a theme in Microsoft Dynamics 365 Commerce.
 

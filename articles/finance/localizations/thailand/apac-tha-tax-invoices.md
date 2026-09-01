@@ -13,7 +13,7 @@ ms.reviewer: johnmichalak
 
 # Tax invoices
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and work with tax invoices for Thailand in Microsoft Dynamics 365 Finance.
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Set up main account categories
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up main account categories. Main account categories are used for the default reports in financial reporting and in Power BI. Main account categories that are created by default can be renamed but not deleted. Additional account categories can be created and used for reporting and analysis purposes. This article uses the USMF demo company.
 

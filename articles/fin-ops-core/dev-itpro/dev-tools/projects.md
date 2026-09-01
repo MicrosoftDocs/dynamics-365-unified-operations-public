@@ -15,7 +15,7 @@ ms.assetid: d0d12e0e-a417-41b1-b2eb-7c69eee5ac61
 
 # Finance and operations project type in Visual Studio
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The finance and operations project type is part of the development tools. This project type resembles other projects in Visual Studio. It helps you organize and manage the elements you're working with for a model. For example, the project can have folders that help you group the elements. A Visual Studio solution can contain multiple projects. One important constraint for a project is that it can contain elements from only one model. If you need to work with elements from different models, you must use multiple projects in your Visual Studio solution.
 
@@ -35,7 +35,8 @@ To create a new, empty project, follow these steps:
 Every project has several important properties. To set the properties for a project, right-click the project in **Solution Explorer**, and then select **Properties**. The following table describes these properties.
 
 Property | Description
----|---
+---
+|---
 Startup Object type | The type of object that the project uses as the **Startup Object** when the project runs. The following types are available:<br>Form<br>Class<br>Output menu item
 |Startup Object | The object that the project invokes when it runs.
 |Company | The default company that the project uses when it runs.

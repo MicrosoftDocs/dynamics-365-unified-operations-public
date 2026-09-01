@@ -13,7 +13,7 @@ ms.custom:
 
 # Set up a carrier fuel index
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This guide shows how to create a fuel index region, a fuel index, and a carrier fuel index. The fuel index region specifies which region the fuel index applies to, and the fuel index specifies a fuel price for a particular period of time. To reflect the change in fuel prices over time, you can associate multiple fuel indexes with a carrier. A transportation coordinator normally performs these tasks. You can use this procedure in demo data company *USMF* or with your own data.
 

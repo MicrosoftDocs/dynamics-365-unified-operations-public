@@ -17,7 +17,7 @@ ms.assetid: 2d1fad67-8234-49cc-b009-0f3cc29f5886
 
 # VAT exchange rate overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about exchange rates for the VAT calculation that's available for the Czech Republic, Hungary, and Poland. The exchange rate that you use for VAT calculation can differ from the exchange rate used for company accounting functions. When you post a document in a foreign currency, you post any exchange rate differences to specific ledger accounts.
 

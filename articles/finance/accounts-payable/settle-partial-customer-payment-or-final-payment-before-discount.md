@@ -16,7 +16,7 @@ ms.assetid: 0f07d3ce-a439-43ed-a22e-957ccd36a37b
 
 # Settle partial and final payments in full before the discount date
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides scenarios that show how to record partial payments for a customer and take cash discounts within the cash discount period.
 

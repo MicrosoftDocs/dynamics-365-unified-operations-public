@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.31
 
 # Track changes for finance and operations virtual tables in Dataverse
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Row version change tracking for finance and operations
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Sensor Data Intelligence home page (preview)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 [!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 <!-- KFM: Preview until further notice -->

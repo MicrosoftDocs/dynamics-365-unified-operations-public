@@ -16,7 +16,7 @@ ms.assetid: 0c225408-d300-4be6-a509-7315a1f7548c
 
 # License codes and configuration keys report
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article points you to a report that lists the license codes and configuration keys available in finance and operations.
 

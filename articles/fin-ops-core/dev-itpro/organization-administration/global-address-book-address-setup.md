@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Address setup
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 Global regions where your organization operates might have different address format types. You must be able to adjust to the appropriate address format when a postal address is shown for each region. You can use the **Address setup** page to set up the postal address formats that are required for your organization.
 

@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-06-30
 
 # Issue customer fiscal documents (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to issue a fiscal document for a customer who bought goods from the fiscal establishment in Brazil with Microsoft Dynamics 365 Finance
 

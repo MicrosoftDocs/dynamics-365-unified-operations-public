@@ -18,7 +18,7 @@ ms.assetid: 835ec594-744e-461c-a676-1b9abc094173
 
 # Bonus depreciation
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the bonus depreciation functionality.
 

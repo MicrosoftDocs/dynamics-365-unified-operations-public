@@ -12,7 +12,7 @@ ms.search.form: SMASubscriptionGroup
 
 # Subscription groups
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Subscriptions share the following information, which is defined for the subscription group:
 

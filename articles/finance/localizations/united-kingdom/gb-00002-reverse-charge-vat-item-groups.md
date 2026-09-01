@@ -15,7 +15,7 @@ ms.search.form: ReverseChargeItemGroup_W, EcoResCategorySingleLookup, ReverseCha
 
 # GB-00002 Set up reverse charge VAT item groups, rules, and parameters
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up reverse charge item groups, applicability rules for purchasing and for sales purposes, and reverse charge parameters for the United Kingdom in Microsoft Dynamics 365 Finance.
 

@@ -15,7 +15,7 @@ ms.dyn365.ops.version: App Update 10.0.2
 
 # Queries in the Acceptance test library
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A query class provides fluent APIs that you use to find an instance of the corresponding entity based on various criteria. Use query classes in validation scenarios. Use them together with specifications.
 

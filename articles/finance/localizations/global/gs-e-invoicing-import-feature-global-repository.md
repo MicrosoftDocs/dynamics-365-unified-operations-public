@@ -14,7 +14,7 @@ ms.custom:
 
 # Import features from the repository
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The Dataverse repository contains electronic invoicing features that you can share with your configuration provider. Microsoft shares all electronic invoicing features with all companies. You automatically get access to all the electronic invoicing features that Microsoft releases and publishes to the Dataverse repository.
 

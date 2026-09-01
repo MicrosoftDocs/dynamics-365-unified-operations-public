@@ -14,7 +14,7 @@ ms.custom:
 
 # Work with CSS override files
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to use Cascading Style Sheets (CSS) override files in Microsoft Dynamics 365 Commerce.
 

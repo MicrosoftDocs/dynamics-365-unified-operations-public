@@ -16,7 +16,7 @@ ms.assetid: 8bd10c93-9d5e-49d7-b20f-7f804e16e76c
 
 # Language Integrated Query (LINQ) provider for C\#
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article discusses the LINQ provider.
 

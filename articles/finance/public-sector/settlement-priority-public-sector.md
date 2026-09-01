@@ -16,7 +16,7 @@ ms.assetid: b6f96e12-5614-4edf-9f67-47bf011b6ee7
 
 # Settlement priority in the public sector
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In Dynamics 365 Finance, you can manually select transactions to settle, or you can use the automatic settlement functionality. Public-sector organizations have additional options for prioritizing settlements by using billing classifications. These options can be used with automatic or manual settlement.
 

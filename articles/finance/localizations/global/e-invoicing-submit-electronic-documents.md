@@ -12,7 +12,7 @@ ms.custom:
 
 # Submit electronic documents
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Submitting electronic documents creates a single point of communication between Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management and Electronic invoicing. During each submission event, communication flows in both directions:
 

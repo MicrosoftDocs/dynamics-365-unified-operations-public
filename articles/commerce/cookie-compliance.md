@@ -14,7 +14,7 @@ ms.custom:
 
 # Cookie compliance
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes considerations for cookie compliance and the default policies included in Microsoft Dynamics 365 Commerce.
 

@@ -12,7 +12,7 @@ ms.search.form: SMASubscriptionGroup
 
 # Create service subscriptions from a subscription group
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 1. Go to **Service management** > **Setup** > **Service subscriptions** > **Subscription groups**.
 

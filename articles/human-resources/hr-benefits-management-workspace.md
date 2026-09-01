@@ -25,6 +25,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Benefits management workspace
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 This article describes the **Benefits management** workspace in Dynamics 365 Human Resources.
 
 The **Benefits management** workspace gives you a quick view of benefits items that require your attention. On this page, you can see:

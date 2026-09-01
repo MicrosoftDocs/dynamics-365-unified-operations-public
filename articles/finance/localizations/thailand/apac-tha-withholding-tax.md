@@ -15,7 +15,7 @@ ms.search.form: TaxWithholdGroup, TaxWithholdTable, TaxWithholdTrans
 
 # Withholding tax in Thailand
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up withholding tax for Thailand in Microsoft Dynamics 365 Finance.
 

@@ -17,7 +17,7 @@ ms.custom:
 
 # Financial analysis
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 **Financial analysis** uses Microsoft Power BI to bring together financial key performance indicators (KPIs), charts, and financial statements. Power BI is embedded in the application. The focus of **Financial analysis** is analytical reporting. Personas across an organization can view, research, understand, and act.
 

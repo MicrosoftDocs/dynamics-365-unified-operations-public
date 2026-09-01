@@ -14,7 +14,7 @@ ms.custom:
 
 # Breadcrumb module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes breadcrumb modules and explains how to add them to site pages in Microsoft Dynamics 365 Commerce.
 

@@ -15,7 +15,7 @@ ms.assetid: 92223189-69a8-4a40-b867-ef9b4f14c23d
 
 # Enable customer payments and cash discounts
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 When you create a customer payment journal in a legal entity that you configured for Brazil, and cash discounts apply on the payment date, if you change the payment date in the payment journal to a date when discounts no longer apply, the payment journal currently continues to calculate cash discounts. It doesn't remove the cash discounts from the settlement amount.
 

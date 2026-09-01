@@ -13,7 +13,7 @@ ms.custom:
 
 # Inventory aging report storage
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In Microsoft Dynamics 365 Supply Chain Management, you can run an *inventory aging report storage* report and make the output available as a form and a chart. In the form, columns and aggregate balances dynamically adjust based on the configured layout. The chart provides a visual overview that supports filtering and lets you drill down into details. Additionally, a data entity named *Inventory aging report* lets you export the results of an *inventory aging report storage* report run to a format such as a Microsoft Excel file or a PDF file.
 

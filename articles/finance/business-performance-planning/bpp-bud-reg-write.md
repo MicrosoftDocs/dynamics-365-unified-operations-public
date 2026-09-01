@@ -15,6 +15,8 @@ ms.dyn365.ops.version:
 
 # Write-back to Dynamics 365 Finance budget register entry
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 ## Overview

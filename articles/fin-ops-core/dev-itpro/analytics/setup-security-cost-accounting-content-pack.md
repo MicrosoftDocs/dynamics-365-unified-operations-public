@@ -15,7 +15,7 @@ ms.assetid: 3a7ba8b0-ac57-4159-9cd8-4308f6021f36
 
 # Set up security for the Cost accounting analysis Power BI content
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how you can propagate the access-level security in Cost accounting to row-level security in Microsoft Power BI. This functionality helps guarantee that users see only Power BI data that they're granted access to.
 

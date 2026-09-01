@@ -12,7 +12,7 @@ ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, KanbanFlowSelecti
 
 # Create a kanban rule for multiple activities
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to create a kanban rule that includes multiple activities from a production flow. The demo data company used to create this task is USMF. This task is intended for the process engineer or the value stream manager, as they prepare production of a new or modified product in a lean environment.
 

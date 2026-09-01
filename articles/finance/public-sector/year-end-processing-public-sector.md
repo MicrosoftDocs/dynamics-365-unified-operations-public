@@ -17,7 +17,7 @@ ms.assetid: ba9a7abc-bd18-47c2-b745-96cdcec8ac98
 
 # Year-end processing in the public sector
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about year-end processing for public sector organizations.
 

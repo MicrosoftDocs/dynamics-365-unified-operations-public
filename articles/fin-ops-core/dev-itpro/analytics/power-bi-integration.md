@@ -16,7 +16,7 @@ ms.assetid: bf6eff60-4a30-4338-a55f-1f2a97d3debe
 
 # Features available through the Power BI integration
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft Power BI is a suite of business analytics tools that you can use to analyze data and share insights. By using Power BI tools, you can explore data and quickly create rich reports and dashboards. You and your colleagues can then use the reports interactively on many devices. The application uses Power BI for data exploration.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Physical and financial updates
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of which types of transactions increase or decrease inventory quantities.
 

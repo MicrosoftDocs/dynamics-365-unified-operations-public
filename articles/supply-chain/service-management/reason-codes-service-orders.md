@@ -15,7 +15,7 @@ ms.custom:
 
 # Reason codes for service orders
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can use reason codes to help explain the status of a service order when the stage of a service order is updated. For example, if you cancel a service order, you can select a reason code for the cancellation.
 

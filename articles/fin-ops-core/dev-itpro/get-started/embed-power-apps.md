@@ -15,7 +15,7 @@ ms.custom:
 
 # Embed canvas apps from Power Apps
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 Microsoft Power Apps is a service that lets developers and nontechnical users build custom business apps for mobile devices, tablets, and the web without writing code. Finance and operations apps support integration with Power Apps. Canvas apps that you, your organization, or the broader ecosystem develop can be embedded into finance and operations apps to augment the product's functionality. For example, you might build a canvas app from Power Apps to supplement a finance and operations app with information that is retrieved from another system.
 

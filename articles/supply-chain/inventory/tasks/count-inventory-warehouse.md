@@ -13,7 +13,7 @@ ms.custom:
 
 # Count inventory in a warehouse
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes the process of creating and posting an inventory counting journal to count a specific item at a location in the warehouse. The procedure applies to the Inventory management module when you're not using warehouse management processes (WMS). The procedure doesn't apply to WMS-enabled warehouse functionality that's available in the Warehouse management module. You can walk through this procedure in the [demo data](../../../fin-ops-core/dev-itpro/get-started/demo-data.md) company USMF, or use your own data. If you use your own data, make sure that you set up products and locations, and create an inventory journal name for counting journals. A warehouse employee normally performs inventory counting.
 

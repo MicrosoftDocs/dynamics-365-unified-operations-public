@@ -16,7 +16,7 @@ ms.assetid: 553933ca-928d-4031-bb8c-f9cff458320b
 
 # Default offset accounts for vendor invoice and invoice approval journals
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use default offset accounts on the following vendor invoice journal pages:
 

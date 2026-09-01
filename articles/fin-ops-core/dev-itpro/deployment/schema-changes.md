@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Schema changes for shorter downtime during custom package deployments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes best practices and guidelines that can help you achieve near-zero downtime while you apply table schema changes when you plan custom package deployments.
 

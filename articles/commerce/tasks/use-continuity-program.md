@@ -14,7 +14,7 @@ ms.custom:
 ---
 # Using continuity program
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to sell a continuity program and process related sales orders in Microsoft Dynamics 365 Commerce.
 

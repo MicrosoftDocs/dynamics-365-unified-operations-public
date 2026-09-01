@@ -19,7 +19,7 @@ ms.assetid: d2c604df-daae-42cd-82d9-c80e3dee4a60
 
 # General ledger home page
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use General ledger to define and manage the legal entity’s financial records. The general ledger is a register of debit and credit entries. These entries are classified using the accounts that are listed in a chart of accounts. 
 

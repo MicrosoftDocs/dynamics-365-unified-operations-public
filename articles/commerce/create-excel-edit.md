@@ -12,7 +12,7 @@ ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ---
 # Create an Excel workbook to edit retail transactions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to create an Excel workbook so that you can edit retail transactions in Microsoft Dynamics 365 Commerce.
 

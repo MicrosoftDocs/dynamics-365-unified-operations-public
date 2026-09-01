@@ -15,7 +15,7 @@ ms.custom:
 
 # Post a project invoice with a payment slip
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to post a project invoice with a payment slip in a specified format in Denmark by using Microsoft Dynamics 365 Finance.
 

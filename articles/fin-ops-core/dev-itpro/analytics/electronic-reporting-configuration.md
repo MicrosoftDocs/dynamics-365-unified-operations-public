@@ -16,7 +16,7 @@ ms.assetid: e3f7960d-2e01-46a7-9ac8-c355ac933cd6
 
 # Create Electronic reporting (ER) configurations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 As part of the requirements for Microsoft Dynamics Lifecycle Services solutions for localization and translation, localization ISV solution providers must implement features specific to a country/region or solutions by using the Electronic reporting tool. This article provides background information that helps you start using Electronic reporting for creating configurations. This article isn't meant to replace any available and upcoming Electronic reporting documentation, but is intended as a supplemental view from the perspective of localization requirements.
 

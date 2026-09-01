@@ -14,7 +14,7 @@ ms.custom:
 
 # View POS extension package information
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains the **Extension packages** section of the **Settings** view in Microsoft Dynamics 365 Commerce the point of sale (POS).
 

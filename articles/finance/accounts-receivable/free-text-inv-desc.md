@@ -17,7 +17,7 @@ ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 
 # Use financial tags to display free text invoice descriptions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to use financial tags to display the description of free text invoices.
 

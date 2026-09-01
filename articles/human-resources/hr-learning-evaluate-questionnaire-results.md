@@ -25,6 +25,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # View and evaluate the results of questionnaires
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This article explains how you can view and evaluate the results of questionnaires that respondents complete.

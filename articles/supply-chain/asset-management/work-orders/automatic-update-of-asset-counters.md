@@ -12,7 +12,7 @@ ms.search.form:
 
 # Automatic update of asset counters
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 For information about manual registration of asset counters, see [Manual update of asset counters](../work-orders/manual-update-of-asset-counters.md). For information on how to set up asset counters, see [Counters](../setup-for-objects/counters.md).
 

@@ -12,6 +12,8 @@ ms.reviewer: johnmichalak
 
 # Database and environment movements when Power Platform Integration is enabled
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 When you enable Microsoft Power Platform Integration, you connect the finance and operations apps environment and the customer engagements apps environment. Administrators should regard these two platforms as one environment that has multiple apps. This article describes the environment lifecycle scenarios that Power Platform Integration affects.
 
 > [!IMPORTANT]

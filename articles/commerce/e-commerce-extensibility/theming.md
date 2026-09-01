@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Theming overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of online site theming in Microsoft Dynamics 365 Commerce.
 

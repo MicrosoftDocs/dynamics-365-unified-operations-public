@@ -16,7 +16,7 @@ ms.assetid: 25ec29f3-e3ea-4abb-bf6b-f6240873b315
 
 # Waive, reinstate, or reverse interest fees
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to waive, reinstate, and reverse charges for interest and fees.
 

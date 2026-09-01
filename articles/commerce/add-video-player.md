@@ -14,7 +14,7 @@ ms.custom:
 
 # Video player module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article covers video player modules and describes how to add them to Microsoft Dynamics 365 Commerce site pages.
 

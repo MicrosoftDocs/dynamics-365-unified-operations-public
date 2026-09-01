@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-06-30
 
 # Cancel a sales complementary fiscal document (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to cancel an incorrect sales complementary fiscal document and provide a reason for the cancellation in Brazil with Microsoft Dynamics 365 Finance.
 

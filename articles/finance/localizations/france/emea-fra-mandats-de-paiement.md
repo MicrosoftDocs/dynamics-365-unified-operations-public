@@ -14,7 +14,7 @@ ms.custom:
 
 # Mandats de paiement in the public sector in France
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The director uses the mandat de paiement to notify and authorize the accountant to pay a specific amount to another entity. As required, the mandat maintains strict separation between the director's operational role and the accountant's accounting role.
 

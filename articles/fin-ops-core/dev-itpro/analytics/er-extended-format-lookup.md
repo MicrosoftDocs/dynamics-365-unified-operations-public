@@ -16,7 +16,7 @@ ms.assetid:
 
 # Allow users to set up an ER format reference by inquiring a format from the Global repository
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use the [Electronic reporting](general-electronic-reporting.md) (ER) framework to configure formats for outbound documents that comply with the legal requirements of various countries/regions. You can also use the ER framework to configure formats for parsing inbound documents and use the information from those documents to append or update application data. You can use each of these formats in your Dynamics 365 Finance instance for handling inbound or outbound business documents as part of a certain business process.
 

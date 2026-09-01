@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Cash register functionality for Sweden
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article explains the cash register functionality available for Sweden in Microsoft Dynamics 365 Commerce. It also provides guidelines for setting up the functionality. The functionality consists of the following parts:
 

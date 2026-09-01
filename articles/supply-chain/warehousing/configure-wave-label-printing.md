@@ -13,7 +13,7 @@ ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSDo
 
 # Wave label printing
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Wave label printing offers an alternative approach to label printing by introducing a new wave step method that lets you create and print labels directly from the wave template during wave execution. Therefore, the labels are available before workers run the work order on a mobile device. Workers can then attach the required labels during picking instead of after picking.
 

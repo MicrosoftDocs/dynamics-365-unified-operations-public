@@ -19,7 +19,7 @@ search.app:
 
 # PowerBI.com integration with on-premises environments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The cloud version provides several features that allow for deeper integration with Microsoft Power BI. Some of these features aren't yet available for on-premises deployments. However, the availability of Entity Store in on-premises deployments lets you use PowerBI.com to report on and analyze data. 
 

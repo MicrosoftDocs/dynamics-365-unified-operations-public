@@ -13,7 +13,7 @@ ms.custom:
 
 # Adjust stock levels in the warehouse (basic warehousing)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure walks you through the process of creating and posting an inventory adjustment journal in order to adjust stock levels of products in the warehouse. You need to have an inventory journal name set up for inventory adjustments before you start this. You can walk through this procedure in demo data company USMF, or using your own data. These tasks would normally be carried out by a warehouse employee.
 

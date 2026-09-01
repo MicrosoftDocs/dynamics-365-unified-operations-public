@@ -14,7 +14,7 @@ ms.custom:
 
 # Download Commerce SDK samples and reference packages from GitHub and NuGet
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to download Microsoft Dynamics 365 Commerce software development kit (SDK) samples from GitHub and reference packages.    
 

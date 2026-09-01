@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Set up a legal entity and tax information for Bolivia
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to use the Latin American (LATAM) features that are available in Microsoft Dynamics 365 Finance to set up a legal entity and tax information for a company that is located in Bolivia. A legal entity represents the company. It contains the tax and legal attributes that are required for the rest of the LATAM configuration.
 

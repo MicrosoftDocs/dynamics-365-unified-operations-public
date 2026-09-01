@@ -16,7 +16,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Invoice approvals mobile workspace
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 [!include [mobile app deprecation](../../dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
 This article provides information about the **Invoice approvals** mobile workspace. This workspace provides a list of invoices that you receive through the vendor invoice header workflow process. 

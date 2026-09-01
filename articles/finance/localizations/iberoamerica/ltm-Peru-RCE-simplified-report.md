@@ -10,7 +10,7 @@ ms.author: v-federicohe
 ---
 # Configure printing for the simplified annex of the Electronic Purchase Register (RCE) for Peru
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure printing for the simplified annex of the Electronic Purchase Register (RCE) for Peru in Microsoft Dynamics 365 Finance. The Excel output version is also included.
 

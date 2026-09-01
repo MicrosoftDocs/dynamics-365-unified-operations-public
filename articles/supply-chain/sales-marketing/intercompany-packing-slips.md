@@ -13,7 +13,7 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 
 ## Generate intercompany packing slips
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 If you work with direct delivery, the packing slip is always generated automatically on both the intercompany purchase order and the original sales order when you generate the packing slip on the intercompany sales order. The intercompany purchase-order invoice is based on the intercompany purchase-order packing slip that was previously generated.
 
@@ -23,7 +23,6 @@ If you do not work with direct delivery, you must manually generate the packing 
 
 ## Print intercompany packing slips
 
-[!include [banner](../../includes/banner.md)]
 
 If you work with direct delivery, a packing slip can be printed automatically for the intercompany purchase order and the original sales order when you post the packing slip on the intercompany sales order.
 

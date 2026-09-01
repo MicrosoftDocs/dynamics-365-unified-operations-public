@@ -16,7 +16,7 @@ ms.custom:
 
 # Table of Contents form pattern
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about the Table of Contents form pattern. This pattern should be used when two or more logically related forms are required for setup configuration. 
 

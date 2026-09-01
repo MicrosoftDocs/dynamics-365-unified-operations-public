@@ -15,7 +15,7 @@ ms.custom:
 
 # Block transactions by using triggers
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how you can use a trigger to block an invoice or credit transaction in Microsoft Dynamics 365 Commerce.
 

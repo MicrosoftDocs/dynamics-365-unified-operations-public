@@ -18,7 +18,7 @@ ms.assetid: 20423a2d-6997-4e1c-a596-a77016600071
 
 # Customer payments for a partial amount
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Sometimes, customers make a payment that is less than the amount of an invoice. This article describes the various options for handling this situation. The options that are available to you depend on your business requirements and configuration.
 

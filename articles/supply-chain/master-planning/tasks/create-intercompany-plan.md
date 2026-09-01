@@ -10,7 +10,7 @@ ms.author: henrikan
 ---
 # Create an intercompany plan
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to create an intercompany plan. The demo data company used to create this procedure is USMF.
 

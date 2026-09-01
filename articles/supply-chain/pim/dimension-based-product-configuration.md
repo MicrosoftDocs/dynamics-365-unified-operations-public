@@ -13,7 +13,7 @@ ms.custom:
 
 # Dimension-based product configuration overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dimension-based product configuration represents a simple solution for creating many product variants from a single product master and its bill of materials.
 

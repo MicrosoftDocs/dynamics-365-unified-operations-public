@@ -15,7 +15,7 @@ ms.dyn365.ops.version:
 ---
 # Collections management key concepts
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Before you start to set up or work with collections, make sure you understand the following concepts:
 

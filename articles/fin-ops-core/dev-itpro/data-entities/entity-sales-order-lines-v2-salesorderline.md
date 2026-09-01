@@ -1,4 +1,4 @@
-﻿---
+---
 title: Sales order lines V2 entity
 description: Learn about the Sales order lines V2 data entity in finance and operations migration projects with Dynamics 365.
 author: edupont04
@@ -11,6 +11,8 @@ ms.collection: FastTrack
 ---
 
 # Sales order lines V2
+
+[!INCLUDE [banner](../../../includes/banner.md)]
 
 The **Sales order lines V2** entity supports importing and updating sales order lines.
 

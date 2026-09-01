@@ -15,7 +15,7 @@ ms.assetid: a0011a12-a1eb-46bd-8d28-e532fec14e09
 
 # Pin Power BI content
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 Finance uses Power BI for data exploration. This article explains how you can pin full-page Power BI reports to workspaces to give your users an interactive data exploration experience.
 

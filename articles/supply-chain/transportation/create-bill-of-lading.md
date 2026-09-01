@@ -13,7 +13,7 @@ ms.custom:
 
 # Create a bill of lading
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to create a bill of lading when using warehouse management processes (WMS).  
 

@@ -16,7 +16,7 @@ ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
 
 # Column definitions in financial reports
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article provides information about column definitions. A column definition is a report component, or building block, that defines the contents of columns on a report. Like row definitions, basic column definitions can be used on multiple reports.
 

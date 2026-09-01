@@ -15,7 +15,7 @@ ms.custom:
 
 # Use assembly the list of a fixed asset
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to use the assembly list of a fixed asset for Japan in Microsoft Dynamics 365 Finance.
 

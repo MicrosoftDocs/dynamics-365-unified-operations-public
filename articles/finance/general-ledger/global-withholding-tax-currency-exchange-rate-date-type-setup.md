@@ -16,7 +16,7 @@ ms.assetid: 08fd46ef-2eb8-4942-985d-40fd757b74a8
 
 # Enable the global withholding tax currency exchange rate type and date type setup
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to enable the global setup of the withholding tax currency exchange rate type and date type. You can now select a dedicated exchange rate type and exchange rate calculation date type for the withholding tax currency. These selections determine the foreign currency exchange rate that is used to calculate the withholding tax amount, in the withholding tax currency, in the payment transactions.
 

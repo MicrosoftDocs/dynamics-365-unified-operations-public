@@ -12,7 +12,7 @@ ms.search.form: Customer
 
 # Enable and set up product bundles
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Prerequisites
 

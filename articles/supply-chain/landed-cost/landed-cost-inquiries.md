@@ -13,7 +13,7 @@ ms.custom:
 
 # Landed cost inquiries
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Voyage line inquiries
 

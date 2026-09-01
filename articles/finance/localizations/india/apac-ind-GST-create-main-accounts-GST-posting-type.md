@@ -16,7 +16,7 @@ ms.custom:
 
 # Create main accounts for the GST posting type
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 To make the India localization solution for Goods and Services Tax (GST) in Microsoft Dynamics 365 for Finance and Operation available, you must complete the following master data setup:
 

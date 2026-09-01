@@ -15,7 +15,7 @@ ms.assetid: 54283db7-6f1a-46e8-b74d-c67d54e6e5fb
 
 # Copy configurations by using Configuration manager
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [LCS deprecation](../includes/lcs-deprecation.md)]
 [!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 

@@ -15,7 +15,7 @@ ms.custom:
 
 # POS user interface visual configurations
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides information about screen layouts for Dynamics 365 Commerce point of sale (POS) experiences.
 

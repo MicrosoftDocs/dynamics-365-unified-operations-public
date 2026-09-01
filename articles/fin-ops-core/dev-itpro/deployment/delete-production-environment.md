@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 8.1.1
 
 # Delete a production finance and operations apps environment
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
 This article explains how to delete a production [self-service environment](infrastructure-stack.md). You rarely need to delete a production self-service environment after a customer goes live with the software. However, you might need to delete the environment several times as part of the preparation for the final deployment. In many cases, customers go through the motions of deploying the production environment, applying code, bringing in data, and capturing how long each step of the process takes. If you want to delete and repeat the steps, this article helps you accomplish that task.

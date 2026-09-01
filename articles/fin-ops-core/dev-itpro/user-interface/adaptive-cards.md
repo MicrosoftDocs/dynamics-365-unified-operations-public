@@ -13,7 +13,7 @@ ms.dyn365.ops.version: PU66F
 
 # Adaptive Card controls
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 [Adaptive Cards](/adaptive-cards) are a platform-agnostic way for developers to create rich, interactive, card-like interfaces that they can embed in various applications, such as Microsoft Teams, Outlook, Copilot Studio chatbots, and other chat or web applications. The key benefit of Adaptive Cards is that developers can design a card once and then use it across multiple platforms without having to adjust the layout for each one. The open card exchange format lets developers describe content as a simple JavaScript Object Notation (JSON) object. Therefore, it's easy to structure and dynamically manipulate cards.
 

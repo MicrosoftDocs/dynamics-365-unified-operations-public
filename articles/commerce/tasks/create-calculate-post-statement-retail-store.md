@@ -14,7 +14,7 @@ ms.custom:
 ---
 # Create, calculate, and post statements for a retail store
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the manual steps for creating, calculating, and posting a statement for a store in Microsoft Dynamics 365 Commerce.
 

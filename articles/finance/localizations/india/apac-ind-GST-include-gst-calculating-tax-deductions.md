@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Include GST when calculating tax deductions
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 ## Set up GST requirements
 

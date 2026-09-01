@@ -14,7 +14,7 @@ ms.custom:
 
 # Migrate to the Commerce SDK
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 [!include [banner](../../includes/retail-sdk-deprecation-banner.md)]
 
 This article explains how to migrate to the Microsoft Dynamics 365 Commerce software development kit (SDK).

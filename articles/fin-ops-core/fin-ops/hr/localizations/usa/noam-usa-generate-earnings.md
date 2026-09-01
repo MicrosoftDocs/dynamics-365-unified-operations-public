@@ -16,7 +16,7 @@ ms.assetid: 87aac2bd-fcdb-4f97-a55f-7f25659d6940
 
 # Generate earnings for workers
 
-[!include [banner](../../../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../../../finance/includes/banner.md)]
 
 This article describes the various ways that you can generate earnings for workers. You can automatically generate earnings for salaried positions, for positions that use a schedule, and for recurring earnings, premium earnings, and retroactive earnings. You can also enter earnings manually.
 

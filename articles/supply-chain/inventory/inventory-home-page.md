@@ -13,7 +13,7 @@ ms.custom:
 
 # Inventory management overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 With Inventory management, you can perform the following tasks:
 

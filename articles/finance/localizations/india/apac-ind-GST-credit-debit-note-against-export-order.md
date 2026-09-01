@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.13
 
 # Credit or debit note against an export order
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Currently, you can't post credit notes and debit notes against an export invoice that you already posted. However, this feature lets you post credit notes against an export order, similarly to the way that you post a sales order.
 

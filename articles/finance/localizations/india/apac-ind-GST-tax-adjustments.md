@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Tax amount adjustment
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 1. Go to **General ledger** > **Journals** > **General journal**.
 1. Create a journal.

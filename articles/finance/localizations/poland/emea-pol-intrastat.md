@@ -13,7 +13,7 @@ ms.search.region: Global
 
 # Polish Intrastat
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up Intrastat reporting for Poland in Microsoft Dynamics 365 Finance.
 

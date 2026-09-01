@@ -14,7 +14,7 @@ ms.dyn365.ops.version: 10.0.13
 
 # New GSTR Offline Tool for ANX-1 and Purchase Register
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 In the newly proposed system for Goods and Services Tax Return (GSTR) filing, the taxpayer files Form GST RET-1 (Normal), Form GST RET-2 (Sahaj), or Form GST RET-3 (Sugam) either monthly or quarterly. The Annexure of Supplies (GST ANX-1) and the Annexure of Inward Supplies (GST ANX-2) are filed as part of these returns.
 

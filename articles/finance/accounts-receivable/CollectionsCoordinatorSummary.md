@@ -18,6 +18,8 @@ ms.search.form:
 
 # Collections coordinator summary
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article explains how to enable the optional **Summary by Copilot** field in the **Collections coordinator** workspace. For more information about how to use this workspace, see the [Collections coordinator workspace](collectionsworkspace.md).
 
 ## Turn on Copilot support for the Collections coordinator workspace

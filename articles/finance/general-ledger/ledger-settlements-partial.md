@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.42
 
 # Partial ledger settlements
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The ledger settlement process enables an organization to reconcile clearing accounts. This process ensures that the amount posted to a main account is fully cleared out of that account.
 

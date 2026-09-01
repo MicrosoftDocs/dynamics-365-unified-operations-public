@@ -13,7 +13,7 @@ ms.custom:
 
 # Warehouse handling of inbound loads for purchase and inbound shipment orders
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the warehouse handling process for inbound loads.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Registration for manufacturing execution
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes key concepts and terms that you need to understand to configure and use manufacturing execution.
 

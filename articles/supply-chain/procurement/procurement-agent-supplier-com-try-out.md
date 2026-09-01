@@ -16,7 +16,7 @@ ms.custom:
 
 # Try out the *updates from vendors* feature without a complete email setup (production-ready preview)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 

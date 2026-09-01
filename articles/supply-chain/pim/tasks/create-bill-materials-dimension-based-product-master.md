@@ -12,7 +12,7 @@ ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductO
 
 # Create a bill of materials for a dimension-based product master
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article shows how to create a bill of materials for a dimension-based product master.
 

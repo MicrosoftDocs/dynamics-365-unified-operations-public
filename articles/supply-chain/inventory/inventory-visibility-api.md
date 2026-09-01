@@ -13,7 +13,7 @@ ms.custom:
 
 # Inventory Visibility public APIs
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 
 This article describes the public APIs that are provided by Inventory Visibility.

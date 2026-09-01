@@ -19,7 +19,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Data management and integration by using data entities overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides a brief overview of synchronous and asynchronous integration.
 

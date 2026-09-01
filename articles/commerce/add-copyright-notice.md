@@ -14,7 +14,7 @@ ms.custom:
 
 # Add a copyright notice
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to add a copyright notice to your e-commerce website.
 

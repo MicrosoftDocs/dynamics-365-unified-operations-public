@@ -14,7 +14,7 @@ ms.custom:
 
 # Work with templates
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to work with templates in Microsoft Dynamics 365 Commerce.
 

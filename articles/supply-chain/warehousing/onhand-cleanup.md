@@ -12,7 +12,7 @@ ms.search.form:  SysOperationTemplateForm
 
 # Warehouse management on-hand entries cleanup job
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The performance of queries that calculate on-hand inventory depends on the number of records in the tables. To improve performance, reduce the number of records the database must consider.
 

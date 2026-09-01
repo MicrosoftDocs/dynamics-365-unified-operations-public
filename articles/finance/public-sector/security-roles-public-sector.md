@@ -16,7 +16,7 @@ ms.assetid: e26a6d93-851e-46be-8543-de2798909350
 
 # Security roles in the public sector
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the functionality for public sector security roles. This functionality includes the Project manager and Purchasing agent roles for the public sector.
 

@@ -15,6 +15,8 @@ ms.dyn365.ops.version:
 
 # Table edit visual
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article describes how to use the **Table edit** visual in the Business performance planning application. To fully use this application, you must install Microsoft Power BI visuals. For information about how to install Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals).
 
 The **Table edit** visual in the Business performance planning application is a powerful custom visual that you can use to directly edit dimensions. This functionality gives you many possibilities for modifying and managing data directly on your financial planning Power BI reports:

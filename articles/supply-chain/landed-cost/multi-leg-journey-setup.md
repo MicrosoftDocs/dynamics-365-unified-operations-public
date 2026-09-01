@@ -13,7 +13,7 @@ ms.custom:
 
 # Multi-leg journey setup
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to set up multi-leg journeys for the **Landed cost** module.
 

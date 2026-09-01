@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 8.1.1
 
 # Known issues with self-service deployment
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 [!include [LCS deprecation](../includes/lcs-deprecation.md)]
 

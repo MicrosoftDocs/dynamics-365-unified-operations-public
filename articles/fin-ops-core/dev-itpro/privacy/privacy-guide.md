@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Privacy overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 The privacy laws and regulations of the European Union set a new global standard for privacy rights, security, and compliance for the citizens and residents of the European Union (EU). Privacy governs the handling and use of personal data of EU citizens and residents. Enforcement begins May 25, 2018, and there are significant consequences for noncompliance. For more information about the regulation, see the [European Union site](https://europa.eu/).

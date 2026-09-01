@@ -14,7 +14,7 @@ ms.custom:
 
 # Product discovery checklist
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides a product discovery checklist to ensure that products are discoverable in Microsoft Dynamics 365 Commerce channels for various scenarios.
 

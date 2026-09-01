@@ -12,7 +12,7 @@ ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules, WHSKanbanWaveTa
 
 # Replenishment with withdrawal kanbans
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how the withdrawal kanban is used for material replenishment for manufacturing activities.
 

@@ -16,7 +16,7 @@ ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 
 # One voucher FAQ
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article answers frequently asked questions about the One voucher functionality. One voucher for financial journals lets you enter multiple subledger transactions in the context of a single voucher. The journals that you can include in that voucher can be general journals, fixed asset journals, and vendor payment journals, among others.
 

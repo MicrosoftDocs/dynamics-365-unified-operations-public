@@ -16,7 +16,7 @@ ms.assetid: 4eb7c7da-1e6b-4d35-9f41-373b66103229
 
 # Postdated checks
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about support for postdated checks. Postdated checks are checks that you issue to make and receive payments on a future date. Therefore, the check can't be cashed until the specified date.
 

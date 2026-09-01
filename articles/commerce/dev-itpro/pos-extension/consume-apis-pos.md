@@ -14,7 +14,7 @@ ms.custom:
 
 # Consume custom headless Commerce APIs and entities in POS
 
-[!include [banner](../../../includes/banner.md)]
+[!INCLUDE [banner](../../../includes/banner.md)]
 
 This article explains how to use Proxy to consume custom headless Commerce APIs and entities in Microsoft Dynamics 365 Commerce point of sale (POS). It applies to version 10.0.18 and later of the Retail software development kit (SDK).
 

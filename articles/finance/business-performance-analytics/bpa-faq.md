@@ -13,6 +13,8 @@ ms.date: 12/15/2025
 
 # Business performance analytics FAQ
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article answers frequently asked questions about Business performance analytics.
 
 ## Installation and initial setup

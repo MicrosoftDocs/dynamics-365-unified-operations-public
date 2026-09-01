@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Create a depreciation proposal
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how depreciation batch proposals work and explains how to propose depreciation for fixed assets. This task uses the USMF demo company and the accountant role.
 

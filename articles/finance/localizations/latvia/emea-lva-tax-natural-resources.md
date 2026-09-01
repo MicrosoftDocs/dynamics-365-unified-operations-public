@@ -15,7 +15,7 @@ ms.search.form: LvNRTaxItemGroupLookup
 
 # Tax on natural resources report
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and generate the tax on natural resources (NR Tax) report for Latvia in Microsoft Dynamics 365 Finance.
 

@@ -18,7 +18,7 @@ ms.assetid: c25f9d85-2702-46aa-8e61-0b4886e069b3
 
 # Cash discounts
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Cash discounts are setup and shared for Accounts payable and Accounts receivable. The cash discount available can be defined on the customer invoice or vendor invoice, and will be taken if the invoice is paid within the cash discount date. 
 

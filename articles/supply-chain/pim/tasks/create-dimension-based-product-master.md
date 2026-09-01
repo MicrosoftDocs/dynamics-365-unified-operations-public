@@ -12,7 +12,7 @@ ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductMasterD
 
 # Create a dimension-based product master
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to create a new product master with dimension-based configuration technology.
 

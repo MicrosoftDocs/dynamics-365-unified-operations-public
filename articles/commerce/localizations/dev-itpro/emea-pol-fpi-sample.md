@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Fiscal printer integration sample for Poland
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article provides an overview of the fiscal integration sample for Poland in Microsoft Dynamics 365 Commerce.
 

@@ -13,7 +13,7 @@ ms.author: shajain
 ---
 # Improved handling of batch-tracked items
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes the improved handling of batch-tracked items during the statement posting process in Microsoft Dynamics 365 Commerce.
 

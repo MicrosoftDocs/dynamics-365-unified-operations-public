@@ -14,7 +14,7 @@ ms.custom:
 
 # Configure workspaces by using the SysAppWorkspace class
 
-[!include [banner](../../../includes/banner.md)]
+[!INCLUDE [banner](../../../includes/banner.md)]
 [!include [mobile app deprecated](../../../includes/mobile-app-deprecation-banner.md)]
 
 Use the workspace class, **SysAppWorkspace**, to create, configure, and publish workspaces on the server. The sysAppWorkspace class provides the following categories of APIs:

@@ -11,7 +11,7 @@ ms.author: henrikan
 
 # Guide: Modify a demand forecast manually
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 [!INCLUDE [demand-planning-banner](../../includes/demand-planning-banner.md)]
 

@@ -16,7 +16,7 @@ ms.custom: sfi-image-nochange
 
 # Generate printable FTI forms
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The Electronic reporting (ER) framework lets you generate printable free text invoice (FTI) forms as Microsoft Office documents. This article provides information about how to build your own configurations as well as details of available configuration templates.
 

@@ -16,7 +16,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 # Set up lease approval workflows
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to set up an approval workflow that runs when you create a new lease. For information about how to use the workflow, see [Use lease approval workflows](use-create-lease-wrkflw.md).
 

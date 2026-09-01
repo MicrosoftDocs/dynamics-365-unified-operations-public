@@ -16,7 +16,7 @@ ms.assetid: ffd17b5f-9aea-40e0-be49-d8702f615256
 
 # Set up centralized payments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Follow these steps to prepare to process payments in one legal entity on behalf of other legal entities in your organization. Before you begin, complete the following setup tasks:
 

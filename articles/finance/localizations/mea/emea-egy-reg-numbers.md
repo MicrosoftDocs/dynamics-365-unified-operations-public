@@ -15,7 +15,7 @@ ms.custom:
 
 # Configure registration numbers in Egypt
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure and use registration numbers for Egypt in Microsoft Dynamics 365 Finance.
 

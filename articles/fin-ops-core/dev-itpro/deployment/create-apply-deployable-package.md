@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create deployable packages of models
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 An AOT package is a deployment and compilation unit of one or more models that you can apply to an environment. It includes model metadata, binaries, reports, and other associated resources. You can package one or more AOT packages into a deployable package. Use the deployable package to deploy code and customizations to demo, sandbox, and production environments. This article guides you through the process of creating and applying a deployable package.
 

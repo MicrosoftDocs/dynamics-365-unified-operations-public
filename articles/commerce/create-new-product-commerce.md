@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Create a new product in Commerce
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to create a new product in Microsoft Dynamics 365 Commerce.
 

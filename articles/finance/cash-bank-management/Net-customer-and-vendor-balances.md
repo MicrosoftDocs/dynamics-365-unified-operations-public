@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0
 
 # Net customer and vendor balances
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Customer and vendor balance netting is when the balances for a vendor and a customer are netted against each other, because the vendor and customer are the same party. This approach minimizes the exchange of money between an organization and the customer or vendor party. It can also help a company avoid making unnecessary payments or receipts, and save on transaction fees, by consolidating the company's customer and vendor balances.
 

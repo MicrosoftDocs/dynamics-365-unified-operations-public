@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 10.0.48
 
 # User log and dormant user report V2 for finance and operations (preview)
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 The **User log and dormant user report V2** feature helps finance and operations administrators audit user activity and review past sign-ins.

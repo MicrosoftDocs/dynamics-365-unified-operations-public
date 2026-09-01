@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Calculate and adjust sales tax on a vendor invoice
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to adjust sales tax on a vendor invoice. If the original source document displays different tax amounts as calculated, you can adjust those amounts before posting. This task uses the DEMF demo company.
 

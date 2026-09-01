@@ -16,7 +16,7 @@ ms.assetid: 9f0a1883-cbe0-4cc7-b9f3-dd12fb85ebe8
 
 # Reverse a vendor payment
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the differences between reversing, deleting, voiding, and rejecting a payment. It also explains the two methods for reversing a vendor check.
 

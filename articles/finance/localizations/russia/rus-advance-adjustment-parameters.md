@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-10-31
 
 # Revaluate foreign currency for advance holders (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about foreign currency revaluation for advance holders in Russia.
 

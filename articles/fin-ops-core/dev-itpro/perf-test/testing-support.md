@@ -15,7 +15,7 @@ ms.assetid: d94f46f0-cde2-47c3-8994-c79e609eabce
 
 # Test projects in Visual Studio
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the options for testing in Visual Studio.
 

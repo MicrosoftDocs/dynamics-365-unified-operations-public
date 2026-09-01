@@ -26,6 +26,8 @@ ms.custom: sfi-image-nochange
 
 # Configure Human resources parameters
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Some Human resources parameter settings are shared across companies, while other settings are company-specific. This article explains how to set up company-specific Human resources parameters.

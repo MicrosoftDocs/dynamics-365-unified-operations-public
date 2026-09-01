@@ -12,7 +12,7 @@ ms.search.form: SMAParameters
 
 # Project attached to service agreement
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can attach service agreements to projects of every type except the **Time project** type.
 

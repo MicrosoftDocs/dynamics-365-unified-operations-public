@@ -15,7 +15,7 @@ ms.custom:
 
 # Inventory forecasts
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 [!INCLUDE [demand-planning-banner](../includes/demand-planning-banner.md)]
 

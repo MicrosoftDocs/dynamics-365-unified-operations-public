@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.9
 
 # Tax plafond
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Tax plafond is a tax exemption process available for companies, called *usual exporters*, that purchase and import goods and services without paying sales tax, within a limited value of their sales to foreign countries or regions in the previous period. A company is a *usual exporter* if, during the previous year, 10 percent of its revenue value came from selling to a foreign country or region. The system establishes the initial plafond amount and its validity dates at the beginning of the period. The company can buy without paying sales tax as long as the value of the purchases is less than the initial plafond amount.
 

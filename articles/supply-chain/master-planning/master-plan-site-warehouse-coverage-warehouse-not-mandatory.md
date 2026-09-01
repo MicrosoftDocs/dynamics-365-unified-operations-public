@@ -12,7 +12,7 @@ ms.assetid: 92d47bdd-df68-4f60-ac9a-96aa08236c26
 
 # Master planning for site and warehouse coverage, warehouse not mandatory
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how an item that has site and warehouse as coverage dimensions is planned. The warehouse dimension is not mandatory.
 

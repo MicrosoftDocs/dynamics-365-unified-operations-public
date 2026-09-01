@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Configure the Azure DevOps mapping during code migration
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This tutorial shows how to map your development box to the Azure DevOps project after the Lifecycle Services code upgrade service completes. 
 

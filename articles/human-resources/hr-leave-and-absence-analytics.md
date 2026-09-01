@@ -25,6 +25,8 @@ ms.dyn365.ops.version: Human Resources
 
 # View analytics for leave and absence
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dynamics 365 Human Resources provides analytics to help give you insight into your organization's leave and absence trends.

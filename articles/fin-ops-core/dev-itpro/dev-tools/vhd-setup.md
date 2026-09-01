@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up the downloadable VHD for first use
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!NOTE]
 > This article applies to the virtual hard drive (VHD) that was released for versions 10.0.24 and later.

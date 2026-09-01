@@ -17,7 +17,7 @@ ms.assetid: 1ce8c70b-c6af-4171-98d2-2aa8e9563c5b
 
 # Stock card report for Thailand
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about stock card reports for legal entities in Thailand. A stock card report contains information about inventory movement, quantity, and cost for each item and warehouse, and must be generated when the government requests it. The stock card report is generated either before or after the inventory close process.
 

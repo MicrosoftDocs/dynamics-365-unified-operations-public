@@ -15,7 +15,7 @@ ms.custom:
 
 # Depreciate and accrue the interest expense for asset retirement obligations
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to depreciate and accrue the interest expense for asset retirement obligations (ARO) for Japan in Microsoft Dynamics 365 Finance.
 

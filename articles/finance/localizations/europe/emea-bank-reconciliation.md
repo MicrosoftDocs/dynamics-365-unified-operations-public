@@ -15,7 +15,7 @@ ms.search.form: BankAccountTable, CustPaymMode, VendPaymMode
 
 # Bank statement and payment reconciliation for the EU
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides an overview of the functionality that you can use to reconcile payment information from banks in formats that European countries and regions use. You can import transactions from banks and settle these transactions against existing transactions. In Europe, you can use this functionality for the following scenarios:
 

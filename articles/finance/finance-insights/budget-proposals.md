@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Budget proposals
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Organizations spend a large amount of time and resources preparing their budgets. Much of that work is repetitive low-value-added effort, such as gathering the data used in the budgeting process. Additional work is needed to prepare a line-by-line budget by department.
 

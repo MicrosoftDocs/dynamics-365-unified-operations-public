@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Import goods that have GST
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 To import goods that have Goods and Services Tax (GST), complete the procedures in this article.
 

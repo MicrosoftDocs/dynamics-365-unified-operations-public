@@ -18,7 +18,7 @@ ms.assetid: b0e837c9-515a-4aed-9060-5ec94f37edeb
 
 # Manual depreciation
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the manual depreciation method.
 

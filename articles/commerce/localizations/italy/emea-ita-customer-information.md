@@ -1,4 +1,4 @@
-﻿---
+---
 title: Customer information management for Italy
 description: Learns how to handle customer information in Microsoft Dynamics 365 Commerce point of sale (POS) for Italy.
 author: EvgenyPopovMBS
@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Customer information management for Italy
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article describes how you can handle customer information, such as the customer's lottery code, in the Microsoft Dynamics 365 Commerce point of sale (POS) for Italy.
 

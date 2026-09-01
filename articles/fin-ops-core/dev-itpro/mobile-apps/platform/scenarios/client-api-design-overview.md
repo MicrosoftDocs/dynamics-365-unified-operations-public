@@ -15,7 +15,7 @@ ms.custom:
 
 # Client-side design APIs
 
-[!include [banner](../../../includes/banner.md)]
+[!INCLUDE [banner](../../../includes/banner.md)]
 [!include [mobile app deprecated](../../../includes/mobile-app-deprecation-banner.md)]
 
 This article provides an overview of the application programming interfaces (APIs) for client-side design and includes recommendations for using them.

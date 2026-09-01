@@ -15,7 +15,7 @@ ms.custom:
 
 # Deliver XBRL to the Dutch regulatory body via Semansys XBRLOne
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article walks you through the steps to map, export, and deliver eXtensible Business Reporting Language (XBRL) to the Dutch regulatory body.  
 

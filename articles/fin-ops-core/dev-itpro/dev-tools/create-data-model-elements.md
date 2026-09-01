@@ -15,7 +15,7 @@ ms.assetid: 1b7789f4-12c1-480b-bb39-c354b5b03276
 
 # Create models and data model elements overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In this tutorial, use Visual Studio's Dynamics 365 menu to create a new model named **Fleet Management tutorial**. You also create and edit new model elements.
 

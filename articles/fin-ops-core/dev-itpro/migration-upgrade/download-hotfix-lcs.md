@@ -16,7 +16,7 @@ ms.assetid: 61069cf2-6c3f-4ebc-bbee-b21b1c99626a
 
 # Download updates from Lifecycle Services (LCS)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains what updates you see and how you get the latest updates by using Microsoft Dynamics Lifecycle Services.
 

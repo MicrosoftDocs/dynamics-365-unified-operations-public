@@ -15,6 +15,8 @@ ms.custom:
 
 # FAQ for Copilot in site builder
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 These frequently asked questions (FAQ) describe the AI impact of the Copilot in site builder feature for product enrichment in Microsoft Dynamics 365 Commerce.
 
 ## What is Copilot in site builder?

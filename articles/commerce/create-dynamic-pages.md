@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Create dynamic e-commerce pages based on URL parameters
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to set up a Microsoft Dynamics 365 Commerce e-commerce page that serves dynamic content based on URL parameters.
 

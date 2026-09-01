@@ -14,7 +14,7 @@ ms.custom:
 
 # Modules overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of module development in Microsoft Dynamics 365 Commerce, including best practices about when and how to extend a module's style or features.
 

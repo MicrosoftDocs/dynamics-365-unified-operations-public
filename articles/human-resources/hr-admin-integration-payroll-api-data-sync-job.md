@@ -23,6 +23,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Schedule Payroll Data sync job
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 ## Overview
 This document describes the steps to schedule a **Payroll data sync batch job** in **Dynamics 365 Human Resources**, including how to configure recurrence and verify the batch job execution.
 

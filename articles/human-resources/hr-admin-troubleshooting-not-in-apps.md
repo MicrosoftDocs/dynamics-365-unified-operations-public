@@ -27,6 +27,8 @@ ms.custom:
 
 # Human Resources app doesn't appear in Microsoft Dynamics 365 apps
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Issue**

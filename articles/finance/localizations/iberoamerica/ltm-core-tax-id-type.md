@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 
 # Tax ID types for Latin America
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 [!include [does not apply to](includes/does-not-apply-to.md)]
 

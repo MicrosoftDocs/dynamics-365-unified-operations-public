@@ -15,7 +15,7 @@ ms.assetid: 744bd1dc-d109-40df-a5dd-9db8982523a6
 
 # Patch SQL Server Reporting Services (SSRS) in one-box environments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The following procedure is for one-box development environments only.
 

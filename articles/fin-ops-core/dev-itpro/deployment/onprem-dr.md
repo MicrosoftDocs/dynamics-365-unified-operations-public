@@ -16,7 +16,7 @@ ms.service: dynamics-365-op
 
 # On-premises disaster recovery configuration
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Disaster recovery is an important consideration for on-premises deployments of Dynamics 365 Finance + Operations (on-premises) to protect from events that could put your organization's operations at risk. Examples of such events include equipment failures, datacenter breakdowns due to cyberattacks, electrical, physical, or other disasters.
 

@@ -16,7 +16,7 @@ ms.search.form:
 
 # Use application context with Copilot
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Copilot in finance and operations apps lets you create contextual AI experiences that are embedded in the flow of the business process of an application. It's important that the Copilot sidecar chat understands the context that the user is working in.
 

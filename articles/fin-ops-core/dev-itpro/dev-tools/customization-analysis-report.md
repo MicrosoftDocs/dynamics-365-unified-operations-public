@@ -15,7 +15,7 @@ ms.assetid: 540b08dd-9af7-42fc-aa0c-ba04af1f8002
 
 # Customization Analysis Report (CAR)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to generate a Customization Analysis Report for your model. It also describes some best practice rules that the report includes, and provides suggestions for fixing errors and warnings that are associated with these rules.
 

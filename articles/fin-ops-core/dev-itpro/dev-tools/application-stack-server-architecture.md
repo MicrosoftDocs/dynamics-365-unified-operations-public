@@ -15,7 +15,7 @@ ms.assetid: 6a5811cc-a551-4e4d-824c-d760460b3223
 
 # Application stack and server architecture
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The application stack is divided into platform models and application-specific models. The platform models are Application Platform, Application Foundation, and Test Essentials. There are many application-specific models. Some examples are Application Suite, Ledger, Retail, and Case Management.
 

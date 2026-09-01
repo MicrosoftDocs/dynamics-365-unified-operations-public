@@ -15,7 +15,7 @@ ms.custom:
 
 # Navigation search
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to use the search functionality to navigate to pages.
 

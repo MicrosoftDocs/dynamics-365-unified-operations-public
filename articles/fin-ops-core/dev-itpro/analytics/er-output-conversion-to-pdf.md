@@ -17,7 +17,7 @@ ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 
 # Output conversion to PDF
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use the PDF conversion option to convert output in Microsoft Office (Excel or Word) format to PDF format.
 

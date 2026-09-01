@@ -11,7 +11,7 @@ ms.author: v-cpicon
 
 # Configure printing for purchase bank books for Bolivia
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and generate reports for purchase bank books for Bolivia.
 

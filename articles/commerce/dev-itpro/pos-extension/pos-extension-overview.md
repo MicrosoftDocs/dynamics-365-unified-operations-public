@@ -14,7 +14,7 @@ ms.custom:
 
 # POS extension overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 [!include [banner](../../includes/retail-sdk-deprecation-banner.md)]
 
 This article provides an overview of how you can create Microsoft Dynamics 365 Commerce point of sale (POS) extensions by using the independent POS extension model and sealed software development kit (SDK).

@@ -13,7 +13,7 @@ ms.reviewer: kamaybac
 
 # Delete a return order
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use the **Delete return order** form to delete multiple return orders.
 

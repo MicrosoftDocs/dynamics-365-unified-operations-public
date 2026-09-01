@@ -12,7 +12,7 @@ ms.search.form:
 
 # Customize the company logo shown in the Warehouse Management mobile app
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can display your company logo in the Warehouse Management mobile app by uploading it through the legal entity settings in Supply Chain Management. The app retrieves the logo based on the legal entity the worker signs in to.
 

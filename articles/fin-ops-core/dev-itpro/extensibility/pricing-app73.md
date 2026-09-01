@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 11
 
 # Price and discount extensibility
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In finance and operations, Enterprise edition 7.3 and later, you can extend the pricing area. Common customizations for price and discounts include:
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Propose fixed asset acquisitions
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to acquire a fixed asset using the acquisition proposal in the **Fixed assets journal**. It uses the accountant role and demo data for the USMF legal entity. To acquire a fixed asset through a fixed asset proposal journal, you must first create the fixed asset record, and then define the acquisition price in the asset book.
 

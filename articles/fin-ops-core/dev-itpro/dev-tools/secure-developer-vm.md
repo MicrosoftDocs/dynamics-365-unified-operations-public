@@ -14,7 +14,7 @@ ms.search.validFrom: 2022-09-13
 
 # Secure one-box development environments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to help secure one-box developer environments.
 

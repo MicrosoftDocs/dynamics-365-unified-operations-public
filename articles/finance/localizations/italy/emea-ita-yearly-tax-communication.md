@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Yearly tax communication
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The **Yearly tax communication** report contains annual tax information for Italy that will be submitted to the tax authority.
 

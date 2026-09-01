@@ -15,7 +15,7 @@ ms.custom:
 
 # Allocate carrying amount of shared asset and goodwill to cash generating units
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to allocate the carrying amount of shared asset and goodwill to each of the cash generating units in Japan with Microsoft Dynamics 365 Finance.
 

@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.32
 
 # Version 10.0.32 PQU release 3 build information
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 | Update ID | LCS Link | Title | Release date | Build version |
 | --- | --- | --- | --- | --- |

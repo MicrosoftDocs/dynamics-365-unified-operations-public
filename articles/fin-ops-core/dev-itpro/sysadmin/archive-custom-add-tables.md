@@ -13,7 +13,7 @@ ms.reviewer: twheeloc
 
 # Add custom tables to standard archive scenarios
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to add related custom tables to existing Microsoft archive scenarios. For example, you can add a custom settlement table to the General Ledger archive scenario or add custom shipment tracking tables to the Sales Order archive scenario.
 

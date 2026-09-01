@@ -14,7 +14,7 @@ ms.custom:
 
 # Cost management Power BI content
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Overview
 

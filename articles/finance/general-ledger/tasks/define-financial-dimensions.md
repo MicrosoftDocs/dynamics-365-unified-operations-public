@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Define financial dimensions
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to add an entity-backed financial dimension and a custom financial dimension. The guide uses the USMF demo company.
 

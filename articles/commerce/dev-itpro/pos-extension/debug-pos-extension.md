@@ -14,7 +14,7 @@ ms.custom:
 
 # Debug MPOS (sealed) and CPOS extensions
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to debug sealed Modern Point of Sale (MPOS) and Cloud POS (CPOS) extensions. It applies to version 10.0.18 and later of the Retail software development kit (SDK).
 

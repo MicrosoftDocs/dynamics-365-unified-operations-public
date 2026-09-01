@@ -16,7 +16,7 @@ ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 
 # Clean up the batch job history
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
 > To resolve storage concerns, Microsoft starts a one-time cleanup on **February 23, 2026** for sandbox environments where the Batch History table is approaching or exceeding 500 GB. This cleanup removes only historical diagnostic data. It doesn't affect your batch job configurations, schedules, or recurrence settings. This action can't be reversed, so ensure that you back up any necessary data in advance. For queries, reach out to your Solution Architects.

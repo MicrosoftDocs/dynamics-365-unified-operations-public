@@ -14,7 +14,7 @@ ms.custom:
 
 # Store Commerce app for mobile platforms
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to get started using the Microsoft Dynamics 365 Commerce Store Commerce apps for Android, iOS, and macOS.
 

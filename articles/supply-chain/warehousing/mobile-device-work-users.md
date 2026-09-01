@@ -13,7 +13,7 @@ ms.custom:
 
 # Mobile device user accounts
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Every time that a worker starts to use the warehouse app, they must sign in by using a user name and password. Any number of warehouse app users can be associated with each warehouse worker in the system, and warehouses are typically associated with each of those warehouse app users. You also configure various options for each warehouse worker record to establish default settings and other settings that are relevant to using the warehouse app.
 

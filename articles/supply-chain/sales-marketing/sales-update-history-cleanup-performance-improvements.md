@@ -11,7 +11,7 @@ ms.search.form:
 
 # Schedule sales history data cleanup
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 As part of its standard operation, Microsoft Dynamics 365 Supply Chain Management generates and stores sales history update data on an ongoing basis. Over time, a large amount of outdated sales history data might accumulate in your system. This accumulated data can cause performance and functional issues when documents that are related to sales orders are posted. (These documents include sales order confirmations, sales packing slips, sales picking lists, and invoices). Therefore, you should set up and schedule the *Sales update history cleanup* periodic task to run at a regular interval. This task removes all sales history update data that is no longer needed.
 

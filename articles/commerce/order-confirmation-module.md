@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Order confirmation module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article covers order confirmation modules and describes how to use them in Microsoft Dynamics 365 Commerce.
 

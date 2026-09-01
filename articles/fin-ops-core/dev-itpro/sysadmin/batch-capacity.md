@@ -13,7 +13,7 @@ ms.dyn365.ops.version: Platform Update50
 
 # Batch capacity
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Batch capacity refers to the maximum number of batch tasks that the system can process at one time. It depends on both the number of batch servers and the number of batch threads available for processing these tasks.
 

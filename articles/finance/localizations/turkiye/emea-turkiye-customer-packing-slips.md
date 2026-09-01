@@ -13,7 +13,7 @@ ms.dyn365.ops.version: AX 10.0.45
 
 # Export of customer electronic packing slips
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to configure and use **electronic packing slips (e-packing slips)** in Microsoft Dynamics 365 Finance for Türkiye.  
 Finance supports the generation of electronic packing slip XML files in the required **UBL-TR DespatchAdvice** format.

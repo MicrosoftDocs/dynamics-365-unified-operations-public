@@ -14,7 +14,7 @@ ms.dyn365.ops.version: 10.0.23
 
 # Tax invoice numbering for Indonesia
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure and use tax invoice numbering for Indonesia.
 

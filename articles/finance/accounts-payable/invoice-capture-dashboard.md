@@ -17,7 +17,7 @@ ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 
 # Invoice capture solution dashboard
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In Invoice capture, the dashboard includes charts that provide an overview of invoices that you import. These charts help the Accounts Payable (AP) manager analyze the performance of the invoice generation process. The AP manager can view the status of the invoice generation process and, by applying different filters, can also view details.
 

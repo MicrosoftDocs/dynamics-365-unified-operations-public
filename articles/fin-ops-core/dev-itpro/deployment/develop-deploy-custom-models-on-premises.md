@@ -19,7 +19,7 @@ ms.service: dynamics-365-op
 
 # Develop and deploy custom models to on-premises environments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to develop customizations and extensions, and deploys them to an on-premises environment. On-premises environments are also referred to as local business data (LBD) environments. This article focuses on the ways that this process differs from the process in a run-time cloud environment.
 

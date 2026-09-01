@@ -25,6 +25,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Questionnaires
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This article provides general information about questionnaires, and links to more detailed information. A questionnaire is a set of questions that you use to collect information for various purposes. You can design, create, distribute, and complete questionnaires, and then analyze the results.

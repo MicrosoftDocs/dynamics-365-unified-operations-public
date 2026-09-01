@@ -20,7 +20,7 @@ ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 
 # Financial dimensions and posting
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When you plan and set up your chart of accounts, consider how the various components work together when you post a document or journal. These components include account structures, advanced rules, and balancing and fixed dimensions. This article explains what each component is and how the components work together.
 

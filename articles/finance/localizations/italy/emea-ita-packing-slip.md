@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Post and print a packing slip with transportation delivery details for Italy
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 When you ship goods to customers, the shipment must contain a transportation delivery document (TDD). The TDD provides information about the customer and various parties that are involved in the shipment, such as the shipping contractor, the owner of the goods, and the shipment loader. Before you can print a packing slip that includes transportation delivery details, you must set up the transportation delivery details.
 

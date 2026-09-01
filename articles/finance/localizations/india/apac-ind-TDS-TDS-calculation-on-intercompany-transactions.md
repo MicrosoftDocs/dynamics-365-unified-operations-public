@@ -16,7 +16,7 @@ ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 
 # TDS calculation on intercompany transactions
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes the process that is used to calculate Tax Deducted at Source (TDS) on intercompany transactions in phases.
 

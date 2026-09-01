@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ transactional integrity
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes transactional integrity in the X++ language.
 

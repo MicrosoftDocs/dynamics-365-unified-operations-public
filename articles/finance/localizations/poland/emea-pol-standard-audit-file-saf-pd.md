@@ -17,7 +17,7 @@ ms.assetid: b85c4019-f682-45bf-9a0d-c7549a2f1274
 
 # SAF Accounting Books Income Tax - JPK_KR_PD
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how users in legal entities in Poland can generate a SAF Accounting Books Income Tax - JPK_KR_PD in XML format and preview in Excel.
 

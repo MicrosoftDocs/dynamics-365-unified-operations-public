@@ -12,7 +12,7 @@ ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 
 # Production output location
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the hierarchy that is used to identify the production output location.
 

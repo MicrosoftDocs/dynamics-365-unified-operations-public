@@ -15,7 +15,7 @@ ms.custom:
 
 # Start and stop time recording on a service order
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use this procedure to start and stop time recording for a service order for which a service level agreement is defined.
 

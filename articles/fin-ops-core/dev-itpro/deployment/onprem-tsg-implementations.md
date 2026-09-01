@@ -19,7 +19,7 @@ ms.service: dynamics-365-op
 
 # Scripts for resolving issues in on-premises environments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article serves as a central repository for scripts that you can use to fix problems in on-premises environments. Usually, run these scripts as predeployment or post-deployment scripts.
 

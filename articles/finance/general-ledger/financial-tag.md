@@ -15,6 +15,8 @@ ms.dyn365.ops.version: 10.0.16
 
 # Financial tags
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 After you post transactions, organizations often need visibility into subledger data so they can analyze the accounting entries that come from those transactions. Today, organizations use fields such as the document number, description, or financial dimensions to track subledger data in the general ledger, because it's difficult to navigate the data model to the subledger data. The types of subledger data that organizations often track include sales order or purchase order numbers, vendor or customer names, payment references, invoice numbers, or reference numbers from external transactions that are imported into Microsoft Dynamics 365 Finance. In addition to being used for analytics, the subledger data is used for processes such as ledger settlement.
 
 The **Financial tags** feature eliminates the need to use document numbers, descriptions, or financial dimensions by letting an organization create and enter up to 20 user-defined fields on transactions. The system stores those fields on the accounting entries that it creates for the transactions. Tag values aren't stored in any subledger tables, the Customer transactions, or Vendor transactions table.

@@ -14,7 +14,7 @@ ms.search.validFrom: 2017-06-30
 
 # Reverse charge mechanism for VAT/GST scheme
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes a generic approach for setting up reverse charge functionality for countries and regions that adopt the VAT or GST schemes.
 

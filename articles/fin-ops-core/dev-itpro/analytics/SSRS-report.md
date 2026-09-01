@@ -15,7 +15,7 @@ ms.assetid: 99d70045-cde7-45ec-9817-bb6465723286
 
 # SQL Server Reporting Services (SSRS) reports that are available
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article points you to a report that lists the SQL Server Reporting Services (SSRS) reports available.
 

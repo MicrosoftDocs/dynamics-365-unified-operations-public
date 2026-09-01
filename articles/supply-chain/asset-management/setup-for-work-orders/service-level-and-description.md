@@ -12,7 +12,7 @@ ms.search.form: EntAssetObjectServiceLevel, EntAssetWorkOrderStandardDescription
 
 # Service level and description
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
  
 

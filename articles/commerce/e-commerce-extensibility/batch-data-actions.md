@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Batch data actions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to batch data actions in Microsoft Dynamics 365 Commerce.
 

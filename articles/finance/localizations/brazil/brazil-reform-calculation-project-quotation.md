@@ -15,7 +15,7 @@ ms.custom:
 
 # Use tax calculation in project quotation in Brazil tax reform
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to calculate taxes in project quotations by using the Brazil tax reform solution.
 

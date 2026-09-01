@@ -12,6 +12,8 @@ ms.search.region: Global
 
 # Release schedule for service updates (unified environments)
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article provides the release schedule for service updates for unified environments managed through the Power Platform admin center.
 
 The detailed schedule for each service update, along with its corresponding build version and provisioning app version, is published before the start of the rollout. Microsoft sends a notification to customers 

@@ -11,7 +11,7 @@ ms.search.region: Global
 ---
 # Reverse a bank reconciliation
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When you reverse a bank reconciliation, the bank statement and its transactions go back to an **unreconciled** state. You can fix matching mistakes and reconcile again. This process applies to modern bank reconciliation.
 

@@ -14,7 +14,7 @@ ms.custom: sfi-image-nochange
 
 # Run multi-user testing by using the Performance SDK
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to run multi-user testing by using Microsoft Visual Studio, the Performance software development kit (SDK), and the Task recorder test scripts.
 

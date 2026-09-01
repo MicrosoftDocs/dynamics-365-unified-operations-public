@@ -17,7 +17,7 @@ ms.custom:
 # Strong Customer Authentication (SCA) using the Adyen connector
 
 
-[!include [banner](../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../finance/includes/banner.md)]
 
 This article describes Strong Customer Authentication (SCA) support built into the Adyen connector.
 

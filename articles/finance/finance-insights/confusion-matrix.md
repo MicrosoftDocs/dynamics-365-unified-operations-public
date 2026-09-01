@@ -16,7 +16,7 @@ ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 
 # Results of machine learning models
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article discusses confusion matrices, classification problems, and accuracy in machine learning (ML) models. The purpose is to enhance your understanding of accuracy in ML prediction results. The target audience includes engineers, analysts, and managers who want to build their knowledge and skills in data science.
 

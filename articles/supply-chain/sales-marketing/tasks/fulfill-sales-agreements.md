@@ -12,7 +12,7 @@ ms.search.form: SalesAgreementListPage, SalesAgreement, SalesAgreementGenerateRe
 
 # Fulfill sales agreements
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows you how to fulfill a sales agreement by associating sales orders with it. You can run this procedure in demo data company USMF or on your own data. Before starting this guide, make sure you have an effective sales agreement of type "Product value commitment". Alternatively, you can run the task guide called "Create sales agreements".  
 

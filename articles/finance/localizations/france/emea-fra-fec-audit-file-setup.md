@@ -14,6 +14,8 @@ ms.search.region: France
 
 # Prepare your environment to generate an FEC
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 Before you can generate a Fichier des écritures comptables (FEC) audit file, you must import the latest versions of the following Electronic reporting (ER) configurations.
 
 | ER configuration         | Type          | Description |

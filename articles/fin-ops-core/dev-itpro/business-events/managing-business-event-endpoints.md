@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.22
 
 # Manage business event endpoints
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Endpoints let you manage the destinations that business events are sent to. Business events in finance and operations apps support the following endpoint types.
 

@@ -12,6 +12,8 @@ ms.search.region: Global
 
 # Work planner and time profiles
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 The work planner is a graphic tool that you use to plan shift work and print the plan.
 
 ## About work planner and time profiles

@@ -13,7 +13,7 @@ ms.custom:
 
 # Deploy a Commerce trial (Preview) environment
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to subscribe to a partner offer to deploy a Microsoft Dynamics 365 Commerce trial (Preview) environment.
 

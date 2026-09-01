@@ -16,7 +16,7 @@ ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 
 # Set up TDS ledger accounts
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up ledger accounts for the Tax Deducted at Source (TDS) feature. You use the **Chart of accounts** page to set up ledger accounts for TDS.
 

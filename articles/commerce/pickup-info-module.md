@@ -15,7 +15,7 @@ ms.custom:
 
 # Pickup information module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes the pickup information module and explains how to add it to checkout pages in Microsoft Dynamics 365 Commerce.
 

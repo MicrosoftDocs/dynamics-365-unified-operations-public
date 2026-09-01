@@ -12,7 +12,7 @@ ms.search.form: WHSLocationType, WHSLocationProfile, WHSLocation, WHSPackProfile
 
 # Put to wall - put to store
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The *Put to wall - put to store* functionality lets you handle scenarios where you must consolidate a product to a prepack staging area, based on configurable criteria. Because this functionality allows for picking to a single target license plate and can use more put positions than cluster picking, companies that ship to stores or handle small items will benefit from decreased picking time.
 

@@ -12,7 +12,7 @@ ms.search.form: WHSLocationBuild, WHSZone
 
 # Additional location zones
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Three new zone fields are available in Microsoft Dynamics 365 Supply Chain Management. Warehouse managers can use them to define additional warehouse organizations or layouts. The new zone fields can be set either manually or by using the **Location setup** wizard. They can be used in any query or filtering that uses the Locations table.
 

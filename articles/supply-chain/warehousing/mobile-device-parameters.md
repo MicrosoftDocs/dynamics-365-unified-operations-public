@@ -13,7 +13,7 @@ ms.custom:
 
 # Global mobile device parameters
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to set up global warehouse management parameters that affect how the system interacts with mobile devices.
 

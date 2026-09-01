@@ -14,7 +14,7 @@ ms.custom:
 
 # Experimentation in Dynamics 365 Commerce
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to use experimentation in Microsoft Dynamics 365 Commerce to validate hypotheses about the effectiveness of your e-commerce pages.
 

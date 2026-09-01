@@ -13,7 +13,7 @@ ms.search.region: France
 
 # Reporting on payment deadlines for customer and vendor invoices for France
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure and generate reports on payment deadlines for customer and vendor invoices for legal entities in France using Microsoft Dynamics 365 Finance.
 

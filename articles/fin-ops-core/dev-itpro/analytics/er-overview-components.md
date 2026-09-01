@@ -16,7 +16,7 @@ ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 
 # Electronic reporting components
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Electronic reporting (ER) supports the following types of components:
 

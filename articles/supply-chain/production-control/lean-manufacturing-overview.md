@@ -13,7 +13,7 @@ ms.custom:
 
 # Lean manufacturing overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview and description of the lean manufacturing features in Dynamics 365 Supply Chain Management.
 

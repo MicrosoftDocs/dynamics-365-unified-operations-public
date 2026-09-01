@@ -14,7 +14,7 @@ ms.custom:
 
 # Point of sale (POS) payment extension
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 By using the extension points in point of sale (POS) to support payment extensibility, you can implement the core payment logic in the payment device or payment connector by using the Hardware station APIs. Some scenarios where you might want to do this implementation include:
 - You need to pass extra information, such as extension properties, to your connector or device.

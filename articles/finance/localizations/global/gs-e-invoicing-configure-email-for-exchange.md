@@ -14,7 +14,7 @@ ms.custom:
 
 # Configure an email channel for Office 365 Exchange Online
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 If you create the Electronic invoicing feature that imports electronic vendor invoices from attached files received in email, configure an email account channel.
 

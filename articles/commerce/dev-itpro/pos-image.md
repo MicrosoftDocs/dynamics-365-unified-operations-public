@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Client images in POS
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of how to manage POS client images in a retail environment in Microsoft Dynamics 365 Commerce.
 

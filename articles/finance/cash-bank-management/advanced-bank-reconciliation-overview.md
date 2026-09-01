@@ -17,7 +17,7 @@ ms.assetid: b0705653-1fa6-4d94-9728-bcf9fb387ad1
 
 # Advanced bank reconciliation overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the flow for the advanced bank reconciliation process. The advanced bank reconciliation feature lets you import bank statements that you can automatically reconcile from within bank transactions.
 

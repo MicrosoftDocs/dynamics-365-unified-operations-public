@@ -11,7 +11,7 @@ ms.author: v-cpicon
 
 # Configure printing for Goods and Services Purchases Submission Form 606
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure Goods and Services Purchase Submission Form (606) so that it can be printed as a report (**Format 606 DO**). Purchase transaction records that companies use to keep a detailed record of their operations indicate vendor information and document details. As applicable, they also indicate any corresponding taxes and tax withholdings, including local and foreign transactions and other mandatory information that the regulations specify.
 

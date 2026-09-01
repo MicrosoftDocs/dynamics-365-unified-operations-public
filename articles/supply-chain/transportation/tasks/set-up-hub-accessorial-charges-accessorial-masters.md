@@ -13,7 +13,7 @@ ms.custom:
 
 # Set up hub accessorial charges and accessorial masters
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to create an accessorial master for a hub and use that master to create a hub accessorial charge. A transportation coordinator typically performs this setup.
 

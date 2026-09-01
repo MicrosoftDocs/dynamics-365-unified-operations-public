@@ -20,7 +20,7 @@ ms.assetid: b86934d4-d9dd-4a07-bfd1-4adb948a5139
 
 # What's new or changed in finance and operations apps home page
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 ## Application releases

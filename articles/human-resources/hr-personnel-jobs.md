@@ -25,6 +25,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up the components of a job
 
+[!INCLUDE [banner](../includes/banner.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

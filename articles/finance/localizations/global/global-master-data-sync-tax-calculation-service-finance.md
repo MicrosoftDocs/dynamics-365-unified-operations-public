@@ -16,7 +16,7 @@ ms.custom:
 
 # Sync the tax setup from the Tax Calculation feature to Dynamics 365 Finance
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to sync tax setup master data from the Tax Calculation feature to Microsoft Dynamics 365 Finance.
 

@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 8.0.4
 
 # Customer workflow
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The customer workflow is available in version 8.0.4. You can change specific fields for a customer and then send those changes for approval by using the workflow before adding them to the customer.
 

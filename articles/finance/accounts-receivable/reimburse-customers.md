@@ -15,7 +15,7 @@ ms.assetid: 53533ee3-470e-458a-ac8b-3815aa4cb502
 
 # Reimburse customers
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to create reimbursement transactions for a group of customers. If a customer has a credit balance, you can reimburse the customer for the amount of the balance.
 

@@ -11,6 +11,8 @@ ms.reviewer: johnmichalak
 
 # Expansion of LATAM localization coverage
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 [!include [does not apply to](includes/does-not-apply-to.md)]
 
 In Latin America (LATAM), Microsoft Dynamics 365 Finance previously supported out-of-box localizations for Brazil and Mexico. Then, in 2023 release wave 1, Microsoft delivered out-of-box localizations for more countries and regions in Latin America. In future release waves, Microsoft continues to extend the scope of supported countries and regions in Latin America to address the needs of multiple global and local customers.

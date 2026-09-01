@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 7.3
 
 # Tax engine applicability
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The [Tax engine](../general-ledger/tax-engine.md) (also referred to as GTE) lets you configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements. This article walks you through a tax engine configuration to help you understand how GTE handles tax applicability.
 

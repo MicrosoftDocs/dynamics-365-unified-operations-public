@@ -16,7 +16,7 @@ ms.dyn365.ops.version:
 
 # Petty cash
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about the petty cash functionality that extends existing localization features as a global feature for all countries and regions. For more information, see [Petty cash for Eastern Europe and Russia](../localizations/europe/emea-petty-cash.md).
 

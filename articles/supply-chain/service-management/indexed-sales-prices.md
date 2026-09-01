@@ -12,7 +12,7 @@ ms.search.form: SMASubscriptionCreateDialog
 
 # Indexed sales prices  
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You set up the index for a subscription sales price when you create a subscription fee.
 

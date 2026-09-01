@@ -15,7 +15,7 @@ ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 
 # Generate reports by adding content as raw XML
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use the new **RAW XML** format element to design Electronic reporting (ER) formats that generate outgoing documents in XML format. In some cases, you might prefer to add raw XML data to these reports for one or more of the following reasons:
 

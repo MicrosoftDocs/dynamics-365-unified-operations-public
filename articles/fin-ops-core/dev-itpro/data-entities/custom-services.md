@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Custom service development
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can develop custom services for finance and operations apps. When a developer writes a custom service under a service group, the service group is always deployed on two endpoints:
 

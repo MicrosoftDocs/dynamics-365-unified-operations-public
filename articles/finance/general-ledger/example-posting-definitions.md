@@ -16,7 +16,7 @@ ms.assetid: 3864e4da-853f-403d-b906-79631d80b363
 
 # Posting definition examples
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides examples that show how posting definitions are used for purchase order encumbrances and budget appropriations.
 

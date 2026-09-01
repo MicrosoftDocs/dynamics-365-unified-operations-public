@@ -14,7 +14,7 @@ ms.custom:
 
 # POS extension basics
 
-[!include [banner](../../../includes/banner.md)]
+[!INCLUDE [banner](../../../includes/banner.md)]
 
 This article describes the basic concepts of point of sale (POS) extension in Microsoft Dynamics 365 Commerce. It applies to version 10.0.18 and later of the Retail software development kit (SDK).
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Set up sales tax groups and item sales tax groups
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This task recording walks you through the setup of sales tax groups and item sales tax groups. Sales tax groups are groups of sales tax codes that you attach to customers and vendors. You also attach them to ledger accounts for transactions that aren't posted to a particular vendor or customer. Item sales tax groups are groups of sales tax codes that you attach to resources like products. The sales taxes that apply to a particular transaction are determined by the sales tax codes that are included both in the sales tax group and in the item sales tax group of the transaction. You can calculate sales tax only if you select a sales tax group and an item sales tax group for each transaction that requires sales tax calculation or recording.  
 

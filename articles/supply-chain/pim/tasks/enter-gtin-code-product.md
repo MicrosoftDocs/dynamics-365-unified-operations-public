@@ -12,7 +12,7 @@ ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductO
 
 # Enter the GTIN code for a product
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 A Global Trade Item Number (GTIN) is a unique and internationally recognized identifier for a product. The GS1 organization assigns GTIN codes.
 

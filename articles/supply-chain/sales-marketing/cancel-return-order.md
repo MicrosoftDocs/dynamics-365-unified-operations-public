@@ -13,7 +13,7 @@ ms.custom:
 
 # Cancel a return order
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can cancel a return order (instead of deleting it) when you want to save a record of the planned return.
 

@@ -15,7 +15,7 @@ ms.search.form: EntAssetMaintenancePlan, EntAssetObjectType, EntAssetCounterType
 
 # Maintenance plans
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 A maintenance plan defines when a pre-planned preventive maintenance job is to be carried out on an asset. Maintenance plans can be related to assets, asset types, functional locations, or functional location types, but first you create the maintenance plans to be used in your company.
 

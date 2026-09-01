@@ -25,6 +25,7 @@ ms.dyn365.ops.version: Human Resources
 
 # Create an open-ended leave of absence
 
+[!INCLUDE [banner](../includes/banner.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

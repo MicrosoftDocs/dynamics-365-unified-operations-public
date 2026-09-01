@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Operations
 
 # Custom Help overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 [!INCLUDE [PEAP](../../../includes/peap-3.md)]
 

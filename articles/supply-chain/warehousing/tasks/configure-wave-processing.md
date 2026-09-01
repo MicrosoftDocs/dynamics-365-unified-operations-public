@@ -12,7 +12,7 @@ ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSParameters, Pro
 
 # Configure wave processing example
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides an example of how to set up the criteria that determine what work is generated for a warehouse when a wave is processed, and whether waves are processed manually or automatically. You specify the criteria by setting up wave templates and queries that match a wave with released lines in sales orders, production orders, or kanban orders.
 

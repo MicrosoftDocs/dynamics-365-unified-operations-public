@@ -14,7 +14,7 @@ ms.search.validFrom: 2019-03-01
 
 # Fixed assets and intangible assets registers
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with fixed assets and intangible assets registers in Microsoft Dynamics 365 Finance.
 

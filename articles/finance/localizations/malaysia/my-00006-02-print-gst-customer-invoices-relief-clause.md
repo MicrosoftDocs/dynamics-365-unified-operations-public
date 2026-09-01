@@ -15,7 +15,7 @@ ms.custom:
 
 # MY-00006 02 Print GST customer invoices with a relief clause
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to print GST customer invoices for Malaysia that include a relief clause in Microsoft Dynamics 365 Finance. 
 

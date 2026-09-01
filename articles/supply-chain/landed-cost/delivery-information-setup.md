@@ -13,7 +13,7 @@ ms.custom:
 
 # Delivery information setup
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to set up delivery information for the **Landed cost** module.
 

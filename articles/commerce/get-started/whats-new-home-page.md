@@ -17,7 +17,7 @@ ms.search.validFrom: 2020-02-29
 
 # What's new or changed in Dynamics 365 Commerce 
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Releases of Dynamics 365 Commerce
 To see what's new or changed in each release of Commerce, see the following articles.

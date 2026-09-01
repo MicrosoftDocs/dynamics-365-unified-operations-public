@@ -13,7 +13,7 @@ ms.search.form: WHSLicensePlateLabel, WHSLicensePlateLabelBuildConfig, WHSLicens
 
 # Document routing label layouts
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to create layouts for license plate, container, custom, and wave labels. It also provides guidelines for using the Zebra Programming Language (ZPL) used to create the layouts.
 

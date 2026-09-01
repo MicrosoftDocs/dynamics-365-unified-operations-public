@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 8.1
 
 # One Version service updates FAQ
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This FAQ is intended to provide clarity about the service updates, processes, and tools that you can use to prepare for the change. We continue to add information to this article as required.
 

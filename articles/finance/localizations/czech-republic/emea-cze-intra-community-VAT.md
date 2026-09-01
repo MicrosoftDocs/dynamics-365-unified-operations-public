@@ -14,6 +14,8 @@ ms.search.validFrom: 2019-06-01
 
 # Intra-community VAT
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article provides information about how to calculate and post intra-community value-added tax (VAT) for the Czech Republic.
 
 When legal entities with a primary address in the Czech Republic purchase from European Union (EU) member states, they need to self-assess VAT to ensure that the following conditions are met:

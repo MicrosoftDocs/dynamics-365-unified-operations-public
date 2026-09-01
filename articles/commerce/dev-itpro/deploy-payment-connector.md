@@ -15,7 +15,7 @@ ms.custom:
 
 # Deploy payment connectors
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article guides IT professionals or value-added resellers (VARs) through the process of deploying a payment connector to the appropriate components. It assumes that the payment provider or payment independent software vendor (ISV) implemented and tested the payment connector and that it's ready for validation and subsequent production deployment in a customer environment.
 

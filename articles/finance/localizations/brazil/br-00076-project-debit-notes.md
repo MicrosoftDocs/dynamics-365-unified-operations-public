@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-06-30
 
 # Project debit notes (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to generate debit notes for projects to get reimbursement for expenses incurred in Brazil with Microsoft Dynamics 365 Finance.
 

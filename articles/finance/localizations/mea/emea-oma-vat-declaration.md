@@ -14,7 +14,7 @@ ms.search.validFrom: 2021-06-10
 
 # VAT declaration for Oman (OM-00003)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and generate the value-added tax (VAT) return form for legal entities in Oman in Microsoft Dynamics 365 Finance.
 

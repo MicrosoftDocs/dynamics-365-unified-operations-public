@@ -15,7 +15,7 @@ ms.custom:
 
 # EU sales list reporting
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about European Union (EU) sales list reporting.
 

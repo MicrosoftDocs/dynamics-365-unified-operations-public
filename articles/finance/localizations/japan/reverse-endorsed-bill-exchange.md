@@ -15,7 +15,7 @@ ms.custom:
 
 # Reverse an endorsed bill of exchange
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to reverse an endorsed bill of exchange from the accounts payable option for Japan in Microsoft Dynamics 365 Finance.
 

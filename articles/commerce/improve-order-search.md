@@ -14,7 +14,7 @@ ms.custom:
 
 # Improve the performance of Commerce order search
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to enable and use the **Improve Performance of Commerce Order search** feature. This feature helps improve search order performance by enabling the use of intermediate order totals that the **Calculate sales totals** job calculates. To use this feature, you must schedule a batch job.
 

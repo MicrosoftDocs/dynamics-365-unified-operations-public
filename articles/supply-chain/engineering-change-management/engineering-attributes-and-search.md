@@ -12,7 +12,7 @@ ms.search.form:  EngChgProductAttributeSearch, EngChgMaintainAttributeInheritanc
 
 # Engineering attributes and engineering attribute search
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 To ensure that all product master data can be registered in the system, you should use engineering attributes to specify all non-standard characteristics. You can then use engineering attribute search to easily find products, based on those registered characteristics.
 

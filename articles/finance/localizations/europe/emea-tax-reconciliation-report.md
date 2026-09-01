@@ -14,7 +14,7 @@ ms.search.validFrom: 2017-06-30
 
 # Tax reconciliation report for Iceland and Norway
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to generate the tax reconciliation report for Icelandic and Norwegian legal entities.
 

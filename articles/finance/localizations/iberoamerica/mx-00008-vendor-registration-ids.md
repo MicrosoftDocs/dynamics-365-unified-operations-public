@@ -15,7 +15,7 @@ ms.search.form: VendTable
 
 # MX-00008 - Vendor registration IDs
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create a vendor for Mexico to support the Declaración Informativa de Operaciones con Terceros (DIOT) declaration and other legal reports in Microsoft Dynamics 365 Finance.
 

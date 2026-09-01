@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 15
 
 # Extensibility changes in finance and operations version 8.0
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Hard-sealed application models
 

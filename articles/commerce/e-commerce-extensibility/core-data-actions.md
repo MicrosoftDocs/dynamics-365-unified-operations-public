@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Core data actions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides a list of core data actions that are included with the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 

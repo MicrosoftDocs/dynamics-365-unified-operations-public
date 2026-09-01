@@ -16,7 +16,7 @@ ms.custom:
 
 # Attach inventory items to service objects
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to attach an inventory item to a service object. When you attach an item to a service object, you can control and report the service activities that are performed for the item.
 

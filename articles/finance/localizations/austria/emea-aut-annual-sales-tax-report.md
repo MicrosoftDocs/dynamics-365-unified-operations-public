@@ -14,7 +14,7 @@ ms.search.region: Global
 
 # Generate an annual sales tax report U1
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to generate an annual sales tax report U1 for Austria in PDF format. 
 

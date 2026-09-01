@@ -15,7 +15,7 @@ ms.custom:
 
 # Create accelerated depreciation profile and assign it to book
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create an accelerated depreciation profile and assign it to book for Japan in Microsoft Dynamics 365 Finance.
 

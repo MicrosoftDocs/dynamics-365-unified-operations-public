@@ -15,7 +15,7 @@ ms.search.form: RAssetTable, RAssetComponents
 
 # Fixed asset counting (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to register fixed asset counting for Russia in Microsoft Dynamics 365 Finance.
 

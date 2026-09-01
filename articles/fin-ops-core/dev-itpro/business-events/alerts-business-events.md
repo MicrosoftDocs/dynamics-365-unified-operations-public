@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 2019-02-28
 
 # Alerts as business events
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can configure two kinds of alerts: change-based alerts and due date alerts. For more information about the alerts functionality, see [Alerts](../../fin-ops/get-started/alerts-overview.md).
 

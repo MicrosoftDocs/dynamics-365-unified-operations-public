@@ -12,7 +12,7 @@ ms.search.form:
 
 # Sales order base price determination rules
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the price determination rules for calculating the sales order base price.
 

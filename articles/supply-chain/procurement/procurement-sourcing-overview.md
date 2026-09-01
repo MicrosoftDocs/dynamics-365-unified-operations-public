@@ -13,7 +13,7 @@ ms.custom:
 
 # Procurement and sourcing overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article gives an overview of the functionality that's available in the Procurement and sourcing module.
 

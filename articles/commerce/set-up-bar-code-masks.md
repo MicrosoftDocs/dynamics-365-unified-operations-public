@@ -16,7 +16,7 @@ ms.custom:
 
 # Set up barcode masks
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to set up barcode mask characters and barcode masks, and how to assign barcode masks to barcodes in Microsoft Dynamics 365 Commerce.
 

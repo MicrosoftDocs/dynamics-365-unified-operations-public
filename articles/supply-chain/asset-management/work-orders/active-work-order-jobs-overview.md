@@ -11,7 +11,7 @@ ms.search.form:
 
 # Active work order maintenance jobs overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 
 

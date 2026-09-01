@@ -10,6 +10,8 @@ ms.reviewer: twheeloc
 ---
 # Archive Dynamics 365 Finance General ledger data
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article explains how to archive Microsoft Dynamics 365 Finance General ledger data.
 
 > [!IMPORTANT]

@@ -14,7 +14,7 @@ ms.search.validFrom: 2024-09-30
 
 # Purge Commerce transactions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to use the Purge Commerce sales transactions capability to delete old transactional data that you no longer need in Microsoft Dynamics 365 Commerce.
 

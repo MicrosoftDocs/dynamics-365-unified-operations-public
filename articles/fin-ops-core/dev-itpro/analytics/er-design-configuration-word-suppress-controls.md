@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Version 10.0.6
 
 # Suppress Word content controls in generated reports
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 To generate reports as Microsoft Word documents, you must design a template for the reports as a Word document. This template must contain Word content controls as placeholders for data that's filled in at runtime. To use the created Word document as a template for your reports, [configure](er-design-configuration-word.md) a new [Electronic reporting (ER)](general-electronic-reporting.md) [solution](er-quick-start1-new-solution.md). The solution must include an ER [configuration](general-electronic-reporting.md#Configuration) that contains an ER format component. You must configure this ER format to use the designed template for report generation.
 

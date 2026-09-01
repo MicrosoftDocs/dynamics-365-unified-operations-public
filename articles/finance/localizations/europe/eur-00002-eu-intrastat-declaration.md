@@ -15,7 +15,7 @@ ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport, Intras
 
 # EUR-00002 Generate an EU Intrastat declaration
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to export the Intrastat declaration in the electronic file format and preview the declaration data in a Microsoft Excel format. 
 

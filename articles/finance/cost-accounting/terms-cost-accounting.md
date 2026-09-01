@@ -19,7 +19,7 @@ ms.custom: evergreen
 
 # Cost accounting terminology
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article defines the key terms that are used in Cost accounting.
 

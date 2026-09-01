@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Platform update 8
 
 # Configuration data packages
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can get configuration data packages as process data packages from Microsoft Dynamics Lifecycle Services. These data packages can help improve the repeatability of implementations and accelerate the configuration.
 

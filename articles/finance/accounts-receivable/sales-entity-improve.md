@@ -14,7 +14,7 @@ ms.custom:
 ---
 # Improve performance and efficiency of sales invoice entities
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 To significantly improve the performance and efficiency of our sales invoice entities, Microsoft has eliminated inefficient views and computed columns. This article provides an overview of the changes.

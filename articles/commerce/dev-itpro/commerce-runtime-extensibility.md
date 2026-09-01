@@ -15,7 +15,7 @@ ms.custom:
 
 # Commerce runtime (CRT) extensibility
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes various ways that you can extend the commerce runtime (CRT). It explains the concept of extension properties, and shows how to add them to a CRT entity so that they're persistent and so that they aren't persistent.
 

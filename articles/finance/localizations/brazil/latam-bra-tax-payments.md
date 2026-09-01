@@ -16,7 +16,7 @@ ms.assetid: 92223189-69a8-4a40-b867-ef9b4f14c23d
 
 # Tax payments in Brazil
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about tax payments in Brazil. In Brazil, users can register and post tax payments together with related fiscal information that must be reported to the tax authorities.
 

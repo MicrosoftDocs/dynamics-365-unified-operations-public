@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Platform update 63
 
 # Clean up the batch job table
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Over time, you create new batch jobs for specific user actions, run one-time jobs, and recreate batch jobs. As a result, many abandoned or unused batch jobs accumulate in the system. Accumulated batch jobs can lead to the growth of the batch job table and related tables. This growth can negatively affect the performance of other jobs.
 

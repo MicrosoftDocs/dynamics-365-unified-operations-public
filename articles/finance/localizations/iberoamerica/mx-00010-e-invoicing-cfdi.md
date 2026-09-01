@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # E-invoicing CFDI
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article shows you how to create and post a customer invoice as an electronic invoice by using the CFDI method. You can create and post multiple sales orders as electronic invoices and send the .pdf and .xml files as email attachments to customers. You must be logged into a legal entity with a primary address in Mexico to complete this task. This task uses the MXMF demo company data.
 

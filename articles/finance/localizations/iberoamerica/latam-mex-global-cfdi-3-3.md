@@ -15,7 +15,7 @@ ms.search.validFrom: 2019-06-01
 
 # Global CFDI electronic invoices for Mexico 
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The Commerce functionality for Mexico supports the Comprobantes fiscales digitales por internet (CFDI) format for Mexican companies. For more information about CFDI electronic invoices, see [Electronic invoices (CFDI)](latam-mex-CFDI-electronic-invoices.md). When a company closes the period, it must issue a Global CFDI document to consolidate all the receipts that it issued to final consumers. This document includes the following information for each transaction that you register during the period:
 

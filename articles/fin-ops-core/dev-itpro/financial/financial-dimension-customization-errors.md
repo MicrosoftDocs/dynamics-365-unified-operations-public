@@ -13,7 +13,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Best practices for financial dimension customizations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes best practices for writing customizations that interact with the financial dimension framework. These guidelines are based on the most common mistakes observed in partner and Independent Software Vendor (ISV) code. Following them helps you avoid runtime errors, missing dimensions, and data integrity problems.
 

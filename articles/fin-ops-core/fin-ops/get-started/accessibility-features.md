@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 7.3
 
 # Accessibility features
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the functionality that is designed to help users who have various disabilities use this app. For example, there are features for people who use sight-assistive technologies such as Microsoft Windows Narrator.
 

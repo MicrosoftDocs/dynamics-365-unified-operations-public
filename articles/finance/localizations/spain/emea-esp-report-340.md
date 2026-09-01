@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Report 340 for Spain
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and generate Report 340 for Spain in Microsoft Dynamics 365 Finance.
 

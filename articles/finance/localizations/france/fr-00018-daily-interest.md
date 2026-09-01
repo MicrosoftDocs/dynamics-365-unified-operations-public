@@ -15,7 +15,7 @@ ms.search.form: SalesTableListPage, SalesEditLines
 
 # FR-00018 Daily interest calculation for late payment and lump sum in the invoice and collection letter
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to show the interest calculation on an invoice in France by using Microsoft Dynamics 365 Finance.
 

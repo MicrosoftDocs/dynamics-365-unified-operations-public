@@ -11,7 +11,7 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 
 # Synchronize intercompany prices and discounts
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Discounts and prices are always synchronized between the intercompany sales order and the intercompany purchase order. You can also synchronize the price and discounts to and from the original sales order, so that all orders have the same prices and discounts. You do this from the **Intercompany** page that is accessed from the **General** tab on the **All customers** list page - either from **Sales and marketing** or from **Procurement and sourcing**.
 

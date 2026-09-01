@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-10-28
 
 # Transfer fixed assets (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to transfer a fixed asset in Russia with Microsoft Dynamics 365 Finance.
 

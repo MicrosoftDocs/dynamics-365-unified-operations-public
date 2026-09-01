@@ -23,6 +23,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create an open ended question
 
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]

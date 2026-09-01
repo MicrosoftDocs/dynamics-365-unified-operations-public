@@ -17,7 +17,7 @@ ms.assetid: b85c4019-f682-45bf-9a0d-c7549a2f1274
 
 # SAF Inventory file - JPK_MAG
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up Microsoft Dynamics 365 Finance to configure and generate a SAF Inventory file - JPK_MAG for legal entities that have a primary address in Poland.
 

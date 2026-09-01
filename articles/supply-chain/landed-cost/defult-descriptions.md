@@ -13,7 +13,7 @@ ms.custom:
 
 # Default descriptions for the general ledger
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Default descriptions can be used to update the **Description** field in voucher postings to the general ledger. This functionality has been enhanced to work with Landed cost.
 

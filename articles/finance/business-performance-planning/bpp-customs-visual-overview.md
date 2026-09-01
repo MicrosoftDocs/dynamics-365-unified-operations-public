@@ -15,7 +15,7 @@ ms.dyn365.ops.version:
 
 # Business performance planning custom visuals overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 Finance Business performance planning offers a specialized toolkit of seven custom Power BI visuals that are tailored to your financial planning needs. These custom visuals provide a comprehensive range of tools that add planning and financial reporting functions to Power BI. By using these tools, you streamline what traditionally are labor-intensive processes, and enable swift insights and informed decision-making. Through intuitive controls and powerful functionality, the visuals transform financial planning by promoting accuracy, efficiency, and agility. You can focus on strategic analysis instead of data manipulation.
 

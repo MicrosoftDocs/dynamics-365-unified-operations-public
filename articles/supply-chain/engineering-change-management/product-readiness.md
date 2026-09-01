@@ -12,7 +12,7 @@ ms.search.form:  EngChgReadinessPersonUserLookup, EngChgReadinessList_Assigned,E
 
 # Product readiness
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can use readiness checks to help ensure that all the required master data has been specified for a product before it's used in transactions. When readiness checks are used, a user or team is made responsible for validating specific predefined product-related data.
 

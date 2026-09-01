@@ -12,6 +12,8 @@ ms.date: 1/27/2025
 
 # Custom report migration
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article explains how to back up, export, and restore custom reports. This process helps ensure that your organization's data remains consistent and up to date.
 
 The process has two main stages:

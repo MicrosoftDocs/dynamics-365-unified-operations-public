@@ -12,7 +12,7 @@ ms.reviewer: johnmichalak
 
 # Configure a tax solution provider
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure a tax solution provider for Tax calculation. After you complete the steps according to the implementation guidance that your tax rate provider provides, select your tax feature setup in Tax calculation parameters for the corresponding legal entity.
 

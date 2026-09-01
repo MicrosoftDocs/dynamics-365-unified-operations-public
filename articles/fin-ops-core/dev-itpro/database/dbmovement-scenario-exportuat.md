@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 8.1.3
 
 # Export a copy of the standard user acceptance testing (UAT) database
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Database movement operations are a suite of self-service actions that you can use as part of data application lifecycle management (DataALM). This tutorial shows how to export all the data and transactions from a sandbox standard user acceptance testing (UAT) environment.
 

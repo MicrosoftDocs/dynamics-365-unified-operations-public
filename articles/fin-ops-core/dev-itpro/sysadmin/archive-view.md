@@ -12,6 +12,8 @@ ms.reviewer: twheeloc
 
 # View archived data in Dataverse long-term retention
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article describes how to view archived data in Microsoft Dataverse long-term retention.
 
 ## View data by using Fabric

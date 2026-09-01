@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-10-28
 
 # Inquiries and reports with agreements
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to restore previously deducted VAT amounts for fixed assets in Russia in Microsoft Dynamics 365 Finance.
 

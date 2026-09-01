@@ -13,7 +13,7 @@ ms.custom:
 
 # Pay based on registrations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains, in detail, how pay is calculated based on worker registrations. It includes examples that show how the various combinations of setup options that are available for the calculation affect the result. Here are some of the areas that will be covered:
 

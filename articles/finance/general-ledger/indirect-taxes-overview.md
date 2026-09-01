@@ -17,7 +17,7 @@ ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
 
 # Sales tax overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the sales tax system. It explains the elements of the sales tax setup and how they work together.
 

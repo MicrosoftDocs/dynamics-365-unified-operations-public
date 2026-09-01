@@ -1,4 +1,4 @@
-﻿---
+---
 title: Customer-specific certificate of analysis (COA)
 description: Learn how to customize the content of a certificate of analysis (COA) to meet specific customer requirements and automatically print the COA when a sales order packing slip is generated.
 author: johanhoffmann
@@ -13,7 +13,7 @@ ms.custom:
 
 # Customer-specific certificate of analysis (COA)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management lets you create a basic certificate of analysis (COA) either from the quality order or from the menu directly after you select a quality order. Learn more about how to use the basic COA in [Quality orders](quality-orders.md). This article explains how to customize the content of a COA to meet specific customer requirements and automatically print the COA when a sales order packing slip is generated.
 

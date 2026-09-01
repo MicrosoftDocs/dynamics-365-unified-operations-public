@@ -14,7 +14,7 @@ ms.custom:
 
 # Enable manual publishing of ratings and reviews by a moderator
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to enable manual publishing of ratings and reviews by a moderator in Microsoft Dynamics 365 Commerce, and how to manually publish ratings and reviews.
 

@@ -13,7 +13,7 @@ ms.search.form: WHSLocDirFailure, WHSLocDirHint, WHSLocDirTable, WHSLocDirTableU
 
 # Control warehouse work by using work templates and location directives
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to use work templates and location directives to determine how and where work is carried out in the warehouse.
 

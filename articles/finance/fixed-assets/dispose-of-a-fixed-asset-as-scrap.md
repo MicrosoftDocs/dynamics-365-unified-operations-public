@@ -18,7 +18,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 # Dispose of a fixed asset as scrap
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the process of eliminating transactions for a fixed asset that you dispose of as scrap. The transaction types that you can eliminate include an asset's acquisition and accumulated depreciation transactions, along with other fixed asset transactions. When you eliminate these transactions, you affect balance sheet accounts such as acquisition adjustment, depreciation adjustment, revaluation, write-up, and write-down accounts.
 

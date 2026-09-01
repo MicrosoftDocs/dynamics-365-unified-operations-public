@@ -13,7 +13,7 @@ ms.custom:
 
 # Associate a fuel index with a carrier as an accessorial charge
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This guide shows how to create an accessorial assignment, carrier accessorial charge, and accessorial master for fuel surcharge. It also shows how to associate a carrier fuel index with a carrier. A carrier fuel index must already exist before you run this guide (learn more in [Set up a carrier fuel index](set-up-carrier-fuel-index.md)). These setup tasks are typically done by a logistics manager.
 

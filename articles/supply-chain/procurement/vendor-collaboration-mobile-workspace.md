@@ -12,7 +12,7 @@ ms.assetid: 1d293b3a-2fa2-418d-9347-78c2809d67fe
 
 # Vendor collaboration mobile workspace
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 [!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 

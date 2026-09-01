@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Platform update 30
 
 # Database movement toolkit
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The Database movement toolkit is a ZIP file hosted in Microsoft Dynamics Lifecycle Services. You can download this toolkit. It contains a series of scripts that enhance the customer experience for moving data between developer environments and sandbox environments. This article explains the components of the toolkit, how to download it, and any recent changes.
 

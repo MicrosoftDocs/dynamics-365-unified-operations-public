@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Platform 27
 
 # What's new or changed in Dynamics 365 for Finance and Operations platform update 27 (June 2019)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes features that are new or changed in Dynamics 365 for Finance and Operations platform update 27. This version has a build number of 7.0.5286. For more information about Platform update 27, see [Additional resources](whats-new-platform-update-27.md#additional-resources).
 

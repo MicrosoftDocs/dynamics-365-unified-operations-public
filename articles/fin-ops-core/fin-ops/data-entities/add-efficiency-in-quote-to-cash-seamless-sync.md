@@ -13,7 +13,7 @@ ms.custom:
 
 # Enable and configure seamless sync with Dynamics 365 Sales
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management includes a sophisticated pricing engine that handles trade agreements for prices and discounts. This pricing engine uses complex rules to determine the best price for a given order or quotation. When Supply Chain Management is integrated with Dynamics 365 Sales, you can either [sync on demand by using the Supply Chain Management pricing engine](pricing-engine.md) or use *seamless sync*, as described in this article.
 

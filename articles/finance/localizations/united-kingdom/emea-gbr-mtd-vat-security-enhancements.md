@@ -14,7 +14,7 @@ ms.search.validFrom: 2025-03-25
 
 # Security enhancements in UK MTD VAT integration (cloud-based deployments only)
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 [!INCLUDE[banner](../../includes/preview-banner.md)]
 
 > [!IMPORTANT]

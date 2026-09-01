@@ -12,7 +12,7 @@ ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 
 # Asset criticality types
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
  
 

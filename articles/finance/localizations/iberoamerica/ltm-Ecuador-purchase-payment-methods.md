@@ -11,7 +11,7 @@ ms.author: v-federicohe
 
 # Configure Ecuadorian purchase payment methods printing
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure the Ecuadorian purchase payment methods report so that it can be printed. This report shows the purchase code, its payments, and the transactions amount.
 

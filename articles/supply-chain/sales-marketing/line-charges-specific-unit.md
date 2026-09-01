@@ -12,7 +12,7 @@ ms.search.form:
 
 # Units of measure for line-level charges
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 All line-level auto charges and line charges include a category that controls how and where the charge applies. The available categories include *Specific unit* and *Specific unit match*. These categories let you set up and apply line charges that are specific to the unit of measure for a line item that's either sold or purchased. They work in the following way:
 

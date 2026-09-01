@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-06-30
 
 # Generate German audit file
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to generate a German audit file in Microsoft Dynamics 365 Finance.
 

@@ -15,7 +15,7 @@ ms.search.form: BOMDesigner, BOMDesignerRouteVersion, Route, RouteInventProd, Ro
 
 # Routes and operations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about routes and operations. A route defines the process for producing a product or product variant. It describes each step (operation) in the production process and the order that these steps must be performed in. For each step, the route also defines the required operations resources, the required setup time and run time, and how the cost should be calculated.
 

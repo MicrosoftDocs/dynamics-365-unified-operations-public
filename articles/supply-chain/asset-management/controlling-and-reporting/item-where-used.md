@@ -12,7 +12,7 @@ ms.search.form: EntAssetItemWhereUsed, EntAssetItemWhereUsedCalculate
 
 # Item where used
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
  
 

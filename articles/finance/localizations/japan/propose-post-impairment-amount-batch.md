@@ -15,7 +15,7 @@ ms.custom:
 
 # Propose and post the impairment amount by batch
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to propose and post the impairment amount by batch for Japan in Microsoft Dynamics 365 Finance.
 

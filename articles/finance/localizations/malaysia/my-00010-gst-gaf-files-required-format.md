@@ -15,7 +15,7 @@ ms.custom:
 
 # MY-00010 GST - Generate GAF files in the required format
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to generate a Malaysia GAF file in Microsoft Dynamics 365 Finance.
 

@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Tax reporting by reporting codes
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes the general approach for setting up and generating the tax statement by reporting codes for some countries/regions. This approach is common for users in legal entities in the following countries/regions:
 

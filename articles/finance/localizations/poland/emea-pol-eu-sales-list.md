@@ -12,7 +12,7 @@ ms.reviewer: johnmichalak
 
 # EU sales list for Poland
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up the European Union (EU) sales list report for Poland (VAT-UE, VAT-UEK for corrections). The Polish EU sales list report contains information about the sale and purchase of goods and services for reporting in XML format.
 

@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Request properties object
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the request properties object in Microsoft Dynamics 365 Commerce.
 

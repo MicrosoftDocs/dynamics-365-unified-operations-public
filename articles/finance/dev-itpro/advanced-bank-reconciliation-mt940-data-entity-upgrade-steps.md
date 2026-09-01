@@ -16,7 +16,7 @@ ms.assetid: dddc99ae-56ae-48df-856a-131079c17dcb
 
 # Advanced bank reconciliation MT940 Import – Composite data entity upgrade
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A sequence number needs to be added to the bank statement import entity to support the MT940 format. 
 

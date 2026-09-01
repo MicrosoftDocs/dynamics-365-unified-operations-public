@@ -16,7 +16,7 @@ ms.assetid: 79396ff8-538f-4f6f-80d0-898fc5618fb5
 
 # Configure Lifecycle Services security
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [Lifecycle Services deprecation](../includes/lcs-deprecation.md)]
 [!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 

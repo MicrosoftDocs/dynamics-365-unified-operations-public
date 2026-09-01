@@ -12,7 +12,7 @@ ms.search.form: EntAssetOutboundObjectsListPage, EntAssetOutboundObjectsDeliver,
 
 # Inbound and outbound assets
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 If your company does repair jobs or maintenance jobs on assets that are received from other locations or customers, Asset Management can track both inbound assets that are on their way to your company and outbound assets that are being returned.
 

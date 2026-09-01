@@ -12,7 +12,7 @@ ms.search.form: WHSRFMenuItem
 
 # Set up a mobile device menu item for moving items in the warehouse
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to set up a mobile device menu item that lets workers register manual movements of items in the warehouse. The worker who uses this mobile device menu item decides what to move and where to move it.
 

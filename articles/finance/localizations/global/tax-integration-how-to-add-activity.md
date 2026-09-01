@@ -12,7 +12,7 @@ ms.custom:
 
 # Add a new activity in tax integration
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about how to add a new or customized activity to the tax integration framework. Before you begin, be sure to read [Facade, sequence, and activities in tax integration](tax-integration-facade-sequence-activity.md).
 

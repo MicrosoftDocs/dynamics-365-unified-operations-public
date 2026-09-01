@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 1611
 
 # CODA bank statement
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article includes information about CODA, which is a report format used in the Belgian electronic banking system.
 

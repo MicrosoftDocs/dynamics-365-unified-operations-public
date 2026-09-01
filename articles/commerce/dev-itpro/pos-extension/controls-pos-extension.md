@@ -14,7 +14,7 @@ ms.custom:
 
 # Use POS controls in extensions
 
-[!include [banner](../../../includes/banner.md)]
+[!INCLUDE [banner](../../../includes/banner.md)]
 
 This article explains how to use Microsoft Dynamics 365 Commerce point of sale (POS) controls in extensions. It applies to version 10.0.18 and later of the Retail software development kit (SDK).
 

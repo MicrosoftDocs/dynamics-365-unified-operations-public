@@ -12,6 +12,8 @@ ms.collection: get-started
 
 # Matrix planning visual troubleshooting
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This article describes some known issues in the Matrix planning visual in Business performance planning.

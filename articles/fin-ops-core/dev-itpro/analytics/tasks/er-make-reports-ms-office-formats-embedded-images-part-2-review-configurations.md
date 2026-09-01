@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Review configurations to generate reports in Office format that have embedded images
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 To complete these steps, you must first complete the steps in the "ER Make reports in MS Office formats with embedded images (Part 1: Set up parameters)" task guide.
 

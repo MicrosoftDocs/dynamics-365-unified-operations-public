@@ -16,6 +16,8 @@ ms.dyn365.ops.version: 10.0.31
 
 # Customer split on billing schedules
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 On a billing schedule, the *invoice account* is the customer who receives the sales order invoice so that they can pay the bill. In some scenarios, more than one customer can pay an invoice. The **Customer split** functionality lets you add more customers that can be billed for the same billing schedule. To enable this functionality, go to **Subscription billing \> Recurring contract billing \> Setup \> Recurring contract billing parameters**, and set the **Customer split** option to **Yes**.
 
 ## Customer split on the billing schedule header

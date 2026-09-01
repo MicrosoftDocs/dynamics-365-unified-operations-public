@@ -17,7 +17,7 @@ ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 
 # Financial reporting posting audit
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Accurate entry of transactions is important for proper reporting. Transactions should be posted to the correct accounts and dimensions, and with the correct amounts. This article explains how the **Postings audit** report provides details about posted transactions.
 

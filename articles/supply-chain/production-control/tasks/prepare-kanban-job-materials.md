@@ -12,7 +12,7 @@ ms.search.form: KanbanBoardWorkCell
 
 # Prepare a process kanban job when materials are available for the work cell
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This task focuses on preparing a process kanban job when all materials are available for the work cell. The demo data company used to create this task is USMF. This task is intended for the machine operator.
 

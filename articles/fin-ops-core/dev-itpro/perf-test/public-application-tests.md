@@ -14,6 +14,8 @@ ms.search.form:
 
 # Public application tests
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article describes a collection of tests that cover the standard functionality of finance and operations apps. The following table lists the tests that are available.
 
 | Name | Description |

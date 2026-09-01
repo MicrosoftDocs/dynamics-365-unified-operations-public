@@ -17,7 +17,7 @@ ms.custom:
 
 # Configure the Warehousing app for on-premises deployments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to configure Dynamics 365 Finance – Warehousing app for on-premises deployments.
 

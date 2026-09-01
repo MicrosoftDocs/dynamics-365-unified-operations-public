@@ -17,7 +17,7 @@ ms.custom: sfi-image-nochange
 
 # Product insights by Copilot
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how store associates can use Microsoft Copilot-generated product insights to quickly understand product information and deliver informed shopping assistance in the Microsoft Dynamics 365 Commerce Store Commerce app.
 

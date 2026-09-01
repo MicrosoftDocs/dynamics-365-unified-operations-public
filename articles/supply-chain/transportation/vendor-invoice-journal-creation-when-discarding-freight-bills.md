@@ -11,7 +11,7 @@ ms.search.form: TMSAuditMaster, TMSFreightBillInvoiceReconcile, TMSFreightBillSu
 
 # Vendor invoice journal creation when discarding freight bills
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides guidance about how to create vendor invoice journals when you discard freight bills that are used in Microsoft Dynamics 365 Supply Chain Management.
 

@@ -16,7 +16,7 @@ ms.assetid: d9984cef-ddcf-46bd-816d-c01b8cc5cf48
 
 # Settle a partial customer payment that has discounts on credit notes
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article walks you through a scenario where a cash discount is taken on a credit note when the original invoice also had a cash discount. 
 

@@ -16,7 +16,7 @@ ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 
 # Batch history logging options
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to configure batch history logging options to optimize database storage and improve write performance by skipping the **INFO** and **PARAMETERS** columns when data is written to the batch history table.
 

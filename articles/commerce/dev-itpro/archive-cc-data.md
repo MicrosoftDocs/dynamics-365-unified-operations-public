@@ -16,7 +16,7 @@ ms.custom:
 
 # Archive, delete, or compress credit card transaction data
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the archival job capability within Microsoft Dynamics 365 Commerce. It helps free up space in the database by archiving, deleting, or compressing credit card payment tokens.
 

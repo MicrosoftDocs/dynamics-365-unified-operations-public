@@ -13,7 +13,7 @@ ms.custom:
 
 # Manage units of measure
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to define a unit of measure, provide translations for the unit and its description, and define conversion rules for related units.
 

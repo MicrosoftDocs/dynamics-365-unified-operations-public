@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Write select statements as expressions
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You can use a **select** statement as an expression. This type of **select** statement is known as an *expression **select** statement*.
 

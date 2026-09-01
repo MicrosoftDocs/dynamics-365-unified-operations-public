@@ -25,6 +25,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Use the careers site in the HR Recruiting app
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 This article explains how to use the careers site in the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 
 The careers site helps candidates showcase their skills and qualifications, and stay connected with the hiring process. On the careers site, candidates can create and update their personal profile, upload their resume and other documents, apply for jobs, and track the status of their application. They can also view and accept job offers, provide feedback, and communicate with recruiters.

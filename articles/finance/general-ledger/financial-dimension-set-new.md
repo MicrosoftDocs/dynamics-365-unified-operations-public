@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.38
 
 # New financial dimension sets
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The **Performance enhancement for general ledger dimension set balance calculation** feature starts the process of creating new balances. This process might take several hours if the amount of transactional data is large. Reports and inquiries that use dimension sets aren't available until the processing finishes. You can view the status on the **Dimension set** page.
 

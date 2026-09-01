@@ -21,7 +21,7 @@ ms.dyn365.ops.version: 10.0.25
 
 # What's new or changed in Dynamics 365 Commerce 10.0.25 (April 2022)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 

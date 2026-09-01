@@ -15,7 +15,7 @@ ms.custom:
 
 # Service object relations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can create service object relations between a service object and a service agreement or service order. When you create a relation, you attach the service object to the service agreement or service order.
 

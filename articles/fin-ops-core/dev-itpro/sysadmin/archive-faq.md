@@ -12,7 +12,7 @@ ms.reviewer: twheeloc
 
 # Finance and operations apps archive with Microsoft Dataverse long term retention FAQ
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Does testing archiving with Dataverse long-term retention require a sandbox environment?
 

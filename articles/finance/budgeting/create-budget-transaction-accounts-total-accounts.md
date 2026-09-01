@@ -16,7 +16,7 @@ ms.assetid: fb1bb2d3-445c-402f-a9a3-aa6503eed78e
 
 # Create a budget from transaction accounts and total accounts
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the process for creating budgets based on total accounts. It also explains how to turn on budget control for total accounts, if budget control is required.
 

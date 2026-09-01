@@ -16,7 +16,7 @@ ms.custom:
 
 # Payment methods
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes payment methods and how to set them up in Microsoft Dynamics 365 Commerce.
 

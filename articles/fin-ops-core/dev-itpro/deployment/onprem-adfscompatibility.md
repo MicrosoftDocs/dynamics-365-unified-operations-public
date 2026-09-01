@@ -16,7 +16,7 @@ ms.service: dynamics-365-op
 
 # AD FS Microsoft 365 compatibility
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
 > This feature is only fully supported starting with application update 10.0.8, Platform update 32, and LocalAgent 2.2.0. For details, see [Partial support](#partialsupport). 

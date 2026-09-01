@@ -12,7 +12,7 @@ ms.search.form: EcoResProductDetailsExtended, EcoResProductPerCompanyImagePart, 
 
 # Add an image to a product
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to add an image to a product.
 

@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.39
 
 # Dimension data validation
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Before you post a journal, check your entries for errors. You can validate journal lines from the Action Pane, or check the data integrity of a specific dimension combination by using the **Dimension data validation** page.
 

@@ -18,7 +18,7 @@ ms.custom:
 
 # Business events and Azure Event Hubs
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This tutorial describes the steps to make business events work with Microsoft Azure Event Hubs.
 

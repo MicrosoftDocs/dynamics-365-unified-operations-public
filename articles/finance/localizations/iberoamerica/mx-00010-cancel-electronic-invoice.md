@@ -15,7 +15,7 @@ ms.search.form: EInvoiceCFDIJournal_AR
 
 # MX-00010 Cancel an electronic invoice
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to cancel a Comprobante Fiscal Digital por Internet (CFDI) electronic invoice that was previously validated and certified by the PAC in Microsoft Dynamics 365 Finance.
 

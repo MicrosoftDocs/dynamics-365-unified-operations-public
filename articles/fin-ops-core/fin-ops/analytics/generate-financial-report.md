@@ -16,7 +16,7 @@ ms.assetid: 271df6f4-12b7-4b3e-b2d7-36ea98ef1871
 
 # Generate financial reports
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article provides information about generating a financial report.
 

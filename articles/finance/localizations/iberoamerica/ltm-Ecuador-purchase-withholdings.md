@@ -11,7 +11,7 @@ ms.author: v-federicohe
 
 # Configure Ecuadorian purchase withholding book printing
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The article explains how to configure the Ecuadorian purchase withholding book report so that it can be printed. The withholding book is a record where companies detail the tax withholdings for each invoice transaction that was withheld in its payment, it also includes dividend payments.
 

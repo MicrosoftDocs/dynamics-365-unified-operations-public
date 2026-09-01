@@ -13,7 +13,7 @@ ms.custom:
 
 # Create a purchase agreement
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article shows you how to create a purchase agreement. Typically, a purchasing manager completes this procedure. Set up purchase agreement classifications before you start. After you create an agreement, use it when you create a purchase order. This action copies the purchase agreement conditions to the header and to any lines in the order that the agreement affects.
 

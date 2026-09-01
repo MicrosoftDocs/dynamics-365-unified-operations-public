@@ -15,6 +15,8 @@ ms.dyn365.ops.version:
 
 # Reporting visual
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article describes how to use the **Reporting** visual in the Business performance planning application. To fully use this application, you must install Microsoft Power BI visuals. For information about how to install Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals).
 
 The **Reporting** visual is a powerful tool for seamlessly generating professional-looking financial reports in Power BI. Use this visual to create comprehensive financial statements that offer advanced row and column formatting capabilities. Examples include cash flow statements, income statements, and balance sheets.

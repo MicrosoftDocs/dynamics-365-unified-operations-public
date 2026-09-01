@@ -23,6 +23,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Human Resources data entities and templates
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 This article provides information about the data entities and templates that were added in Microsoft Dynamics 365 Human Resources.
 
 ## Data entities

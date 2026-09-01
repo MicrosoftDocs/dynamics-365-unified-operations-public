@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.14
 
 # Year-end activities FAQ
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article lists questions that can arise when closing a year, and the answers that can assist with year-end closing activities. The information in this article primarily focuses on questions concerning year-end closing activities for General ledger and Accounts payable.
 

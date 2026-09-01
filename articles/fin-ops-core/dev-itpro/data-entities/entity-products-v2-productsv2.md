@@ -1,4 +1,4 @@
-﻿---
+---
 title: Products V2 entity
 description: Learn about the Products V2 data entity in finance and operations migration projects with Dynamics 365 via a summary.
 author: edupont04
@@ -11,6 +11,8 @@ ms.collection: FastTrack
 ---
 
 # Products V2 entity
+
+[!INCLUDE [banner](../../../includes/banner.md)]
 
 The **Products V2** entity imports and updates shared distinct products and product masters.  
 

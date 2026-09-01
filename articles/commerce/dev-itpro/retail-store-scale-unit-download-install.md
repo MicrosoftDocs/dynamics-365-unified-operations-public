@@ -15,7 +15,7 @@ ms.custom:
 
 # Download and install Commerce Scale Unit
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how you can download and install a Commerce Scale Unit (CSU) on one or more computers in a brick-and-mortar store. 
 

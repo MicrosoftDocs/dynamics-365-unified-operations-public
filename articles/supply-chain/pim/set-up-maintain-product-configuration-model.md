@@ -12,7 +12,7 @@ ms.assetid: 00df5537-b148-4e32-a248-3e35876ad4e1
 
 # Set up a product configuration model
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the steps for setting up and creating a product configuration model.
 

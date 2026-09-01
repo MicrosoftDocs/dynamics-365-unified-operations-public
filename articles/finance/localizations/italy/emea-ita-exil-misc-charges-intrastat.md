@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.8
 
 # Miscellaneous charges per kilogram in an Intrastat declaration
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Intrastat is the system that collects information and generates statistics about the trade of goods among countries and regions in the European Union (EU). For more information, see [Intrastat overview](../europe/emea-intrastat.md).
 

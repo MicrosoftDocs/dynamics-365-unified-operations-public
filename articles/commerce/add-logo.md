@@ -14,7 +14,7 @@ ms.custom:
 
 # Add a logo
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to add a logo to your Microsoft Dynamics 365 Commerce site.
 

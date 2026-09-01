@@ -16,7 +16,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 # Sales tax calculation methods in the Origin field
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains the options in the **Origin** field on the **Sales tax codes** page and how sales tax is calculated based on the selected option for a sales tax code.
 

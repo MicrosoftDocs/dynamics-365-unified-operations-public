@@ -18,7 +18,7 @@ ms.assetid: 610f6858-0f37-4d0f-8c68-bab5a971ef4a
 
 # Settlement overview for centralized payments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Organizations that include multiple legal entities can create and manage payments by using a legal entity that handles all payments. This eliminates the need to enter the same transaction in multiple legal entities and saves time by streamlining the payment proposal process, the settlement process, open transaction editing, and closed transaction editing for centralized payments. 
 

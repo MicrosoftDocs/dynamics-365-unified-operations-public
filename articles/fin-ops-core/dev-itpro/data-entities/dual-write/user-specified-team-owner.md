@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # User-specified team owner
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 
 

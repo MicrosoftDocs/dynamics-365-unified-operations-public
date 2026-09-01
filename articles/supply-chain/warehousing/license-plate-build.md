@@ -12,7 +12,7 @@ ms.search.form:  LicensePlate. WHSWorker
 
 # License plate build on the warehouse app
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to set up the Warehouse Management mobile app to build license plates. A license plate is a unique identifier that is assigned to a group of items. License plates help streamline the process of managing items, because items don't have to be handled individually. Instead, all the items that share a license plate can be tracked as a single unit.
 

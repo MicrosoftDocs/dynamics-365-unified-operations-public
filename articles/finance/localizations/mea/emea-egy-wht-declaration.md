@@ -14,7 +14,7 @@ ms.search.validFrom: 2017-06-20
 
 # Withholding tax declaration for Egypt (EG-00005)
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure and generate the withholding tax declarations for Egypt in Microsoft Dynamics 365 Finance.
 

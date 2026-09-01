@@ -16,7 +16,7 @@ ms.assetid: 96166db4-b7ca-470b-aeb7-0a66fe0554c4
 
 # Whole amount and Interval calculation options for sales tax codes
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains the options for the **Calculation method** field on sales tax codes and how sales tax is calculated for intervals and whole amounts.
 

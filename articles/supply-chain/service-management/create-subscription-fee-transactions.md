@@ -15,7 +15,7 @@ ms.custom:
 
 # Create subscription fee transactions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 1. Go to **Service management** > **Service subscriptions** > **All service subscriptions**.
 

@@ -14,7 +14,7 @@ ms.search.validFrom: 2021-10-15
 
 # Customer electronic invoices in Saudi Arabia
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure and submit customer electronic invoices for Saudi Arabia in Microsoft Dynamics 365 Finance.
 

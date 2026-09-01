@@ -15,7 +15,7 @@ ms.custom:
 
 # Manually create curated recommendations
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how merchandisers can manually create and manage product recommendations lists for Microsoft Dynamics 365 Commerce customers.
 

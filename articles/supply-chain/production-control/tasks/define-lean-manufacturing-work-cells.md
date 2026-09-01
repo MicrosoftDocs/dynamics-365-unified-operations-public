@@ -12,7 +12,7 @@ ms.search.form: WrkCtrResourceGroup, InventLocationIdLookup, UnitOfMeasureLookup
 
 # Define lean manufacturing work cells
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 A work cell is a specific form of resource groups that can be used in lean manufacturing process activities. Work cells have input and output locations and a capacity definition based on a production flow model. The demo data company used to create this procedure is USMF
 

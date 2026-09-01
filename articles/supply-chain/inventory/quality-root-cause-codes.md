@@ -13,7 +13,7 @@ ms.custom:
 
 # Nonconformance root cause codes
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Use *nonconformance root cause codes* to establish standard codes for root causes that are associated with corrections for nonconformance issues that are often encountered at your company. For example, you might create codes for wind damage, water damage, training issues, or other common issues that you encounter. Root cause code give you a consistent way to identify causes that you can apply to the relevant corrective actions.
 

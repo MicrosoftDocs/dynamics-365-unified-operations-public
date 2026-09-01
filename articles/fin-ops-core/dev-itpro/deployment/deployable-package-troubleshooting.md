@@ -18,7 +18,7 @@ ms.dyn365.ops.version: Platform update 1
 
 # Troubleshoot package application issues
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article helps you troubleshoot problems that might occur when you apply packages on your Tier 1 or Tier 2 through Tier 5 environments. For information about how to apply a package, see [Apply updates to cloud environments](apply-deployable-package-system.md).
 

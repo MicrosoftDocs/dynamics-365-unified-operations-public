@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 
 # Get started with Electronic invoicing for Costa Rica
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information to help you get started with Electronic invoicing for Costa Rica. It guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Microsoft Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Electronic invoicing setup](../global/gs-e-invoicing-set-up-overview.md). For the last-mile integration with the Costa Rican Tax Authorities, Microsoft partners with Edicom.
 
@@ -85,7 +85,6 @@ For Costa Rica, the base flow includes at least three core interactions with Edi
 
 Each of these interactions requires common parameters, such as Edicom connection details and the authentication token provided by Edicom. The feature setup for all document types reuses these parameters. Edicom supplies these values during the company's onboarding process.
 
-----
 ### Costa Rica Electronic Invoice (CR) Edicom integration for Costa Rica
 
 > [!IMPORTANT]

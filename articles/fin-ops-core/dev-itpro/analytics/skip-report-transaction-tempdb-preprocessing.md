@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Platform update 55
 
 # Reduce long-running transactions in TempDB preprocessing reports
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to reduce long-running transactions and tempDB transaction log pressure caused by preprocessing SSRS reports that use the TempDB pattern, by opting out of the reporting framework's transaction scope.
 

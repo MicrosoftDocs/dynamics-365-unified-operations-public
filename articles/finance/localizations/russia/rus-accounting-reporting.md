@@ -14,7 +14,7 @@ ms.search.validFrom: 2019-04-30
 
 # Accounting reporting in electronic format (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up accounting reporting for Russia in Microsoft Dynamics 365 Finance.
 

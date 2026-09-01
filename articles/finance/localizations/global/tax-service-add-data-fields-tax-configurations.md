@@ -14,7 +14,7 @@ ms.search.validFrom: 2021-04-01
 
 # Add data fields in tax configurations
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to customize tax configurations by using [data fields that are added in the tax integration](tax-service-add-data-fields-tax-integration-by-extension.md).
 

@@ -25,6 +25,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Prorate employee contribution amounts
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 The employee contribution amounts for Savings and FSA benefit plans can be prorated based on the number of pay periods in the benefit period.
 
 To enable proration, follow these steps:

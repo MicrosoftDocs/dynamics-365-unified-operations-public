@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Channels overview
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides an overview of channels in Microsoft Dynamics 365 Commerce. It includes information about the tasks that you must complete both before and after you set up each channel.
 

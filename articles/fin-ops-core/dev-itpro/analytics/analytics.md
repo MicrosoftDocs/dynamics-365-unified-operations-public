@@ -15,7 +15,7 @@ ms.assetid: 6603a84c-00b2-4358-84a7-dd6fee3055ab
 
 # Analytics, aggregate measurements, and KPI modeling
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article discusses the embedded business intelligence (BI), aggregate measurements, dimensions, data entities, and aggregate programming model.
 

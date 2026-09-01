@@ -8,6 +8,9 @@
 If you copy a database between environments, Commerce capabilities in the destination environment won't be fully functional until you perform the following additional steps.
 
 ### Initialize Commerce Scale Units
+
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 If you're moving a database to a sandbox user acceptance testing (UAT) or production environment, you must [Initialize Commerce Scale Unit](../deployment/Initialize-Retail-Channels.md) after the database movement operation is complete. The Commerce Scale Unit's association from the source environment won't copy over to the destination environment. 
 
 ### Synchronize Commerce self-service installers

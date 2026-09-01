@@ -16,7 +16,7 @@ ms.search.validFrom: 2019-03-31
 
 # Health check for POS peripherals and services
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes the health check operation in Microsoft Dynamics 365 Commerce point of sale (POS).
 

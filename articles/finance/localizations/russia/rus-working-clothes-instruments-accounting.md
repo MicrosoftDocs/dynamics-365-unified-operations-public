@@ -15,7 +15,7 @@ ms.search.form: HcmWorkerAdvHolderTableListPage_RU, HcmWorkerAdvHolderTable_RU
 
 # Working clothes/special rigging accounting (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to maintain working clothes and special rigging for Russia in Microsoft Dynamics 365 Finance.
 

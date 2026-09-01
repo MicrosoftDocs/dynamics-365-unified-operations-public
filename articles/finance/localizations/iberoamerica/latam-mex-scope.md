@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Scope of Mexican localization
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 In general, Microsoft invests significant resources to extend business process functionality by developing features and functionality that address specific tax, accounting, or financial regulatory requirements in countries or regions where Microsoft makes Dynamics 365 Finance generally available.
 

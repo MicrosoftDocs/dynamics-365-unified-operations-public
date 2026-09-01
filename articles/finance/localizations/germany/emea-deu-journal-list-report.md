@@ -15,7 +15,7 @@ ms.custom:
 
 # German journal list report
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains what the German journal list report is used for, who typically uses it, and how to run it.
 

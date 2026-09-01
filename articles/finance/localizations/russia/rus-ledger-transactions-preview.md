@@ -15,7 +15,7 @@ ms.search.form: LedgerJournalTable
 
 # Preview ledger transactions (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to preview ledger transactions for Russia in Microsoft Dynamics 365 Finance.
 

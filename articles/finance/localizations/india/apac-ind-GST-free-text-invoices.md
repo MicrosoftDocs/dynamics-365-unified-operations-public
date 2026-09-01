@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Free text invoices
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 ## Create a free text invoice
 

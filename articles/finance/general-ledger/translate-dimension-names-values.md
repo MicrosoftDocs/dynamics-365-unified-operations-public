@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 8.1
 
 # Translate financial dimension names and values
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 If your organization operates in multiple languages, you can translate financial dimension names, dimension value descriptions, and main account names so that users see them in their preferred language.
 

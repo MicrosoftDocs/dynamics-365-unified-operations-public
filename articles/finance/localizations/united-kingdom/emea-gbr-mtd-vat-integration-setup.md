@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 10.0.22
 
 # Prepare your environment to interoperate with HMRC's MTD VAT web service
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up the Making Tax Digital web service for value-added tax (MTD VAT) in the United Kingdom in Microsoft Dynamics 365 Finance.
 

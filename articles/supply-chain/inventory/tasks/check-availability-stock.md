@@ -13,7 +13,7 @@ ms.custom:
 
 # Check the availability of stock
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows you how to check on-hand and physical on-hand inventory for a specific item number. It also shows you how to get supply information related to an item. Physical on-hand inventory is the on-hand inventory that's available (purchased, received, and registered). On-hand inventory includes the available on-hand inventory, but also the inventory that's been ordered and is expected, but not yet received or registered. 
 

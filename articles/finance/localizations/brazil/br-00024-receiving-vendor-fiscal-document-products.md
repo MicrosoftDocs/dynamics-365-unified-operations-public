@@ -15,7 +15,7 @@ ms.search.industry: Manufacturing;Distribution;Service industries
 
 # Receive vendor fiscal documents (products) (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to post a fiscal document you receive from the acquisition of inventory goods where PIS/COFINS taxes are deducted from the tax assessment payment in Brazil with Microsoft Dynamics 365 Finance.
 

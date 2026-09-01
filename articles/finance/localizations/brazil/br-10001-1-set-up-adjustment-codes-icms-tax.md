@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-06-30
 
 # Set up adjustment codes for ICMS tax (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to set up adjustment codes for the Circulação de Mercadorias e Serviços (ICMS) tax in Brazil with Microsoft Dynamics 365 Finance.
 

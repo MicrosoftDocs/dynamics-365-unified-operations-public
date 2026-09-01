@@ -17,7 +17,7 @@ ms.custom: sfi-image-nochange
 
 # Work with activity diagrams in Business process modeler libraries
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [Lifecycle Services deprecation](../includes/lcs-deprecation.md)]
 [!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 

@@ -16,7 +16,7 @@ ms.custom: sfi-image-nochange
 
 # Customer insights by Copilot
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how store associates can use Microsoft Copilot to enhance customer interactions and create personalized shopping experiences in Dynamics 365 Commerce.
 

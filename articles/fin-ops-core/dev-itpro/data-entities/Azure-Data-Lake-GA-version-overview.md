@@ -15,7 +15,7 @@ ms.search.validFrom: 2021-11-30
 
 # Export to Azure Data Lake (deprecated)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
 > Export to Azure Data Lake was retired on November 1, 2024, and will be permanently stopped on November 30, 2026. After the service is stopped, it will no longer export new or changed data. Files that were already exported to your data lake remain in place. Extensions won't be granted after November 30, 2026.

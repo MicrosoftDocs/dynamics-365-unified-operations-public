@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Highly variable dimensions
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 A *highly variable dimension* is a financial dimension that has values that aren't reused, either individually or in combination with other values. Financial dimensions are designed for values that persist for years.  
 

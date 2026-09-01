@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.5
 ---
 
 # Keyboard shortcuts for missing account analysis
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 This article lists the keyboard shortcuts that are available when you run a missing account analysis in Management Reporter.

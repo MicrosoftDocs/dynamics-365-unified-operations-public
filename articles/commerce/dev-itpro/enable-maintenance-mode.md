@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Enable and activate e-commerce maintenance mode
 
-[!include [banner](../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../finance/includes/banner.md)]
 
 This article describes how to enable and activate e-commerce maintenance mode and build an optional custom maintenance mode page in Microsoft Dynamics 365 Commerce.
 

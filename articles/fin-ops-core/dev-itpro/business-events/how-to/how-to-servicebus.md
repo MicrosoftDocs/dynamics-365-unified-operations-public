@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 2019-6-30
 
 # Business events and Azure Service Bus
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure a Microsoft Azure Service Bus endpoint and how to consume a business event from Service Bus.
 

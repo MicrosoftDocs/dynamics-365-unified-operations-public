@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Module test file
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the module test file in Microsoft Dynamics 365 Commerce.
 

@@ -17,7 +17,7 @@ ms.custom:
 
 # Pause dual-write for maintenance
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You can pause table maps either manually or automatically through rules. Pausing table maps helps ensure business continuity, especially during planned or unplanned maintenance. While the app is being maintained, users can continue to do their work and create records.
 

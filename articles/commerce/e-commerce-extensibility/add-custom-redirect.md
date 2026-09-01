@@ -14,7 +14,7 @@ ms.custom:
 
 # Redirect category and product pages to canonical URLs
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Learn how to redirect category and product pages to canonical URLs by extending modules using the Microsoft Dynamics 365 Commerce online SDK.
 

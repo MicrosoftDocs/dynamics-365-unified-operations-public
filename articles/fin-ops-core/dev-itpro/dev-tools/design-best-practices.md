@@ -17,7 +17,7 @@ ms.assetid: b41f6fc4-7883-4987-8160-374576b11d16
 
 # Design principles and best practices for data entities
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes design principles for data entities. It also includes guidelines for the names of data entities, fields, relation roles, roles, and OData EntityTypes and EntitySets.
 

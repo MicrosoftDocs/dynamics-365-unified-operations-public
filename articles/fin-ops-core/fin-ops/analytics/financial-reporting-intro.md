@@ -17,7 +17,7 @@ ms.assetid: fe8b27e7-a40a-4689-ac6a-7f7401c387f5
 
 # Financial reporting
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 By using financial reporting for the application, financial and business professionals can create, maintain, deploy, and view financial statements. It moves beyond traditional reporting constraints to help you efficiently design various types of reports.
 

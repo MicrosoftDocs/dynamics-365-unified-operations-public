@@ -13,7 +13,7 @@ ms.custom:
 
 # Warehouse-specific inventory transactions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Warehouse-specific inventory transactions (referred to as *warehouse transactions* in this article) are database records that store information about how inventory is stored and moved around in the warehouse. Warehouse transaction records are highly optimized for warehouse operations.
 

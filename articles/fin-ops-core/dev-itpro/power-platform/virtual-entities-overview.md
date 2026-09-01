@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-05-31
 
 # Virtual entities overview
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
 > This functionality requires version 10.0.12 of finance and operations apps, and service update 189 of Microsoft Dataverse. The release information for Dataverse is published on the [latest version availability page](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).

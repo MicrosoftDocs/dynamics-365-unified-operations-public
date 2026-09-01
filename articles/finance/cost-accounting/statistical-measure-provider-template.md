@@ -18,7 +18,7 @@ ms.assetid:
 
 # Provider templates for statistical dimension members and measure providers
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use a statistical dimension and its members to register and control nonmonetary entries in Cost accounting. Use statistical dimension members for two purposes:
 

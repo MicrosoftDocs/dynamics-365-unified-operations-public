@@ -13,7 +13,7 @@ ms.search.region: France
 
 # Structure of Dynamics 365 Finance data sources for the FEC
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 In Microsoft Dynamics 365 Finance, you can generate the [FEC main](#fec-main) (Fichier des écritures comptables) file and the following annexes:
 

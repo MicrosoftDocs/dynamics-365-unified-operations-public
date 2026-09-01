@@ -12,7 +12,7 @@ ms.search.form:
 
 # Demand planning license requirements
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 To use Demand planning in Microsoft Dynamics 365 Supply Chain Management in a production environment, each relevant user must have a license for it.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Create and invoice an intercompany purchase order for internal use
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You can create an intercompany purchase order for an intercompany vendor. This automatically creates an intercompany sales order at the intercompany vendor.
 

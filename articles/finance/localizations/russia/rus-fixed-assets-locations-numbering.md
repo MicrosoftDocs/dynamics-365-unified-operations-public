@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-10-28
 
 # Set up fixed asset locations and numbering (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up locations and numbering for Russian fixed assets in Microsoft Dynamics 365 Finance.
 

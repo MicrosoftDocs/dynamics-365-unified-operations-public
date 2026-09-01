@@ -16,7 +16,7 @@ ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
 
 # Customer posting profiles
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes customer posting profiles, which control the posting of customer transactions to the general ledger.
 

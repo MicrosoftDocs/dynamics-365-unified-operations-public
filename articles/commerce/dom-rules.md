@@ -12,7 +12,7 @@ ms.search.validFrom: 2023-11-07
 
 # DOM rules
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes the rules of distributed order management (DOM) functionality in Microsoft Dynamics 365 Commerce.
 

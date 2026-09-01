@@ -13,7 +13,7 @@ ms.search.validFrom: 2019-04-01
 
 # Cash flow tax registers
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with cash flow tax registers for Russia in Microsoft Dynamics 365 Finance.
 

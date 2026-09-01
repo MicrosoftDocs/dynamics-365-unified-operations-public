@@ -16,7 +16,7 @@ ms.custom:
 
 # Wallet payment support
 
-[!include [banner](../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../finance/includes/banner.md)]
 
 This article provides an overview of wallet payment support for Microsoft Dynamics 365 Commerce.  
 

@@ -18,7 +18,7 @@ ms.assetid:
 
 # Import Electronic reporting (ER) configurations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to download [Electronic reporting (ER) configurations](general-electronic-reporting.md#Configuration) from Microsoft Dynamics Lifecycle Services to a local business data application or Tier-1 environment. 
 

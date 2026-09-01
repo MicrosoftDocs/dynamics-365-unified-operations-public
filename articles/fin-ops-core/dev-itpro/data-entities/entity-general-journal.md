@@ -12,6 +12,8 @@ ms.collection: FastTrack
 
 # General journal entity
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 ***Applies to:*** ***Dynamics 365 Commerce, Dynamics 365 Finance, Dynamics 365 Intelligent Order Management, Dynamics 365 Project Operations, Dynamics 365 Supply Chain Management***
 
 The **General journal** entity supports creating and updating general journal headers and lines for the Bank, Customer, Ledger, and Vendor account types.

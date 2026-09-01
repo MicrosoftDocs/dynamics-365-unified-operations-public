@@ -17,7 +17,7 @@ ms.collection:
 
 # Default dashboard
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the purpose and use cases for the default dashboard, its content (such as app tiles and workspaces), and how to personalize it.
 

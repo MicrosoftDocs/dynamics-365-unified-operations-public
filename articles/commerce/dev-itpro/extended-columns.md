@@ -14,7 +14,7 @@ ms.custom:
 
 # Pre-extended columns in the channel database
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Some columns in the channel database are *pre-extended*. In other words, the column length in the channel database exceeds the column length in Microsoft Dynamics 365 Commerce headquarters. For example, the length of the **INVENTSERIALID** field is 20 characters in the headquarters database but 50 characters in the channel database.
 

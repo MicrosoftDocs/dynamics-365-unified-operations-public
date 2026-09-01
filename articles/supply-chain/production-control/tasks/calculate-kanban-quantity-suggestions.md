@@ -12,7 +12,7 @@ ms.search.form:
 
 # Calculate kanban quantity suggestions
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure focuses on optimizing the kanban size and quantities for a specific kanban rule by using the kanban quantity calculation. The demo data company used to create this procedure is USMF. This procedure is intended for the value stream manager. It is a prerequisite that you have completed the procedure Add a new kanban quantity calculation policy to a kanban rule.
 

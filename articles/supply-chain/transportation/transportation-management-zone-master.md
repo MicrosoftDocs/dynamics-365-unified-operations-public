@@ -13,7 +13,7 @@ ms.custom:
 
 # Transportation management zone master
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Transport management lets you divide geographic locations into zones. Dividing locations into zones can help to:
 

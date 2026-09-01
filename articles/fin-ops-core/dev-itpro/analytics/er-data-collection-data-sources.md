@@ -16,7 +16,7 @@ ms.assetid:
 
 # Use DATA COLLECTION data sources in Electronic reporting formats
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use the Operations designer of the [Electronic reporting (ER)](general-electronic-reporting.md) framework to configure the format component of an ER solution that generates outbound documents in different formats. The hierarchical structure of the configured format component consists of various types of format elements. These format elements fill generated documents with the required information at runtime. By default, when you run an ER format, the format elements run in the same order as they appear in the format hierarchy: one by one, from top to bottom.
 

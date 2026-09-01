@@ -11,7 +11,7 @@ ms.search.form: ReqCreatePlanWorkspace
 
 # Planned orders simplified
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how you can view, manage, and firm planned orders by using the **Planned orders simplified** page.
 

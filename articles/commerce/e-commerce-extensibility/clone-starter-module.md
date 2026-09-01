@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Clone a module library module
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to clone a module library module in Microsoft Dynamics 365 Commerce.
 

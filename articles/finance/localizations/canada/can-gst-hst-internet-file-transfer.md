@@ -16,7 +16,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 # Canada GST/HST Internet File Transfer (GIFT)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Taxpayers in Canada use form GST 34 to manually file Goods and Services Tax or Harmonized Sales Tax (GST/HST) returns, and to remit payments to the Canada Revenue Agency (CRA). However, the CRA allows taxpayers to electronically file and remit taxes that are calculated on acquired fixed assets. You can electronically file GST/HST returns by using any of the following methods:
 

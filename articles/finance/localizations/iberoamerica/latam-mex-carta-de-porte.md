@@ -14,7 +14,7 @@ ms.search.validFrom: 2021-08-31
 
 # Waybill (Carta de Porte) complement
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about how to set up and submit packing slips and transfer orders that include the Waybill (Carta de Porte) complement. As of October 1, 2021, the Waybill (Carta de Porte) complement is mandatory for taxpayers who transport goods and merchandise in the national/regional territory.
 

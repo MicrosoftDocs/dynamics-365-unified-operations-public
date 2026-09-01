@@ -13,7 +13,7 @@ ms.custom:
 
 # Maintenance checklists
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Set up maintenance checklists on maintenance job types. Fill in maintenance checklists as part of the process of completing a work order. For more information about how to set up maintenance checklists on maintenance job types, see [Maintenance job type categories and maintenance job types, maintenance job type variants, maintenance job trades, and maintenance checklists](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
 

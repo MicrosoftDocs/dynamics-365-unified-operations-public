@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.21
 
 # Change code so users can configure and use named ER destinations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 To generate an [outbound document](general-electronic-reporting.md#configuring-data-model-mappings-for-outgoing-documents), run an ER format mapping. When you use the [initial](er-apis-app73.md#code-to-run-a-format-mapping-for-data-export) API of the ER framework to call an ER format mapping, it runs all [destinations](electronic-reporting-destinations.md#applicability) configured for components of the format. To review the sample code for a call of this type, see [Add a report service class](er-quick-start1-new-solution.md#ServiceClass).
 

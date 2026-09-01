@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 33
 
 # Supported fonts
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Finance and operations apps include access to hundreds of standard, business-ready fonts for documents rendered by the cloud-hosted service.
 

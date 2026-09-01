@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 17
 
 # AX 2009 migration – Export packages
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can use the Data Import/Export Framework (DIXF) service in Microsoft Dynamics AX 2009 to retrieve data that you need to migrate to finance and operations. The export process uses a job ID. When you export, you can specify how to define the export job. You can select the source data to export, the conversion value, and the field mapping. You can also apply a query to each source to limit what is exported.
 

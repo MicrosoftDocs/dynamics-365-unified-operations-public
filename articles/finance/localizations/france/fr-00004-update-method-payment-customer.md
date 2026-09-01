@@ -15,7 +15,7 @@ ms.search.form: CustTable, CustBankAccounts, LogisticsPostalAddress, LogisticsPo
 
 # FR-00004 Update method of payment for a customer
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to add a bank account to a customer record in France and update the customer method of payment in Microsoft Dynamics 365 Finance. 
 

@@ -14,7 +14,7 @@ ms.custom:
 
 # Onboarding for electronic invoicing in Saudi Arabia
 
-[!INCLUDE[banner](../../../includes/banner.md)]
+[!INCLUDE [banner](../../../includes/banner.md)]
 
 This article explains how to onboard taxpayers and their electronic invoicing software with the Saudi Arabian tax authority in Microsoft Dynamics 365 Finance.
 

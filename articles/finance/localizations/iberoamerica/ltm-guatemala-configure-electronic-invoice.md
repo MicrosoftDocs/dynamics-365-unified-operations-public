@@ -11,7 +11,7 @@ ms.author: johnmichalak
 
 # Configure electronic invoice parameters for Guatemala
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure the information that you need to generate the electronic invoice XML for Guatemala.
 

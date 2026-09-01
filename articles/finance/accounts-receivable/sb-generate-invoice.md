@@ -16,6 +16,8 @@ ms.dyn365.ops.version: 10.0.24
 
 # Generate invoices from billing schedules
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 > [!NOTE]
 > Billing schedules with projects are available in Microsoft Dynamics 365 Finance version 10.0.32 and later.
 

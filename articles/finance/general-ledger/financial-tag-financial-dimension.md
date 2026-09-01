@@ -15,6 +15,8 @@ ms.dyn365.ops.version: 8.1
 
 # Differences between financial tags and financial dimensions
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 Financial dimensions are used to code accounting entries for reporting (for example, to identify sales per department or expenses per cost center). Financial tags (tags) are an alternative to financial dimensions. An organization can create up to 20 user-defined financial tags and enter values for them on transactions. Like financial dimension values, tag values are stored on the accounting entries that are created for the transactions. However, tag values aren't stored in any subledger tables, such as the Customer transactions or Vendor transactions table. Both financial dimensions and financial tags can be used for analytical reporting and also for some processes, such as ledger settlement.
 
 Financial dimensions are structured. The setup controls which dimensions are required, which dimension values are valid, and which dimension combinations are valid. However, financial tags have limited structure, no validation, and limited defaulting.

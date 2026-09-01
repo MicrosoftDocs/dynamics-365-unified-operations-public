@@ -15,7 +15,7 @@ ms.collection:
 
 # Use Copilot in site builder to enrich product detail pages
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to use Microsoft Copilot in site builder to enrich product detail pages for Microsoft Dynamics 365 Commerce e-commerce websites.
 

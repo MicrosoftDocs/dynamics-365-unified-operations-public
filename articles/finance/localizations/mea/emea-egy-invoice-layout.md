@@ -14,7 +14,7 @@ ms.custom:
 
 # Configure invoice layout for Egypt
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure printable invoice layouts to ensure compliance with Egyptian legal requirements. Implement Egypt-specific invoice layouts by using the concept of *configurable business documents*. For more information about configurable business documents, see [Business document management overview](../../../fin-ops-core/dev-itpro/analytics/er-business-document-management.md).
 

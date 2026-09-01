@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # SysTest filtering by using class and method attributes
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Starting with Platform update 12, the SysTest framework contains improvements to the SysTest class and method attributes in X++. These improvements also change how these attributes work in the Visual Studio test window as well as the Visual Studio Test Console, which is the tool used in the automated build process. The SysTest framework now supports the major test attributes in the adaptor to be on par with the MSTest framework adaptor. This support includes attributes like **Category**, **Owner**, **Priority**, and **Test Property**.
 

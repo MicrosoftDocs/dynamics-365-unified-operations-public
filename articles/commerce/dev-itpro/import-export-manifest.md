@@ -14,7 +14,7 @@ ms.custom:
 
 # Bulk import and export digital assets by using manifests
 
-[!include[banner](../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../finance/includes/banner.md)]
 
 This article describes how to bulk import and export digital assets by using manifests in Microsoft Dynamics 365 Commerce site builder. It also describes the manifest schema.
 

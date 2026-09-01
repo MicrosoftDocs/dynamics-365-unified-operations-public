@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-06-30
 
 # Create and submit VAT report
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to create and submit a value added tax (VAT) report to the German authority by using Microsoft Dynamics 365 Finance.
 

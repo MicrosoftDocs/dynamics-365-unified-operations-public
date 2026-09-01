@@ -13,7 +13,7 @@ ms.custom:
 
 # Make-to-order supply automation
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The *Make-to-order supply automation* feature adds several enhancements to Microsoft Dynamics 365 Supply Chain Management. These enhancements let you perform the following tasks:
 

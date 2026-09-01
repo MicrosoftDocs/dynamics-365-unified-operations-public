@@ -15,7 +15,7 @@ ms.assetid: 7bf76862-e320-4a81-81a4-5bda7288e573
 
 # Extend report menu items to redirect user navigation
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article shows how to extend existing application menu items so that, with only minimal code changes, you can redirect navigation to a custom reporting solution.
 

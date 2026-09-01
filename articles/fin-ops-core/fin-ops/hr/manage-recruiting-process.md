@@ -16,6 +16,8 @@ ms.assetid: 1ad725bf-20e2-42a1-8068-111f7ddddad9
 
 # Manage recruiting processes
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 > [!IMPORTANT]
 > This article refers to the recruiting functionality as Recruitment projects. It focuses on applicants, applications, and recruitment projects.
 

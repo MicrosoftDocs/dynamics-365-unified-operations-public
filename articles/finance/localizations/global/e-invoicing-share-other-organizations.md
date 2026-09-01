@@ -13,7 +13,7 @@ ms.custom:
 
 # Share Globalization features with other organizations
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Follow these steps to share a Globalization feature with an external organization.
 

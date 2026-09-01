@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Script injectors
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article covers script injectors that you can use to add scripts to online pages in Microsoft Dynamics 365 Commerce.
 

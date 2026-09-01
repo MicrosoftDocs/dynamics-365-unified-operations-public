@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Configure the global address book
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Use this procedure to set the default values and security policies for the global address book.
 

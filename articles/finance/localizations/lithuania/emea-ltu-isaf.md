@@ -15,7 +15,7 @@ ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
 
 # i.SAF reporting for Lithuania
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and work with the i.SAF report for legal entities in Lithuania in Microsoft Dynamics 365 Finance, including how to set up Electronic Reporting (ER) configurations and how to set up and use Electronic Messages (EM) functionality.
 

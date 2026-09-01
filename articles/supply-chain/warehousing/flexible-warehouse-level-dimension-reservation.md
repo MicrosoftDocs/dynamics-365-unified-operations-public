@@ -13,7 +13,7 @@ ms.search.form:
 
 # Flexible warehouse-level dimension reservation policy
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When an inventory reservation hierarchy of the *Batch-below\[location\]* type is associated with products, businesses that sell batch-tracked products and run their logistics as operations that are enabled for the warehouse management processes (WMS) can't reserve specific batches of those products for customer sales orders.
 

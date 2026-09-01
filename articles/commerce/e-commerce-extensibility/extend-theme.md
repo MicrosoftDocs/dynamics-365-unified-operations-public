@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Extend a theme from a base theme
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to extend a theme from a base theme for a Microsoft Dynamics 365 Commerce e-commerce site.
 

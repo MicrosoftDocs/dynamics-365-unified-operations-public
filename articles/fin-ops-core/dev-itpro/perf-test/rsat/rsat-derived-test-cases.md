@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Derived test cases
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The Regression suite automation tool (RSAT) lets you use the same task recording with multiple test cases, so that you can run a task with different data configurations. Select a test case in the Regression suite automation tool and then select **Generate > Create Derived Test Case**. This action creates a child test case in Azure DevOps. The resulting derived test case links to its parent test case in Azure DevOps. It has an Excel parameters file attached but no recording file. The derived test case appears in the Regression suite automation tool grid under the same test suite with the **Derived** column selected. By default, derived test cases are named after their parent test case with a numeric suffix.
 

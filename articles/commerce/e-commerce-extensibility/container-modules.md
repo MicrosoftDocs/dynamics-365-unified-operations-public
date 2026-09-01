@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Container modules
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how container modules help you control the layout when you build complex modules or pages out of small component modules with Microsoft Dynamics 365 Commerce.
 

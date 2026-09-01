@@ -13,7 +13,7 @@ ms.custom:
 
 # Schedule a production order with operations and job scheduling
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article focuses on scheduling a production order with operations scheduling and job scheduling. No jobs are created with operations scheduling whereas jobs are created with job scheduling. This procedure is intended for the production manager, production planner, or shop floor supervisor working in a discrete manufacturing environment.
 

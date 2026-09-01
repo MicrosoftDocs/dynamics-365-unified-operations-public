@@ -15,6 +15,8 @@ ms.dyn365.ops.version: 10.0.16
 
 # Post detailed vendor and customer payments
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 The **Ability to post detailed vendor and customer payments, but summarize amounts to bank account** feature posts vendor and customer payments as separate vouchers, but summarizes the payments when the bank account balance is updated.
 
 For example, your bank pays three vendors 100 euros (EUR) each on behalf of your organization. When the bank completes the transactions, the bank statement might show the three payments in detail, or it might show a summarized withdrawal of 300 EUR. If your bank summarizes the payments into a single withdrawal, use this feature to mimic that functionality. Therefore, it can help streamline the bank reconciliation process.

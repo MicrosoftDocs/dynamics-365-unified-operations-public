@@ -13,7 +13,7 @@ ms.custom:
 
 # Process, review, and post rebates
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to process your Rebate management deals, calculate their discounts, review the transactions that are generated, post transactions, and review the postings.
 

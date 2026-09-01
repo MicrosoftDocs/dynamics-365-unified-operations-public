@@ -16,7 +16,7 @@ ms.assetid: b4a95c26-a49d-4a1d-bf70-90f457df2ddf
 
 # Electronic ledger accounting statements
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and generate the general ledger XML files that all companies in Mexico must report to the Mexican tax authorities (SAT) every month.
 

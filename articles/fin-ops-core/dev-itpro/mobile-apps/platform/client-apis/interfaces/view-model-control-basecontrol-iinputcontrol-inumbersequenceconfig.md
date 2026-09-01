@@ -13,7 +13,7 @@ ms.custom:
 
 # NumberSequenceConfig type
 
-[!include [banner](../../../../includes/banner.md)]
+[!INCLUDE [banner](../../../../includes/banner.md)]
 [!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 Number Sequence Configuration type.

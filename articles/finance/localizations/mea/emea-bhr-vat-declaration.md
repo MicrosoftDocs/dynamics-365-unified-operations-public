@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.13
 
 # VAT declaration for Bahrain (BH-00002)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure and generate the VAT return form for legal entities in Bahrain with Microsoft Dynamics 365 Finance.
 

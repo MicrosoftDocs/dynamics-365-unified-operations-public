@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 ---
 # Forced electronic invoices generation
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure the forced generation of electronic invoice files immediately after you post related customer invoices, regardless of the printing options that you select.
 

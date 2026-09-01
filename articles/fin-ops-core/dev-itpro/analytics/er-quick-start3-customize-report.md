@@ -17,7 +17,7 @@ ms.assetid:
 
 # Customize Electronic reporting configurations to generate an electronic document
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The [Electronic reporting (ER) framework](general-electronic-reporting.md) lets you upload the ER [configurations](general-electronic-reporting.md#Configuration) that Microsoft provides into your Microsoft Dynamics 365 Finance instance. By using these Microsoft-provided configurations, you can generate electronic customer invoices (e-invoices). Use this ER solution to configure your custom ER solution to access your custom database fields and generate e-invoices that comply with your specific requirements, without editing the source code.
 

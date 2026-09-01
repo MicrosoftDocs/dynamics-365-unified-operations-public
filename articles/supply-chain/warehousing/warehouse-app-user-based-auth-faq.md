@@ -12,7 +12,7 @@ ms.search.form:
 
 # User-based authentication FAQ
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article answers frequently asked questions about user-based authentication for the Warehouse Management mobile app.
 

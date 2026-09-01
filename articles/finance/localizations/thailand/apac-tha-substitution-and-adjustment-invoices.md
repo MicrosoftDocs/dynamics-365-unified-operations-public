@@ -15,7 +15,7 @@ ms.search.form: CustInvoiceJournal, CustInvoiceJourAdjustment, ProjInvoiceListPa
 
 # Substitution/adjustment tax invoices for Thailand
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with substitution/adjustment tax invoices for Thailand in Microsoft Dynamics 365 Finance.
 

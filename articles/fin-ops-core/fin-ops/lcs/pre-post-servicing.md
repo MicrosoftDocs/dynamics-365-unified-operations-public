@@ -13,7 +13,7 @@ ms.search.validFrom: 2022-05-19
 
 # Preservicing and post-servicing
 
-[!include[banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article explains new changes that Microsoft introduced for the servicing process.
 

@@ -16,7 +16,7 @@ ms.assetid: df18e3bb-bfad-45fb-8a6e-a3479e57b8df
 
 # Set up earning codes and earning code groups
 
-[!include [banner](../../../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../../../finance/includes/banner.md)]
 
 This article explains how to set up earning codes and earning code groups. Earning codes uniquely identify every type of earning that workers receive. They include parameters that are related to earnings, such as accounting rules, tax laws, reporting requirements, and gross-up capability. You also use earning codes to calculate various amounts that the payroll system uses. For example, earning codes are required to determine the following amounts:
 

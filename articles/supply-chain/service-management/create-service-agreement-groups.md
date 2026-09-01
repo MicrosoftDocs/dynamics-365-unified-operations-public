@@ -13,7 +13,7 @@ ms.custom:
 
 # Create service agreement groups
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Service agreement groups are useful for sorting and filtering service agreements.
 

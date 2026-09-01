@@ -16,7 +16,7 @@ ms.assetid: 2a0a4789-8619-4974-bef9-0923cc848420
 
 # Add location and party relationship types
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Add location roles
 

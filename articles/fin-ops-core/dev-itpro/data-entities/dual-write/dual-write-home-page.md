@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Dual-write home page
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 These topics describe dual-write integration.
 

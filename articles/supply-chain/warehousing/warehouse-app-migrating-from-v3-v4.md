@@ -12,7 +12,7 @@ ms.search.form:
 
 # Migrate the Warehouse Management mobile app from V3 to V4
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Version 4 (V4) of the Warehouse Management mobile app brings significant improvements and new features that enhance the user experience and the app's performance.
 

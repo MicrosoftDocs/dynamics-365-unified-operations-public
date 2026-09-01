@@ -10,7 +10,7 @@ ms.custom: bap-template
 
 # Create fiscal notes for return in Brazil tax reform
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to create a fiscal document for a goods return in Brazil tax reform in Dynamics 365 Finance. It covers two scenarios depending on whether the customer is a registered taxpayer.
 

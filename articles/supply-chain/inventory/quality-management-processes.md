@@ -13,7 +13,7 @@ ms.custom:
 
 # Quality and nonconformance management overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article introduces the quality and nonconformance management features in Microsoft Dynamics 365 Supply Chain Management and explains how they can help improve product quality in your supply chain.
 

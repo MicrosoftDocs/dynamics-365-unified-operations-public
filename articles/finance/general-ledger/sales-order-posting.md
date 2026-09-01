@@ -13,6 +13,8 @@ ms.search.form: InventPosting, InventItemGroup
 
 # Sales order posting
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 Use the **Sales order** tab on the **Inventory posting profiles** page to control how sales orders post to the general ledger. Two main activities post to the general ledger for a sales order:
 
 - Packing slip

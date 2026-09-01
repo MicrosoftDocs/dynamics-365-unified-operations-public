@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 10.0.39
 
 # Get started with Electronic invoicing for Italy
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
 > Electronic invoicing for Italy might not currently support all the functions that are available for electronic invoices in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.

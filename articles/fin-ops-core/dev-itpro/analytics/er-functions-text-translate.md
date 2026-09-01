@@ -16,7 +16,7 @@ ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 
 # TRANSLATE ER function
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The `TRANSLATE` function returns a *String* value that contains the result of the character replacement of specified text in characters of another provided set.
 

@@ -16,7 +16,7 @@ ms.assetid: 0a1ffae4-5750-46a2-becb-604f7a989d32
 
 # Plan case category security, case processes, and case categories
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article describes the considerations and decisions that you must make during the planning process, before you begin to configure cases.
 

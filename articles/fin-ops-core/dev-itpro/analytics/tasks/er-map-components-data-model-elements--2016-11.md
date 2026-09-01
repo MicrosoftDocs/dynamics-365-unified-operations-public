@@ -15,7 +15,7 @@ ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner
 
 # ER map components of the created format to data model elements (November 2016)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The following procedure shows how a user in either the System administrator or Electronic reporting developer role can map data model elements to components of the created Electronic reporting (ER) configuration. This configuration defines an electronic document format for the payments business domain. You use this format later to generate electronic documents for processing payments. In this example, you create a format configuration for the sample company, Litware, Inc. You can perform these steps in any company because all companies share ER configurations. To complete these steps, you must first complete the steps in the "Create a format configuration" task guide.
 

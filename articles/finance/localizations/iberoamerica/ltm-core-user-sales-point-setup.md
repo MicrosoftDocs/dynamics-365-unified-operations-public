@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 
 # Set up predefined sales point per user
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 [!include [does not apply to](includes/does-not-apply-to.md)]
 

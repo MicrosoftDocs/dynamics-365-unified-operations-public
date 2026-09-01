@@ -24,6 +24,8 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Enroll an employee in a variable compensation plan
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 The Compensation and Benefits manager can enroll employees in variable compensation plans to calculate cash and non-cash awards for employees. This procedure assumes that a variable compensation plan was created with the **Enable enrollment** field set to **Yes**, and that eligibility rules were created for that variable compensation plan. The demo data company used to create this procedure is USMF. To begin this procedure, go to **Human resources** > **Workers** > **Employees** > **Compensation** > **Variable plan enrollment**.

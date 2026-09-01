@@ -15,7 +15,7 @@ ms.custom:
 
 # Create and assign a reduction entry document for a government grant subsidy
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create and assign a reduction entry document for a government grant subsidy in Japan with Microsoft Dynamics 365 Finance.
 

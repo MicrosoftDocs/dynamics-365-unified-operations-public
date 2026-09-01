@@ -16,7 +16,7 @@ ms.search.validFrom: 2017-07-8
 
 # Synchronize accounts directly from Sales to customers in Supply Chain Management
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 > [!NOTE]
 > Before you can use the Prospect to cash solution, you should be familiar with [Integrate data into Microsoft Dataverse for Apps](/powerapps/administrator/data-integrator).

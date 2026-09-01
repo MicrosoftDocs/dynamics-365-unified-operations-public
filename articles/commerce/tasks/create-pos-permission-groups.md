@@ -14,7 +14,7 @@ ms.custom:
 ---
 # Create POS permission groups
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to create a POS permission group in Microsoft Dynamics 365 Commerce.
 

@@ -12,7 +12,7 @@ ms.search.form:
 
 # Schedule work order on specific date and time
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
  
 

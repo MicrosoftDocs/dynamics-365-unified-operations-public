@@ -13,7 +13,7 @@ ms.reviewer: johnmichalak
 
 # Import Electronic reporting (ER) configurations from Dataverse
 
-[!INCLUDE[banner](../../../includes/banner.md)]
+[!INCLUDE [banner](../../../includes/banner.md)]
 
 [!INCLUDE[banner](../../../includes/rsc-to-gsw-banner.md)]
 

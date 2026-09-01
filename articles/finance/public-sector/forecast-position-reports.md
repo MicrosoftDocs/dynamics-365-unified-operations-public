@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.5
 
 # Forecast position reports for the public sector
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use the **Forecast position summary** and **Forecast position detail** reports to generate information about forecast positions during a budget plan and scenario that you specify.  
 

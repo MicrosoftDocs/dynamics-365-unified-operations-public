@@ -18,7 +18,7 @@ ms.assetid: f2077165-da90-4359-ab12-e05717728dc7
 
 # Set up bills of exchange
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the steps for setting up bills of exchange.
 

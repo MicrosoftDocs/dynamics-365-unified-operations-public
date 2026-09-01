@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Inventory availability APIs for e-commerce
 
-[!include [banner](../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../finance/includes/banner.md)]
 
 This article describes the inventory availability APIs for e-commerce in Microsoft Dynamics 365 Commerce.
 

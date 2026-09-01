@@ -16,7 +16,7 @@ ms.assetid:
 
 # Document Reporting Service in Dynamics 365 applications
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Reporting scenarios in ERP
 

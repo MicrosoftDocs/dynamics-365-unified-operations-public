@@ -14,7 +14,7 @@ ms.custom:
 
 # Use the CST and cClasstrib attributes in Brazil tax reform
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes the **CST** and **cClasstrib** attributes in the Brazilian tax reform for 2026.
 

@@ -15,7 +15,7 @@ ms.search.industry: Manufacturing;Distribution;Service industries
 
 # Automatic transmission of NF-e fiscal documents (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to set up email parameters to automatically send a Nota Fiscal eletrônica (NF-e) to a vendor or customer after the NF-e is approved or canceled in Brazil with Microsoft Dynamics 365 Finance.
 

@@ -14,7 +14,7 @@ ms.custom:
 
 # Set up Operational Insights
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to set up and use the Operational Insights feature in Microsoft Dynamics 365 Commerce.
 

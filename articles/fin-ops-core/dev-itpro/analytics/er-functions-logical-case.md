@@ -16,7 +16,7 @@ ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 
 # CASE ER function
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The `CASE` function evaluates the value of the specified expression against the specified alternative options and returns the result of the first option that equals the value of the specified expression. Otherwise, it returns the optional default result, if a default result is specified as the last argument of the called function that isn't preceded by an option. The value that is returned can be a value of any of the supported data types.
 

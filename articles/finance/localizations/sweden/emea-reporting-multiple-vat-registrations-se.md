@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 10.0.13
 
 # Support for multiple VAT registration numbers in reporting for Sweden
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about the regulatory reports for Sweden that are available for legal entities that use multiple value-added tax (VAT) registration numbers functionality. For more information about **Multiple VAT registration numbers** functionality, the prerequisites that must be met before it's used, and the required setup, see [Multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md)
 

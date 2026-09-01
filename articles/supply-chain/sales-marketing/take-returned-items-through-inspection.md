@@ -12,7 +12,7 @@ ms.search.form: InventQuarantineOrder
 
 # Take returned items through inspection
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 1. Go to **Inventory management** > **Periodic** > **Quality management** > **Quarantine orders**.
 

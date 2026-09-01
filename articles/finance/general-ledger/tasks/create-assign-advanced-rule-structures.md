@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create and assign advanced rule structures
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create and assign an advanced rule structure to an account structure. This guide uses the USMF demo company.
 

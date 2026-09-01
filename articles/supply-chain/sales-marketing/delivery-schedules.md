@@ -13,7 +13,7 @@ ms.custom:
 
 # Delivery schedules
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In Microsoft Dynamics 365 Supply Chain Management, delivery schedules are used to manage and track the delivery of order quantities in multiple shipments. They are particularly useful when a single sales order, sales quotation, or purchase order must be delivered in several parts over time.
 

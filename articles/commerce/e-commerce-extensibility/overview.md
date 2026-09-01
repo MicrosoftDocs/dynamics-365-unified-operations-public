@@ -14,7 +14,7 @@ ms.custom:
 
 # Online channel extensibility
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of online platform extensibility in Microsoft Dynamics 365 Commerce.
 

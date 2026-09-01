@@ -11,7 +11,7 @@ ms.author: v-federicohe
 
 # Configure Ecuadorian purchase VAT book details printing
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure the purchase value-added tax (VAT) book details report so that it can be printed. Purchases VAT books are the transaction records that companies use to keep a detailed record of their operations. For each transaction, these records indicate the vendor information and document details. If applicable, they also indicate the corresponding taxes and tax withholdings, including local and foreign transactions and other mandatory information that the regulations specify.
 

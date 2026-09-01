@@ -13,7 +13,7 @@ ms.search.validFrom: 2022-01-13
 
 # SysTestRow attribute for testing multiple values
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Sometimes, tests must check multiple input values for the same feature. To make troubleshooting and reporting easier, avoid testing multiple things in the same test method. Instead of creating multiple methods, use the **SysTestRow** attribute that the SysTest framework now supports. This attribute works like the **DataRow** attribute in C#.
 

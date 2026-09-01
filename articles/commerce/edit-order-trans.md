@@ -15,7 +15,7 @@ ms.custom:
 
 # Edit and audit online order and asynchronous customer order transactions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to edit and audit online order and asynchronous customer order transactions in Microsoft Dynamics 365 Commerce.
 

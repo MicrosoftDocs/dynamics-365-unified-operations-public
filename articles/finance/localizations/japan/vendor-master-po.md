@@ -15,7 +15,7 @@ ms.custom:
 
 # Set up vendor master and purchase order to be target of consolidated invoice
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up a vendor master and purchases to be a target of consolidated invoices for Japan in Microsoft Dynamics 365 Finance.
 

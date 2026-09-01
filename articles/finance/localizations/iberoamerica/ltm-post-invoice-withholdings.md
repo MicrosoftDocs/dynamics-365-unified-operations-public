@@ -11,7 +11,7 @@ ms.author: v-federicohe
 
 # Post vendor invoices with withholding taxes
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 [!include [does not apply to](includes/does-not-apply-to.md)]
 

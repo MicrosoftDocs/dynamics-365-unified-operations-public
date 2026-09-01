@@ -17,7 +17,7 @@ ms.assetid: 541e6012-4680-4684-8494-e9b5ca4684ee
 
 # Configure and filter workspaces
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview about how to configure and filter workspaces.
 

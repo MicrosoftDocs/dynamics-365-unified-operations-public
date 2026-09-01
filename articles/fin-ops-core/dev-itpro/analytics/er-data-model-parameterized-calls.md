@@ -17,7 +17,7 @@ ms.assetid:
 
 # Support parameterized calls of ER data models
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 To generate business documents, configure an [Electronic reporting (ER)](general-electronic-reporting.md) solution that contains the following ER components:
 

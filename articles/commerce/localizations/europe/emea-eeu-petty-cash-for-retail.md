@@ -14,7 +14,7 @@ ms.custom:
 
 # Petty cash management for Commerce for Eastern Europe
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article contains information about Eastern European localization specific for the commerce industry.
 

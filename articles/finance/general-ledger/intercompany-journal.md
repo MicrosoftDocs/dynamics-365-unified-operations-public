@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.14
 
 # Intercompany journals: Dimension values on multi-line vs single line journal
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article answers some commonly asked questions about intercompany journals and dimension values.
 

@@ -18,6 +18,8 @@ ms.assetid: af07d122-5694-4de6-96bf-7bf5478b0175
 
 # Sales tax summary report
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article explains how to generate a sales tax summary report for legal entities in Italy.
 
 As of Microsoft Dynamics 365 Finance version 10.0.39, the Italian sales tax books functionality supports reporting of Italian sales tax books in the [Electronic reporting (ER) tool](/dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting). It also accommodates reporting for [multiple value-added tax (VAT) registrations](../global/emea-multiple-vat-registration-numbers.md).

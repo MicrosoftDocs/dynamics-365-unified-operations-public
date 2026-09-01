@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Set up electronic tax declaration for Germany
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This procedure walks you through setting up an electronic tax declaration.
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 8.1
 
 # Set up general budget reservations and submit them to a workflow
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When a general budget reservation is set up to use a workflow, the document must first be submitted and approved through the workflow system. After the workflow is completed and the reservation is approved, you can still edit the document. Although the option to post the document is available, no other controls and fields on the page are available unless you select the option to edit the document. If you edit an approved reservation, its workflow status is reset to **Draft**, and the option to post the document is no longer available. However, the other controls and fields on the page are available. After you change a reservation, you must resubmit it to the workflow system for approval.
 

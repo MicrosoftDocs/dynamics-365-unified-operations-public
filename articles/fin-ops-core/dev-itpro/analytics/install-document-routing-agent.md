@@ -16,7 +16,7 @@ ms.assetid: cd017bfd-2eba-4e8a-ab9b-a0ce393c2108
 
 # Install the Document Routing Agent to enable network printing
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to install and configure the Document Routing Agent. The Document Routing Agent is a downloadable application that you can use to enable network printing scenarios. You can enable network printers for specific companies by using in-client administrative pages.
 

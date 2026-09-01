@@ -13,7 +13,7 @@ ms.custom:
 
 # Work with NMFC codes in Dynamics 365 Supply Chain Management
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 National Motor Freight Classification (NMFC) codes help you classify items that can be shipped. The NMFC code is a designation that is used to group commodities. It enables transport companies to evaluate goods for shipment by classifying items based on considerations such as truck fit, loading issues, handling issues, and perishability. Commodities are grouped into one of 18 freight classes by using a range of numbers from 50 to 500. The class that a commodity is grouped into is based on an evaluation of four transportation characteristics: density, stowability, handling, and liability. Together, these characteristics establish the commodity's transportability.
 

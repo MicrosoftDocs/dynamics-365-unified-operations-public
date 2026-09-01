@@ -12,7 +12,7 @@ ms.search.form: EntAssetWorkerResponsible
 
 # Responsible maintenance workers
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
  
 

@@ -17,7 +17,7 @@ ms.search.form: PurchTableChangeReviewWorkspace
 
 # Enable Copilot support for managing changes to confirmed purchase orders
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to enable Copilot support for the **Confirmed purchase orders with changes** workspace and its optional support for Copilot features. For more information about how to use this workspace, see [Review and accept changes to confirmed purchase orders](../../../supply-chain/procurement/purchase-order-changes-after-confirmation.md).
 

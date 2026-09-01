@@ -17,7 +17,7 @@ ms.search.form:
 
 # Transfer transactions to the Intrastat
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up Intrastat parameters and transfer transactions to Intrastat in Microsoft Dynamics 365 Finance, including a process for creating new and updating existing commodity codes. 
 

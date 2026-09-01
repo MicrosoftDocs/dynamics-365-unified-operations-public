@@ -16,6 +16,8 @@ ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 
 # Withholding tax in sales transactions
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article lists the steps to enable the calculation of withholding tax for selected customers. For customers who specify withholding tax in their payments to you, you can assign the default **Withholding tax group** on the **Customers** page.
 
 1. Go to **Navigation pane > Modules > Accounts receivable > Customers > All customers**.

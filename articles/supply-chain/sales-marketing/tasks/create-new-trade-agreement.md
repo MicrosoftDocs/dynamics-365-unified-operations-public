@@ -13,7 +13,7 @@ ms.custom:
 
 # Create a new trade agreement
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows you how to create a trade agreement where you register a new product sales price that you agreed on with a specific customer. You can run this procedure in demo data company USMF or on your own data. If you're using your own data, before you start this guide, make sure that a trade agreement journal name exists where the **Default relation** is set to *Price (sales)*.
 

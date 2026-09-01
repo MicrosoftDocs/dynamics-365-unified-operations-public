@@ -16,7 +16,7 @@ ms.assetid: 98ff891f-e0e2-4184-b618-28107a50851f
 
 # Fixed asset depreciation
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of depreciation in Fixed assets.
 

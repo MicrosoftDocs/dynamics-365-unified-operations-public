@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-10-28
 
 # Revaluate fixed asset cost and depreciation (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to revaluate the cost and depreciation of fixed assets for Russia in Microsoft Dynamics 365 Finance.
 

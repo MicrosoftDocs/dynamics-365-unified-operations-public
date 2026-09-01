@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Brazil taxes overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Dynamics 365 Finance calculates Brazilian taxes based on the tax type that you specify for the sales tax code. You can set up and calculate sales taxes for:
 

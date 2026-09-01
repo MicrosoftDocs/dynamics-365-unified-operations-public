@@ -14,7 +14,7 @@ ms.custom:
 
 # Configure ratings and reviews
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to configure your e-commerce site to show customer ratings and reviews in Microsoft Dynamics 365 Commerce.
 

@@ -12,7 +12,7 @@ ms.reviewer: johnmichalak
 
 # Purge from history archive (preview)
 
-[!INCLUDE[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This article explains how to purge data from the history table in Microsoft Dynamics 365.

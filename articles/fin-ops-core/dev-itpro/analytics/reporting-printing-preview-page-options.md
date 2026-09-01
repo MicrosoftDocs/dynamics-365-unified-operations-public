@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 34
 
 # Document reporting preview options
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Finance and operations apps offer an expanded collection of options to use while previewing documents within the embedded PDF viewer. This article describes the **Export** and **Network Printer** options.
 

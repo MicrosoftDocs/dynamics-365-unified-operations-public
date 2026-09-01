@@ -13,7 +13,7 @@ ms.custom:
 
 # Set up consignment
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to use the inbound consignment inventory processes.
 

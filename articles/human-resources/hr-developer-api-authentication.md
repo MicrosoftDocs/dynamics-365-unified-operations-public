@@ -26,6 +26,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Authentication
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This article provides an overview of how to authenticate with the Microsoft Dynamics 365 Human Resources data application programming interface (API).

@@ -15,7 +15,7 @@ ms.custom: sfi-image-nochange
 
 # Person search report
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The Person search report refines the existing Data management framework of finance and operations apps. The Data management framework offers a prepackaged set of entities that Microsoft authored to identify personal data that defines a person and the roles that a person might be assigned to in finance and operations applications. 
 

@@ -13,7 +13,7 @@ ms.search.form: WHSDespatchAdviceMessage, WHSDespatchAdviceMessageEntity, WHSDes
 
 # Import inbound ASNs as despatch advice messages
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Advanced shipping notices (ASNs) notify you about vendor deliveries. They help the sender describe the contents of a shipment—such as the items, quantities, and packaging—so that warehouse workers can prepare to receive it.
 

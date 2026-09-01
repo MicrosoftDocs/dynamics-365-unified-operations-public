@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-02-28
 
 # United States
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information and links to resources that can help you set up legal entities with a primary address in the United States.
 

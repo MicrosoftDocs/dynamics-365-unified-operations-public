@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Test e-commerce site pages for memory leaks
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to test e-commerce site pages for custom code memory leaks in Microsoft Dynamics 365 Commerce.
 

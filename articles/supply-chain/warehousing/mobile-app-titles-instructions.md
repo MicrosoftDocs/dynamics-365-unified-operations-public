@@ -11,7 +11,7 @@ ms.search.form: WHSMobileAppFlowStepListPage
 
 # Customize step titles and instructions for the Warehouse Management mobile app
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
 > The features described in this article apply only to the new Warehouse Management mobile app. They don't affect the old warehouse app, which is now deprecated.

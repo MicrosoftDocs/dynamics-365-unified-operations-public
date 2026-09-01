@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 10.0.23
 
 # Tax settlement rounding based on customized currency decimal places
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to do tax settlement rounding that is based on customized currency decimal places.
 

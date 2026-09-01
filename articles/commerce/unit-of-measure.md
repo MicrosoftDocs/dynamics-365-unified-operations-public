@@ -14,7 +14,7 @@ ms.custom:
 
 # Apply unit of measure settings
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains unit of measure settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
 

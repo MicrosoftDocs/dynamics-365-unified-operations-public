@@ -16,6 +16,8 @@ ms.dyn365.ops.version: 10.0.24
 
 # Revenue split templates in Subscription billing
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 Use the **Revenue split template** page to set up templates for revenue split. Revenue split consists of a parent item that has child items. This type of item is often sold to customers as a single item or bundle.
 
 For example, a computer item can be created in the following way:

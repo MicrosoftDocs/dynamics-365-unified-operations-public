@@ -16,7 +16,7 @@ ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 
 # Design an ER format to paginate generated documents in Excel
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how a user in the System Administrator or Electronic Reporting Functional Consultant role can configure an [Electronic reporting (ER)](general-electronic-reporting.md) format to generate outbound documents in Microsoft Excel and manage document pagination.
 

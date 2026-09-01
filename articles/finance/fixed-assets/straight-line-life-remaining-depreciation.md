@@ -18,7 +18,7 @@ ms.assetid: 0fa2f71a-596c-414c-a6e6-8f7405a0bf81
 
 # Straight line life remaining depreciation
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the straight line life remaining method of depreciation.
 

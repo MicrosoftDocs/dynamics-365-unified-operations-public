@@ -17,7 +17,7 @@ ms.custom:
 
 # Simple Details form pattern
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the Simple Details form pattern. This pattern is used when only a simple set of fields must be presented to the user.
 

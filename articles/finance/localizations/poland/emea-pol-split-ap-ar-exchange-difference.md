@@ -14,7 +14,7 @@ ms.search.validFrom: 2020-04-01
 
 # Split the realized exchange difference amount into the difference of the invoice net value and the VAT amount
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to split the realized exchange difference amount into the difference of the invoice net value and the value-added tax (VAT) amount for Poland in Microsoft Dynamics 365 Finance.
 

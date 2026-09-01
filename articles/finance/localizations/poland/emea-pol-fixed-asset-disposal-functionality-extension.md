@@ -15,7 +15,7 @@ ms.search.form: AssetParameters, AssetPosting, CustFreeInvoice, LedgerJournalTab
 
 # Fixed assets disposal for Poland
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up fixed asset disposal functionality for users in legal entities in Poland with Microsoft Dynamics 365 Finance.
 

@@ -12,7 +12,7 @@ ms.search.form:
 
 # Calculate capacity load on scheduled work orders
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
  
 

@@ -23,6 +23,7 @@ ms.dyn365.ops.version: Human Resources
 
 # Example query for Candidate to hire
 
+[!INCLUDE [banner](../includes/banner.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

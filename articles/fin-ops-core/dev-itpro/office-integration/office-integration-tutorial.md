@@ -18,7 +18,7 @@ ms.assetid: 65fb607a-58e4-4800-81b5-6058acb003cb
 
 [!include [applies to](../includes/applies-to-commerce-finance-hr-scm.md)]
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In this tutorial, you will use and build Office integration experiences that involve Excel, Word, document management, and email. 
 

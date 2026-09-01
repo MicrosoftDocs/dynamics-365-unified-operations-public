@@ -17,7 +17,7 @@ ms.custom:
 
 # FactBox form patterns
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about the FactBox form patterns. FactBoxes are used to provide related information for a record.
 

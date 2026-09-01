@@ -14,7 +14,7 @@ ms.dyn365.ops.version: 10
 
 # Specify a custom storage location for generated documents
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The application programming interface (API) of the Electronic reporting (ER) framework lets you extend the list of storage locations for documents that ER formats generate. This article provides an overview of the main tasks you must complete to add a custom storage location.
 

@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Purchase of zero-rated goods
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 1. Go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
 1. Create a purchase order for a zero-rated item, and save the record.

@@ -16,7 +16,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 # View liability, asset, and expense transactions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to view transactions for a leased asset. These transactions include lease liability transactions and executory expense transactions that you post. The carrying values of the liability and right-of-use (ROU) asset are used on several reports. They're also used to calculate adjustment values.
 

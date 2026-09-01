@@ -13,7 +13,7 @@ ms.custom:
 
 # Asset Management mobile app open-source release
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
 > The Asset Management mobile app is now available on GitHub as an open-source sample at [microsoft/scmsamples-EnterpriseAssetManagement](https://github.com/microsoft/scmsamples-EnterpriseAssetManagement). It provides the same functionality as the original app and is freely customizable. The existing app remains available for installation through [Dynamics 365 apps in the Power Platform admin center](/power-platform/admin/manage-apps) until November 30, 2026, with critical fixes from Microsoft during this transition period. After that date, the app is no longer distributed through the admin center. Existing installations continue to work in customer tenants.

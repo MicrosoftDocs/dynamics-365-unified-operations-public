@@ -16,7 +16,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Broker contract management
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Broker contract management helps companies better manage their brokerage agreements by automating tasks that are involved in administering, tracking, and paying the fees that are due to brokers.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Inventory aging report examples and logic
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article presents some examples that show how to interpret the results of an **Inventory aging** report. This report categorizes on-hand quantity and inventory values for a selected item or item group into several period buckets. This article also shows the internal logic of the report.
 

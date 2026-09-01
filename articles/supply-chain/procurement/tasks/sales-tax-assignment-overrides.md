@@ -12,7 +12,7 @@ ms.search.form: RetailStoreTable, RetailTaxOverrideCode, RetailTaxOverrideGroup
 
 # Sales tax assignment and overrides
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure demonstrates how to assign sales tax groups to commerce channels. It also walks through the process of creating a new sales tax override and assigning it to an existing sales tax override group. This procedure uses the USRT company in demo data.
 

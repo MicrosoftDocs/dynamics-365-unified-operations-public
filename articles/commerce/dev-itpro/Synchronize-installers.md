@@ -15,7 +15,7 @@ ms.custom:
 
 # Synchronize self-service installers in Dynamics 365 Commerce
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to upload and synchronize self-service installers in Microsoft Dynamics 365 Commerce so that you can use them by using the standard self-service download mechanism.
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.39
 
 # Electronic invoicing configuration
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides an overview of the process for setting up and configuring Electronic invoicing. Complete the setup steps in the order specified here. If you skip a mandatory step, the functionality won't work correctly, and multiple failures occur during subsequent steps or when you use the functionality.
 

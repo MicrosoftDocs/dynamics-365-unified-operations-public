@@ -15,7 +15,7 @@ ms.search.validFrom: 2020-12-22
 
 # Dual-write mapping reference
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 [!include [banner](includes/dual-write-symbols.md)]
 

@@ -15,7 +15,7 @@ ms.collection:
 
 # Dynamic work classification
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Warehouse managers often need different work pools, priorities, or bay door assignments depending on the carrier, shipping deadline, or type of items being picked. Without dynamic classification, each combination requires its own work template, which can lead to a large and complex configuration.
 

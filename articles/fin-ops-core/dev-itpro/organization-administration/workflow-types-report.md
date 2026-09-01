@@ -16,7 +16,7 @@ ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 
 # Workflow types report
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article points you to a report that lists the available workflow types.
 

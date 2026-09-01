@@ -15,7 +15,7 @@ ms.assetid: 87d75162-a9dd-43d2-a316-833e2c799f08
 
 # Code editor features
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the code editor for Visual Studio.
 

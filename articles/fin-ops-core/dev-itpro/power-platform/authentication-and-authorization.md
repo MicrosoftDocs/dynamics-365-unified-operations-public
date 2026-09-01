@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.0
 ---
 # Authentication and authorization
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Finance and operations apps and Microsoft Power Platform maintain separate user security. Users must have appropriate permissions in each environment to access finance and operations apps resources through Microsoft Power Platform. You can simplify user setup by synchronizing users between the two environments.
 

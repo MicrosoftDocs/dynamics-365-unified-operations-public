@@ -17,7 +17,7 @@ ms.custom:
 
 # Chinese voucher continuity check
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to check all posted vouchers in a fiscal period and renumber the Chinese voucher numbers to be sequential in Microsoft Dynamics 365 Finance.
 

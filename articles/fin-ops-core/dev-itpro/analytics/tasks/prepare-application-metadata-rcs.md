@@ -15,7 +15,7 @@ ms.search.form:
 
 # Prepare application metadata to use in RCS
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains application metadata for designing ER model mapping configurations in Regulatory configuration service (RCS). Use this configuration to design a sample ER model mapping configuration to access foreign trade transactions. In this example, you create a configuration for sample company, Litware, Inc. You can perform these steps in any company. To complete these steps, you must first complete the steps in the article, [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md).
 

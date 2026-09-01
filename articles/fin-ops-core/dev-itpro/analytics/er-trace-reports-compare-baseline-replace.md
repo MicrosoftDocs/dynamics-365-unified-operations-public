@@ -16,7 +16,7 @@ ms.custom: sfi-image-nochange
 
 # Improve tracing the results of generated ER reports to compare with baseline values
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the first set of improvements to the baseline feature of the Electronic reporting (ER) framework. These improvements are available in Microsoft Dynamics 365 Finance version 10.0.3 (June 2019) and later.
 

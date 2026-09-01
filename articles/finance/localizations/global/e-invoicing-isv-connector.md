@@ -15,7 +15,7 @@ ms.custom: sfi-image-nochange
 
 # Electronic Invoicing service ISV last-mile connector
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The independent software vendor (ISV) last-mile connector complements the standard Electronic Invoicing service functionality when no direct integration with government electronic invoicing platforms or final electronic invoice recipients is supported out of the box. In these scenarios, Microsoft Dynamics 365 Finance is used to generate electronic documents in legally required formats. The documents are then passed to the ISV last-mile connector for further communication. In the case of incoming electronic documents, the ISV last-mile connector is used as a source of inbound documents, which are then handled by Finance.
 

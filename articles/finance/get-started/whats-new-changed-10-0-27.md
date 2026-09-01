@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.27
 
 # What's new or changed in Dynamics 365 Finance 10.0.27 (July 2022)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 

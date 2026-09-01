@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Use the Regression suite automation tool (RSAT)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to load test cases from Azure DevOps, generate automation files, modify test parameters, run tests, investigate results, and save your work back to Azure DevOps.
 

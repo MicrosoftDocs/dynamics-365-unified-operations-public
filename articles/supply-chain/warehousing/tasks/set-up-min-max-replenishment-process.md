@@ -13,7 +13,7 @@ ms.custom:
 
 # Set up a min-max replenishment process
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article shows how to set up a replenishment process that uses the minimum/maximum replenishment strategy. When inventory falls below the minimum level, the system creates work to replenish the location. This article also shows how to use fixed picking locations to allow restocking even if inventory falls below the minimum level, and how to enable the replenishment process to run regularly using a batch job. A warehouse manager typically carries out these tasks. You can run these procedures by using the USMF demo data company with the example values provided here, or you can run them on your own data. If you're using your own data, make sure that you have a warehouse that's enabled for warehouse management processes (WMS).
 

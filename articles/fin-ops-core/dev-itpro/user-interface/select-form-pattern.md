@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Form patterns for migrated forms
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information that will help you select the best form pattern for the forms that you migrate. 
 

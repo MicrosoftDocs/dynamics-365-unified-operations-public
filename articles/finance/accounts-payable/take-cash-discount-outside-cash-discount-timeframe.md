@@ -16,7 +16,7 @@ ms.assetid: bad10b7f-e550-4742-9261-8a094c9c624d
 
 # Take a cash discount outside the cash discount period
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides two scenarios that show how you can take a cash discount even if you make the payment outside the cash discount period.
 

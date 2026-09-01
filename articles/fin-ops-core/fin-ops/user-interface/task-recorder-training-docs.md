@@ -17,7 +17,7 @@ ms.assetid: 59bf39f8-1464-441e-8b23-9a856c73471b
 
 # Create documentation or training with Task Recorder
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 [!INCLUDE [PEAP](../../../includes/peap-3.md)]
 

@@ -14,7 +14,7 @@ ms.custom:
 
 # NFS-e Service Invoices
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to set up and work with Brazilian NFS-e Service Invoices.
 

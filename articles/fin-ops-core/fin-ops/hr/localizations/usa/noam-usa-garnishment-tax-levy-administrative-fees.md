@@ -16,7 +16,7 @@ ms.assetid: e87ff0bd-0594-45a6-bd54-5f8d085e1894
 
 # Garnishments, tax levies, and administrative fees FAQ
 
-[!include [banner](../../../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../../../finance/includes/banner.md)]
 
 This article lists frequently asked questions and answers about garnishments and tax levies. It provides information to help you quickly and accurately set up garnishments and tax levies to keep your organization in compliance with applicable laws, regulations, and court orders. If you have a question that isn't answered here or in the related articles, confer with your legal advisors.
 

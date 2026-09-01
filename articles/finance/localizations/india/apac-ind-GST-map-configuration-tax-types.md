@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Map configuration tax types - Customs
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 ## Customs tax type 
 

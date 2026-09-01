@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-06-30
 
 # Estonian Intrastat
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries/regions. The Estonian Intrastat declaration contains information about the trade of goods for reporting.
 

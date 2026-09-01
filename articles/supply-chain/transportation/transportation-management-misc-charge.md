@@ -13,7 +13,7 @@ ms.custom:
 
 # Transportation management miscellaneous charges
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 As with all miscellaneous charges, transportation-generated charges must be associated with a charge code. Otherwise, they won't be added back to the order as a miscellaneous charge. The **Charges code** determines how the charge is accounted for in relation to the order and order line where it's added.
 

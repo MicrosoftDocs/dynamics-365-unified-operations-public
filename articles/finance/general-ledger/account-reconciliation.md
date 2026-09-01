@@ -15,6 +15,8 @@ ms.dyn365.ops.version: 10.0.42
 
 # Account reconciliation
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 The Account reconciliation feature is available in Microsoft Dynamics 365 Finance. Use this feature to reconcile your general ledger with the accounts payable, accounts receivable, tax, and bank subledgers. It replaces the old reactive SQL Server Reporting Service (SSRS) reports.
 
 Users can view reconciled data and automated data analysis on a defined schedule. Therefore, you can set up the processing so that it runs only in the background or during off-hours.

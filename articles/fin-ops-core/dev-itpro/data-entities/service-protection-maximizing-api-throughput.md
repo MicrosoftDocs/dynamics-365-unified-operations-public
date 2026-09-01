@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Platform update 52
 
 # Maximize API throughput
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes strategies that can help you manage throttling responses for service protection application programming interface (API) limits and maximize API throughput.
 

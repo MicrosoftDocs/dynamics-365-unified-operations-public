@@ -15,7 +15,7 @@ ms.custom:
 
 # Modern POS (MPOS) architecture
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of POS topology.
 

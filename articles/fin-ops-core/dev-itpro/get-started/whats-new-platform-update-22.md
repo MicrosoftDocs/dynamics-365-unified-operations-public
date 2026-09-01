@@ -18,7 +18,7 @@ ms.assetid: b756a61c-52a3-47c5-b579-66b9249c592b
 
 # What's new or changed in Dynamics 365 for Finance and Operations platform update 22 (December 2018)
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 
 This article describes features that are new or changed in Dynamics 365 for Finance and Operations platform update 22. This version has a build number of 7.0.5095.

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Platform update 15
 
 # Create alert rules
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Getting started
 

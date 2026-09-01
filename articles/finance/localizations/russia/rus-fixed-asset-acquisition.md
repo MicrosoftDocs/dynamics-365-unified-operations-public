@@ -15,7 +15,7 @@ ms.search.form: RAssetTable, LedgerJournalTable
 
 # Acquire fixed assets and put them into operation (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with fixed asset acquisitions for Russia in Microsoft Dynamics 365 Finance.
 

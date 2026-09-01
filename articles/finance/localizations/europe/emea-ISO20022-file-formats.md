@@ -15,7 +15,7 @@ ms.search.form: CustPaymMode, CustBankAccounts, VendPaymMode, VendBankAccounts
 
 # Import ISO20022 files
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You can import payment files that use the following formats:
 

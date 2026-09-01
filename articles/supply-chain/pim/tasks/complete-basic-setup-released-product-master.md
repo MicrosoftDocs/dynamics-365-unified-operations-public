@@ -12,7 +12,7 @@ ms.search.form: EcoResProductDetailsExtended, InventTableInventoryDimensionGroup
 
 # Complete basic setup of a released product master
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article shows how to complete the minimum setup that is required before you can use the product master in BOM versions.
 

@@ -15,7 +15,7 @@ ms.search.validFrom: 2021-11-29
 
 # Separated Dual-write Application Orchestration package
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Previously, the Dual-write Application Orchestration package was a single package that contained the following solutions:
 

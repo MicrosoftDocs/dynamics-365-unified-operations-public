@@ -12,7 +12,7 @@ ms.search.form: WHSNumberSequenceExt
 
 # Configure number sequences for warehouse flows
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The *Number sequence extensions* feature adds a new configuration page for setting up number sequences. It enables flexible configuration of GS1-regulated IDs, including GS1 prefixes and check digits (modulo 10), and enforces a length limit on existing number sequences.
 

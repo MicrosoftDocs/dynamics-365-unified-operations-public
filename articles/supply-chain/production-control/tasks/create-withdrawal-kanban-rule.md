@@ -12,7 +12,7 @@ ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLooku
 
 # Create a withdrawal kanban rule
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows the setup that is needed to create a withdrawal kanban rule for transferring material in a lean environment. The demo data company used to create this procedure is USMF. This procedure is intended for the Process Engineer or the Value Stream Manager, as they prepare replenishment of new or modified material.
 

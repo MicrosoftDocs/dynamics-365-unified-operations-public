@@ -12,7 +12,7 @@ ms.reviewer: johnmichalak
 
 # Get started with electronic invoicing for Paraguay
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article helps you set up electronic invoicing for Paraguay. It lists configuration steps that depend on the country or region in Microsoft Dynamics 365 Finance and Microsoft Dynamics 365 Supply Chain Management. These steps supplement [Electronic invoicing setup](../global/gs-e-invoicing-set-up-overview.md). For last mile integration with the Paraguayan tax authority, Microsoft partners with Edicom.
 

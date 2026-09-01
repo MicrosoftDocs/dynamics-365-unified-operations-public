@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.5
 
 # Use cash control limits
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to use cash control to define transaction limits when there's no cash balance or a transaction causes the cash balance to fall below a predefined amount.
 

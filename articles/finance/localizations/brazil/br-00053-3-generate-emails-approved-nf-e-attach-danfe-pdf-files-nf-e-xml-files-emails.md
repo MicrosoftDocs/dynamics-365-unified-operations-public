@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-06-30
 
 # Generate emails for approved NF-e and attach DANFE PDF files and NF-e XML files to the emails (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to generate a PDF file from the Documento Auxiliar da Nota Fiscal Eletrônica (DANFE) for a Nota Fiscal eletrônica (NF-e) in Brazil with Microsoft Dynamics 365 Finance.
 

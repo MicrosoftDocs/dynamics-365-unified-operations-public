@@ -16,7 +16,7 @@ ms.assetid: d876e8de-d547-43e5-9259-f095821dc758
 
 # Demo data overview
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article provides an overview of the available demo data.
 

@@ -14,7 +14,7 @@ ms.custom:
 
 # Create a Cloud POS extension package
 
-[!include [banner](../../../includes/banner.md)]
+[!INCLUDE [banner](../../../includes/banner.md)]
 
 This article explains how to create a Cloud POS extension package. Depending on the Cloud POS deployment topology, you can deploy Cloud POS to either Cloud Scale Unit (CSU) or CSU – Self hosted.
 

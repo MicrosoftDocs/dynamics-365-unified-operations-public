@@ -18,7 +18,7 @@ ms.assetid: bd7255d9-0b0e-4372-8563-eaa559adbf24
 
 # Qualified Invoice System in Japan
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The Qualified Invoice System (QIS) represents updated requirements for issuing and reporting invoices that include Japan Consumption Tax (JCT) information. These requirements start on October 1, 2023. Their purpose is to improve the accuracy and transparency of the tax regime. 
 

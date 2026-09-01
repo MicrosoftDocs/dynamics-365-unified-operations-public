@@ -25,6 +25,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Set up panel members in the HR Recruiting app
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 This article explains how to set up panel members in the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 
 ## Assign panel members to applicants

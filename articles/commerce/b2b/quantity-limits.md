@@ -15,7 +15,7 @@ ms.custom:
 
 # Set product quantity limits for B2B e-commerce sites
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to set product quantity limits for Microsoft Dynamics 365 Commerce business-to-business (B2B) sites.
 

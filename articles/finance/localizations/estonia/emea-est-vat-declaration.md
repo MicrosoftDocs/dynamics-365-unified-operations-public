@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # VAT declaration for Estonia
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to set up and generate a value-added tax (VAT) declaration for Estonia in the official XML format. It also describes how to preview the VAT declaration in Microsoft Excel.
 

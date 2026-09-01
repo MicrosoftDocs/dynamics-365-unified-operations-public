@@ -13,7 +13,7 @@ ms.custom:
 
 # Inventory value report examples and logic
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Inventory value reports provide details about your inventory physical and financial quantities and amounts. This article provides some examples of results that are presented on each type of inventory value report.
 

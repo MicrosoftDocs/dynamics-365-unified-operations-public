@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Platform update 15
 
 # Batch processing of alerts
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Batch processing functionality processes alerts. You must set up batch processing before the process and deliver alerts.
 

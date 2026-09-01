@@ -15,7 +15,7 @@ ms.assetid: 9793bf54-cfb8-4ba1-bc8f-ba49ef37884a
 
 # Add templates to the Open lines in Excel menu
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how you can promote a template to the **Open lines in Excel** menu that is available on journal pages.
 

@@ -13,7 +13,7 @@ ms.search.form: SMADispatchBoard
 
 # View the status of service orders
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can use the **Dispatch board** page to view the status of service activities in service orders.
 

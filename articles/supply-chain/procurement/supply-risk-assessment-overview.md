@@ -12,7 +12,7 @@ ms.search.form:
 
 # Supply risk assessment overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Supply risk assessment for Microsoft Dynamics 365 Supply Chain Management helps you identify supply risks, so you can take action to prevent supply chain disruptions.
 

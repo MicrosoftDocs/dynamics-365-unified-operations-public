@@ -13,7 +13,7 @@ ms.search.validFrom: 2020-01-06
 
 # Sync on demand with the Supply Chain Management pricing engine
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management includes a pricing engine that handles trade agreements, price lists, customer loyalty programs, promotions, and discounts. This pricing engine uses complex rules to determine the best price for a given quotation or order. When it's integrated with Dynamics 365 Sales, you can choose whether all price-related calculations are done in Supply Chain Management and then synced to Sales, or whether Sales does selective price-related calculations for quotations and sales orders. You control the behavior by setting the **Use system pricing calculation** option in Sales, at **Settings \> Administration \> System settings \> Sales**. When this option is set to *No*, Supply Chain Management is responsible for all pricing calculations. When it's set to *Yes*, part of the Sales pricing calculation logic is also applied. In the examples later in this article, the **Use system pricing calculation** option is set to *Yes*.
 

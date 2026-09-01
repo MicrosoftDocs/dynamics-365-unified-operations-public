@@ -20,7 +20,7 @@ ms.dyn365.ops.version: 10.0.23
 ---
 # What's new or changed in Dynamics 365 Commerce 10.0.23 (January 2022)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.23. This version has a build number of 10.0.1037 and is available on the following schedule:
 

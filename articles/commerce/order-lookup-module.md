@@ -15,7 +15,7 @@ ms.custom:
 
 # Order lookup module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes the order lookup module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 

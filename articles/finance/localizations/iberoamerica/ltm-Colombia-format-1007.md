@@ -11,6 +11,8 @@ ms.reviewer: johnmichalak
 
 # Format 1007 file for Colombia configuration
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article explains how to configure and issue a file in 1007 format. This format records for each third party the income received by a natural or legal person during the taxable year including both operating and nonoperating income.
 
 > [!NOTE]

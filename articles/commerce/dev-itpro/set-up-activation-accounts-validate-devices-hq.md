@@ -17,7 +17,7 @@ ms.search.form: HcmWorker, RetailDeviceActivationValidation, RetailPositionPosPe
 
 # Manage activation accounts and validate devices
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 > [!WARNING]
 > Due to security compliance, the feature **Commerce \> Create new identity** was deprecated in release 10.0.44 (PU68).
 > 

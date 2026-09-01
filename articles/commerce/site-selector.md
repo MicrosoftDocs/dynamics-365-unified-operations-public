@@ -14,7 +14,7 @@ ms.custom:
 
 # Site picker module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes the site picker module and how to add it to site pages in Microsoft Dynamics 365 Commerce.
 

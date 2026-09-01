@@ -15,7 +15,7 @@ ms.search.validFrom: 2020-03-16
 
 # General troubleshooting
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides general troubleshooting information for dual-write integration between finance and operations apps and Dataverse.
 

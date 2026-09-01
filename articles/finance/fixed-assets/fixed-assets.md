@@ -19,7 +19,7 @@ ms.assetid: d6bb2f19-73b9-43fa-8042-b530c75896bf
 
 # Fixed assets home page
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides access to resources that can help you use Fixed assets for Microsoft Dynamics 365 Finance. Fixed assets are items of value are owned by an individual or organization. The items include buildings, vehicles, land, and equipment. 
 

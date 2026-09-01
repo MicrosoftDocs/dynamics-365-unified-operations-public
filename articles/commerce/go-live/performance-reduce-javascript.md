@@ -14,7 +14,7 @@ ms.custom:
 
 # Reduce JavaScript by excluding unused modules
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how you can help improve performance by reducing the amount of JavaScript used in your Microsoft Dynamics 365 Commerce implementation.
 

@@ -14,7 +14,7 @@ ms.custom:
 
 # Iframe module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes the iframe module and how to add it to site pages in Microsoft Dynamics 365 Commerce.
 

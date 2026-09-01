@@ -11,7 +11,7 @@ ms.search.validFrom: 2017-09-15
 ---
 # Enable custom Commerce Data Exchange synchronization via extension
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how you can extend the Commerce initialization class to support custom Commerce Data Exchange (CDX) synchronization. For this extension, you use the new extension points that were added in Microsoft Dynamics 365 Finance platform update 8 or Microsoft Dynamics 365 Retail platform update 8.
 

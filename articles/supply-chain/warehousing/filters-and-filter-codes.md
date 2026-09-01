@@ -12,7 +12,7 @@ ms.search.form: WHSFilters,WHSFilterGroupTable,EcoResProductDetailsExtended,WHSF
 
 # Configure product filters for warehouse transactions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to configure product filters and filter codes to categorize inventory items in a warehouse. You can also use filters to specify which customers can order a particular item and which items can be purchased from a particular vendor.
 

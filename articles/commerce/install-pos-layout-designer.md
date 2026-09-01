@@ -17,7 +17,7 @@ ms.custom:
 
 # Install the POS layout designer
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to install and debug the one-click designer in Microsoft Dynamics 365 Commerce.
 

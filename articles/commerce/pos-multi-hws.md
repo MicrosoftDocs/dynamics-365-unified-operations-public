@@ -15,7 +15,7 @@ ms.custom:
 
 # Dedicated payment terminals and prompts for a printer and cash drawer
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides information about the capability to have a dedicated payment terminal and prompt the user to select a cash drawer and a receipt printer in Microsoft Dynamics 365 Commerce.
 

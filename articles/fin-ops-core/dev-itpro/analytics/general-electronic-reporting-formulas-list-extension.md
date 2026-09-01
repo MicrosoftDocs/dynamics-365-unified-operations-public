@@ -16,7 +16,7 @@ ms.assetid: 62c740dc-6a88-4ded-9c41-6857b82b335e
 
 # Extend the list of Electronic reporting (ER) functions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Electronic reporting (ER) expressions support various types of functions for data transformation, including text, date and time, mathematical, logical, information, data type conversion, and other business domain–specific functions. In addition to built-in functions, you can extend the list of available functions in ER. This article provides an overview of key tasks that you must complete to introduce a new function.
 

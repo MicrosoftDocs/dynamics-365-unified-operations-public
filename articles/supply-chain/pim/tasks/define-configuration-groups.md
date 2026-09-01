@@ -12,7 +12,7 @@ ms.search.form: ConfigGroup
 
 # Define configuration groups
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to define product configuration groups.
 

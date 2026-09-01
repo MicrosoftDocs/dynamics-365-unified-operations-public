@@ -15,7 +15,7 @@ ms.search.form: ERWorkspace, ERVendorPart, ERSolutionTable, ERSolutionCreateDrop
 
 # ER Use financial dimensions as a data source (Part 1 - Design data model)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The following steps explain how a system administrator or electronic reporting developer can configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports. You can perform these steps in any company.
 

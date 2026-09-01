@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # User-based authentication
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Certificate-based authentication to Microsoft Dynamics 365 finance and operations apps is deprecated. The admin center that replaces Microsoft Dynamics Lifecycle Services no longer includes the option to download certificates. Regression suite automation tool (RSAT) usage must transition to replace certificates with user-based authentication. Finance and operations apps don't support authentication by service principals such as app registrations, or by managed identities. Therefore, user-based authentication is the only option.
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Group records and aggregate calculations by using GROUPBY data sources
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When you configure [Electronic reporting (ER)](general-electronic-reporting.md) model mappings or formats, you can [add](#AddMmDataSource2) required data sources of the **GroupBy** type.
 

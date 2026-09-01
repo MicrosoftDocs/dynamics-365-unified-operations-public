@@ -12,7 +12,7 @@ ms.search.form: SMADispatchBoard
 
 # View dispatch teams
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Service orders on the **Dispatch board** page are grouped by dispatch team.
 

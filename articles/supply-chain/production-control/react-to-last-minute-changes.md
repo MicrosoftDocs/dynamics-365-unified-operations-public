@@ -13,7 +13,7 @@ ms.custom:
 
 # React to last-minute changes in production
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Components or routes can often change at the last minute of the manufacturing process, just before production orders are released to the shop floor. This article describes a few types of last-minute changes that often occur and explains how to manage them in Microsoft Dynamics 365 Supply Chain Management.
 

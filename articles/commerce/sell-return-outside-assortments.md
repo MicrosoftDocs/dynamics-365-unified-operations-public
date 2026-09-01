@@ -15,7 +15,7 @@ ms.custom:
 
 # Sell and return products that aren't part of a store's assortment
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to sell and return products that aren't part of a store's assortment in Microsoft Dynamics 365 Commerce.
 

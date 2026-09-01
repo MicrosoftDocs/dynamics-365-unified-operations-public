@@ -16,7 +16,7 @@ ms.custom:
 
 # Set up Recency, Frequency, and Monetary (RFM) analysis
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to set up a Recency, Frequency, and Monetary (RFM) analysis of your customers in Microsoft Dynamics 365 Commerce.
 

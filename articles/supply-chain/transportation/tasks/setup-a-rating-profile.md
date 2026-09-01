@@ -13,7 +13,7 @@ ms.custom:
 
 # Rating profiles
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 A rating profile resembles a logistics contract (but not a legal contract). It's used to determine transportation tariffs for loads.
 

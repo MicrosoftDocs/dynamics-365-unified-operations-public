@@ -13,7 +13,7 @@ ms.custom:
 
 # Options for including physical value in cost calculations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Supply Chain Management provides two options for including physical value in cost calculations:
 
@@ -26,7 +26,6 @@ This article explains these options and how to set them up.
 
 ## Include physical value
 
-[!include [banner](../includes/banner.md)]
 
 You can choose whether the system should consider physically updated transactions when calculating the average cost price for items belonging to a given item model group. To set this option, follow these steps:
 

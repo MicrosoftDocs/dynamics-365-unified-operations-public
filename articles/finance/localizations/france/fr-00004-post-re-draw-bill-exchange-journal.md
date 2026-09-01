@@ -15,7 +15,7 @@ ms.search.form: LedgerJournalTable, LedgerJournalTransCustBillOfExchange, CustOp
 
 # FR-00004 Post a redraw bill of exchange journal
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to post a redraw bill of exchange journal in Microsoft Dynamics 365 Finance for legal entities with a primary address in France.
 

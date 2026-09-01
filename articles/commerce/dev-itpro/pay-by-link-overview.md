@@ -14,7 +14,7 @@ ms.search.validFrom: 2025-06-15
 
 # Enable pay by link in POS by using the Dynamics 365 Payment Connector for Adyen
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to set up and enable the pay by link payment method to capture payments by using the Microsoft Dynamics 365 Payment Connector for Adyen.
 

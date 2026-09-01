@@ -15,6 +15,8 @@ ms.dyn365.ops.version:
 
 # Install business performance planning visuals
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article describes how to install business performance planning visuals. To fully use the Business performance planning application, you must also install Microsoft Power BI visuals. For more information about how to install Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals).
 
 ## Prerequisites for the installation of Power BI visuals

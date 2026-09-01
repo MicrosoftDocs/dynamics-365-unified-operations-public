@@ -13,6 +13,8 @@ ms.search.form: CostSheetDesigner, BOMCostGroup, ProjCategory, CostingVersion, C
 
 # Indirect cost posting
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 Indirect costs are costs that aren't directly related to any single activity in the production process. Examples include administrative costs such as employee salaries, accounting department costs, and overhead costs such as rent, utilities, and machinery costs.
 
 ## Calculating indirect costs

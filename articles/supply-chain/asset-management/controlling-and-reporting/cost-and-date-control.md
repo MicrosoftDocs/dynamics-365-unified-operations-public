@@ -12,7 +12,7 @@ ms.search.form: EntAssetBICostControlWorkspace, EntAssetWorkOrderDateControl, En
 
 # Cost and date control
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 In Asset Management, you can calculate costs to get an overview of actual costs compared to budget costs on assets, functional locations, and work orders. Actual costs are based on posted transactions.
 

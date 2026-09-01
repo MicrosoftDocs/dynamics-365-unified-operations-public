@@ -16,7 +16,7 @@ ms.custom:
 
 # Subscribe to events in Dataverse
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
 > Before you subscribe to finance and operations apps business events and data events in Microsoft Dataverse, you must enable the Microsoft Power Platform integration. For information about how to enable the Microsoft Power Platform integration for a finance and operations apps environment, see [Enabling the Power Platform integration](../../power-platform/enable-power-platform-integration.md).

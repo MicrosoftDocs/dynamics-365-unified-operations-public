@@ -15,6 +15,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Globalization resources
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 ## Local and regional deployments
 
 If government regulations require you to store or service data differently, consider country/region requirements during deployment. Consider the following resources that might be relevant to you:
@@ -23,7 +25,6 @@ If government regulations require you to store or service data differently, cons
 
 ## Localization and regulatory features
 
-[!include [banner](../../../finance/includes/banner.md)]
 
 Finance and operations apps include functionality for the countries and regions documented in the [Product localization and translation availability guide](https://aka.ms/dynamics_365_international_availability_deck). Enable this functionality based on the primary address of the active legal entity.
 

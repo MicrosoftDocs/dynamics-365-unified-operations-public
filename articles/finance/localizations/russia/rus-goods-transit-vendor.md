@@ -14,7 +14,7 @@ ms.search.validFrom: 2019-06-28
 
 # Goods in transit from vendor (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with the Counting act for goods in transit (INV-6) report for Russia in Microsoft Dynamics 365 Finance.
 

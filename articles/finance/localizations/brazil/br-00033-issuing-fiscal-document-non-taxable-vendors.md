@@ -15,7 +15,7 @@ ms.search.industry: Manufacturing;Distribution;Service industries
 
 # Issue fiscal documents for vendors (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to create and post vendor invoices on behalf of nontaxpayer vendors in Brazil with Microsoft Dynamics 365 Finance.
 

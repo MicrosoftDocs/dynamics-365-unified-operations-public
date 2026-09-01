@@ -16,7 +16,7 @@ ms.service: dynamics-365-op
 
 # Set up and deploy on-premises environments (Platform update 41 through 55)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 through. Platform update 41 is available with version 10.0.17. Platform update 55 is available with version 10.0.31.
 

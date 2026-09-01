@@ -13,7 +13,7 @@ ms.dyn365.ops.version: AX 10.0.38
 
 # Uninstall Finance insights
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to uninstall Finance insights from your Dynamics 365 Finance environment.
 

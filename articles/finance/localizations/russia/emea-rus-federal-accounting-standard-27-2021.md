@@ -13,7 +13,7 @@ ms.reviewer: johnmichalak
 
 # Federal Accounting Standard 27-2021
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This document provides information about clause 25 of the Federal Accounting Standard 27/2021 in Russia and the technical options available to help customers of Dynamics 365 Finance and Dynamics 365 Supply Chain Management adapt their business processes to the applicable legal requirements.
 

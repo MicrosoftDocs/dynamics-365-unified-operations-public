@@ -13,6 +13,8 @@ ms.collection: bap-ai-copilot
 
 # Collections coordinator summary: FAQ
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article answers some frequently asked questions about the Collections coordinator summary feature in Microsoft Dynamics 365 Finance.
 
 ## What is Collections coordinator summary?

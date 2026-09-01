@@ -16,7 +16,7 @@ ms.assetid: 89a918e8-59a4-4711-a2e9-b41989ddd0f1
 
 # Budget planning data allocation
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the allocation methods that are available in Microsoft Dynamics 365 Finance and how you can use them.  
 

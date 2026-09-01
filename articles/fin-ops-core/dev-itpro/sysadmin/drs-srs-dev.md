@@ -18,7 +18,7 @@ ms.assetid: 0bbe7453-624f-4551-a1d0-842484067311
 
 # Cross-company data sharing for developers
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes cross-company data sharing for developers. Cross-company data sharing is a mechanism for sharing reference and group data among companies in a deployment.
 

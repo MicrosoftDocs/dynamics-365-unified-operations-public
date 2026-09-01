@@ -18,7 +18,7 @@ ms.assetid: a765d51c-52d3-45c5-b578-63b5242c592a
 
 # What's new or changed in Dynamics 365 for Finance and Operations platform update 15 (March 2018)
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article describes features that are new or changed in Dynamics 365 for Finance and Operations platform update 15. This version was released in March 2018 and has a build number of 7.0.4841.
 

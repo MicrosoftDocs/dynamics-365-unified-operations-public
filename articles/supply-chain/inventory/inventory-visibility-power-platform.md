@@ -13,7 +13,7 @@ ms.custom:
 
 # Use the Inventory Visibility app UI version 2
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to use the Inventory Visibility app, which runs in Microsoft Power Apps.
 

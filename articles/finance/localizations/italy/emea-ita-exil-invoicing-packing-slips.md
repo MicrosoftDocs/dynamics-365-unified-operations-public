@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.8
 
 # Sort sales invoice lines by packing slip
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 In Italy, companies often need to issue *accompanying invoices*. Accompanying invoices combine an ordinary invoice with a transport document or packing slip (documento di trasporto, or DDT).
 

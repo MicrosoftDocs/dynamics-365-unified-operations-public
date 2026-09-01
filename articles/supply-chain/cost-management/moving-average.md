@@ -13,7 +13,7 @@ ms.custom:
 
 # Moving average
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Moving average is a perpetual costing method based on the average principle, where the costs on inventory issues don't change when the purchase cost does. The difference is capitalized and is based on a proportional calculation. The amount that remains is expensed.
 

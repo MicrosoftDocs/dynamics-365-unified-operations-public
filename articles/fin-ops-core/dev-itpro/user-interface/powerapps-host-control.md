@@ -18,7 +18,7 @@ ms.custom:
 
 # Power Apps Host control
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In Microsoft Power Apps, you can manage organizational data through apps that you created, or apps that someone else created and shared with you. Apps run on [mobile devices such as phones](https://powerapps.microsoft.com/tutorials/run-app-client/) or [in a browser](https://powerapps.microsoft.com/tutorials/run-app-browser/). Apps can also be embedded in finance and operations apps by developers using the Microsoft Visual Studio developer experience. To learn more about Power Apps, see [https://powerapps.microsoft.com](https://powerapps.microsoft.com/).
 

@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Set up and maintain PRODCOM
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and maintain PRODCOM. Manufacturers of industrial products must report the quantities and values of products sold, and employment data, to the Nationaal Instituut voor de Statistiek (NIS) in response to the routine PRODCOM survey. Most producers submit an itemized PRODCOM report to the NIS monthly, using one of six standard report formats. The NIS determines the report layout, depending on the nature of the materials produced. The PRODCOM report displays production statistics for industrial products that production companies operating in Belgium manufacture. Accounting managers and accountants typically use this report.
 

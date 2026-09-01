@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Party and global address book troubleshooting
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides troubleshooting information that can help you fix problems related to dual-write party and global address book functions.
 
@@ -44,7 +44,8 @@ You might receive the following error message when you try to add an address to 
 To fix this issue, make sure that the key on the **Address** table is set as shown in the following table.
 
 Property | Value
----|---
+---
+|---
 Display Name | Location Key
 Name | msdyn_locationkey
 Fields | msdn_locationid, parentid

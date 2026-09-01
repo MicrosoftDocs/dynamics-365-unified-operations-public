@@ -15,7 +15,7 @@ ms.custom:
 
 # Service tasks overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use service tasks to describe the task to be completed during a service order. Both technicians and customers can see this information.
 

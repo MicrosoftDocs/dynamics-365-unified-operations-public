@@ -15,7 +15,7 @@ ms.custom:
 
 # Integration for service agreements and projects
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When you work with service agreements and service agreement lines, you use data that is set up in the following areas in **Project management and accounting**.
 

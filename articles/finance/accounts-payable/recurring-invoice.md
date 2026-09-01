@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.38
 
 # Recurring vendor invoices
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to set up and process recurring vendor invoices in Microsoft Dynamics 365 Finance. Use recurring vendor invoices when you regularly receive vendor invoices that have the same services, quantity, and price. To use recurring invoices, enable the **Enable AP recurring invoice** feature in Feature management.
 

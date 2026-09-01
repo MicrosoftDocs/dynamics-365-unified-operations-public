@@ -25,6 +25,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Set up tasks in Task management
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 In Microsoft Dynamics 365 Human Resources, users can select how edited tasks are handled. If a task that you're editing is on a checklist, select the **Enable task management upgrade** option on the **Task management** tab of the **Human resources shared parameters** page to enable the checklist to use the edited task.
 
 [![Enable task management upgrade option on the Human resources shared parameters page.](./media/task-update.png)](./media/task-update.png)

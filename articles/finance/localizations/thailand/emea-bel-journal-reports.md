@@ -17,7 +17,7 @@ ms.assetid: 829a101f-e329-48b9-baf8-e36670ff43c8
 
 # Journal reports (Posting journals)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with journal reports that are specific to legal entities with a primary address in Belgium in Microsoft Dynamics 365 Finance.
 

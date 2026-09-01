@@ -16,7 +16,7 @@ ms.assetid:
 
 # WEEKNUM ER function
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The `WEEKNUM` function returns an *[Integer](er-formula-supported-data-types-primitive.md#integer)* value that represents the week of the year that includes a specified *[Date](er-formula-supported-data-types-primitive.md#date)* value. The calculation is based on culture-dependent rules that define a calendar week and the first day of the week.
 

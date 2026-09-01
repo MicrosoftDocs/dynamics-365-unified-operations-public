@@ -15,7 +15,7 @@ ms.custom:
 
 # Set up impairment accounting common parameters and posting profiles
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to define impairment accounting common parameters and posting profiles for Japan in Microsoft Dynamics 365 Finance.
 

@@ -12,7 +12,7 @@ ms.search.form: Kanban, KanbanResetEmpty
 
 # Update kanban status
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 When a kanban is emptied by mistake or a received kanban needs to be emptied, you need to update kanban status. The demo data company used to create this procedure is USMF. This procedure is intended for the shop supervisor.
 

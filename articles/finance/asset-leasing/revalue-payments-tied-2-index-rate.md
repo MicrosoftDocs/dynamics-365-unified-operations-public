@@ -16,7 +16,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 # Revalue lease payments that are linked to an index rate
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the adjustment that is made to the lease liability for a right-of-use (ROU) asset when variable lease payments change because of a change in the index rate. The lease liability and ROU asset will be adjusted to account for the new payment amounts. Under Accounting Standards Codification Topic 842 (ASC 842), which is the standard in Generally Accepted Accounting Principles in the US (US GAAP), only the variable payments change when payments increase or decrease because of a change in the index rate, unless there are additional changes to cash flows. These additional changes might include a change in lease terms that is related to interest rates. For more information, see ASC 842-10-55-225 and paragraph 42(b) of International Financial Reporting Standard 16 (IFRS 16).
 

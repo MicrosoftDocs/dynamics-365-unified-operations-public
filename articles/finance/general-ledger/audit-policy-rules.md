@@ -16,7 +16,7 @@ ms.assetid: 8d787017-71dc-418f-b8c2-4ea9763d9978
 
 # Audit policy rules
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use audit policies to check expense reports, vendor invoices, and purchase orders. Make sure they follow the policy rules you create. The system runs all the rules for an audit policy in batch mode, following the schedule you set. Each policy rule belongs to a policy rule type. For each policy rule type, only one policy rule can be active at a time. 
 

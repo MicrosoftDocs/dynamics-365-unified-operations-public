@@ -12,7 +12,7 @@ ms.assetid: feaa6f15-49d2-41f5-9b87-453463c52e4e
 
 # Manage warehouse workers
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to use the Warehouse Management mobile app to help control and monitor the work that employees carry out in your warehouses.
 

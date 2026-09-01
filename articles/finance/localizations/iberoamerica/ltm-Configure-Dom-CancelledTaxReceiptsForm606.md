@@ -11,7 +11,7 @@ ms.author: v-cpicon
 
 # Configure printing for Cancelled Tax Receipts Submission Form 608
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure Cancelled Tax Receipts Submission Form 608 so that it can be printed as a report (**Format 608 DO**). You can use this report for details of canceled tax receipts.
 

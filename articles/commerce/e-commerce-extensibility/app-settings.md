@@ -13,7 +13,7 @@ ms.custom:
 ---
 # App settings
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article covers app settings in Microsoft Dynamics 365 Commerce.
 

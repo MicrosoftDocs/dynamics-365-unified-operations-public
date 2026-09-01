@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 
 # Generate and print the Fees certificate report - Chile
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The **Fees certificate** (**Certificado de Honorarios**) report includes tax information such as the vendor's name and tax identification number (Rol Único Tributario \[RUT\]), the total amount of fees that were received, and any tax withholdings that the vendor made.
 

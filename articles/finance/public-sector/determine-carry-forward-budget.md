@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Update the carry-forward budget after reductions in purchase orders and invoices
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
 This article describes how to control what happens to the carry-forward budget when purchase orders are canceled or reduced, and when invoices are reduced.

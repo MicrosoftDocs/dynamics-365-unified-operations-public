@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-06-30
 
 # PIS and COFINS fixed assets (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to configure the fixed asset Program of Social Integration (PIS) and Contribution for the Financing of Social Security (COFINS) tax credit to be appropriated in installments in Brazil with Microsoft Dynamics 365 Finance.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Integrate with Microsoft Sustainability Manager
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to integrate Microsoft Dynamics 365 Supply Chain Management with Microsoft Sustainability Manager. The integration lets you accurately calculate carbon emissions during rate and route planning in transportation management. Therefore, transportation planners can make informed decisions and strategically assign environmentally friendly transportation service providers to each load.
 

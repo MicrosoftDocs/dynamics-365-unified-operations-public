@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Platform update 13
 
 # Preconfigured system accounts
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Deployed environments include preconfigured system accounts so that Microsoft can manage and operate the finance and operations service and provide specific features to customers. The following table provides information about each account, including the purpose and use case for the account.  
 

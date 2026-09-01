@@ -15,7 +15,7 @@ ms.assetid: 636a4e41-f772-477f-bde8-538a09a79f6e
 
 # Element designers
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article reviews the element designers and explains how to use them. The tools contain designers for each kind of element in the program. Use these designers when you create or modify elements.
 

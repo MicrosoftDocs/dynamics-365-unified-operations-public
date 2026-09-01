@@ -14,7 +14,7 @@ ms.search.validFrom: 2019-06-28
 
 # Receipt of deferrals
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create and post receipt transactions for deferrals that were manually created for Russia in Microsoft Dynamics 365 Finance.
 

@@ -25,6 +25,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure leave and absence types
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [preview banner](../includes/preview-banner.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]

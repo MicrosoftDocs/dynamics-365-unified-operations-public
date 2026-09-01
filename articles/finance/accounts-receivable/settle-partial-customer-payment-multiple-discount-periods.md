@@ -16,7 +16,7 @@ ms.assetid: b633a7c4-c18d-42e7-91cc-adcdc8a3ba98
 
 # Settle a partial customer payment that has multiple discount periods
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article shows how partial customer payments are settled when there are multiple discount periods.
 

@@ -15,7 +15,7 @@ ms.dyn365.ops.version: App Update 10.0.2
 
 # Creators in the Acceptance test library
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Creator classes provide fluent application programming interfaces (APIs) that you can use to create test data.
 

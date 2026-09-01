@@ -14,7 +14,7 @@ ms.search.form: ERWorkspace
 
 # Add filters to an audit file configuration
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to add a filter for data in the German audit file. For example, you can add a filter for the **Posting layer** field in the **General journal entry** table.
 

@@ -11,7 +11,7 @@ ms.search.form: VendRequestNewCategory
 
 # Category requests from vendors
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The category request process lets vendors request that new procurement categories be associated with their account. Those procurement categories can then be used by the related procurement and sourcing processes. (Learn more in [Procurement catalogs overview](procurement-catalogs.md).)
 

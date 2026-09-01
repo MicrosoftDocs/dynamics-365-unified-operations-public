@@ -12,7 +12,7 @@ ms.assetid: 3fe69fb7-5c32-423c-98a8-2f53186cda68
 
 # Nomenclature of product variant numbers and names
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to set up a product number nomenclature to replace the fixed [Product master number - Configuration - Size - Color - Style] format. The new nomenclature has a targeted format that includes the product master number, active product dimensions, and text delimiters of your choice. You can also create a nomenclature for product names. Finally, you can build a nomenclature to identify configurations that the constraint-based product configurator creates. These nomenclatures can contain attributes of your choice.
 

@@ -14,7 +14,7 @@ ms.custom:
 
 # Improvements to statement posting functionality
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes improvements that Microsoft made to the statement posting feature in Microsoft Dynamics 365 Commerce.
 

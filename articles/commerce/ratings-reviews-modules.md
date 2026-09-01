@@ -14,7 +14,7 @@ ms.custom:
 
 # Ratings and reviews modules
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article covers ratings and reviews modules used on product details pages (PDPs) in Microsoft Dynamics 365 Commerce.
 

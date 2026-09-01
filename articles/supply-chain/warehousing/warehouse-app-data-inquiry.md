@@ -11,7 +11,7 @@ ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSM
 
 # Query data by using Warehouse Management mobile app detours
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Feature introduction
 

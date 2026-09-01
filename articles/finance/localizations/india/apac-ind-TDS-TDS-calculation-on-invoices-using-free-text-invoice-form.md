@@ -16,7 +16,7 @@ ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 
 # TDS calculation on invoices from the Free text invoice page
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to calculate Tax Deducted at Source (TDS) on invoices by using the **Free text invoice** page.
 

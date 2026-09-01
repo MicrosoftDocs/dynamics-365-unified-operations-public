@@ -14,7 +14,7 @@ ms.dyn365.ops.version: 8.1
 
 # Electronic messaging
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview and the setup information for the **Electronic messages** (EM) functionality.
 

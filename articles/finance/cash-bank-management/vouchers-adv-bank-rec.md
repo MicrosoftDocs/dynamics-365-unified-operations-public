@@ -16,7 +16,7 @@ ms.dyn365.ops.version:
 
 # Generate a voucher in advanced bank reconciliation 
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to post vouchers to the general ledger in advanced bank reconciliation by using the **Modern bank reconciliation** feature. 
 

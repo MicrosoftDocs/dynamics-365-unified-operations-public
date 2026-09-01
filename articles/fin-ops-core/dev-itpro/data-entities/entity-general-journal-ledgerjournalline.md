@@ -12,6 +12,8 @@ ms.collection: FastTrack
 
 # LedgerJournalLine entity
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 The **LedgerJournalLine** entity supports creating and updating general journal lines.
 
 ## When to use this entity

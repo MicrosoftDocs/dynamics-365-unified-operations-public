@@ -13,7 +13,7 @@ ms.custom:
 
 # Manage CAPA cases
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Use corrective and preventive action (CAPA) cases to record, update, track, follow up on, and close issues that your customers, vendors, or employees raise.
 

@@ -16,7 +16,7 @@ ms.custom:
 
 # Skip change due dialog box in POS
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to skip the **Change due** dialog box in the Microsoft Dynamics 365 Commerce point of sale (POS) when a transaction is paid in full and there's no change due.
 

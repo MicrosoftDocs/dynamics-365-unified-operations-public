@@ -16,7 +16,7 @@ ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 
 # List of ER functions in the mathematical category
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Electronic reporting (ER) mathematical functions can be used to do many common mathematical calculations. This article provides a summary of these functions.
 

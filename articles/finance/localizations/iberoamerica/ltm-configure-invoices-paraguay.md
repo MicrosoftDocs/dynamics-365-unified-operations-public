@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 
 # Configure sales and purchase invoices for Paraguay
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to start to use fiscal documents that are specific to Paraguay through the Latin American (LATAM) features in purchase and sales transactions. An invoice is represented by a **document class** instead of an invoice transaction, and by all the information that a fiscal invoice document contains and can be related to. This information includes the typification, sales point, branch, invoice number structure, and additional fields that should be completed during posting.
 

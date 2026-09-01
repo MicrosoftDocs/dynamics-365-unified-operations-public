@@ -17,7 +17,7 @@ ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 
 # Output unfolding for Folder component of ER format
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When you configure a destination for the **Folder** component of your ER format, you specify how the output of that component is delivered to the configured destination.
 

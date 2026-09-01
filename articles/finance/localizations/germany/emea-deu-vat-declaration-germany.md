@@ -13,7 +13,7 @@ ms.custom:
 
 # VAT declaration (Germany)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to set up and generate an advance value-added tax (VAT) declaration for Germany in the official XML format. This article also explains how to preview the VAT declaration in Microsoft Excel.
 

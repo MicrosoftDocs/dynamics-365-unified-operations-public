@@ -13,7 +13,7 @@ ms.custom:
 
 # BOM calculations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The cost roll-up and sales price calculations are known as bill of materials (BOM) calculations, and you initiate them from the Calculations page. This article provides information about BOM calculations.
 

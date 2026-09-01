@@ -15,7 +15,7 @@ ms.custom:
 
 # Periodic settlement of over and under depreciation
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to calculate and record depreciation expense for deductible expense in Japan with Microsoft Dynamics 365 Finance.
 

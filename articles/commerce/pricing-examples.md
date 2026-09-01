@@ -14,7 +14,7 @@ ms.custom:
 
 # Pricing examples
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides examples of typical uses of pricing and discounts in Microsoft Dynamics 365 Commerce.
 

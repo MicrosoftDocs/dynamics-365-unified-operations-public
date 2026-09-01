@@ -25,6 +25,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Benefit statement
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 The **Benefit statement** report provides a statement of the benefits that an employee is currently enrolled in. An employee or the benefit administrator can access the report. The **Benefit statement** provides a list of the employee’s enrolled benefits, coverage options, costs, and any enrolled dependents or beneficiaries. You can print the statement for a single worker or multiple workers.
 
 > [!NOTE]

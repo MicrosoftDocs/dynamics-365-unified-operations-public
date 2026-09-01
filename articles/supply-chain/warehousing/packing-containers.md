@@ -13,7 +13,7 @@ ms.search.form: WHSLocationType, WHSLocationProfile, WHSParameters, WHSContainer
 
 # Pack containers for shipment
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The container packing process lets you validate inventory items and pack them into containers. During this process, warehouse workers typically pick inventory items from bulk storage areas and move them to a packing area. Multiple warehouse workers check the item quantities and types, and assign them to appropriate container sizes. When a container is fully packed, workers close it and move it to the outbound dock area, where it's made ready for shipment.
 

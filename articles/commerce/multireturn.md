@@ -17,7 +17,7 @@ ms.custom:
 ---
 # Return items across multiple customer orders and invoices
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains functionality that enables returns across multiple customer orders and invoices in Microsoft Dynamics 365 Commerce.
 

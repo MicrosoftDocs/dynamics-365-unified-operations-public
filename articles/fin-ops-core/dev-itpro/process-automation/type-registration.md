@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Type registration
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 To implement a process by using the process automation framework, you must first understand the concept of a *type* in the framework. A type is a unique process that is integrated with the batch framework and that uses the **SysOperations** framework, specifically the **SysOperationServiceController** class. The types are stored in the **ProcessScheduleType** table.
 

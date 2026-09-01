@@ -14,7 +14,7 @@ ms.custom:
 
 # Account management pages overview
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides an overview of account management pages in Microsoft Dynamics 365 Commerce.
 

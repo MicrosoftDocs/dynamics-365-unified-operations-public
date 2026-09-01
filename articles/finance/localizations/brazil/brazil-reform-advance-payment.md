@@ -10,7 +10,7 @@ ms.custom: bap-template
 
 # Fiscal notes for advance payment in Brazil tax reform
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create a fiscal document for an advance payment in Brazil tax reform, link it to a sales order, and post the invoice in Dynamics 365 Finance.
 

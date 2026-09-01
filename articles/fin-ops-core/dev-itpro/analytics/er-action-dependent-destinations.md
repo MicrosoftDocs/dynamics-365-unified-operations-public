@@ -16,7 +16,7 @@ ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 
 # Configure action-dependent ER destinations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can configure [destinations](electronic-reporting-destinations.md) for each output component (folder or file) of an [Electronic reporting (ER)](general-electronic-reporting.md) format [configuration](general-electronic-reporting.md#Configuration) that helps generate an outbound document. Users who run an ER format of this type and have appropriate access rights can also change the configured destination settings at runtime.
 

@@ -18,7 +18,7 @@ ms.custom: sfi-image-nochange
 
 This article is a tutorial that helps you set up and get started with RSAT and the tools associated with using RSAT.
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 > [!NOTE]
 > Use your internet browser tools to download and save this page in PDF format.

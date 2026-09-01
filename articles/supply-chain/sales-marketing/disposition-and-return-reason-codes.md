@@ -11,7 +11,7 @@ ms.search.form: ReturnTableListPage, ReturnReasonCodeLookup
 
 # Return reason codes and disposition codes
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Create and use return reason codes and disposition codes to support the process for returning products.
 

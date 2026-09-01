@@ -15,7 +15,7 @@ ms.assetid: 0bbe7453-624f-4551-a1d0-842484067311
 
 # Cross-company data sharing for financial dimensions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In limited scenarios, default dimension fields can be shared by using cross-company data sharing. This article explains when those fields can be shared.
 

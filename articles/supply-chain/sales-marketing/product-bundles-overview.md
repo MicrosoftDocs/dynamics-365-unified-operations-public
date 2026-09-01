@@ -13,7 +13,7 @@ ms.custom:
 
 # Product bundles overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Product bundles enable businesses to group multiple items so that they can be priced and sold together. They provide an easy way to ensure that the correct items are always sold and priced together, but that the individual items in the bundle can also be shipped individually and revenue can be recognized against the shipped items.
 

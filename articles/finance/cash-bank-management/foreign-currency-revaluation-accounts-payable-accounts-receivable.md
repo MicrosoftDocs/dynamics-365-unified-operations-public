@@ -16,7 +16,7 @@ ms.assetid: defb1ea5-1f3e-4859-87d8-3f9954d3f388
 
 # Currency revaluation for Accounts payable and Accounts receivable
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Fluctuations in exchange rates cause the theoretical value (book value) of open transactions in foreign currencies to vary over time. This article provides information about the foreign currency revaluation process to update the value of open transactions in Accounts payable and Accounts receivable.
 

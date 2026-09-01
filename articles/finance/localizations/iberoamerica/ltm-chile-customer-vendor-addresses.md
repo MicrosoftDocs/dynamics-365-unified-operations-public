@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 
 # Create customer and vendor records with an address in Chile
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The Latin American (LATAM) customer and vendor configuration contains the fiscal information that the fiscal authorities require. In addition, it includes a reference to the document classes that you can use in transactions with customers and vendors.
 

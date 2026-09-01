@@ -19,7 +19,7 @@ ms.dyn365.ops.version: 10.0.0
 
 # Database movement API - Authentication
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides an overview of the Microsoft Entra setup for calling Lifecycle Services APIs, including Database Movement API. To access resources available through the API, you must get a bearer token from Microsoft Entra and send it as a header with each request. The following steps explain how to get this token.
 

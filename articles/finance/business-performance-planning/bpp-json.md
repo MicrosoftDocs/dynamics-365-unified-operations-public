@@ -11,6 +11,8 @@ ms.collection: get-started
 
 # Create a cube from JSON (preview)
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 > [!NOTE]

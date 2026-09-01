@@ -14,7 +14,7 @@ ms.custom:
 
 # Upload videos
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to upload videos in Microsoft Dynamics 365 Commerce site builder.
 

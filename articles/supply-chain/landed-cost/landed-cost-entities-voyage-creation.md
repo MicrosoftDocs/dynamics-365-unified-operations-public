@@ -13,7 +13,7 @@ ms.custom:
 
 # Voyage creation entities
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The voyage creation data entities group together the data entities that are required to create a working voyage. You or your freight forwarder can use these data entities to create voyage, shipping container, folio, and voyage line records that reference existing purchaser order or transfer order lines.
 

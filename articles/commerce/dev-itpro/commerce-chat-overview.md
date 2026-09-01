@@ -14,7 +14,7 @@ ms.custom:
 
 # Commerce chat features overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the chat features available when the Microsoft Dynamics 365 Omnichannel for Customer Service and Microsoft Copilot Studio applications are integrated with Dynamics 365 Commerce e-commerce websites.
 

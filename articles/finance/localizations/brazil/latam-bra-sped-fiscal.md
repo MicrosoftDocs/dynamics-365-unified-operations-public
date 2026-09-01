@@ -14,7 +14,7 @@ ms.search.validFrom: 2017-12-31
 
 # SPED fiscal files
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The Sistema Publico de Escrituração Digital (SPED) fiscal text files contain information about all fiscal documents that a specific fiscal establishment receives and issues during a month. Federal tax authorities use the SPED system to verify tax calculations for Imposto Sobre Circulação de Mercadorias e Serviços (ICMS) and Imposto sobre Produtos Industrializados (IPI).
 

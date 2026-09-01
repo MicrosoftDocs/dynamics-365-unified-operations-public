@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Real async feature enhancements
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 

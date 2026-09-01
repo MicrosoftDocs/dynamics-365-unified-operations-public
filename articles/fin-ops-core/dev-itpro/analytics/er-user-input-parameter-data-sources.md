@@ -16,7 +16,7 @@ ms.assetid:
 
 # Use USER INPUT PARAMETER data sources to specify parameters for a report
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When you design [Electronic reporting](general-electronic-reporting.md) (ER) [model mapping](er-overview-components.md#model-mapping-component) and ER [format](er-overview-components.md#format-component) components, use data sources of the *USER INPUT PARAMETER* type to get the values you need. You can specify these values in data entry fields in the dialog box at runtime, before execution of an ER format begins. This article describes the *USER INPUT PARAMETER* data sources that are currently supported.
 

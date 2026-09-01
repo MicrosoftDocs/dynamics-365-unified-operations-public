@@ -15,7 +15,7 @@ ms.custom:
 
 # Replace user IDs associated with tracked content changes
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to replace user IDs that are associated with tracked content changes in Microsoft Dynamics 365 Commerce site builder.
 

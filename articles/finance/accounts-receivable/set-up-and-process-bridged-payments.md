@@ -17,7 +17,7 @@ ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 
 # Set up and process bridged payments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A bridged payment is a payment that you post to the general ledger in two steps. Typically, use this approach when you set the method of payment to **Bank** and you must post transactions to the bank account only when the transaction clears the bank. However, you can also use it for a ledger account. In this case, the amount moves from one main account to another main account when the bridging posting is processed.
 

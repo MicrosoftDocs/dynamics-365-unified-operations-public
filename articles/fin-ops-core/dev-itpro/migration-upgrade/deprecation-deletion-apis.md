@@ -13,7 +13,7 @@ ms.dyn365.ops.version: 8.1.3
 
 # Deprecation of methods and metadata elements
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 As the Microsoft code base evolves, some methods and metadata elements become unnecessary. Microsoft marks these methods and metadata elements as deprecated.
 

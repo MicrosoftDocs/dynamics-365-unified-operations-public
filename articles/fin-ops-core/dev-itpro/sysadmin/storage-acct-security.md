@@ -16,7 +16,7 @@ ms.custom:
 
 # Finance and operations storage account security updates
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article describes the latest security enhancements in the finance and operations storage account.
 

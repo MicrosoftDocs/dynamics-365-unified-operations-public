@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 9
 
 # Modify extended data types (EDTs) through extension
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can customize several properties on existing extended data types (EDTs) through extension:
 

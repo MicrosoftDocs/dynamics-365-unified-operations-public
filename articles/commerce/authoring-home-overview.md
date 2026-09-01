@@ -13,7 +13,7 @@ ms.search.validFrom: 2019-10-31
 
 # Site builder authoring page overview
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides an overview of the Microsoft Dynamics 365 Commerce site builder authoring page.
 

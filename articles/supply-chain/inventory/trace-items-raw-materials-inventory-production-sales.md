@@ -13,7 +13,7 @@ ms.custom:
 
 # Item and raw material tracing in inventory, production, and sales
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how you can use item tracing to identify where items or raw materials have been used, are being used, or will be used in production and sales processes.
 

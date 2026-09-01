@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Platform update 12
 
 # Export business-to-business (B2B) users to Microsoft Entra ID
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can automatically export business-to-business (B2B) users to Microsoft Entra ID.
 

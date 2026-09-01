@@ -16,7 +16,7 @@ ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 
 # ORDERBY ER function
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The `ORDERBY` function returns the specified list as a *Record list* value after it has been sorted according to the specified arguments. These arguments can be defined as expressions.
 

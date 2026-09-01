@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Vendor payment overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure walks through various methods used to create vendor payments, including how to use a payment proposal or manually entering an one-off payment. This procedure uses the USMF demo company.
 

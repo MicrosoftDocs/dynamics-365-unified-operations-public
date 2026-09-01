@@ -13,7 +13,7 @@ ms.search.form: SMAAgreementTable, SMADispatchBoard
 
 # Set up a preferred technician
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can select any worker as a preferred technician for a service agreement or service order. However, it is a good idea to add the worker to the appropriate dispatch team so that the worker is included on the **Dispatch board**.
 

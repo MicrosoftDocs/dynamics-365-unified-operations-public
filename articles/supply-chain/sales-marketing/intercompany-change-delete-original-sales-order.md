@@ -11,7 +11,7 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 
 # Change or delete an original intercompany sales order
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 When you change a sales order, your changes are automatically synchronized with both the relevant intercompany purchase order and the intercompany sales order.
 

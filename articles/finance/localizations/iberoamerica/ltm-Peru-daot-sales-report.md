@@ -11,7 +11,7 @@ ms.author: v-federicohe
 
 # Set up and generate the Annual Declaration of Transactions with Third Parties (DAOT) sales report for Peru
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and generate the Annual Declaration of Transactions with Third Parties (DAOT) sales report for Peru in Microsoft Dynamics 365 Finance.
 

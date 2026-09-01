@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.24
 
 # Consolidate online templates
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes online financial consolidations in General ledger. Before reading this article, review the [Financial consolidations and currency translation overview](financial-consolidations-currency-translation.md).
 

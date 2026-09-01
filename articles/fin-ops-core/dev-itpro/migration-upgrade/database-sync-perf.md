@@ -15,7 +15,7 @@ ms.service: dynamics-365-op
 
 # Database synchronization performance
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the **Shadow copy sync** process that improves the performance of database synchronization during a Microsoft Dynamics AX 2012 upgrade in self-service environments.
 

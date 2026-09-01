@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 8.1
 
 # Inventory profile overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The inventory profile is intended for the implementation of and accounting for movements and on-hand inventory as they are related to a kind of activity. The kind of activity defines the way that the item was received by the organization and the restrictions that are imposed on the handling of the item. Here are some examples of kinds of activity:
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Approvals Management mobile app overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Many businesses use approval workflows to ensure that new requests (such as proposed purchase requisitions and purchase orders) are valid, within budget, and in line with all business practices and standards. Unfortunately, this extra layer of security can sometimes add delays to the purchasing process. Therefore, Dynamics 365 Supply Chain Management now provides a mobile approval experience that adds flexibility, efficiency, resiliency, and responsiveness to the approval process.
 

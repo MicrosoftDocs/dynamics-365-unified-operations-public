@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Set up vendor invoice policies
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up vendor invoice policies. Vendor invoice policies are run when you post a vendor invoice by using the **Vendor invoice** page and when you open the vendor invoice **Policy violations** page. You can also configure the vendor invoice workflow to run vendor invoice policies every time that you submit an invoice to workflow. 
 

@@ -12,7 +12,7 @@ ms.search.form:
 
 # Copy a formula
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure focuses on creating a formula that includes the same ingredients as an existing formula, but with minor differences. To create the formula lines, you can use the Copy function to copy an existing formula that has most of the ingredients that you need. You can then make any necessary changes to the individual lines in the new version. By using the Copy function, you do not have to create multiple formulas that are almost identical. The demo data company used to create this task is USP2.
 

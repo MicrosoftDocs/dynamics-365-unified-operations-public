@@ -20,7 +20,7 @@ ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 
 # Subledger transfer to the general ledger
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes capabilities that are related to the rules for transferring batches of subledger journal entries.
 

@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.39
 
 # Connect to an external tax solution provider via the Universal Tax Rate API
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 A connection to an external tax solution provider helps simplify and reduce the effort of maintaining the tax rates and tax applicability rules for Tax calculation. This result is especially critical when you implement Tax calculation for countries or regions where a significant number of tax jurisdictions must be covered.
 

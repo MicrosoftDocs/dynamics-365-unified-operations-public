@@ -14,7 +14,7 @@ ms.search.validFrom: 2017-06-30
 
 # FTA Tax Audit File (FAF) in TXT format for the United Arab Emirates
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up the FTA Tax Audit File (FAF) in TXT format for legal entities that have their primary address in the United Arab Emirates (UAE) with Microsoft Dynamics 365 Finance.
 

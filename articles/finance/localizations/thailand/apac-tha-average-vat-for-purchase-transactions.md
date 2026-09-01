@@ -12,7 +12,7 @@ ms.reviewer: johnmichalak
 
 # Average VAT for purchase transactions
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and work with the average value-added tax (VAT) for Thailand in Microsoft Dynamics 365 Finance.
 

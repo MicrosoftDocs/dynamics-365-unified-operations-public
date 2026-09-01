@@ -13,7 +13,7 @@ ms.custom:
 
 # Inventory Visibility Power BI dashboard
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft provides a sample Microsoft Power BI dashboard file that you can download and connect to your Inventory Visibility instance and other data sources. In this way, you can visualize your inventory levels across regions, entities, and channels. Use the dashboard to track inventory movement, compare supply and demand portions, view the most popular and least popular products, and drive decisions about inventory risk mitigation.
 

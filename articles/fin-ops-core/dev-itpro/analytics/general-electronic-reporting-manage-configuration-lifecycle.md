@@ -16,7 +16,7 @@ ms.assetid: 35ad19ea-185d-4fce-b9cb-f94584b14f75
 
 # Manage the Electronic reporting (ER) configuration lifecycle
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to manage the lifecycle of [Electronic reporting](general-electronic-reporting.md) (ER) [configurations](general-electronic-reporting.md#Configuration) for Dynamics 365 Finance.
 

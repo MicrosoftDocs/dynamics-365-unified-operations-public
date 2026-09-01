@@ -12,7 +12,7 @@ ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 
 # Charges for nonconformance operations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to create quality charges that can be used with operations for a nonconformance.
 

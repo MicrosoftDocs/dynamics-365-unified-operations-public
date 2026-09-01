@@ -16,7 +16,7 @@ ms.custom:
 
 # Initialize seed data in new Commerce environments
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes the data created as part of the initialization process for Microsoft Dynamics 365 Commerce.
 

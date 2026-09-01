@@ -15,7 +15,7 @@ ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, ERData
 
 # ER design domain specific data model
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains a data model for electronic payment documents. You use this data model as a data source when you create the format of the payment documents.
 

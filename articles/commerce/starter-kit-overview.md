@@ -14,7 +14,7 @@ ms.custom:
 
 # Module library overview
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides an overview of the Microsoft Dynamics 365 Commerce module library.
 

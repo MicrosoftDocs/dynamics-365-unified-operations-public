@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Fixed asset revaluation groups
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about fixed asset revaluation groups for Spain.
 

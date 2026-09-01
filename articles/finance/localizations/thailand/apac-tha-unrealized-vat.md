@@ -16,7 +16,7 @@ ms.assetid: 829a101f-e329-48b9-baf8-e36670ff43c8
 
 # Thailand unrealized and realized VAT
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and work with unrealized and realized value-added tax (VAT) for Thailand in Microsoft Dynamics 365 Finance, including how to settle transactions that have unrealized VAT, reverse unrealized VAT, and generate reports.
 

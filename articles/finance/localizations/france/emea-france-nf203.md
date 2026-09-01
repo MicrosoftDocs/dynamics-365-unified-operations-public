@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # NF203 Computerized Accounting Certification in France
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides an overview of the official NF203 certification for computerized accounting in France.  
 

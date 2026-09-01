@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Create a default customer
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to create a default customer to use when creating a channel in Microsoft Dynamics 365 Commerce.
 

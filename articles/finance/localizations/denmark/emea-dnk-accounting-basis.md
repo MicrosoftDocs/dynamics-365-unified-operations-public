@@ -13,6 +13,8 @@ ms.search.validFrom: 2017-06-30
 ---
 # Accounting basis (Regnskab Basis) electronic report for Denmark
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article describes how to prepare Microsoft Dynamics 365 Finance to work with the **Accounting basis** (**Regnskab Basis**) electronic report, and how to generate the file in comma-separated values (CSV) format for legal entities that have a primary address in Denmark.
 
 ## Setup

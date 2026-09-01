@@ -15,7 +15,7 @@ ms.custom:
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.24 (February 2022)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management version 10.0.24. This version has a build number of 10.0.1084 and is available as follows:
 

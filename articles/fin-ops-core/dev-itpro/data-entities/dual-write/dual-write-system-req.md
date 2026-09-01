@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # System requirements for dual-write
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 ## What regions are available?
 

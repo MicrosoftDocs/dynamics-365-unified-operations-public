@@ -15,7 +15,7 @@ ms.search.validFrom: 2017-07-8
 
 # Synchronize products directly from Supply Chain Management to products in Sales
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 
 

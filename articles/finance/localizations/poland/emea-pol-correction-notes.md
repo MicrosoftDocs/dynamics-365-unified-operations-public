@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Correction notes
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about correction notes. Local regulations in Poland require a correction note to correct errors on a vendor invoice. 
 

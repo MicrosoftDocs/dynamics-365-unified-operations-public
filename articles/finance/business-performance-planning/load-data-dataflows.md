@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Human Resources
 
 # Load data into Business performance planning using dataflows
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 > [!NOTE]

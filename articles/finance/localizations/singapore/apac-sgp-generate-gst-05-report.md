@@ -16,7 +16,7 @@ ms.assetid: 90ea6084-920a-4174-8b3e-9b7b96aed0b4
 
 # Generate the Singapore GST-05 report
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to generate Singapore GST-05 reports in Microsoft Dynamics 365 Finance. The GST-05 report is used to file a goods and services tax (GST) return.
 

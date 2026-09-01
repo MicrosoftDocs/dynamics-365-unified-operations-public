@@ -14,7 +14,7 @@ ms.custom:
 
 # Manage e-commerce users and roles
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to grant users access to the  Microsoft Dynamics 365 Commerce site builder authoring environment for your e-commerce site.
 

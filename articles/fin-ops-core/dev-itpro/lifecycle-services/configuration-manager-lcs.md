@@ -16,7 +16,7 @@ ms.assetid: fab3f6cf-03db-47c7-90fb-f8bc03dacf49
 
 # Configuration in Lifecycle Services overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [LCS deprecation](../includes/lcs-deprecation.md)]
 [!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 

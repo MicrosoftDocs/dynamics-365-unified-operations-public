@@ -15,7 +15,7 @@ ms.search.region: Global
 
 # Tutorial: Add knowledge to agents for finance and operations apps
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Virtual entities for finance and operations apps expose live operational data in Microsoft Dataverse. They appear as Dataverse tables that point back to data in finance and operations apps, enabling create, read, update, and delete (CRUD) operations where supported. This feature lets your apps, flows, and agents use current data directly accessed in the finance and operations database.
 

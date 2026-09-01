@@ -13,7 +13,7 @@ ms.custom:
 
 # Data integration APIs
 
-[!include [banner](../../../includes/banner.md)]
+[!INCLUDE [banner](../../../includes/banner.md)]
 
 This article describes the integration patterns that are available in Microsoft Dynamics 365 Supply Chain Management. It also provides guidelines for syncing master data between Supply Chain Management and the contract lifecycle management (CLM) system.
 

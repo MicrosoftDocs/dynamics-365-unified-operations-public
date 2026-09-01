@@ -15,7 +15,7 @@ ms.search.industry: Manufacturing;Distribution;Service industries
 
 # Miscellaneous charges on free text invoices (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to configure miscellaneous charges on free text invoices for Brazil with Microsoft Dynamics 365 Finance.
 

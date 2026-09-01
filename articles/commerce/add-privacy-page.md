@@ -14,7 +14,7 @@ ms.custom:
 
 # Add a privacy policy page
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to add a privacy policy page to your Microsoft Dynamics 365 Commerce site.
 

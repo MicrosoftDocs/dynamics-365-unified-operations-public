@@ -15,7 +15,7 @@ ms.custom:
 
 # Manage ratings and reviews
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to manage ratings and reviews in Microsoft Dynamics 365 Commerce site builder.
 

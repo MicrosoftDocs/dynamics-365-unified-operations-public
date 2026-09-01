@@ -16,7 +16,7 @@ ms.assetid: 7c68eb7c-8b1a-4dd9-afb8-04b4040e305e
 
 # Fixed asset value model and depreciation book merge
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the current book functionality in Fixed assets. This functionality is based on the value model functionality that was available in earlier versions, but it also includes all the functionality that was previously provided only in depreciation books.
 

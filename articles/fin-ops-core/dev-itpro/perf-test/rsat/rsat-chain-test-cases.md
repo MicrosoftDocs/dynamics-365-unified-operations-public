@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Copy variables to chain test cases
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 One of the key features of the Regression Suite Automation Tool is the chaining of test cases, that is, the ability of a test to pass values to other tests. You execute test cases in the order you define in the Azure DevOps test plan. You can also update this order in the test tool itself. If you want to pass variables from one test case to another, make sure you order the tests correctly.
 

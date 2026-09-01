@@ -13,7 +13,7 @@ ms.custom:
 
 # Link transfer order lines with sales order lines
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management lets you create transfer order lines directly from sales order lines. This functionality is useful when the goods that you must supply are located in a different warehouse than the warehouse that you're shipping from.
 

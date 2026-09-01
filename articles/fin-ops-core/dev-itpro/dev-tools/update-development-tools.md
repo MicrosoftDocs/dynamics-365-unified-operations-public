@@ -15,7 +15,7 @@ ms.assetid: bd24d864-6915-4d17-9ebb-d1619b7d4311
 
 # Update the Visual Studio development tools
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to update the development tools.
 

@@ -14,7 +14,7 @@ ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 
 # Work with e-Ledger
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with e-Ledger for the Republic of Türkiye in Microsoft Dynamics 365 Finance, including configuring various parameters and generating files and reports.
 

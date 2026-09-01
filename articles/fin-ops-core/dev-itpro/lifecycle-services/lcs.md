@@ -15,7 +15,7 @@ ms.assetid: 5bd51009-9047-4694-9f95-9fc1207ed583
 
 # Lifecycle Services resources
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [Lifecycle Services deprecation](../includes/lcs-deprecation.md)]
 [!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 

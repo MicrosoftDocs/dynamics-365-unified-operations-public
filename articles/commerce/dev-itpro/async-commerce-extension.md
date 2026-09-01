@@ -14,7 +14,7 @@ ms.custom:
 
 # Create asynchronous Commerce (CRT) APIs in your business logic
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 > [!NOTE]
 > This article applies to Microsoft Dynamics 365 Commerce version 10.0.10 and later.

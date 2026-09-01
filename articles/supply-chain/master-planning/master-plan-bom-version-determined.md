@@ -12,7 +12,7 @@ ms.assetid: a5b64301-a011-4469-afaf-e4c9164ef9c6
 
 # Determine the BOM version
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 During a demand explosion, if an item has a default order type of Production, the planning engine finds a valid BOM version based on the site. 
 

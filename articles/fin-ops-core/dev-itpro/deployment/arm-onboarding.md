@@ -18,7 +18,7 @@ ms.dyn365.ops.version: Platform update 2
 
 # Complete the Azure Resource Manager onboarding process
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to complete the Microsoft Azure Resource Manager onboarding process for your connectors.
 

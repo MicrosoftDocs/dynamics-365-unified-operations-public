@@ -15,7 +15,7 @@ ms.search.form: EntAssetWorkOrderLineNote, EntAssetWorkOrderTable, EntAssetWorkO
 
 # Introduction to work orders
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Work orders are used to manage maintenance jobs, provide required information for them, and register consumption on them. Each work order can contain one or more work order jobs, and one or more assets can be connected to each work order. Each work order job defines a maintenance job that is scheduled on the asset.
 

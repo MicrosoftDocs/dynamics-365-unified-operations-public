@@ -12,7 +12,7 @@ ms.reviewer: mirao
 
 # Enable multilanguage support for Store Commerce self-checkout
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to configure and use multilanguage features in Microsoft Dynamics 365 Commerce Store Commerce self-checkout that help you streamline checkout for both customers and store associates.
 

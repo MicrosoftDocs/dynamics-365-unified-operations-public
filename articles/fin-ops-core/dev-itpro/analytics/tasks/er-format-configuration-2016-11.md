@@ -15,7 +15,7 @@ ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, EROper
 
 # ER Create a format configuration (November 2016)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how a user in the System Administrator or Electronic Reporting Developer role can create a format configuration for Electronic reporting (ER). This format configuration defines the format of electronic documents that are used for processing payments. In this example, you create a format configuration for sample company, Litware, Inc. To complete these steps, you must first complete the steps in the "Map model to selected datasources" procedure.
 

@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0, Operations
 
 # Data agnostic testing by using the Regression Suite Automation Tool
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 While you can't make the functional validation of an ERP application fully data agnostic, you can use multiple phases and approaches for testing. These testing phases include:  
 

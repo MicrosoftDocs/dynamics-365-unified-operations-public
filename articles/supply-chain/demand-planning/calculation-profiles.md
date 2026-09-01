@@ -12,7 +12,7 @@ ms.search.form:
 
 # Work with calculation profiles
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Demand planning in Microsoft Dynamics 365 Supply Chain Management lets you build a collection of *calculation profiles*. Each profile takes one or more existing time series as input, and applies a set of predefined calculations to generate a new time series as output.
 

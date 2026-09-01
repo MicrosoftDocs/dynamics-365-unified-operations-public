@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.14
 
 # Revenue recognition reallocation – Scenario 3
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article goes through a reallocation scenario where a new line is added to an existing, invoiced sales order. When a new item is added to a contract, it can be added either to a new sales order or to the existing sales order. This scenario also shows what occurs when Accounts receivable is updated because of the reallocation.
 

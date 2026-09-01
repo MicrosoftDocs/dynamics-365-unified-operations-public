@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Operations
 
 # Connect a custom Help website to the Help pane
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 If you deliver custom Help content for a finance and operations solution, you can extend the **Help** pane so that it consumes that content. Complete this one-time configuration by using the finance and operations development environment in Microsoft Visual Studio. After you finish, users can select among tabs for task guides, Microsoft Help content, and your Help content.
 

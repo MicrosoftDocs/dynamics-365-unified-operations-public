@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Configure sales and purchase invoices for Peru
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure sales and purchase invoices for Peru in Microsoft Dynamics 365 Finance.
 

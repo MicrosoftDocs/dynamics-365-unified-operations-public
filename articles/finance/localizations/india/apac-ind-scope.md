@@ -17,7 +17,7 @@ ms.search.validFrom: 2019-6-21
 
 # Scope of the Indian localization
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Microsoft devotes significant resources to generating the business process functionality of its applications by developing features and functionality that address specific tax, accounting, or financial regulatory requirements in countries or regions where Dynamics 365 Finance is generally available.
 

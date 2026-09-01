@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.21
 
 # Vendor electronic invoices
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 According to Italian legislation, you must submit to the Exchange system (SDI) invoices that you receive from foreign vendors who aren't Italian tax residents. This article explains how to configure and submit vendor electronic invoices in the **FatturaPA** electronic format.
 

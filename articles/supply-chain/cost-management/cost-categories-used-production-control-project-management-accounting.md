@@ -13,7 +13,7 @@ ms.custom:
 
 # Cost categories used in Production control and Project management accounting
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Some types of production work can apply to project time estimates and reporting. This article provides information about the cost categories that you must define for these types of production work for production and project purposes.
 

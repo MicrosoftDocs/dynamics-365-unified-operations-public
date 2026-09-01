@@ -15,7 +15,7 @@ ms.custom:
 
 # Set up service order stages
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 1. Go to **Service management** > **Setup** > **Service orders** > **Service stages**.
 

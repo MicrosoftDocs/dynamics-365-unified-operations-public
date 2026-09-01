@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 2019-6-30
 
 # Business events in financial period close
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to use business events in the financial period close business process to gain insights and provide internal controls.
 

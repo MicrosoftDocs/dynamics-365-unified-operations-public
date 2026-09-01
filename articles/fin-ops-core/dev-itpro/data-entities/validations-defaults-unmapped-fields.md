@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Validations, default values, and unmapped fields
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to validate data entity values, provide default values, and use fields that aren't mapped to data source values but instead contain virtual or computed data (unmapped fields).
 

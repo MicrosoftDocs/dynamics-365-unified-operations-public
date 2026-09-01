@@ -14,7 +14,7 @@ ms.custom:
 
 # Complete and deploy a Globalization feature
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 ## Electronic invoicing feature versions
 

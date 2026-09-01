@@ -12,7 +12,7 @@ ms.custom:
 
 # Tax integration overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Tax integration is a framework that replaces the legacy tax calculation engine and, as required, calls the [Tax Calculation service](global-tax-calcuation-service-overview.md). This article introduces the basic flow of tax integration.
 

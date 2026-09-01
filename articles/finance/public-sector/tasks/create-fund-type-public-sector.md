@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Create a fund type in the public sector
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Fund types are categories that you can use to group funds for detailed fiscal tracking and reporting. The Generally Accepted Accounting Principles (GAAP) for state and local governmental accounting provides standards that you can follow when you set up your system of funds and fund types. 
 

@@ -15,6 +15,8 @@ ms.search.validFrom: 01/02/2026
 
 # Work with NFS-e service invoices for projects
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article describes how to set up and use Nota Fiscal de Serviço Eletrônica (NFS-e) service invoices with the **Project management and accounting** module in Microsoft Dynamics 365 Finance and Microsoft Dynamics 365 Project Operations.
 
 > [!NOTE]

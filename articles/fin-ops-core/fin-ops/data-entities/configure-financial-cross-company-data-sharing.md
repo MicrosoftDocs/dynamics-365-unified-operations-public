@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Configure financial cross-company data sharing
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This procedure shows how to configure, enable, validate, and resolve conflicts when sharing data between companies. It uses the USMF company and the Financial data sharing template.
 

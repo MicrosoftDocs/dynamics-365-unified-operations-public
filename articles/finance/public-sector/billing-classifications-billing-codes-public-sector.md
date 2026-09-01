@@ -17,7 +17,7 @@ ms.assetid: 47624566-0b4c-41dc-9cd4-801e213b5da3
 
 # Billing classifications and billing codes in the public sector
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how organizations in the public sector can use billing classifications and billing codes to help manage free text invoices.
 

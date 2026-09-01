@@ -11,7 +11,7 @@ ms.search.form:  WHSRFAutoConfirm, WHSRFMenuItem
 
 # Piece picking confirmation
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 *Piece picking confirmation* allows workers to use a mobile device to confirm each piece of inventory registered during picking or counting work. In this context, *confirm* means that the worker verifies the quantity of each item by scanning a bar code or manually entering the information on the device. For picks, workers can confirm the quantity of work to be processed up to the quantity that is specified on the work to be picked. For counting work, workers can scan the inventory they're counting and track the total amount.
 

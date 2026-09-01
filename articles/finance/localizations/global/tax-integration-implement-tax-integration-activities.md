@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 
 # Implement tax integration activities
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about how to implement the required activities for a new transaction.
 
@@ -312,4 +312,3 @@ Currently, the VAT ID, number sequence group, and list code are updated in the h
 > [!NOTE]
 > To help avoid extra logic, use `doUpdate()` instead of `update()`.
 
-[!include [banner](../../includes/banner.md)]

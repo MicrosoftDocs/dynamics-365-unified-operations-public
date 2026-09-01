@@ -14,7 +14,7 @@ ms.dyn365.ops.version: 10.0.36
 
 # Uptake financial tags on forms and entities
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to add financial tag support to tables, forms, and data entities. If you have questions after reading this document, see the General journal implementation as the established pattern.
 

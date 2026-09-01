@@ -16,7 +16,7 @@ ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
 
 # Reporting and analytics with Power BI home page
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article points you to resources that you can use to learn more about the business intelligence (BI) and reporting tools that are available.
 

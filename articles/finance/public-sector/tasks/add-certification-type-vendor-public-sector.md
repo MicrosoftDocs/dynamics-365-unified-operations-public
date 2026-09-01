@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Add a certification type to a vendor in the public sector
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You can create and assign to vendors any type of certification that they may hold. This procedure was created using the PSUS demo company data in the public sector partition.
 

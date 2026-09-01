@@ -12,7 +12,7 @@ ms.search.form:
 
 # Extend export control rules functionality
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information that's useful for developers who are extending rules functionality for implementing export controls.
 

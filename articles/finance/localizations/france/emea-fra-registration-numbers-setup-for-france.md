@@ -16,6 +16,8 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Registration numbers set up for France
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 In France, invoices must identify both the issuing or receiving legal entities and their establishments involved in the transaction.
 To support this requirement, Dynamics 365 Finance uses [Registration IDs](../../../fin-ops-core/dev-itpro/organization-administration/registration-ids.md) 
 together with [Invoice party applicability rules](../../../fin-ops-core/dev-itpro/organization-administration/invoice-party-applicability-rules.md) 

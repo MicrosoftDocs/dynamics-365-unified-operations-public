@@ -14,7 +14,7 @@ ms.custom:
 
 # Introduction to Commerce Scale Unit (CSU) Core
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of Commerce Scale Unit (CSU) Core in Microsoft Dynamics 365 Commerce.
 

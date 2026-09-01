@@ -15,6 +15,8 @@ ms.dyn365.ops.version:
 
 # Microsoft Dynamics 365 Finance business performance planning requirements
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 [!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 
 This article describes the requirements for installing Microsoft Dynamics 365 Finance business performance planning.

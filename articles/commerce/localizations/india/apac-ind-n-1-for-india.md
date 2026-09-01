@@ -14,7 +14,7 @@ ms.custom:
 
 # Support for upgrade and N-1 for India
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article describes the steps needed to set up and use Phased Rollout (N-1) Microsoft Dynamics 365 Commerce components for India. The upgrade procedure and the workflow for N-1 are basically the same as for a general Dynamics 365 Commerce environment. For general information about N-1 installation and usage, see [Upgrade and N-1 support for Retail](../../dev-itpro/overview-upgrade-n-minus1.md).
 

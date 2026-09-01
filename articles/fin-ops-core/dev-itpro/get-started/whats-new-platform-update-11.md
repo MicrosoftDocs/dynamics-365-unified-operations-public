@@ -18,7 +18,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # What's new or changed in Dynamics 365 Finance and Operations, Enterprise edition platform update 11 (October 2017)
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article describes features that are new or changed in Dynamics 365 Finance and Operations, Enterprise edition platform update 11. This version was released in October 2017 and has a build number of 7.0.4679.35176.
 

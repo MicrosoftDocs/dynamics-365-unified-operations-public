@@ -17,7 +17,7 @@ ms.custom:
 
 # Recurring integrations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Recurring integration provides the following features:
 

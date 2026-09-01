@@ -14,7 +14,7 @@ ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 ---
 
 # Use checks and promissory notes
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 In Türkiye, checks and promissory notes are widely used commercial payment instruments. Careful tracking and accounting ensure compliance with regulations. 
 The **Cash and bank management** module in Dynamics 365 Finance provides functionality to manage checks and promissory notes, including their receipt, issuance, transfer, collection, endorsement, return, and rediscounting.

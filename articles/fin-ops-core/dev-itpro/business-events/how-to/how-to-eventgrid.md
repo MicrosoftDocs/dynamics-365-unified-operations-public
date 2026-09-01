@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 2019-6-30
 ---
 # Business events and Azure Event Grid
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure a Microsoft Azure Event Grid endpoint and how to consume a business event from Event Grid.
 

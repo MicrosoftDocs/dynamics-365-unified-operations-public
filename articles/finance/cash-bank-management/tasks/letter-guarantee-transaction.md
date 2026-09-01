@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Letter of guarantee transaction
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure walks through the letter of guarantee process.
 

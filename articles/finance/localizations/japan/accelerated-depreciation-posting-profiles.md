@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Configure accelerated depreciation parameters and posting profiles
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 For Japan, the accelerated depreciation calculation uses the rate factor, rate threshold, and calculation method. You can find these parameters on the accelerated depreciation document. If you configure these parameters on the fixed asset parameter, you set default values for the accelerated depreciation documents.
 

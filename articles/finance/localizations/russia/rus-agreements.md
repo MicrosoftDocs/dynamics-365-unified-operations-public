@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 8.1
 
 # Agreements
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 In standard Microsoft Dynamics 365 Finance functionality, there are sales agreements and purchase agreements. For more information about these agreement types, see:
 

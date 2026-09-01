@@ -14,7 +14,7 @@ ms.search.validFrom: 2020-12-02
 
 # Statistics on payment practices report
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to generate the Statistics on payment practices report for the United Kingdom in Microsoft Dynamics 365 Finance.
 

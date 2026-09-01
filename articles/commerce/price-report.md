@@ -15,7 +15,7 @@ ms.custom:
 
 # Retail price reports
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides an overview of the price report feature that you can use to view upcoming price changes for assorted products in Microsoft Dynamics 365 Commerce.
 

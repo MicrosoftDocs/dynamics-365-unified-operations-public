@@ -16,7 +16,7 @@ ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 
 # Configure print management record-specific ER destinations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how a user in the System Administrator or Accounts Receivable Clerk role can perform the following tasks:
 

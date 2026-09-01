@@ -12,7 +12,7 @@ ms.reviewer: johnmichalak
 
 # Upload ER configurations and Globalization features as a Dataverse solution
 
-[!INCLUDE[banner](../../../includes/banner.md)]
+[!INCLUDE [banner](../../../includes/banner.md)]
 
 [!INCLUDE[banner](../../../includes/rsc-to-gsw-banner.md)]
 

@@ -14,7 +14,7 @@ ms.custom:
 
 # Register consumption
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 When a maintenance job on a work order is complete, the next step is to register consumption and post the journals. Register consumption for the following types: hours, items, and expenses. Register and post the different consumption types on the **Work order journals** page. The journal setup in **Asset Management** is used for creating and posting separate journals for hours, items, and expenses in the **Project management and accounting** module.
 

@@ -14,7 +14,7 @@ ms.custom:
 
 # Show order notifications in the point of sale (POS)
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to enable order notifications in the point of sale and the notification framework in Microsoft Dynamics 365 Commerce.
 

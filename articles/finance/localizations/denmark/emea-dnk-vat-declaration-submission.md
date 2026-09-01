@@ -15,7 +15,7 @@ ms.custom:
 
 # Submit a VAT return in XML format to the Danish Tax Agency
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to prepare your Microsoft Dynamics 365 Finance environment to generate a value-added tax (VAT) return in XML format and submit it to the Danish Tax Agency (Skattestyrelsen).
 

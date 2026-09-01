@@ -14,7 +14,7 @@ ms.search.validFrom:
 
 # Post arrivals and dispatches for Intrastat
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides an example that shows how to post arrivals and dispatches for Intrastat. The example uses the **ITCO** legal entity.
 

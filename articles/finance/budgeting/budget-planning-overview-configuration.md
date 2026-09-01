@@ -19,7 +19,7 @@ ms.assetid: a2e06633-a800-4840-a962-88fed8462104
 
 # Budget planning overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes budget planning. It contains information that can help you configure budget planning and set up budget planning processes.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Search for vendors
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Learn how to search for vendors based on specific criteria. This example shows you how to search for vendors that are approved for a particular procurement category and have their primary address in a specific country/region. You can run this procedure in demo data company USMF, or on your own data. This task would usually be carried out by a procurement professional.
 

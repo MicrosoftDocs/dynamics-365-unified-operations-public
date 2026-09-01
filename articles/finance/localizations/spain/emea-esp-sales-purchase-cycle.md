@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-11-30
 
 # Sales and purchase cycles for Spain
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up sales order or purchase order cycles for a vendor or customer for legal entities in Spain in Microsoft Dynamics 365 Finance.
 

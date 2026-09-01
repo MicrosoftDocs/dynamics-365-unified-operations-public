@@ -15,7 +15,7 @@ ms.custom:
 
 # Suspend and resume a transaction in the point of sale (POS)
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how users can suspend in-progress transactions and then resume them later or on a different register by using Microsoft Dynamics 365 Commerce.
 

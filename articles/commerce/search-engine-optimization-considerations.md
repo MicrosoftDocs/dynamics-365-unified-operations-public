@@ -14,7 +14,7 @@ ms.custom:
 
 # Search engine optimization (SEO) considerations for your site
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article covers search engine optimization (SEO) considerations for your Microsoft Dynamics 365 Commerce site from development to production.
 

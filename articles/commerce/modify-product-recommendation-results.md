@@ -18,7 +18,7 @@ ms.custom:
 
 # Adjust AI-ML-based product recommendation results
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to adjust product recommendation results based on artificial intelligence-machine learning (AI-ML) in Microsoft Dynamics 365 Commerce.
 

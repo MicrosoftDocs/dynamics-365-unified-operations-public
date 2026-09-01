@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 
 # Configure electronic invoice parameters for Panama
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to generate electronic invoices in XML format for Panama.
 

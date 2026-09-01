@@ -13,7 +13,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Purchases from composite dealers
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 1. Go to **Accounts payable** > **Invoice** > **Invoice journals**.
 1. Create a journal, and then select **Lines**.

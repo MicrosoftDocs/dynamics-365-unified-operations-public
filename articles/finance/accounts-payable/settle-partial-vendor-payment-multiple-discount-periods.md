@@ -16,7 +16,7 @@ ms.assetid: af95c48a-afd1-476c-978d-e34995100be4
 
 # Settle a partial vendor payment that has multiple discount periods
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article walks you through a scenario where multiple partial payments are made to a vendor that offers multiple cash discounts.
 

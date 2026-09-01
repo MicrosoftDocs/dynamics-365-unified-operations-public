@@ -13,7 +13,7 @@ ms.reviewer: johnmichalak
 
 # Bad debt reserves in Accounts receivable
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with tax registers for receivables, hopeless debts, and their write-offs for Russia in Microsoft Dynamics 365 Finance.
 

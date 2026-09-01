@@ -17,7 +17,7 @@ ms.assetid: 9d8f55cb-b2cf-4e01-89cf-0e21f5c8ae1f
 
 # Consolidation and elimination overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides general information about the consolidation and elimination process. It includes answers to some frequently asked questions.
 

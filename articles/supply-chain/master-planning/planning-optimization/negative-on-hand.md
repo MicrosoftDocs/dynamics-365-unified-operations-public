@@ -13,7 +13,7 @@ ms.search.form: ReqCreatePlanWorkspace
 
 # Planning with negative on-hand quantities
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 If the system shows a negative aggregate on-hand quantity, the planning engine treats the quantity as 0 to help avoid over-supply. Here's how this functionality works:
 

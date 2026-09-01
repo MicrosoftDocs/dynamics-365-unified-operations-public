@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.24
 
 # Support for multiple VAT registration numbers in Immediate Supply of Information on VAT (SII) of Spain
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 According to R.D. 596/2016 in Spain, a new value-added tax (VAT) management system that is based on the Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA \[SII\]) allows for a two-way, automated relationship between the Spanish Tax Agency (La Agencia Estatal de Administración Tributaria \[AEAT\]) and the taxpayer. In this article, this system is referred to as the SII system. As of July 1, 2017, taxpayers who are subject to SII, and others who voluntarily adopt it, must send details of their billing records within four days through online filing on the AEAT website.
 

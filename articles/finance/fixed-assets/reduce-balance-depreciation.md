@@ -18,7 +18,7 @@ ms.assetid: 1b86763d-d47c-4a6a-a9a6-d97a736750da
 
 # Reducing balance depreciation
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the reducing balance method of depreciation.
 

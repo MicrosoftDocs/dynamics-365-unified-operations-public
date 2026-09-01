@@ -14,7 +14,7 @@ ms.custom:
 
 # Add a favicon
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to add a favicon to your Microsoft Dynamics 365 Commerce site.
 

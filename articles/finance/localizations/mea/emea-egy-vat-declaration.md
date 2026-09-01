@@ -14,7 +14,7 @@ ms.search.validFrom: 2017-06-20
 
 # VAT declaration for Egypt (EG-00002)
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure and generate the VAT return form for Egypt in Microsoft Dynamics 365 Finance.
 

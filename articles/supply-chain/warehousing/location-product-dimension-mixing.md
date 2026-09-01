@@ -12,7 +12,7 @@ ms.search.form: WHSLocationProfile, WHSReservationHierarchy, WHSInventTableReser
 
 # Location product dimension mixing
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Location product dimension mixing is location profile functionality that helps improve location management when product variants or products that have dimensions are used, such as in the fashion industry. It lets you decide whether configurations, colors, styles, and sizes can be mixed for a specific location profile, or whether just one of these dimensions or a combination of them can be put to the same location.
 

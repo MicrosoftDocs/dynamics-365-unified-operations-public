@@ -14,7 +14,7 @@ ms.search.validFrom: 2024-01-29
 
 # Configure Azure resources for Electronic invoicing
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The process for setting up Microsoft Azure resources for Electronic invoicing has three steps. The first two steps, "Create an Azure Key Vault in the Azure portal" and "Create an Azure storage account in the Azure portal," are mandatory. The third step, "Configure a SharePoint connection," is optional. These steps can be completed by using any of the following methods:
 

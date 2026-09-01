@@ -15,7 +15,7 @@ ms.custom:
 
 # Additional B2C information
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides additional information on how to set your business-to-consumer (B2C) tenant in Microsoft Dynamics 365 Commerce.
 

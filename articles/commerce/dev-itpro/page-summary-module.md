@@ -15,7 +15,7 @@ ms.custom:
 
 # Page summary modules
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article covers page summary modules and describes how to add them to templates in Microsoft Dynamics 365 Commerce.
 

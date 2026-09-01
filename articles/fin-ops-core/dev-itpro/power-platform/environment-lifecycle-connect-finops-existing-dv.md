@@ -17,7 +17,7 @@ ms.custom: sfi-image-nochange
 
 # Connect finance and operations apps with an existing Microsoft Dataverse instance
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Administrators in Microsoft Dynamics Lifecycle Services find that more capabilities require a connection to Dataverse through Power Platform Integration. However, if you already have a Dataverse instance from other Dynamics 365 apps, you might want to reuse it for this integration. This article explains how to connect your finance and operations apps environment with an existing Dataverse instance to combine them into one logical environment.
 

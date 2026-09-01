@@ -12,7 +12,7 @@ ms.custom:
 
 # Inventory Visibility tips
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 
 Here are a few tips that you should consider when you set up and use the Inventory Visibility Add-in:

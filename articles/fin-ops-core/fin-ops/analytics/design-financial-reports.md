@@ -16,7 +16,7 @@ ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
 
 # View and design financial reports
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article provides exercises that walk you through viewing and creating financial reports for Microsoft Dynamics 365 Finance. Financial reporting includes a viewing experience within the application and a ClickOnce report designer that you use to create and edit financial reports.
 

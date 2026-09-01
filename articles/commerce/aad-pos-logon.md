@@ -14,7 +14,7 @@ ms.custom:
 
 # Configure Microsoft Entra authentication for POS sign-in
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to configure Microsoft Entra ID as the authentication method in Microsoft Dynamics 365 Commerce point of sale (POS).
 

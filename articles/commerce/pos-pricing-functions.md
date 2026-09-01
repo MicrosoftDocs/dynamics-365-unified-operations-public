@@ -14,7 +14,7 @@ ms.custom:
 
 # Pricing functions in POS
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes various price and discount functions in Microsoft Dynamics 365 Commerce point of sale (POS).
 

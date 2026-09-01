@@ -12,7 +12,7 @@ ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLooku
 
 # Create a sales event kanban rule
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure focuses on the setup needed to create a kanban rule that is triggered during sales order creation. The event kanban rule replenishes requirements that originate from sales order lines. The demo data company used to create this procedure is USMF. It is intended for the process engineer or the value stream manager as they prepare production of a new or modified product.
 

@@ -15,7 +15,7 @@ ms.search.region: Global
 
 # Platform updates for version 10.0.49 of finance and operations apps (July 2026)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article lists the features in the platform updates for version 10.0.49 of finance and operations apps. This version uses build number 10.0.2790 and is available on the following schedule:
 

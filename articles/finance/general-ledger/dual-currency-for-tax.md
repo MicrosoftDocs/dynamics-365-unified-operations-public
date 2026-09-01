@@ -16,7 +16,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 # Dual currency support for sales tax
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to extend dual currency accounting for sales taxes and the impact on sales tax calculations, posting, and settlements.
 

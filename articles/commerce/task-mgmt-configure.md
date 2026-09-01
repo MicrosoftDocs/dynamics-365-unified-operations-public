@@ -15,7 +15,7 @@ ms.custom:
 
 # Configure task management
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to configure task management features in Microsoft Dynamics 365 Commerce.
 

@@ -25,7 +25,7 @@ ms.dyn365.ops.version: 10.0.45
 
 # Out of balance ledger settlements
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 If there are out of balance ledger settlements, the year-end close fails with an out of balance error. To address out of balance errors so the year can be closed successfully, any out of balance ledger settlements need to be reversed. This page helps find out of balance ledger settlements. 
 

@@ -17,7 +17,7 @@ ms.assetid: 28a9793e-d376-47af-a345-69046bad17df
 
 # Budgeting overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Almost every company that uses Financials functionality in Microsoft Dynamics 365 Finance needs to create reports of budget versus actuals. This article explains the minimum configuration that you need to create budgets in finance and operations or load them from a third-party program.
 

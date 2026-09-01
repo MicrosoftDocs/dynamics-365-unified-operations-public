@@ -15,7 +15,7 @@ ms.search.form: CustPaymMode, LedgerJournalTransCustPaym
 
 # ESR customer payments import
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to import customer payments in the Einzahlungsschein mit Referenznummer (ESR) format for Switzerland in Microsoft Dynamics 365 Finance.
 

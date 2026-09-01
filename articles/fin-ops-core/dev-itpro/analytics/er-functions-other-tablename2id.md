@@ -16,7 +16,7 @@ ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 
 # TABLENAME2ID ER function
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The `TABLENAME2ID` function returns a numeric representation of the table ID for the specified table name as an *Integer* value.
 

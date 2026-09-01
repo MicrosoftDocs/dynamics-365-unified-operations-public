@@ -13,7 +13,7 @@ ms.custom:
 
 # Sync external inventory adjustments through Inventory Visibility
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to set up the system to sync inventory adjustment transactions registered in an external system to Microsoft Dynamics 365 Supply Chain Management and Inventory Visibility through the Inventory Visibility service business layer.
 

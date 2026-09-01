@@ -15,7 +15,7 @@ ms.search.form: TaxRegistrationType, TaxRegistrationTypeCreate, TaxRegistrationL
 
 # Set up a legal entity for Türkiye
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up a legal entity for a company that's located in Türkiye and is using the features for Türkiye that are available in Microsoft Dynamics 365 Finance. A legal entity represents the company, and it contains the tax and legal attributes that are required for the rest of the configuration for Türkiye.
 

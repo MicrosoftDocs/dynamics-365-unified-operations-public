@@ -15,7 +15,7 @@ ms.custom:
 
 # Set up a customer and sales order to be target of consolidated invoice
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up customers and sales orders to be targets of consolidated invoices for Japan in Microsoft Dynamics 365 Finance.
 

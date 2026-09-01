@@ -27,6 +27,8 @@ ms.custom: sfi-image-nochange
 
 # Business event example
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 This article provides an example of a business event.
 
 ## Set up a flow for assigned task notification

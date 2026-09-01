@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-10-28
 
 # Turnover balance statement reports
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with turnover balance sheets for customers, vendors, and advanced holders in Russia with Microsoft Dynamics 365 Finance.
 

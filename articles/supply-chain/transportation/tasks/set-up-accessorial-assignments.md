@@ -13,7 +13,7 @@ ms.custom:
 
 # Set up accessorial assignments
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to set up an accessorial assignment. A transportation coordinator typically performs this task. Before you follow the procedure, complete the instructions in [Set up hub accessorial charges and accessorial masters](set-up-hub-accessorial-charges-accessorial-masters.md).
 

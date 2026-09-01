@@ -11,7 +11,7 @@ ms.author: v-sandraya
 
 # Configure electronic invoice parameters for Dominican Republic
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure the information required to generate the electronic invoice XML for Dominican Republic.
 

@@ -12,7 +12,7 @@ ms.search.form: WHSMobileDeviceWorkspace, WHSMobileDevice
 
 # Warehouse mobile devices workspace
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The **Warehouse mobile devices** workspace lets you monitor the health and license status of all handheld devices that are used in your warehouses.
 

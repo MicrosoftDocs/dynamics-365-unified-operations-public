@@ -15,7 +15,7 @@ ms.custom:
 
 # Create and post a free text invoice for a public sector customer
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to create and post free text invoices for customers by using Offentlig Information Online Universal Business Language (OIOUBL) electronic invoicing in Denmark with Microsoft Dynamics 365 Finance.
 

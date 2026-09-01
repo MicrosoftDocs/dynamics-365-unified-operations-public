@@ -12,7 +12,7 @@ ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFi
 
 # Configure shipment consolidation policies
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The shipment consolidation process that uses shipment consolidation policies automates shipment consolidation during automated and manual release to the warehouse. After you turn on this feature, you must configure your initial policies. If you don't configure any policies, each sales line generates a separate shipment that has a single load line.
 

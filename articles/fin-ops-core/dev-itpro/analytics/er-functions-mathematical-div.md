@@ -16,6 +16,8 @@ ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 
 # DIV ER function
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 The `DIV` function is available in Dynamics 365 Finance **10.0.49** and later.
 
 The `DIV` function returns the integer division of two integers. The result is the quotient of the division of `dividend` by `divisor`, rounded down to the nearest integer.

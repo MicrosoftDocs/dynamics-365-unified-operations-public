@@ -16,7 +16,7 @@ ms.search.validFrom: 2020-01-06
 
 # Dual-write setup from Lifecycle Services
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to enable dual-write from Microsoft Dynamics 365 Lifecycle Services.
 

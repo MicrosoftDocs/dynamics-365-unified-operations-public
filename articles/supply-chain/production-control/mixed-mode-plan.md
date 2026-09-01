@@ -13,7 +13,7 @@ ms.custom:
 
 # Mixed mode planning - Combine discrete, process, and lean sourcing
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about mixed mode planning. In mixed mode planning, you can model your supply chain based on the material flow. Dynamics 365 Supply Chain Management makes sure that the material flow follows your models, regardless of the supply policy that is selected (kanbans, production orders, purchase orders, batch orders, or transfer orders).
 

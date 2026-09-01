@@ -16,7 +16,7 @@ ms.dyn365.ops.version:
 
 # Charges allocation on Bill of entry page for import orders
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 For transactions that involve importing goods, customs duty and taxes are calculated based on a custom cost, insurance, and freight (CIF) value. You determine this value by adding freight and insurance charges to the value of the imported goods. Customs authorities also refer to the custom CIF value as the assessable value. They determine this value when you submit a bill of entry (BOE).
 

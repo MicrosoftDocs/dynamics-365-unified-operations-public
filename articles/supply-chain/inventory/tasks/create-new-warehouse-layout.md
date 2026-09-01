@@ -13,7 +13,7 @@ ms.custom:
 
 # Create a new warehouse layout
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to set up information about the locations in a warehouse. These instructions only apply for the Inventory management module (when you aren't using warehouse management processes (WMS)), not when you're using the WMS-enabled warehouse functionality that's available in the Warehouse management module. You can use this procedure in [demo data](../../../fin-ops-core/dev-itpro/get-started/demo-data.md) company USMF, or on your own data.
 

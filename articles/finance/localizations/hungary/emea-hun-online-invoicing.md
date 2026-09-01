@@ -16,7 +16,7 @@ ms.custom:
 
 # Online invoicing system
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The National Tax and Customs Administration of Hungary announced that, starting July 1, 2018, companies in Hungary must supply data of their issued invoices to the Real-time invoice reporting (RTIR) platform of the Online invoicing system.
 

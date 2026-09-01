@@ -16,7 +16,7 @@ ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 
 # Set up withholding tax codes for the TDS tax type
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up tax codes for Tax Deducted at Source (TDS).
 

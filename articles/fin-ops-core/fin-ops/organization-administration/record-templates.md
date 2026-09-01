@@ -17,7 +17,7 @@ ms.assetid: 61ada2d8-84c3-44bc-b4c5-516b1aeac3d1
 
 # Record templates overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article introduces the concept of record templates and explains how you can use them to create records that share information.
 

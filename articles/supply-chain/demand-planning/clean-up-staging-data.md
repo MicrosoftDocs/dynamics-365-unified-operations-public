@@ -13,7 +13,7 @@ ms.custom:
 
 # Clean up staging data
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When you import data from Demand planning into Supply Chain Management, the data is stored in staging tables in the Supply Chain Management database. After the import is complete, the staging data is no longer needed, so it's deleted automatically. However, if an import operation fails, its staging data is typically left behind in the staging table, which might eventually grow to be very large and therefore reduce database performance and add to data storage charges. To mitigate this problem, you can periodically clean up the staging data tables. The cleanup process deletes all data from the staging tables that is older than a specified number of days.
 

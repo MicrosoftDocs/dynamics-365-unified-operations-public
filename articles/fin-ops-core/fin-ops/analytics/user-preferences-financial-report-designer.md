@@ -16,7 +16,7 @@ ms.assetid: 59da4854-0f8c-4021-acd1-b303c06f4a34
 
 # User preferences in financial report designer
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article explains how to set user preferences to customize your user interactions in financial report designer and control the initial sign-in experience. You can also control how individual reports, the report library, and the default file locations are displayed.
 

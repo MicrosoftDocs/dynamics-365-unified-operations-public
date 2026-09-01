@@ -16,7 +16,7 @@ ms.assetid: 10edb129-33f0-4cf9-b2a7-4b7ffa09b229
 
 # Plan your local chart of accounts
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information that will help you plan the chart of accounts when your organization includes legal entities that must meet requirements for specific localities where they do business. This article uses the following terms to describe charts of accounts:
 

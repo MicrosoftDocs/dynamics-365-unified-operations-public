@@ -15,6 +15,8 @@ ms.dyn365.ops.version: 10.0.24
 
 # Deferral schedules
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 Deferral schedules are created after a transaction has been posted.
 
 Use the **All deferral schedules** or **Active deferral schedules** pages to review the details about a deferral schedule. The information that you see depends on the type of deferral schedule (straight line or event-based) and the transaction type. It includes the deferral schedule lines and the total amounts for the deferral schedule. Use the page to modify the deferral schedule.

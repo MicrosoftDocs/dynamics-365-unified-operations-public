@@ -13,7 +13,7 @@ ms.custom:
 
 # Calculate material consumption
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about various options that are related to the calculation of material consumption.
 

@@ -18,7 +18,7 @@ ms.service: dynamics-365-op
 
 # Upgrade or replace the SQL Server instance for Microsoft Dynamics 365 Finance + Operations (on-premises) environments
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to upgrade the Microsoft SQL Server instance or cluster that your environment uses. Complete this process if you want to upgrade from one major version of SQL Server to another but don't want to do an [in-place upgrade](/sql/database-engine/install-windows/choose-a-database-engine-upgrade-method). If you choose to do an in-place upgrade, you can still follow the guidance in this article although some of the steps don't apply.
 

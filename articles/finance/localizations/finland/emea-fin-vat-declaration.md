@@ -14,7 +14,7 @@ ms.custom:
 
 # VAT declaration (Finland)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to set up and generate a value-added tax (VAT) declaration for Finland in the official TXT format. It also describes how to preview the VAT declaration in Microsoft Excel.
 

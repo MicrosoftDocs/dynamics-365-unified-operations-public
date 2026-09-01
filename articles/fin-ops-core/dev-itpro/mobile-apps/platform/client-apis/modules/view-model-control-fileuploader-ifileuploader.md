@@ -13,7 +13,7 @@ ms.custom:
 
 # File Uploader module
 
-[!include [banner](../../../../includes/banner.md)]
+[!INCLUDE [banner](../../../../includes/banner.md)]
 [!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 A control for uploading images.

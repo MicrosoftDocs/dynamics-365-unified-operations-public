@@ -14,7 +14,7 @@ ms.custom:
 
 # Mass deployment of legacy self-service components
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!WARNING]
 > After you update Commerce Scale Unit (CSU) to version 10.0.29 or later, the point of sale (Modern POS or Store Commerce) version must be 10.0.27 or later (shown in point of sale as version 9.27). The migration to .NET Core is the reason for this requirement.

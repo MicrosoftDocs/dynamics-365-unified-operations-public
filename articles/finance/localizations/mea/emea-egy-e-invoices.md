@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.17
 
 # Customer electronic invoices in Egypt
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 
 According to Egyptian legal requirements, you must submit invoices that you issue to customers to the Tax Authority in an electronic format. Electronic invoice submission requires the following two-part system configuration:

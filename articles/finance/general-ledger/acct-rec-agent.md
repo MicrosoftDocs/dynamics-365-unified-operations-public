@@ -17,7 +17,7 @@ ms.assetid: 9d8f55cb-b2cf-4e01-89cf-0e21f5c8ae1f
 
 # Account Reconciliation Agent (production ready preview)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 The Account Reconciliation Agent represents a transformative step toward a continuous financial close and offers significant benefits to Microsoft's customers. With it, the process shifts away from a reactive approach that relies on Microsoft SQL Server Reporting Services (SSRS) reports for reconciliation. In place of that approach, the agent introduces a proactive experience. The innovative **Account reconciliation** workspace raises exceptions and uses an intelligent agent to evaluate those exceptions and provide recommended actions.

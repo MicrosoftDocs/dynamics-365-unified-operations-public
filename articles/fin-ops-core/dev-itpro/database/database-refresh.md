@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Refresh database
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use Microsoft Dynamics Lifecycle Services to refresh the database in a sandbox user acceptance testing (UAT) environment. A database refresh copies the transactional and financial reporting databases from your production environment to the target sandbox UAT environment. If you have another sandbox environment, you can also copy the databases from that environment to your target sandbox UAT environment.
 

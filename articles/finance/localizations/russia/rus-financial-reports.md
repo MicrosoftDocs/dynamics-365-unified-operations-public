@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-10-28
 
 # Financial reporting (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with financial reporting for Russia in Microsoft Dynamics 365 Finance.
 

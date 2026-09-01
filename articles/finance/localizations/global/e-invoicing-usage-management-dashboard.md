@@ -14,7 +14,7 @@ ms.custom:
 
 # Usage management dashboard
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Use the **Usage management** dashboard to monitor your usage of the Electronic Invoicing service. This dashboard helps your organization stay compliant with monthly usage requirements. It calculates compliance by comparing your submission volume with your acquired volume of submissions.
 

@@ -12,7 +12,7 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, SalesEditLines
 
 # Register sales commissions
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how sales commissions are calculated and registered. You can run this procedure in demo data company USMF or on your own data. Before starting this guide, run the guide called "Set up sales commission rules" to make sure that you have all the necessary commission calculation setup.
 

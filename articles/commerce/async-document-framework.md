@@ -14,7 +14,7 @@ ms.custom:
 
 # Commerce asynchronous document framework
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes the capabilities and configurations of an asynchronous document framework in Microsoft Dynamics 365 Commerce.
 

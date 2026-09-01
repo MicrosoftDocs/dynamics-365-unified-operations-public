@@ -11,7 +11,7 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 
 # Creating intercompany purchase and sales orders in several companies
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management isn't limited to handling only one production company and several sales companies. All companies that are set up for intercompany can be both trading companies and production companies.
 

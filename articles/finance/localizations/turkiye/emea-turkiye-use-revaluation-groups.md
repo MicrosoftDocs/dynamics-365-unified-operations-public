@@ -13,7 +13,7 @@ ms.dyn365.ops.version: AX 10.0.45
 ---
 
 # Perform fixed asset revaluation
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to perform fixed asset revaluation in Microsoft Dynamics 365 Finance for Türkiye.
 

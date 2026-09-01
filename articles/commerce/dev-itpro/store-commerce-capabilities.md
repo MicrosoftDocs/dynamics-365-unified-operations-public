@@ -14,7 +14,7 @@ ms.custom:
 
 # Store Commerce app capabilities
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the capabilities of the Store Commerce app in Microsoft Dynamics 365 Commerce.
 

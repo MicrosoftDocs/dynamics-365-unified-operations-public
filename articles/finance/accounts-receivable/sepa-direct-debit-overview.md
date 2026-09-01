@@ -17,7 +17,7 @@ ms.assetid: 3277c9b6-e46e-40c9-aa76-9b0449467842
 
 # SEPA direct debit overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The Single Euro Payments Area (SEPA) is set up by the European Commission, and dictates that all electronic payments are considered domestic, regardless of the country/region where the individual, business, or organization, and the bank are located. There's no difference between national/regional and cross-border payments. The SEPA includes the 28 European Union (EU) member states, and Iceland, Liechtenstein, Norway, Switzerland, Monaco, and San Marino. The SEPA helps form a single market for payment transactions within the European Economic Area (EEA). Ultimately, the SEPA is expected to reduce the number of payment formats that banks, businesses, and individuals must work with.
 

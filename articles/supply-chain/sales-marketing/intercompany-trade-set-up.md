@@ -13,7 +13,7 @@ ms.custom:
 
 # Set up intercompany trade
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 To enable Microsoft Dynamics 365 Supply Chain Management to run intercompany trade, set up customers and vendors to run intercompany trade. You must also set up Accounts payable, Accounts receivable, Procurement and sourcing, and Sales and marketing.
 

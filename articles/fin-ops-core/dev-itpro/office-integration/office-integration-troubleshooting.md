@@ -17,7 +17,7 @@ ms.custom:
 # Office integration FAQ
 
 [!include [applies to](../includes/applies-to-commerce-finance-hr-scm.md)]
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides answers to frequently asked questions about the capabilities of the Microsoft Office integration. The questions and issues that are discussed range across user, administration, and development scenarios.
 

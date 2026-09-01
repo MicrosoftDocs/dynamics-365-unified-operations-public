@@ -14,7 +14,7 @@ ms.custom:
 
 # Add custom buttons to the POS header bar
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to add a new custom button to the header bar in the point of sale (POS).
 

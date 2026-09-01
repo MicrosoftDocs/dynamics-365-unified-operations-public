@@ -16,7 +16,7 @@ ms.assetid:
 
 # Defer the execution of XML elements in ER formats
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Overview
 

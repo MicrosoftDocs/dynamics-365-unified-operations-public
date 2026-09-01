@@ -10,7 +10,7 @@ ms.author: henrikan
 ---
 # Create a schedule for a site
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to schedule production orders that are not yet started for a site.  The demo data company USMF is used to complete this procedure.
 

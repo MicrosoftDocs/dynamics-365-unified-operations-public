@@ -18,7 +18,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # What's new or changed in Finance and Operations version 10.0.3 (June 2019)
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article describes features that are either new or changed in Microsoft Dynamics 365 Finance and Operations version 10.0.3. This version will be released in June and has a build number of 10.0.107. For more information about version 10.0.3, see [Additional resources](#additional-resources).
 

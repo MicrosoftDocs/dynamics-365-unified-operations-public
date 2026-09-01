@@ -15,7 +15,7 @@ ms.custom:
 
 # Propose and post the impairment amount on a cash generating unit
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to propose and post impairment amounts that you recognize and calculate on a cash generating unit for Japan in Microsoft Dynamics 365 Finance.
 

@@ -16,7 +16,7 @@ ms.custom:
 
 # Price adjustments and discounts
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides information about price adjustments and discounts in Dynamics 365 Commerce.
 

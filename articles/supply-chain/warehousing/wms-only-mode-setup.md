@@ -16,7 +16,7 @@ ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace,
 
 # Enable and configure Warehouse management only mode
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to configure Warehouse management only mode by setting up source systems, master data, and business events.
 

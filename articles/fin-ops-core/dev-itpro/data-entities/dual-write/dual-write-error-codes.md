@@ -14,7 +14,7 @@ ms.search.region: global
 
 # Error codes for dual-write and Data Integrator
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes the error codes that can occur when you use Data Integrator to configure dual-write maps or data integration projects.
 

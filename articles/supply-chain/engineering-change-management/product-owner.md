@@ -12,7 +12,7 @@ ms.search.form: EngChgProductOwner
 
 # Product owners
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The product owner is a group of users who are responsible for specific products. When a product owner group is assigned to a product, only the members of that group can release the product. The product owner can also be used in the approval workflow in engineering change management.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Configure purchase order confirmation batch jobs
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use the *Confirm purchase orders* batch job to confirm multiple purchase orders at the same time. For example, you can schedule the job to confirm all approved purchase orders at the end of each day, confirm drop-shipment purchase orders that are generated from sales orders, or confirm time-sensitive purchase orders before supplier cutoff times.
 

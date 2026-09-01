@@ -13,7 +13,7 @@ ms.custom:
 
 # Manage subcontracting work in production
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how subcontracted operations are managed in Dynamics 365 Supply Chain Management. In other words, it explains how production operations that are allocated to a resource are managed by a vendor.
 
