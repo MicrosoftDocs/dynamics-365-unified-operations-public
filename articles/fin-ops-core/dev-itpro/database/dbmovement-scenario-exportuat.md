@@ -216,7 +216,7 @@ In the client, enter the values that you documented for the encrypted and enviro
 
 Are you looking for more tools to help you import backup files into your developer environments? Here are some other sources of information:
 
-- [D365fo.Tools](https://github.com/d365collaborative/d365fo.tools/blob/development/docs/Import-D365Bacpac.md) provides many valuable tools created by the community.
+- [D365fo.Tools](https://github.com/d365collaborative/d365fo.tools/blob/master/docs/Import-D365Bacpac.md) provides many valuable tools created by the community.
 - [Community-provided open source projects on GitHub](https://github.com/search?q=dynamics+365+finance+operations&s=stars).
 
 ## Known issues
