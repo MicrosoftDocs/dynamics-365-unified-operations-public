@@ -1680,6 +1680,10 @@
         href: dev-itpro/operational-insights.md
       - name: Comparison of ETW and EventLog logger functionality
         href: dev-itpro/compare-etw-eventlog.md
+    - name: Manage data and storage
+      items:
+      - name: Manage Commerce database storage
+        href: storage-management.md
     - name: Globalization Studio
       items:
       - name: Globalization Studio overview
