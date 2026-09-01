@@ -4,7 +4,7 @@ description: Learn about features that are either new or changed in Invoice capt
 author: MaheshPrasadK   
 ms.author: mkarpana
 ms.topic: whats-new
-ms.date: 05/29/2026
+ms.date: 09/01/2026
 ms.update-cycle: 1095-days
 ms.reviewer: twheeloc
 ms.custom: 
@@ -33,40 +33,52 @@ Licensed customers must stay current with updates to the Invoice Capture online 
 - Customers who purchase subscriptions of finance and operations apps experience continuous updates that Microsoft manages. Customers can postpone one consecutive service update.
 - Customers can postpone one consecutive release of Invoice Capture.
 
-  ## May 2026
+## Sept 2026
 
-The May release of the Invoice capture solution version 2.5.x contains the following feature enhancements and bug fixes.
+The September release of the Invoice capture solution version 2.9.x contains the following feature enhancement and bug fixes.
+
+| Feature | Description |
+| --- | --- |
+| AI Recognition (preview) | AI-assisted invoice data extraction is a document processing capability that reads vendor invoice documents and converts unstructured invoice content into structured business data. It combines OCR with LLM to identify invoice fields, understand document context, and extract the information needed for downstream invoice processing. |
+| Bug fix | Received files that are the same can potentially generate duplicate captured invoices in Invoice capture. (Known issue: 6630243) |  
+| Bug Fix | Continuous learning fails to enforce formatting when the amount field contains spaces in raw text. (Known issue: 6409543) |
+
+If you're interested in participating in the private preview of the AI Recognition enhancements, contact <mkarpana@microsoft.com> and <achansoriya@microsoft.com> with your Org ID.
+
+## May 2026
+
+The May release of the Invoice capture solution version 2.5.x includes the following feature enhancement and bug fixes.
 Our next scheduled release is in July 2026.
 
-| Feature  | Description |
-| --- |--- |
-|AI suggestions (Preview) | AI Suggestions is an AI‑assisted derivation capability designed to enable touchless invoice processing within Invoice capture. It replaces rigid rule‑based derivation with an LLM‑powered, Dataverse‑grounded, instruction driven approach. |
-|Bug fix | Added support for Country GG (Guernsey) (Known issue: 6439885) |
-|Bug Fix | Added support for EU locale format for line‑level sales tax rate (Known issue: 6381737) |
+| Feature | Description |
+| --- | --- |
+| AI suggestions (preview) | AI Suggestions is an AI‑assisted derivation capability that enables touchless invoice processing within Invoice capture. It replaces rigid rule‑based derivation with an LLM‑powered, Dataverse‑grounded, instruction-driven approach. |
+| Bug fix | Added support for country/region GG (Guernsey) (Known issue: 6439885) |
+| Bug fix | Added support for EU locale format for line‑level sales tax rate (Known issue: 6381737) |
 
-If you're interested in participating in the private preview of the charges enhancements, contact <mkarpana@microsoft.com> and <achansoriya@microsoft.com> with your Org ID.
+If you're interested in participating in the private preview of the AI suggestions feature, contact <mkarpana@microsoft.com> and <achansoriya@microsoft.com> with your Org ID.
 
 ## March 2026
 
 The March release of the Invoice capture solution version 2.3.x contains the following feature enhancements and bug fixes.
 
-| Feature  | Description |
-| --- |--- |
-|OCR Async and Batch Processing | Large invoice documents are now processed asynchronously, extending the processing timeout from 2 minutes to 1 hour to prevent failures on high-page-count documents. Invoice entities are also created using batch operations, reducing database round-trips and improving throughput for high-volume scenarios. Both capabilities are enabled together via the Async Predict setting in System Settings. |
-|Bug Fix | Improved processing reliability for a timeout issue in the Invoice Capture deliver plugin when processing invoices with 300 or more lines. (Known issue: 6122374) |
+| Feature | Description |
+| --- | --- |
+| OCR async and batch processing | Large invoice documents are now processed asynchronously, extending the processing timeout from 2 minutes to 1 hour to prevent failures on high-page-count documents. The solution also creates invoice entities by using batch operations, which reduces database roundtrips and improves throughput for high-volume scenarios. The system enables both capabilities together through the **Async predict setting** in **System settings**. |
+| Bug fix | Improved processing reliability for a timeout issue in the Invoice capture deliver plugin when processing invoices with 300 or more lines. (Known issue: 6122374) |
 
 ## January 2026
 
 The January release of the Invoice capture solution version 2.1.x includes the following feature enhancements and bug fixes.
 The next scheduled release is in March 2026.
 
-| Feature  | Description |
-| --- |--- |
-|OCR Async (Preview) | Preview feature to prevent large document processing through asynchronous OCR calls. Previously large documents timed out within 2 minutes. The timeout window is extended to 1 hour for large documents. |
-|Charges (private preview) | Support automatic detection of charges for standard invoicing models. Ability to select charges that are embedded as line items, and move them to the charges section. This feature doesn't apply to custom models. |
-|Bug fix | Support V2 derivation process with improved performance as default. (Known Issue: 6041312) |
-|Bug fix | Improvements to PO link form performance in side by side viewer. (Known Issue: 6041308)|
-|Bug Fix | Support to reprocess invoice derivation failures through captured invoices list page, includes automated reprocessing of failed invoices using Power Automate flow. (Known issue: 6041312) |
+| Feature | Description |
+| --- | --- |
+| OCR Async (preview) | Preview feature to prevent large document processing through asynchronous OCR calls. Previously large documents timed out within 2 minutes. The timeout window is extended to 1 hour for large documents. |
+| Charges (private preview) | Support automatic detection of charges for standard invoicing models. Ability to select charges that are embedded as line items, and move them to the charges section. This feature doesn't apply to custom models. |
+| Bug fix | Support V2 derivation process with improved performance as default. (Known Issue: 6041312) |
+| Bug fix | Improvements to PO link form performance in side by side viewer. (Known Issue: 6041308) |
+| Bug Fix | Support to reprocess invoice derivation failures through captured invoices list page, includes automated reprocessing of failed invoices using Power Automate flow. (Known issue: 6041312) |
 
 If you're interested in participating in the private preview of the charges enhancements, contact <mkarpana@microsoft.com> and <achansoriya@microsoft.com> with your Org ID.
 
@@ -90,16 +102,16 @@ If you're interested in participating in the private preview of the charges enha
 
 The September release of the Invoice capture solution version 1.9.9.x includes the following feature enhancements and bug fixes.
 
-| Feature  | Description |
-| --- |--- |
-| Enhanced invoice derivation plugin for better performance. (Preview) | The derivation logic is updated for better performance when deriving. |
-| Improvements when transferring invoices to Dynamics 365 Finance to prevent invoices getting stuck in **Awaiting** status. (Preview) | This improvement updates the transfer of invoices from Invoice capture to Dynamics 365 Finance to be asynchronous to avoid plugin timeouts. To review the new statuses available in Invoice capture, see [Captured invoice statuses](../accounts-payable/invoice-capture-workspace.md#captured-invoice-statuses). |
-|Improved accessibility for side-by-side viewer| Implemented tab sequence and the ability to move between lines and cells by using the keyboard. For more information, see [Power Apps keyboard shortcuts for editable grid views](/power-apps/user/keyboard-shortcuts#editable-grids-views). |
-|Bug fix - Procurement category derivation is optimized for performance when using invoice line descriptions. |This fix resolves an issue where customers see invoices stuck in **In processing** due to a large number of defined procurement categories. |
-| Bug fix - Improved derivation accuracy for invoice types.  |This fix addresses an issue when deriving the invoice type. If the invoice header doesn't have both the vendor account and legal entity, the derivation doesn't consider if the derived value is one of the allowed types. This issue results in invoices being marked as PO Invoices when Invoice capture is configured to classify invoices only as Cost invoices.|
-|Bug fix - Improved performance of **Remove all lines**. | This fix resolves an issue where the system is unresponsive when customers select **Remove all** to delete multiple line items in Invoice capture.|
-|Bug fix - Fixed consistency issues during invoice validation and transfer.| This fix resolves an issue where custom attributes are missing when transferring to Finance. For example, if a custom dimension is added to a line level, the custom attribute isn't transferred to Dynamics 365 Finance. This issue results in invoices failing at posting or posting with a blank dimension attribute.  
-|Bug fix - Fixed derivation issues while populating details from purchase orders. | Improved derivation accuracy when populating item numbers where product variants are used on the purchase order. For example, a purchase order has lines with items that contain product variants. The invoice doesn't contain an item number, but it contains a line description. The purchase order number and line are populated, but the item number isn't populated.|
+| Feature | Description |
+| --- | --- |
+| Enhanced invoice derivation plugin for better performance (preview) | The derivation logic is updated for better performance when deriving. |
+| Improvements when transferring invoices to Dynamics 365 Finance to prevent invoices getting stuck in **Awaiting** status (preview) | This improvement updates the transfer of invoices from Invoice capture to Dynamics 365 Finance to be asynchronous to avoid plugin timeouts. To review the new statuses available in Invoice capture, see [Captured invoice statuses](../accounts-payable/invoice-capture-workspace.md#captured-invoice-statuses). |
+| Improved accessibility for side-by-side viewer | Implemented tab sequence and the ability to move between lines and cells by using the keyboard. For more information, see [Power Apps keyboard shortcuts for editable grid views](/power-apps/user/keyboard-shortcuts#editable-grids-views). |
+| Bug fix - Procurement category derivation is optimized for performance when using invoice line descriptions | This fix resolves an issue where customers see invoices stuck in **In processing** due to a large number of defined procurement categories. |
+| Bug fix - Improved derivation accuracy for invoice types. | This fix addresses an issue when deriving the invoice type. If the invoice header doesn't have both the vendor account and legal entity, the derivation doesn't consider if the derived value is one of the allowed types. This issue results in invoices being marked as PO Invoices when Invoice capture is configured to classify invoices only as Cost invoices. |
+| Bug fix - Improved performance of **Remove all lines** | This fix resolves an issue where the system is unresponsive when customers select **Remove all** to delete multiple line items in Invoice capture. |
+| Bug fix - Fixed consistency issues during invoice validation and transfer | This fix resolves an issue where custom attributes are missing when transferring to Finance. For example, if a custom dimension is added to a line level, the custom attribute isn't transferred to Dynamics 365 Finance. This issue results in invoices failing at posting or posting with a blank dimension attribute.  
+| Bug fix - Fixed derivation issues while populating details from purchase orders | Improved derivation accuracy when populating item numbers where product variants are used on the purchase order. For example, a purchase order has lines with items that contain product variants. The invoice doesn't contain an item number, but it contains a line description. The purchase order number and line are populated, but the item number isn't populated. |
 
 ## August 2025
 
@@ -109,7 +121,7 @@ The August release of the Invoice capture solution version 1.9.8.x includes the 
 | --- |--- |
 |Bug Fix |The **Link purchase order line to invoice line** page only displayed 50 lines. Updated to remove the 50 line restriction. |
 |Bug Fix |Inconsistent derivation results were encountered during cache lookup errors. Users encountered issues where vendor wasn't derived.  |
-|Feature |Copy and paste support from PDF image to Invoice capture page. Users can now select text and numbers from the PDF page, and copy the selection to the invoice fields for easier data updates. Keyboard shortcuts of Ctrl+C and Ctrl+V are supported.|
+|Feature |Copy and paste support from PDF image to the Invoice capture page. Users can now select text and numbers from the PDF page, and copy the selection to the invoice fields for easier data updates. Keyboard shortcuts of Ctrl+C and Ctrl+V are supported.|
 
 ## July 2025
 
@@ -148,7 +160,7 @@ The June release of the Invoice capture solution version 1.9.6.x contains the fo
 ### Feature enhancements
 
 | Feature | Description |
-| --- |--- |
+| --- | --- |
 | Multi-line selection and removal for invoice lines | The select all and multi-line removal feature simplifies the review process for invoices that have multiple lines. You can now use a single checkbox to select or clear the selection of all invoice lines on the current page. Therefore, you can more quickly remove unwanted lines. This feature is useful for invoices that have hundreds of entries. A confirmation dialog ensures safe deletion, and a notification confirms success. |
 | Quantity decimal precision configuration | The **Quantity decimal precision** feature lets you control the number of decimal places that are shown for quantity fields. Quantity fields were previously limited to two decimal places. This limitation caused problems in precision-sensitive industries like steel manufacturing. A new dropdown list lets you select between two decimal places (the default setting) and three decimal places for greater accuracy. |
 
@@ -167,7 +179,7 @@ The May release of the invoice capture solution version 1.9.5.3 contains the fol
 The April release of the Invoice capture solution version 1.9.3.10 contains the following features and bug fixes.
 
 | Feature | Description |
-| --- |--- |
+| --- | --- |
 | Bug fix | Fixed cache problems with custom field mapping. While processing invoices by using a custom model with custom fields mapped to the invoice header, users received **Can't find field ‘xxx_xxxx’ with field level '{fieldLevel}'** error. An outdated internal cache caused this problem. |
 | Bug fix | Performance problem - Staging invoice derivation uses ecoresreleaseddistinctproductcdsentity. Fixed a problem where captured invoices get stuck in an **In processing** state prior to being available for review. |
 
@@ -176,7 +188,7 @@ The April release of the Invoice capture solution version 1.9.3.10 contains the 
 The February release of the Invoice capture solution version 1.9.1.X contains the following features and bug fixes.
 
 | Feature | Description |
-| --- |--- |
+| --- | --- |
 | Feature | Added *currency code* as an attribute for optical character recognition (OCR). AI builder now recognizes *currency code* as an attribute from invoices as part of the OCR process. |
 | Bug fix | Fixed formatting problems that occur while a purchase order is being identified. |
 | Bug fix | Fixed a problem where continuous learning fails to identify items if the description contains special characters. |
@@ -187,7 +199,7 @@ The February release of the Invoice capture solution version 1.9.1.X contains th
 The December release of the Invoice capture solution version 1.9.0.X contains the following features and bug fixes.
 
 | Feature | Description |
-| --- |--- |
+| --- | --- |
 | Feature | Automatically remove invalid field value – If you enable this feature, values are automatically removed if they don't exist in the lookup list. This feature eliminates the need to manually remove values during the review. Therefore, it streamlines the process. |
 | Feature | Synchronize vendors based on filter conditions – You can set filter conditions to sync only vendors that are suitable for inclusion in Invoice capture. |
 | Feature | Synchronize deleted legal entities and vendor accounts – When legal entities or vendor accounts are deleted in Dynamics 365 Finance, they have an **Inactive** status. Inactive legal entities or vendor accounts aren't derived during Invoice capture processing. Invoices that have inactive legal entities or vendor accounts can't be transferred to finance and operations apps. |
@@ -198,9 +210,9 @@ The December release of the Invoice capture solution version 1.9.0.X contains th
 The September release of the Invoice capture solution version 1.8.0.X contains the following features and bug fixes.
 
 | Feature | Description |
-| --- |--- |
+| --- | --- |
 | Bug fix | Date format – This release addresses a date formatting issue that's caused by ambiguity in date recognition. In the updated version, when a user corrects the date on the first invoice from a vendor, the corresponding date format is automatically applied to future invoices from the same vendor. This functionality is enabled when the **Using continuous learning** parameter is active. |
-|Bug fix | Resizing side-by-side viewer column – Users can now adjust column widths in the side-by-side viewer. |
+| Bug fix | Resizing side-by-side viewer column – Users can now adjust column widths in the side-by-side viewer. |
 | Bug fix | Item number validation – Validation errors occur if an item number on the linked purchase line contains different variants. Even though the item number matches the one on the purchase order, invoice processing is blocked. |
 | Bug fix | **Charges code** field – The **Charges code** field wasn't available if customers define a custom field, and its technical field group is set to **Charge**. |
 
@@ -209,7 +221,7 @@ The September release of the Invoice capture solution version 1.8.0.X contains t
 The August release of the Invoice capture solution version 1.7.0.X contains the following features and bug fixes.
 
 | Feature | Description |
-| --- |--- |
+| --- | --- |
 | Feature | Improved the **Link invoice line to purchase line** page so that it shows purchase line options even when the item number or expense type isn't specified. |
 | Feature | Added a group access level above the legal entity in the channel definition. This feature supports cases where a single Accounts Payable (AP) clerk manages multiple legal entities. |
 | Feature | Add the ability for users to reset the status of received files when long documents are stuck in processing. |
