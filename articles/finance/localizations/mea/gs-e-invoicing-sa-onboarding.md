@@ -4,7 +4,7 @@ description: Learn how to onboard taxpayers and their electronic invoicing softw
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
-ms.date: 05/04/2026
+ms.date: 09/01/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2024-01-29
@@ -18,19 +18,19 @@ ms.custom:
 
 This article explains how to onboard taxpayers and their electronic invoicing software with the Saudi Arabian tax authority in Microsoft Dynamics 365 Finance.
 
-Onboarding is mandatory for all taxpayers who are subject to electronic invoicing in Saudi Arabia. As a result of the onboarding process, taxpayers obtain Cryptographic Stamp Identifiers (CSIDs). CSIDs are required for integration with the electronic invoicing portal that the Saudi Arabian tax authority (Zakat, Tax and Customs Authority \[ZATCA\]) manages, and for further submission of electronic invoices.
+Onboarding is mandatory for all taxpayers who are subject to electronic invoicing in Saudi Arabia. As a result of the onboarding process, taxpayers get Cryptographic Stamp Identifiers (CSIDs). You need CSIDs for integration with the electronic invoicing portal that the Saudi Arabian tax authority (Zakat, Tax and Customs Authority \[ZATCA\]) manages, and for further submission of electronic invoices.
 
 ## Prerequisites
 
 - The legal entity must be registered as a taxpayer in Saudi Arabia and must have a valid value-added tax (VAT) registration number.
-- The legal entity must have the access to the [Saudi Arabian Taxation Portal (ERAD)](https://fatoora.zatca.gov.sa/).
+- The legal entity must have access to the [Saudi Arabian Taxation Portal (ERAD)](https://fatoora.zatca.gov.sa/).
 
 ## Onboarding process
 
 The onboarding process consists of two steps:
 
-1. Obtain a Compliance CSID (CCSID), which ZATCA assigns to perform compliance checks on electronic invoice generation solutions (EGSs).
-1. Obtain a Production CSID (PCSID), which ZATCA assigns to compliant EGSs.
+1. Get a Compliance CSID (CCSID), which ZATCA assigns to perform compliance checks on electronic invoice generation solutions (EGSs).
+1. Get a Production CSID (PCSID), which ZATCA assigns to compliant EGSs.
 
 ### Obtain a CCSID
 
@@ -38,13 +38,13 @@ To obtain a CCSID, follow these steps:
 
 1. In the [Saudi Arabian Taxation Portal (ERAD)](https://fatoora.zatca.gov.sa/), go to the Onboarding and Management Portal by selecting the relevant tile.
 1. On the main landing page of the Onboarding and Management Portal, select the **Onboard new solution unit/device** tile, and then select **Generate OTP code**.
-1. Select the number of one-time password (OTP) codes to generate. The number depends on the number of e-invoicing generation units (devices) that will be used.
-1. Save the generated OTP codes so that you can use them in later steps.
+1. Select the number of one-time password (OTP) codes to generate. The number depends on the number of e-invoicing generation units (devices) that you'll use.
+1. Save the generated OTP codes so you can use them in later steps.
 
     > [!IMPORTANT]
-    > OTP codes are valid for only one hour after they're generated. Make sure that you use them within that time.
+    > OTP codes are valid for only one hour after they're generated. Ensure you use them within that time.
 
-1. Prepare a configuration file for the certificate signing request (CSR). This configuration file should be in the form of a plain text file that contains the following data.
+1. Prepare a configuration file for the certificate signing request (CSR). Create this configuration file as a plain text file that contains the following data.
 
     ```txt
     oid_section = OIDs
@@ -56,19 +56,19 @@ To obtain a CCSID, follow these steps:
     req_extensions = v3_req
     x509_extensions = v3_ca
     prompt = no
-    default_md = sha 256
+    default_md = sha256
     req_extensions = req_ext
     distinguished_name = dn
     [dn]
     C=SA
     OU=Riyad Branch
     O=Contoso
-    CN=EA123456789
+    CN=PREZATCA-Code-Signing
     [v3_req]
     basicConstraints = CA:FALSE
     keyUsage = digitalSignature, nonRepudiation, keyEncipherment
     [req_ext]
-    certificateTemplateName = ASN1:PRINTABLESTRING:ZATCA-Code-Signing
+    certificateTemplateName = ASN1:PRINTABLESTRING:PREZATCA-Code-Signing
     subjectAltName = dirName:alt_names
     [alt_names]
     SN=1-TST|2-TST|3-ed22f1d8-e6a2-1118-9b58-d9a8f11e445f
@@ -86,57 +86,52 @@ To obtain a CCSID, follow these steps:
     | C                 | The country/region code. | A two-letter code (ISO 3166 Alpha-2). |
     | OU                | The name of the organization unit. | For normal taxpayers, the value is free text. For VAT groups, identify the value through the fact that the eleventh digit of the organization identifier is "1". Validate that the input is a 10-digit Tax Identification Number (TIN). |
     | O                 | The name of the organization or taxpayer. | Free text. |
-    | CN                | The unique name of the solution or unit. | Free text. |
-    | SN                | The unique identification code for the solution. | Free text. |
+    | CN                | Unique Name or Asset Tracking Number of the Solution Unit provided by the Taxpayer for each Solution unit| Use <ul><li>**PREZATCA-Code-Signing** value for simulation</li><li>your actual number for production</li></ul> |
+    | certificateTemplateName| The unique name of the solution or unit. | Use <ul><li>**ASN1:PRINTABLESTRING:PREZATCA-Code-Signing** value for simulation</li><li>**ASN1:PRINTABLESTRING:ZATCA-Code-Signing** for production</li></ul> |
+    | SN                | Manufacturer or Solution Provider Name, Model or Version and Serial Number. Automatically filled and not by the Taxpayer: Unique identification code for the EGS. | Free text. |
     | UID               | The VAT registration number of the taxpayer. | A 15-digit number that begins with "3" and ends with "3". |
     | title             | The document type that the taxpayer's solution unit will issue. | Four-digit numerical input that uses "0" and "1" mapped to "TSCZ": "0" = False/Not supported, and "1" = True/Supported. "T" = Tax invoice (standard), "S" = Simplified tax invoice, "C" = For future use, and "Z" = For future use. |
     | registeredAddress | The address of the branch or location where the device or solution unit is primarily situated. | Free text. |
     | businessCategory  | The industry or sector that the device or solution will generate invoices for. | Free text. |
 
-    > [!NOTE]
-    > When you use the simulation portal, the values for **CN** and **certificateTemplateName** in the CSR configuration file differ.
-    >
-    > In the simulation portal, use the following values:
-    >
-    > - **CN:** PREZATCA-Code-Signing
-    > - **certificateTemplateName:** ASN1:PRINTABLESTRING:PREZATCA-Code-Signing
-    >
-    > For all other cases, use the values that were provided earlier.
-
 1. Run the [onboarding script](#script) that's provided later in this article. Specify the OTP code and the CSR configuration file as input parameters. Here's an example.
 
-    `.\OnboardingScript.ps1 -action getComplianceCSID -otp 123345 -csrconfig .\csr_config.txt -password 123`
+    - for CCSID in simulation environment: 
+    `.\OnboardingScript.ps1 -action getComplianceCSID -otp 123345 -csrconfig .\csr_config.txt -environment simulation`
+
+    - for CCSID in production environment: 
+    `.\OnboardingScript.ps1 -action getComplianceCSID -password 123 -environment production`
 
     > [!NOTE]
-    > The **password** parameter is optional and can be omitted. If it's included, the certificate that's generated will have the specified password.
+    > The **password** parameter is optional and can be omitted. If you include it, the certificate you generate has the specified password.
 
-1. You receive the CCSID as a certificate file, **CCSID.pfx**. The secret for the CCSID is saved as a text file, **CCSIDSecret.txt**. Save the CCSID certificate file in the Microsoft Azure Key Vault certificate, and save the secret in the Key Vault secret. For more information, see [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md).
-1. Configure the related feature setup in the **Saudi Arabian ZATCA compliance check (SA)** Electronic invoicing feature, and reference the CCSID certificate that you saved in the key vault. The certificate will be used for communication with the ZATCA electronic invoicing portal.
+1. You receive the CCSID as a certificate file, **CCSID.pfx**. Save the secret for the CCSID as a text file, **CCSIDSecret.txt**. Save the CCSID certificate file in the Microsoft Azure Key Vault certificate, and save the secret in the Key Vault secret. For more information, see [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md).
+1. Configure the related feature setup in the **Saudi Arabian ZATCA compliance check (SA)** Electronic invoicing feature, and reference the CCSID certificate that you saved in the key vault. Use the certificate for communication with the ZATCA electronic invoicing portal.
 
 ### Compliance check
 
-After you obtain a CCSID by using the PowerShell script, ZATCA requires that you complete specific compliance checks by submitting sample invoices. This step is a prerequisite for requesting a PCSID.
+After you get a CCSID by using the PowerShell script, ZATCA requires that you complete specific compliance checks by submitting sample invoices. This step is a prerequisite for requesting a PCSID.
 
-Ensure that all types of sample invoices that you configured in the CSR configuration file are successfully submitted to ZATCA. Use the standard process for issuing electronic invoices. For more information, see [Issue electronic invoices in Finance and Supply Chain Management](../global/e-invoicing-submit-electronic-documents.md).
+Ensure that you successfully submit to ZATCA all types of sample invoices that you configured in the CSR configuration file. Use the standard process for issuing electronic invoices. For more information, see [Issue electronic invoices in Finance and Supply Chain Management](../global/e-invoicing-submit-electronic-documents.md).
 
-Follow the steps in [Electronic invoicing in Saudi Arabia - Phase two](gs-e-invoicing-sa-get-started.md). Use the **Saudi Arabian ZATCA compliance check (SA)** Electronic invoicing feature and the CCSID that you obtain.
+Follow the steps in [Electronic invoicing in Saudi Arabia - Phase two](gs-e-invoicing-sa-get-started.md). Use the **Saudi Arabian ZATCA compliance check (SA)** Electronic invoicing feature and the CCSID that you get.
 
-After the compliance checks are successfully completed, use the PowerShell script to obtain a PCSID. (See the [onboarding script](#script) that's provided later in this article.)
+After you complete the compliance checks, use the PowerShell script to get a PCSID. (See the [onboarding script](#script) that's provided later in this article.)
 
 > [!NOTE]
-> If the document type in the **title** field of the CSR configuration file is set to **1000**, you must submit the following three sample invoices for the compliance check:
+> If you set the document type in the **title** field of the CSR configuration file to **1000**, you must submit the following three sample invoices for the compliance check:
 >
 > - Standard Tax Invoice
 > - Standard Debit Note
 > - Standard Credit Note
 >
-> If the document type is set to **0100**, you must submit the following three sample invoices for the compliance check:
+> If you set the document type to **0100**, you must submit the following three sample invoices for the compliance check:
 >
 > - Simplified Tax Invoice
 > - Simplified Debit Note
 > - Simplified Credit Note
 >
-> If the document type is set to **1100**, you must submit all six sample invoices for the compliance check.
+> If you set the document type to **1100**, you must submit all six sample invoices for the compliance check.
 
 ### Obtain a PCSID
 
@@ -144,34 +139,80 @@ To obtain a PCSID, you must correctly configure the solution for electronic invo
 
 To obtain a PCSID, follow these steps:
 
-1. Ensure that all electronic invoices are successfully submitted to ZATCA.
+1. Ensure that you successfully submit all electronic invoices to ZATCA.
 1. Run the [onboarding script](#script) that's provided later in this article. Specify the CCSID as an input parameter. Here's an example.
 
-    `.\OnboardingScript.ps1 -action getProductionCSID -password 123`
+   `.\OnboardingScript.ps1 -action getProductionCSID -password 123 -environment production`  
+    
+   > [!NOTE]
+    > The **password** parameter is optional and can be omitted. If you include it, the generated certificate has the specified password.
 
-    > [!NOTE]
-    > The **password** parameter is optional and can be omitted. If it's included, the certificate that's generated will have the specified password.
-
-1. You receive the PCSID as a certificate file in PFX format. Save this PCSID certificate and secret file in the key vault.
+1. Receive the PCSID as a certificate file in PFX format. Save this PCSID certificate and secret file in the key vault.
 1. Configure the related feature setup in the **Saudi Arabian Zatca submission (SA)** Electronic invoicing feature. Include the PCSID certificate and secret in the Key Vault parameters.
 
-After you complete all the configurations steps, the system is ready to be used in production mode.
+After you complete all the configuration steps, the system is ready to use in production mode.
 
-To review the obtained CSIDs on the ZATCA side, use the **Review Existing Cryptographic Stamp Identifier (CSID)** tile on the landing page of the Onboarding and Management Portal. This portal is accessible from the main [Saudi Arabian Taxation Portal (ERAD)](https://fatoora.zatca.gov.sa/).
+To review the obtained CSIDs on the ZATCA side, use the **Review Existing Cryptographic Stamp Identifier (CSID)** tile on the landing page of the Onboarding and Management Portal. You can access this portal from the main [Saudi Arabian Taxation Portal (ERAD)](https://fatoora.zatca.gov.sa/).
 
 ## <a id="script"></a>Onboarding script
 
 > [!NOTE]
-> The sample scripts aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
+> Microsoft doesn't support the sample scripts under any standard support program or service. The sample scripts are provided as-is without warranty of any kind. Microsoft disclaims all implied warranties, including without limitation, any implied warranties of merchantability or of fitness for a particular purpose. You assume all risk arising from the use or performance of the sample scripts and documentation. In no event is Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts liable for any damages whatsoever, including without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss, arising from the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
 
-1. Use the following Windows PowerShell script to obtain a CCSID and a PCSID.
+1. Use the following Windows PowerShell script to get a CCSID and a PCSID.
 
 ```powershell
 #Saudi Arabian electronic invoice onboarding script
-#Version 1.2
-param($action, $otp, $csrconfig, $password)
+#Version 1.3 (adds -environment switch for Simulation vs Production, better error output)
+param(
+    $action,
+    $otp,
+    $csrconfig,
+    $password,
+    [ValidateSet("simulation","production")]
+    $environment = "production"
+)
 $env:path = $env:path + ";C:\Program Files\Git\usr\bin"
- 
+
+# Select the correct ZATCA base URL for the target environment.
+# Simulation onboarding (Fatoora Simulation portal) and Production onboarding
+# (Fatoora portal) use DIFFERENT endpoints on the same gateway host.
+if ($environment -eq "simulation")
+{
+    $baseUri = 'https://gw-fatoora.zatca.gov.sa/e-invoicing/simulation'
+}
+else
+{
+    $baseUri = 'https://gw-fatoora.zatca.gov.sa/e-invoicing/core'
+}
+$complianceUri = "$baseUri/compliance"
+$productionCsidUri = "$baseUri/production/csids"
+Write-Host "Target environment: $environment"
+Write-Host "Compliance endpoint: $complianceUri"
+
+# Helper to print a meaningful error (HTTP status + response body when available)
+function Write-ZatcaError($err, $contextMessage)
+{
+    Write-Host "`nZatca service communication error:"
+    Write-Host $err.Exception.Message
+    try {
+        if ($err.Exception.Response -ne $null)
+        {
+            $statusCode = [int]$err.Exception.Response.StatusCode
+            Write-Host "HTTP status code: $statusCode"
+            $stream = $err.Exception.Response.GetResponseStream()
+            if ($stream -ne $null)
+            {
+                $reader = New-Object System.IO.StreamReader($stream)
+                $body = $reader.ReadToEnd()
+                if ($body) { Write-Host "Response body: $body" }
+            }
+        }
+    } catch { }
+    Write-Host $contextMessage
+    Write-Host "Also confirm you are using the correct environment endpoint (simulation vs. core) and that the OTP was generated in the matching Fatoora portal and used within 1 hour."
+}
+
 if ($action -eq "getComplianceCSID")
 {
     if (-not (Test-Path -Path $csrconfig))
@@ -210,13 +251,11 @@ if ($otp -eq $null)
  
 try
     {
-        $response = Invoke-WebRequest -Uri 'https://gw-fatoora.zatca.gov.sa/e-invoicing/core/compliance' -Method POST -Body $postParams -Headers $postHeader
+        $response = Invoke-WebRequest -Uri $complianceUri -Method POST -Body $postParams -Headers $postHeader
     }
     catch
     {
-        Write-Host "`nZatca service communication error:"
-        Write-Host $_.Exception.Message
-        Write-Host "Please make sure the OTP code in script parameter and Serial Number (SN) in configuration file are valid."
+        Write-ZatcaError $_ "Please make sure the OTP code in script parameter and Serial Number (SN) in configuration file are valid."
         Write-Host "The process of obtaining a Compliance CSID (CCSID) is interrupted."
     }
  
@@ -299,13 +338,11 @@ $requestId = Get-Content -path requestId.txt -Raw
  
 try
     {
-        $response = Invoke-WebRequest -Uri 'https://gw-fatoora.zatca.gov.sa/e-invoicing/core/production/csids' -Method POST -Body $postParams -Headers $postHeader
+        $response = Invoke-WebRequest -Uri $productionCsidUri -Method POST -Body $postParams -Headers $postHeader
     }
     catch
     {
-        Write-Host "`nZatca service communication error:"
-        Write-Host $_.Exception.Message
-        Write-Host "Please make sure the compliance check process has been done before obtaining a Production CSID (PCSID)."
+        Write-ZatcaError $_ "Please make sure the compliance check process has been done before obtaining a Production CSID (PCSID)."
         Write-Host "The process of obtaining a Production CSID (PCSID) is interrupted."
     }
  
@@ -333,20 +370,12 @@ $Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding $False
         [System.IO.File]::WriteAllLines($PCSIDCertFilePath, $PCSIDCertString, $Utf8NoBomEncoding)
         [System.IO.File]::WriteAllLines($PCSIDSecretFilePath, $PCSIDSecret, $Utf8NoBomEncoding)
  
-        # Sandbox API will get error: openssl : No certificate matches private key
-        openssl pkcs12 -inkey privatekey.pem -in PCSID.pem -export -passout pass:$password -out PCSID.pfx
- 
-if (Test-Path -Path PCSID.pfx)
-        {
-            Write-Host "`nCertificate is saved to PCSID.pfx file and secret is saved to PCSIDSecret.txt file."
-            Write-Host "The process of obtaining a Production CSID (PCSID) is complete."
-        }
-        else
-        {
-            Write-Host "`nThe process of obtaining a Production CSID (PCSID) is interrupted."
-        }
+openssl pkcs12 -inkey privatekey.pem -in PCSID.pem -export -passout pass:$password -out PCSID.pfx
+        Write-Host "`nCertificate is saved to PCSID.pfx file and secret is saved to PCSIDSecret.txt file."
+        Write-Host "The process of obtaining a Production CSID (PCSID) is complete."
     }
 }
+
 ```
 
 1. Save the output .pfx certificate file that you receive in the key vault.
