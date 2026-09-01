@@ -17,6 +17,8 @@ ms.dyn365.ops.version: 8.1.1
 
 # Manage sandbox environments across implementation projects
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 Managing sandboxes across implementation projects is an important aspect of implementing finance and operations apps. By following the steps outlined in this article, you can ensure that you stay within your purchased sandbox limits.
 
 When you implement finance and operations apps, it's crucial that you have the appropriate number of sandboxes for your development, testing, and training purposes. Sandboxes let you test modifications to finance and operations apps before you affect your production environment. Microsoft provides one production environment and one sandbox environment with the purchase of 20 user licenses for finance and operations apps. However, many customers require more than one sandbox. Therefore, you can purchase more sandboxes from the Microsoft 365 portal.

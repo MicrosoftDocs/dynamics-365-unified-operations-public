@@ -15,7 +15,7 @@ ms.assetid: 46ed0115-6f8b-4757-b8d2-d4ccb76c733d
 
 # Version control, metadata search, and navigation
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This tutorial shows you how to configure Microsoft Azure DevOps to enable source control on your models. It also helps you learn about other productivity features in the development tools, including the ability to create and organize TODO tasks, search metadata and source code, navigate between related model elements, and create a project from a model.
 

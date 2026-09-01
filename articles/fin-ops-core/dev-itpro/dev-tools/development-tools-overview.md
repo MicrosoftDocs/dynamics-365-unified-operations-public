@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Development tools in Visual Studio
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## What are the development tools?
 

@@ -25,6 +25,8 @@ ms.dyn365.ops.version: Platform update 24
 
 # Optimize performance by scheduling batch jobs after hours
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 

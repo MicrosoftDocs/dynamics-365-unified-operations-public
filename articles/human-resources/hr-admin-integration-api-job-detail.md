@@ -23,6 +23,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Job detail API
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 This article provides details and an example query for the Job detail entity in Dynamics 365 Human Resources.
 
 ## Properties

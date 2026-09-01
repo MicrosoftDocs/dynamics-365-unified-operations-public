@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Platform update 4
 
 # Extensibility home page
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Partners, value added resellers (VARs), and even some customers extensively customize Dynamics 365 Finance, Supply Chain, and Commerce. The ability to customize the product is a strength that historically was supported through overlayering of the application code. The move to the cloud, together with more agile servicing and frequent updates, requires a less intrusive customization model, so that updates are less likely to affect custom solutions. This new model is called *extensibility* and it replaces customization through overlayering.
 

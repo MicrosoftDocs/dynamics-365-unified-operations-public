@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.14
 
 # Submit invoices to the workflow system and match product receipt lines
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains the process of submitting vendor invoices to the workflow system and automatically matching posted product receipt lines to vendor invoices.
 

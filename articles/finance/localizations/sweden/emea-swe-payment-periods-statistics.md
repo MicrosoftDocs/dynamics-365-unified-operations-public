@@ -14,6 +14,8 @@ ms.custom:
 
 # Report statistics of vendor payment periods
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article explains how to set up and generate the statistics of vendor payment periods required for Sweden in Microsoft Dynamics 365 Finance.
 
 As of March 1, 2022, a regulation implemented in Sweden mandates that large companies must report their payment terms with subcontractors to the Swedish Companies Registration Office (SCRO) (Bolagsverket). Large companies are defined as those that have 250 or more employees. This regulation is designed to counteract the trend of extending payment terms. Its purpose is to foster growth among smaller Swedish companies by creating the best possible conditions for them to develop and grow.

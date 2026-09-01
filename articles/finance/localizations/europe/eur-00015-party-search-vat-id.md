@@ -15,7 +15,7 @@ ms.search.form: DirPartyTable, DirPartTaxRegistrationSearch
 
 # EUR-00015 Party search using VAT ID
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to perform a party search by using a registration ID in Microsoft Dynamics 365 Finance.
 

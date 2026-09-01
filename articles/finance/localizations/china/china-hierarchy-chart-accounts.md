@@ -15,7 +15,7 @@ ms.custom:
 
 # CN-00010 China hierarchy of chart of accounts
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to create a chart of accounts in a hierarchy tree structure by setting up multiple levels for ledger accounts in China with Microsoft Dynamics 365 Finance.
 

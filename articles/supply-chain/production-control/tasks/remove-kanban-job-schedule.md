@@ -12,7 +12,7 @@ ms.search.form: KanbanJobSchedulingListPage, SysLookupMultiSelectGrid, KanbanJob
 
 # Remove a kanban job from the schedule
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure focuses on removing a planned process kanban job from the schedule by reverting the job status to Not planned. The demo data company used to create this procedure is USMF. This procedure is intended for the shop floor supervisor or production planner.
 

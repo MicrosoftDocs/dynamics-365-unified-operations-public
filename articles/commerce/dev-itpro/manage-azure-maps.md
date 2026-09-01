@@ -15,7 +15,7 @@ ms.custom:
 
 # Manage Azure Maps for your organization
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to manage Microsoft Azure Maps in Dynamics 365 Commerce.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Limit manual time series edits with time fences
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 *Time fences* let demand planning managers define rules that prevent users from *manually* editing time series values that are associated with a specified time span. They ensure that agreed-upon plans remain intact and unchanged during specified periods. Time fences are similar to [time freezes](time-freeze.md), which are used to prevent the system from *automatically* editing certain existing time series values when you use [rolling forecasts](rolling-forecasts.md) or when you manually rerun a forecast to update an existing time series. However, time fences only prevent *manual* updates.
 

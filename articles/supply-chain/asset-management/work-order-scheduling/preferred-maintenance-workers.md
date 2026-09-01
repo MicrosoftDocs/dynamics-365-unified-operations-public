@@ -12,7 +12,7 @@ ms.search.form: EntAssetWorkerPreferred
 
 # Set up preferred maintenance workers
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 During work order scheduling, you can make a preference regarding which maintenance worker or worker group is allocated to complete the work order. The use of this functionality is optional, but it can help you make a choice for the most qualified maintenance worker to complete a job, based on worker skills and competencies. Only maintenance workers that are available at scheduling time will be scheduled. If a preferred maintenance worker setup matches a work order during scheduling, but the maintenance worker is allocated to other jobs, the work order will be scheduled to another available maintenance worker.
 

@@ -16,7 +16,7 @@ ms.custom: sfi-image-nochange
 
 # Sign up for preview subscriptions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to subscribe to the preview or partner offer and deploy an environment. The subscription that you create gives you a Microsoft Online Services test tenant and a Microsoft Dynamics 365 Lifecycle Services project where you can deploy an environment. This article also helps you set up additional users in your Microsoft Online Services tenant and gain experience with service administration capabilities. Here are the skills that you learn:
 

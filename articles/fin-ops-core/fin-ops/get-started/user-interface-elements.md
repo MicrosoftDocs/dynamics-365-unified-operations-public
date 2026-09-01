@@ -16,6 +16,8 @@ ms.custom:
 
 # User interface elements
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article describes the user interface (UI) elements used in the app. Before users can navigate the interface, it's important to know the names and functions of the elements that make up the interface.
 
 - **Action Pane** - The bar beneath the navigation bar. Here, you can select tabs to change records shown in the page. You can edit and save the records here.  

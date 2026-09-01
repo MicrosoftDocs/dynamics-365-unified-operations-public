@@ -15,6 +15,8 @@ ms.dyn365.ops.version:
 
 # Install the Excel add-in for Business performance planning
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article describes how to install the Microsoft Excel add-in for the Business performance planning app.
 
 ## Prerequisites

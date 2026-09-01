@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Platform update 33
 
 # Point-in-time restore of the production database to a sandbox environment
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can use Microsoft Dynamics Lifecycle Services to restore the production database to a user acceptance testing (UAT) sandbox environment. Microsoft maintains [automated backups](/azure/sql-database/sql-database-automated-backups) of the business and financial reporting databases for 28 days for production environments and seven days for sandbox environments.
 

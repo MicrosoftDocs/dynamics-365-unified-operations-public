@@ -13,6 +13,8 @@ ms.search.form: InventPosting, InventItemGroup, ProdGroup, WrkCtrTable, WrkCtrRe
 
 # Production postings
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article provides information about different types of posting in the production order process.
 
 

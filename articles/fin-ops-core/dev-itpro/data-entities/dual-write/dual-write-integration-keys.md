@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Manage dual-write integration keys
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Dual-write integration keys are the natural key for an entity that uniquely identifies a row of a Dataverse table. When a dual-write operation starts in finance and operations apps, the key helps find the correct record to perform that operation on in the Dataverse table. For example, for a dual-write map that associates a finance and operations entity with the Global Product table in Dataverse, you must define the integration key for the Global Product table to ensure that the map is processed correctly. An update or deletion of the product record in finance and operations apps can then find the unique related record to perform the operation on in the Global Product table.
 

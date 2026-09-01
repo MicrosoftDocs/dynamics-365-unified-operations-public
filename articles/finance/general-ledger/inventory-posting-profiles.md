@@ -16,7 +16,7 @@ ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
 
 # Inventory posting profiles
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Inventory posting profiles control the posting of inventory subledger transactions to the general ledger. Inventory subledger transactions can be generated from many modules including **Sales and marketing**, **Procurement and sourcing**, **Production control**, and more. Inventory subledger transactions might be posted anytime an item is used in a sales order or purchase order.
 

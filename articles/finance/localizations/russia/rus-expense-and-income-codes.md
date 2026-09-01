@@ -14,7 +14,7 @@ ms.search.validFrom: 2019-03-01
 
 # Expense and income codes
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with expense and income codes available for Russia in Microsoft Dynamics 365 Finance.
 

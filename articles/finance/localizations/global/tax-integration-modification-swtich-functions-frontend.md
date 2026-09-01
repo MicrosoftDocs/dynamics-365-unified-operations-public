@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 
 # Modifications on the switch function and the front end
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains the modifications that are required on switch functions and the front end to integrate a new transaction.
 

@@ -17,7 +17,7 @@ ms.search.validFrom: 2020-06-25
 
 # Set up the mapping for the sales order status columns
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The columns that indicate sales order status have different enumeration values in Microsoft Dynamics 365 Supply Chain Management and Dynamics 365 Sales. You need extra setup to map these columns in dual-write.
 

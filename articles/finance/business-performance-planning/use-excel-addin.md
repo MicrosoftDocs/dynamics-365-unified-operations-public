@@ -15,6 +15,8 @@ ms.dyn365.ops.version:
 
 # Configure and use the Excel add-in for Business performance planning
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article describes how to configure and use the Microsoft Excel add-in for Business performance planning.
 
 The process of configuring and using the Excel add-in involves the following tasks:

@@ -16,7 +16,7 @@ ms.assetid: f3df4b82-84d9-401e-8d7f-cfd42772621c
 
 # Turn off model customization and deprecate functionality
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the process of disabling customization of a model. By following this process, you make the model ineligible for over-layering. Developers can still extend that model. This article also describes how you can deprecate obsolete functionality.
 

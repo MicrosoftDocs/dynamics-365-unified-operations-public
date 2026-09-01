@@ -17,7 +17,7 @@ ms.custom:
 
 # System-defined buttons
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the system-defined buttons.
 

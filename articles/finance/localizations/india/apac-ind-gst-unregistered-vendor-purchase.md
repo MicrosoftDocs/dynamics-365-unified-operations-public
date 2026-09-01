@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 7.3
 
 # Purchase a taxable item from an unregistered vendor (India)
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article shows you how to create a purchase order that includes a taxable item for an unregistered vendor in India.
 

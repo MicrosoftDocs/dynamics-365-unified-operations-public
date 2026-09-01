@@ -12,7 +12,7 @@ ms.search.form: SMAServiceOrderTable
 
 # Change the service order stage
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Follow these steps to move a service order to the next stage in the service workflow or revert it to a previous stage.
 

@@ -17,7 +17,7 @@ ms.custom:
 
 # Mock the signed-in state during local development
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to mock a signed-in user in a Microsoft Dynamics 365 Commerce online local development environment.
 

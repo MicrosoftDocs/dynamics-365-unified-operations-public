@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Create a tax journal
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You can use a tax journal to post a tax adjustment journal. For reverse charge transactions where the tax credit should be claimed after the authority settlement, you can use a tax journal to claim the tax credit.
 

@@ -12,7 +12,7 @@ ms.search.form: WHSParameters, ReturnDispositionCode, WHSDispositionTable, WHSRe
 
 # Receive unannounced sales returns
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In Microsoft Dynamics 365 Supply Chain Management, the [sales return process](../sales-marketing/sales-returns.md) usually starts when you create a return material authorization (RMA) order. The process of creating an RMA order supports a scenario where the reason for the return isn't immediately apparent or disclosed. The RMA order serves as the primary document that guides subsequent steps in the return process, including warehouse arrival and the receiving procedures.
 

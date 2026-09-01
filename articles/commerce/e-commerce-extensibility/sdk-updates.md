@@ -13,7 +13,7 @@ ms.custom:
 ---
 # SDK and module library updates
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article covers regular updates that Microsoft releases as part of the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 

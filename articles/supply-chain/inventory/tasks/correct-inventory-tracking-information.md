@@ -13,7 +13,7 @@ ms.custom:
 
 # Correct inventory tracking information
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure walks you through the process of creating and posting an inventory transfer journal to correct inventory tracking information. In this example, you update the information of a batch-controlled item by changing an incorrectly registered batch to another batch. You can walk through this procedure in demo data company *USPI*, or use your own data. If you use your own data, you need to have an item that's batch-enabled, and it must not be location-controlled. You also need to have an inventory journal name set up for inventory transfers. These tasks are normally carried out by a warehouse employee.
 

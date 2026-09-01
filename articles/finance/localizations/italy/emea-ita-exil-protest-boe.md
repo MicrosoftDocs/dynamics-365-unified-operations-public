@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.10
 
 # Bills of exchange protest import 
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and import Protest information from the electronic Bill of exchange protest file received from the bank.
 

@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Enable change tracking for entities
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 By using change tracking, you can incrementally export data from finance and operations apps by using Data management. In an incremental export, you export only records that changed. To enable incremental export, enable change tracking on entities. If you don't enable change tracking on an entity, you can only enable a full export each time.
 

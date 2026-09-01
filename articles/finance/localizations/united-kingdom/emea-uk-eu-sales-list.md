@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-08-06
 
 # EU Sales list for UK (Northern Ireland)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up the European Union (EU) sales list report for UK (Northern Ireland) in Microsoft Dynamics 365 Finance.
 

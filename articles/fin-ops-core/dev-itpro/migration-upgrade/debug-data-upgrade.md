@@ -15,7 +15,7 @@ ms.service: dynamics-365-op
 
 # Debug data upgrade scripts 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides guidance about how to debug data upgrade scripts.
 

@@ -14,7 +14,7 @@ ms.custom:
 
 # Add custom fields to the point of sale (POS) Totals panel
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to add a new custom field to the **Totals** panel on the POS transaction screen by using the screen layout designer in Microsoft Dynamics 365 Commerce.
 

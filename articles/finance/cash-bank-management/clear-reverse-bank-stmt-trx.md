@@ -16,7 +16,7 @@ ms.dyn365.ops.version:
 
 # Clear reversal bank statement transactions in advanced bank reconciliation 
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to clear reversal bank statement transactions in advanced bank reconciliation. 
 

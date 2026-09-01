@@ -15,7 +15,7 @@ ms.custom: sfi-image-nochange
 ---
 
 # Manage support experiences for finance and operations apps
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 
 

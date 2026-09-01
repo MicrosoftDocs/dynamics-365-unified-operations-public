@@ -16,7 +16,7 @@ ms.assetid: 107a3f9f-aa1d-4087-9b35-196d8b82b0fb
 
 # Workflow system architecture
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article describes the architecture of the workflow system.
 

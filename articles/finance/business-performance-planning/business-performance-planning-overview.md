@@ -15,6 +15,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Business performance planning overview
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 As businesses grow and evolve, planning becomes a critical part of putting strategic goals into operation. However, planning is often complex and time consuming because of disconnected systems, large volumes of data, and manual processes. These issues lead to inaccuracies, delays, and a high total cost of ownership (TCO). At a time when businesses are looking to take full advantage of key opportunities, they lack visibility into data relationships and any outliers.
 
 To support an efficient and accurate planning process, a solution must provide streamlined aggregation of data, a familiar and collaborative set of tools, and the ability to transform a plan into action.

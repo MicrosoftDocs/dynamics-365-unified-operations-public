@@ -13,7 +13,7 @@ ms.search.region: Global
 
 # Czech Intrastat
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The **Intrastat** page is used to generate and report information about trade among European Union (EU) countries/regions. The Czech Intrastat declaration contains information about the trade of goods for reporting.
 

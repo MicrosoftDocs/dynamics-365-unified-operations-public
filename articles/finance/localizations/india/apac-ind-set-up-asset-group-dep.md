@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Set up asset group depreciation for depreciation books (India)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Use asset group depreciation for assets that are similar and for assets that have the same number of years of life. The asset group depreciation method is different from other methods of depreciation where you depreciate assets individually or group dissimilar assets together. The demo data company used to create this procedure is INMF.
 

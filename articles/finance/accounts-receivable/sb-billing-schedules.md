@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.24
 
 # Create billing schedules
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 On the **Billing schedule** page, you can create, delete, or edit billing schedules. You can also review the list of billing schedules. When you create a billing schedule, the billing group that you associate with the schedule determines the default values. Set up additional information on the **Recurring contract billing parameters** page.
 

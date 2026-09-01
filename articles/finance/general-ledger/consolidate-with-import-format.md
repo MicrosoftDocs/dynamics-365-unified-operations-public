@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 8.0.1
 
 # Import format for consolidation
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides detailed information about the import format that you use when consolidating financial data from multiple legal entities. Save the import format as a text (.txt) file.
 

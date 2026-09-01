@@ -16,7 +16,7 @@ ms.assetid: 653a135f-c515-4ae3-9da2-82b5e1f103b5
 
 # Set up SEPA direct debit mandate
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A Single Euro Payment Area (SEPA) direct debit lets a creditor collect funds from a customer's bank account, provided that the customer has granted a signed mandate to the creditor. The mandate that the customer signs authorizes the creditor to collect a payment and instructs the customer's bank to pay the collection. This article is organized to show the process for setting up SEPA direct debit mandates.
 

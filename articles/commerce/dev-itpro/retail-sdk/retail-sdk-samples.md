@@ -14,7 +14,7 @@ ms.custom:
 
 # Extend Commerce Store receipts
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to extend Microsoft Dynamics 365 Commerce store receipts. Receipts can have two types of extensions:
 

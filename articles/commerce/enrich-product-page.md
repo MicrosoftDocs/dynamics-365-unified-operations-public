@@ -14,7 +14,7 @@ ms.custom:
 
 # Customize product detail pages
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to customize product detail pages (PDPs) in Microsoft Dynamics 365 Commerce.
 

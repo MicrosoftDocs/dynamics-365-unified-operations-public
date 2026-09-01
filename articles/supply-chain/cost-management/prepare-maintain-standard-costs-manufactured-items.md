@@ -13,7 +13,7 @@ ms.custom:
 
 # Prepare to maintain standard costs for manufactured items
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the steps for preparing to maintain costs for manufactured items. The steps for manufactured items differ slightly from the steps for purchased items.
 

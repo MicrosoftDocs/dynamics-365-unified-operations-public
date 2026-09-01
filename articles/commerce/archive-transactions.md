@@ -14,7 +14,7 @@ ms.custom:
 
 # Archive Commerce transactions 
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to archive transactions in Microsoft Dynamics 365 Commerce.
 

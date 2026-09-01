@@ -1,4 +1,4 @@
-﻿---
+---
 title: Vendor invoice line entity
 description: Learn about the Vendor invoice line data entity in finance and operations migration projects with Dynamics 365.
 author: edupont04
@@ -11,6 +11,8 @@ ms.collection: FastTrack
 ---
 
 # Vendor invoice line entity
+
+[!INCLUDE [banner](../../../includes/banner.md)]
 
 The **Vendor invoice line** entity supports creating and updating vendor invoices lines. It includes all the fields related to vendor invoice lines.
 

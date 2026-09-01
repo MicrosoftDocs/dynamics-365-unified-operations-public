@@ -15,7 +15,7 @@ ms.custom:
 
 # Set up reason codes for Australia BAS
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to set up additional BAS reconciliation accounts, BAS PAYG reason codes, and BAS fringe benefit reason codes in Australia with Microsoft Dynamics 365 Finance.
 

@@ -16,7 +16,7 @@ ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 
 # Enter payroll beginning balances
 
-[!include [banner](../../../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../../../finance/includes/banner.md)]
 
 This article describes the steps for entering beginning balances for earning codes, deductions, benefits, and taxes. This information is valuable for partners who transfer data for a new Payroll implementation from another system. To prepare to enter beginning payroll balances, verify the following information:
 

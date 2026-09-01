@@ -13,7 +13,7 @@ ms.custom:
 
 # Inventory journals
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how you can use inventory journals to post various types of physical inventory transactions.
 

@@ -12,7 +12,7 @@ ms.search.region: Global
 
 # Lifecycle Services project creation freeze
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Starting February 16, 2026, you can't create new cloud implementation projects in Microsoft Dynamics Lifecycle Services for Dynamics 365 Finance, Dynamics 365 Supply Chain Management, and Dynamics 365 Project Operations. New customers for these products should use the [Microsoft Power Platform admin center](/power-platform/admin/unified-experience/finance-operations-apps-overview) for environment and project management.
 

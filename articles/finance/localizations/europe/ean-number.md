@@ -14,7 +14,7 @@ ms.custom:
 
 # European article numbering (EAN) location numbers
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 A European article numbering (EAN) location number is an electronic address that you use when you send or receive an electronic invoice. It uniquely identifies a buyer's billing address. EAN location numbers can be used in countries/regions outside Europe and are sometimes referred to as Global Location Numbers (GLNs).
 

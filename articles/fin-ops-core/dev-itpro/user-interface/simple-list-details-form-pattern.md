@@ -17,7 +17,7 @@ ms.custom:
 
 # Simple List and Details form pattern
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about the Simple List and Details form pattern. This pattern is used to maintain data for entities of medium complexity.
 

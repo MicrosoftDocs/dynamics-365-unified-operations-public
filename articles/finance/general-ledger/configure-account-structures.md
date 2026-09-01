@@ -18,7 +18,7 @@ ms.assetid: 08fd46ef-2eb8-4942-985d-40fd757b74a8
 
 # Account structures overview
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Account structures use the main account and financial dimensions to create a set of rules that determine the order and values when entering the account number. You can set up as many account structures as you need for your business. Assign the account structures to a company's ledger setup so you can share them. For a detailed definition, see the [glossary entry for account structure](/dynamics365/guidance/business-processes/glossary#a).
 

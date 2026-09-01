@@ -12,7 +12,7 @@ ms.search.form: GUPPriceComponentCode, GUPPriceComponentCodeGroup
 
 # Price component codes
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The goal of making pricing decisions is to increase profitability. Good decision making requires a thorough understanding of the different elements that determine the price. By providing a list of pricing building blocks, Unified pricing management helps you create a price structure for pricing at the macro level. The price component code is the basic unit of the price structure. Set up your price structure by creating one or more price trees in Unified pricing management.
 

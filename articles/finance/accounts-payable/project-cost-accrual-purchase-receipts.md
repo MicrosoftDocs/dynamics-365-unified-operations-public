@@ -16,7 +16,7 @@ ms.assetid: 61e7d2a3-5aab-4113-bccc-213f932885d2
 
 # Project cost accrual on purchase receipts
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how accrued project costs from purchase receipts can be tracked in Microsoft Dynamics 365 Finance.
 

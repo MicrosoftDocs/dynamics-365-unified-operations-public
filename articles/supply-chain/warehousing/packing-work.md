@@ -11,7 +11,7 @@ ms.search.form: WHSPackingWorkLocationSetup, WHSPack, WHSContainerTable
 
 # Packing work for packing outbound containers and processing shipments
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes the *Packing* work order type, which manages work for packing containers and supports partial shipments of packed containers that are related to loads where inventory items remain unpacked. Packing work lets you use [confirm and transfer](confirm-and-transfer.md) functionality to confirm outbound shipments that are associated with containers.
 

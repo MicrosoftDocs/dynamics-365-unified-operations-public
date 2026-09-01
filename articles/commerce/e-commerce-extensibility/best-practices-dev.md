@@ -14,7 +14,7 @@ ms.custom:
 
 # Best practices for Dynamics 365 Commerce development 
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes some best practices to follow when developing Microsoft Dynamics 365 Commerce customizations.
 

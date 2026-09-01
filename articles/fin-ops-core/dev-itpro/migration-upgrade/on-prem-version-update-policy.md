@@ -18,7 +18,7 @@ ms.service: dynamics-365-op
 
 # Software Lifecycle Policy for Microsoft Dynamics 365 Finance + Operations (on-premises)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article outlines the lifecycle and support policies for Microsoft Dynamics 365 Finance + Operations (on-premises) releases.
 

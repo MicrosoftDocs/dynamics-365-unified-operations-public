@@ -16,7 +16,7 @@ ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 
 # ROUNDUP ER function
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The `ROUNDUP` function returns the specified number as a *Real* value after it has been rounded up to the specified number of decimal places.
 

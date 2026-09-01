@@ -12,7 +12,7 @@ ms.search.form:
 
 # Outbound workload visualization
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Advanced setup capabilities that are accessible from the **Outbound workload visualization** page let warehouse managers and supervisors create custom workload charts that can be used to monitor the progress of current work and the amount of it that remains. Warehouse managers can create multiple views and set up automatic refresh as they require. Outbound workload visualizations are suitable for display on warehouse performance pages.
 

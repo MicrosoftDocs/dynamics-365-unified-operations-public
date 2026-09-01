@@ -16,7 +16,7 @@ ms.assetid: d7e86f72-95db-4423-9b04-761e9536a959
 
 # Fixed asset acquisition posting accounts
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to set up General ledger posting accounts for acquiring assets.
 

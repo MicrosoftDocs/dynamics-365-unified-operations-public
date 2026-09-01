@@ -13,7 +13,7 @@ ms.search.validFrom: 2020-07-08
 ---
 # NF-e custom certificate validation
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The **Server authentication purpose** property is turned off by default in certificates issued by the Brazilian Root Certificate Authority. You must manually enable this property. In some circumstances, the automatic certificate update can switch this property off. If this property is off, the TLS connection is affected and can no longer be trusted. This problem affects the ability to issue the Brazilian electronic fiscal document model 55 (NF-e) in production environments for the states of Minas Gerais (MG) and Paraná (PR).
 

@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Version 10.0
 
 # System tracking fields on financial tables
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the system tracking fields that are enabled on tables across the application and how they work.
 

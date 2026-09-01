@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-09-03
 
 # Service description for finance and operations apps
 
-[!include[banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 Finance and operations apps are enterprise resource planning (ERP) software as a service (SaaS) offerings that are built on and for [Microsoft Azure](https://azure.microsoft.com/overview/what-is-azure/). The finance and operations service provides organizations with ERP functionality that supports their unique requirements and helps them adjust to constantly changing business environments, without requiring that they manage infrastructure. Finance and operations apps can include one or more of the following solution areas:
 

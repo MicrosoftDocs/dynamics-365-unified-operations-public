@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 
 # Set up format 1009 file for Colombia
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Set up and issue the format 1009 file. The format 1009 file shows the company's liabilities for a reporting period.
 

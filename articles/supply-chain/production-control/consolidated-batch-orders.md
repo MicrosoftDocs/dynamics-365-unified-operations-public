@@ -12,7 +12,7 @@ ms.assetid: e97f1d3d-1306-4c42-b2bc-d1755fe574d5
 
 # Consolidated batch orders
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the concept of consolidated batch orders.
 

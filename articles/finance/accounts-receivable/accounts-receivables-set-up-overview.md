@@ -17,7 +17,7 @@ ms.assetid: 8c1fc7c5-b461-41ed-b102-2648cc58eb0b
 
 # Configure Accounts receivable and credit and collections
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Configure Accounts receivable and Credit and Collections to track invoices and incoming payments from customers.
 

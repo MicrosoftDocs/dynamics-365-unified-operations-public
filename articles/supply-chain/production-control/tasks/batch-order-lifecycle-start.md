@@ -12,7 +12,7 @@ ms.search.form: ProdTableListPage, ProdTableCreate, ProdBOM, PmfProdCoBy, ProdPa
 
 # Batch order lifecycle from create to start
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure takes you through the first part of the life cycle of a batch order.
 

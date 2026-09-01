@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.18
 
 # Tax Calculation overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Tax Calculation helps automate and simplify the tax determination and calculation process. The tax engine is fully configurable. You can configure elements such as the taxable data model, tax code, tax applicability matrix, and tax calculation formula.
 

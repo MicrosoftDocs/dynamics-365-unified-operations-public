@@ -13,7 +13,7 @@ ms.custom:
 
 # Lean manufacturing for Planning Optimization
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Lean manufacturing is a production philosophy that maximizes value for customers while minimizing waste. It comes from the Toyota production system and focuses on continuous improvement and operational efficiency. The *Lean manufacturing for Planning Optimization* feature allows Planning Optimization to consider demand and supply that originates from lean-manufacturing models (such as kanbans) when generating plans in Supply Chain Management. Learn more in [Lean manufacturing overview](../production-control/lean-manufacturing-overview.md).
 

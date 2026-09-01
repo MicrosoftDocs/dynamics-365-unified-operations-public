@@ -16,7 +16,7 @@ ms.assetid: 11271903-30bc-4d0f-a1da-2a595d973289
 
 # Continuous delivery home page
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 These topics describe tools and guidelines related to continuous delivery of your solution.
 

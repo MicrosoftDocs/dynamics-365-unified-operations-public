@@ -15,7 +15,7 @@ ms.service: dynamics-365-op
 
 # Monitor the upgrade
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides scripts that you can run to monitor the upgrade process.
 

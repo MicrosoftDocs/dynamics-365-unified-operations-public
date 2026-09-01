@@ -13,6 +13,8 @@ ms.search.form: business-performance-analytics
 
 # Dynamics 365 ERP Analytics MCP for finance and operations apps (preview)
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 > [!IMPORTANT]
 > This feature is a preview feature. It's subject to the [preview supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2105274). Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release, so that customers can get early access and provide feedback.
 

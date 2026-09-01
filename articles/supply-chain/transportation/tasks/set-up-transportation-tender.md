@@ -13,7 +13,7 @@ ms.custom:
 
 # Set up a transportation tender
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to set up a transportation tender. This task is typically done by a transportation coordinator.
 

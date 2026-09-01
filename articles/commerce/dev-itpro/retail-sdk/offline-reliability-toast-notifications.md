@@ -12,7 +12,7 @@ ms.custom:
 
 # Offline reliability toast notifications in the Store Commerce app
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides an overview of the various toast notifications that are available as of the 10.0.44 release of the Microsoft Dynamics 365 Commerce Store Commerce app to support offline reliability scenarios.
 

@@ -15,7 +15,7 @@ ms.search.form: VendTable, VendBankAccounts
 
 # Set up vendors and vendor bank accounts for ISO20022 credit transfers
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up the vendor and vendor-specific bank account information required for a ISO20022 credit transfer or any other vendor payment file generation in Microsoft Dynamics 365 Finance.
 

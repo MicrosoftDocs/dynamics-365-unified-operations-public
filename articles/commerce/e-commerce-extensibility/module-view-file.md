@@ -14,7 +14,7 @@ ms.custom:
 
 # Module view file
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article covers the module view file in Microsoft Dynamics 365 Commerce.
 

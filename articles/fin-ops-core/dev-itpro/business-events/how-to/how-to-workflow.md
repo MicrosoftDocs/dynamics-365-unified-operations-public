@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 2019-6-30
 
 # Business events and workflow approvals
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to use Microsoft Power Automate to configure and consume a workflow business event for purchase requisition approval.
 

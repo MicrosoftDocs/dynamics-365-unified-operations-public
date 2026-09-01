@@ -16,6 +16,8 @@ ms.assetid: 0bbe7453-624f-4551-a1d0-842484067311
 
 # Tables supported for duplicate record data sharing
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This list describes the tables supported for duplicate record data sharing. Duplicate record data sharing is a mechanism for sharing reference and group data among companies in a deployment. It might be possible to add additional tables to duplicate record data sharing policies, however, any table not listed in the following tables is not officially supported.
 
 **Dynamics 365 Finance**

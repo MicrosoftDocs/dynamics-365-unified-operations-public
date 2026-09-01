@@ -15,7 +15,7 @@ ms.assetid: 6be739c0-30da-4f91-97be-a8764fb8078c
 
 # Debug X++ code by using the debugger in Visual Studio
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to debug X++ code by using the debugging feature in Microsoft Visual Studio.
 

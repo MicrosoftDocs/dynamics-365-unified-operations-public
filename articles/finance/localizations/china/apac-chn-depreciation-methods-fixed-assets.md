@@ -15,7 +15,7 @@ ms.search.form: AssetParameters
 
 # Fixed assets depreciation methods for China
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create a depreciation method profile for legal entities in China.
 

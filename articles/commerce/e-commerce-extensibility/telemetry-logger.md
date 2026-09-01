@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Telemetry logger
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the telemetry logger in Microsoft Dynamics 365 Commerce.
 

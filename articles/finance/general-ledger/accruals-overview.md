@@ -17,7 +17,7 @@ ms.assetid: 0489b59a-37a7-4a78-87bf-4b597e9efad9
 
 # Accruals overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes accruals, and provides information about how to set them up and create transactions.
 

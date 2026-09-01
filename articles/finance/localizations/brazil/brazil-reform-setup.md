@@ -14,7 +14,7 @@ ms.custom:
 
 # Set up Brazil reformed tax
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to set up Brazilian tax reform for 2026.
 

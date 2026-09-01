@@ -1,4 +1,4 @@
-﻿---
+---
 title: Vendor invoice charges entity
 description: Learn about the Vendor invoice charges data entity in finance and operations migration projects with Dynamics 365.
 author: edupont04
@@ -11,6 +11,8 @@ ms.collection: FastTrack
 ---
 
 # Vendor invoice charges entity
+
+[!INCLUDE [banner](../../../includes/banner.md)]
 
 The **Vendor invoice charges** entity supports creating and updating vendor invoice charges applied to the invoice header. It includes all the fields related to the vendor invoices charges.
 

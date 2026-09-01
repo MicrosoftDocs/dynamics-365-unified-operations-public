@@ -15,7 +15,7 @@ ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 
 # Split generated XML files based on file size and content quantity
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can design Electronic reporting (ER) formats to generate outgoing documents in XML format. Sometimes, recipients accept those documents only when they meet specific criteria, such as a maximum file size or a maximum number of some XML nodes. You can design ER formats to generate electronic documents that satisfy the requirements that the recipients of those documents specify.
 

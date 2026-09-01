@@ -14,6 +14,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Conversion of operations from set-based to record-by-record
 
+[!INCLUDE [banner](../../../../includes/banner.md)]
+
 To improve performance and reduce communication between the application and the database, use the following statements and methods:
 
 - [delete_from](xpp-delete.md#delete-from-statement)

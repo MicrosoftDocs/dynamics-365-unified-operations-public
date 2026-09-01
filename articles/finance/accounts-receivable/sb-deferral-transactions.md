@@ -15,6 +15,8 @@ ms.dyn365.ops.version: 10.0.24
 
 # Deferral default transactions
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article describes the transactions that allow for revenue and expense deferrals. Deferral schedules always base on and depend on an originating document or billing schedule. Create deferral schedules based on defaults. You can't enter or create them separately.
 
 ## Sales order transaction deferral

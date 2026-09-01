@@ -16,7 +16,7 @@ ms.assetid: f734d55a-304c-4e49-b437-6fa34c30b5ca
 
 # Enroll workers in garnishments or tax levies
 
-[!include [banner](../../../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../../../finance/includes/banner.md)]
 
 This article describes the process for enrolling workers in garnishments, tax levies, and any associated administrative fees. Use the benefit framework to manage garnishments and tax levies. This framework helps ensure that the payroll impact of garnishments and tax levies is handled correctly.
 

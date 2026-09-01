@@ -15,7 +15,7 @@ ms.custom: sfi-image-nochange
 
 # Single-user testing by using Performance SDK and Task recorder
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use the information in this article to do single-user testing by using Visual Studio and the Performance software development kit (SDK) together with a performance test script that the Task recorder generates.
 

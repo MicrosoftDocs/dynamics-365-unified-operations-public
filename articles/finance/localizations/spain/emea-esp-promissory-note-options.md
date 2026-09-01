@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Spanish promissory note options
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes options and changes for the basic promissory note functionality that is implemented for Spain.
 

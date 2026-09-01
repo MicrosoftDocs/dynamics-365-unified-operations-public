@@ -14,7 +14,7 @@ ms.custom:
 
 # Accordion module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article covers accordion modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 

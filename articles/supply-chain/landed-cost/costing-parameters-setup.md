@@ -13,7 +13,7 @@ ms.custom:
 
 # Costing parameter values setup
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When you set up the **Landed cost** module, you can define several sets of common values and related settings for each value. You can then use these values when you select specific types of costing parameter values in other parts of the app. This article explains how to set up these sets of values.
 

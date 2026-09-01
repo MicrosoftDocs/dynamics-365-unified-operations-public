@@ -16,7 +16,7 @@ ms.assetid: 708d3b20-27cc-4f6a-b2d5-ecc328864670
 
 # Set up payroll calculation frequencies
 
-[!include [banner](../../../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../../../finance/includes/banner.md)]
 
 This article describes how to set up payroll calculation frequencies. Payroll calculation frequencies determine how often payroll contributions and deductions take place throughout the payroll process.
 

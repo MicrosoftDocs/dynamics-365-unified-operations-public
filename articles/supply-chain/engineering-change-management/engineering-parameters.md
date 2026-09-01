@@ -12,7 +12,7 @@ ms.search.form:
 
 # Engineering change management parameters
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The **Engineering change management parameters** page contains setup parameters that change the default behavior that is related to the release product structure and engineering change management processes.
 

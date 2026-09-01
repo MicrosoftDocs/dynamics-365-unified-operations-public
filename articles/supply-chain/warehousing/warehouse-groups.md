@@ -12,7 +12,7 @@ ms.search.form: WhsWarehouseGroup
 
 # Warehouse groups
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Warehouse groups let you establish groups of warehouses that you can associate with various other records in Microsoft Dynamics 365 Supply Chain Management.
 

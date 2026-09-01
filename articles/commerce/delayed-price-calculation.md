@@ -14,7 +14,7 @@ ms.custom:
 
 # Delay exact price and discount calculation for improved performance
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains the delayed price calculation capability that's available in Microsoft Dynamics 365 Commerce point of sale (POS) and call center.
 

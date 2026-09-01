@@ -12,7 +12,7 @@ ms.search.form: GUPPriceComponentCode, GUPPriceComponentCodeSetup, GUPPricingTre
 
 # Margin price adjustments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to set up and use margin price adjustments.
 

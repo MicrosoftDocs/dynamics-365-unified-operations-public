@@ -14,7 +14,7 @@ ms.search.validFrom: 2020-01-29
 
 # Profit tax declaration
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and generate the profit tax declaration for Russia in Microsoft Dynamics 365 Finance.
 

@@ -12,7 +12,7 @@ ms.search.form: WHSRFMenuItem
 
 # Set up a mobile device menu item for completing mixed license plates
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to set up the *Complete mixed license plate* mobile device flow. This flow helps streamline warehouse operations by letting workers continue to process an incoming shipment immediately after they register its arrival.
 

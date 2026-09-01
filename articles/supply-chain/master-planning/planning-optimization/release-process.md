@@ -13,7 +13,7 @@ ms.custom:
 
 # Planning Optimization release process and release history
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Microsoft updates Planning Optimization monthly. However, based on business requirements, the product team occasionally releases other updates between the scheduled releases.
 

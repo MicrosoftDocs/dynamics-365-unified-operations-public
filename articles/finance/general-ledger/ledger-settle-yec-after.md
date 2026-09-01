@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.25
 
 # Enable advanced awareness options parameter after year-end close
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Preparing for the Enable advanced awareness options parameter after year-end close
 

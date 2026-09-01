@@ -16,7 +16,7 @@ ms.custom:
 
 # Feature callouts
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 ## Introduction

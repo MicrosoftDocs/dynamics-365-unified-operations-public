@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # France overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article includes information and links to resources that can help you set up legal entities with a primary address in France.
 

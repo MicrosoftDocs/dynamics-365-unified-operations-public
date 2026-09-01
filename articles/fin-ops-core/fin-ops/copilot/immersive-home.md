@@ -17,7 +17,7 @@ ms.collection:
 
 # Immersive Home overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes Immersive Home, how it helps you work hand in hand with AI agents and focus on the most important work items assigned to you.
 

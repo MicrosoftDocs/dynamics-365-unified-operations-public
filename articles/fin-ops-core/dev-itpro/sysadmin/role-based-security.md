@@ -18,7 +18,7 @@ ms.assetid: 48cfdd5a-7d04-4969-93ac-6cd6d10d5a09
 
 # Role-based security
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the elements of role-based security in finance and operations. 
 

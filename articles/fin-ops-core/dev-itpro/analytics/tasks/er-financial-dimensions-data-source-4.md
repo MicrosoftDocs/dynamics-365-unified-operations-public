@@ -15,7 +15,7 @@ ms.search.form: ERSolutionTable, SysQueryForm
 
 # ER Use financial dimensions as a data source (Part 4 - Run the report)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports. You can perform these steps in the DEMF company.
 

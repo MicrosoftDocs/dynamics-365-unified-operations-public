@@ -14,7 +14,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Employee development Power BI content
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the **Employee development** Microsoft Power BI content.
 

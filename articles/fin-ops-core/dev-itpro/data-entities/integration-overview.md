@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Integration between finance and operations apps and third-party services
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article helps architects and developers make sound design decisions when they implement integration scenarios.
 

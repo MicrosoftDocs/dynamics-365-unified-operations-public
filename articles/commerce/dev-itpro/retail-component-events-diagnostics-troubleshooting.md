@@ -16,7 +16,7 @@ ms.custom:
 
 # Commerce component events for diagnostics and troubleshooting
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to find events from Microsoft Dynamics 365 Commerce components.
 

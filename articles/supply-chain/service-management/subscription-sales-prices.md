@@ -13,7 +13,7 @@ ms.custom:
 
 # Subscription sales prices
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When you create a subscription, the sales price is derived from the sales price setup that was created on the **Sales price (subscription)** page.
 

@@ -16,7 +16,7 @@ ms.assetid: dfdc0730-e030-48cc-8d93-15bdc7b23776
 
 # Fixed asset disposal posting accounts
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to set up General ledger posting accounts when you're disposing assets.
 

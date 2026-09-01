@@ -17,7 +17,7 @@ ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 
 # Financial reporting best practices
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides tips and best practices for optimizing financial reports in Microsoft Dynamics 365 Finance, based on customer feedback and commonly encountered issues.
 

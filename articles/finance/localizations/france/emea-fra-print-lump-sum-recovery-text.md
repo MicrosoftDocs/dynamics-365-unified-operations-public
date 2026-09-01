@@ -15,7 +15,7 @@ ms.custom:
 
 # Print lump sum recovery text on a customer invoice
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about how to print a lump sum recovery text that shows the penalty amount on customer invoices for France.
 

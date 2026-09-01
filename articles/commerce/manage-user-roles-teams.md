@@ -16,7 +16,7 @@ ms.custom:
 
 # Manage user roles in Microsoft Teams
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to manage Microsoft Dynamics 365 Commerce user roles in Microsoft Teams.
 

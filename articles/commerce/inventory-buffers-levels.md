@@ -14,7 +14,7 @@ ms.custom:
 
 # Configure inventory buffers and inventory levels
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to configure inventory buffers and inventory levels that determine the messaging about inventory availability on Microsoft Dynamics 365 Commerce sites.
 

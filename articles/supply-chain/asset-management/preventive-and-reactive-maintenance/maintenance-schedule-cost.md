@@ -12,7 +12,7 @@ ms.search.form:
 
 # Maintenance schedule cost
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
  
 

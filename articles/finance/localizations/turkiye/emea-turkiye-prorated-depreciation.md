@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 10.0.45
 
 # Use prorated depreciation on fixed assets
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This section provides an overview of prorated depreciation in Türkiye and explains how the system calculates the first year and final year depreciation amounts when you place an asset in service partway through the year in Microsoft Dynamics 365 Finance.  
 

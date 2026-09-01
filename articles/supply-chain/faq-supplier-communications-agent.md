@@ -1,4 +1,4 @@
-﻿---
+---
 title: Responsible AI FAQ for the Procurement Agent (production-ready preview)
 description: Get answers to frequently asked questions about the AI technology that is used in the Procurement Agent with Copilot in Microsoft Dynamics 365 Supply Chain Management. This FAQ includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 author: t-benebo
@@ -15,7 +15,7 @@ ms.collection:
 
 # Responsible AI FAQ for the Procurement Agent (production-ready preview)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 

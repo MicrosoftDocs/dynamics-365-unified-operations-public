@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Create a bank facility agreement for a letter of credit
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes the steps for creating a bank facility agreement to process a letter of credit. For more information, see [Set up bank facilities and posting profiles](set-up-bank-facilities-posting-profiles-letter-credit.md) before running the steps in this article.
 

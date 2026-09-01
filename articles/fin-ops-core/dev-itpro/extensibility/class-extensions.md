@@ -16,7 +16,7 @@ ms.assetid: 271dabb1-ecb8-497f-b866-397733a954b8
 
 # Class extension model in X++
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the class extension model in X++.
 

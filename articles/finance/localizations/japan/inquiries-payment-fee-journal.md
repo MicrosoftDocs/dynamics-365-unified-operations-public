@@ -15,7 +15,7 @@ ms.custom:
 
 # Inquiries of payment fee on journal
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to view payment fee summaries for a journal for Japan in Microsoft Dynamics 365 Finance.
 

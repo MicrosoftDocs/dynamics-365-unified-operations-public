@@ -16,7 +16,7 @@ ms.assetid: b177fa0f-ac9a-415e-9498-15438e132f60
 
 # Address books FAQ
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## How do I check for duplicate records?
 

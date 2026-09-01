@@ -15,7 +15,7 @@ ms.assetid: 9e67e62c-1ced-45bd-8591-941e9afb0ab1
 
 # Control checklist
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article categorizes and describes all the release criteria for controls.
 

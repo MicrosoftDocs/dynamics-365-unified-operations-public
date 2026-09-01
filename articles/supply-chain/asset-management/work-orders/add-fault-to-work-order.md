@@ -12,7 +12,7 @@ ms.search.form:
 
 # Add fault to work order
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 
 

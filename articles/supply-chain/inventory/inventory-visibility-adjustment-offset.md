@@ -13,7 +13,7 @@ ms.custom:
 
 # Inventory Visibility adjustment offset
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to offset inventory adjustments that were updated through Inventory Visibility and then also updated in Microsoft Dynamics 365 Supply Chain Management. To prevent inventory quantities from being updated twice, you must offset the previously adjusted inventory from Supply Chain Management to Inventory Visibility.
 

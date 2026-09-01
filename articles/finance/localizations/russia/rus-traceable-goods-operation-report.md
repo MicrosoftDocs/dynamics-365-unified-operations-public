@@ -15,7 +15,7 @@ ms.search.form: InventTrans, RAssettrans
 
 # Generate a Traceable goods operation report (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and generate a Traceable goods operation report for Russia in Microsoft Dynamics 365 Finance.
 

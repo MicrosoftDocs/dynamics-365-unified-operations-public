@@ -16,7 +16,7 @@ ms.custom:
 
 # Create an Azure file share in the Azure portal
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Electronic documents that the Electronic Invoicing service generates can be stored in a Microsoft Azure file share that is provisioned under a storage account. To ensure that Electronic invoicing can access the file share, you must provide the connection string to the Electronic Invoicing service. In addition, to ensure that the connection string is securely stored, don't provide it directly. Instead, store it in an Azure Key Vault, and provide an Azure Key Vault secret.
 

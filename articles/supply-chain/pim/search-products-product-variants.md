@@ -12,7 +12,7 @@ ms.assetid: 99dd5ce1-0029-4f06-90e7-865e6d46d86e
 
 # Search for products and product variants during order entry
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use the **Item number** field to search for products and product variants when you manually create a sales order line or a purchase order line.  This lets you quickly find product variants when you only have the configuration string or one of the product dimensions available.
 

@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Design ER expressions to call application class methods
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to reuse existing application logic in [Electronic reporting (ER)](../general-electronic-reporting.md) configurations by calling required methods of application classes in ER expressions. You can dynamically define values of arguments for calling classes at runtime. For example, you can base values on information in the parsing document to ensure its correctness.
 

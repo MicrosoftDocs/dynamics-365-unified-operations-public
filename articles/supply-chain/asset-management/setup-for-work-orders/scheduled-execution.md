@@ -12,7 +12,7 @@ ms.search.form:
 
 # Scheduled execution
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
  
 

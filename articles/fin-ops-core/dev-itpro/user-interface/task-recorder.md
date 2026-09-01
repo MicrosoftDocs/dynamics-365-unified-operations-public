@@ -18,7 +18,7 @@ ms.custom:
 
 # Task recorder resources
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 [!INCLUDE [PEAP](../../../includes/peap-3.md)]
 

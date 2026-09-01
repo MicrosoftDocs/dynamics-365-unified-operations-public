@@ -13,7 +13,7 @@ ms.custom:
 
 # Omni-channel advanced auto charges
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains the capabilities for managing other order charges for channel orders by using advanced auto charges features in Microsoft Dynamics 365 Commerce.
 

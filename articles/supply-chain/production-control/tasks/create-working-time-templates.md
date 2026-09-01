@@ -12,7 +12,7 @@ ms.search.form: OpResLifeCycleManagementWorkspace, WorkTimeTable, WorkTimeCopyDa
 
 # Create working time templates
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Working time templates define the working hours throughout a week and are used to generate working times for a period of time. This procedure shows you how to define a working time template using working time scheduling properties for categorizing working time intervals. You can walk through this procedure in demo data company USMF, or using your own data.
 

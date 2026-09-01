@@ -13,7 +13,7 @@ ms.reviewer: johnmichalak
 
 # Cross-border services report
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Austrian companies must periodically report services that they purchase and sell across borders if those services meet specific thresholds for specific service types in the other countries or regions that are involved.
 

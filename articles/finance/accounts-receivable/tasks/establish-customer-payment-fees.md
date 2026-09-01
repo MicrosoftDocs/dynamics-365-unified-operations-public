@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Establish customer payment fees
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to create payment fees for customer payments.
 

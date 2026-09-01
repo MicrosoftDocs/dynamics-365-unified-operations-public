@@ -13,7 +13,7 @@ ms.custom:
 
 # Pay-by-link payment with the Dynamics 365 Payment Connector for Adyen (preview)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 

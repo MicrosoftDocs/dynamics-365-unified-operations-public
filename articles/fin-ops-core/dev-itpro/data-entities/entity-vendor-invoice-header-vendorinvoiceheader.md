@@ -1,4 +1,4 @@
-﻿---
+---
 title: Vendor invoice header entity
 description: Learn about the Vendor invoice header data entity in finance and operations migration projects with Dynamics 365.
 author: edupont04
@@ -11,6 +11,8 @@ ms.collection: FastTrack
 ---
 
 # Vendor invoice header entity
+
+[!INCLUDE [banner](../../../includes/banner.md)]
 
 The **Vendor invoice header** entity supports creating and updating vendor invoice headers; and includes all the necessary fields.
 

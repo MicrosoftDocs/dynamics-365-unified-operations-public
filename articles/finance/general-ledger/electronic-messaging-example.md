@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.21
 
 # Set up and run processing to call a simple exporting ER format to generate an Excel report
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 After you create your ER format, map it to data sources, and complete it, you can run it from the **Electronic reporting** workspace. After the report is generated, you can save it locally.
 

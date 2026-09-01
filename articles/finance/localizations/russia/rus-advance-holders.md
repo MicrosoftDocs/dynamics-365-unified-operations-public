@@ -16,7 +16,7 @@ ms.search.form: HcmWorkerAdvHolderTableListPage_RU, HcmWorkerAdvHolderTable_RU
 
 # Russia advance holders setup
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to register and set up advance holders for Russia in Microsoft Dynamics 365 Finance.
 

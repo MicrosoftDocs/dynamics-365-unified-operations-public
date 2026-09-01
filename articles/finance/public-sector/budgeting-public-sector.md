@@ -18,7 +18,7 @@ ms.assetid: 8cecf3cc-8916-44d7-8c73-d6254a61f62b
 
 # Budgeting in the public sector overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This overview introduces you to the budgeting functionality that's available for the public sector. This functionality includes budget analysis, preliminary budgets and apportionments, and posting definitions.
 

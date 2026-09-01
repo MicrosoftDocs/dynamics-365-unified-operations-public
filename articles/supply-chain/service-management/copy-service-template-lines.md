@@ -12,7 +12,7 @@ ms.search.form: SMAAgreementTable, SMAServiceOrderTable
 
 # Copy service templates lines
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Template information can be copied to either a service agreement or a service order.
 

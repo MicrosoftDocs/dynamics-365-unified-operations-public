@@ -13,7 +13,7 @@ ms.custom:
 
 # Weighted average date with Include physical value and marking
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 *Weighted average date* is an inventory model that is based on an average that is calculated by multiplying each component (item transaction) by a factor (cost price) that reflects its importance (quantity) on each day in the period. In other words, this inventory model assigns the cost of issue transactions based on the mean value of all inventory that is received each day, plus any on-hand inventory from the previous day.
 

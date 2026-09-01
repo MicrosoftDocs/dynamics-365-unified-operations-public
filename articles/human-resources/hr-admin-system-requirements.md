@@ -25,6 +25,8 @@ ms.dyn365.ops.version: Human Resources
 
 # System requirements
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This article lists the system requirements for Microsoft Dynamics 365 Human Resources. It also outlines the countries and regions where Human Resources is available, and provides information about languages and localization for Human Resources data.

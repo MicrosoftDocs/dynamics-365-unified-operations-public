@@ -15,7 +15,7 @@ ms.custom:
 
 # Test forms that use custom patterns
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article shows how to test forms that use custom patterns.
 

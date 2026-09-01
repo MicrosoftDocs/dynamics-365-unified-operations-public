@@ -13,7 +13,7 @@ ms.custom:
 
 # Onboard the Approvals Management mobile app
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how administrators can prepare your Microsoft Dynamics 365 Supply Chain Management and Dataverse environments to support the Approvals Management mobile app. It also explains how to install the app on your mobile devices.
 

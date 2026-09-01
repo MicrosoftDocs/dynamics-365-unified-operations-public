@@ -13,7 +13,7 @@ ms.custom:
 
 # Maintenance schedule
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The maintenance schedule contains a list of all the expected preventive maintenance plans, maintenance requests, and maintenance rounds to be carried out. Some schedule lines might have been converted to work orders.
 

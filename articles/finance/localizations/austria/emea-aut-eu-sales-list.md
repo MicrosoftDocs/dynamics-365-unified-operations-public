@@ -14,7 +14,7 @@ ms.reviewer: johnmichalak
 
 # EU sales list for Austria
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about the European Union (EU) sales list report that's based on form U13. The Austrian EU sales list report contains information about the sale of goods and services for reporting in XML format.
 

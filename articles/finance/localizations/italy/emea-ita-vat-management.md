@@ -15,7 +15,7 @@ ms.search.validFrom: 2019-07-01
 
 # VAT management and reporting by tax point date (Date of VAT register)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 On October 23, 2018, Law Decree 119 (L.D.119/2018) in Italy introduced a change in Italian value-added tax (VAT) management. This change went into effect on July 1, 2019. Here is a summary of the change:
 

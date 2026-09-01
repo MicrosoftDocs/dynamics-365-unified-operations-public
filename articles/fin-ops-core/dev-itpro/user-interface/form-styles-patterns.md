@@ -17,7 +17,7 @@ ms.custom:
 
 # Form styles and patterns
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the concept of form patterns and discusses the process for applying and removing patterns. A list of frequent questions are also answered in this article. 
 

@@ -17,7 +17,7 @@ ms.custom:
 
 # Record TDS concession certificate numbers
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to record the Tax Deducted at Source (TDS) concession certificate numbers that are issued to vendors.
 

@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Configure page caching
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to configure page caching in Microsoft Dynamics 365 Commerce.
 

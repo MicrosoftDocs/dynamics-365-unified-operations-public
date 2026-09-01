@@ -10,7 +10,7 @@ ms.custom: bap-template
 
 # Fiscal notes for fine and interest in Brazil tax reform
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create fiscal notes for fine and interest transactions in Brazil tax reform, for both customer (accounts receivable) and vendor (accounts payable) scenarios in Dynamics 365 Finance.
 

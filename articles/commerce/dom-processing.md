@@ -14,7 +14,7 @@ ms.search.validFrom: 2023-11-07
 
 # DOM processing
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how distributed order management (DOM) processes sales orders in Microsoft Dynamics 365 Commerce.
 

@@ -12,7 +12,7 @@ ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
 
 # Make manual adjustments to the baseline forecast
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!INCLUDE [demand-planning-banner](../includes/demand-planning-banner.md)]
 
 This article explains how you can make manual adjustments to a baseline forecast and view details of the forecast.

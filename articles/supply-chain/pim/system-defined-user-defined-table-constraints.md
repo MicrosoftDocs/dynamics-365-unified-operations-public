@@ -12,7 +12,7 @@ ms.assetid: 0a4ea930-b344-43a8-871e-d5cd077892c4
 
 # System-defined and user-defined table constraints
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains the two types of table constraints for components in a product configuration model -  user-defined and system-defined. Table constraints represent matrices of the allowed attribute combinations, where each row defines one set of possible attribute values.
 

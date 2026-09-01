@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Platform update 13
 
 # Build OData metadata cache when the AOS starts
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 With the release of Platform update 32, you can build the OData metadata cache when the Application Object Server (AOS) starts, instead of when the first OData request is made. This change significantly decreases the response time for the first OData call after an AOS process restart.

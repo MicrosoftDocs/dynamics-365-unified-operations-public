@@ -15,7 +15,7 @@ ms.custom:
 
 # Configure, install, and activate Modern POS (MPOS)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to configure, download, and install, and activate Microsoft Dynamics 365 Commerce Modern POS (MPOS) on various platforms.
 

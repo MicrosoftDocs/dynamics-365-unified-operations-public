@@ -15,7 +15,7 @@ ms.assetid: acf73781-08bb-4f59-9956-8f9f295ddd02
 
 # Customize App Suite reports by using extensions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article discusses a series of scenarios for customizing App Suite reports.
 

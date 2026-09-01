@@ -16,7 +16,7 @@ ms.assetid: babde0c6-bb5d-45ae-95ca-2af75a0ea292
 
 # Plan your organizational hierarchy
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Before you set up organizations and organization hierarchies, plan how your business will be modeled. The organization model significantly affects the implementation and business processes.
 

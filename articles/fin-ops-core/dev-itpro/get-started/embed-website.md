@@ -15,7 +15,7 @@ ms.custom:
 
 # Embed third-party apps
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 Many customers use a range of applications to run their businesses. Some of those applications are third-party web apps that work with finance and operations apps. To provide a more seamless user experience, you can embed third-party apps directly into your finance and operations apps (if the third-party apps support embedding). By using this approach, users can access the websites and apps they require without having to switch tabs or windows.
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Platform update 11
 
 # Extend table maps that are used for versioning
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## PurchLineMap table map logic
 

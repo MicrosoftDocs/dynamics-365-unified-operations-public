@@ -1,4 +1,4 @@
-﻿---
+---
 title: Electronic batch records (EBRs)
 description: Learn how to use electronic batch records (EBRs) to consolidate production-related data to meet 21 CFR Part 11 requirements.
 author: johanhoffmann
@@ -13,7 +13,7 @@ ms.custom:
 
 # Electronic batch records (EBRs)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Electronic batch records (EBRs) are required by part 11 of Title 21 of the Code of Federal Regulations (21 CFR Part 11), which applies to life science and pharmaceutical industries. EBRs consist of two major components:
 

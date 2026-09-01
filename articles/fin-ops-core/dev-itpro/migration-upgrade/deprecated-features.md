@@ -16,7 +16,7 @@ ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
 
 # Removed or deprecated features in previous releases
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
 > This article is no longer updated. To see a current list of features that are removed or deprecated from Finance and Operations apps, search for **"Removed or deprecated features"** content that relates to the app you're using.

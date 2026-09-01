@@ -13,7 +13,7 @@ ms.custom:
 
 # Firm planned orders
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 As part of the master planning process, you must *firm* (release) planned orders. When you firm planned orders, they become actual purchase orders, transfer orders, or production orders. These orders are also known as *released orders* or *open orders*.
 

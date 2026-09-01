@@ -15,7 +15,7 @@ ms.search.validFrom: 2021-11-16
 
 # View party data
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Like account and contact data, you can access party data through a user interface (UI). The dual-write party and global address book solution version 3.3.0.5 provides a **Party** page where you can view, create, and manage party records together with all their associated customers, vendors, and contacts, and their postal and electronic addresses.
 

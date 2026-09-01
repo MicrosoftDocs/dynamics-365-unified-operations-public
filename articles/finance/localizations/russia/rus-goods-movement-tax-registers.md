@@ -14,7 +14,7 @@ ms.search.validFrom: 2021-08-01
 
 # Goods movement tax registers
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with goods movement tax registers in Microsoft Dynamics 365 Finance, and provides information about the following tax registers:
 

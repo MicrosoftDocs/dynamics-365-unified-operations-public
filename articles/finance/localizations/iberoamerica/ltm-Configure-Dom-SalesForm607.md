@@ -11,7 +11,7 @@ ms.author: v-cpicon
 
 # Configure printing for Goods and Services sales Submission Form 607
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure the Goods and Services Sales Submission Form (607) so it can be printed as the **Format 607 DO** report. Sales transaction records that companies use to keep a detailed record of their operations indicate customer information and document details. As applicable, they also indicate any corresponding taxes and tax withholdings.
 

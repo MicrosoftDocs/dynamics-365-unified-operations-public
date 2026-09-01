@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Platform update 9
 
 # Naming guidelines for extensions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 **High-level guidance: Use prefixes to reduce conflicts and improve identification**
 

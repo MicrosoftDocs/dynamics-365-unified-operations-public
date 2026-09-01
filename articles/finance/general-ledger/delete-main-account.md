@@ -14,7 +14,7 @@ ms.search.form: MainAccount
 
 # Delete a main account
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to delete a main account, the circumstances that block deletion, and the recommended workaround when you can't delete an account.
 

@@ -17,7 +17,7 @@ ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 
 # Export, import, and replicate ER destinations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 As of version **10.0.46** of Microsoft Dynamics 365 Finance, you can use these capabilities to streamline the process of configuring destinations across multiple legal entities or environments.
 

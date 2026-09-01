@@ -16,7 +16,7 @@ ms.custom:
 
 # Add product recommendations on POS
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to configure and add product recommendations on a Microsoft Dynamics 365 Commerce point of sale (POS) device.
 

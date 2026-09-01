@@ -14,7 +14,7 @@ ms.custom:
 
 # Default category landing page and search results page overview
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides an overview of the default category landing page and search results page in Microsoft Dynamics 365 Commerce e-Commerce.
 

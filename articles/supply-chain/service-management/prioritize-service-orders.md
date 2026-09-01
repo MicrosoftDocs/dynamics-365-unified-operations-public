@@ -13,7 +13,7 @@ ms.custom:
 
 # Prioritize service orders
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 1. Go to **Service management** > **Perform periodic tasks** > **Dispatch board**.
 1. On the Action Pane, select **Adjust view settings**.

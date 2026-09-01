@@ -16,7 +16,7 @@ ms.assetid: 678f6899-bfa5-439b-aaca-b4affcc338ba
 
 # Credit card setup, authorization, and capture
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of credit card authorization in Microsoft Dynamics 365 Finance. It includes information about how to set up a payment service, add a credit card to a sales order, and void an authorization.
 

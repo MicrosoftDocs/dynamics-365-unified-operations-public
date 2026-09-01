@@ -14,7 +14,7 @@ ms.search.validFrom: 2017-12-31
 
 # SPED ECD
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 ## Set up parameters for SPED ECD text files
 

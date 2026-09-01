@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Release 10.0.17
 
 # Integrate procurement between Supply Chain Management and Field Service
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management provides robust procurement functionality. Dynamics 365 Field Service offers similar functionality that supports the purchasing processes that are associated with the service process. Dual-write integrates the functionality in these two apps, and table mappings, solution logic, views, and forms enable the resulting cross-functional use cases.
 

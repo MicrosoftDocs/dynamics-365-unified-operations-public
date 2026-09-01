@@ -12,6 +12,8 @@ ms.reviewer: twheeloc
 
 # Archive data in Dynamics 365 finance and operations apps with Dataverse
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article describes how to archive data in Microsoft Dynamics 365 Finance and Operations apps. Finance and Operations apps support custom retention policies for securely archiving and retaining unlimited data for the long term in a cost-efficient way. Finance and Operations apps set no limit on active data and therefore support your business growth. Nevertheless, you might want to consider moving historical, inactive data that's required for compliance and regulatory reasons to Dataverse long term retention.
 
 ## Business application data lifecycle

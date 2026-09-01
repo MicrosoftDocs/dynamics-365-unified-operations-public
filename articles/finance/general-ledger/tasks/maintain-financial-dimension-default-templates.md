@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Maintain financial dimension default templates
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article shows how to set up financial dimension default templates. The templates can be used to quickly distribute amounts on source documents.
 

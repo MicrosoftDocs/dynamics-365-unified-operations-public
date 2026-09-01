@@ -15,6 +15,8 @@ ms.dyn365.ops.version:
 
 # Audit cubes in Business performance planning 
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 Business performance planning includes a built-in cube audit tracking capability that delivers visibility into recent changes made during planning. Available in the Power BI Matrix visual, this feature provides an inline tooltip experience for user-driven changes and supports export of recent audit logs. This helps improve governance, collaboration, and limited transparency, especially in multi-user planning and writeback workflows.
 
 ## Prerequisites

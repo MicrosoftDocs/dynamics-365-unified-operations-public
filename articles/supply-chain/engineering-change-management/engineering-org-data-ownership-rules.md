@@ -12,7 +12,7 @@ ms.search.form: EngChgEngineeringOrganization
 
 # Engineering companies and data ownership rules
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Engineering companies and operational companies
 

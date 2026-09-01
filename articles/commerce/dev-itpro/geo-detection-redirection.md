@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Set up geo detection and redirection
 
-[!include [banner](../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../finance/includes/banner.md)]
 
 This article explains how to set up geo detection and redirection for your e-commerce site in Microsoft Dynamics 365 Commerce.
 

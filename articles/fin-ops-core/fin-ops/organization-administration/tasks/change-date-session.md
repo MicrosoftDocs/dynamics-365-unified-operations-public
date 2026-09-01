@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Change the date for a session
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to change the date for a session. By default, the current date is used when you enter and post journal entries or source documents. You can change the date for your current session. Use this feature to back-date journal entries or source documents, as necessary.
 

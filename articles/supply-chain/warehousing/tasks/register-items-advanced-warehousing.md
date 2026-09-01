@@ -12,7 +12,7 @@ ms.search.form: WMSJournalTable, WMSJournalCreate, WHSLicensePlate
 
 # Register items enabled for warehouse management processes using an item arrival journal
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article presents a scenario that shows how to register items using the item arrival journal when you are using warehouse management processes (WMS). This would usually be done by a receiving clerk.
 

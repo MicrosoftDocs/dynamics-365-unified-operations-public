@@ -11,7 +11,7 @@ ms.author: v-cpicon
 
 # Configure printing for Relationship purchases Book reports for Venezuela
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and generate the Relationship purchases Book reports for Venezuela.
 

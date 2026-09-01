@@ -12,7 +12,7 @@ ms.search.form:
 
 # Warehouse parameters for wave processing
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to set up warehouse parameters for wave processing. You can use wave processing to group picking work for multiple work orders into a single wave.
 

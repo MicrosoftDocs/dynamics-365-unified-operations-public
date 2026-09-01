@@ -11,6 +11,8 @@ ms.author: v-federicohe
 
 # Configure printing for Sales Vat Books for Bolivia
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article explains how to set up and use sales VAT tax books for Bolivia.
 
 Value-added tax (VAT) books refer to the records and accounting documents that businesses use to keep track of their transactions for VAT purposes. Although the specific requirements for VAT books can vary from one country/region to another, they generally include the date of the transaction, customer/vendor information, and tax information details.

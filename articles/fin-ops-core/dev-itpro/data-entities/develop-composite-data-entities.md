@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Develop composite data entities
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A composite entity is a concept that lets you build a single entity by using multiple entities that are related to each other.
 

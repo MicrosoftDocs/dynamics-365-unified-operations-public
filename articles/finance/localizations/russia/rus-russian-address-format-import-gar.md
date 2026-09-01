@@ -14,7 +14,7 @@ ms.search.validFrom: 2019-06-28
 
 # Import from State Address Register (GAR)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to import addresses in the State Address Register (GAR) format for Russia in Microsoft Dynamics 365 Finance.
 

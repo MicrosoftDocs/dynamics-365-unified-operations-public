@@ -13,7 +13,7 @@ ms.custom:
 
 # Copy lines between sales orders
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The *copy from all* feature lets you copy sales order lines between sales orders. This feature is useful when you must create an order that is similar to an existing one.
 

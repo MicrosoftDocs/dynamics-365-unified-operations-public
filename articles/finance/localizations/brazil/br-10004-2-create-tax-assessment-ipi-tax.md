@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create a tax assessment - IPI tax (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to create a tax assessment for the Imposto sobre Produtos Industrializados (IPI) tax for a given booking period in Brazil with Microsoft Dynamics 365 Finance.
 

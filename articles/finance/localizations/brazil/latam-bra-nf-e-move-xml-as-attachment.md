@@ -14,7 +14,7 @@ ms.search.validFrom: 2022-01-27
 
 # Move NF-e XML files as attachments
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 When electronic fiscal documents (NF-e) are issued, XML files are created and stored in the Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management databases. In the Brazilian localization, you can use the **NF-e XML move as attachment** feature to free up the database space that those XML files consume.
 

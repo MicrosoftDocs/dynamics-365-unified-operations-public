@@ -15,7 +15,7 @@ ms.custom:
 
 # Set up payment slip format
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to attach printed payment slips to invoices, provide payment references for posting and settlement, and set up creditor ID numbers in Denmark with Microsoft Dynamics 365 Finance.
 

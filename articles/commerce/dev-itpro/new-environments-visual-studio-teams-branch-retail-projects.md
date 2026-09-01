@@ -16,7 +16,7 @@ ms.custom:
 
 # Set up new environments, Azure DevOps, and branches for projects
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [banner](../includes/retail-sdk-deprecation-banner.md)]
 
 

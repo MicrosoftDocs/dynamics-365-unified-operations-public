@@ -10,6 +10,8 @@ ms.topic: article
 
 # Leave and absence integration with Project operations time entry overview
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 Leave and absence integration with Project operations time entry is a Dynamics 365 Human Resources capability that automatically synchronizes approved leave information from Dynamics 365 Human Resources into Project operations time entry. It uses Microsoft Dataverse and Dual-write synchronization technologies to create a corresponding approved time-off entry within the time entry experience whenever a leave request is approved.
 
 Organizations depend on accurate employee availability information to effectively manage project staffing, resource allocation, and time reporting. Traditionally, approved leave requests in Dynamics 365 Human Resources and time reporting in Project operations have resided in separate experiences, creating manual effort and potential inconsistencies. This integration bridges that gap and provides a unified experience for employees, project managers, and resource managers.

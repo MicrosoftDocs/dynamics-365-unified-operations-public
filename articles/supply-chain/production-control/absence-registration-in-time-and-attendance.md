@@ -11,7 +11,7 @@ ms.search.form: JMGParameters, JmgAbsenceCalendar
 
 # Absence registration in Time and attendance
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the concepts for absence and explains how to handle absence in Time and attendance.
 

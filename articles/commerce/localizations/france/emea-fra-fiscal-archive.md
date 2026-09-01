@@ -14,7 +14,7 @@ ms.custom:
 ---
 # Fiscal archive for France
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article provides information about the fiscal archive and the Fiscal archive integrity verification tool that are available in the Microsoft Dynamics 365 Commerce localization for France. The fiscal archive is part of the [cash register functionality for France](emea-fra-cash-registers.md).
 

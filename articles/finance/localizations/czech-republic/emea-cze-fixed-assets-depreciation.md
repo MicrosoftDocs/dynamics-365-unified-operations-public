@@ -15,7 +15,7 @@ ms.search.form: AssetDepreciationGroup_W
 
 # Fixed assets depreciation methods for the Czech Republic
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides an overview of fixed assets depreciation for legal entities in the Czech Republic.
 

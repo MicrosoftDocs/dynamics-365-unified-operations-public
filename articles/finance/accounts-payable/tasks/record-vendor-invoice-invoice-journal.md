@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Record a vendor invoice in the invoice journal
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article shows how to record vendor invoices that aren't associated with purchase orders. Examples of this type of invoice include expenses for supplies or services. This recording uses the USMF demo company.
 

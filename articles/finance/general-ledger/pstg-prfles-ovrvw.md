@@ -18,6 +18,8 @@ ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 
 # Posting profiles overview
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 In finance and operations apps, the term *posting profiles* is used to describe the configurations that control how subledger accounts are converted to main accounts so that they can be used in transactions that are posted to the general ledger. For example, they control how the customer is converted to an Accounts receivable main account when an invoice is posted.
 
 Some modules and features have a page that includes the words "posting profile" in the name (for example, **Customer posting profile** or **Vendor posting profile**). Additionally, some modules have multiple options for configuring the ledger posting for transactions that are generated from the subledger. For example, in the **Production control** module, you can set up the posting by production group, resource, or resource group.

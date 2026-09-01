@@ -13,7 +13,7 @@ ms.custom:
 
 # Use the safety stock journal to update minimum coverage for items
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Safety stock is an additional quantity of an item held in inventory to reduce the risk of it going out of stock. It acts as a buffer if sales orders arrive and the supplier can't meet the customer's requested ship date.
 

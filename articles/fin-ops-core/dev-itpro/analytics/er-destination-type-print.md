@@ -16,7 +16,7 @@ ms.assetid:
 
 # <a name="PrinterDestinationType"></a>Printer destination
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can send a generated document directly to a network printer for direct printing.
 

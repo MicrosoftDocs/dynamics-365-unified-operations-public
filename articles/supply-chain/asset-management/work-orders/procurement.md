@@ -12,7 +12,7 @@ ms.search.form: EntAssetWorkOrderPurchaseListPagePreviewPane, EntAssetWorkOrderP
 
 # Procurement
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 In Asset Management, you can get an overview of purchase requisitions and purchase orders that are related to work orders. You can also create a purchase order or a purchase requisition from a work order.
 

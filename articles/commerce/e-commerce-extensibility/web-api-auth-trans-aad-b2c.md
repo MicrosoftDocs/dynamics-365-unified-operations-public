@@ -14,7 +14,7 @@ ms.custom:
 
 # Set up web API authentication transfer using Microsoft Entra ID B2C
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to set up the transfer of web API authentication to a Microsoft Dynamics 365 Commerce e-commerce site by using Microsoft Entra business-to-consumer (B2C).
 

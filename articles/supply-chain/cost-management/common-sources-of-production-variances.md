@@ -13,7 +13,7 @@ ms.custom:
 
 # Common sources of production variances
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains various typical sources of each type of production variance.
 

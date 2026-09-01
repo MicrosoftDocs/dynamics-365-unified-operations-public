@@ -15,7 +15,7 @@ ms.search.form: CustPaymMode, CustVendPaymFormat
 
 # FR-00004 French bills of exchange and promissory notes
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create a French bill of exchange remittance journal and generate a bill of exchange remittance report in Microsoft Dynamics 365 Finance.
 

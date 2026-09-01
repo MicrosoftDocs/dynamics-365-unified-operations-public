@@ -15,7 +15,7 @@ ms.assetid: 63e43066-76c7-400b-be7d-d14785e7985d
 
 # Date effectivity
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about date-effective data entities and data sources, and shows how to create a date-effective entity. It also explains how date effectivity applies to read and write activities.
 

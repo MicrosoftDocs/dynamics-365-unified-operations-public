@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Import users from Microsoft Entra ID
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 ## Import select users
 

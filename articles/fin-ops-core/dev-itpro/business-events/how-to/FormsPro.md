@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 2019-6-30
 
 # Business events and Microsoft Forms Pro
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article goes through a scenario where Microsoft Forms Pro is used to create a survey that you can use with business events. Specifically, in the scenario described here, a survey is sent to customers when a product is shipped. The survey information is gathered by using Forms Pro.
 

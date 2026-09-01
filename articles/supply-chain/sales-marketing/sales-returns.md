@@ -13,7 +13,7 @@ ms.search.form: ReturnTableListPage, ReturnTable, ReturnTableListPagePreviewPane
 
 # Sales returns
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about the process for return orders. It includes information about customer returns and their effect on costing and on-hand inventory quantities.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Create service orders manually
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can create service orders manually by using a service agreement or by using the **Service orders** page. You can also create a service order from a project.
 

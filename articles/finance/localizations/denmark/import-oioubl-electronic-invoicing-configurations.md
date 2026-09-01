@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Import OIOUBL electronic invoicing configurations
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 For more information about OIOUBL electronic invoices, see [Customer electronic invoices in Denmark](../norway/emea-dnk-e-invoices.md).
 

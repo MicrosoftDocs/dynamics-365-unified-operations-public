@@ -19,7 +19,7 @@ ms.custom:
 
 [!include [applies to](../../dev-itpro/includes/applies-to-commerce-finance-scm.md)]
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article explains how to open entity data in Microsoft Excel, and then view, update, and edit the data by using the Microsoft Dynamics Excel add-in. To open entity data, you can start from either Excel or finance and operations apps.
 

@@ -14,7 +14,7 @@ ms.custom:
 
 # Media gallery module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes media gallery modules and explains how to add them to site pages in Microsoft Dynamics 365 Commerce.
 

@@ -14,7 +14,7 @@ ms.custom:
 
 # POS Cart view events and handlers
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how extensions can consume the point of sale (POS) view events and handlers for custom scenarios in Microsoft Dynamics 365 Commerce.
 

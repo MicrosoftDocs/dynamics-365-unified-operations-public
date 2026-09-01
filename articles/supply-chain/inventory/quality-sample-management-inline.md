@@ -13,7 +13,7 @@ ms.custom:
 
 # Initiate an inline sample
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 ## Prerequisites
 

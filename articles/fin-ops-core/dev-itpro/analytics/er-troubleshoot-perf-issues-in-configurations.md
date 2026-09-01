@@ -16,6 +16,8 @@ ms.assetid:
 
 # Troubleshooting performance issues in ER configurations
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article explains how to find and solve performance issues in [Electronic reporting](general-electronic-reporting.md) (ER) [configurations](general-electronic-reporting.md#Configuration).
 
 Typically, performance investigation consists of several steps.

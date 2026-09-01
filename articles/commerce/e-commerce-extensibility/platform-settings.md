@@ -14,7 +14,7 @@ ms.custom:
 
 # Platform settings file
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the properties you can configure in the Microsoft Dynamics 365 Commerce platform settings file.
 

@@ -11,7 +11,7 @@ ms.search.form: WHSRFMenuItem
 
 # Over-picking for sales orders and transfer orders
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article presents a scenario that shows how to enable either a specific worker or all workers to over-pick. The over-picking process allows for controlled over-picking during the picking work.
 

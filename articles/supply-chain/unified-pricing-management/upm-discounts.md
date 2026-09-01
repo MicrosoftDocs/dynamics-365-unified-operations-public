@@ -12,7 +12,7 @@ ms.search.form:
 
 # Discount types
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article introduces the different types of discounts that you can set up by using Unified pricing management.
 

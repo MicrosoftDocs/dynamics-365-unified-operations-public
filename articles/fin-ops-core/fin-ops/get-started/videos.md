@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0, AX 8.0
 
 # Videos 
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ), you can find videos created by Microsoft that demonstrate a wide range of business solutions for Dynamics 365 products. This section lists the "how-to" videos for finance and operations apps that are hosted on the channel.
 

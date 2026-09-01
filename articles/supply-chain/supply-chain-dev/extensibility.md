@@ -13,7 +13,7 @@ ms.custom:
 
 # Planning Optimization extensibility
 
-[!include [banner](../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../finance/includes/banner.md)]
 
 This article describes the extensibility scenarios that are related to master planning and supported in Planning Optimization.
 

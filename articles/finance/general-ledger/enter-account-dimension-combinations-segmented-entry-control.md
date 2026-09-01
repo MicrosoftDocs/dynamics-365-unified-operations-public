@@ -16,7 +16,7 @@ ms.assetid: e6fce826-c403-4d91-a78b-e9a58c44ac03
 
 # Enter account and dimension combinations (segmented entry control)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to enter account and dimension combinations or ledger accounts. The entry experience is often referred to as segmented entry control.
 

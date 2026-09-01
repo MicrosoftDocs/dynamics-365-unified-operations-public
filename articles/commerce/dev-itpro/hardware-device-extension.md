@@ -14,7 +14,7 @@ ms.custom:
 
 # Integrate the POS with a new hardware device and generate the extension installer
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to integrate the point of sale (POS) with a new hardware device and generate the extension installer in Microsoft Dynamics 365 Commerce. 
 

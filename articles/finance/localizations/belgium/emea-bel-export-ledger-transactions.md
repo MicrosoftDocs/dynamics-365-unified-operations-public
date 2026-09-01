@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Export ledger transactions
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Use the feature described in this article to export the total balance of each ledger account for a specific period to a plain text (ASCII) file in CED format. You can then import the generated file into third-party software to create an accounting report that meets country or region-specific requirements.
 

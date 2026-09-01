@@ -12,7 +12,7 @@ ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
 
 # Consolidate shipments manually by using the Consolidate shipments page
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article presents a scenario where multiple orders are released to the warehouse and then consolidated later by using the **Consolidate shipments** page.
 

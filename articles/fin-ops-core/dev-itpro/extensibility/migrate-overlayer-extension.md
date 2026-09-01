@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 9
 
 # Migrate from overlayering to extensions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Introduction
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 8.0.1
 
 # Recreate missing consolidation transactions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
 This article explains why you might need to use the **Recreate missing consolidation transactions** option in Dynamics 365 Finance. In Dynamics 365 Finance version 10.0.48, the new **Recreate missing consolidation transactions** option helps resolve data inconsistencies that can occur when a consolidation process unexpectedly stops, such as due to a system interruption or manual termination.

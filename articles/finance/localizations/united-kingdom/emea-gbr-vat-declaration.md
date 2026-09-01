@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 10.0.21
 
 # Support for multiple VAT registration numbers in the VAT return of the United Kingdom
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 On July 13, 2017, the Financial Secretary to the Treasury and Paymaster General in the United Kingdom announced that Making Tax Digital (MTD) for VAT would take effect on April 1, 2019.
 

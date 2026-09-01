@@ -14,7 +14,7 @@ ms.custom:
 
 # Tile list module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes tile list modules and explains how to add them to site pages in Microsoft Dynamics 365 Commerce.
 

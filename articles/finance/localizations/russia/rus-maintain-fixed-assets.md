@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-10-28
 
 # Maintain fixed assets
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to deactivate, reactivate, and update fixed assets for Russia in Microsoft Dynamics 365 Finance.
 

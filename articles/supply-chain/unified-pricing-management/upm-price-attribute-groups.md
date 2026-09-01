@@ -12,7 +12,7 @@ ms.search.form: GUPPricingAttributeGroup
 
 # Price attribute groups
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Each *price attribute group* is a collection of price attributes. When you define a pricing rule, select a price attribute group and then specify values for each of the associated attributes. In this way, you define the match criteria used to select the sales orders and order lines that the rule applies to. This article explains how to configure price attribute groups for the Unified pricing management module.
 

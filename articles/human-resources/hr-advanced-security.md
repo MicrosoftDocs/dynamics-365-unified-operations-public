@@ -25,6 +25,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Restrict access to workers by legal entity
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 This article explains how to set up worker access by legal entity.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]

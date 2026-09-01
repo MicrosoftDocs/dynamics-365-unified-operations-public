@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ interfaces
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 An *interface* specifies a set of public instance methods. An interface defines and enforces similarities between unrelated classes without requiring one class to derive from the other.
 

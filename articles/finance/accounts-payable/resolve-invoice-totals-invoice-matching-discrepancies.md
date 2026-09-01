@@ -17,7 +17,7 @@ ms.assetid: 9ac42457-95b2-4191-ad06-c7e323704466
 
 # Resolve discrepancies during invoice totals matching overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 One type of invoice matching validation is invoice totals matching. To specify that the system should perform invoice totals matching, on the **Accounts payable parameters** page, on the **Invoice validation** tab, set the **Match invoice totals** option to **Yes**. 
 

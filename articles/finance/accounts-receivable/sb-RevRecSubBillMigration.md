@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.34
 
 # Migrate Revenue recognition to Subscription billing
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
 This article describes how to move in-progress *revenue schedules* in Revenue recognition to *deferral schedules* in Revenue and expense deferrals.

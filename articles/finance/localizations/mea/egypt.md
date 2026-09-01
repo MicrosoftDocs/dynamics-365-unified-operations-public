@@ -14,7 +14,7 @@ ms.dyn365.ops.version: 10.0.17
 
 # Egypt overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article includes information and links to documentation resources for Egypt.
 

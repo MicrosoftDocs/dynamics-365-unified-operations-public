@@ -14,7 +14,7 @@ ms.custom:
 
 # Dynamics 365 Commerce component versioning requirements
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the component versioning requirements and dependencies for all components in the Microsoft Dynamics 365 Commerce ecosystem.
 

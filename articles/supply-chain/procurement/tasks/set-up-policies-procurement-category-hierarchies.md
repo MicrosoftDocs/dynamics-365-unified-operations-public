@@ -13,7 +13,7 @@ ms.custom:
 
 # Set up policies for procurement category hierarchies
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Use this procedure to set up rules for ordering products in a category. The rules are defined for a specific purchasing policy. The category access rule controls which procurement categories employees can access when they create a requisition. When an employee creates a requisition, the legal entity and the operational unit that the employee belongs to determine the purchasing policy and category access rule that apply. A purchasing manager typically carries out this task.
 

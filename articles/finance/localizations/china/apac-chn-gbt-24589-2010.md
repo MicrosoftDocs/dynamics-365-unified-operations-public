@@ -14,7 +14,7 @@ ms.dyn365.ops.version: 10.0.19
 
 # GB/T 24589-2010 export
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 
 Use the GB/T 24589-2010 export feature to export accounting data, including master data and transaction data, to several XML files for a specific period. Authorities or auditors can then import the XML files into their system to audit or verify a company's financial results.

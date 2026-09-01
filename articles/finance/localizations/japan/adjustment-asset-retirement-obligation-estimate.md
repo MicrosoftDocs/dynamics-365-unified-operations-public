@@ -15,7 +15,7 @@ ms.custom:
 
 # Adjustment of the asset retirement obligation estimate
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to adjust the asset retirement obligation (ARO) estimate in Japan with Microsoft Dynamics 365 Finance.
 

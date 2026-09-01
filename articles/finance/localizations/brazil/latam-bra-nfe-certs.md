@@ -15,7 +15,7 @@ ms.search.form: CustTable, EcoResProductDetails, LogisticsAddressSetup
 
 # NF-e certificates
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 In the Brazilian localization, you must generate a Nota Fiscal eletrônica (NF-e) to register the movement of items and services between two parties.
 You must sign the NF-e fiscal document and transmit it to the state tax authority by using a client certificate issued by a Brazilian certificate authority (CA).

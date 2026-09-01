@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 2019-02-28
 
 # Business events developer documentation
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the development process and best practices for implementing business events.
 

@@ -15,7 +15,7 @@ ms.custom:
 
 # Set up NAF codes
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You can create NAF codes, and then set up NAF codes for legal entities, customers, vendors, and prospects. You can use an NAF code to identify the business of an enterprise. For instance, if your legal entity manufactures computers, the NAF code for your legal entity may be 300C, which is the NAF code for manufacturing computers and other computer hardware. If your legal entity is involved in building houses, your NAF code may be 452A.
 

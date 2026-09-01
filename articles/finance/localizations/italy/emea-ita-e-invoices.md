@@ -15,7 +15,7 @@ ms.search.region: Italy
 
 # Customer electronic invoices
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to set up and work with the functionality that generates electronic invoices for sales, projects, and credit notes in the Italy-specific **FatturaPA** ordinary format. <a id="simplified"></a>Generation of electronic invoices in the simplified **FatturaPA** format is out of scope for the standard Microsoft Dynamics 365 Finance functionality.
 

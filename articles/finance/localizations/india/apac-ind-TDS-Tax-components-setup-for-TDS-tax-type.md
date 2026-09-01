@@ -16,7 +16,7 @@ ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 
 # Set up tax components for the TDS tax type
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up withholding tax components for the Tax Deducted at Source (TDS) tax type. The TDS components are TDS, surcharge, PE-Cess, and SHE Cess. This article also explains how to define the threshold that is used to calculate TDS for each TDS component. Additionally, you can define an exception threshold that is used to calculate TDS for each TDS component.
 

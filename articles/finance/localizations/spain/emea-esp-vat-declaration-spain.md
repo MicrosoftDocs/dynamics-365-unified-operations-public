@@ -13,7 +13,7 @@ ms.search.region: Global
 
 # VAT declaration (Spain)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and generate a value-added tax (VAT) declaration model 303 for Spain in the official TXT format in Microsoft Dynamics 365 Finance. It also describes how to preview the VAT declaration in Microsoft Excel.
 

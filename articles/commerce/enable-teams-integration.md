@@ -15,7 +15,7 @@ ms.custom:
 
 # Enable Dynamics 365 Commerce and Microsoft Teams integration
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to enable Microsoft Dynamics 365 Commerce and Microsoft Teams integration.
 

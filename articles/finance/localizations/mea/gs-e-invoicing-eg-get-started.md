@@ -17,7 +17,7 @@ ms.custom:
 
 # Electronic invoicing in Egypt
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information to help you get started with Electronic invoicing for Egypt. It guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
 

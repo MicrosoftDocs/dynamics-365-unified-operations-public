@@ -14,7 +14,7 @@ ms.custom:
 
 # Purchasing cXML Enhancements
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The *Purchasing cXML Enhancements* feature builds on the [external catalog functionality](set-up-external-catalog-for-punchout.md) used for purchase requisitions. The external catalog functionality is known as *PunchOut*. Although a purchase order doesn't have to originate from a purchase requisition, there must be a connection between the vendor on a purchase order and the parameters that are used to send the purchase order document.
 

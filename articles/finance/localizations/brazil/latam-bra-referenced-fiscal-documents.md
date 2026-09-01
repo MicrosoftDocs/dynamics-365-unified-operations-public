@@ -15,7 +15,7 @@ ms.search.form: FiscalDocument_BR, SalesEditLines, TmpFiscalReference_BR
 
 # Referenced fiscal documents for Brazil
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides an overview of referenced fiscal documents that are used in Brazil.
 

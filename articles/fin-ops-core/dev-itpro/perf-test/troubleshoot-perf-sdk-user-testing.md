@@ -15,7 +15,7 @@ ms.custom: sfi-image-nochange
 
 # Troubleshooting guide for testing with the Performance SDK
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
 > As of September 2024, Microsoft no longer supports the Perf SDK. This deprecation follows the end of support for Visual Studio 2019, which was the last version to include web performance and load testing features.

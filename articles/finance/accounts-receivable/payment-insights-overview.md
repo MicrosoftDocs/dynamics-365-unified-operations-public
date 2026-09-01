@@ -17,7 +17,7 @@ ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 
 # Customer payment insights 
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 This article describes the payment insights capability that helps improve understanding of individual customers' typical payment practices. The feature helps identify circumstances that justify initiating collection processes earlier than normal.  

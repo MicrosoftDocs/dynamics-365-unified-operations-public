@@ -14,6 +14,8 @@ ms.custom:
 
 # Review the status of an experiment
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 This article explains how to review the status of an experiment in the Microsoft Dynamics 365 Commerce experimentation lifecycle.
 
 Setting up and running an experiment in Microsoft Dynamics 365 Commerce involves many steps. For more information about the experimentation lifecycle, see [Experimentation in Dynamics 365 Commerce](experimentation-overview.md).

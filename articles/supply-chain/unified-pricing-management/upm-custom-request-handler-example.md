@@ -13,7 +13,7 @@ ms.custom:
 
 # Example custom request handler code
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides sample code for the `GetCustomizedPricingPropertiesRequestHandler` class, which is used to implement custom pricing attributes. This handler enables you to retrieve and process custom pricing properties for products, customers, orders, and order lines.
 

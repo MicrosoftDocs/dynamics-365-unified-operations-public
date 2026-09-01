@@ -15,6 +15,8 @@ ms.search.form: Inquiries, Reports
 
 # Fixed asset inquiries and reports
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article explains how to work with inquiries and reports for fixed asset acquisitions for Russia in Microsoft Dynamics 365 Finance.
 
 ## Inquiries

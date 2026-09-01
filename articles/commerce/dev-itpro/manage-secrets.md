@@ -14,7 +14,7 @@ ms.custom:
 
 # Manage secrets for retail channels
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to manage secrets when you're using an extension with channels that require access to secrets in Microsoft Dynamics 365 Commerce.
 

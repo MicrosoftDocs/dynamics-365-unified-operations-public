@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Platform update 2
 
 # Software lifecycle policy and cloud releases
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article outlines the lifecycle and support policies for the finance and operations online service.
 

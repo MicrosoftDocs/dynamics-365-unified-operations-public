@@ -15,6 +15,8 @@ ms.custom:
 
 # Run and monitor an experiment
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 This article describes how to run and monitor an experiment in a partner app and change variations as needed in Microsoft Dynamics 365 Commerce. 
 
 Before you complete the steps in this article, first [publish](experimentation-preview-publish.md) your experiment in Commerce. 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.25
 
 # Awareness between ledger settlement parameter before year-end close
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Preparing for the ledger settlement **Enable advanced awareness options** parameter before year-end close
 

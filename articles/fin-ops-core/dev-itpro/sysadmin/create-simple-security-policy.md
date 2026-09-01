@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.12
 
 # Create a security policy
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to create a simple security policy that secures access to customers and customer groups, based on a range for a customer group.
 

@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Import the Chinese Golden Tax files
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
   
 This article explains how to import files with external invoice numbers from providers (Aisino or BaiWang) into Dynamics 365 Finance. You can import txt and xml files from the BaiWang provider, and txt and txt files from the Aisino provider.
 

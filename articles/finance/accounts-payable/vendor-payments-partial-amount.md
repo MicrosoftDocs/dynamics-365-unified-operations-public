@@ -16,7 +16,7 @@ ms.assetid: 9a17075e-5325-4d55-a1e5-1791b8c460a0
 
 # Vendor payments for a partial amount
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Sometimes, you make a payment to a vendor that's less than the amount of an invoice. This article describes the various options for handling this situation. The options that are available to you depend on your business requirements and configuration.
 

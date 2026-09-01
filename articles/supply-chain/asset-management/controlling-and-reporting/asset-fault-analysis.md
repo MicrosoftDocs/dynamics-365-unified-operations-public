@@ -12,7 +12,7 @@ ms.search.form: EntAssetObjectFaultCalculate
 
 # Asset fault analysis
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
  
 

@@ -12,7 +12,7 @@ ms.search.validFrom: 2023-11-07
 
 # Clean up DOM fulfillment plans and logs
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to clean up distributed order management (DOM) fulfillment plans and logs in Microsoft Dynamics 365 Commerce.
 

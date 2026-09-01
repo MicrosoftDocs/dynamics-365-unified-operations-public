@@ -16,7 +16,7 @@ ms.dyn365.ops.version:
 
 # Clear bridging payments by using advanced bank reconciliation
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to clear bridging payments in advanced bank reconciliation by using the **Automatic clear bridged transactions through advanced bank reconciliation** feature.
 

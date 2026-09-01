@@ -16,7 +16,7 @@ ms.assetid: 966a3f1d-c59c-4a84-acd4-5bb7e65144c8
 
 # Report definitions in financial report designer
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article provides information about report definitions. A report definition is a report component (or building block) that uses a row definition, a column definition, and an optional reporting tree definition to create a report. A report definition also provides options and settings for customizing a report.
 

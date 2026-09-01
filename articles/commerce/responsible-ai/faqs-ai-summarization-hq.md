@@ -16,7 +16,7 @@ ms.custom:
 
 # FAQ for Copilot AI summarization in Commerce headquarters
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides answers to frequently asked questions about the Microsoft Copilot AI technology that generates summaries in Dynamics 365 Commerce headquarters. It includes key considerations and details about how the AI is used, how Microsoft tested and evaluated it, and any specific limitations.
 

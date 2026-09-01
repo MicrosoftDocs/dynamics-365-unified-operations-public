@@ -16,7 +16,7 @@ ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 
 # Use exchange difference invoicing
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure and use exchange difference invoicing for the Republic of Türkiye in Microsoft Dynamics 365 Finance.
 

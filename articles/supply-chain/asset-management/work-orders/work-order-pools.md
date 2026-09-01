@@ -12,7 +12,7 @@ ms.search.form: EntAssetWorkOrderTablePoolPart, EntAssetWorkOrderPoolReferenceIn
 
 # Work order pools
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 
 You can use work order pools to group work orders that have something in common. Here are some examples of things that you can create  work order pools for:

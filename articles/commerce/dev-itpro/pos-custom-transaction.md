@@ -14,7 +14,7 @@ ms.custom:
 
 # Add custom controls to Store Commerce transaction pages
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to add new custom controls to Microsoft Dynamics 365 Commerce Store Commerce transaction pages using the screen layout designer.
 

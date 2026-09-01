@@ -25,6 +25,8 @@ ms.dyn365.ops.version: Human Resources
 
 # HR recruiting app licensing overview  
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 This article explains licensing in the HR recruiting app in Microsoft Dynamics 365 Human Resources.
 
 ## HR recruiting solution license requirements  

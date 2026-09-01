@@ -16,7 +16,7 @@ ms.assetid: 7cb522a4-2f84-4399-a60d-8692df6e08f3
 
 # Brazil NF-e process overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides an overview of the process for setting up and submitting a Nota fiscal eletrônica (NF-e) to register the movement of items and services between two parties.
 

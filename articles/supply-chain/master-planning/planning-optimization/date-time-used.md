@@ -10,7 +10,7 @@ ms.reviewer: kamaybac
 
 # Date and time parameters used by Planning Optimization
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about the date and time parameters that Planning Optimization uses during its operation.
 

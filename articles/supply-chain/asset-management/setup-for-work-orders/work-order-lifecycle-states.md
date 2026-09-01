@@ -13,7 +13,7 @@ ms.custom:
 
 # Work order lifecycle states
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Work order lifecycle states define the states that a work order can go through. Examples include **Created**, **Scheduled**, **In progress**, and **Ended**. Work order lifecycle states can be manually updated on a work order, or they can be automatically updated (for example, during work order scheduling).
 

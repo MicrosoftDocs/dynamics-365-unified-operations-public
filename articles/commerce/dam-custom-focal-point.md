@@ -14,7 +14,7 @@ ms.custom:
 
 # Customize image focal points
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to customize image focal points in Microsoft Dynamics 365 Commerce site builder.
 

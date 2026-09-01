@@ -16,7 +16,7 @@ ms.assetid: e1b0a6e3-0c72-4a7d-90e1-20f870c6dbad
 
 # Create dimensions and import dimension members
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Cost accounting is an independent module that requires data from other modules. Categorize this data into the following categories:
 

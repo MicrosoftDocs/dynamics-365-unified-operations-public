@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 20
 
 # Write extensible forms
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Methods on forms
 

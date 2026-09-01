@@ -15,7 +15,7 @@ ms.search.form:
 
 # Functional locations and assets
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes functional locations and assets in Asset Management.
 

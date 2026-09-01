@@ -14,7 +14,7 @@ ms.search.validFrom: 2019-06-28
 
 # Invoice factures processing and printing
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with invoice factures for Russia in Microsoft Dynamics 365 Finance.
 

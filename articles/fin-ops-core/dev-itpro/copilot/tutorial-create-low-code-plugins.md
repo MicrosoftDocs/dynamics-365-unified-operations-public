@@ -15,7 +15,7 @@ ms.search.region: Global
 
 # Tutorial: Extend Copilot capabilities with low-code plugins
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft Copilot Studio provides the orchestration of the AI capabilities for Copilot for finance and operations apps. Therefore, it enables a low-code maker experience for customizing the Copilot capabilities. This tutorial goes through an example that shows how to add new capabilities to Copilot by using Copilot Studio to add a plugin to the **Copilot for Finance and Operation** chatbot.
 

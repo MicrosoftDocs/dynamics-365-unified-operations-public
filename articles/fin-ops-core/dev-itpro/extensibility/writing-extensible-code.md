@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 20
 
 # Write extensible code
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 X++ and the metadata model provide a powerful foundation for building business solutions. One of the design pillars is to automate as many technical concerns as possible, so that you can focus on the business domain. For example, if you put all the text resources in label files, you don't have to worry about the localization of text resources.
 

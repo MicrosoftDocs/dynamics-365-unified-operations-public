@@ -26,6 +26,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Create links from Human Resources to another Finance environment
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 You might work in two Dynamics 365 environments. For example, you might have a Dynamics 365 Human Resources environment and need to connect to another Dynamics 365 Finance environment.
 
 This feature enables you to create links from a Human Resources page to a specific page in another Finance environment. When you configure the links, you can specify where the link is available in Human Resources and the target page that opens in the other environment.

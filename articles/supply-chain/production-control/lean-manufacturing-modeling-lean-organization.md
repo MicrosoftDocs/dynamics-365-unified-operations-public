@@ -12,7 +12,7 @@ ms.assetid: 4f272f2f-ec2c-4b0d-a652-00a63b719b9e
 
 # Modeling a lean organization
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The article provides information about the key concepts in modeling a lean organization. 
 

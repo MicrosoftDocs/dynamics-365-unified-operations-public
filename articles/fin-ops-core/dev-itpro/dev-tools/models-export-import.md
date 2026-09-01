@@ -15,7 +15,7 @@ ms.assetid: 9eb3be56-6382-43df-a247-eae0dcaf46b8
 
 # Export and import models
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Model files let you distribute models to customers and partners, and you can install them in development environments. They're key components of a Microsoft Dynamics Lifecycle Services solution. Model files contain a model descriptor file, metadata, source code, and referenced .NET assemblies (when applicable). This article describes how to export a model into a model file, install a model file, and delete a model in a development environment.
 

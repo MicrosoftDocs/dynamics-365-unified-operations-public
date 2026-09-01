@@ -13,7 +13,7 @@ ms.search.form:
 
 # Install, set up, and update the Customer portal
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Licensing requirements
 

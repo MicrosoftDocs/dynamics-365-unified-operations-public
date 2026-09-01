@@ -15,7 +15,7 @@ ms.search.form: LedgerOpeningSheet_ES
 
 # Special entries and opening sheets
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with special entries and opening sheets for Spain in Microsoft Dynamics 365 Finance.
 

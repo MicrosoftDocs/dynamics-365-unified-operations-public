@@ -18,7 +18,7 @@ ms.custom:
 
 # Manage product categories and products
 
-[!include [banner](./includes/banner.md)]
+[!INCLUDE [banner](./includes/banner.md)]
 
 This article describes how merchandising managers can use product categories to manage relationships between the product hierarchies and released product details in Microsoft Dynamics 365 Commerce.
 

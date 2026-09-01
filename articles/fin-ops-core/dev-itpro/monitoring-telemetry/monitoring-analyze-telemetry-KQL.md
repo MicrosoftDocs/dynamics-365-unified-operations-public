@@ -13,7 +13,7 @@ ms.reviewer: johnmichalak
 
 # Analyze and monitor telemetry with KQL
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Telemetry from Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management is stored in Application Insights. To query that telemetry, the Kusto Query Language (KQL) is used. This article provides information and links to resources to help you learn about KQL.
 

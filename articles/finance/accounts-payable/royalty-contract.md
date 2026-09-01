@@ -16,7 +16,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Royalty contract management
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Royalty contract management is designed for companies that exercise the right to use a third party's assets and intellectual property. It helps companies better manage their royalty agreements by automating tasks that are involved in administering, tracking, and making royalty payments.
 

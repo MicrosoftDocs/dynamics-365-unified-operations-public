@@ -15,7 +15,7 @@ ms.search.validFrom: 2019-07-15
 
 # Integrated tax
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 
 

@@ -14,7 +14,7 @@ ms.search.validFrom: 2021-07-30
 
 # GST declaration form GST101A for New Zealand (NZ-00003)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure and generate the GST return form GST101A for New Zealand in Microsoft Dynamics 365 Finance.
 

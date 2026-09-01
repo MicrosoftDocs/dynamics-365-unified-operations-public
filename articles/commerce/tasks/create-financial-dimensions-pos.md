@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Create financial dimensions for POS registers and configure dimension values on registers
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to create and configure financial dimensions for point of sale (POS) registers in Microsoft Dynamics 365 Commerce.
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.28
 
 # Financial journal posting performance
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article suggests ways to troubleshoot performance problems when you post financial journals. These problems might be caused by the following factors:
 

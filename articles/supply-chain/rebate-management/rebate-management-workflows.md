@@ -13,7 +13,7 @@ ms.custom:
 
 # Rebate management deal workflows
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 To approve rebate deals, Rebate management uses the same workflow platform as other finance and operations apps. Two job processes are associated with every workflow:
 

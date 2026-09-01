@@ -14,7 +14,7 @@ ms.custom:
 
 # Enable personalized recommendations
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to make personalized product recommendations available for customers in Microsoft Dynamics 365 Commerce.
 

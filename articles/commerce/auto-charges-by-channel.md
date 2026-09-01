@@ -14,6 +14,8 @@ ms.custom:
 
 # Enable and configure auto charges by channel
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 This article explains how to enable and configure automatic charges (auto charges) by channel in Microsoft Dynamics 365 Commerce.
 
 ## Overview

@@ -15,7 +15,7 @@ ms.search.form: OMLegalEntity, OMNewLegalEntity
 
 # MX-00010 Enter tax registration IDs for Mexican legal entities
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to enter tax registration IDs for Mexican legal entities in Microsoft Dynamics 365 Finance.
 

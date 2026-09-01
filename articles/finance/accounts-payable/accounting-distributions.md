@@ -16,7 +16,7 @@ ms.assetid: 9030355d-8e6e-408b-9e7d-7b346eaa652c
 
 # Accounting distributions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about accounting distributions and describes the options for processing them. Use accounting distributions to allocate monetary amounts for a source document to specific ledger accounts.
 

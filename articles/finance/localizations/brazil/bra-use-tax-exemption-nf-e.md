@@ -13,7 +13,7 @@ ms.search.region: Brazil
 
 # NT2019.001 - Tax benefits and exemptions rules for NF-e/NFC-e
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 NF-e technical note NT2019.001 requires that the description of ICMS tax benefits and exemptions be more accurately enforced when fiscal document models 55 (NF-e) and 65 (NFC-e) are issued.
 

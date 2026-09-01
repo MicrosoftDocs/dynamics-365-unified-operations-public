@@ -17,7 +17,7 @@ ms.assetid:
 
 # Deployment options
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can deploy finance and operations apps in the cloud or on-premises. Cloud deployments offer an ERP service that Microsoft fully manages, while on-premises deployments are deployed locally within a customer's data center.
 > [!IMPORTANT]

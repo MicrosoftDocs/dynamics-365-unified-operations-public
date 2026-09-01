@@ -12,7 +12,7 @@ ms.assetid: 5823d75e-f839-46dd-beb3-e09b79fc8aa4
 
 # Reserve the same batch for a sales order
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to set up a product to allow reservation of inventory against a single batch of inventory.
 

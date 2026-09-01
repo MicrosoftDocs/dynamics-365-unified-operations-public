@@ -13,7 +13,7 @@ ms.dyn365.ops.version: App 10.0.44
 
 # Dominican Republic overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This overview provides a centralized entry point to Microsoft Dynamics 365 Finance documentation for the Dominican Republic. Here, you'll find guidance on configuring legal entities, tax information, and electronic invoicing specific to local requirements. The resources also cover general and country-specific reporting, ensuring compliance with Dominican Republic regulations and supporting your business processes.
 

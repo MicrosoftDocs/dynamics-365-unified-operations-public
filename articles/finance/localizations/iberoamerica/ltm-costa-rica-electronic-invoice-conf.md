@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 
 # Configure electronic invoice parameters for Costa Rica
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes the main configuration settings required to issue electronic invoices in Costa Rica by using Microsoft Dynamics 365 Finance.
 

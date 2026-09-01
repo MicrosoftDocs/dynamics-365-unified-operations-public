@@ -17,7 +17,7 @@ ms.custom:
 
 # Custom Filter Group subpattern
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Usage
 

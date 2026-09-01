@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-06-30
 
 # Upgrade from AX 2012 - Data upgrade in self-service environments
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This Microsoft Dynamics AX 2012 data upgrade process is for self-service environments. Complete the sections of this article in the following order:
 

@@ -15,7 +15,7 @@ ms.custom:
 
 # Get started with Headless Commerce Integration
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the information and samples that are available to help you start your Headless Commerce Integration.
 

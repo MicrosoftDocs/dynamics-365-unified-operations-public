@@ -15,7 +15,7 @@ ms.custom:
 
 # Store selector module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article covers the store selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 

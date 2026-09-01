@@ -16,7 +16,7 @@ ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 
 # NUMERALSTOTEXT ER function
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The `NUMERALSTOTEXT` function returns the specified number as a *String* value after it spells out the number in the specified language.
 

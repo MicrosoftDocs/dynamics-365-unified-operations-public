@@ -14,7 +14,7 @@ ms.custom:
 ---
 # Update code and environments for Commerce projects
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains recommended practices for updating code and environments for Microsoft Dynamics 365 Commerce implementation projects.
 

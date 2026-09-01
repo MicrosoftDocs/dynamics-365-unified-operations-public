@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 2
 
 # Development and continuous delivery FAQ
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article summarizes answers to questions that independent software vendors (ISVs) and partners frequently ask, especially regarding guidelines about development, testing, delivery, and lifecycle management.
 

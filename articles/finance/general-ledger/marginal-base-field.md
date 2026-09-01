@@ -16,7 +16,7 @@ ms.assetid: 381fc309-b32a-4927-b5b8-fa1c31b0bd72
 
 # Sales tax rates based on the Marginal base and Calculation methods
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how the values in the **Marginal base** and **Calculation method** fields determine the tax rates in sales and purchase transactions.
 

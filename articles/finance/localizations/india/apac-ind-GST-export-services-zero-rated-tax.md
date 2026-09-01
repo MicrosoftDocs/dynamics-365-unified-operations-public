@@ -14,7 +14,7 @@ ms.custom:
 
 # Export services that have zero-rated tax
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to export services that have zero-rated tax in Microsoft Dynamics 365 Finance.
 

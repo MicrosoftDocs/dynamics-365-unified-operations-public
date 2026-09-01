@@ -11,7 +11,7 @@ ms.search.form: WHSMobileAppField
 
 # Scan bar codes using a camera in the Warehouse Management mobile app
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to set up the Warehouse Management mobile app to scan bar codes using a camera on a mobile device.
 

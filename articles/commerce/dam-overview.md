@@ -14,7 +14,7 @@ ms.custom:
 
 # Digital asset management overview
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides an overview of digital asset management in Microsoft Dynamics 365 Commerce site builder.
 

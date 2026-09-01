@@ -17,7 +17,7 @@ ms.custom:
 
 # Input controls and grid column sizes
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to create a consistent look and feel for forms by controlling the size of controls and grids.
 

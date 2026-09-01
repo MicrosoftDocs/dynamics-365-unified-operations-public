@@ -12,7 +12,7 @@ ms.search.form: EntAssetItemForecast
 
 # Calculate item forecast
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
  
 

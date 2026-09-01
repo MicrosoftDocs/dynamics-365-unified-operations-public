@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-06-30
 
 # Enter and post tax adjustment transactions (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to create and post tax adjustment transactions in Brazil with Microsoft Dynamics 365 Finance.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Warehouse configuration overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to configure a warehouse. It includes information about how to enable a warehouse layout and warehouse processes.
 

@@ -11,7 +11,7 @@ ms.search.form:
 
 # Engineering change management FAQ
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides answers to frequently asked questions about the engineering change management feature.
 

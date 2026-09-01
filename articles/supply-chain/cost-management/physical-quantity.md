@@ -13,7 +13,7 @@ ms.custom:
 
 # Inventory object values
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about how the values of an inventory object are calculated.
 

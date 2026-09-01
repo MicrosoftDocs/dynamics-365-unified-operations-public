@@ -16,7 +16,7 @@ ms.assetid: 5c0b5e37-d51d-4a01-bb37-1882173abb9f
 
 # Letters of guarantee
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about letters of guarantee. In a letter of guarantee, a bank agrees to pay a specific amount of money to a person if one of the bank's customers defaults on a payment or obligation to that person.
 

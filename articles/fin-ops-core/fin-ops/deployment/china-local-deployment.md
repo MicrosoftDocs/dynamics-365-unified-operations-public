@@ -16,7 +16,7 @@ ms.dyn365.ops.version:
 
 # Dynamics 365 Finance, Supply Chain Management, and Commerce operated by 21Vianet in China
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 Microsoft Dynamics 365 online services that 21Vianet operates are designed to comply with regulatory requirements in China. They provide a physically separated instance of cloud services that a local operator, Shanghai Blue Cloud Technology Co., Ltd ("21Vianet"), operates and transacts. This operator is a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd., which is located in China. This deployment option meets the demands of customers who prefer to use online services that a local company provides and stores their data inside China. These services are subject to Chinese laws.
 

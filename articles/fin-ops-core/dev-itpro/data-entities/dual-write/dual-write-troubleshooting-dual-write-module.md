@@ -15,7 +15,7 @@ ms.search.validFrom: 2020-03-16
 
 # Troubleshoot dual-write problems in finance and operations apps
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides troubleshooting information for dual-write integration between finance and operations apps and Dataverse. Specifically, it provides information that can help you fix problems with the **Dual-write** module in finance and operations apps.
 

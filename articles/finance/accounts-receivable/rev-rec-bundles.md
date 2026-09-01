@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.7
 
 # Revenue recognition bundles
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the bundle functionality that's included in the revenue recognition capability in Accounts receivable. A bundle comprises a parent item and multiple component items. Enter the parent item on a sales order to make order entry more efficient. However, the system explodes the parent item into the component items. Internal documents, such as the packing slip, list the component items. However, external documents show only the parent item.
 

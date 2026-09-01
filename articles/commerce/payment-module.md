@@ -15,7 +15,7 @@ ms.custom:
 
 # Payment module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes the payment module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 

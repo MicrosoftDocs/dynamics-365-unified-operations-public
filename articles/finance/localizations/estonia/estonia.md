@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Estonia overview
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article includes information and links to resources that legal entities with a primary address in Estonia should consider.
 

@@ -15,7 +15,7 @@ ms.assetid: 73615d1b-9088-496e-989e-d8996f30e76b
 
 # Create localizable labels
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to create localizable labels for client components and HTML/JavaScript controls.
 

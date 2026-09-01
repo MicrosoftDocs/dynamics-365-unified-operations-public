@@ -14,7 +14,7 @@ ms.custom:
 
 # Manage robots.txt files
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to manage robots.txt files in Microsoft Dynamics 365 e-commerce.
 

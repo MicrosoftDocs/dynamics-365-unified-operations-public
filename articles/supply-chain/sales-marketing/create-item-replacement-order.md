@@ -12,7 +12,7 @@ ms.search.form: ReturnTableListPage, ReturnReplaceItem
 
 # Create an item replacement order
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Item replacement orders are usually created after a product is returned and inspected. However, when an item must be replaced before it has been returned, or when the original item won't be returned, you can create an item replacement order immediately after you create a return order.
 

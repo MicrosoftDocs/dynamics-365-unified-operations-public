@@ -14,7 +14,7 @@ ms.search.validFrom: 2017-06-30
 
 # Process electronic payment remittances
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to create the instructions for electronic payment of vendor invoices that you send to the bank in Brazil with Microsoft Dynamics 365 Finance.
 

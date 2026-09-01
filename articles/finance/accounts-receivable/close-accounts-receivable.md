@@ -16,7 +16,7 @@ ms.assetid: c18d83e5-4adb-422a-91be-82a665d8288b
 
 # Close Accounts receivable
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The following table lists the pages that support the close Accounts receivable business process.
 

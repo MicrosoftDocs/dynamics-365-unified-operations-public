@@ -19,7 +19,7 @@ ms.custom:
 
 # Set up call center channels
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to process orders for call centers in Microsoft Dynamics 365 Commerce.
 

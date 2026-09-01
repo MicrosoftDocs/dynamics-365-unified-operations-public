@@ -13,7 +13,7 @@ ms.custom:
 
 # Create purchasing policies
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article shows you how to create purchasing policies to align with your business processes for purchasing. Before you can create purchasing policies, you must set up the purchasing policy parameters. It's possible to create, modify, and retire a purchasing policy, but you can't delete a purchasing policy. This procedure would typically be carried out by a purchasing manager. You can use this procedure in demo data company USMF or on your own data.
 

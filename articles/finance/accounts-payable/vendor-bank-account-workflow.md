@@ -12,7 +12,7 @@ ms.search.form: VendBankAccount
 
 # Vendor bank account workflow
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The vendor bank approval workflow ensures that bank data that suppliers submit is secure, financially compliant, and protected against fraud. This feature helps reduce the risk of fraud by detecting and preventing unapproved changes. Businesses can evaluate and approve any incoming changes to a supplier's bank account information, and can confirm that the provided bank details meet their organization's standards and policies.
 

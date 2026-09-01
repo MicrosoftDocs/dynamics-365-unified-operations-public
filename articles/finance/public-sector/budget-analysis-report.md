@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.3
 
 # Budget analysis report
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use the **Budget analysis** report to create a summarized report that compares budgeted amounts to actual expenses and revenue activity during a period that you specify. For each account, the report lists budgeted amounts, actual expenses or revenue, encumbrance amounts from purchase orders, and preencumbrance amounts from purchase requisitions. The report also lists the remaining budget amount for each account and fund.
 

@@ -15,7 +15,7 @@ ms.custom:
 
 # Allocate time to jobs in a job bundle
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In Manufacturing execution, you can bundle jobs. You can then start multiple jobs at the same time on the Job list page.
 

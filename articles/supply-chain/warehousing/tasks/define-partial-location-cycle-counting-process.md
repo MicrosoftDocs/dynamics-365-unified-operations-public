@@ -12,7 +12,7 @@ ms.search.form: WHSRFMenuItemCycleCount, WHSCycleCountPlan, WHSCycleCountPlanLis
 
 # Define partial location cycle counting process
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 When you use cycle count plans to create counting work, you can guide the actual counting operations by requesting that only specific products and product variants be counted instead of all on-hand inventory at the location. By filtering on specific products, the warehouse manager can reduce review overhead, help prevent consolidation mistakes, and save time. Typically, a warehouse manager performs the setup tasks.
 

@@ -12,7 +12,7 @@ ms.search.form: LeanProductionFlow, PlanActivity, PlanActivityRelationNew, PlanA
 
 # Add a predecessor to a production flow activity
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 In a production flow version, all activities must be sequenced. An activity can have one or multiple predecessors or successors. 
 

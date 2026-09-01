@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 
 # Parameters not used by Planning Optimization
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article lists the parameters that Planning Optimization doesn't currently consider during its operation. The planning service might skip a parameter because, for example, it doesn't yet support related functionality. Alternatively, functional changes might make the parameter obsolete.
 

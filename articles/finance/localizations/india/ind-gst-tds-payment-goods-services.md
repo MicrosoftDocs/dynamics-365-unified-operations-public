@@ -13,7 +13,7 @@ ms.search.region: India
 
 # GST TDS on payment of goods and services
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Goods and Services Tax (GST) Tax Deducted at Source (TDS) is deducted on specific percentages of the amount that is paid or payable by the buyer of goods and services. The buyer, a government company, enters into a contract with a supplier to buy goods and/or services where the total value of the taxable supply that is under contract, excluding GST, exceeds 2,50,000 Indian rupees (INR 2,50,000). The buyer can deduct GST TDS from the payment that is made or credited to the supplier of taxable goods and/or services.
 

@@ -12,7 +12,7 @@ ms.search.form:  WHSClusterProfile
 
 # Cluster position full
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The *Cluster position full* feature offers an alternative to more rigid enforcement of work break rules when cluster picking is used, because it enables a larger margin of error in the volumetric constraints of containers or totes. In a common scenario, not all items on a work order fit into a selected container. Warehouse workers who are cluster picking have few options in this scenario: they must either change to a larger container size or work with their supervisor to come up with a different solution.
 

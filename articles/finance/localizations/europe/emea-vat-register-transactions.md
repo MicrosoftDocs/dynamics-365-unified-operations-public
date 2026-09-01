@@ -15,7 +15,7 @@ ms.search.form: RegisterVAT_W, TaxTable
 
 # VAT register transactions for Eastern Europe
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about VAT register transactions for Estonia, Lithuania, Czech Republic, Hungary, Latvia, and Poland. 
 

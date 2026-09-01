@@ -16,7 +16,7 @@ ms.assetid: c61391e4-c4bf-4f09-bd18-8107a1bf055e
 
 # Make the chart of accounts delimiter unique
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 In Microsoft Dynamics AX 2012, you could use the same delimiter for your chart of accounts and dimension values. In current versions of Dynamics 365 finance and operations, you can't use the same delimiter for the chart of accounts and dimension names or values.
 

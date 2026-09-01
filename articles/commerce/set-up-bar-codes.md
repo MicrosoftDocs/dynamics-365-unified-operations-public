@@ -16,7 +16,7 @@ ms.custom:
 
 # Set up barcodes
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to use barcodes in Microsoft Dynamics 365 Commerce.
 

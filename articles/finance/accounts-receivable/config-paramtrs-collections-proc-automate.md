@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.13
 
 # Configure parameters for collection process automation
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the parameters that affect automated collection processes and provides guidance for setting them so that the automated process reflects your intentions and expectations. For information about how to automate collection processes, see [Collections process automation](collections-process-automate.md).
 

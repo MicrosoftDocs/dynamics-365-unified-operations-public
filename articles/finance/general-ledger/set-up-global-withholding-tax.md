@@ -16,6 +16,8 @@ ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 
 # Set up global withholding tax
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article lists the steps for setting up global withholding tax for sales and purchases.
 
 1. Set up withholding tax authorities on the **Withholding tax authorities** page.

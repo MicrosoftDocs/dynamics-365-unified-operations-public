@@ -15,7 +15,7 @@ ms.custom:
 
 # Print a separate label for credit memos that originate from sales
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to specify the label that appears on credit memos that originate from sales.
 

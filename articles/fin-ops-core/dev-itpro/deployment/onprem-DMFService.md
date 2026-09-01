@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.32
 
 # Configure your environment with a dedicated Data Management Framework service
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can use dedicated nodes that contain Microsoft SQL Server Integration Services (SSIS), or you can install SSIS on other node types. If you want dedicated SSIS nodes, specify which machines host the node type by entering the details for the nodes in your ConfigTemplate.xml file.
 

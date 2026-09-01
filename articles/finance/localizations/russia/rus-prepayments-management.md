@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-10-28
 
 # Prepayments management
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to manage paying value-added tax (VAT) when prepayments are received from customers in Russia in Microsoft Dynamics 365 Finance.
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.14
 
 # Change or reassign a ledger calendar
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to change the calendar that is currently assigned to a ledger, and how to assign a new calendar to the ledger.
 

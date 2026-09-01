@@ -13,6 +13,8 @@ ms.date: 8/18/2026
 
 # Files with Dynamics 365 ERP MCP
 
+[!INCLUDE [banner](../../../../includes/banner.md)]
+
 File support in the Dynamics 365 ERP MCP server enables powerful process automation and agentic experiences for document-centric business processes in Dynamics 365 finance and operations apps. The MCP server lets an AI agent exchange files with the application in two directions: it can return large query results, exported reports, and existing attachments as embedded resources to the language model client, and it can accept file content from the client and attach it to a record in the application.
 
 The MCP server supports two categories of file and attachment operations:

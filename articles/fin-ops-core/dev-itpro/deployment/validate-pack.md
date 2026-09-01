@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Platform update 1
 
 # Validate a package in Lifecycle Services
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to validate a package in Microsoft Dynamics Lifecycle Services before you apply it to a self-service cloud environment.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Quality management test groups
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to create test groups so you can use multiple tests with quality orders in Microsoft Dynamics 365 Supply Chain Management.
 

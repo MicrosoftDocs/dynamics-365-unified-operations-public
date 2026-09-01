@@ -25,6 +25,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Set up reason codes
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 Dynamics 365 Human Resources uses reason codes to explain why an employee’s benefits are changing.
 
 ## Create reason codes

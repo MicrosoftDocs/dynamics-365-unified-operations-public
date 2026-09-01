@@ -14,7 +14,7 @@ ms.search.region: Global
 
 # Austrian Intrastat
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Use the **Intrastat** page to generate and report information about trade among European Union (EU) countries and regions. The Austrian Intrastat declaration contains information about the trade of goods for reporting.
 

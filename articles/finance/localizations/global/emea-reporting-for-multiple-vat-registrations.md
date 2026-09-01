@@ -12,7 +12,7 @@ ms.reviewer: johnmichalak
 
 # Reporting for multiple VAT registrations 
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to report for multiple value-added tax (VAT) registrations from a single legal entity. You can use this functionality in the following countries or regions: 
 

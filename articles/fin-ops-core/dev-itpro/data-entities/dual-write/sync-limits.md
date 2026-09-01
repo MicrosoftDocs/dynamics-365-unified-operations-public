@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Dual-write limits for live synchronization
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 For more consistent availability and performance, limits apply when dual-write is used to write data to finance and operations apps and Microsoft Dataverse. The platform applies these limits to control dual-write transactions. They ensure seamless writes and help minimize failures.
 

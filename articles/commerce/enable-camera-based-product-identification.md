@@ -10,9 +10,9 @@ ms.custom:
   - bap-template
 ---
 
-[!INCLUDE[banner](../includes/banner.md)]
-
 # Enable camera-based product identification in Store Commerce
+
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to use a sample Commerce Runtime (CRT) extension to enable camera-based product identification in Microsoft Dynamics 365 Commerce point of sale (POS), using Azure Custom Vision or any preferred vision model.
 

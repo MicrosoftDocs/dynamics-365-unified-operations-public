@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 10.0.21
 
 # Support for multiple VAT registration numbers in the VAT return of Poland (JPK-V7)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 As of Microsoft Dynamics 365 Finance version 10.0.29, the JPK-V7 feature lets you file a value-added tax (VAT) return for [multiple VAT registrations](../global/emea-multiple-vat-registration-numbers.md).
 

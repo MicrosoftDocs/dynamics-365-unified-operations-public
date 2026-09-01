@@ -12,7 +12,7 @@ ms.search.form:  WHSRFSystemDirectedWorkSequenceQuery, WHSLocDirTable
 
 # System-directed work sequencing
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 System-directed work sequencing lets you sort and filter the work orders that the system presents to users for execution. It's helpful in scenarios where additional criteria (such as the time of shipping, the picking zone, the location profile, or a combination of various criteria) are required to drive the warehouse picking process.
 

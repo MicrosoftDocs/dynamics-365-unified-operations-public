@@ -15,7 +15,7 @@ ms.search.form: OfficialsTable_RU
 
 # Set up officials (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up officials in Russia who generate transportation invoices and job tickets and who are involved in various reports with Microsoft Dynamics 365 Finance.
 

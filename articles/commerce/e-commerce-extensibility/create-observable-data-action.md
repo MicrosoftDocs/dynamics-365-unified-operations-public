@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Create an observable data action
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to create an observable data action in Microsoft Dynamics 365 Commerce.
 

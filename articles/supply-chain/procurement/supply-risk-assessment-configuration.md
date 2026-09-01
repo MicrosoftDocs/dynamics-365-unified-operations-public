@@ -12,7 +12,7 @@ ms.search.form:
 
 # Configure supply risk assessment
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to enable and set up supply risk assessment.
 

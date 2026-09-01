@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 10.0.13
 
 # Support for multiple VAT registration numbers in reporting for Austria
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about the regulatory reports for Austria that are available for legal entities that use multiple value-added tax (VAT) registration numbers functionality. For more information about the **Multiple VAT registration numbers** functionality, the prerequisites that must be met before you use it, and the required setup, see [Multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md).
 

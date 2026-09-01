@@ -16,7 +16,7 @@ ms.assetid: fecd17a2-d7b4-4a20-ac81-eb71abbfa9d1
 
 # Accounting distributions and subledger entries for free text invoices
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Accounting distributions define how to account for an amount, such as how to account for the revenue, tax, or charges on a free text invoice. Every amount that you must account for when you journalize the free text invoice has one or more accounting distributions.
 

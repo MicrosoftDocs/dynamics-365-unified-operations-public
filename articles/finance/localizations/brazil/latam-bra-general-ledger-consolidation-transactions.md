@@ -15,7 +15,7 @@ ms.search.form: LedgerConsolidate
 
 # Export and import transactions for General ledger consolidation for Brazil
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to export and import transactions for general ledger consolidation for Brazil with Microsoft Dynamics 365 Finance.
 

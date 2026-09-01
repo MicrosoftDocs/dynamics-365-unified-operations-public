@@ -12,7 +12,7 @@ ms.search.form:  COODualUseCerts, COORules, COODualUseCountries
 
 # Dual-use goods
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dual-use goods are typically items that have both civilian and military applications. For example, a chemical might be used as either a fertilizer or an explosive. Many countries/regions have special regulations that apply to the export, import, and transportation of dual-use goods. Therefore, it's important that companies that are involved in the international trade of dual-use goods keep track of the various policies and certificates.
 

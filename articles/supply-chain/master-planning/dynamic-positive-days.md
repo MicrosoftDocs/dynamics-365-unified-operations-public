@@ -12,7 +12,7 @@ ms.search.form:
 
 # Dynamic positive days for last-minute orders
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dynamic positive days help increase your sales order fulfillment rate by using on-hand inventory and planned receipts for last-minute orders. When you use dynamic positive days, master planning applies the following rules to determine whether to create a new planned order or use existing supply:
 

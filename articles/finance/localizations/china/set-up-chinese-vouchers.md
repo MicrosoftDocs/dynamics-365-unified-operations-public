@@ -15,7 +15,7 @@ ms.custom:
 
 # Set up Chinese vouchers
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to set up Chinese vouchers by using specific demo data in Microsoft Dynamics 365 Finance.
 

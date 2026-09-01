@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Add dimensions to Excel templates
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about dimensions, dimensions that have entities, and the dimension controls that are available.
 

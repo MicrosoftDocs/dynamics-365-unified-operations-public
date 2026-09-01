@@ -13,7 +13,7 @@ ms.custom:
 
 # PageState enumeration
 
-[!include [banner](../../../../includes/banner.md)]
+[!INCLUDE [banner](../../../../includes/banner.md)]
 [!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 Represents the various high-level states the page can be in.

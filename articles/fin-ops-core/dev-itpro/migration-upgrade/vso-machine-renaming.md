@@ -15,7 +15,7 @@ ms.assetid: 4f5ff29b-9ae5-4ba2-8b6e-1e5d94e004b3
 
 # Rename a local development (VHD) environment
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You must rename a local development (VHD) environment for the following scenarios:
 

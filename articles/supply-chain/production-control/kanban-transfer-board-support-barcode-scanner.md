@@ -12,7 +12,7 @@ ms.assetid: a426f645-d59b-4c98-8d78-eba8d64a562e
 
 # Kanban transfer board support for bar code scanners
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The Kanban transfer board supports scanner input from a widget bar code scanner to Select, Start, Complete, and Empty a kanban job.
 

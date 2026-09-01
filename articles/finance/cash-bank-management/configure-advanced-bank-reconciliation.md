@@ -16,7 +16,7 @@ ms.assetid: ae071f04-f038-4b17-812d-0a241ed15521
 
 # Advanced bank reconciliation setup process
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When you use advanced bank reconciliation, you can import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 Finance. This article explains the setup processes for reconciliation.  
 

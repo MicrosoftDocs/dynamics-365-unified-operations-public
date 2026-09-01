@@ -19,7 +19,7 @@ ms.dyn365.ops.version: 10.0.16
 
 # Financial dimension sets
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes financial dimension sets and provides some tips for optimizing their use.
 

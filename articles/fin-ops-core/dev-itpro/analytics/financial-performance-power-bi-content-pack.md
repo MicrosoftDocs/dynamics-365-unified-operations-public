@@ -16,7 +16,7 @@ ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
 
 # Financial performance PowerBI.com solution
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!NOTE]
 > Microsoft deprecated this PowerBI.com solution. For more information, see [Removed or deprecated features for finance and operations](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-marketplace).

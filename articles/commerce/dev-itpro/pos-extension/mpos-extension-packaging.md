@@ -14,7 +14,7 @@ ms.custom:
 
 # Create a Modern POS extension package
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 [!include [banner](../../includes/retail-sdk-deprecation-banner.md)]
 
 This article explains how to create a Modern POS (MPOS) extension package in Microsoft Dynamics 365 Commerce.

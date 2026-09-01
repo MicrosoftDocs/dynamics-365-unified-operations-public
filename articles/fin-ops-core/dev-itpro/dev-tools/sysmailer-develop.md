@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 4
 
 # Develop email experiences by using the SysMailer framework
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Sending emails
 

@@ -15,7 +15,7 @@ ms.search.form: ERWorkspace, ERVendorPart, ERVendorTable
 
 # Create configuration providers and mark them as active
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how a user assigned to the System Administrator or Electronic Reporting Developer role can create a configuration provider for Electronic reporting (ER). Each ER configuration refers to the provider as the author of the configuration. In this example, you create a configuration provider for sample company, Litware, Inc. You can perform these steps in any company because ER configuration providers are shared among all companies.
 

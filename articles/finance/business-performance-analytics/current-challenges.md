@@ -12,7 +12,7 @@ audience: Application User
 
 # Business performance analytics troubleshooting
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes some known issues in Business performance analytics.
 

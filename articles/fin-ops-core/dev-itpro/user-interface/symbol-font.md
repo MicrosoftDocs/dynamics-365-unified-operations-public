@@ -15,7 +15,7 @@ ms.assetid: 32e3235e-46b0-4fd9-a138-ff712191ba84
 
 # Dynamics Symbol font
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The Dynamics Symbol font defines the set of out-of-box symbols that are available in the product. These symbols are primarily used for buttons, tiles, and image controls. 
 

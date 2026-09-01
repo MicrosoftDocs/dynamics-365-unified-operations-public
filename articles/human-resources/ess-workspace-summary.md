@@ -27,6 +27,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Employee self service leave summary
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 The **Employee self service leave summary** feature provides an AI-generated summary of employee time off. This feature uses Microsoft Azure OpenAI Service's large language model and is designed to reduce the time you spend reviewing the different screens containing time off information and calculating time off that might be subject to forfeiture.
 This feature has two purposes:
 

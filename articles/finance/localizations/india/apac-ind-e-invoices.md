@@ -14,6 +14,8 @@ ms.custom:
 
 # Electronic invoices in India
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 An electronic invoice is a legally accepted digital tax receipt document that your organization registers in the Invoice Registration Portal (IRP). The obligation and applicability of using electronic invoices depend on annual turnover. Legislation determines the minimum applicable threshold. Depending on their turnover, some companies might not be able to access IRP directly and must use additional options, such as integration with Goods and Services Tax (GST) Service Providers (GSPs). The registration of an e-Way Bill in IRP is supported as part of electronic invoice registration.
 
 By using Microsoft Dynamics 365 Finance to generate electronic invoices for your organization, you ensure that they're secure, confidential, authentic, and legally acceptable. You also ensure that required standards are applied to them. As an alternative integration option, you can exchange the applicable invoice details through file export and import. For example, you might use this alternative when you expect that the GSP integration will be used.

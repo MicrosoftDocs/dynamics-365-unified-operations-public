@@ -14,7 +14,7 @@ ms.custom:
 
 # Prepare your environment to interoperate with ID-porten and Altinn web services
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to prepare your environment to interoperate with ID-porten and Altinn web services in Microsoft Dynamics 365 Finance.
 

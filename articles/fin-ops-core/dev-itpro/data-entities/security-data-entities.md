@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Security and data entities
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!NOTE]
 > Data entities don't support the Extensible Data Security (XDS) concepts.

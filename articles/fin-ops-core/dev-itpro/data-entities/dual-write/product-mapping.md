@@ -15,7 +15,7 @@ ms.search.validFrom: 2019-07-15
 
 # Unified product experience
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 When a business ecosystem is made up of Dynamics 365 applications, such as Finance, Supply Chain Management, and Sales, businesses often use these applications to source product data. This is because these apps provide a robust product infrastructure complemented with sophisticated pricing concepts and accurate on-hand inventory data. Businesses who use an external Product Lifecycle Management (PLM) system for sourcing the product data can channelize products from finance and operations apps to other Dynamics 365 apps. The unified product experience brings the integrated product data model into Dataverse, so that all application users, including Power Platform users, can take advantage of the rich product data coming from finance and operations apps.
 
@@ -105,7 +105,8 @@ If you stop the new [DV released distinct products](mapping-reference.md#242) an
 When you run initial synchronization, the [DV released products](mapping-reference.md#243) map should be run first, and then the [DV released distinct products](mapping-reference.md#242) should be run.
 
 Finance and operations apps | Customer engagement apps |
----|---
+---
+|---
 [CDS released distinct products](mapping-reference.md#213) | Product |
 [Released products V2](mapping-reference.md#189) | msdyn\_sharedproductdetails |
 [DV released distinct products](mapping-reference.md#242) | Product |
@@ -119,7 +120,8 @@ Product dimensions are characteristics that identify a product variant. The four
 :::image type="content" source="media/dual-write-product-two.png" alt-text="Screenshot of data model for product dimensions.":::
 
 Finance and operations apps | Customer engagement apps |
----|---
+---
+|---
 [Colors](mapping-reference.md#170) | msdyn\_productcolors
 [Sizes](mapping-reference.md#174) | msdyn\_productsizes
 [Styles](mapping-reference.md#178) | msdyn\_productstyles
@@ -130,7 +132,8 @@ When a product has different product dimensions (for example, a product master h
 To keep track of the product dimensions that a product master can take, the following tables are created and mapped in Dataverse for each product dimension. For more information, see [Product information overview](../../../../supply-chain/pim/product-information.md).
 
 Finance and operations apps | Customer engagement apps |
----|---
+---
+|---
 [Product master colors](mapping-reference.md#187) | msdyn\_sharedproductcolors |
 [Product master configurations](mapping-reference.md#188) | msdyn\_sharedproductconfigurations |
 [Product master sizes](mapping-reference.md#190) | msdyn\_sharedproductsizes |
@@ -142,7 +145,8 @@ Finance and operations apps | Customer engagement apps |
 Default order settings define the site and warehouse where items are sourced from or stored. They also define the minimum, maximum, multiple, and standard quantities that are used for trading or inventory management, the lead times, the stop flag, and the order promising method. This information is available in Dataverse by using the default order settings and product-specific default order settings entity. For more information about the functionality, see [Default order settings for dimensions and product variants](../../../../supply-chain/production-control/default-order-settings.md).
 
 Finance and operations apps | Customer engagement apps |
----|---
+---
+|---
 [Default order settings](mapping-reference.md#172) | msdyn\_productdefaultordersettings |
 [Product default order settings V2](mapping-reference.md#175) | msdyn\_productspecificdefaultordersettings |
 
@@ -162,7 +166,8 @@ The following are the differences between Dynamics 365 finance and operations ap
 - If the scenario for doing an inter-class unit conversion in finance and operations apps and then syncing to Dynamics 365 Sales is needed, the default implementation must be changed. All the units from finance and operations apps must be synced to a single unit group in Dynamics 365 Sales that represents the finance and operations unit class. This synchronization can be achieved by customizing the dual-write mapping template for units and mapping msdyn\_externalunitclassname to a fixed value instead of UNITCLASS. 
 
 Finance and operations apps | Customer engagement apps |
----|---
+---
+|---
 [Product specific unit conversions](mapping-reference.md#176) | msdyn\_productspecificunitofmeasureconversions |
 [Units](mapping-reference.md#219) | uoms
 [Unit conversions](mapping-reference.md#199) | msdyn\_unitofmeasureconversions
@@ -195,7 +200,8 @@ The msdyn\_symbol column must be filled in for all units. The units can always b
 The product policies are sets of policies that are used to define products and their characteristics in inventory. The product dimension group, product tracking dimension group, and storage dimension group can be found as product policies.
 
 Finance and operations apps | Customer engagement apps |
----|---
+---
+|---
 [Product dimension groups](mapping-reference.md#173) | msdyn\_productdimensiongroups |
 [Storage dimension groups](mapping-reference.md#177) | msdyn\_productstoragedimensiongroups |
 [Tracking dimension groups](mapping-reference.md#179) | msdyn\_producttrackingdimensiongroups |
@@ -203,7 +209,8 @@ Finance and operations apps | Customer engagement apps |
 ## Product hierarchies
 
 Finance and operations apps | Customer engagement apps |
----|---
+---
+|---
 [Product category assignments](mapping-reference.md#167) | msdyn\_productcategoryassignments |
 [Product category hierarchies](mapping-reference.md#168) | msdyn\_productcategoryhierarchies |
 [Product category hierarchy roles](mapping-reference.md#169) | msdyn\_productcategoryhierarchyroles |

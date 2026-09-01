@@ -14,7 +14,7 @@ ms.custom:
 
 # Work with Electronic reporting (ER) configurations
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Electronic reporting (ER) configurations are one of the main sets of components of Electronic invoicing features. An ER configuration contains the setup of the file structure and a set of transformation rules for transforming data in two ways:
 

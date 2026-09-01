@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Develop and open job requisition
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
 > The recruiting functionality in this article will be referred to as Recruitment projects and focuses on applicants, applications, and recruitment projects.  

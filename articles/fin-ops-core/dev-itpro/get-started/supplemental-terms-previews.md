@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 8.0
 
 # Supplemental terms of use for Microsoft Dynamics 365 previews
 
-[!include[banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 Finance and operations apps might include preview, beta, or other prerelease features, services, software, or regions that Microsoft offers to get customer feedback ("Previews"). Microsoft makes Previews available to you on the condition that you agree to these terms of use, which supplement [your agreement](https://lcs.dynamics.com/Logon/Legal) governing use of finance and operations apps.
 

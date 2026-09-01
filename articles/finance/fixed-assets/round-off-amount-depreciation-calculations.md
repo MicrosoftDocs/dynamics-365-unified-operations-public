@@ -18,7 +18,7 @@ ms.assetid: faf7db87-046f-41d1-9baf-0df66e373e97
 
 # Round-off amount for depreciation calculations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article discusses the **Round-off depreciation** field that you find on the **Book setup** pages.
 

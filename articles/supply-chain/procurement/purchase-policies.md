@@ -13,7 +13,7 @@ ms.custom:
 
 # Purchasing policies overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about purchasing policies. A purchasing policy is a collection of rules that control the requisition process. Purchasing policies help procurement administrators implement their procurement strategy by creating a policy structure that aligns with the organization’s strategic purchasing requirements.
 

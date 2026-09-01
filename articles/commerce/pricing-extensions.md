@@ -14,7 +14,7 @@ ms.custom:
 
 # Pricing extensions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to extend pricing and discount functionality in Microsoft Dynamics 365 Commerce.
 

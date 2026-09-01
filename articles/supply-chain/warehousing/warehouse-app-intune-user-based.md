@@ -14,7 +14,7 @@ ms.custom:
 
 # Mass deploy the mobile app with user-based authentication
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Automated deployment and configuration of Warehouse Management can be more efficient than manual deployment when you manage many devices. One way to achieve this automation is to use a mobile device management (MDM) solution such as [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). For general information about how to use Intune to add apps, see [Add apps to Microsoft Intune](/mem/intune/apps/apps-add).
 

@@ -16,7 +16,7 @@ ms.custom:
 
 # Invoice subscription transactions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 1. Go to **Service management** > **Service subscriptions** > **All service subscriptions**.
 

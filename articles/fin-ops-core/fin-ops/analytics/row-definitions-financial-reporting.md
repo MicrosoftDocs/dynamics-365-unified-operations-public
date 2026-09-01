@@ -16,7 +16,7 @@ ms.assetid: 2fd7b5da-700f-48cb-9003-90c0d82f818f
 
 # Row definitions in financial report designer
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 A row definition is a report component that specifies the contents of each row on a financial report. You can combine a row definition with column definitions, reporting tree definitions, and report definitions to create a building block group that multiple companies can use.
 

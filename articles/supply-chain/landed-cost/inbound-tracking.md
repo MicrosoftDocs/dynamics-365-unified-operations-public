@@ -13,7 +13,7 @@ ms.custom:
 
 # Track inbound voyages and shipping container journeys
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The **Inbound tracking** page lets you track the progress of your voyages and shipping container journeys. Each voyage and journey is broken down by *activities*, each of which has its own row on the page. You can use the page to view and enter estimated dates and actual dates by activity.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Prevent multiple owners in warehouse locations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Overview
 

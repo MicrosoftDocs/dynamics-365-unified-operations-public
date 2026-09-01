@@ -15,7 +15,7 @@ ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner, LedgerJournal
 
 # Reuse ER configurations with Excel templates to generate reports in Word format
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 To generate reports as Microsoft Word documents, you can [configure](../er-design-configuration-word.md) a new [Electronic reporting (ER)](../general-electronic-reporting.md) format. Alternatively, you can reuse an ER format that was originally designed to generate reports as Excel workbooks. In this case, you must replace the Excel template with a Word template.
 

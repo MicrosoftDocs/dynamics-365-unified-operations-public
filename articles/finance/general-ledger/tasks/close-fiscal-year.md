@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Close the fiscal year
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure steps through the year end close process that transfers balances to a new fiscal year.
 

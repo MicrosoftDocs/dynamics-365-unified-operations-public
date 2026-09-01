@@ -14,7 +14,7 @@ ms.custom:
 
 # Work with modules
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how and when to use modules in Microsoft Dynamics 365 Commerce site builder.
 

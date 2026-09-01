@@ -16,6 +16,8 @@ ms.assetid:
 
 # Budget control data maintenance tool
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 If you experience data inconsistency with a specific budget-controlled document, start with the **Budget control data maintenance** tool.
 The **Budget control data maintenance** tool can:
 

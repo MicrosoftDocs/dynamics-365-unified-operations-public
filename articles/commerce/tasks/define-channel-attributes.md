@@ -14,7 +14,7 @@ ms.custom:
 ---
 # Define channel attributes
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to define channel attributes in Microsoft Dynamics 365 Commerce.
 

@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 
 # Format 1001 file for Colombia issue configuration
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and configure information so that you issue a format 1001 file. The **Format 1001 file** report provides a list of expenses that you paid to third parties, and the taxes and withholding taxes that those transactions generated.
 This article provides the configuration requirements for issuing the XML format and Excel format versions of the File format 1001.

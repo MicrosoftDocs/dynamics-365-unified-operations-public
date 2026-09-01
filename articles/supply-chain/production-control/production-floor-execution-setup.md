@@ -13,7 +13,7 @@ ms.custom:
 
 # Set up a device to run the production floor execution interface
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You must set up the production floor execution interface for each device on the production floor. Companies typically set up each device differently, depending on the purpose that the device serves. For example, one device might be in the reception area where workers clock in and clock out, and another device might be on the shop floor where workers manage their jobs.
 

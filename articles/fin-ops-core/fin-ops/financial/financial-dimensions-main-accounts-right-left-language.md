@@ -16,7 +16,7 @@ ms.assetid: 875dcebb-1bbb-4841-a8c6-9e134da07e96
 
 # Financial dimensions and main accounts in right-to-left languages
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article describes some of the implementation decisions that you should consider when you use a right-to-left language and set up financial dimensions and main accounts.
 

@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Super types and subtypes
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 [!INCLUDE [PEAP](../../../includes/peap-3.md)]

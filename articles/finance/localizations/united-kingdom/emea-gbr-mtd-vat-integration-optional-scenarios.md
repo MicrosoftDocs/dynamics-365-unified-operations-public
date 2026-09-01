@@ -14,7 +14,7 @@ ms.search.validFrom: 2021-08-06
 
 # Retrieve information about VAT payments and liabilities from HMRC
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to retrieve information about value-added tax payments and liabilities from the Making Tax Digital web service of Her Majesty's Revenue and Customs (HMRC) in Microsoft Dynamics 365 Finance.
 

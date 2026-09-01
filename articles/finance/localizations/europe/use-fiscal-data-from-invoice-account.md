@@ -14,7 +14,7 @@ ms.search.form: CustParameters, VendParameters
 
 # Use fiscal data from an invoice account
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You can use fiscal data, such as the customer or vendor name, or the sales tax group and tax-exempt numbers from an invoice account on sales orders, free text invoices, or purchase orders to update automatically based on the information from the invoice account. This article explains how to configure the feature.
 

@@ -12,7 +12,7 @@ ms.search.form: InventLocation, WHSLocationFormat, WHSLocationType, WHSLocationP
 
 # Configure locations in a WMS-enabled warehouse
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This guide shows you how to configure the location setup for a new WMS-enabled warehouse (a warehouse that uses warehouse management processes (WMS)). A warehouse manager typically performs this process. You can run this guide in demo data company USMF or on your own data. Ensure that you have at least one configured site.
 

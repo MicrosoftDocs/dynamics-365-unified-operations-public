@@ -13,7 +13,7 @@ ms.custom:
 
 # Create predefined product variants
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides an example scenario that shows how to create predefined product variants for a product master. It also describes how to work with improved variant suggestions and how to assign variant-specific item sales tax groups if needed.
 

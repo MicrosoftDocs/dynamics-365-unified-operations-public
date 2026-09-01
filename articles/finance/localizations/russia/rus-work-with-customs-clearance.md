@@ -13,7 +13,7 @@ ms.reviewer: johnmichalak
 
 # Work with customs clearance
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with customs clearance of products that are transported across the border of the Russian Federation in Microsoft Dynamics 365 Finance.
 

@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 8.1.1
 
 # Update an environment
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
 This article explains how to apply updates to an environment that you deployed by using the [self-service deployment](infrastructure-stack.md) experience.

@@ -14,7 +14,7 @@ ms.custom:
 
 # Assign price groups
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Assign price groups to trade agreements
 

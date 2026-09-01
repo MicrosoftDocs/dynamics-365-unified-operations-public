@@ -17,6 +17,8 @@ ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 
 # Create charges codes
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article explains how to configure charges codes for both Accounts payable and Accounts receivable. If your organization requires that sales amounts or purchase amounts be tracked in addition to line items on a sales order or purchase order, you can use charges codes for this purpose. For example, you pay freight and insurance on a purchase order, and these amounts are itemized separately on the purchase order. In this case, you can specify whether the amounts are posted to expense accounts or added to the cost of the items.
 
 ## Set up charges codes for Accounts receivable

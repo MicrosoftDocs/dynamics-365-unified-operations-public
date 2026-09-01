@@ -12,7 +12,7 @@ ms.search.form:
 
 # Create a production flow version
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure focuses on creating a new production flow version. For this procedure, the production parameters for lean manufacturing and the units of measurement for class time must be defined. You also need to define a value stream and a production group. The demo data company used to create this procedure is USMF.
 

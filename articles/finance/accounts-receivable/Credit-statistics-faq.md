@@ -16,6 +16,8 @@ ms.dyn365.ops.version: 10.0.35
 
 # Credit statistics FAQ
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article answers some frequently asked questions about running the **Calculate balance statistics** periodic task. This feature is found at **Credit and collections** \> **Periodic tasks** \> **Credit management**. When you view the **All customers** or **Aged balances** page, many credit statistics are calculated in the **Related information** FactBox.
 
 ## How is DSO (days sales outstanding) calculated and used?

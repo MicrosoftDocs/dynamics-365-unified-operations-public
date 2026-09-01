@@ -15,7 +15,7 @@ ms.custom:
 
 # Checkout module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to add a checkout module to a page and set the required properties in Microsoft Dynamics 365 Commerce.
 

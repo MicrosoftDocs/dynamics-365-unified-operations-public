@@ -13,7 +13,7 @@ ms.custom:
 
 # Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management uses dual-write to integrate with Dynamics 365 Sales. In Supply Chain Management version 10.0.34 and later, this capability has been improved to provide a more seamless quotation process flow across the two systems. Therefore, it allows for fewer touch points, better efficiency, and improved transparency. To take advantage of these improvements, you must enable several new features in Supply Chain Management and make sure that you're using a qualifying version of the Dual-write Supply chain solution.
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Upgrade parameter files
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The format of parameter Microsoft Excel files that are used with Regression suite automation tool (RSAT) changed in the 2.0 release. The format is now more intuitive and shows test steps. New test cases that you create in RSAT version 2.0 and later automatically generate parameter files in the new format. However, you might have tests that you created before version 2.0 that still use the old format. RSAT continues to support running test cases that use parameter files in the old format at least until the next major release. RSAT can also upgrade old parameter files to the new format.
 

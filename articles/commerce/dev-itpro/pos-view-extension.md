@@ -14,7 +14,7 @@ ms.custom:
 
 # Extend POS views to add custom columns and app bar buttons
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how you can extend existing POS views such as the Customer Add/Edit screen in Microsoft Dynamics 365 Commerce.
 

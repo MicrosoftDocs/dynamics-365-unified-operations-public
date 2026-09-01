@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.17
 
 # Customer aging snapshots
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about customer aging snapshots. An aging snapshot calculates aged balances for a group of customers at a point in time. You can create aging snapshot records either for all customers or for the customers in a customer pool.
 

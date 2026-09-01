@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 8.0.4
 
 # Manage International Bank Account Number (IBAN) account validation
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 International Bank Account Number (IBAN) validation increases the amount of validation that is done when you add an IBAN to a bank account.
 

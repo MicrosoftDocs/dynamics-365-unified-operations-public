@@ -10,7 +10,7 @@ ms.author: henrikan
 ---
 # Create a material plan for co products
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The production planner plans the material requirements for items that are formula co-products. The demo data company used to create this procedure is USP2.
 

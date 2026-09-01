@@ -26,6 +26,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Courses overview
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 Microsoft Dynamics 365 Human Resources provides a solution for your organization's learning needs. This solution offers two learning course paths: *virtual* and *in-person*.
 
 *Virtual learning* is a learning experience that's enhanced through online resources. For *in-person training* or *instructor-led training*, an instructor facilitates a training session for a group of workers or learners.

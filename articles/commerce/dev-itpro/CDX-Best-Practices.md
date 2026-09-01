@@ -15,7 +15,7 @@ ms.custom:
 
 # Commerce Data Exchange best practices
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains data synchronization with Commerce Data Exchange (CDX) in a Microsoft Dynamics 365 Commerce environment.
 

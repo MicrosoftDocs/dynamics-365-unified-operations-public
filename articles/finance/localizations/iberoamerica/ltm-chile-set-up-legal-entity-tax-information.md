@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 
 # Set up legal entity and tax information for Chile
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up a legal entity and the tax information for a company in Chile that's using the Latin American (LATAM) features that are available in Microsoft Dynamics 365 Finance. A legal entity represents the company, and contains the tax and legal attributes that are required for the rest of the LATAM configuration.
 

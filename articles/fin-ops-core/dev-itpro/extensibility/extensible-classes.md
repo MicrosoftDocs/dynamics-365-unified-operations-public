@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 20
 
 # Write extensible classes
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A class and its methods should have a single responsibility. Keep the following in mind in order to design classes that are resilient to changes in the end. Class should have:
 

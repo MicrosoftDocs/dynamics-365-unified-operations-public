@@ -19,7 +19,7 @@ ms.dyn365.ops.version: Platform update 61
 
 # What's new or changed in Platform updates
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 To see what's new or changed in the Platform updates for finance and operations apps, see the following topics.
 

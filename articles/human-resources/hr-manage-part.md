@@ -25,6 +25,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Manage participants in training courses
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 Course participants are workers who participate in a training course or event. You can register participants only for open courses. The minimum number and maximum number of participants that can register for a course are defined on the **General** FastTab of the **Courses** page.
 
 Use the following two methods to manage participants:

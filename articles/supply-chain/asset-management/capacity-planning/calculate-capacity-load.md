@@ -13,7 +13,7 @@ ms.custom:
 
 # Calculate capacity load
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 In Asset Management, you can calculate capacity load on:
 

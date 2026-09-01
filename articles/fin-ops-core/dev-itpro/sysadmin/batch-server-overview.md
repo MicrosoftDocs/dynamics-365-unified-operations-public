@@ -17,7 +17,7 @@ ms.assetid: 22a56b7d-4e07-4161-8416-0cac4a0b65a2
 
 # Batch processing and batch servers
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes batch processing and batch servers, and how to plan for their use.
 

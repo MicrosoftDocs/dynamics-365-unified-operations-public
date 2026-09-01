@@ -15,7 +15,7 @@ ms.custom:
 
 # Generate EFT payment file with JBA format
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to generate an EFT file with the Japanese Bankers Association (JBA) file format for Japan in Microsoft Dynamics 365 Finance.
 

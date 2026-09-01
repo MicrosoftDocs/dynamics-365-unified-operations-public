@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-06-30
 
 # Calculate interest and fines on vendor payments (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to apply interest and fines on vendor payments that are delayed in Brazil with Microsoft Dynamics 365 Finance.
 

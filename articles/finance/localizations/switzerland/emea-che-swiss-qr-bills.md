@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.9
 
 # Swiss QR-bills
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 As of July 2020, QR-bills (QR-slips) will have to be processed and issued in addition to invoices. This article explains how to generate QR-bills and process incoming QR-bills in Microsoft Dynamics 365 Finance.
 

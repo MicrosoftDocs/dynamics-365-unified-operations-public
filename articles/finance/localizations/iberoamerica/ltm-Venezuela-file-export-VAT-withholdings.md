@@ -11,7 +11,7 @@ ms.author: v-cpicon
 
 # Configure printing for the VAT Withholding report for Venezuela
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and generate the VAT Withholding report for Venezuela in Microsoft Dynamics 365 Finance.
 

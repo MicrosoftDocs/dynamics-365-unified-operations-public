@@ -12,7 +12,7 @@ ms.custom:
 
 # Receive electronic documents 
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 In Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management, follow these steps to receive electronic invoices.
 

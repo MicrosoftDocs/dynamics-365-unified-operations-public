@@ -13,7 +13,7 @@ ms.custom:
 
 # Approve vendors for specific products
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows you how to approve vendors for specific products. When you approve vendors, you control which vendors can be used when adding the product to a purchase order. A purchasing manager typically carries out this task.
 

@@ -12,7 +12,7 @@ ms.search.form: InventQualityOrderTable, InventQualityOrderLineResults, HcmWorke
 
 # Inspect the quality of goods
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to process quality orders. Quality inspections are typically done by a quality clerk.
 

@@ -18,7 +18,7 @@ ms.assetid: b14375b1-cb5e-4969-a5fd-3d6d2c8b6226
 
 # Malaysian Goods and Services Tax (GST)/Sales and Service Tax (SST)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information that helps you set up Goods and Services Tax (GST) and Sales and Service Tax (SST) for a Malaysian company. It also explains the functionality that is provided for GST/SST.
 

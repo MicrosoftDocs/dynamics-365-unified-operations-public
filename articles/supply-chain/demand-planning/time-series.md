@@ -12,7 +12,7 @@ ms.search.form:
 
 # Time series, worksheets, and planning data
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Time series, worksheets, and planning data represent the output from forecasts, calculations, and transformations in daily, weekly, or monthly time buckets.
 

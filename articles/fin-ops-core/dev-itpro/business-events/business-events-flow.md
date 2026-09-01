@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 2019-02-28
 
 # Business events in Microsoft Power Automate
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In Microsoft Power Automate, you can use the finance and operations connector and the Microsoft Dataverse connector to consume business events. The finance and operations connector includes the **When a Business Event occurs** trigger. The Dataverse connector includes the **When an action is performed** trigger. Use either trigger to subscribe to any business event that's available in finance and operations apps. Both triggers provide the same functionality, but the execution is slightly different.
 

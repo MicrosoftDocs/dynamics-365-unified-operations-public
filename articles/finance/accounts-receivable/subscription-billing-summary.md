@@ -16,7 +16,7 @@ ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
 
 # Subscription billing overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Subscription billing enables organizations to manage subscription revenue opportunities and recurring billing through billing schedules. You can easily manage complex pricing and billing models and revenue allocation. The system bills and recognizes revenue at the line level. Multi-element revenue allocation enables allocation of revenue to comply with International Accounting Standards (International Financial Reporting Standard 15 \[IFRS 15\]) and Generally Accepted Accounting Principles (US GAAP) standards (Accounting Standards Codification Topic 606 \[ASC 606\]).
 

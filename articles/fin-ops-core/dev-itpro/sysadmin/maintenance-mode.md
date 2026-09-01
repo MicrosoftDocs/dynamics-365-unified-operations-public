@@ -16,7 +16,7 @@ ms.assetid: c11a35e8-40bb-4005-adf3-cfd998a418fc
 
 # Maintenance mode
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about maintenance mode in finance and operations apps. When you turn on maintenance mode, it provides a safe way for system administrators to make system changes that might affect system functionality. For example, you can enable or disable configuration keys. While maintenance mode is on, only system administrators and users who have the **Maintenance mode user** role can sign in to the system. By default, maintenance mode is turned off. When maintenance mode is off, you can't edit the **License configuration** page.
 

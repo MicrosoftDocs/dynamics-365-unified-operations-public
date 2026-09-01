@@ -25,6 +25,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Benefit bulk update page
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 The **Benefit bulk update** page helps benefits administrators view, validate, and quickly take bulk action on employees' benefit plan selections.
 
 After employees select their benefit plans by using Employee self service, the benefits administrator validates the selection and takes the required action. For example, they might confirm, cancel, or remove the selection, or send email to request evidence. In addition, they can access related information about enrollment, life events, dependents, beneficiaries, and the cost of employees' benefit selections. They can also make selections and corrections on behalf of employees. Finally, they can identify which plan records have changed since the previous period and select those plans for further validation.

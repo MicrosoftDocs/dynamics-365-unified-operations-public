@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Stock transfer orders that have tax on the transfer price
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 > [!WARNING]
 > The behavior that is described in this article is being deprecated and will be removed after October 2023. 

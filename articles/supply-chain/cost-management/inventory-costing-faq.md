@@ -15,7 +15,7 @@ ms.custom:
 
 # Inventory costing FAQ
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article answers some frequently asked questions about inventory costing in Microsoft Dynamics 365 Supply Chain Management.
 

@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-06-30
 
 # Enter a CIAP transaction (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to enter an Imposto Sobre Circulação de Mercadorias e Prestação de Serviços (ICMS) Credit Control of Fixed Assets (CIAP) transaction in Brazil with Microsoft Dynamics 365 Finance.
 

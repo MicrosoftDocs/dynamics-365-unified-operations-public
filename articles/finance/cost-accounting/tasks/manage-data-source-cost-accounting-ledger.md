@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Manage a data source for the cost accounting ledger
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Use this procedure to manage the general ledger data source for a cost accounting ledger. Before you complete this task, make sure that you complete the "Create a cost accounting ledger" and "Define cost control units" task guides. This recording uses the USP2 demo data company.
 

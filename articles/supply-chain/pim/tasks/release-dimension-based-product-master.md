@@ -12,7 +12,7 @@ ms.search.form: EcoResProductListPage, EcoResProductRelease
 
 # Release a dimension-based product master
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to release a product master, which will be used for the dimension-based configurations. It is a prerequisite that you have created a product master with the dimension-based configuration technology.
 

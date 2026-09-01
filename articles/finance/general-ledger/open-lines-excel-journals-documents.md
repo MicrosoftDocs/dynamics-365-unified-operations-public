@@ -16,7 +16,7 @@ ms.assetid: 211874a7-4bf0-4a0c-96c2-fa05042777d3
 
 # Publish journal lines and documents from Excel
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to enter and publish lines for general journals from Microsoft Excel. It includes information about the various templates that you can use, depending on the type of transactions that you're entering.
 

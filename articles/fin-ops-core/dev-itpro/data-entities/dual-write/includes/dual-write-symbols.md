@@ -1,5 +1,7 @@
 ## Mapping tables
 
+[!INCLUDE [banner](../../../../../includes/banner.md)]
+
 ### Mapping types
 
 There are several different mapping types. The following table explains the symbols used in the template tables.

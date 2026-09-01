@@ -13,7 +13,7 @@ ms.custom:
 
 # Configure and manage financial dimension links to sites
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 To enable the system to calculate profit and loss figures for each site for your legal entity, link a financial dimension to the site inventory dimension and assign a financial dimension value to each site.
 

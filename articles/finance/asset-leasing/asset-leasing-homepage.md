@@ -19,7 +19,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 # Asset leasing home page
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article lists the help topics that are available for Asset leasing, and includes links to specific topics. 
 

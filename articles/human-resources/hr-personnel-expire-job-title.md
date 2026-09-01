@@ -24,6 +24,8 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Expire jobs and titles (preview)
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]

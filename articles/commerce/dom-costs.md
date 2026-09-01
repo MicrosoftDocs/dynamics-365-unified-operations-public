@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-12-15
 ---
 # DOM cost configuration
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes cost configuration for distributed order management (DOM) functionality in Microsoft Dynamics 365 Commerce.
 

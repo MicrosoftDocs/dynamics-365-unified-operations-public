@@ -12,7 +12,7 @@ ms.search.form: LeanProductionFlow, PlanActivity, PlanActivityWizard, LeanWorkCe
 
 # Create transfer activities for lean manufacturing
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Create a transfer activity for lean manufacturing. 
 

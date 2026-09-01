@@ -14,7 +14,7 @@ ms.custom:
 
 # Online and offline point of sale (POS) operations
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains online and offline point of sale (POS) operations in Microsoft Dynamics 365 Commerce.
 

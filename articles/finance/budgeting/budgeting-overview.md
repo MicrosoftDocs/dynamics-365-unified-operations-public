@@ -19,7 +19,7 @@ ms.assetid: 702f692e-ad1c-4798-8d3e-c3cf8591d3fa
 
 # Budgeting home page
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the budgeting functionality components, budgeting tools, and reporting capabilities. 
 

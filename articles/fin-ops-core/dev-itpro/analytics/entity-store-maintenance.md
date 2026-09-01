@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 15
 
 # Resolve problems after entity store maintenance
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When you perform maintenance on the entity store, it affects the following components:
 

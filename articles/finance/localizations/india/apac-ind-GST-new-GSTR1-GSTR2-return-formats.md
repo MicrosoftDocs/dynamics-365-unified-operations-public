@@ -14,7 +14,7 @@ ms.dyn365.ops.version: 10.0.13
 
 # New GSTR-1 and GSTR-2 return formats
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The format of the GSTR-1 and GSTR-2 returns has been updated in response to the new format that was updated by the ClearTax Goods and Services Tax (GST) Suvidha Provider, or GSP.
 

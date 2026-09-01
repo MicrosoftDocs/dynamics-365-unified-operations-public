@@ -15,7 +15,7 @@ ms.search.form: CustTable
 
 # One-time customers
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to manage one-time customers for Spain in Microsoft Dynamics 365 Finance.
 

@@ -16,7 +16,7 @@ ms.assetid: cd5554a4-210c-4c20-a7d3-4b1563c2b5df
 
 # Configure conditional decisions in a workflow
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 Use the following procedure to configure the properties of a conditional decision.

@@ -12,7 +12,7 @@ ms.search.form:
 
 # Set up hazardous materials
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 To use hazardous materials functionality, first set up the data required to classify items as hazardous materials. Then, when you create a sales order that includes an item classified as a hazardous material, the system generates hazardous material documentation for that sales order when it ships.
 

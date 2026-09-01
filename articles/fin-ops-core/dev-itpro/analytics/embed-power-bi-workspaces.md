@@ -15,7 +15,7 @@ ms.assetid: f1d79557-2538-42b5-9ea3-4e86a61abfd4
 
 # Analytical Workspaces (using Power BI Embedded)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Dynamics finance and operations apps now deliver rich, interactive reports that seamlessly integrate into application workspaces. By using graphics and visuals supported by Power BI, workspaces provide a highly visual, yet interactive experiences for users.
 

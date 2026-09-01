@@ -13,7 +13,7 @@ ms.custom:
 
 # Contract lifecycle management integration overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 *Contract lifecycle management* (CLM) helps organizations manage their contracts with suppliers. It's an important aspect of the source-to-pay process.
 

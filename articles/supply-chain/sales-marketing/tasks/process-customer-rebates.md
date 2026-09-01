@@ -12,7 +12,7 @@ ms.search.form: PdsRebateAgreement, SalesTableListPage, SalesCreateOrder, SalesT
 
 # Generate and process customer rebates
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure demonstrates how to process customer rebates from claim generation to the point of passing them as accruals to Accounts receivable. It walks you through a specific example to explain how the various conditions on the rebate lines affect the final amounts credited to the customer. Use the USMF demo data company, and complete the following tasks before you start the guide: (1) Go to the **Accounts receivable parameters** page, expand the **Prices** tab, and then the **Price details** tab, and check that the **Enable price details** option is set to **Yes**. (2) Go to the **Rebate agreements** page and select the customer rebate agreement: USMF-000001. If the **Workflow approval status** field isn't set to **Approved**, select **Validation** on the Action Pane to approve it.
 

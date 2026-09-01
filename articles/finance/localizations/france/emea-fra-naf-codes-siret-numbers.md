@@ -15,7 +15,7 @@ ms.custom:
 
 # Use NAF codes
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains the purpose and usage of Nomenclature des Activités Françaises (NAF) codes.
 

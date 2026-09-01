@@ -1,4 +1,4 @@
-﻿---
+---
 title: Test instrument calibration
 description: Learn how to track the calibration schedule and history of individual test instruments, run an ongoing calibration process, and track the use and calibration status of each test instrument.
 author: johanhoffmann
@@ -13,7 +13,7 @@ ms.custom:
 
 # Test instrument calibration
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 *Calibration* is the process of evaluating and adjusting the precision and accuracy of measurement equipment. It's usually defined as a performance comparison against a standard of known accuracy. Proper calibration of test instruments helps ensure a safe working environment. It also helps ensure that valid data is produced for future reference. Test instruments that aren't regularly calibrated can lead to false-positive and/or false-negative quality control tests.
 

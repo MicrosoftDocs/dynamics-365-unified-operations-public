@@ -15,7 +15,7 @@ ms.assetid: e9590e78-6aae-4c3a-b50b-786351cfc0ff
 
 # Commands for determining how elements are used
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article reviews the commands in Microsoft Visual Studio Tools that help you determine how elements are used in an application.  
 

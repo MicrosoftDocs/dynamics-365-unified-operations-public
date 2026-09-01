@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Payment of invoices that include tax
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 To post an invoice that includes sales tax, follow these steps:
 

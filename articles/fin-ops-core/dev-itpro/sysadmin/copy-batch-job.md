@@ -16,7 +16,7 @@ ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 
 # Copy a batch job
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When you want to create the same jobs for different legal entities, use the copy batch job functionality to copy an existing batch job and the batch tasks, including recurrences.
 

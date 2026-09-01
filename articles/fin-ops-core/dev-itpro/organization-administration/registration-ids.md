@@ -17,7 +17,7 @@ ms.assetid:
 
 # Set up and use registration IDs
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article provides information about how to set up and use registration IDs.
 

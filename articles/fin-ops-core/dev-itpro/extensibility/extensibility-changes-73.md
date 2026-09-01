@@ -15,7 +15,7 @@ ms.custom: sfi-ropc-nochange
 
 # Extensibility changes in Finance and Operations, Enterprise edition 7.3
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article lists the extensibility features that were released in Dynamics 365 for Finance and Operations, Enterprise edition 7.3. For more information about the schedule of changes that support extensibility, see [Application extensibility plans](extensibility-roadmap.md).
 

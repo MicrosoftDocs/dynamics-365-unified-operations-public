@@ -15,7 +15,7 @@ ms.search.form: RAssetPosting
 
 # Partial fixed asset disassembly (liquidation)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with partial fixed asset disassembly or liquidation for Russia in Microsoft Dynamics 365 Finance.
 

@@ -14,6 +14,8 @@ ms.custom:
 
 # Promote a variation and complete an experiment
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 This article describes how to promote the variation that produced the best results in your experiment, and how to complete the experiment. The following diagram shows all of the steps involved in setting up and running an experiment on an e-commerce website in Dynamics 365 Commerce. Additional steps are covered in separate articles.
 
 :::image type="content" source="./media/experimentation_review_complete.svg" alt-text="Screenshot of the experimentation user journey showing the review and complete step.":::

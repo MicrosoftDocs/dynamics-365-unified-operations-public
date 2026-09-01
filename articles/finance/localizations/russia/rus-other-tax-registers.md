@@ -15,7 +15,7 @@ ms.dyn365.ops.version:
 
 # Other tax registers
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about the following tax accounting registers for Russia in Microsoft Dynamics 365 Finance. Although the system automatically fills in these registers, you can manually correct the results of the automatic calculation.
 

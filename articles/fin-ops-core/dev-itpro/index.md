@@ -15,7 +15,7 @@ ms.assetid: 3d7dfc2a-4be2-4fdc-ac35-cc96868f56ab
 
 # Development and administration for finance and operations apps
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Development and administration for finance and operations apps includes:
 

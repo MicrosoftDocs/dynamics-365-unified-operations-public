@@ -15,7 +15,7 @@ ms.assetid: dbc1ac2d-7079-411c-b768-5f820859e29e
 
 # Information access and reporting
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains the various reporting options available as part of the platform.
 

@@ -15,7 +15,7 @@ ms.assetid: 8a2b3107-247d-4362-8d4d-6ee6257abfcc
 
 # Customize through extension and overlayering
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article discusses two methods for customizing the source code and metadata of model elements: overlayering and extensions. It also details the supported extension capabilities.
 

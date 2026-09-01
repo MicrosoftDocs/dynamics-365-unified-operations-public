@@ -16,7 +16,7 @@ ms.custom: sfi-image-nochange
 
 # Automate testing by using Electronic reporting
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how you can use the Electronic reporting (ER) framework to automate testing of some functionality. The example in this article shows how to automate the testing of vendor payment processing.
 

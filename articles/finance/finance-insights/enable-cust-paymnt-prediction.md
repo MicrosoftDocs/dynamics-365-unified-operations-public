@@ -16,7 +16,7 @@ ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 
 # Enable customer payment predictions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to configure the Customer payment predictions feature on the **Finance insights configuration** page. It also includes information that can help you effectively use the feature.
 

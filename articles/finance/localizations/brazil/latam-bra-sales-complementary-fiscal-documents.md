@@ -16,7 +16,7 @@ ms.assetid: 0c52b508-1044-48c1-9dfc-a590bbda5696
 
 # Sales complementary fiscal documents for Brazil
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes sales complementary invoices for the Brazilian localization.
 

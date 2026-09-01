@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Access rights for cost object controllers
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The **Cost control** workspace is a central point where managers can view the performance of their cost objects. This workspace lets managers consume Cost accounting data even though they aren't cost accountants. For security reasons, managers should only see the Cost accounting data that relates to the specific cost objects that they're responsible for.
 

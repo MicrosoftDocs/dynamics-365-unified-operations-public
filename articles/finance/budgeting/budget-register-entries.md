@@ -17,7 +17,7 @@ ms.assetid: 28a9793e-d376-47af-a345-69046bad17df
 
 # Create budget register entries
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to create budget register entries.
 

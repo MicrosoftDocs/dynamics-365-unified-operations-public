@@ -12,7 +12,7 @@ ms.search.form: Customer
 
 # Sell and allocate product bundles
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to work with product bundles on sales orders and related documents. It also explains how to allocate bundle item prices to each bundle component.
 

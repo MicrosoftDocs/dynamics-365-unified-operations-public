@@ -13,7 +13,7 @@ ms.custom:
 
 # Record the receipt of goods on the purchase order
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to record receipt of goods directly on a purchase order. You can also register product receipt in the warehouse, and then later record it on the purchase order. A purchasing agent or an accounts payable coordinator typically performs this task. The example shown in this guide uses values from the USMF demo data company and has you prepare an example purchase order to receive against. If you use the procedure on your own data, start at the *Record receipt of goods* section.
 

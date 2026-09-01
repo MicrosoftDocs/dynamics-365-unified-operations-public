@@ -14,7 +14,7 @@ ms.service: dynamics-365-op
 
 # Configure the infrastructure scripts for your Finance + Operations (on-premises) deployment
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to configure the infrastructure scripts that deploy Microsoft Dynamics 365 Finance + Operations (on-premises). It describes the information present in the different configuration files and the information you must supply. A practical example is provided, in which Contoso Corporation fills in the information for its production environment.
 

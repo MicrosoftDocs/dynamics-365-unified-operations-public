@@ -13,7 +13,7 @@ ms.custom:
 
 # Custom label layouts and printing
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to create and use *custom labels*. With custom labels, you can print labels for any type of data that you set up. For example, you can print product labels, location labels, customer labels, and more. When you define one or more custom label layouts, the system automatically shows a **Print** button on the relevant pages.
 

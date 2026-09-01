@@ -13,7 +13,7 @@ ms.custom:
 
 # Production feedback
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about production feedback, which lets workers provide feedback about production jobs. The article includes information about the various ways that production feedback can be updated.
 

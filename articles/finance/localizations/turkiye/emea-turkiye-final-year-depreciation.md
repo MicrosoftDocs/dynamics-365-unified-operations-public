@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 10.0.45
 
 # Use final year depreciation allocation across months for fixed assets
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides an overview of the fixed asset depreciation methods that are specific to Türkiye for final year depreciation allocation in Microsoft Dynamics 365 Finance. It explains how depreciation is calculated in the final year of an asset's useful life.  
 

@@ -12,7 +12,7 @@ ms.custom: bap-template
 
 # Warehouse handling of outbound loads for sales, transfer, and outbound shipment orders
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the warehouse handling process for outbound loads for sales orders, transfer orders, and outbound shipment orders.
 

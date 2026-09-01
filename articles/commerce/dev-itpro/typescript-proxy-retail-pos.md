@@ -15,7 +15,7 @@ ms.custom:
 
 # TypeScript and C# proxies for Retail point of sale (POS)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 When you create a new Retail Server API, you must generate the Commerce proxy by using the tools that are available as part of the Retail software development kit (SDK). For example, you must generate the Commerce proxy if you add a new Retail Server API.
 

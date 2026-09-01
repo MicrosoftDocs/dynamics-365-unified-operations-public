@@ -23,6 +23,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Set administrator rights for life events
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [banner](../includes/preview-banner.md)]
 
 Administrators can update life event options, depending on configuration settings. On the **Human resource parameters** page, you can configure parameters that allow administrators to make changes to plan selections. You can also fully restrict administrators from making changes.

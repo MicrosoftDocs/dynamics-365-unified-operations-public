@@ -17,7 +17,7 @@ ms.custom:
 
 # Page layout in the web client
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article discusses layout in the web client. Layout is a design process that specifies how controls appear on a page. 
 

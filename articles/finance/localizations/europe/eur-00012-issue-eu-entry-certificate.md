@@ -16,7 +16,7 @@ ms.search.form: CustParameters, CustTable, SalesTableListPage, SalesCreateOrder,
 
 # EUR-00012 Issue an EU entry certificate
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to enable an EU entry certificate, configure a customer account to use entry certificates, and issue a certificate with Microsoft Dynamics 365 Finance.
 

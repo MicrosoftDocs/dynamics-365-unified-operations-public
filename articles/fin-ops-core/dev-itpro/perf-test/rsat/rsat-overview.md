@@ -15,7 +15,7 @@ ms.custom: sfi-image-nochange
 
 # Regression suite automation tool (RSAT)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
 > The Regression Suite Automation Tool (RSAT) is marked for deprecation and won't be supported after May 15, 2027.

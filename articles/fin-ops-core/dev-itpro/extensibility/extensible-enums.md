@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 20
 
 # Write extensible enums
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Make an enumeration (enum) extensible by setting the following enum properties:
 

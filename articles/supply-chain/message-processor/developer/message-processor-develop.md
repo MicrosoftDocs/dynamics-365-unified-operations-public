@@ -13,7 +13,7 @@ ms.custom:
 
 # Business events, custom message queues, and custom message types
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to design your own custom message queues and message types for the [message processor](../message-processor.md) by using Visual Studio. It also describes how to set up business events to deliver alerts for failed processing results.
 

@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Cross-company behavior of data entities
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about how data entities interact with the cross-company concept. To understand this aspect of data entities, you need to understand how tables and views apply the cross-company concept. Therefore, this article begins with a brief review of tables and views, and then explains how data entities are related.
 

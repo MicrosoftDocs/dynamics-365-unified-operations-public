@@ -16,7 +16,7 @@ ms.assetid: 08fd46ef-2eb8-4942-985d-40fd757b74a8
 
 # Elimination rules
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about elimination rules and the various options for reporting about eliminations.
 

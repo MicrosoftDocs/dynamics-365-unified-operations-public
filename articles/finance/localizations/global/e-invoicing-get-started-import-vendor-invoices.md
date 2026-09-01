@@ -15,7 +15,7 @@ ms.search.validFrom: 2020-07-08
 
 # Use the electronic invoicing service to import vendor invoices
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information to help you get started with importing vendor invoices by using the Electronic Invoicing service. It guides you through the configuration steps that you must complete in the **Globalization studio** workspace in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management to receive electronic vendor invoices from vendors.
 

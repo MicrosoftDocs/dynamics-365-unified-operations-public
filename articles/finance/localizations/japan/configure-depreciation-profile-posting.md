@@ -17,7 +17,7 @@ ms.custom:
 
 # Configure depreciation profile and posting profile for additional depreciation
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure a depreciation profile and a posting profile for special depreciation in Japan with Microsoft Dynamics 365 Finance.
 

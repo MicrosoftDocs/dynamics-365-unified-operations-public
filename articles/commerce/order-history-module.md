@@ -13,7 +13,7 @@ ms.search.validFrom: 2019-10-31
 
 # Order history with search and filters module
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the order history with search and filters module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 

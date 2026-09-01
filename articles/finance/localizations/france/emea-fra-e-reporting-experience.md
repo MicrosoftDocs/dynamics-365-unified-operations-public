@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # How to use France e-reporting in Dynamics 365 Finance
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You run the France e‑reporting process through the [Electronic messages](../../general-ledger/electronic-messaging-setup.md) framework. This process is a sequence of actions that you can use to:
 

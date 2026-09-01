@@ -24,6 +24,8 @@ ms.dyn365.ops.version: Human Resources
 
 # API-based payroll integration with Ceridian Dayforce
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 This article describes the configuration steps required for API-based payroll integration between Microsoft Dynamics 365 Human Resources and Ceridian Dayforce. You need to configure both systems before you can process a pay run.
 
 ## Environment settings

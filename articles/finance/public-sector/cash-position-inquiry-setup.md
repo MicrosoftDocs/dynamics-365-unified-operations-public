@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.7
 ---
 
 # Set up and run the Cash position inquiry
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 This article provides information about the **Cash position** inquiry. This inquiry lets you determine the corresponding cash positions for financial dimension sets that contain self-balancing dimensions. It shows the following items:

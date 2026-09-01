@@ -13,7 +13,7 @@ ms.reviewer: twheeloc
 
 # Add custom fields to Microsoft-managed tables
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to extend existing Microsoft archive scenarios, such as General ledger, Sales order, and Inventory journal, by adding custom fields to live tables and ensuring proper synchronization with history tables and finance and operations data entities.
 

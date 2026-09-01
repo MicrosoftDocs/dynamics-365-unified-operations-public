@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 1611
 
 # SPED fiscal 2020 - Complementary information of the ICMS-ST for Sped fiscal 2020 layout 014
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 When a company wants to utilize the complement and compensation of the ICMS-ST for the 2020 calendar year, they need to start registering the additional ICMS-ST information during the receipt of electronic fiscal documents model 55 starting January 1, 2020.
 

@@ -16,6 +16,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Check for highly variable dimensions
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 In Dynamics 365 Finance, managing financial dimensions efficiently is crucial for maintaining performance during key processes like year-end close, trial balance reporting, and consolidation. Highly variable dimensions, those with a large number of distinct values, can significantly impact system performance. To address this issue, Microsoft Dynamics 365 Finance 10.0.45 introduces a feature that identifies and monitors these dimensions. For more information on highly variable dimensions and how to avoid them, see [Highly variable dimensions](high-var-dimensions.md).
 
 ## Purpose of the check

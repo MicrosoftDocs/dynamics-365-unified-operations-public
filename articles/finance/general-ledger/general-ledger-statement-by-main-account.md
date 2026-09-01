@@ -12,7 +12,7 @@ ms.search.validFrom: 2022-06-01
 
 # General ledger statement by main account
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to use [Electronic Reporting (ER)](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) to generate the **General ledger statement by main account** report in Microsoft Excel format.
 

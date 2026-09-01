@@ -15,7 +15,7 @@ ms.custom:
 
 # Create service orders automatically
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can create service orders for one service agreement or for several service agreements. When they're created, you can view your service orders on the **Service orders** page.
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Best practices for account structures
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article covers best practices for designing account structures, preparing for activation, and avoiding common performance issues. Following these guidelines helps keep activation fast, maintenance simple, and the user experience smooth.
 

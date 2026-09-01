@@ -12,7 +12,7 @@ ms.search.form: ReturnReasonCodeGroup, ReturnReasonCode
 
 # Set up return reason codes
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Set up return reason code groups
 

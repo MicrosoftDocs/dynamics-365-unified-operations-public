@@ -16,7 +16,7 @@ ms.assetid: adb8146b-eb21-4be2-a338-a5b299fcc9a0
 
 # Update the bank journal composite entity
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article lists the steps needed to add the additional BankTransactionType field to the composite BankJournalEntity.
 

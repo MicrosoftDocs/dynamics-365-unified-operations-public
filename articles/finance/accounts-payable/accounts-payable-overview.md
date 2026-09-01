@@ -17,7 +17,7 @@ ms.assetid: 82561fe7-b2d6-464c-9347-79d0ce0f9743
 
 # Configure Accounts payable overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the pages used to set up basic and optional functionality for Accounts payable. It also describes setup steps that you must complete before you start to set up Accounts payable.
 

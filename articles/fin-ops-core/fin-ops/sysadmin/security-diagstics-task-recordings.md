@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Version 10.0.9
 
 # Security diagnostics for task recordings
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 ## Before you begin
 

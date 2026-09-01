@@ -15,7 +15,7 @@ ms.custom:
 
 # Set up a client ID and a client secret
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up a client ID and a client secret for the Universal Tax Rate API.
 

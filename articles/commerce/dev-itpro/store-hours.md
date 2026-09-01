@@ -14,7 +14,7 @@ ms.custom:
 
 # Create and update store hours
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create and update store hours in Microsoft Dynamics 365 Commerce headquarters.
 

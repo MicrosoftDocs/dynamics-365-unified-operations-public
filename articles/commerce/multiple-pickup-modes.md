@@ -14,7 +14,7 @@ ms.custom:
 
 # Enable multiple pickup delivery modes for customer orders
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains functionality that lets you create customer orders for pickup at a store in Microsoft Dynamics 365 Commerce.
 

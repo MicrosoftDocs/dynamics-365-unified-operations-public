@@ -15,7 +15,7 @@ ms.assetid: d4df11ce-4d36-4c66-8230-f5fc58e021bc
 
 # Single voucher with multiple customer or vendor records
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of what happens when you post a single voucher with multiple customer or vendor records. This functionality will be discontinued in future versions. Don't use this method of posting because of the accounting impact to settlement processing.
 

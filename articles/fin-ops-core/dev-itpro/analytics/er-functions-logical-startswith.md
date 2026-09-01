@@ -17,7 +17,7 @@ ms.assetid:
 
 # STARTSWITH ER function
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The `STARTSWITH` function determines whether the specified input starts with the specified text. It returns a *Boolean* value of **TRUE** if the specified input starts with the specified text. Otherwise, it returns a *Boolean* value of **FALSE**.
 

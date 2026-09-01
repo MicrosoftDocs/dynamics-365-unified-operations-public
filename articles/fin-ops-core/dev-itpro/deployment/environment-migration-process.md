@@ -12,7 +12,7 @@ ms.reviewer: johnmichalak
 
 # Finance and operations apps environment migration
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft continues to open data centers for business service in both existing regions and new regions. The Geo migration feature lets you move your finance and operations apps environments that are in a single tenant from one geography (or geo) to another. No changes to the user interface (UI) or version occur as part of the move.
 

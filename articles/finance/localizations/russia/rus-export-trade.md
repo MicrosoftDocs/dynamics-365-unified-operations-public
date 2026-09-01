@@ -15,7 +15,7 @@ ms.custom:
 
 # Process invoice factures for export trade
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Export sales are taxable at a value-added tax (VAT) rate of 0 (zero) percent. However, taxpayers can apply this tax rate only after they receive confirmation from the tax authority within a specified period. Taxpayers must collect the necessary documents to confirm their right to apply VAT at a rate of 0 percent for export sales within this period.
 

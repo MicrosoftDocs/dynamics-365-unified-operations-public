@@ -15,7 +15,7 @@ ms.custom:
 
 # Report production orders as finished
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Reporting as finished is a production stage. At this stage, you report a finished product and move it from the production order to the inventory.
 

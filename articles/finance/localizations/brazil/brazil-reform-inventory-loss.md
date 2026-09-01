@@ -10,7 +10,7 @@ ms.custom: bap-template
 
 # Fiscal notes for inventory loss in Brazil tax reform
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up an operation type for inventory loss and create a sales order fiscal document to register that loss in Brazil tax reform.
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Assign a free text invoice template to a customer
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to assign a free text invoice template to a customer. This task uses the USMF demo company.
 

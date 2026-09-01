@@ -14,7 +14,7 @@ ms.custom:
 ---
 # Configure a development environment (.env) file
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to configure the .env file for the development environment in Microsoft Dynamics 365 Commerce.
 

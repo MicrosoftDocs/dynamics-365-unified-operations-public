@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 7.3
 
 # Generate fiscal documents for a load
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You can create a load that has multiple load lines. Each load line is created for a specific quantity of items from a sales order line. You can create one or more load lines or loads for one or more sales order lines or sales orders.
 

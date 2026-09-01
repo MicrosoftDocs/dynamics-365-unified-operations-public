@@ -16,7 +16,7 @@ ms.assetid: 6ee51758-639b-448e-9cb2-56cf1d804273
 
 # Financial period close workspace
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the **Financial period close** workspace and the associated configuration.
 

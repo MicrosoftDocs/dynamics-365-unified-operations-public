@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Update the hosted Azure Pipeline for new NuGet packages
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!NOTE]
 > This article applies to pipelines that you set up for versions 10.0.17 or earlier. This article doesn't apply to the legacy build pipeline that uses the build virtual machine.

@@ -13,7 +13,7 @@ ms.search.validFrom: 2021-10-21
 
 # Batch OData API
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about the batch Open Data Protocol (OData) application programming interface (API) and explains how you can use OData to reschedule a job.
 

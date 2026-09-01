@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 10.0.21
 
 # Support for multiple VAT registration numbers in the VAT return of Norway
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 In Skatteinfo no. 11/2020, the Norwegian Tax Administration introduced a requirement for VAT return reporting that includes direct digital submission from accounting systems to the Altinn tax portal. This digital submission process replaces the manual process for filing VAT returns for periods as of January 1, 2022. For more information about VAT returns with direct submission to Altinn, see [Mva-meldingen](https://skatteetaten.github.io/mva-meldingen/english/). For more information about how to set up and use the **VAT return with direct submission to Altinn** feature in Microsoft Dynamics 365 Finance, see [VAT return with direct submission to Altinn](emea-nor-vat-return.md).
 

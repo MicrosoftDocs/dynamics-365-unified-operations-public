@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Workflow FAQ
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article answers frequently asked questions about the workflow system.
 

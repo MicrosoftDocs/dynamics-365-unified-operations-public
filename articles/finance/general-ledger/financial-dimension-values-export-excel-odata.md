@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 8.1
 
 # Export and edit dimension data in Excel by using the OData plug-in
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The Excel button on the **Financial dimension values** page opens a dropdown with two distinct sections: **Open in Excel** and **Export to Excel**. These sections differ in data scope and interactivity.
 

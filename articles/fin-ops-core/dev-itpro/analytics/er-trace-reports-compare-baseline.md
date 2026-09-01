@@ -16,7 +16,7 @@ ms.custom: sfi-image-nochange
 
 # Trace generated report results and compare them with baseline values
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can trace the results of Electronic reporting (ER) formats that generate outgoing electronic documents. When you turn on trace generation by using the **Run in debug mode** ER user parameter, the system creates a new trace record in the ER format execution log every time it runs an ER report. Each trace record stores the following details:
 

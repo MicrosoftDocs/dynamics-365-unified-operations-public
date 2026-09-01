@@ -15,7 +15,7 @@ ms.search.form: PurchTableChangeReviewWorkspace
 
 # Review and accept changes to confirmed purchase orders
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 During procurement planning, changes to confirmed purchase orders can significantly affect downstream processes such as planned production, service work, or sales orders. The new **Confirmed purchase orders with changes** workspace makes it fast and easy to identify and reconfirm changes that have only a low risk of downstream impact. Procurement managers can focus on high-impact changes to assess downstream order impacts and communicate directly with vendors.
 

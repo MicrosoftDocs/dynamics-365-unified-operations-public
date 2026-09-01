@@ -15,7 +15,7 @@ ms.assetid: f39dbe39-7dc3-463c-923e-f22af231b979
 
 # Development system requirements
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article lists the system requirements for development.
 

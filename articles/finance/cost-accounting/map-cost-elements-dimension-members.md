@@ -16,7 +16,7 @@ ms.assetid: 4c66a231-aed2-48b5-9727-b3eb4fe6e6aa
 
 # Map cost element dimension members to a common set of dimension members
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 By mapping different cost element dimension members to a common set of cost element dimension members, you merge data into a common format for analysis purposes.
 

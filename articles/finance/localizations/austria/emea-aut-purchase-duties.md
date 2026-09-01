@@ -15,6 +15,8 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Purchase duties
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 A purchase duty is a tax on incoming sales tax. It's calculated as a percentage of the paid sales tax. Purchase duties are calculated for legal entities that have a primary address in Austria.
 
 The calculation of purchase duties is based on sales tax codes. To include a sales tax code in the purchase duty calculation, select the **Purchase duty** checkbox on the **Sales tax codes** page.

@@ -12,7 +12,7 @@ ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFi
 
 # Consolidate shipments when the shipment consolidation policy is overridden
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article presents a scenario where one or more sales lines must be manually released to the warehouse from the **Release sales orders to warehouse** page, and the system-defined shipment consolidation policy must be overridden before the release. An override of the shipment consolidation policy might be required if, for example, an order that isn't usually consolidated with open shipments must be consolidated with open shipments.
 

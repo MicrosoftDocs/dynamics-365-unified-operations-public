@@ -11,6 +11,8 @@ audience: Application User
 
 # Create and edit Business performance analytics reports
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 Business performance analytics enables you to create or customize reports that include the data fields you're interested in. You can also change any visuals on the reports. To view all available reports, select **Reports** in the **Data explorer** pane on the left. Select **Refresh** to ensure that you have the most up-to-date reports.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=76bfa0c6-43bb-43fb-9ccf-291bb887c92d]

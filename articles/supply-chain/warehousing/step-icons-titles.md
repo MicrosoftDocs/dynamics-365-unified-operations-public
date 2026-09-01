@@ -11,7 +11,7 @@ ms.search.form:
 
 # Assign step icons and titles for the Warehouse Management mobile app
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to assign step icons and step titles for new or customized task flows for the Warehouse Management mobile app.
 

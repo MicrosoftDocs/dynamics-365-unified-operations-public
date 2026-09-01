@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Plaform update 21
 
 # SQL connection error X++ exception
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the SQL connection error exception types in X++.
 

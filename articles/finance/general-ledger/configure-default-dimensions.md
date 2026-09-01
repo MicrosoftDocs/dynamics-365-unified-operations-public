@@ -19,7 +19,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Default dimensions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Default dimensions are preset financial dimension values that the system automatically applies to transactions. They reduce manual data entry and help ensure consistency across financial records. Default dimensions come from various places, such as master records (for example, customer or vendor records), document headers, and the main account.
 

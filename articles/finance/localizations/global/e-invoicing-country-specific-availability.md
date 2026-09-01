@@ -12,7 +12,7 @@ ms.reviewer: johnmichalak
 
 # Availability of Electronic Invoicing Service features by country or region
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The availability of Electronic Invoicing Service globalization features depends on the country or region where you're located. Although some features are generally available, others are still in preview.
 

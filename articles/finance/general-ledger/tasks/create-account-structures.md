@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Creating, modifying, and deleting account structures
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article walks through the process of creating, activating, and deleting account structures. The steps use the USMF demo data company.
 

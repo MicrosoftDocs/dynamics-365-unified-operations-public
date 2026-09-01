@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # X++ exception handling
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes exception handling in X++. Handle errors by using the **throw**, **try**...**catch**, **finally**, and **retry** statements to generate and handle exceptions.
 
@@ -375,7 +375,8 @@ static void TryCatchRetry4Job(Args _args)
 Message (04:33:56 pm)
             .
 In the 'try' block, [2]. (j4)
----- Will now throw a warning, which is not caught.
+---
+- Will now throw a warning, which is not caught.
 This warning will not be caught. [3]
 **********/
 }

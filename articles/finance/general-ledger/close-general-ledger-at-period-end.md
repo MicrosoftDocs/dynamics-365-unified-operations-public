@@ -16,7 +16,7 @@ ms.assetid: cec9e039-c1a2-482c-bea6-e11d896eea9d
 
 # Close the general ledger at period end
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the tasks that you typically complete when performing a period closing for General ledger.
 

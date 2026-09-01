@@ -16,7 +16,7 @@ ms.assetid: 65032886-4dc6-4411-98c8-8969287fd7df
 
 # Purchase order codes in the public sector
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about the codes and special messages that you can use with confirming purchase orders. A confirming purchase order bypasses the typical purchasing process.
 

@@ -15,7 +15,7 @@ ms.assetid: f5501319-dcaa-4912-9456-97a0ef2c2452
 
 # Filtering options
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains the filtering options that are available.
 

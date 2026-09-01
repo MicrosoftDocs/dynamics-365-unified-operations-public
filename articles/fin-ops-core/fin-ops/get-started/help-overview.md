@@ -17,7 +17,7 @@ ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 
 # Help system
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 [!INCLUDE [PEAP](../../../includes/peap-3.md)]
 

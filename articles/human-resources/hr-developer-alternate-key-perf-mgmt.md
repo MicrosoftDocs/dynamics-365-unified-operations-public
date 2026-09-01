@@ -14,6 +14,8 @@ ms.custom:
 
 # Alternate keys in performance management tables
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 The following table shows the fields that are available as alternate keys in Microsoft Dynamics 365 Human Resources release 10.0.40 and later to enable set-based operations on data entities for specific tables in performance management.

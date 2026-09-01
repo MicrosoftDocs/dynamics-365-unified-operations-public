@@ -12,6 +12,8 @@ ms.reviewer: johnmichalak
 
 # Change the type of connected environments
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 When you enable Microsoft Power Platform Integration, the finance and operations apps environment and the customer engagements apps environment connect tightly. Administrators should regard these two platforms as one environment that has multiple apps. This article describes the environment lifecycle scenarios that Power Platform Integration affects.
 
 > [!IMPORTANT]

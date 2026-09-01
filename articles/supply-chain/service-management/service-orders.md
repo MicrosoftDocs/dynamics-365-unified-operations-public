@@ -15,7 +15,7 @@ ms.custom:
 
 # Service orders
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A service order represents a visit that a service technician makes to a customer site on a specific date. Each service order consists of one or more service order lines. Service order lines represent the hours of work that must be performed by the service technician, and the related items, expenses, and fees.
 

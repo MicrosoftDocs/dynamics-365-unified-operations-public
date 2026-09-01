@@ -13,7 +13,7 @@ ms.custom:
 
 # Master planning system architecture
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 
 In Supply Chain Management, the Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management manages master planning. This add-in enables master planning calculation to occur outside Dynamics 365 Supply Chain Management and the related SQL database. The benefits of the Planning Optimization functionality include improved performance and minimal impact on the SQL database during master planning runs. You can run quick planning runs even during office hours, so that planners can immediately react to demand or parameter changes.

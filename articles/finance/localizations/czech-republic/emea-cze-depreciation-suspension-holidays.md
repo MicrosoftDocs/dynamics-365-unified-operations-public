@@ -15,7 +15,7 @@ ms.custom:
 
 # Depreciation suspension (holidays)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about the suspension, or postponement, of depreciation for the Czech Republic.
 

@@ -15,7 +15,7 @@ ms.assetid: 8DA4DA85-0C2D-4CAF-B350-DAC9C1BE4DF9
 
 # Extend the RunBase class
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When you extend functionality of the application suite, you will encounter classes that extend the **RunBase** class. This article shows how a **RunBase** class can be augmented end to end.
 

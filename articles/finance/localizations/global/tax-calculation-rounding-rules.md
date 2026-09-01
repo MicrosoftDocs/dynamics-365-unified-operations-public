@@ -14,7 +14,7 @@ ms.custom:
 
 # Tax calculation rounding rules
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about how the rounding rules work on the **Tax calculation parameters** page.
 

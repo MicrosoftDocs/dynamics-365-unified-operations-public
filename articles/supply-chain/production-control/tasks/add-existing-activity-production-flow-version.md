@@ -12,7 +12,7 @@ ms.search.form: LeanProductionFlow, PlanActivity, PlanActivityAddExisting, PlanA
 
 # Add an existing activity to a production flow version
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 When creating new versions of production flows, you can choose to add activities created for the older versions, to the new version. This procedure shows how a new version is created for an existing production flow, without copying the activities. In the next step, an existing activity is added to the new version. 
 

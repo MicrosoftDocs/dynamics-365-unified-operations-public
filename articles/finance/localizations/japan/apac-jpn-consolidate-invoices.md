@@ -18,7 +18,7 @@ ms.assetid: bd7255d9-0b0e-4372-8563-eaa559adbf24
 
 # Consolidated invoices for Japan
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 In Japan, invoices are consolidated each month for payment. This article provides information about consolidated invoices, and explains how the invoice amount and due date are calculated.
 

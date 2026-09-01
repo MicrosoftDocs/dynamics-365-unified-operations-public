@@ -13,7 +13,7 @@ ms.custom:
 
 # Configure BOPIS in a Dynamics 365 Commerce sandbox environment
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to configure buy online, pickup in store (BOPIS) in a Microsoft Dynamics 365 Commerce sandbox environment after the environment is provisioned.
 

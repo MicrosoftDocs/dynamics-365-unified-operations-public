@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Global address book and location owners
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 Each address in the global address book has a location owner. The location owner determines whether you can edit the address on the party record. If the party is the location owner of the address, you can use the party to edit the address from either the global address book or the associated master record page (such as the customer, vendor, or worker). If the party isn't the location owner of the address, you can't edit the record.
 

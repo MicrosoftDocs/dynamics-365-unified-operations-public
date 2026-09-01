@@ -14,7 +14,7 @@ ms.custom:
 
 # Apply display settings for product dimensions
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains the display settings for product dimensions and describes how to apply them in Microsoft Dynamics 365 Commerce.
 

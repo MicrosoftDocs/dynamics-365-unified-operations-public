@@ -12,7 +12,7 @@ ms.assetid: 9bc9bfbe-a7a9-437b-a947-826229b0585a
 
 # Use tracing for explosion
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how you can use tracing to explore the causes behind the outcome of an order explosion.
 

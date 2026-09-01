@@ -17,7 +17,7 @@ ms.assetid: 2a1cdd35-30cb-41e7-9506-67fd04a537c5
 
 # Cost object dimensions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When you analyze costs, use cost element dimensions to determine where costs flow. Use cost object dimensions to determine where you should assign costs. This article provides information about cost object dimensions.
 

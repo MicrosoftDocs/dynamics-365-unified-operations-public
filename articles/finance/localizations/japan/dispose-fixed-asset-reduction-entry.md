@@ -15,7 +15,7 @@ ms.custom:
 
 # Dispose of a fixed asset with reduction entry
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to dispose of a fixed asset with reduction entry for Japan in Microsoft Dynamics 365 Finance.
 

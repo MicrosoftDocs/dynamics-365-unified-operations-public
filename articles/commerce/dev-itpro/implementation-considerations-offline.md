@@ -14,7 +14,7 @@ ms.custom:
 
 # Commerce offline implementation considerations
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article is for people who implement offline functionality related to the Microsoft Dynamics 365 Commerce Store Commerce application. It describes features, functionality, and implementation tips that are related to the use of offline functionality.
 

@@ -13,7 +13,7 @@ ms.search.validFrom: 2023-01-01
 
 # Configure inventory availability checks for cart and checkout actions
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to enable inventory availability checks for add to cart and order checkout actions in Microsoft Dynamics 365 Commerce.
 

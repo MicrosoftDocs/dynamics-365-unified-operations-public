@@ -15,7 +15,7 @@ ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym, SysQueryForm, Ve
 
 # Create and export vendor payments using ISO20022 payment format
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Complete the following steps to create payment lines in the vendor payment journal and generate a vendor payment file using ISO 20022 Credit transfer example.
 

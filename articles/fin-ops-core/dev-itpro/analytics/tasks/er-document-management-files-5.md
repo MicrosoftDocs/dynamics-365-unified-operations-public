@@ -15,7 +15,7 @@ ms.search.form: ERSolutionTable, EROperationDesigner, ERComponentTypeDropDialog,
 
 # ER Use Document Management files in format outputs (Part 5 - Modify and run format)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output. You can perform these steps in the DEMF company.
 

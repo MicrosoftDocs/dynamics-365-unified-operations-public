@@ -17,7 +17,7 @@ ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 
 # Configure the Invoice capture solution
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 After you install the Invoice capture solution, it provides default configurations for using it. These default configurations might not fully meet your requirements. In Invoice capture, you can find configurations in **System preference**.
 

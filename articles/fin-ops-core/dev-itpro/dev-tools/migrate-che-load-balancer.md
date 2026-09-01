@@ -12,7 +12,7 @@ ms.reviewer: johnmichalak
 
 # Migrate a CHE load balancer
 
-[!INCLUDE[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft Azure announced the retirement of classic load balancers. To ensure that CHE environments can continue to be provisioned, Microsoft implemented provisioning for new CHE environments and migration for existing CHE environments.
 

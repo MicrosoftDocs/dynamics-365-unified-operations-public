@@ -13,7 +13,7 @@ ms.custom:
 
 # Onboard vendors
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 New vendors can be onboarded and registered as vendors in Microsoft Dynamics 365 Supply Chain Management, based on information that is collected from a person who represents the vendor.
 

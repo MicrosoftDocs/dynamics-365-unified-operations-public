@@ -16,7 +16,7 @@ ms.assetid: f0639053-d99c-432a-8ead-5c26e0d4eaec
 
 # Fixed assets integration
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can integrate fixed assets with General ledger, Inventory management, Accounts receivable, and Accounts payable. You can also set up fixed assets so that it integrates with purchase orders.
 

@@ -15,7 +15,7 @@ ms.assetid: 41dcbbda-e377-45a8-b180-5daa0e63c4a9
 
 # Testing and validations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This tutorial shows you how to create and run test cases.
 

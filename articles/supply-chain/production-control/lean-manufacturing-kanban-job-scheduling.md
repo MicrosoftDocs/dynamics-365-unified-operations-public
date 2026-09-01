@@ -12,7 +12,7 @@ ms.assetid: fe3b4822-6140-4b02-bebb-1fc17be2bce8
 
 # Kanban job scheduling for lean manufacturing
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about visual control over kanban job scheduling and various ways to schedule kanban jobs.  
 

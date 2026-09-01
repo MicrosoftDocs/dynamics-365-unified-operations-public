@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Respond to requests for personal data in Human Resources
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article can help both businesses that use Microsoft Dynamics 365 Human Resources, and also partners and independent software vendors (ISVs), when they comply with data subject rights (DSR) requests. For more information about the related resources that Microsoft provides, see [Privacy overview](./privacy-guide.md).
 

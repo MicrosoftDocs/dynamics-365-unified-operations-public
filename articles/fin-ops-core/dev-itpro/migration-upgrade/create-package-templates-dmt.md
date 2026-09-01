@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 17
 
 # AX 2009 migration – Create package templates
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Create packages by following a predefined sequence. This sequence is based on the dependencies that the data entities have on each other. Because of these dependencies, you must import data entities in the defined order. Otherwise, you might encounter issues during import and configuration.
 

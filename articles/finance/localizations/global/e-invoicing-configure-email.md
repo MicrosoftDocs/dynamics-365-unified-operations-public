@@ -13,7 +13,7 @@ ms.custom:
 
 # Configure email channels
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 If the Electronic invoicing feature that you created imports electronic vendor invoices from attached files that you receive by email, configure an email account channel.
 

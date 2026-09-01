@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Customize table and column mappings
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The default table maps include predefined table and column mappings that enable the flow of data between two apps. In this way, they serve as blueprints. However, because every business is different, the default table maps might sometimes not be enough. Therefore, dual-write fully supports customization by providing ways to change table maps and column mappings.
 

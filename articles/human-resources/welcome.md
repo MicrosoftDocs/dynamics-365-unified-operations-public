@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Human Resources home page
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 This article provides a list of the help topics and other resources in Microsoft Dynamics 365 Human resources. 
 
 Select a feature area to learn more about it.

@@ -25,6 +25,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 # Gender base enum extensibility
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 The **Gender** enumeration (enum) is now extensible. This article describes the changes that you must make in the code base if you plan to extend the **Gender** enum.
 
 ## Gender vs. HcmPersonGender

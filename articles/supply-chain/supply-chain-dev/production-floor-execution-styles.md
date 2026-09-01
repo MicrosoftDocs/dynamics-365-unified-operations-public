@@ -13,7 +13,7 @@ ms.custom:
 
 # Style the production floor execution interface
 
-[!include [banner](../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../finance/includes/banner.md)]
 
 The article explains how to configure form controls so that the default production floor execution styles are applied to them.
 

@@ -17,7 +17,7 @@ ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
 
 # Electronic reporting destination failure handling
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 Usually, you run an ER format within the scope of a specific business process. However, sometimes you need to consider the delivery of an outbound document that the ER format generates during execution as part of that business process. In this case, if delivery of a generated outbound document to a configured destination isn't successful, you must cancel execution of the business process. To configure the appropriate ER destination, select the **Stop processing on failure** option.

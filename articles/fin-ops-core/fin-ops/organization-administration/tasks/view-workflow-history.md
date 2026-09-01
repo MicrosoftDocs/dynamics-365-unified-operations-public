@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # View workflow history
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes the steps to view the status of a document that you submitted to the workflow system for processing and approval. The demo data company used to create this procedure is USMF.
 

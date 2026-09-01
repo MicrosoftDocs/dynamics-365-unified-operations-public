@@ -16,7 +16,7 @@ ms.assetid: 35e791d2-1905-4808-a579-7f181ddddd91
 
 # Position forecasting
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Expenses related to workers often make up a large proportion of an organization's costs. Position forecasting helps you plan these expenses and include them in the budget planning process.
 

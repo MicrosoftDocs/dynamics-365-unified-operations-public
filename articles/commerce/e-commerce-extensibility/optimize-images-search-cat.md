@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Optimize images on search and category pages
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to optimize images on search and category pages in Microsoft Dynamics 365 Commerce.
 

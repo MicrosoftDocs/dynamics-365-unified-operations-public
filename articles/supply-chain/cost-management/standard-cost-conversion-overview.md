@@ -13,7 +13,7 @@ ms.custom:
 
 # Standard cost conversion overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides a process overview to help you set up and run a standard cost conversion. Complete the steps after you complete the prerequisites for a standard cost conversion.
 

@@ -17,7 +17,7 @@ ms.assetid: 1e4c2ac4-077b-4678-8733-5cec8f6ff659
 
 # Accounts payable home page
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of Accounts payable. 
 

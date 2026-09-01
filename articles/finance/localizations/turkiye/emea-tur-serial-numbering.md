@@ -16,7 +16,7 @@ ms.custom:
 
 # Use continuous serial numbering of packing slips and invoices
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to use continuous serial numbering for packing slips and invoices for the Republic of Türkiye in Microsoft Dynamics 365 Finance.
 

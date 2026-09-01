@@ -12,7 +12,7 @@ ms.search.form: InventQuarantineOrder
 
 # Specify how to dispose of returned items
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When you handle a return order, you must specify a reason return code to identify why the product is being returned. You must also specify a disposition code and a disposition action to determine what should be done with the returned product itself.
 

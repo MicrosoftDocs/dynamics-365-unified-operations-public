@@ -10,6 +10,8 @@ ms.topic: article
 
 # Collection letter automation overview
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 Collection letter automation is a Dynamics 365 Finance feature that helps organizations streamline customer collections by automatically determining when to send collection communications and what collection stage to apply to a customer. The feature reduces manual review effort while helping collection activities run consistently based on configured aging and due date criteria.
 
 Collection automation evaluates the customer account as a whole rather than assessing each invoice independently. The system reviews eligible customer transactions, determines the appropriate collection stage, and generates one communication for the customer during a processing run. It supports both pre-dunning communications, which are sent before invoices become due, and overdue collection communications, which are sent after invoices become overdue.

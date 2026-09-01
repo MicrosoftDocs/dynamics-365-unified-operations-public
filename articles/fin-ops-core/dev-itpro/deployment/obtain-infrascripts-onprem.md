@@ -16,6 +16,8 @@ ms.service: dynamics-365-op
 
 # Obtain the infrastructure scripts for your Finance + Operations (on-premises) deployment
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article explains how to download or update the infrastructure scripts for your deployment of Microsoft Dynamics 365 Finance + Operations (on-premises) from one version to another.
 
 ## Download the infrastructure scripts

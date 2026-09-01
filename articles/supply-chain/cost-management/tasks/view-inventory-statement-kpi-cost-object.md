@@ -13,7 +13,7 @@ ms.custom:
 
 # View inventory statement and KPI by cost object
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Follow these steps to view inventory statement and key performance indicators (KPIs) by cost object. This procedure is intended for the cost controller.
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 8.1
 
 # Copy vendors by using shared number sequences
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use shared number sequences to assign vendor IDs. Shared number sequences also let you copy vendors from one legal entity to another legal entity but use the same vendor IDs in both legal entities.
 

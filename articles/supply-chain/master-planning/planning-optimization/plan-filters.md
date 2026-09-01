@@ -12,7 +12,7 @@ ms.search.form: ReqCreatePlanWorkspace, ReqPlanSched
 
 # Run planning for a subset of items
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Master planning lets you set up filters to limit the set of items that are included in a planning run, so that not all items are planned. 
 

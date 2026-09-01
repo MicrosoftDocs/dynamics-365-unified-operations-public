@@ -14,7 +14,7 @@ ms.custom:
 
 # Set up the Azure Key Vault client
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The functionality for storing advanced certificates lets you define the type of certificate storage that finance and operations apps use.
 

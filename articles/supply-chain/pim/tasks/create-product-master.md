@@ -13,7 +13,7 @@ ms.custom:
 
 # Create a product master
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Create a product master for the predefined variants. The demo data company used to create this procedure is USMF. This procedure is intended for the product designer.
 

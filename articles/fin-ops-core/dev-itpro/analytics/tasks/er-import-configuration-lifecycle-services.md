@@ -15,7 +15,7 @@ ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionRepositoryTable, ERSolut
 
 # Import a configuration from Lifecycle Services
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how a user in the System administrator or Electronic reporting developer role can import a new version of an [Electronic reporting (ER) configuration](../general-electronic-reporting.md#Configuration) from the [project-level Asset library](../../lifecycle-services/asset-library.md) in Microsoft Dynamics Lifecycle Services.
 

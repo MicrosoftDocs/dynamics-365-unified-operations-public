@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 4
 
 # Customize application startup by using delegates
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In Dynamics AX 2012, customization points allowed you to subscribe to events (Application.Startup delegates) that the client raised when initializing. These events are deprecated because there's no concept of a rich client. On the server, only server sessions are considered. However, because you can migrate logic from previous releases, new events are added to the **ApplicationStartupEventManager** class.
 

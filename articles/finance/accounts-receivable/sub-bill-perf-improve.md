@@ -16,7 +16,7 @@ ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
 
 # Performance improvements for subscription billing consumption entry
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In the 10.0.44 release of Microsoft Dynamics 365 Finance, Microsoft introduced key performance improvements and functional enhancements that are intended to fix bottlenecks in subscription billing consumption entry. These changes address critical business challenges that are faced during consumption registration and introduce better pricing control for various pricing methods.
 

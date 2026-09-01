@@ -14,7 +14,7 @@ ms.custom:
 
 # Year-end close for Czech Republic and Hungary
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about the year-end closing process and opening transactions for the Czech Republic and Hungary. By using this functionality, you can set up the year-end closing process in the following ways:
 

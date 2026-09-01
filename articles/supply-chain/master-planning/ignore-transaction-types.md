@@ -13,7 +13,7 @@ ms.custom:
 
 # Exclude specific transactions or transaction types from master planning
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to exclude specific transactions or transaction types from master planning calculations.
 

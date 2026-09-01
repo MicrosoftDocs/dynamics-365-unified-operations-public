@@ -14,7 +14,7 @@ ms.search.validFrom: 2017-12-31
 
 # Set SPED EFD contributions
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You generate the SPED EFD - Contributions statement in the **Fiscal books** module. It gathers information about social contribution tax on gross revenue for the Social Integration Program (PIS) and the Contribution for Social Security Financing (COFINS).
 

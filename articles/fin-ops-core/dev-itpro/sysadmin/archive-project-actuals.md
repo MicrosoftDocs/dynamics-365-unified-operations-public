@@ -15,7 +15,7 @@ ms.search.validFrom: 2026-08-17
 
 # Archive Dynamics 365 Project Operations actuals staging data (preview)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 

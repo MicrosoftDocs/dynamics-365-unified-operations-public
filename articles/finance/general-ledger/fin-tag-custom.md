@@ -16,6 +16,8 @@ ms.dyn365.ops.version: 10.0.16
 
 # Financial tags development guidelines and FAQ 
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 Financial tags are a critical component of Microsoft Dynamics 365 finance and operations that enable organizations to categorize and track financial transactions with additional metadata. When developing 
 customizations or extensions that interact with Financial tags, it's essential to follow specific guidelines to maintain data integrity and system functionality.
 

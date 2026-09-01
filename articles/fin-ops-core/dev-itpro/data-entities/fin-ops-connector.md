@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 2019-02-28
 
 # Application Connector
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The application connector enables Microsoft Power Automate, Power Apps, Data Integrator, and Logic Apps to integrate with finance and operations. An external application can use the available trigger and actions to integrate with them.
 

@@ -16,7 +16,7 @@ ms.assetid: de740262-6ffd-42b9-a325-540eae5cec94
 
 # Workflow elements
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the various elements that make up a workflow.
 

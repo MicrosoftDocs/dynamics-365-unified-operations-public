@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Supported composite data types for Electronic reporting formulas
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about the composite data types that are supported in [Electronic reporting (ER)](general-electronic-reporting.md) expressions. The composite data types are [class](#class), [container](#container), [record](#record), [record list](#record-list), and [object](#object).
 

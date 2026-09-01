@@ -14,7 +14,7 @@ ms.search.form:
 
 # Use Customer Lockbox to manage secure access to customer data
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Most operations, support, and troubleshooting that Microsoft personnel (including subprocessors) perform don't require access to your data. However, in those rare situations where this access is required, Microsoft Power Platform Customer Lockbox lets you review and approve (or reject) data access requests. Use it when a Microsoft engineer must access your data in response to either a support ticket that you've raised or a problem that Microsoft has identified.
 

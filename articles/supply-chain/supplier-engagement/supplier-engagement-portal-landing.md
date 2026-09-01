@@ -14,7 +14,7 @@ ms.custom:
 
 # Supplier portal landing page and vendor onboarding (preview)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 

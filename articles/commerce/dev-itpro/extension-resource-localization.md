@@ -14,7 +14,7 @@ ms.custom:
 
 # Localize Commerce extension resources and label files
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to modify labels in the point of sale (POS) user interface (UI), POS messages (error, warning, and information), receipt labels, and error messages for Commerce Scale Unit (CSU) or Commerce runtime services (CRT). You can also add custom error messages for CSU or CRT in the same way. However, for new POS extension labels, use the localization framework in the POS extension.
 

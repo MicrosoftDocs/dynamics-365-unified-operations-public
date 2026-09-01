@@ -12,7 +12,7 @@ ms.search.form: SMADispatchBoard
 
 # Dispatch board
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A dispatch board is the central location from which you can view the status of activities in a service order. You can perform the following tasks in a dispatch board:
 

@@ -11,7 +11,7 @@ ms.author: v-cpicon
 
 # Configure printing for the ISRL Withholding report for Venezuela
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure the ISRL Withholding report for Venezuela in Microsoft Dynamics 365 Finance.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Asset Management parameters
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to set up the general parameters for Asset Management, which relate to assets, work orders, and work order scheduling. Select **Asset management** > **Setup** > **Asset management parameters** to open the page.
 

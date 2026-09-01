@@ -13,7 +13,7 @@ ms.custom:
 
 # View, manage, and approve planned orders
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to view, manage, and approve planned orders.
 

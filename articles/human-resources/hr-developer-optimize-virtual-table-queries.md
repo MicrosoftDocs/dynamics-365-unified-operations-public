@@ -26,6 +26,8 @@ ms.custom: sfi-image-nochange
 
 # Optimize Dataverse virtual table queries
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 ## Issue

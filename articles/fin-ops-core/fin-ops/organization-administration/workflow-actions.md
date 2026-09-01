@@ -16,7 +16,7 @@ ms.assetid: 65fb711c-6474-42d1-81ed-ca657c29bf1f
 
 # Actions in workflow approval processes
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains the actions that each participant in a workflow approval process can take.
 

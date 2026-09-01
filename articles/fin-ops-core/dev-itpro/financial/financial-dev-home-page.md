@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Financials development home page
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides links to topics about financials development.
 

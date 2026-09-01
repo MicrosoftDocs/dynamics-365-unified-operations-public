@@ -15,7 +15,7 @@ ms.custom:
 
 # Procurement and sourcing in the public sector in France
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how French entities in the public sector can use standard features related to procurement and sourcing. Use these features to help meet the requirements of the Code des Marchés Publics.
 

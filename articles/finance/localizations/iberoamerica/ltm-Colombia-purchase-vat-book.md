@@ -11,7 +11,7 @@ ms.author: v-federicohe
 
 # Configure Colombian purchase VAT book printing
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure the Colombian purchase value-added tax (VAT) book report so that it can be printed. The purchase VAT book report is the record and accounting document that businesses use to keep a record of their purchase transactions. Although the specific VAT ledger requirements might vary from one country/region to another, they typically include the transaction date, customer information, and tax information details.
 

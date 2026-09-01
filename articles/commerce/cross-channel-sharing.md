@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Enable and use cross-channel sharing
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to enable and use the cross-channel sharing feature of Microsoft Dynamics 365 Commerce site builder.
 

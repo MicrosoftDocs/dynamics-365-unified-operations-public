@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 8.1
 
 # Expense management Power BI content
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes what is included in the Expense management Power BI content.
 

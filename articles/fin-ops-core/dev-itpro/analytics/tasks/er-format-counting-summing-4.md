@@ -15,7 +15,7 @@ ms.search.form: ERWorkspace, ERSolutionTable, IntrastatParameters, Intrastat, In
 
 # ER Configure format to do counting and summing (Part 4 - Run format)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) format to do counting and summing based on data from the already generated text output. You can perform these steps in the DEMF company.
 

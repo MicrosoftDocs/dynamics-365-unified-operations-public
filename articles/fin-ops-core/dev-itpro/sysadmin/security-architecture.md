@@ -16,7 +16,7 @@ ms.assetid: bea829b3-38ce-463c-a7e3-c9393b79d559
 
 # Security architecture
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the security architecture of finance and operations.
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 8.0.4
 
 # Vendor workflow
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When you use the vendor workflow, it sends changes to specific fields to the workflow for approval before adding them to the vendor.
 

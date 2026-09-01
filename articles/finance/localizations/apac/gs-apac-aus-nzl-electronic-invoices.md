@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 10.0.39
 
 # Get started with Electronic invoicing for Australia and New Zealand
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 [!INCLUDE[banner](../../includes/rsc-to-gsw-banner.md)]
 
 This article helps you get started with Electronic invoicing for Australia and New Zealand. It guides you through the configuration steps that depend on the country or region in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps described in [Set up Electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).

@@ -18,7 +18,7 @@ ms.assetid: cc5d001f-bcfe-4602-9ec1-9e265e9fd188
 
 # 175 percent reducing balance depreciation
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the 175 percent reducing balance method of depreciation.
 

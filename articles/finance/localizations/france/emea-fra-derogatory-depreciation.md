@@ -15,7 +15,7 @@ ms.search.form: AssetPosting, AssetBook, AssetBookTable
 
 # Derogatory depreciation for France
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about derogatory depreciation for France and how to set it up. In derogatory depreciation, you calculate an extra amount of depreciation as the difference between the depreciation amount on the tax book and the depreciation amount on the accounting book during the life of a fixed asset.
 

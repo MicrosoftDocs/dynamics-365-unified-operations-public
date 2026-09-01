@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-06-30
 
 # Issue customer fiscal documents (project) (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to issue customer fiscal documents for a project in Brazil with Microsoft Dynamics 365 Finance.
 

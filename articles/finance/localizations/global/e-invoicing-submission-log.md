@@ -13,7 +13,7 @@ ms.reviewer: johnmichalak
 
 # Work with Electronic document submission log
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 In Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management, you can use the submission log to view the results of the processing of submissions to Electronic invoicing.
 

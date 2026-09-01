@@ -1,4 +1,4 @@
-﻿---
+---
 title: Customers V3 entity
 description: Learn about the Customers V3 data entity in finance and operations migration projects with Dynamics 365.
 author: edupont04
@@ -11,6 +11,8 @@ ms.collection: FastTrack
 ---
 
 # Customers V3 entity
+
+[!INCLUDE [banner](../../../includes/banner.md)]
 
 The **Customers V3** entity supports creating and updating customers; and includes all the fields for a typical customer. It also includes about 80 fields that the other customer entities don't support.
 

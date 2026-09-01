@@ -14,7 +14,7 @@ ms.search.validFrom: 2017-12-31
 
 # Cancel a customer fiscal document (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to cancel a customer fiscal document in Brazil by using Microsoft Dynamics 365 Finance. When you cancel the fiscal document, the system marks the fiscal document as canceled and reverses all ledger and financial transactions.
 

@@ -15,7 +15,7 @@ ms.custom:
 
 # Use tax calculation in request for quotation in Brazil tax reform
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes tax calculation in request for quotation (RFQ) in the Brazil tax reform solution.
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 10.0.36
 
 # Support for multiple VAT registration numbers in reporting for Italy
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about the regulatory reports for Italy that are available for legal entities that use the functionality for multiple value-added tax (VAT) registration numbers. For more information about **Multiple VAT registration numbers** functionality, the prerequisites that must be met before it's used, and the required setup, see [Multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md).
 

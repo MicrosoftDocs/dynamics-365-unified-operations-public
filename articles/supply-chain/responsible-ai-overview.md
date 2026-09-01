@@ -15,7 +15,7 @@ ms.collection:
 
 # Responsible AI FAQs for Dynamics 365 Supply Chain Management
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 [!INCLUDE[responsible-ai-intro](../includes/responsible-ai-intro.md)]
 

@@ -12,7 +12,7 @@ ms.assetid: 15c76a51-fa6d-42d2-994a-c67df6bae6a9
 
 # Activity-based subcontracting
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes, in detail, how to use subcontracted activities in a production flow for lean manufacturing.
 

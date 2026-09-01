@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Set up a development environment
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to set up a development environment for Microsoft Dynamics 365 Commerce.
 

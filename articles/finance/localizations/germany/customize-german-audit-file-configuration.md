@@ -15,7 +15,7 @@ ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappin
 
 # Customize German audit file configuration
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to customize the German audit file configuration by adding a new table group and selecting a table with fields for data export definition in Microsoft Dynamics 365 Finance.
 

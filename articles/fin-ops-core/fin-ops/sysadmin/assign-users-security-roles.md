@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Manage users and security roles
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 To use anything other than common capabilities in finance and operations apps, assign users to security roles. You can assign users to roles automatically, based on rules and business data, exclude users from automatic role assignment, or add users to roles manually.
 

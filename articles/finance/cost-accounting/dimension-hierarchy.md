@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Dimension hierarchy
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about dimension hierarchies. Use a dimension hierarchy to define the reporting structure, cost policies, and security setup in Cost accounting.  
 

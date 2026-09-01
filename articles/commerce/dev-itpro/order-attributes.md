@@ -14,7 +14,7 @@ ms.custom:
 
 # Define and set order attributes
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to edit and set attribute values for orders directly in Microsoft Dynamics 365 Commerce headquarters, the point of sale (POS), and Commerce runtime (CRT).
 

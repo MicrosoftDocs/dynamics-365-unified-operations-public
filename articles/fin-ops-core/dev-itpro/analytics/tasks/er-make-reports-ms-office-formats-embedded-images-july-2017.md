@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Design configurations to generate reports in Office format that have embedded images
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 To complete the steps in this procedure, first complete the procedure, "ER Create a configuration provider and mark it as active."
 This procedure explains how to design Electronic reporting (ER) configurations to generate a Microsoft Excel or Word document that contains embedded images. In this procedure, you create the required ER configurations for the sample company, Litware, Inc. You can complete these steps by using the USMF dataset.

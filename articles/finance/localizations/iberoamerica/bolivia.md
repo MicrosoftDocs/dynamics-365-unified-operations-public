@@ -13,7 +13,7 @@ ms.dyn365.ops.version: App 10.0.43
 
 # Bolivia overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This overview provides a comprehensive guide to setting up legal entities in Bolivia within Microsoft Dynamics 365 Finance. It includes main configurations, general and Bolivia-specific reports, electronic invoicing formats, and additional resources for electronic reporting.
 

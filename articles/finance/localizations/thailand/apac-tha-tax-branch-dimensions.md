@@ -13,7 +13,7 @@ ms.search.validFrom: 1900-01-02
 
 # Tax branch dimensions
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and work with tax branches for Thailand in Microsoft Dynamics 365 Finance.
 

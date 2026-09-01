@@ -15,7 +15,7 @@ ms.search.form: JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview
 
 # Production process overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article gives an overview of the production processes. It describes the various stages of production orders, batch orders, and kanbans, from order creation to closing of the financial period.
 

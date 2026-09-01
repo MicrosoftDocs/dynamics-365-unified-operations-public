@@ -12,7 +12,7 @@ ms.search.form: EcoResProductParameters, EcoResProductDetailsExtended, SysTransl
 
 # Show translated product names and descriptions in the UI
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 For companies that operate worldwide, in multiple countries or regions, it's important that each user can work with product information in their own language. Sales representatives who communicate with customers by telephone see product names in their local language. Purchasers can search for products in the language that they speak. Shop floor workers get product names and instructions in familiar terms. In each case, you can show the information in a language other than the system language.
 

@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 11
 
 # Table map extension
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 To extend table maps, we have refactored table maps into a model, which allows you to extend a solution with additional fields and methods. This article discusses why you need a model to extend a table map.
 

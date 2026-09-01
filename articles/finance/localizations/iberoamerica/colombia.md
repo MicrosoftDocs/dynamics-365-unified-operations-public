@@ -12,7 +12,7 @@ ms.dyn365.ops.version: App 10.0.38
 ---
 
 # Colombia overview
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 This overview provides a comprehensive guide to setting up legal entities in Colombia within Microsoft Dynamics 365 Finance. It covers key configurations, Colombia-specific reports, electronic invoicing formats, and additional resources for electronic reporting.
 
 ## Table of contents

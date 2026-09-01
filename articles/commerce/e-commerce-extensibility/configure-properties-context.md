@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Configure module properties to be shown based on context
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to configure module properties in Microsoft Dynamics 365 Commerce so that they appear or are hidden based on the contextual values of other configuration properties.
 

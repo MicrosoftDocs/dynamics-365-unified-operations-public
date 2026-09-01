@@ -12,7 +12,7 @@ ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 
 # Partial shipment of a transport load
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 By setting up partial shipment of loads, you can handle loads where the capacity can't be determined until all the sales lines have been added to a load. The process can then be finalized when the exact pallet count is known. Therefore, you don't have to decide which pallets will be assigned to which transport until the moment when a transport is being physically loaded out of the staged inventory.
 

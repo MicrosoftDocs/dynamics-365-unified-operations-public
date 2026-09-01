@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Split periods in periodic journals
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Periodic journals are sometimes called recurring journals because the amount, text, and other information repeat each time that you post the journal. When you create the journal, you specify the period interval for the recurrence, such as days or months. You also specify the number of periods for which the journal posts.
 

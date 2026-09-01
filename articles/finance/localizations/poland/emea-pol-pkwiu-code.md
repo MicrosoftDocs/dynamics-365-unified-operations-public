@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-11-30
 
 # Set up and use PKWiU codes for Poland
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Learn how to set up the Polska Klasyfikacja Wyrobów i Usług (PKWiU) code for Poland in Microsoft Dynamics 365 Finance.
 

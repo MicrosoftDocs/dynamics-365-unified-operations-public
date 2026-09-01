@@ -15,7 +15,7 @@ ms.custom:
 
 # Quarantine orders
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to use quarantine orders to block inventory.
 

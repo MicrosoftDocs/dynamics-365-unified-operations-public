@@ -12,7 +12,7 @@ ms.search.form: GUPParameters, GUPPriceComponentCodePostingProfile, GUPPriceComp
 
 # Price component posting
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Unified pricing management lets you set up a different sales order posting ledger for each of the following types of [price component codes](upm-price-component-code.md):
 

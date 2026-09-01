@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Data action cache options
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of supported data action cache options in Microsoft Dynamics 365 Commerce.
 

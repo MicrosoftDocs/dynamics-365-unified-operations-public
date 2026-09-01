@@ -18,7 +18,7 @@ ms.custom:
 
 # Payment methods in call centers
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes the payment methods you can use in call centers in Microsoft Dynamics 365 Commerce.
 

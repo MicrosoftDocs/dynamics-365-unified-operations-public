@@ -15,7 +15,7 @@ ms.search.form: AssetRBSLFactorTable
 
 # RB/SL depreciation
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 RB/SL is a depreciation method that's used in France. You calculate depreciation amounts by using both the reducing balance depreciation method and the straight-line remaining depreciation method. Then, use the larger of the two calculated depreciation amounts as the RB/SL reducing balance depreciation amount.
 

@@ -13,7 +13,7 @@ ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus, WHSWarehouseStatus
 
 # Inventory statuses
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to use inventory statuses to categorize and keep track of inventory.
 

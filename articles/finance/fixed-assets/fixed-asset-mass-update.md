@@ -16,7 +16,7 @@ ms.assetid: 50207ffb-6b89-4fb9-92e9-928bc0729489
 
 # Fixed asset mass update
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 If you use books, you can change the depreciation conventions for groups of assets that are part of the same book.
 

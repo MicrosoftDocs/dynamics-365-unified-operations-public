@@ -16,7 +16,7 @@ ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 
 # ALLITEMSQUERY ER function
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The `ALLITEMSQUERY` function runs as a joined SQL query. It returns a new flattened *Record list* value that consists of a list of records that represent all items that match the specified path.
 

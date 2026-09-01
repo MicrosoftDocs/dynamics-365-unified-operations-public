@@ -15,6 +15,8 @@ ms.dyn365.ops.version: 10.0.20
 
 # VAT declaration for Indonesia 
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article explains how to set up and generate the value-added tax (VAT) return form for legal entities in Indonesia. 
 This form is referred as *SPT Masa PPN (Surat Pemberitahuan Masa Pajak Pertambahan Nilai)*. 
 Corporate taxpayers should issue it to report the calculated amount of tax so that they can report VAT (PPN) and Luxury Goods Sales Tax (PPNnBM) that are owed. 

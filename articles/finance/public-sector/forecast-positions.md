@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.5
 
 # Forecast position distribution
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can maintain distribution templates for forecast positions by using the controls on the **Financial dimensions** FastTab of the **Forecast position** page. The grid in the upper part of the FastTab shows all the distribution lines together with their percentage. The lower part of the FastTab shows the forecast position's default dimensions.
 

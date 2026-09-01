@@ -14,7 +14,7 @@ ms.custom:
 
 # Add support for a content delivery network (CDN)
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to add a content delivery network (CDN) to your Microsoft Dynamics 365 Commerce environment.
 

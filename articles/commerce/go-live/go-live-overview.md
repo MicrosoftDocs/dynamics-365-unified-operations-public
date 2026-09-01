@@ -14,7 +14,7 @@ ms.custom:
 
 # Go-live and update recommendations overview
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the tasks you should complete to go live with or update your Microsoft Dynamics 365 Commerce implementation project. It provides links to content that helps you configure your system so that it works smoothly and effectively.
 

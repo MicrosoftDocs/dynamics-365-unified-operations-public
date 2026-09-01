@@ -13,7 +13,7 @@ ms.custom:
 
 # CAPA management administration
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This topic explains how to enable and set up corrective and preventive action (CAPA) management features in Microsoft Dynamics 365 Supply Chain Management.
 

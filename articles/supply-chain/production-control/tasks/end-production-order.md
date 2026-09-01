@@ -15,7 +15,7 @@ ms.custom:
 
 # End a production order
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to end a production order. It is the final procedure out of seven procedures that explain the production order lifecycle.
 

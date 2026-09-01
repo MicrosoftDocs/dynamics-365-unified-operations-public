@@ -16,7 +16,7 @@ ms.custom:
 
 # Peripheral simulator for Commerce
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to work with the peripheral simulator tool provided with Microsoft Dynamics 365 Commerce.
 

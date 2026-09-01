@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.14
 
 # Revenue recognition reallocation – Scenario 1
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article goes through a reallocation scenario where two sales orders are entered, but they are only confirmed. The same scenario will produce similar results if more than two sales orders are in a confirmed state.
 

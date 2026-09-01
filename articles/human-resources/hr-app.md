@@ -25,6 +25,8 @@ ms.dyn365.ops.version: Human Resources
 ---
 # Manage leave requests in Teams 
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 The Teams app for leave and absence integrates with Microsoft Dynamics 365 Human Resources. It helps organizations ensure that their employees can seamlessly request, edit, and cancel time off and leave of absence requests. Employees can view leave balances, upcoming leaves, and leave history in one app. Managers can also use the app to view requests and approve or reject them.

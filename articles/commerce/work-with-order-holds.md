@@ -16,7 +16,7 @@ ms.custom:
 
 # Configure and work with call center order holds
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes call center order hold features in Microsoft Dynamics 365 Commerce.
 

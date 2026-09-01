@@ -13,7 +13,7 @@ ms.dyn365.ops.version: AX 10.0.38
 
 # Finance insights 1.2.x update
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides comprehensive guidance for updating Finance insights from 1.0.0.x to 1.2.x.
 

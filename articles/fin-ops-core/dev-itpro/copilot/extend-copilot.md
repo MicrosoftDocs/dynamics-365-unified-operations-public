@@ -17,7 +17,7 @@ ms.search.form:
 
 # Extend Copilot capabilities in finance and operations apps
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Copilot in finance and operations apps provides AI-powered assistance that helps application users through a sidecar chat experience that includes natural language guidance and actions. Copilot builds on contextual experiences that enrich the application. Here are some examples of the skills that Copilot capabilities can include:
 

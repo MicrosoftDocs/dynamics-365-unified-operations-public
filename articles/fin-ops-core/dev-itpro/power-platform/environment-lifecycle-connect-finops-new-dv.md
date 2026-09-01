@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.0
 
 # Connect finance and operations apps with a new Microsoft Dataverse instance
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Administrators in Microsoft Dynamics Lifecycle Services find that more capabilities require connection to Dataverse through Power Platform Integration. Customers who don't already use Dataverse for low-code applications and services, or with other Dynamics 365 apps, can quickly set up and connect an instance. This article explains how to connect your finance and operations apps environment with a new Dataverse instance to combine them into one logical environment.
 

@@ -14,7 +14,7 @@ ms.custom:
 
 # Cart and checkout pages overview
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides an overview of the cart and checkout pages in Microsoft Dynamics 365 Commerce.
 

@@ -16,7 +16,7 @@ ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 
 # Active batch periods
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When Platform update 21 was released, it introduced an extra level of control over when batch jobs run. Before this update, you could only schedule a batch job to run every hour for a set number of hours or until a specific date. Now, administrators can add an active period, which means you can:
 

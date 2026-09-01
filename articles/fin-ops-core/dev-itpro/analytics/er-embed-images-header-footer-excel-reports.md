@@ -17,7 +17,7 @@ ms.assetid:
 
 # Design an ER format to generate a report in Excel format with embedded images in page headers or footers
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how a user in the System Administrator or Electronic Reporting Functional Consultant role can perform these tasks:
 

@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Set up reduction entries for fixed assets
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up reduction entries for fixed assets. Reduction entries are a special accounting treatment for fixed assets that you acquire by using a government subsidy. You can use them to defer the corporate income tax for those assets throughout their service life. 
 

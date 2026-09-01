@@ -16,7 +16,7 @@ ms.custom:
 
 # Removed or deprecated platform features
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article describes removed features, or features that are planned for removal in platform updates of finance and operations apps.
 

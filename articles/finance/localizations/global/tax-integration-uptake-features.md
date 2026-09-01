@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 
 # Uptake features and functions
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article introduces the features and functions you need to implement to integrate a new transaction.
 

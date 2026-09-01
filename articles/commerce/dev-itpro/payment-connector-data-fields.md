@@ -15,7 +15,7 @@ ms.custom:
 
 # Dynamics 365 payment data use
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the data that's managed by the payment connectors for Microsoft Dynamics 365.
 

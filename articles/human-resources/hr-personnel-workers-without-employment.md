@@ -25,6 +25,8 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Workers without employment
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 The **Workers without employment** page shows workers who don't have future, active, or historical employment with your organization. These workers can appear when you import workers who don't have an employment record, or when you delete a worker's employment through **Workers \> Employment history**.

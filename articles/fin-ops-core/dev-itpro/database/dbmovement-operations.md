@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 8.1
 
 # Database movement operations home page
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Database movement operations are a suite of self-service actions that you can use as part of Data Application Lifecycle Management (also referred to as *DataALM*). These actions provide structured processes for common implementation scenarios such as golden configuration promotion, debugging and diagnostics, destructive testing, and general refresh for training purposes.
 

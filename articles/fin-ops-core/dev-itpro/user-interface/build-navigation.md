@@ -16,7 +16,7 @@ ms.assetid: ad8ba47b-becb-4d13-a5af-8aca46075e82
 
 # Build navigation
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In this tutorial, you add navigational elements to a workspace and the navigation pane.
 

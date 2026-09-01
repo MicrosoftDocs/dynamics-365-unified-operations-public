@@ -14,7 +14,7 @@ ms.custom:
 
 # Post the preacquisition of a fixed asset
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to set up and post fixed asset preacquisitions by using Microsoft Dynamics 365 Finance.
 

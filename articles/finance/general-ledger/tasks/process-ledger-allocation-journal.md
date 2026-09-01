@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Process ledger allocation journal
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to process an allocation request. Use the **Process allocation request** page to create an allocation journal that can be reviewed and approved before posting to General ledger, or posted directly to General ledger. Before you can create an allocations journal, there must be least one active Ledger allocation rule. This task uses the USMF demo company.
 

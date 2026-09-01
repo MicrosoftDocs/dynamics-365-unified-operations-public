@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Add license files to a deployable package in Azure Pipelines
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to add license files to an existing software deployable package when you run build automation in Microsoft Azure DevOps.
 

@@ -15,6 +15,8 @@ ms.dyn365.ops.version:
 
 # Business performance planning dimensions
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article describes dimensions and how you use them in Microsoft Dynamics 365 Finance Business performance planning.
 
 Dimensions are descriptors that define your fact data. A dimension consists of columns that you refer to as attributes of the dimension. Use these columns to create hierarchical structures in your analysis. For example, a dimension might include columns for the date, the month, and the year. You can analyze data by drilling down from the year to the month to the date. Common dimensions are people, product, place, and time.

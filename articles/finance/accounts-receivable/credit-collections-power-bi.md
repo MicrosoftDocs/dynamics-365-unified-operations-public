@@ -16,7 +16,7 @@ ms.dyn365.ops.version: July 2017 update
 
 # Credit and collections management Power BI content
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes what is included in the **Credit and collections management** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
 

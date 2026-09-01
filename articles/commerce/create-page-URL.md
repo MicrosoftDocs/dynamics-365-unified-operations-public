@@ -15,7 +15,7 @@ ms.custom:
 
 # Create a page URL
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to create a page URL on your Microsoft Dynamics 365 Commerce site.
 

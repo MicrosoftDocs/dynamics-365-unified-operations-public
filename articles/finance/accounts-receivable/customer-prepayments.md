@@ -16,7 +16,7 @@ ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
 
 # Customer prepayments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use customer prepayments when you receive a payment from a customer but don't have an invoice to settle the payment. These types of payments are also referred to as customer deposits.
 

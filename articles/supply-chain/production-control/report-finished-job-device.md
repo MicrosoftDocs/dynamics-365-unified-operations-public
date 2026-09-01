@@ -15,7 +15,7 @@ ms.custom:
 
 # Report as finished from the job card device
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <!-- KFM: @johanho, this topic includes details about setting up batch and serial numbers that we don't have elsewhere. We should probably keep this info and update it for PFE. -->
 

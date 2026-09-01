@@ -15,7 +15,7 @@ ms.assetid: 3190f6e2-698a-4cfa-9a2d-a6c57354920a
 
 # Customize model elements through extension
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In this tutorial, you learn about the Fleet Management Extension model. This model contains elements that extend the functionality of the Fleet Management application. You can customize model elements by creating *extensions*. Unlike the overlayering capabilities of Microsoft Dynamics AX 2012, extensions don't overlay the baseline model elements. Instead, extensions compile as a separate assembly that adds to or customizes the model and the associated business logic. You can extend metadata, such as by adding a field to a table or adding a control to a form. You can also extend or customize business logic by defining event handlers and plug-in classes. You can now author event handlers on several predefined events on tables, forms, form data sources, form controls, and others. Plug-ins are also a new extensibility concept that enables replacing or extending the business logic of the application.
 

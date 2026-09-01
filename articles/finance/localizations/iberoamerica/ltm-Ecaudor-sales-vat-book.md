@@ -11,7 +11,7 @@ ms.author: v-federicohe
 
 # Configure Ecuadorian sales VAT book printing
 	
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure the Ecuadorian sales value-added tax (VAT) book report so that it can be printed. The sales VAT book report is the record and accounting document that businesses use to keep a record of their sales transactions. Although the specific VAT ledger requirements might vary from one country/region to another, they typically include the transaction date, customer information, and tax information details.
 

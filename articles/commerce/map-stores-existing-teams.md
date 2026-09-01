@@ -15,7 +15,7 @@ ms.custom:
 
 # Map stores and teams if there are preexisting teams in Microsoft Teams
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to map stores and corresponding teams in Microsoft Dynamics 365 Commerce headquarters if your organization created teams in Microsoft Teams before Commerce integration.
 

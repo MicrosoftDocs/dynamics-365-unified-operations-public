@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Platform update 7
 
 # Configuration data projects
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Configuration data projects manage the movement of company configuration data between instances of your application. They support the following scenarios:
 

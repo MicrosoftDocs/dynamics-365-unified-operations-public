@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Generate online channel reports
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to generate reports for your online channel in Microsoft Dynamics 365 Commerce.
 

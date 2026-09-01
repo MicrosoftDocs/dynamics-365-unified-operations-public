@@ -17,7 +17,7 @@ ms.assetid: c746c09f-dc9e-4381-ae92-e1af484064b6
 
 # Funds in the public sector
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A fund is a self-balancing set of financial books that is used to control and monitor the planned use of resources, often in compliance with legal and administrative requirements. Public-sector organizations use funds to demonstrate their fiscal accountability.
 

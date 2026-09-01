@@ -14,7 +14,7 @@ ms.custom:
 
 # Consume external or partner libraries like Knockout.js in POS extensions
 
-[!include [banner](../../../includes/banner.md)]
+[!INCLUDE [banner](../../../includes/banner.md)]
 
 This article explains how to consume external or partner libraries like Knockout.js in Microsoft Dynamics 365 Commerce point of sale (POS) extensions. It applies to version 10.0.18 and later of the Retail software development kit (SDK).
 

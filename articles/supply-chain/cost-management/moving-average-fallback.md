@@ -13,7 +13,7 @@ ms.custom:
 
 # Moving average fallback cost sequence
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 One way that you can calculate the cost of your inventory is by using a *moving average*. Up to three cost values can be associated with each inventory item:
 

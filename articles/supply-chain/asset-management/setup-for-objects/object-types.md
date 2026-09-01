@@ -13,7 +13,7 @@ ms.custom:
 
 # Asset types
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create asset types. It also describes the elements that are related to asset types. Asset types are used as general categories for assets. Examples include CNC machines, measuring equipment, and truck engines. Asset types are used to manage the maintenance job types (maintenance tasks), asset lifecycle states, counters, asset attributes, condition assessment templates, and asset models that can be selected for an asset. When you create an asset, you must specify the asset type.
 

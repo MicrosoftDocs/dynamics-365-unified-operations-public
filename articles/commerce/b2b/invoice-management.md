@@ -14,7 +14,7 @@ ms.search.form: RetailOperations
 
 # Invoice management for B2B e-commerce websites
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes the invoice management capabilities of Microsoft Dynamics 365 Commerce business-to-business (B2B) e-commerce websites.
 

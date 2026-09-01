@@ -15,7 +15,7 @@ ms.search.form:
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.8 (February 2020)
 
-[!include [banner](../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../finance/includes/banner.md)]
 
 This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.8. This version has a build number of 10.0.319 and is available as follows:
 

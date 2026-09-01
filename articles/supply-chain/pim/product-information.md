@@ -13,7 +13,7 @@ ms.custom:
 
 # Product information overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about product information management. Product information management works with a shared product definition, categorization, identifiers, and specific configurations of a product.
 

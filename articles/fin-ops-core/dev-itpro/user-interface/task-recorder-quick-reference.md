@@ -16,7 +16,7 @@ ms.custom:
 
 # Task Recorder quick reference
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides a quick reference sheet that explains what each button in the Task recorder menus does.
 

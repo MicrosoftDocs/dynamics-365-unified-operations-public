@@ -13,7 +13,7 @@ ms.custom:
 
 # Input module
 
-[!include [banner](../../../../includes/banner.md)]
+[!INCLUDE [banner](../../../../includes/banner.md)]
 [!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 Input controls are typically used on task pages for collecting user input, for example, for a new control.

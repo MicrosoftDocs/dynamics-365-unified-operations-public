@@ -16,7 +16,7 @@ ms.assetid: d4e73a3f-633b-48b2-b8db-7a4a59a4d7ec
 
 # Acquire assets through procurement
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to set up the integration between Fixed assets and Accounts payable to automatically create fixed assets from purchase orders or vendor invoices, or automatically post acquisition and acquisition adjustment transactions for fixed assets. One purchasing line creates one asset, regardless of the quantity on the purchasing line. If you need to create multiple fixed assets, you must create multiple purchasing lines.
 

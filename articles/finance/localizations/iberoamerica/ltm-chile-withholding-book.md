@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 
 # Generate and print the Withholding tax book report for Chile
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The **Withholding Tax Book** (**Libro de Retenciones**) report is an accounting record that businesses with an address in Chile use to record withholding tax transactions.
 

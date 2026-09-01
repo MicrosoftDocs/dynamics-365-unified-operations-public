@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.0
 
 # Update environments from version 8.0 to 10.0.X
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains the steps required to update existing finance and operations 8.0 environments to 10.0.X application releases.
 

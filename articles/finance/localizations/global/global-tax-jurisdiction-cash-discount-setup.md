@@ -12,7 +12,7 @@ ms.reviewer: johnmichalak
 
 # Tax jurisdiction parameters for cash discount calculation setup
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about the setup of cash discount calculation options.
 

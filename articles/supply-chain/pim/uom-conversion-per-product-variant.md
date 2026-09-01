@@ -12,7 +12,7 @@ ms.search.form: UnitOfMeasureConversion
 
 # Unit of measure conversion per product variant
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to set up unit of measure conversions for various product variants.
 

@@ -12,7 +12,7 @@ ms.search.form: KanbanBoard, KanbanJobSchedulingListPage, LeanProductionFlowVisu
 
 # Visual scheduling for lean manufacturing
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about the Kanban schedule board, which the production planner can use to control and optimize the production plan for kanban jobs.
 

@@ -15,7 +15,7 @@ ms.custom:
 ---
 # Troubleshoot on-premises deployments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides troubleshooting information for deployments of Microsoft Dynamics 365 Finance + Operations (on-premises).
 

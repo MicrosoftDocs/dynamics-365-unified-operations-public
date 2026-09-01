@@ -12,7 +12,7 @@ ms.search.validFrom: 2023-10-23
 
 # Create retail product kits
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to create retail product kits in Microsoft Dynamics 365 Commerce.
 

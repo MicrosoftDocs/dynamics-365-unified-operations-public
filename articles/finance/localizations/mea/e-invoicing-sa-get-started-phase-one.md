@@ -12,7 +12,7 @@ ms.reviewer: johnmichalak
 
 # Get started with electronic invoicing for Saudi Arabia - Phase one
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information that will help you get started with phase one of electronic invoicing for Saudi Arabia in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management. This article guides you through the configuration steps that are country/region-dependent in Regulatory Configuration Service (RCS). These steps complement the steps that are described in [Get started with electronic invoicing](../e-invoicing-get-started.md).
 

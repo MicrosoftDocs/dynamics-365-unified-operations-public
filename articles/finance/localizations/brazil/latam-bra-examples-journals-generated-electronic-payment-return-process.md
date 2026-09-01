@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Journals generated during the electronic payment return process for Brazil
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article shows how to generate payment journals when you import and post the return file for electronic payments. You can post the approved payment lines in the return file to one journal or multiple journals.
 

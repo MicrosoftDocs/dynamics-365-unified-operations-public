@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Sales of zero-rated goods
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 1. Go to **Accounts receivable** \> **Sales orders** \> **All sales orders**.
 1. Create a sales order for a zero-rated item.

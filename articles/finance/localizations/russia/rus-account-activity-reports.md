@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-10-28
 
 # Account activity reports
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with activity reports for Russia in Microsoft Dynamics 365 Finance.
 

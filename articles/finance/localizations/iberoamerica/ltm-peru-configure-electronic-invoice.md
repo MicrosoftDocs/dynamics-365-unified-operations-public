@@ -11,6 +11,8 @@ ms.author: v-sandraya
 
 # Configure electronic invoice parameters for Peru
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article explains how to configure the information you need to generate the electronic invoice XML for Peru.
 
 > [!NOTE]

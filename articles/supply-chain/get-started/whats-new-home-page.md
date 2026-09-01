@@ -12,7 +12,7 @@ ms.search.form:
 
 # What's new or changed in Dynamics 365 Supply Chain Management
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Releases of Dynamics 365 Supply Chain Management
 

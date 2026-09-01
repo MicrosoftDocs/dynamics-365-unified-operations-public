@@ -12,7 +12,7 @@ ms.search.form: EcoResProductDetailsExtended, EcoResProductCreate, UnitOfMeasure
 
 # Create a released product for a single company
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to create a single released product for a single legal unit. When you create the released product, it's available only in that legal unit. You can perform this task for demo data company USMF. A product designer usually performs the task.
 

@@ -15,7 +15,7 @@ ms.custom:
 
 # Pay a vendor transaction by endorsing a customer bill of exchange
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to pay a vendor transaction by endorsing a customer bill of exchange in Japan with Microsoft Dynamics 365 Finance.
 

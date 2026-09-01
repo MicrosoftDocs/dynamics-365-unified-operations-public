@@ -17,7 +17,7 @@ ms.custom:
 
 # Uptake of Dimension Entry controls
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the Dimension Entry control and associated controller classes.
 

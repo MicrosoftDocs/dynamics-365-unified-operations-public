@@ -16,7 +16,7 @@ ms.assetid: 42504e87-7cb1-42e0-8a8b-9bc91fb54095
 
 # Track time off for the Family and Medical Leave Act (FMLA)
 
-[!include [banner](../../../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../../../finance/includes/banner.md)]
 
 This article explains how to track Family and Medical Leave Act (FMLA) eligibility and hours that are worked to meet federal requirements.
 

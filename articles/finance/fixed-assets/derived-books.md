@@ -16,7 +16,7 @@ ms.assetid: 862d6450-187b-497f-9822-cce45f2c65a9
 
 # Derived books
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of derived book functionality.
 

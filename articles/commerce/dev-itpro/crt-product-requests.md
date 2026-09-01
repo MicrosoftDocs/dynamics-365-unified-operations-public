@@ -14,7 +14,7 @@ ms.custom:
 
 # Consume Commerce runtime (CRT) Product service requests
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to consume Commerce runtime (CRT) Product service requests to search for products and retrieve product information in Microsoft Dynamics 365 Commerce.
 

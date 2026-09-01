@@ -15,7 +15,7 @@ ms.custom:
 
 # Electronic invoicing components
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides an overview of the administration and integration components for Electronic invoicing. It includes information about their roles in the setup and operation of Electronic invoicing.
 

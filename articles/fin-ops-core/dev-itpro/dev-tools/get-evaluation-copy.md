@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Get evaluation copies
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A public preview is available. You can sign up and deploy a cloud instance of the latest build. You can access this public preview through Microsoft Dynamics Lifecycle Services. These links provide more information about how to download and use the public preview:
 

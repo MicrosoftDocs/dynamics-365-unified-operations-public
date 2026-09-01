@@ -23,6 +23,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Leave type
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This article describes the leave type entity for Dynamics 365 Human Resources.

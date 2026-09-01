@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Hiring candidate through recruiting
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
 > This article refers to the recruiting functionality as Recruitment projects. It focuses on applicants, applications, and recruitment projects.  

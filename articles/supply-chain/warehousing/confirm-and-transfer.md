@@ -13,7 +13,7 @@ ms.custom:
 
 # Confirm and transfer
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The *Confirm and transfer* feature lets workers ship loads out of the warehouse before they complete all the work that's associated with those loads. This functionality supports scenarios where the full load doesn't fit onto a single truck, or where some of the load should leave the warehouse before the rest of the load is ready for shipment. In these scenarios, the remaining products can be transferred to a new load and therefore to a new truck. Because you can use this feature with loads that are otherwise intended to require full-load shipment, it provides extra flexibility so that transport managers can solve nonstandard or unforeseen scenarios.
 

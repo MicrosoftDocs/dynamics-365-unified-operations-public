@@ -13,7 +13,7 @@ ms.custom:
 
 # Schedule work orders
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to schedule work orders in Asset Management.
 

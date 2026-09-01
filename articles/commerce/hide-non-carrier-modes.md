@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Hide noncarrier delivery modes from the shipping options in POS
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes a configuration option for the point of sale (POS) application. This configuration option changes the behavior for the selection of a mode of delivery when shipment orders are created in POS.
 

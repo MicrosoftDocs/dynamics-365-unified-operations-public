@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-06-30
 
 # Set up NF-e federal parameters (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to set up Nota Fiscal eletrônica (NF-e) web services, rejection codes, and schemas to generate an NF-e in Brazil with Microsoft Dynamics 365 Finance.
 

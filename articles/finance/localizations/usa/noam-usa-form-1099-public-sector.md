@@ -16,7 +16,7 @@ ms.assetid: 10f56dea-ea2d-48ea-9622-4ef715eb1179
 
 # Form 1099 in the public sector
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides tips and information about how to set up Form 1099 functionality for Accounts payable in the public sector.
 

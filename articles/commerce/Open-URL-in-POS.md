@@ -14,7 +14,7 @@ ms.custom:
 
 # Open URL in POS
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how you can configure a button in Dynamics 365 Commerce point of sale (POS) to open a URL. This feature doesn't require a code customization, and someone in a nondeveloper role can configure it.
 

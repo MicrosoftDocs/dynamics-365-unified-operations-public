@@ -15,7 +15,7 @@ ms.custom:
 
 # View compliance with service level agreements
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## View compliance with a service level agreement
 

@@ -12,7 +12,7 @@ ms.assetid: 8993f9a1-d1c0-49f5-afd3-5e1077ded0fe
 
 # Calculations for product configuration models FAQ
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes calculations for product configuration models and explains how to use calculations together with constraints.
 

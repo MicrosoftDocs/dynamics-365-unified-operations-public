@@ -13,7 +13,7 @@ ms.search.form: SMAServiceOrderTable
 
 # Delete service orders
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 1. Go to **Service management** > **Periodic** > **Service orders** > **Delete service orders**.
 1. On the **Delete service orders** page, select **Select** to specify the criteria to select the service orders to be deleted, and then select **OK**.

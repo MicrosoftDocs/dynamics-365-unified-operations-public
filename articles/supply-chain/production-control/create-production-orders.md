@@ -13,7 +13,7 @@ ms.custom:
 
 # Production order lifecycle overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When a production order is created, a request is initiated to start producing an item. The production order contains information about what to produce, the quantity to produce, and the planned finish date. It also contains information about which materials to consume and which process to follow to produce the item.
 

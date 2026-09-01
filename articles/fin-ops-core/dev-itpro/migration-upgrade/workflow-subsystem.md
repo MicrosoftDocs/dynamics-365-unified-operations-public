@@ -16,7 +16,7 @@ ms.assetid: 0e3aa2cd-2327-45ba-bf38-0ef543fa8f67
 
 # Workflow subsystem updates in Finance and Operations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article reviews the workflow system in Finance and Operations. It describes the changes that Microsoft implemented since Microsoft Dynamics AX 2012 and also includes links to more information about the workflow system.
 

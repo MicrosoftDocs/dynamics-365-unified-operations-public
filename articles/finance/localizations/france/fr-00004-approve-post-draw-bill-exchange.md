@@ -15,7 +15,7 @@ ms.search.form: LedgerJournalTable, LedgerJournalTransCustBillOfExchange, CustBi
 
 # FR-00004 Draw up, approve, and post a bill of exchange
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to draw up, approve, and post a bill of exchange in Microsoft Dynamics 365 Finance.
 

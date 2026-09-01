@@ -12,7 +12,7 @@ ms.search.form: ProjProjectsListPage, ProjTable, PurchCreateOrder, PurchTable, P
 
 # Create project purchase order
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows you how to create a project purchase order. This task uses the USSI data set.
 

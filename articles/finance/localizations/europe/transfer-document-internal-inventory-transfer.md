@@ -15,7 +15,7 @@ ms.search.form: InventTransferOrders, InventLocationIdLookup, TransportationDocu
 
 # Generate a transfer document for an internal inventory transfer
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create transfer documents for goods movement inside a company in Microsoft Dynamics 365 Finance.
 

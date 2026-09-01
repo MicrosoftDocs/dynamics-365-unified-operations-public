@@ -13,7 +13,7 @@ ms.custom:
 
 # Nonconformance work groups
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Use *nonconformance work groups* to define group names that you can assign to nonconformance records to make your nonconformances easier to classify. For example, you might create a group for inspecting receipts and another one for inspecting production output.
 

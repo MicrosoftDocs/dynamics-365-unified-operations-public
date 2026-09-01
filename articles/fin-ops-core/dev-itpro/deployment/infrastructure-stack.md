@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 8.1.1
 
 # Self-service deployment overview
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
 Self-service deployment is available for cloud environments. Self-service deployment makes deployment easier and significantly reduces deployment times.

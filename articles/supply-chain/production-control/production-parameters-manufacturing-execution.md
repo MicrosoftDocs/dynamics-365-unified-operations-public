@@ -13,7 +13,7 @@ ms.custom:
 
 # Production parameters for manufacturing execution
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about the setup of production parameters for manufacturing execution.
 

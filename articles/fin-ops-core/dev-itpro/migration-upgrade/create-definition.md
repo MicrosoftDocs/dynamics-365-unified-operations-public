@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 17
 
 # AX 2009 migration – Create migration groups
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When you create a definition for migration, you determine which entities should be packaged and exported together, and then put all the entities together in a migration group. A migration group is a set of entities that you must process in a sequence or that you can logically group together. You export the entities in a migration group together, either from the source to staging or directly to a file package. In a migration group, you also associate legal entities. You must set up migration groups before you begin the export process.
 

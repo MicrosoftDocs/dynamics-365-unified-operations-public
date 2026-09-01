@@ -11,7 +11,7 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 
 # Create and invoice an intercompany sales order for an external customer
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You can use intercompany trade to record the sale of a product from one legal entity to another legal entity that is in the same organization.
 

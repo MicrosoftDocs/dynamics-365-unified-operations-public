@@ -16,7 +16,7 @@ ms.custom:
 
 # Commerce runtime (CRT) architecture and configuration
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the architecture and configuration of the Microsoft Dynamics 365 Commerce runtime (CRT). The CRT is a collection of portable .NET libraries that encapsulate business logic. It serves as the engine for the commerce channel. 
 

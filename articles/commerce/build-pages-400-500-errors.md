@@ -14,7 +14,7 @@ ms.custom:
 
 # Build custom response pages for 4xx and 5xx status code errors
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to build custom response pages for 4xx and 5xx status code errors by using Microsoft Dynamics 365 Commerce authoring tools.
 

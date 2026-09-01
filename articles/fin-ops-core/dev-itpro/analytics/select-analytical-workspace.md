@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 26
 
 # Select analytical workspaces from Power BI
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Analytical workspaces
 

@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 4
 
 # Add methods to tables through extension
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When you extend the business logic related to a table, follow general coding principles to keep your code clean. Encapsulate actions in separate methods on the table. In Microsoft Dynamics AX 2012, you add the method directly on the table through overlayering. To complete the same task through extension, use a different approach. Specifically, create an augmentation class.
 

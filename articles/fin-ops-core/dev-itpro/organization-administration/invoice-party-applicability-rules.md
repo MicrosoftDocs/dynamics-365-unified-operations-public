@@ -17,6 +17,8 @@ ms.assetid:
 
 # Invoice party applicability rules for registration categories
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 **Invoice party applicability rules** extend the [**Registration ID**](registration-ids.md) framework in Dynamics 365 Finance by defining which registration IDs are required and applicable for each party involved in an invoice, based on the party’s role, address purpose, and country/region requirements.
 
 This functionality is available starting with Finance version **10.0.48** and is enabled through the **Establishment and Registration ID governance on invoices** feature in **Feature management**. When enabled, [registration categories](registration-ids.md#supported-registration-categories) can be configured with applicability rules that drive validation, selection, and immutable storage of registration IDs on posted invoices.

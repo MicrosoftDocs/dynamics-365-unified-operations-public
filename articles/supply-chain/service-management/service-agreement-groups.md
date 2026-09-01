@@ -15,7 +15,7 @@ ms.custom:
 
 # Service agreements overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Service agreement groups are useful for sorting and filtering service agreements. Use service agreement groups to group service agreements by, for example, company size, geographical location, or industry type. Alternatively, you can use agreement groups to group service agreements by the level of service offered to a customer.
 

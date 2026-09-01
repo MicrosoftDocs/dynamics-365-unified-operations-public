@@ -12,7 +12,7 @@ ms.search.form: GUPPricingTree, GUPParameters
 
 # Set up a company to use multiple price structures
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to set up multiple price structures in a company. A price structure defines the order in which the system calculates each type of price adjustment. It also defines other options for each price component code, such as concurrency and compounding rules.
 

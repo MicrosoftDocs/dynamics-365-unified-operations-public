@@ -14,7 +14,7 @@ ms.custom:
 
 # Before you buy Retail
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides guidance to help you evaluate Microsoft Dynamics 365 Commerce.
 

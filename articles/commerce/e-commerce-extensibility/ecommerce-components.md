@@ -13,7 +13,7 @@ ms.custom:
 ---
 # E-commerce components
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides a high-level summary of some frequently used e-commerce configuration components in the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 

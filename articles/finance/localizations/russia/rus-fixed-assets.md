@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-10-28
 
 # Fixed assets (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to manage fixed assets for Russia in Microsoft Dynamics 365 Finance.
 

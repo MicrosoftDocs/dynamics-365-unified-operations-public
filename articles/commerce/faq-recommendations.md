@@ -14,7 +14,7 @@ ms.custom:
 
 # Product recommendations FAQ
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides information about processes and tools that you can use to debug issues related to [product recommendations](product-recommendations.md) or their results in Microsoft Dynamics 365 Commerce.
 

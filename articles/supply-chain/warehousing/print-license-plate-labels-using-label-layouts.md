@@ -13,7 +13,7 @@ ms.custom:
 
 # License plate label layouts and printing
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Label layouts control what information prints on a label and how it's arranged. You can define a license plate label layout in two ways:
 

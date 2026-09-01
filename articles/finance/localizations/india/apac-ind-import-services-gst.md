@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Import services that have GST
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Complete the procedures in this article to import services that have Goods and Services Tax (GST).
 

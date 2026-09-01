@@ -14,6 +14,8 @@ ms.custom:
 
 # Set up an experiment
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 This article describes how to set up an experiment in a partner service in Microsoft Dynamics 365 Commerce.
 
 After you [define a hypothesis and determine what success metrics you want to use](experimentation-identify.md), set up your experiment in the partner service. The following diagram shows all of the steps involved in setting up and running an experiment on an e-Commerce website in Dynamics 365 Commerce. Additional steps are covered in separate articles.

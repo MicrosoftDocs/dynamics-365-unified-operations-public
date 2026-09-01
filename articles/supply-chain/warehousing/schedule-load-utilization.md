@@ -11,7 +11,7 @@ ms.search.form:  WMSSpaceUtilSetup
 
 # Schedule load utilization
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can schedule load utilization for selected location types, and you can also project the current and future load utilization. You can project the load for one or more sites, for the load units (zone or warehouse), or for a combination of a zone and a warehouse.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Cancel service orders
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can cancel a service order or service order line from the service order itself, or you can cancel multiple service orders by running a periodic job.
 

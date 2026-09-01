@@ -16,7 +16,7 @@ ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 
 # Set up alerts
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Alerts form a notification system for critical events in finance and operations. Use alerts to stay informed about events that you want to track during the workday. Set up a set of alert rules so that you're alerted when a batch job ends, ends in error, or is canceled. Select whether the alerts are emailed to you or appear as notifications in the Action center. Set up alerts per batch job and per user.
 

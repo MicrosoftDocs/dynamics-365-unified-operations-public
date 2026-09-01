@@ -14,7 +14,7 @@ ms.custom:
 
 # Building mobile experiences over finance and operations data
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In today's digital world, organizations might have business processes within one or more of their finance and operations apps (Dynamics 365 for Finance, Supply Chain Management, Commerce, Project Operations, and Human Resources) that need to be available on mobile devices so users can stay productive wherever they are. With the deprecation of the finance and operations (Dynamics 365) mobile app (see [Removed or deprecated platform features](../get-started/removed-deprecated-features-platform-updates.md#finance-and-operations-dynamics-365-mobile-application-and-mobile-platform)), the recommended way to build mobile experiences over finance and operations data is by using the tools available through Power Platform integration, namely virtual tables and Power Apps.
 

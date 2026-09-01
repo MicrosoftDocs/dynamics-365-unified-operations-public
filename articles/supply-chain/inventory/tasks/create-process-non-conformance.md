@@ -13,7 +13,7 @@ ms.custom:
 
 # Create and process nonconformances
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to perform nonconformance management based on an existing quality order. Typically, a quality clerk manages nonconformances. As a prerequisite, you must have a quality order available. For information about how to create a quality order, see [Inspect the quality of goods](inspect-quality-goods.md).
 

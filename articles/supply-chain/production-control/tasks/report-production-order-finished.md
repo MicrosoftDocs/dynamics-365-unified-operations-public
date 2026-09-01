@@ -13,7 +13,7 @@ ms.custom:
 
 # Report a production order as finished
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to report a production order as finished. This is the sixth procedure out of seven which explains the production order lifecycle.
 

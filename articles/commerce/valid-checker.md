@@ -15,7 +15,7 @@ ms.custom:
 
 # Validate store transactions for statement calculation
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides an overview of the functionality for validating store transactions in Microsoft Dynamics 365 Commerce. The validation process identifies and marks transactions that cause posting errors, before the statement posting process.
 

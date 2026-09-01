@@ -11,7 +11,7 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 
 # Synchronize intercompany charges
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Charges are synchronized only between the intercompany sales order and the intercompany purchase order, and synchronization always occurs.
 

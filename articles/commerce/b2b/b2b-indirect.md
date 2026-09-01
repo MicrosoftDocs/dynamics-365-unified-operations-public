@@ -15,7 +15,7 @@ ms.custom:
 
 # B2B indirect workflows
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides an overview of the key features and benefits of native business-to-business (B2B) indirect workflows in Microsoft Dynamics 365 Commerce. B2B indirect is also known as business-to-business-to-business (B2B2B). 
 

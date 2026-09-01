@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.24
 
 # Copy a billing schedule
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can use the **Copy schedule** page to create a new billing schedule from an existing billing schedule. The new billing schedule will have the same settings as the original billing schedule. You can also use the page to copy items from one billing schedule to another.
 

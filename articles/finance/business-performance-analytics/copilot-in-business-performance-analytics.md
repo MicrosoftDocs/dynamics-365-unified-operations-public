@@ -15,6 +15,8 @@ audience: Application User
 
 # Generative help and guidance in Business performance analytics
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 Generative help and guidance is a Microsoft Copilot feature in Business performance analytics. It provides a conversational interface where users can ask Copilot questions about the app. Generative help and guidance is intended to help new users learn how to use the app. It's also intended to help experienced users learn about new app features.
 
 ## Access

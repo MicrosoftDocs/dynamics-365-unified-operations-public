@@ -13,7 +13,7 @@ ms.custom:
 
 # Source products and materials from multiple vendors
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Diversification of the supply network helps businesses be agile and respond to changes. One of the most common ways to diversify is to divide the supply of a specific product among different vendors by assigning a supply percentage to each of them. For example, if one of your products has both a main vendor and a secondary vendor, the usual split might be 80/20 or 70/30. Alternatively, you might divide equally among three different vendors in a 33/33/34 split.
 

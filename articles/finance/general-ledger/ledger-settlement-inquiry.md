@@ -16,7 +16,7 @@ ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 
 # Ledger settlement inquiry
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the **Ledger settlement inquiry** window that can be used to view settled, unsettled, or both settled and unsettled ledger transactions for a 
 fiscal period. The **Status** column will display the settlement status as of the **To date** provided on the **Date range** section of the page.

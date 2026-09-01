@@ -12,7 +12,7 @@ ms.search.form: PlanActivity, ReqSupplyDemandSchedule
 
 # Formula designer
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to use the formula designer to analyze and maintain formulas in a tree view.
 

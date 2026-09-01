@@ -15,7 +15,7 @@ ms.custom:
 
 # Apply multiple Retail discounts to a product
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains the factors considered when multiple discounts can be applied to a product in Microsoft Dynamics 365 Commerce.
 

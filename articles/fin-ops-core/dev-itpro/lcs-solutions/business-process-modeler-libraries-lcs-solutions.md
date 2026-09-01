@@ -13,7 +13,7 @@ ms.assetid: 6e6d6896-edef-4739-98ad-c4ea19180972
 
 # Set up Business process modeler libraries
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [LCS deprecation](../includes/lcs-deprecation.md)]
 [!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 

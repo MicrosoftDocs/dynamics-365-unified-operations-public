@@ -16,7 +16,7 @@ ms.assetid: cd8cceb4-0ea3-4770-930b-0869e9bfa3c4
 
 # Tax codes, tax groups, and posting definitions FAQ
 
-[!include [banner](../../../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../../../finance/includes/banner.md)]
 
 This article answers frequently asked questions about tax and posting definitions.
 

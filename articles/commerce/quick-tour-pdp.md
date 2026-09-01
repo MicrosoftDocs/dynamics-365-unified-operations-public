@@ -14,7 +14,7 @@ ms.custom:
 
 # Product details pages overview
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides an overview of product details pages (PDPs) in Microsoft Dynamics 365 Commerce.
 

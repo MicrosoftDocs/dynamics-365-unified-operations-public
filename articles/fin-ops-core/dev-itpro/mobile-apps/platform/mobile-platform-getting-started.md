@@ -16,7 +16,7 @@ ms.custom:
 
 # Get started with the mobile platform
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 [!include [mobile app deprecated](../../includes/mobile-app-deprecation-banner.md)]
 
 After you acquire a development environment, complete the following procedures to get started with development.

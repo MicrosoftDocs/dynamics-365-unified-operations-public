@@ -17,7 +17,7 @@ ms.custom:
 
 # Code migration and upgrade home page
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Migrate your code
 

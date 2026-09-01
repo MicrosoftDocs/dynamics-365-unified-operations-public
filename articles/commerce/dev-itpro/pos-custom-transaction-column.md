@@ -14,7 +14,7 @@ ms.custom:
 
 # Add custom columns to a point of sale (POS) transaction grid
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to add a new custom column to a POS transaction page by using the screen layout designer in Microsoft Dynamics 365 Commerce.
 

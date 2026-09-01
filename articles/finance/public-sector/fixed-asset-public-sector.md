@@ -17,7 +17,7 @@ ms.assetid: 552c7969-f044-4774-82ec-080aeae8cf3f
 
 # Fixed assets in the public sector
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the fixed assets functionality that's available for entities in the public sector.
 

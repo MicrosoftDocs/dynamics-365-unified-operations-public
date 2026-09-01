@@ -14,7 +14,7 @@ ms.custom:
 
 # Show counts in fields
 
-[!include [banner](../../../includes/banner.md)]
+[!INCLUDE [banner](../../../includes/banner.md)]
 [!include [mobile app deprecated](../../../includes/mobile-app-deprecation-banner.md)]
 
 Although you can use a **pageLink** control to show counts (totals), it can be slow because it must load the target page before it counts the number of rows. Additionally, the count it calculates can be incorrect because there's a limit on the number of rows it retrieves.

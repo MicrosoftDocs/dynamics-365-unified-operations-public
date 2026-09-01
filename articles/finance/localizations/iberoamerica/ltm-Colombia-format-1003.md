@@ -11,6 +11,8 @@ ms.reviewer: johnmichalak
 
 # Format 1003 file for Colombia configuration
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article explains the configuration required to issue a format 1003 file. The report shows information about withholding taxes the company incurred during a period and the related entities.
 This article provides the configuration requirements for issuing the XML and Excel format versions of the file format 1003.
 

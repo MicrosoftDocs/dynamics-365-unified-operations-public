@@ -16,7 +16,7 @@ ms.assetid: 8147e148-7c11-45ef-95c6-f9889a875b54
 
 # Ledger allocation rules
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about ledger allocation rules. It describes the various components of these allocation rules and the allocation methods that you can use for them.
 

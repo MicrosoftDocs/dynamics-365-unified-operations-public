@@ -17,7 +17,7 @@ ms.custom: sfi-image-nochange
 
 # Batch manager security role
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Before Platform update 20, users needed to be assigned to the system admin or IT admin security role to manage batch jobs. With the release of Platform update 20, there's a more targeted role: Batch manager. By using this security role, a user has permissions to copy batch jobs, change who executes jobs, and specify the time ranges during which jobs can execute. The Batch maintain security privilege is part of the Batch manager security role, and it grants a user the ability to create an ad hoc batch job and grant privileges to other users.
 

@@ -15,6 +15,8 @@ ms.dyn365.ops.version:
 
 # Variance visual
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article describes how to use the **Variance** visual in the Business performance planning application. To fully use this application, you must also install Microsoft Power BI visuals. For information about how to install Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals).
 
 The **Variance** custom visual plays a pivotal role in budget variance analysis (BVA) by helping users understand and address discrepancies between budgets and actual results. This visual generates sorted bar charts that highlight the differences between two values to help identify the key drivers behind variances. Users can analyze root causes and refine future planning cycles by sorting the variances from largest to smallest.

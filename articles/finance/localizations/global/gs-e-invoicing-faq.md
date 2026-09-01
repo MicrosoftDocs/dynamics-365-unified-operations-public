@@ -14,7 +14,7 @@ ms.custom:
 
 # Electronic Invoicing service FAQ
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides answers to frequently asked questions about the Electronic Invoicing service. Electronic invoicing extends the electronic invoicing capabilities that exist in Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, and Dynamics 365 Project Operations.
 

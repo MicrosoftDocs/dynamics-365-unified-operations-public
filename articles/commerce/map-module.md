@@ -14,7 +14,7 @@ ms.custom:
 
 # Map module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes map modules and how to configure them in Microsoft Dynamics 365 Commerce.
 

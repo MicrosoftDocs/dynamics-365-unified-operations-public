@@ -18,7 +18,7 @@ ms.custom:
 
 # Dynamics 365 Payment Connector for PayPal
 
-[!include [banner](../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../finance/includes/banner.md)]
 
 This article provides an overview of the Microsoft Dynamics 365 Payment Connector for PayPal (PayPal payment connector). It includes a list of supported features and functionality, a guide to setting up and configuring the connector, troubleshooting information, and descriptions of some common issues.
 

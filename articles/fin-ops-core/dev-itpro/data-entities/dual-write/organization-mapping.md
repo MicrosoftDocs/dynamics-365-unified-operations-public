@@ -14,7 +14,7 @@ ms.search.validFrom: 2019-07-15
 
 # Organization hierarchy in Dataverse
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Because Dynamics 365 Finance is a financial system, *organization* is a core concept, and system setup starts with the configuration of an organization hierarchy. You can track business financials at the organization level and at any level in the organization hierarchy.
 
@@ -33,7 +33,8 @@ Organization hierarchy table maps are available for one-way synchronization of d
 An organization is a group of people who work together to carry out a business process or achieve a goal. Organizational hierarchies represent the relationships between the organizations that make up your business. You can define the following types of internal organizations: legal entities, operating units, and teams. As the following table shows, a collection of table maps is created to sync legal entities, operating units, and related organization hierarchy information.
 
 | Finance and operations apps | Customer engagement apps     | Description |
------------------------|--------------------------------|---
+---
+--------------------|--------------------------------|---
 | [Legal entities](mapping-reference.md#102) | cdm_companies | | 
 | [Legal entities](mapping-reference.md#142) | msdyn_internalorganizations | |
 | [Operating unit](mapping-reference.md#143) | msdyn_internalorganizations | |

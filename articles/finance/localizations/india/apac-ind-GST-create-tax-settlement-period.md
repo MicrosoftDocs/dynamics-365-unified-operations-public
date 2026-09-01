@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Create a tax settlement period
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 To make the India localization solution for Goods and Services Tax (GST) in Microsoft Dynamics 365 Finance available, you must complete the following master data setup:
 

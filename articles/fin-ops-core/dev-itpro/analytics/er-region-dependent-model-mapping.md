@@ -17,7 +17,7 @@ ms.assetid:
 
 # Configure country/region context dependent ER model mappings
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can configure Electronic reporting (ER) model mappings so that they implement a generic ER data model but are specific to Dynamics 365 Finance. This article explains how to design multiple ER model mappings for an ER data model to control how corresponding ER formats use them when you run them from companies that have different country/region contexts.
 

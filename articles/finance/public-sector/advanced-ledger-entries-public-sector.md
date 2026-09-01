@@ -17,7 +17,7 @@ ms.assetid: 3db0233e-d767-4dc0-b008-733098b6ca70
 
 # Advanced ledger entries in the public sector
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how organizations in the public sector can use advanced ledger entries to create, adjust, and reverse ledger entries. For example, advanced ledger entries can be used to reclassify expenditures if invoices are mistakenly posted to the wrong account or project.
 

@@ -15,7 +15,7 @@ ms.custom:
 
 # Ways to add content
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides an overview of how to manage content by using Microsoft Dynamics 365 Commerce site builder.
 

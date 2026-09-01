@@ -19,7 +19,7 @@ ms.assetid: 33dae9aa-f673-4195-9b63-7cb41534c502
 
 # US Payroll overview
 
-[!include [banner](../../../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../../../finance/includes/banner.md)]
 
 > [!NOTE]
 > The US Payroll module is for legal entities with a primary address in the United States and have employees subject to US payroll laws.

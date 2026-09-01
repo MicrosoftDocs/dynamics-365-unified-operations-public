@@ -13,7 +13,7 @@ ms.custom:
 
 # CacheService type
 
-[!include [banner](../../../../includes/banner.md)]
+[!INCLUDE [banner](../../../../includes/banner.md)]
 [!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 Provides ability to access data from the device cache and update data into the device cache.

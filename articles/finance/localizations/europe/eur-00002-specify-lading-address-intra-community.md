@@ -16,7 +16,7 @@ ms.search.form:
 ---
 # EUR-00002 Specify a lading address for an intracommunity transaction
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to specify a lading address for an intra-community trade transaction with Microsoft Dynamics 365 Finance.
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Delegate work items in a workflow
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 ## Manually delegate a work item
 

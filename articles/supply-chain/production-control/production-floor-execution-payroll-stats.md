@@ -11,7 +11,7 @@ ms.search.form:
 
 # Show vacation balances in the production floor execution interface
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an example scenario that shows how to set up Microsoft Dynamics 365 Supply Chain Management so that it uses payroll statistics to provide each worker with an overview of their vacation balance for the current year. Workers will be able to see their vacation balance in the **My day** dialog box in the production floor execution interface.
 

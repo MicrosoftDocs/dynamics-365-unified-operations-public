@@ -13,7 +13,7 @@ ms.custom:
 
 # Service object groups
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Object groups are useful for sorting and filtering the data about objects for reports and statistics. For example, you can group objects by geographical location or by type.
 

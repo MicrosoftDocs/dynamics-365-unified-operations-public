@@ -14,7 +14,7 @@ ms.search.validFrom: 2019-05-29
 
 # Set up and report value-added tax (VAT)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and report value-added tax (VAT) for the United Arab Emirates (UAE) in Microsoft Dynamics 365 Finance.
 

@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-10-28
 
 # Depreciation bonuses (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with depreciation bonuses for Russian fixed assets in Microsoft Dynamics 365 Finance.
 

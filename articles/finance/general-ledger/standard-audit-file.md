@@ -12,7 +12,7 @@ ms.search.validFrom: 2022-06-17
 
 # Standard Audit File for Tax (SAF-T) electronic report
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to set up and run the Standard Audit File for Tax (SAF-T) electronic report.
 

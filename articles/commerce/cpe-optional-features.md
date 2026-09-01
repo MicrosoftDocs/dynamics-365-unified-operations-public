@@ -14,7 +14,7 @@ ms.custom:
 
 # Configure optional features for a Dynamics 365 Commerce sandbox environment
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to configure optional features for a Microsoft Dynamics 365 Commerce sandbox environment.
 

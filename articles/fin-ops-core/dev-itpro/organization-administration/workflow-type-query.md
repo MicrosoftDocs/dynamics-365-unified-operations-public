@@ -15,7 +15,7 @@ ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 
 # Create a query for a workflow type 
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 Before you create a workflow type, create a query that accesses the table fields for the workflow document. This article describes how to create a query for a workflow type.
 

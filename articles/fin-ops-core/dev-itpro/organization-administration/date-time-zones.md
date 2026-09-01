@@ -16,7 +16,7 @@ ms.assetid: 3ce95bf2-02d7-44b5-95bc-cae6ae27e78e
 
 # Date and time data and time zones
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article provides information about date and time fields, and time zones.
 

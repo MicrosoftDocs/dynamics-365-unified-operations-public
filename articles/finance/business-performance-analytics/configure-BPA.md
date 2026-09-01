@@ -12,6 +12,8 @@ audience: Application User
 
 # Prerequisites for installing Business performance analytics
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 ## Before you install
 
 Business performance analytics is generally available in public cloud the following countries and regions: APAC, Australia, Canada, EMEA, India, Japan, North America, Norway, South Africa, South America, Switzerland, United Arab Emirates, and United Kingdom.

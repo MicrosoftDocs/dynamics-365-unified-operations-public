@@ -15,7 +15,7 @@ ms.dyn365.ops.version: App Update 10.0.2
 
 # Specification classes
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A specification class provides fluent application programming interfaces (APIs) that you use to define the set of criteria that an entity should meet. Use specifications in validation scenarios, usually together with query classes.
 

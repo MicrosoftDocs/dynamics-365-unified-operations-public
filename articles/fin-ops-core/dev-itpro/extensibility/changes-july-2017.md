@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 4
 
 # Extensibility changes in Finance and Operations, Enterprise edition (July 2017)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article lists extensibility features that Microsoft implemented in Dynamics 365 for Finance and Operations, Enterprise edition (July 2017). Microsoft released this version in July 2017 and assigned it a build number of 7.2.11792.56024. For more information about the schedule of changes that support extensibility, see [Application extensibility roadmap](extensibility-roadmap.md).
 

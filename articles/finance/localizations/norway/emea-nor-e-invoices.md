@@ -14,7 +14,7 @@ ms.search.validFrom: 2019-11-01
 
 # Customer electronic invoices in Norway
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and process customer electronic invoices in Norway in Microsoft Dynamics 365 Finance.
 

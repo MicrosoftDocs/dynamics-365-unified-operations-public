@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Class extension - Method wrapping and Chain of Command
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The functionality for class extension, or class augmentation, is improved. You can now wrap logic around methods that you define in the base class that you're augmenting. You can extend the logic of public and protected methods without using event handlers. When you wrap a method, you can also access public and protected methods, and variables of the base class. In this way, you can start transactions and easily manage state variables that are associated with your class.
 

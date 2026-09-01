@@ -12,7 +12,7 @@ ms.search.form: EntAssetMaintenancePlan, EntAssetObjectCalendarListPage, EntAsse
 
 # Creating work orders
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 After you've scheduled preventive maintenance jobs, the next step is to create work orders for them. You can complete this step by using one of the maintenance schedules. The scheduled jobs in a maintenance schedule can have different reference types, as described in the following table.
 

@@ -15,7 +15,7 @@ ms.custom:
 
 # Commerce runtime (CRT) extensibility and triggers
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains trigger support for the Dynamics 365 commerce runtime (CRT). CRT supports pre-triggers and post-triggers for every request.
 

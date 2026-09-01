@@ -13,7 +13,7 @@ ms.custom:
 
 # Select a site theme
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to set or change your site's theme in Microsoft Dynamics 365 Commerce.
 

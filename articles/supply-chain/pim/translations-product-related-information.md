@@ -12,7 +12,7 @@ ms.assetid: c0286bba-f54b-42de-904c-81fd796bdd1d
 
 # Product-related translations FAQ
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to manage translations for products, product dimension values, and product attributes. 
 

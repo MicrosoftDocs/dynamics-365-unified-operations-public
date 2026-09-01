@@ -21,7 +21,7 @@ ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 
 # What's new or changed in Invoice capture
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about the Invoice capture solution that automatically creates vendor invoices from digital invoice images. For more information, see [Invoice capture overview](../accounts-payable/invoice-capture-overview.md).  
 

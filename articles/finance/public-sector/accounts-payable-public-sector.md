@@ -18,7 +18,7 @@ ms.assetid: b4c903dd-5ec7-4ec5-9dc9-77ba4f00fab8
 
 # Accounts payable in the public sector overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the public sector functionality for Accounts payable that's integrated with Dynamics 365 Finance. This functionality includes PO codes, posting definitions, one-time vendor invoicing, 1099 tax forms, cash discounts, vendor certification types, Project accounting activity summary, electronic payments, cover and signature pages for reports, PO line amounts, and vendor invoice journal pages.
 

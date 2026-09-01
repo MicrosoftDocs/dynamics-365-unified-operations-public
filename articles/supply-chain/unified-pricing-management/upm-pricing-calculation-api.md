@@ -13,7 +13,7 @@ ms.custom:
 
 # Calculate prices for external systems through the pricing calculation API
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The pricing calculation API enables external applications to retrieve accurate, real-time pricing and discount calculation results directly from Microsoft Dynamics 365 Supply Chain Management. By providing key input data, such as product and customer details, external systems can programmatically access calculated prices without creating sales orders. This approach helps ensure pricing consistency across your sales channels and simplifies quoting and integration workflows.
 

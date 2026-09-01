@@ -12,7 +12,7 @@ ms.reviewer: johnmichalak
 
 # Sales tax applicability and sales tax group determination logic
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains the logic for determining sales tax applicability and sales tax groups in the tax feature setup.
 

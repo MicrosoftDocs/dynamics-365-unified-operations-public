@@ -16,7 +16,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 # Reclassify the short-term portion of lease liability
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to create a monthly journal entry to reclassify a portion of the lease liability as short-term. When you select the schedule in the batch process as **Short-term lease liability reclass**, you create a journal entry. Use this entry to post the current portion of the lease liability on the last day of the month. At the same time, post a reversal entry as of the first day of the next month.
 

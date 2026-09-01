@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Customer payment overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure walks through the various methods used to enter customer payments. This task uses the USMF demo company.
 

@@ -26,6 +26,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Dynamics 365 HR Onboarding agent FAQ (preview)
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]

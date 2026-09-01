@@ -16,7 +16,7 @@ ms.assetid: 63a3ac92-c321-4379-a86a-b1b14915f340
 
 # Depreciation effects with reversals
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article discusses potential implications of reversing a fixed asset transaction.
 

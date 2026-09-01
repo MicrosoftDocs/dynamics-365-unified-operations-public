@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Purchases of non-GST goods
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 1. Go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
 1. Create a purchase order, and define value-added tax (VAT) tax groups for the record.

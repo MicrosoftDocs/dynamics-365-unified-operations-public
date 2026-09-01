@@ -16,7 +16,7 @@ ms.assetid: 3cd9dfce-2687-4303-bc78-349e7cb5ea75
 
 # Purchase spend analysis Power BI content
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes what the **Purchase spend analysis** Microsoft Power BI content includes. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
 

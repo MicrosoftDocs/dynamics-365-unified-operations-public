@@ -13,6 +13,8 @@ ms.custom:
 
 # Responsible AI FAQs for Microsoft Dynamics 365 Commerce
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 [!INCLUDE [responsible-ai-intro](../../includes/responsible-ai-intro.md)]
 
 [!INCLUDE [responsible-ai-features](../../includes/responsible-ai-features.md)]

@@ -14,7 +14,7 @@ ms.search.validFrom: 2022-04-28
 
 # Available geographies for Dynamics 365 finance and operations apps
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 finance and operations apps generally support data residency in specific geographies. These deployment options serve customers in regulated industries and commercial organizations that do business with entities in specific geographies that might require local data residency.
 

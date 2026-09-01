@@ -11,7 +11,7 @@ ms.search.form: EcoResProductDetailsExtended, ReqDDMRPWorkspace, ReqDecouplingPo
 
 # Visual and collaborative execution
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to monitor your Demand Driven Material Requirements Planning (DDMRP) decoupling points, buffer zones, planned orders, and history.
 

@@ -15,7 +15,7 @@ ms.search.industry: Retail
 ---
 # Edit and audit cash and carry and cash management transactions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to edit and audit cash and carry and cash management transactions in Microsoft Dynamics 365 Commerce.
 

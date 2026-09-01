@@ -13,6 +13,8 @@ ms.search.form: business-performance-analytics
 
 # Use ERP Analytics MCP in Visual Studio Code
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article provides step-by-step instructions for configuring and using the Dynamics 365 ERP Analytics MCP server with the GitHub Copilot Agent in Visual Studio Code.
 
 ## Prerequisites

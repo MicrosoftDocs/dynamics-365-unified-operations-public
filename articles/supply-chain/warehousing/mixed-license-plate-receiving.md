@@ -12,7 +12,7 @@ ms.search.form:  WHSMixedLPReceiving, WHSRFAutoConfirm, WHSLicensePlate, WHSRFMe
 
 # Mixed license plate receiving
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Mixed license plate receiving enables you to build a license plate consisting of multiple items before you register it and create putaway work.
 

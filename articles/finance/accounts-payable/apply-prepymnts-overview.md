@@ -14,7 +14,7 @@ ms.dyn365.ops.version: 10.0.23
 
 # Automatically apply to vendor invoices
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the capability for automatically applying prepayments to vendor invoices. You can create a prepayment for a purchase order as part of a purchase agreement. After you receive a vendor invoice, use the prepayment to settle the accounts payable from the vendor invoice. This new feature enables the system to automatically use purchase order numbers on a vendor invoice to look up corresponding prepayments when the vendor invoice is imported.
 

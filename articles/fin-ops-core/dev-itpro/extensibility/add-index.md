@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Platform update 4
 
 # Add indexes to tables through extension
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Often, you extend tables so that you can store extra data for later use but also quickly access data that's based on the new fields. Therefore, it's often beneficial to have a dedicated index that speeds up the database search. You can add a new index to an existing table through extension. To add an index to an existing table, extend the selected table, and then create an index just as you would create an index on a new table. You can add both new and existing fields so that they're part of the new index.
 

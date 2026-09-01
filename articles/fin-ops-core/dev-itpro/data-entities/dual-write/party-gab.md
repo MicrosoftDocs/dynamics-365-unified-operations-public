@@ -14,7 +14,7 @@ ms.search.validFrom: 2021-02-22
 
 # Party and global address book
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 **Party** and **Global address book** are concepts in finance and operations applications. A party can be an organization or a person. It's convenient to globally store and manage properties of a party, such as the name, language, contacts, and addresses. When you change a property value in one place, the change appears in all places where the party is involved.
 

@@ -16,7 +16,7 @@ ms.assetid: af0951b7-078d-49ea-9655-1037dbd0bfe1
 
 # Parameters for legal entities in Brazil
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 To collect and submit tax statements that report on performance, a Brazilian legal entity requires specific fiscal information. This article explains how to set the parameters to specify this information.
 

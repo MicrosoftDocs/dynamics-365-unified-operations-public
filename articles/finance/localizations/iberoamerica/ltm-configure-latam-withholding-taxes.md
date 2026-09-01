@@ -12,7 +12,7 @@ ms.author: v-federicohe
 
 # Configure LATAM Withholding taxes for payments
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to configure and use the Latin American (LATAM) withholding functionality in Dynamics 365 Finance to support scenarios where tax withholdings are calculated at the time of vendor payments.
 

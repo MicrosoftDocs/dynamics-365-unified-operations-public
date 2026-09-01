@@ -14,7 +14,7 @@ ms.custom:
 ---
 # Configure a worker
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to configure a worker as a sales representative who's eligible for commission on sales in Microsoft Dynamics 365 Commerce point of sale (POS).
 

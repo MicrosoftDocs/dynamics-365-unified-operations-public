@@ -13,7 +13,7 @@ ms.custom:
 
 # Costing versions overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about costing versions, how to maintain them, and the types of data that you can include in them.
 

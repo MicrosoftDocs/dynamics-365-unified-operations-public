@@ -12,7 +12,7 @@ ms.search.form:
 
 # Create consumption reports
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
  
 

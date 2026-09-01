@@ -14,7 +14,7 @@ ms.search.validFrom: 2021-08-03
 
 # VAT setup details for VAT declarations in the United Kingdom
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up value-added tax (VAT) for VAT declarations in the United Kingdom (UK) in Microsoft Dynamics 365 Finance.
 

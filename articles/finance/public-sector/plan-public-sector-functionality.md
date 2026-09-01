@@ -16,7 +16,7 @@ ms.assetid: 877eabf3-19c7-4897-b33e-c5a8a319cb35
 
 # Plan for public sector functionality
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article suggests the first steps to setting up Public sector functionality.
 

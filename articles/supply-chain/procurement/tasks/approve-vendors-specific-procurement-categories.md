@@ -13,7 +13,7 @@ ms.custom:
 
 # Approve vendors for specific procurement categories
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to approve vendors for specific procurement categories in Dynamics 365 Supply Chain Management. When a purchase requisition is created, there may be a requirement to select an approved or preferred vendor, depending on how the purchasing policies are set up. This procedure shows you how to specify that a vendor is approved or preferred for a specific procurement category. This task would usually be carried out by a procurement professional. You can use this procedure in demo data company USMF.
 

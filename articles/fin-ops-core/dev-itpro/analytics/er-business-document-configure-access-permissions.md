@@ -15,7 +15,7 @@ ms.assetid:
 
 # Manage access permissions to edit templates for configurable business documents
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 By default, when you don't enable access to **Business document management** permissions, every user with access to the **Business document management** workspace sees all of the ER solution templates that are available. The **Business document management** workspace shows only those templates that reside in ER format configurations and that are marked by a **Business document type** tag.
 

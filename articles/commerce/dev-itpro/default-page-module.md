@@ -14,7 +14,7 @@ ms.custom:
 
 # Default page module
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains default page modules and describes how to add them to page templates in Microsoft Dynamics 365 Commerce.
 

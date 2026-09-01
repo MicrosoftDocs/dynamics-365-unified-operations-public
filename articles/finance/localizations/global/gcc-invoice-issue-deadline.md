@@ -13,7 +13,7 @@ ms.search.validFrom: 2020-07-03
 ---
 # Invoice issue deadline (GBL)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure Microsoft Dynamics 365 Finance so that it complies with legal requirements for the invoice issue deadline. For example, legislation can require that you issue an invoice no later than the fifteenth day of the month after the month when the sale occurs.
 

@@ -14,7 +14,7 @@ ms.search.validFrom: 2019-06-28
 
 # Write off deferrals (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to write off a deferral and how to reverse the writing off of a deferral for Russia in Microsoft Dynamics 365 Finance.
 

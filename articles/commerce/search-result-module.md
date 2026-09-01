@@ -14,7 +14,7 @@ ms.custom:
 
 # Search results module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes search results modules and how to add them to site pages in Microsoft Dynamics 365 Commerce.
 

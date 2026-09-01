@@ -16,6 +16,8 @@ ms.dyn365.ops.version:
 
 # Fiscal journal report SSRS-based
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 The Italian **Fiscal journal** report is a monthly report that lists all the vouchers and journal entries in order of posting date. To access it, go to **General ledger** \> **Inquiries and reports** \> **Fiscal journal**.
 
 This report includes fields for the following information:

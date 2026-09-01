@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Change depreciation conventions for multiple fixed assets
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This task updates the depreciation convention for a specified fixed asset group. This task guide uses the USMF demo company.
 

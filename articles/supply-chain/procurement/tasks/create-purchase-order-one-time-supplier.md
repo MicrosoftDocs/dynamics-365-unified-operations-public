@@ -13,7 +13,7 @@ ms.custom:
 
 # Create a purchase order for a one-time supplier
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows you how to create a purchase order for a one-time supplier. The supplier is created automatically with the purchase order, rather than having to create the vendor account manually. Purchase orders are typically created by a purchasing agent. A one-time vendor account must already be set up in the **Account payable parameters** page.
 

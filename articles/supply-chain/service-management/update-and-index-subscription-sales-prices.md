@@ -13,7 +13,7 @@ ms.search.form: SMASubscriptionTable
 
 # Update and index subscription sales prices
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 1. Go to **Service management** > **Service subscriptions** > **All service subscriptions**.
 

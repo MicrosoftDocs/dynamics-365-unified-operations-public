@@ -13,7 +13,7 @@ ms.dyn365.ops.version: AX 10.0.0
 
 # Türkiye overview
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article includes information and links to resources that you should consider for legal entities with a primary address in Türkiye.
 

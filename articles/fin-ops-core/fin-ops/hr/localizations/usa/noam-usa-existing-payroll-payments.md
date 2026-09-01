@@ -16,7 +16,7 @@ ms.assetid: b95ac219-fbea-48e6-b2c8-6f27853a7f6a
 
 # Process existing payroll payments
 
-[!include [banner](../../../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../../../finance/includes/banner.md)]
 
 This article describes tasks such as reprinting pay statements, and replacing paychecks that have been lost or damaged. It also explains how to complete similar tasks after pay statements have been generated or payments have been issued to workers.
 

@@ -15,7 +15,7 @@ ms.custom:
 
 # Set up and configure on behalf of (OBO) functionality in Commerce headquarters
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to set up and configure on behalf of (OBO) functionality in Microsoft Dynamics 365 Commerce headquarters.
 

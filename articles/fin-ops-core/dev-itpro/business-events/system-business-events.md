@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.17
 
 # Batch business events
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The batch platform emits the following system business events.
 

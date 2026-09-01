@@ -17,7 +17,7 @@ ms.assetid:
 
 # Improve performance of ER solutions by reducing the number of table fields that are fetched at runtime
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can design [Electronic reporting](general-electronic-reporting.md) (ER) [formats](er-overview-components.md#format-components-for-outgoing-electronic-documents) that generate outgoing documents in various formats. When a document is generated, an ER format calls data sources that were configured in a corresponding ER [model mapping](er-overview-components.md#model-mapping-component). To configure access to application tables, queries, or entities for record retrieval, you can use ER data sources of the *Table records* type. By default, a data source of the *Table records* type retrieves the values of all fields in the requested records. However, you can configure this type of data source so that it fetches only the field values that are required for the running ER format. This configuration helps reduce memory consumption of the application server that performs data retrieval and further record caching.
 

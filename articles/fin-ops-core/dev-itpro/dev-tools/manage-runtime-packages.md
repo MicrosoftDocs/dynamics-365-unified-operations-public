@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Manage third-party models and runtime packages by using source control
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When you work with solutions from third parties, you might receive different solution artifacts to use in your solution. Typically, these artifacts come as code (in the form of models) or binaries (in the form of deployable packages). In some cases, third parties provide some parts of their solution as code and other parts as a binary.
 

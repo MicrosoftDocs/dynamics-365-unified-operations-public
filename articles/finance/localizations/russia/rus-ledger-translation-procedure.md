@@ -13,7 +13,7 @@ ms.search.region: Russia
 
 # Ledger translation (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to use translation to transfer accounting transactions from one company to another in Russia in Microsoft Dynamics 365 Finance.
 

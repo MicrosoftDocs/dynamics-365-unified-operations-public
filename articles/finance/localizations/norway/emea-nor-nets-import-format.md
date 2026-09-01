@@ -15,7 +15,7 @@ ms.search.form: BankCustPaymIdTable, CustEInvoiceIntegrationeInvoice, CustEInvoi
 
 # Nets import format
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to import payment information in the Nets format in Microsoft Dynamics 365 Finance.
 

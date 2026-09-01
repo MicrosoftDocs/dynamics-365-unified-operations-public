@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Manage several derived mappings for a single model root
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use an [Electronic reporting (ER)](general-electronic-reporting.md) data model component as the data source in every configured ER format component to generate outbound documents. To describe a single business domain, configure a data model component that has many root definitions.
 

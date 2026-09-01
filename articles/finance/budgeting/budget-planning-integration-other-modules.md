@@ -16,7 +16,7 @@ ms.assetid: f9a94db5-906c-404a-9ca5-91528d67c490
 
 # Budget planning integration with other modules
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Budget plans can be generated from several, different resources. The basic elements of the periodic process is the same for all resources. 
 

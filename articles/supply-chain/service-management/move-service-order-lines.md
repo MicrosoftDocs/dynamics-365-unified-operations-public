@@ -12,7 +12,7 @@ ms.search.form: SMAServiceOrderTable
 
 # Move service order lines
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 1. Go to **Service management** > **Service orders** > **Service orders**.
 

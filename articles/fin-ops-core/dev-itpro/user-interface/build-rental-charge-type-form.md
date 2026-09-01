@@ -16,7 +16,7 @@ ms.assetid: 9b4f244c-f058-416c-b3c2-6f4ca29c8db8
 
 # Build the Rental Charge Type form
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In this lab, you create a Simple List form. A Simple List form can show reference or secondary data that has six or fewer fields. For example, the form that you create lists and describes the types of rental charges.
 

@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Classes and methods
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to create and use classes and methods in X++. Most of the semantics and syntax of classes and methods are similar to the semantics from other programming languages, like Java or C#. Classes and methods in X++ map closely to classes and methods in the managed runtime. In fact, you can directly use .NET classes from X++.
 

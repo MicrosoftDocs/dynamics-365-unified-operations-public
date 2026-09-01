@@ -13,7 +13,7 @@ ms.custom:
 
 # Maintenance worker calendar and scheduling
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 When you schedule work orders, you create a schedule for maintenance workers, tools, and assets. In order to schedule maintenance workers, a calendar must be set up for each maintenance worker. Maintenance workers are related to a resource, and working time calendars are set up for resources. You set up the resource and calendar in **Asset management** > **Setup** > **Workers** > **Workers**, which is described in [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md).
 

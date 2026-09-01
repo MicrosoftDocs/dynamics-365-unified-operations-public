@@ -16,7 +16,7 @@ ms.assetid: 27ccec84-8e9a-465e-9b2a-fbe88d974068
 
 # Payroll data updates FAQ
 
-[!include [banner](../../../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../../../finance/includes/banner.md)]
 
 A number of changes can and do happen at the end of a year that require changes to your payroll data. Workers can change their benefit election, or your company might change benefit rates, and benefit balances. Workers who move into different positions also result in changes to payroll data. This article lists questions and answers that address these kinds of changes.
 

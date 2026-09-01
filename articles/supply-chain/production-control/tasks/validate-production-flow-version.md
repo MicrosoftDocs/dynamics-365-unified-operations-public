@@ -12,7 +12,7 @@ ms.search.form: LeanProductionFlow
 
 # Validate a production flow and version
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to create a new production flow and a first version for lean manufacturing. Prerequisites: The production parameters for Lean manufacturing and the units of measure for class time must be defined. You need to define a Value stream and a Production group. This procedure refers to the legal entity USMF in demo data. However, assuming that the legal entity is configured for Lean manufacturing, other legal entities can be used.
 

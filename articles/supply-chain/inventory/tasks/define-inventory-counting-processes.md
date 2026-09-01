@@ -12,7 +12,7 @@ ms.search.form: InventCountGroup, InventJournalName, InventParameters, EcoResPro
 
 # Define inventory counting processes
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to configure basic inventory counting processes by creating a counting group and a counting journal. It also shows you how to enable counting policies at the warehouse and item levels.
 

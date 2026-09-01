@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Respond to privacy data requests resources
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides links to information that can help you respond to a request for private information as a customer using Dynamics 365 Finance, Supply Chain Management, Commerce, Human Resources, and Microsoft Dynamics AX 2012.
 

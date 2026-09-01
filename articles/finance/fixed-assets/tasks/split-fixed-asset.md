@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Split a fixed asset
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to split a percentage of one asset book to a new asset book. 
 

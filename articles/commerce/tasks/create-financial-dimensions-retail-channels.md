@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Create financial dimensions for retail channels and configure dimension values on stores
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to create and configure financial dimensions for retail channels  in Microsoft Dynamics 365 Commerce.
 

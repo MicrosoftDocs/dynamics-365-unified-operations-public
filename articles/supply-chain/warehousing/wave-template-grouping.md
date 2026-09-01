@@ -12,7 +12,7 @@ ms.search.form: WHSWaveTableListPage, WHSWaveTemplateTable
 
 # Wave template grouping
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Wave template grouping enables the system to use [wave template](tasks/configure-wave-processing.md) setups to determine, based on criteria that you define, how it should split released lines and assign them to new or existing waves. This feature can be useful in warehouses where waves are created based on specific criteria, but where managers prefer to create waves automatically instead of manually. It enables the system to add each newly released shipment to the first wave that it finds that has matching grouping field values. If no match is found, the system creates a new wave for the new shipment.
 

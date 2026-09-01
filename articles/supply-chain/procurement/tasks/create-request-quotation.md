@@ -13,7 +13,7 @@ ms.custom:
 
 # Create a request for quotation
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article shows you how to create a request for quotation. A purchasing agent typically performs this task. You can use this procedure in demo data company USMF or on your own data. You need to set up solicitation types before you start. After you complete this task and create and send a request for quotation (RFQ), you can enter the replies per vendor, compare them, and award the contract.
 

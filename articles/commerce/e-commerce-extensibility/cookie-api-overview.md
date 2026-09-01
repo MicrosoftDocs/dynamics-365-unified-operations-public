@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Cookie API overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the application programming interfaces (APIs) in the Microsoft Dynamics 365 Commerce online software development kit (SDK) that you can use to set and get cookie data.
 

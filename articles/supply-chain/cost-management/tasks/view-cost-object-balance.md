@@ -13,7 +13,7 @@ ms.custom:
 
 # View cost object balance
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Follow these steps to view your cost object balance. This procedure is intended for the cost controller.
 

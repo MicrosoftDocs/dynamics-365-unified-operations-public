@@ -11,7 +11,7 @@ ms.custom: bap-template
 ---
 # Add custom telemetry signals
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When you activate the Monitoring and telemetry feature, the system sends telemetry to [!INCLUDE[appinsights](includes/azure-application-insights-name.md)]. The system sends some telemetry by default, but you can also add your own custom telemetry signals. These custom signals can provide deeper insights into your custom processes.
 

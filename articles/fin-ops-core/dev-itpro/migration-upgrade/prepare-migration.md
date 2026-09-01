@@ -15,7 +15,7 @@ ms.assetid: a911b0f2-a7b0-4643-bf5b-16e55c9397be
 
 # Prepare to migrate code to finance and operations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how the Lifecycle Services code upgrade service and Visual Studio tools help you migrate your code and metadata from Dynamics AX 2012 R3 to finance and operations. Most of these steps also apply to code migration between two major versions of finance and operations. 
 

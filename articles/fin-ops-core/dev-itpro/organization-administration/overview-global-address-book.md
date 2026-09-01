@@ -17,7 +17,7 @@ ms.assetid: bb6c02fa-cd91-4ca8-a58c-020502b19074
 
 # Global address book overview
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 The global address book is a centralized repository for master data that you must store for all internal and external persons and organizations that your company interacts with. The data associated with party records includes the party's name, address, and contact information. Other details vary, depending on whether the party is a person or an organization. You assign each party record to a party, and each party can be associated with one or more party roles in a company. Party roles include customer, prospect, worker, user, vendor, competitor, applicant, and contact. For example, the organization party First Up Consultants, can be associated with customer, business relation, and vendor roles in the CEE company, and can also be associated with the vendor role in the CEU company. Here are some of the benefits of this shared data:
 

@@ -17,7 +17,7 @@ ms.search.form:
 
 # NO-00003 Customer and vendor payment formats
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and maintain Norwegian payment IDs in Microsoft Dynamics 365 Finance.
 

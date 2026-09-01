@@ -11,7 +11,7 @@ ms.search.form: ReqSupplyDemandSchedule, ReqSupplyDemandScheduleFilters, ReqSupp
 
 # Supply schedule
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The **Supply schedule** page shows a comprehensive overview of supply and demand for a product or product family. You can filter the information by location, master plan, and periods. Use the page to create new orders, modify existing planned orders, and run master planning.
 

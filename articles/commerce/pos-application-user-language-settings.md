@@ -16,7 +16,7 @@ ms.custom:
 
 # Point of sale (POS) application and user language settings
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to change language settings in the Microsoft Dynamics 365 Commerce Store Commerce app and Store Commerce for web.
 

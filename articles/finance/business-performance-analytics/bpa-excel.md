@@ -15,6 +15,8 @@ ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
 
 # Business performance analytics Excel add-in
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 The Business performance analytics Microsoft Excel add-in exposes the same Business performance analytics dataset that's available on the Power BI embedded report in the Excel desktop app.
 
 - When you open the Excel report in the Excel desktop app, an **Analytics** tab is available on the ribbon. This tab has two buttons: **Save** and **Settings**.

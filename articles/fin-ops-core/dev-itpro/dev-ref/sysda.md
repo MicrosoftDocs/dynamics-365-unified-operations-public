@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Access data by using the SysDa classes
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to create extensible queries by using the SysDa application programming interface (API).
 

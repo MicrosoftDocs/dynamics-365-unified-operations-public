@@ -16,7 +16,7 @@ ms.assetid: eb056816-ccf4-43a5-aed3-cf72543353de
 
 # Monitoring and diagnostics tools in Lifecycle Services
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [Lifecycle Services deprecation](../includes/lcs-deprecation.md)]
 [!include [LCS freeze](../../../includes/lcs-freeze-banner.md)]
 

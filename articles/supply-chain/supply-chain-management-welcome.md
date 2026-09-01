@@ -13,7 +13,7 @@ ms.custom:
 
 # Welcome to Dynamics 365 Supply Chain Management
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides an overview of help articles and other resources for Supply Chain Management.
 

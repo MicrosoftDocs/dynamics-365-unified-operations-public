@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Modify formats to generate documents that have application data
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Before you start, complete the procedure, [Modify models and mappings to generate documents that have application data](er-generate-documents-application-data-update-part-3-modify-model-mapping.md).
 

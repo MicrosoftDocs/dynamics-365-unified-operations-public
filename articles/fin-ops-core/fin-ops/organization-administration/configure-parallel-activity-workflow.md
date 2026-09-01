@@ -16,7 +16,7 @@ ms.assetid: 6d0656df-b5af-4001-96e6-6f0fcc44d022
 
 # Configure parallel activities in a workflow
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 To configure a parallel activity, use the workflow editor.
 

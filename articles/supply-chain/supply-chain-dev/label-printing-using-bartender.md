@@ -13,7 +13,7 @@ ms.search.form: WHSLabelLayout, WHSLabelLayoutDataSource
 
 # Print labels by using the Seagull Scientific BarTender® label service solution
 
-[!include [banner](../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../finance/includes/banner.md)]
 
 This article describes how to set up and print labels in Microsoft Dynamics 365 Supply Chain Management by using the BarTender® labeling solution by Seagull Scientific. It's one example that shows how to use the Supply Chain Management external service label printing feature. For general information about how this feature works, see [Print labels using an external service](label-printing-using-external-label-service.md).
 

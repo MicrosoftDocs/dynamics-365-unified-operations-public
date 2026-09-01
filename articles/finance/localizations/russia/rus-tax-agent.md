@@ -13,7 +13,7 @@ ms.search.form: TaxAuthority, VATOperationCodeTable_RU
 
 # Value-added tax (VAT) for tax agents (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up VAT and perform transactions for tax agents for Russia in Microsoft Dynamics 365 Finance.
 

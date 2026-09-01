@@ -16,7 +16,7 @@ ms.service: dynamics-365-op
 
 # Configure proxies for on-premises environments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Some organizations require that all server traffic goes through a proxy server for tracking or packet inspection. This section describes how to configure your environment in these cases.
 

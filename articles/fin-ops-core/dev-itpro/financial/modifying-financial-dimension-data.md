@@ -13,7 +13,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Modifying financial dimension data
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains why financial dimension data is immutable, which dimension framework tables you must not modify, and what to do when dimension values are incorrect on a posted document.
 

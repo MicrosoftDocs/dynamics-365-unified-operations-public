@@ -14,7 +14,7 @@ ms.custom:
 
 # Testing and performance issues
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides an overview of practices and tools related to functional testing, performance testing, and performance troubleshooting of Microsoft Dynamics 365 Commerce implementation projects.
 

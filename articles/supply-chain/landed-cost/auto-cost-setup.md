@@ -13,7 +13,7 @@ ms.search.form: ITMCostAutoSetup
 
 # Auto costs setup
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Use the **Auto costs** page to set up cost rules for various cost areas, such as voyages, shipping containers, folios, purchase orders, items, or transfer order lines. Based on these rules and the fields users select when they create records for one of the cost areas, the system calculates the costs and automatically adds them. Therefore, users don't have to manually add the costs.
 

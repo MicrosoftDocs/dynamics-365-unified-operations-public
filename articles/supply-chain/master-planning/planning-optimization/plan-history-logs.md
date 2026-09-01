@@ -12,7 +12,7 @@ ms.search.form: MPSPlanRegenerationJobList, MPSPlanRegenerationJobLogs
 
 # View plan history and planning logs
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to view the history of planning jobs in Microsoft Dynamics 365 Supply Chain Management.
 

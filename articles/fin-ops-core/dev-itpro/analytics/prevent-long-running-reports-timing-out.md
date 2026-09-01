@@ -15,7 +15,7 @@ ms.assetid: 74ffc94a-188f-4198-a4b0-f949ec4886cb
 
 # Help prevent long-running reports from timing out
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides tips that can help you prevent reports that run for a long time from timing out.
 

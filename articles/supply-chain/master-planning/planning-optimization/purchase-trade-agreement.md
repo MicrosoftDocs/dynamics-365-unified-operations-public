@@ -12,7 +12,7 @@ ms.search.form: ReqCreatePlanWorkspace
 
 # Master planning with purchase trade agreements
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how master planning can find the vendor and/or lead time for a planned order, based on the best price or lead time found among all purchase trade agreements that are specified for a given product.
 

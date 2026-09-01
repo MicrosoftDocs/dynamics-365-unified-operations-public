@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-10-28
 
 # Company divisions (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up company divisions for Russia in Microsoft Dynamics 365 Finance.
 

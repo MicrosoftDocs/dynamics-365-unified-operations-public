@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Set up purchase agreement classifications in the public sector
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The purchase agreement classification allows you to control the administrative information that is available on purchase agreements. 
 

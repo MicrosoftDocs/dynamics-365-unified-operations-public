@@ -16,7 +16,7 @@ ms.assetid: 1362297b-7a51-4930-b822-2b204a2e3c37
 
 # Intercompany accounting setup
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to set up intercompany accounting so that you can use intercompany journals for ledger allocations and financial journals, such as daily journals, vendor invoice journals, and payment journals.
 

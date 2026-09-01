@@ -17,7 +17,7 @@ ms.custom:
 
 # Client FAQ
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides answers to frequently asked questions about the finance and operations client.
 

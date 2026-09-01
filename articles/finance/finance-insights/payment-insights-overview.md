@@ -17,7 +17,7 @@ ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 
 # Customer payment predictions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the payment predictions capability that helps you better understand a customer's typical payment practices. This feature also helps you identify circumstances that should cause you to start collections processes earlier than you might otherwise start them.
 

@@ -13,7 +13,7 @@ ms.search.form: BarcodeSetup
 
 # Mobile bar code support
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Because Android is an open-source project, any manufacturer of hardware for warehouse bar code scanners can build a device to run the Android operating system. A device is only Android-compatible if it can run apps that are written for the Android execution environment.
 

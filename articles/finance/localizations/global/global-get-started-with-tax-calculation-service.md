@@ -17,7 +17,7 @@ ms.custom:
 
 # Get started with Tax Calculation
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about how to get started with Tax Calculation. The sections in this article guide you through the high-level design and configuration steps in Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 

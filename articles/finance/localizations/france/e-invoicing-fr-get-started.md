@@ -14,7 +14,7 @@ ms.search.validFrom: 2022-00-02
 
 # Get started with electronic invoicing for France
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Learn more about how to get started with electronic invoicing for France. This article guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps described in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
 

@@ -12,7 +12,7 @@ ms.search.validFrom: 2019-10-31
 
 # Opt out of personalized recommendations
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how you can let customers opt out of receiving personalized recommendations in Microsoft Dynamics 365 Commerce.
 

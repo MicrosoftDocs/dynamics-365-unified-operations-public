@@ -15,7 +15,7 @@ ms.custom:
 
 # Package configurations and deploy them to an online environment
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to package configurations and deploy them to your Microsoft Dynamics 365 Commerce online environment.
 

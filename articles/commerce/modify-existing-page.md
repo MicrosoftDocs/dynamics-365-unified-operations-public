@@ -14,7 +14,7 @@ ms.custom:
 
 # Modify an existing site page
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to modify an existing site page in Microsoft Dynamics 365 Commerce.
 

@@ -19,7 +19,7 @@ ms.service: dynamics-365-op
 
 # Add an SSIS node to an existing environment
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to add a Microsoft SQL Server Integration Services (SSIS) node in an on-premises environment. The Data management framework uses SSIS nodes, which were introduced in version 10.0.32 (Platform update 56).
 

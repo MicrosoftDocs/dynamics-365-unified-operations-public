@@ -14,7 +14,7 @@ ms.custom:
 
 # Enrich a category landing page
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article covers the enrichment of category pages in Microsoft Dynamics 365 Commerce.
 

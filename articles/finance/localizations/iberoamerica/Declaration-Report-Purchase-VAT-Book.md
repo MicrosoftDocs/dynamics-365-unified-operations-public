@@ -11,7 +11,7 @@ ms.author: v-cpicon
 
 # Configure printing for Venezuelan Purchase VAT book details
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up the purchase value-added tax (VAT) ledger details report so that you can print it.
 

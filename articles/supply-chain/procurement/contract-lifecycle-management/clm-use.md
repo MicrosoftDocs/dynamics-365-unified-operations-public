@@ -13,7 +13,7 @@ ms.custom:
 
 # Work with integrated CLM features
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how the addition of contract lifecycle management (CLM) integration affects the way that Microsoft Dynamics 365 Supply Chain Management works. It also explains where you can find CLM elements in the Supply Chain Management user interface (UI).
 

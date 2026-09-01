@@ -14,7 +14,7 @@ ms.custom:
 
 # Page load data actions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article covers page load data actions in Microsoft Dynamics 365 Commerce. 
 

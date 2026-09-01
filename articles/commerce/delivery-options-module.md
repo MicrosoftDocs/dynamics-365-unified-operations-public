@@ -14,7 +14,7 @@ ms.custom:
 
 # Delivery options module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains delivery options modules and how to configure them in Microsoft Dynamics 365 Commerce.
 

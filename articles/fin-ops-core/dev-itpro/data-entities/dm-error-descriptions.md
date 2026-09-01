@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Platform update 20
 
 # Data management error descriptions and known limitations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article documents scenarios where you might see specific errors. It doesn't provide a complete list of errors and scenarios. However, keep checking back, because the list is continuously updated.
 

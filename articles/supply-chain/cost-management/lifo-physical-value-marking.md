@@ -13,7 +13,7 @@ ms.custom:
 
 # LIFO with physical value and marking
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Last in, first out (LIFO) is an inventory management and valuation method where inventory that was produced or acquired last is sold, used, or disposed of first. During the inventory close process in Microsoft Dynamics 365 Supply Chain Management, the system creates settlements where the last receipt is matched against the first issue, and so on. The settlements and matching principle are based on the financial date of the inventory transactions. A preliminary assessment of the settlements and adjustments can be performed by running the inventory recalculation process.
 

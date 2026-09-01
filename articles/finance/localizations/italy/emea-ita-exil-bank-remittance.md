@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.10
 
 # Configurable posting profiles for banks and remittance types
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 In addition to defining general functionality settings, you can set up different posting profiles for the remittance of a bill of exchange (remit for collection and remit for discount) and the remittance of a promissory note in company bank accounts. For more information, see [Set up bills of exchange](../../accounts-receivable/set-up-bills-exchange.md).
 

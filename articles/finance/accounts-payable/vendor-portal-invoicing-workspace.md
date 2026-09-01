@@ -16,7 +16,7 @@ ms.assetid: c4ed62f3-d351-41d7-a2ad-790576cde4ab
 
 # Vendor collaboration invoicing workspace
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how you can view vendor invoices and submit invoices from the **Vendor collaboration invoicing** workspace.
 

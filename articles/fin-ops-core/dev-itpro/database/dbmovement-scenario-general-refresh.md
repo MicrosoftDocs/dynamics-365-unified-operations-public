@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 8.1.3
 
 # Refresh for training purposes
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Database movement operations are a suite of self-service actions that you can use as part of data application lifecycle management (DataALM). This tutorial shows how to use the refresh database operation in a training scenario.
 

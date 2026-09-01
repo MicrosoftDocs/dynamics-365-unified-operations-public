@@ -12,7 +12,7 @@ ms.search.form: WHSCrossDockingTemplate
 
 # Auto-release shipment for cross-docking
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes a cross-docking strategy that lets you automatically release a demand order to the warehouse when the production order that supplies the demand quantity is reported as finished. In this way, the quantity that is required for fulfillment of the demand order is moved directly from the production output location to the outbound location.
 

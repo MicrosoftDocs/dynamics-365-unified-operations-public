@@ -16,6 +16,8 @@ ms.dyn365.ops.version: 10.0.29
 
 # Proactive quality updates (PQU) - FAQ
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article provides answers to frequently asked questions about proactive quality updates (PQUs), new biweekly proactive quality updates, and the optional weekday update schedule.
 
    > [!NOTE]

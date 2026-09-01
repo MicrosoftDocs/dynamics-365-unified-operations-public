@@ -18,7 +18,7 @@ ms.custom:
 
 # Post online sales and payments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to configure and run a recurrent batch job to create sales orders and payments for online store transactions in Microsoft Dynamics 365 Commerce headquarters.
 

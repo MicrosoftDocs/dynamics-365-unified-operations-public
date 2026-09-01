@@ -16,7 +16,7 @@ ms.assetid: ab457f02-929e-4d34-b813-335be3092287
 
 # Sales and profitability performance Power BI content
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes what is included in the **Sales and profitability performance** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
 

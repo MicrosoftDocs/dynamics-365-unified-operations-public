@@ -11,7 +11,7 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 
 # Intercompany master scheduling
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Intercompany master scheduling is the means by which you calculate requirements and generate planned intercompany orders across several internal companies. Intercompany master scheduling is carried out over the number of iterations that you specify. To enable Microsoft Dynamics 365 Supply Chain Management to carry out intercompany master scheduling, you must set up master scheduling in each of your intercompany companies. This entails several iterations in which Microsoft Dynamics 365 Supply Chain Management automatically creates an intercompany purchase order; this, in turn, leads to the automatic creation of an intercompany sales order, which again leads to new demands.
 

@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 
 # Printing configuration for the Chile 8 Columns report
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 "Chile 8 Columns Report" is a financial reporting format that's used in Chile for accounting purposes. The phrase "8 Columns" in the report's name refers to the eight columns or sections that are typically included in this format.
 

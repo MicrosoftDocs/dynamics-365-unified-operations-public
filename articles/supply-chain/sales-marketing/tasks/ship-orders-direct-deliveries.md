@@ -15,7 +15,7 @@ ms.custom:
 
 # Ship orders as direct deliveries
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article demonstrates how to create a direct delivery for a sales order. You use direct delivery when you want to ship goods to the customer directly from your vendor, instead of shipping them to your own warehouse first. To successfully complete the second subtask *Create direct deliveries from the workbench*, make sure that the item that you choose on the sales order has a default vendor specified on the **Purchase** FastTab of the released product master.
 

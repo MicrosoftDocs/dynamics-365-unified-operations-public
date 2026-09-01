@@ -15,7 +15,7 @@ ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
 
 # Details of specific business scenarios in the JPK-V7 report
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains details of specific business scenarios in the JPK-V7 report in Poland.
 

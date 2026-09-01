@@ -13,7 +13,7 @@ ms.custom:
 
 # Integrate asset management with fixed assets
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 By integrating the **Asset management** and **Fixed assets** modules, you can link fixed assets with maintenance assets. Fixed assets users can then create a maintenance asset from a new or existing fixed asset, and Asset management users can associate a maintenance asset with an existing fixed asset. This feature also makes it easy for Fixed assets users to view the costs that were posted from work orders for related maintenance assets.
 

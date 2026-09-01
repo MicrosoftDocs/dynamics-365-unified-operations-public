@@ -15,7 +15,7 @@ ms.custom:
 
 # Create and assign an equipment group
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create and configure an equipment group for Japan in Microsoft Dynamics 365 Finance.
 

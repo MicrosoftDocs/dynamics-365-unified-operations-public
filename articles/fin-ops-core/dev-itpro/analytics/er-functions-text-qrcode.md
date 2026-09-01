@@ -16,7 +16,7 @@ ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 
 # QRCODE ER function
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The `QRCODE` function returns a *Container* value that presents the Quick Response code (QR code) image for the specified string in binary format.
 

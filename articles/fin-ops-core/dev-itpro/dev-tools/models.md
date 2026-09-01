@@ -15,7 +15,7 @@ ms.assetid: 66a32ee2-8c4f-4ae5-b022-ad1bb4f97e59
 
 # Models and packages
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the concept of models and packages. It also explains how to use the development tools in Microsoft Visual Studio to create new models, update the parameters of existing models, and visualize dependencies between models.
 

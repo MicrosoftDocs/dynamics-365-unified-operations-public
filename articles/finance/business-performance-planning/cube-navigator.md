@@ -10,6 +10,8 @@ ms.topic: article
 
 # Use Cube navigator in Business performance planning
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 > [!NOTE]
 > The Navigator experience (CubeNav) is introduced in Business performance planning version 1.16.
 

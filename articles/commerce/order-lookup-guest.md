@@ -14,7 +14,7 @@ ms.custom:
 
 # Enable order lookup for guest checkouts
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to enable order lookup for guest checkouts in Microsoft Dynamics 365 Commerce.
 

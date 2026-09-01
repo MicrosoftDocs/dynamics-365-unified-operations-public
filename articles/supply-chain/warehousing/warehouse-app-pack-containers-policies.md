@@ -12,7 +12,7 @@ ms.search.form:
 
 # Mobile device container packing policies
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Mobile device container packing policies let you control the packing process that's supported by the Warehouse Management mobile app.
 

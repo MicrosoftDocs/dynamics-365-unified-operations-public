@@ -25,6 +25,7 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Benefit eligibility policies
 
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]

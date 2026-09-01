@@ -17,7 +17,7 @@ ms.custom:
 
 # Customer orders in point of sale (POS)
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to create and manage customer orders in Microsoft Dynamics 365 Commerce point of sale (POS). Use customer orders to capture sales where shoppers want to pick up products on a later date, pick up products from a different location, or have items shipped to them.
 

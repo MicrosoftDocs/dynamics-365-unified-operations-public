@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Use event-based data actions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to use event-based data actions in Microsoft Dynamics 365 Commerce.
 

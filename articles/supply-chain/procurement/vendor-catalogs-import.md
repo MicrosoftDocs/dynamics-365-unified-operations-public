@@ -13,7 +13,7 @@ ms.custom:
 
 # Import vendor catalogs
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Vendor catalogs import
 

@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Japan overview
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article includes information and links to resources that can help you set up legal entities with a primary address in Japan.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Landed cost entities overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The **Landed cost** module helps businesses streamline inbound shipping operations by providing complete financial and logistical control over imported freight, from the manufacturer to the warehouse. Transaction data entities for Landed cost enable external data sources (such as freight forwarder services) to create voyages and costs, and update container tracking records.
 

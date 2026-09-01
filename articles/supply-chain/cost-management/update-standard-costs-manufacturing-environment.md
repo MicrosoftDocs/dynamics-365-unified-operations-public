@@ -13,7 +13,7 @@ ms.custom:
 
 # Update standard costs in a manufacturing environment
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides guidance about how to update standard costs in a manufacturing environment.
 

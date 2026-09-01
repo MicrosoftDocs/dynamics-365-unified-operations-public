@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Establish customer method of payment
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create a method of payment for customer payments. This task uses the USMF demo company.
 

@@ -17,7 +17,7 @@ ms.custom: sfi-image-nochange
 
 # Business events and Azure Service Bus Queue
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure a Microsoft Azure Service Bus Queue endpoint.
 

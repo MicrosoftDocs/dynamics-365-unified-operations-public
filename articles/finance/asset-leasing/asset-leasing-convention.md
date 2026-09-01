@@ -16,7 +16,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 # Asset leasing conventions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes conventions for leased assets. Leasing conventions determine the commencement date of a lease book. If you set the leasing convention to **None**, the commencement date is the same as the start date for the lease (that is, the value of the **Lease start date** field). If you set the leasing convention to **Full month**, the commencement date is the first day of the month that the lease's start date falls in.
 

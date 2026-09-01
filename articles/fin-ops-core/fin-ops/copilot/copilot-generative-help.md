@@ -17,7 +17,7 @@ ms.collection:
 
 # Generative help and guidance with Copilot
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Copilot provides in-app help and guidance that uses the power of generative AI to give contextual support to users. Copilot accesses the full range of public documentation to offer precise assistance and streamline the navigation through the extensive capabilities of finance and operations apps.
 

@@ -14,7 +14,7 @@ ms.search.validFrom: 2023-06-06
 
 # Dual-write health check
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The dual-write health check runs validations to ensure that the environment meets system requirements and that you completed the required configurations for dual-write. Run the health check as part of the setup and configuration process for dual-write to ensure the prerequisite configuration is completed before you set up entity maps. You can also run the health check as a troubleshooting step if problems occur after configuration.
 

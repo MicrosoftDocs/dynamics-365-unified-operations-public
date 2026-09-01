@@ -16,7 +16,7 @@ ms.custom:
 
 # Commerce Data Exchange troubleshooting
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article is for IT professionals who implement functionality related to data synchronization (Commerce Data Exchange \[CDX\]) in a Microsoft Dynamics 365 Commerce environment. It provides information to help you troubleshoot CDX in implementations.
 

@@ -11,7 +11,7 @@ ms.author: v-federicohe
 
 # Configure Simplified transactional appendix (ATS) printing
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure the **Simplified transactional appendix** (**ATS**) report for printing. The report is used to consolidate information about commercial transactions that were conducted during the relevant period. It includes vendor, customer, and export customer transactions.
 

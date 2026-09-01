@@ -16,6 +16,8 @@ ms.dyn365.ops.version: 10.0.25
 
 # Apply a payment schedule to the invoice journal
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 [!include [banner](../includes/preview-banner.md)]
 
 To use a payment schedule on the **Vendor invoice journal**, you must enable the **Apply payment schedule to invoice journal** feature in Feature management.

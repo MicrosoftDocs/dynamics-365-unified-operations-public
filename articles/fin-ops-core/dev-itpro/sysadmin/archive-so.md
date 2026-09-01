@@ -11,6 +11,8 @@ ms.reviewer: twheeloc
 
 # Archive Dynamics 365 Supply Chain Management Sales orders data
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article explains how to archive Dynamics 365 Supply Chain Management Sales orders data.
 
 ## Prerequisites

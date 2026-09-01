@@ -15,7 +15,7 @@ ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 
 # Configure data import from SharePoint
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 To import data from an incoming file by using the Electronic reporting (ER) framework, you must configure an ER format that supports the import and then run a model mapping of the **To destination** type that uses that format as a data source. To import data, you must navigate to the file that you want to import. You can manually select the incoming file. By using the new ER capability to support importing data from Microsoft SharePoint, you can configure this process as unattended. You can use ER configurations to perform data import from files that are stored in Microsoft SharePoint folders. This article explains how to complete the import from SharePoint. The examples use vendor transactions as business data.
 

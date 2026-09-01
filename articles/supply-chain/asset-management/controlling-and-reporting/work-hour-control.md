@@ -12,7 +12,7 @@ ms.search.form: EntAssetHourControl
 
 # Work hour control
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
  
 

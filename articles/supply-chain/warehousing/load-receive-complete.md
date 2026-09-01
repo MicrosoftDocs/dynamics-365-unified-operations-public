@@ -13,7 +13,7 @@ ms.custom:
 
 # Mark loads as completely received
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the options for marking loads as completely received. It also explains how the *Receiving completed* periodic task works.
 

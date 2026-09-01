@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 7.3.1
 
 # Set up GST reference number groups
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Goods and Services Tax (GST) transactions use a unique number sequence to differentiate them. If you need a different number sequence for the address of each warehouse or legal entity, create a reference number sequence group. Then, assign the reference number sequence group to the addresses.
 

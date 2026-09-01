@@ -16,7 +16,7 @@ ms.custom: sfi-image-nochange
 
 # Business document management overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Business users use the **Business document management** (BDM) workspace to configure formats for outbound documents in accordance with the legal requirements of various countries or regions or company-specific needs. **Business document management** is built on top of the [Electronic reporting (ER)](general-electronic-reporting.md) framework and enables business users to edit business document templates by using Microsoft 365 Apps for business or an appropriate Microsoft 365 desktop applications. Edits to the documents might include changing business document designs and adding placeholders for extra data without source code changes and new deployments. Updating business document templates doesn't require any prior knowledge of the ER framework.
 

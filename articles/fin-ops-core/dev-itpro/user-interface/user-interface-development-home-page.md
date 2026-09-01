@@ -18,7 +18,7 @@ ms.custom:
 
 # User interface development home page
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article contains links to topics about developing user interface elements.
 

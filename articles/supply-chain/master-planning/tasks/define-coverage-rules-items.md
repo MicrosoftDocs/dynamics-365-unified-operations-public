@@ -13,7 +13,7 @@ ms.custom:
 
 # Define coverage rules for items
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to create coverage rules and override coverage settings for a specific item. It also shows how to specify default inventory settings. This procedure shows sample values that you can use with the USMF [demo data](../../../commerce/demo-data.md) company, but you can use your own values if you prefer.
 

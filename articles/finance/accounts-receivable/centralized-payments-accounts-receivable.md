@@ -16,7 +16,7 @@ ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 
 # Centralized payments for Accounts receivable
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Organizations that include multiple legal entities can create and manage payments by using a single legal entity that handles all payments. Therefore, you don't have to enter the same transaction in multiple legal entities. This article provides examples that show how posting for centralized payments is handled in various scenarios. Additionally, the organization saves time because the processes for payment proposals, settlements, and editing open and closed transactions for centralized payments are streamlined.
 

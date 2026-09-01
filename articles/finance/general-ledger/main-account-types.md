@@ -18,7 +18,7 @@ ms.assetid: e55b9c0e-597b-46d4-b453-81c780939b6d
 
 # Main account types
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The main account types determine how a main account is used in the chart of accounts.
 

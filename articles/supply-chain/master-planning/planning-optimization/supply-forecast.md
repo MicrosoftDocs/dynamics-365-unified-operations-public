@@ -13,7 +13,7 @@ ms.custom:
 
 # Master planning with supply forecasts
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Supply forecasts let you specify the supply that you expect to need during a future period. Typically, you base the estimate on the previous year's sales history and then use the forecast for budgeting purposes. You can also set up your master plans to consider forecasts during planning.
 

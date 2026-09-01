@@ -13,6 +13,8 @@ ms.dyn365.ops.version: AX 10.0.0
 
 # SysSetup
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 Use the SysSetup interface to identify the X++ classes that run during database synchronization. The X++ classes that implement the SysSetup interface run during the **PostTableAndViewSyncActions** step of database synchronization.
 
 ## Onboard to SysSetup

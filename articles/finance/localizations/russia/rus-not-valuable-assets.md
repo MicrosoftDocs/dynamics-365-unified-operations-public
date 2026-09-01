@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-10-28
 
 # Not valuable fixed assets (NVFAs) (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to maintain not valuable fixed assets (NVFAs) for Russia in Microsoft Dynamics 365 Finance.
 

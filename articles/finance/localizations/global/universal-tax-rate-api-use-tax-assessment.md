@@ -15,7 +15,7 @@ ms.search.validFrom: 2024-02-01
 
 # Use tax assessment
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Use tax assessment is a feature that US legal entities can use to calculate the tax liability for purchases that are subject to use tax. Use tax is a type of sales tax that applies when a taxable item is purchased from an out-of-state vendor or an online retailer that doesn't collect sales tax from the buyer. The buyer is responsible for paying the use tax to the state where the item is used, stored, or consumed.
 

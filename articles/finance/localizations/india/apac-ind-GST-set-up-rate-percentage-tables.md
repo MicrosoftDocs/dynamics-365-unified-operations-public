@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Set up rate and percentage tables
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 1. Expand the **Tax component** node, and select the **Rate** node.
 1. In the **Value** field, enter the tax rate. The remaining fields are used to determine the rate. In the standard GST configuration, there are several pre-defined fields, including **Consumption state**, **HSN code**, and **SAC**. You can select the fields relevant to your business to determine the rate. 

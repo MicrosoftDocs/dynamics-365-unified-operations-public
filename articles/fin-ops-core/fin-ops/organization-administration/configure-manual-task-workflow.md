@@ -16,7 +16,7 @@ ms.assetid: 27f1afde-ff26-4b6f-8c11-27ec49130bbb
 
 # Configure manual tasks in a workflow
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to configure the properties for a manual task.
 

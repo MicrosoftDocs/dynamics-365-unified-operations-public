@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Platform update 29
 
 # What's new or changed in Platform update 29 for finance and operations apps (October 2019)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes features that are new or changed in Platform update 29 for finance and operations apps. This version has a build number of 7.0.5372. While the general availability date is in October, the new features are available for early release in August. For more information about Platform update 29, see [Additional resources](whats-new-platform-update-28.md#additional-resources).
 

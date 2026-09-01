@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Define a tax configuration and deploy it to legal entities
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 1. Go to **Tax** > **Setup** > **Tax Configuration** > **Tax Setup**.
 1. Select **New**.

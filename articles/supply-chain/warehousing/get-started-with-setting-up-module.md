@@ -13,7 +13,7 @@ ms.custom:
 
 # Get started with setting up the Warehouse management module
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to work with the built-in wizards and checklists that can help you quickly and efficiently set up and configure the **Warehouse management** module.
 

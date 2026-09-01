@@ -18,7 +18,7 @@ ms.dyn365.ops.version: Platform Update 23
 
 # Make Entity store available as a Data Lake
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
 > This feature is currently in public preview. This feature includes the following components:

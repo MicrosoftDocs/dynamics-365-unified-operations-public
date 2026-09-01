@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create a cost accounting ledger
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 A cost accounting ledger represents the overall reporting unit. It is defined by a cost element dimension, statistical dimension, fiscal calendar, and currency. It is agnostic to the concept of legal entities. A legal entity and its data can be associated with many cost accounting ledgers. This recording uses the USP2 demo data company.
 

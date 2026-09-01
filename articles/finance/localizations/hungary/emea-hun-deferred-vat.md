@@ -15,7 +15,7 @@ ms.search.form: AssetParameters
 
 # Deferred sales tax calculations
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 In Hungary, you must record and report value-added tax (VAT) on the continuous delivery of services, such as renting, leasing, consulting, and heating, on the due date. This functionality processes the general ledger postings for VAT amounts to the deferred VAT payable and deferred VAT receivable accounts. You can also transfer amounts to regular sales tax accounts on the due date of the invoice.
 

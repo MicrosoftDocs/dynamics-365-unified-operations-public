@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Delete data
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Use SQL statements, either interactively or in source code, to delete one or more rows from tables that are stored in the database.
 

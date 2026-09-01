@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Platform update 52
 
 # Monitor API throttling
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about the tools that are available to monitor usage of application programming interfaces (APIs). This usage includes queries that display information on API requests that the system throttled when it reached [service protection limits](service-protection-api-limits.md). It also includes general API usage to help administrators understand when integrations might be nearing the API limits.
 

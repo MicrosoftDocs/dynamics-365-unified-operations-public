@@ -15,7 +15,7 @@ ms.custom:
 
 # Create and configure a Microsoft Entra application for account manager sign-in
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to create and configure a Microsoft Entra application for account manager sign-in for on behalf of functionality (OBO) in Microsoft Dynamics 365 Commerce.
 

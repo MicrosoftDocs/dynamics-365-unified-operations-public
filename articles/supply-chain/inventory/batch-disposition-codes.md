@@ -13,7 +13,7 @@ ms.custom:
 
 # Use batch disposition codes to mark batches as available or unavailable
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to set up and use *batch disposition codes*. Each batch disposition code has a status of either *Available* or *Unavailable*. You assign batch disposition codes to inventory batches to indicate whether each batch is available for master planning, reservation, picking, and shipping.
 

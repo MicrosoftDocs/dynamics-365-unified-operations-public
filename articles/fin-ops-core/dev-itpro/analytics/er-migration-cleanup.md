@@ -18,7 +18,7 @@ ms.custom:
 
 # ER migration cleanup
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When you manage your Finance instances, you might decide to migrate your current instance to another location. For example, you might migrate your production instance to a new sandbox environment. If you configured the Electronic reporting (ER) framework to store templates in Microsoft Azure Blob storage, the **DocuValue** table in the new sandbox environment refers to the instance of Blob storage in the production environment. However, you can't access this instance from the sandbox environment because the migration process doesn't support the migration of artifacts in Blob storage. Instead, in the new sandbox environment, you refer to the instance of Blob storage in the sandbox environment that doesn't yet have the ER templates.
 

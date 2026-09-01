@@ -15,7 +15,7 @@ ms.search.validFrom: 2021-10-04
 
 # Error codes for the table map health check
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes error codes for the table map health check.
 

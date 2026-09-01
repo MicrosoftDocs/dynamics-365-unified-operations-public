@@ -12,7 +12,7 @@ ms.search.form: WrkCtrTable
 
 # Create an operations resource
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 An operations resource performs the activities of a project or a production process. This procedures shows you how to define an operations resource. You can walk through this procedure in demo data company USMF, or using your own data.
 

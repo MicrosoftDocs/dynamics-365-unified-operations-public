@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 8.1
 
 # Maintain general budget reservations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to complete typical tasks for general budget reservations.
 

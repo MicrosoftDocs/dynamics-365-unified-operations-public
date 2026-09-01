@@ -12,7 +12,7 @@ ms.search.form:
 
 # Design calculation models
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 *Calculation models* let you arrange and configure steps to define the calculation that's done by a calculation profile. Each model presents a flowchart that graphically represents the calculation that the model does.
 

@@ -12,7 +12,7 @@ ms.reviewer: johnmichalak
 
 # VAT declaration (Hungary)
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to set up the value-added tax (VAT) declaration 65A with Summary report 65M for Hungary in XML format, and how to preview the VAT declaration 65A in Microsoft Excel.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Control module
 
-[!include [banner](../../../../includes/banner.md)]
+[!INCLUDE [banner](../../../../includes/banner.md)]
 [!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 Controls are what make up the content of a page.

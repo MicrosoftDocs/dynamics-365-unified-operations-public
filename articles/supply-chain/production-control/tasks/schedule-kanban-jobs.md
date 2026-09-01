@@ -12,7 +12,7 @@ ms.search.form: KanbanJobSchedulingListPage, KanbanPeriodCapacityPart, SysLookup
 
 # Schedule kanban jobs
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure focuses on scheduling process kanban jobs for a specific work cell. The procedure "Prepare a process kanban job when materials are not available" is a prerequisite for creating this procedure. The demo data company used to create this procedure is USMF. This task is intended for the shop floor supervisor and production planner working with kanbans.
 

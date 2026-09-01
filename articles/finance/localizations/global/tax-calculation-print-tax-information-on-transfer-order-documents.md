@@ -14,7 +14,7 @@ ms.custom:
 
 # Print tax information on transfer order documents
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to print tax information on transfer order documents. You can print the pro-forma invoice document of a transfer order for stock transfers that are considered intra-community supply and intra-community acquisitions under European Union (EU) value-added tax (VAT) regulations. 
 

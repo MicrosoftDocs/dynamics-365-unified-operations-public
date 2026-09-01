@@ -15,7 +15,7 @@ ms.custom:
 
 # Use tax calculation in purchase orders in Brazil tax reform
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes tax calculation in purchase orders in the Brazil tax reform solution.
 

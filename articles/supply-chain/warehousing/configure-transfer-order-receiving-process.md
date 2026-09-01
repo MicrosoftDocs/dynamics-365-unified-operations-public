@@ -13,7 +13,7 @@ ms.custom:
 
 # Configure the transfer order receiving process
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to configure the receiving process for a warehouse. It includes information about the parameters that are available for warehouse receiving and how to configure them.
 

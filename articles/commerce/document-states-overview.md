@@ -14,7 +14,7 @@ ms.custom:
 ---
 # Document states and lifecycle
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes the various document states of page elements in Microsoft Dynamics 365 Commerce.
 

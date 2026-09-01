@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 7.3
 
 # Reversing fixed asset transactions for India
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You can reverse a fixed asset transaction, reverse taxes for the transaction, and update general ledger accounts. The **Books** > **Balances** page for the selected asset displays information about the updates to an asset.
 

@@ -16,7 +16,7 @@ ms.assetid: 7dcd3cf5-ebdf-4a9f-806c-1296c7da0331
 
 # Sales tax payments and rounding rules
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how the rounding rule setup on the Sales tax authorities works and rounding the sales tax balance during the Settle and post sales tax job.
 

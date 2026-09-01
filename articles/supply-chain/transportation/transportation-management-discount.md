@@ -12,7 +12,7 @@ ms.search.form:
 
 # Transportation management discounts
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Transportation management lets you set up discounts to be applied on top of the transportation price calculated by the rating engine. You can specify each discount either as a percentage of charges or as a fixed amount.
 

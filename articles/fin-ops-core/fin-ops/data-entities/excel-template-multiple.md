@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Platform update 13
 
 # Data templates with multiple worksheets
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 
 [!INCLUDE [PEAP](../../../includes/peap-3.md)]

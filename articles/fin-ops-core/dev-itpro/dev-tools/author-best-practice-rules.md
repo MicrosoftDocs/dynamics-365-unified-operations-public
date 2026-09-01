@@ -17,7 +17,7 @@ ms.assetid: 4fe671c4-c556-4942-8570-307cf68ae0a7
 
 # Write best practice rules
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how you can author best practice rules in C#, for both metadata and X++ code. The compiler runs best practice checks. You can run them in daily builds to catch objectionable practices that are unacceptable in shipping code. You can also use these features to author simple one-off tools to gather information about the application.
 

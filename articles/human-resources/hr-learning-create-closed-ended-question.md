@@ -23,6 +23,8 @@ ms.dyn365.ops.version: Version 7.0.0
 ---
 # Create a closed-ended question
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Closed-ended questions provide options for the respondent to choose from. First, create the Answer group with the answers, and then create the question that uses the answer group. The demo data company used to create this procedure is USMF.

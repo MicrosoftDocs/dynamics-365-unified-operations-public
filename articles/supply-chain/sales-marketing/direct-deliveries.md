@@ -13,7 +13,7 @@ ms.custom:
 
 # Direct deliveries
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about direct deliveries. Direct deliveries are deliveries that a vendor sends directly to your customer.
 

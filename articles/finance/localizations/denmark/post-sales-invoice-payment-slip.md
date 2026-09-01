@@ -15,7 +15,7 @@ ms.custom:
 
 # Post a sales invoice with a payment slip
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to post a free text invoice with a payment slip attachment in a specified format in Denmark by using Microsoft Dynamics 365 Finance.
 

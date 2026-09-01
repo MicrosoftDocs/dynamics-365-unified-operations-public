@@ -17,7 +17,7 @@ ms.custom: sfi-image-nochange
 
 # Email ER destination type
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When you run an Electronic reporting (ER) format, you can generate one or more outbound documents. Use **Folder** or **File** format components in ER formats to specify the structure of outbound documents. You can configure an email destination for these types of components to send outbound documents as email attachments.
 

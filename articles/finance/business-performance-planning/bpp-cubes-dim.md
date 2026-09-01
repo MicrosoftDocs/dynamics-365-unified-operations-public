@@ -14,6 +14,8 @@ ms.collection:
 
 # Import and export cubes and dimensions
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 Import and export Business performance planning cubes and dimensions in Dynamics 365 Finance.
 
 ## Overview

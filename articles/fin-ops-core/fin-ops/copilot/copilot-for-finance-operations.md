@@ -17,7 +17,7 @@ ms.collection:
 
 # Overview of Copilot capabilities in finance and operations apps
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Copilot gives users access to AI capabilities that augment the application experiences and functionality of finance and operations apps.
 

@@ -15,7 +15,7 @@ ms.assetid: fba7faa3-716b-4adf-ab3e-8573f3614894
 
 # Create custom designs for business documents
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article shows how to create a custom report design for an existing application business document by using a pure extension model.
 

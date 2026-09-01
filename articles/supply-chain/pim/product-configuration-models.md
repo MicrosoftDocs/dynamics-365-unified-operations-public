@@ -14,7 +14,7 @@ ms.assetid: 70b968e8-e550-4731-823d-d713b8910f7b
 
 # Product configuration models overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article defines terms and concepts that are relevant to product configuration models. Product configuration models let you build a generic product structure that can be used to configure many product variants for a single product.
 

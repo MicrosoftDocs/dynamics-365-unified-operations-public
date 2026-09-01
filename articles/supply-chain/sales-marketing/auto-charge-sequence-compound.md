@@ -12,7 +12,7 @@ ms.search.form: MarkupAutoSetup, CustParameters, SalesTableListPage, SalesTable,
 
 # Auto charge compounding and sequencing
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Advanced auto charges let you apply specific charges to order headers and order lines, based on the customer that you're working with and/or the items that you're selling. For sales quotations and sales orders, you can also choose to compound header charges.
 

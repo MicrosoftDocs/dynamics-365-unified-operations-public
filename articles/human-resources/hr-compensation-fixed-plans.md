@@ -25,6 +25,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Create fixed compensation plans
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Fixed compensation refers to an employee's regular gross salary or wages. This article describes the components that you must set up before you can create a fixed compensation plan and enroll employees.

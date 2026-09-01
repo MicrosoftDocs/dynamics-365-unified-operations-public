@@ -16,7 +16,7 @@ ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 
 # View posted TDS payments and transactions for a TDS settlement period
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to view the Tax Deducted at Source (TDS) payments and transactions that were posted for a settlement period.
 

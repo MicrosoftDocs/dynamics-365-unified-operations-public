@@ -12,7 +12,7 @@ ms.search.form: WhsWaveNotificationPolicy, WHSParameters, WHSWaveTemplateTable, 
 
 # Wave execution notifications
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The *Wave execution notifications* feature uses business events and the Action center to deliver notifications that are related to wave execution. It lets you specify the types of events that generate notifications, the warehouses that generate them, and the users who receive them.
 

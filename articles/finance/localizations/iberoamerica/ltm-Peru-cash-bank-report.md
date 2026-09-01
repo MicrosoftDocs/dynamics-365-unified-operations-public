@@ -11,7 +11,7 @@ ms.author: v-federicohe
 
 # Configure printing for Cash and Banks Ledger reports for Peru
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure printing for Cash and Banks Ledger reports for Peru in Microsoft Dynamics 365 Finance.
 

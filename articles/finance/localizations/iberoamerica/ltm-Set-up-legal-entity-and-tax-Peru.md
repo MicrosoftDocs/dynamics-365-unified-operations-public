@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Set up a legal entity and tax information for Peru
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up a legal entity and tax information for a company in Peru in Microsoft Dynamics 365 Finance.
 

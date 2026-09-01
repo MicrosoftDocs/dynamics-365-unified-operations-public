@@ -17,7 +17,7 @@ ms.search.validFrom: 2016-02-28
 
 # Call center catalogs
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes the call center–specific functionality linked to the catalog capabilities in Microsoft Dynamics 365 Commerce.
 

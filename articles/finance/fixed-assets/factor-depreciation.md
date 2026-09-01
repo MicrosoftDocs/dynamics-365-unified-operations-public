@@ -18,7 +18,7 @@ ms.assetid: 2b6c4fe4-02ff-4191-bcad-32f1f34c15f2
 
 # Factor depreciation
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the factor depreciation method.
 

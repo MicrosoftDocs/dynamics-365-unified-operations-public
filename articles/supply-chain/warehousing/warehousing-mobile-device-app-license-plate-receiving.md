@@ -12,7 +12,7 @@ ms.search.form: WHSParameters, WHSRFMenuItem, WHSLicensePlate, WHSPackingStructu
 
 # License plate receiving via the Warehouse Management mobile app
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to set up the Warehouse Management mobile app to support a license plate receiving process for physical inventory.
 

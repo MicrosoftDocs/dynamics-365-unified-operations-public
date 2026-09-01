@@ -18,7 +18,7 @@ ms.assetid: 1d8267b1-86a8-44bf-8814-f56b5d45a0ae
 
 # Depreciation methods and conventions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the supported depreciation conventions and depreciation methods.
 

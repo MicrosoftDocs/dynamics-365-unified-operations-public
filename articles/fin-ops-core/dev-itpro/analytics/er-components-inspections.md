@@ -16,7 +16,7 @@ ms.assetid:
 
 # Validate ER format and model mapping to prevent runtime issues
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can validate each configured [Electronic reporting (ER)](general-electronic-reporting.md) [format](er-overview-components.md#format-components-for-outgoing-electronic-documents) and [model mapping](er-overview-components.md#model-mapping-component) at design time. During this validation, a consistency check runs to help prevent runtime problems, such as execution errors and performance degradation. For every problem that the check finds, it provides the path of a problematic element. For some problems, an automatic fix is available.
 

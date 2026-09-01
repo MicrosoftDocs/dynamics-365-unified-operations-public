@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 8.0.1
 
 # Set up a subsidiary legal entity for consolidation
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The method you use to prepare subsidiary accounts for consolidation depends in part on the extent to which the structure of the chart of accounts in the subsidiary legal entity reflects the chart of accounts in the consolidated legal entity.
 

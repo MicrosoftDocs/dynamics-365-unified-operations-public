@@ -13,7 +13,7 @@ ms.custom:
 
 # Reconcile freight in transportation management
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the freight reconciliation process, which is also known as the matching process. During this process, system-generated freight bills that contain estimated freight costs are matched to actual invoices that are received from carriers. Any differences (variances) are reconciled.
 

@@ -12,7 +12,7 @@ ms.search.form: LeanScheduleGroup, GanttColorTableLookup
 
 # Define lean schedule groups
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Lean schedule groups are defined to group and distinguish products in kanban scheduling. The grouping can be done as generic association per company or specific to a work cell. Each group has a color code assigned for visual indication in the kanban scheduling listpage. The demo data company used to create this procedure is USMF.
 

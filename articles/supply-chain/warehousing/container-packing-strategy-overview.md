@@ -12,7 +12,7 @@ ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, 
 
 # Container packing strategies
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A *container packing strategy* is a strategy that you can use to define item allocations across containers. This article explains the differences between the *Pack into all open containers* and *Pack into current container only* strategies.
 

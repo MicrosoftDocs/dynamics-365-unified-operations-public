@@ -13,7 +13,7 @@ ms.custom:
 
 # Create a purchase return order
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Use purchase return orders (return POs) when you need to send goods back to a vendor. Here are a few common scenarios where you might create a return PO:
 

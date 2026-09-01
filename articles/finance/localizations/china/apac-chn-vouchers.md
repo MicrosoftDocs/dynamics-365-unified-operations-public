@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Chinese vouchers
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes Chinese vouchers and how to use them.
 

@@ -12,7 +12,7 @@ ms.reviewer: johnmichalak
 
 # Create a Dataverse solution using Upload into repository
 
-[!INCLUDE[banner](../../../includes/banner.md)]
+[!INCLUDE [banner](../../../includes/banner.md)]
 
 Starting with version 10.0.40, instead of manually creating a Dataverse solution as described in [Upload ER configurations and Globalization features as a Dataverse solution](gsw-upload-er-config.md), you can use the **Upload into repository** functionality to upload one or all of your custom Electronic reporting (ER) configurations and Globalization features.
 

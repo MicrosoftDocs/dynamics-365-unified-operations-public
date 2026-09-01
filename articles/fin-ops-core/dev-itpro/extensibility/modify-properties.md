@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 4
 
 # Modify table properties through extension
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 To modify properties on a table, you must create an extension of that table. In Application Explorer, right-click the table, and then select **Create extension**. The following illustration shows a new table extension created in the selected project.
 

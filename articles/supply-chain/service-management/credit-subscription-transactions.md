@@ -13,7 +13,7 @@ ms.custom:
 
 # Credit subscription transactions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 1. Go to **Service management** > **Service subscriptions** > **All service subscriptions**.
 1. Select the subscription attached to the subscription transaction for which you want to create a credit note.

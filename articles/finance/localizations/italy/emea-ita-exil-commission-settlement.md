@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.10
 
 # Commission settlement on payments
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 In Italy, companies don't typically settle the commissions for their sales agents when they issue invoices. Instead, they settle the commissions when customers pay the full balance of their invoices.
 

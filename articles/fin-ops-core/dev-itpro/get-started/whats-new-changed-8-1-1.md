@@ -19,7 +19,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # What's new or changed in Dynamics 365 Finance and Operations version 8.1.1 (November 2018)
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article describes features that are either new or changed in Microsoft Dynamics 365 Finance and Operations version 8.1.1 (November 2018). This version was released in November 2018 and has a build number of 8.1.170.
 

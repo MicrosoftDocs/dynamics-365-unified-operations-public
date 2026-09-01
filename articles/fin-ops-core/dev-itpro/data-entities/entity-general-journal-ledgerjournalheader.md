@@ -12,6 +12,8 @@ ms.collection: FastTrack
 
 # LedgerJournalHeader entity
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 The **LedgerJournalHeader** entity supports creating and updating general journal headers.
 
 ## When to use this entity

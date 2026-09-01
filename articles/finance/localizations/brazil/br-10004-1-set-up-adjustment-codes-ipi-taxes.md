@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-06-30
 
 # Set up adjustment codes for IPI taxes (Brazil)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to set up adjustment codes for Imposto sobre Produtos Industrializados (IPI) taxes in Brazil with Microsoft Dynamics 365 Finance.
 

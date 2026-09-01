@@ -16,7 +16,7 @@ ms.search.validFrom: 2017-07-8
 
 # Synchronize sales invoice headers and lines directly from finance and operations to Sales
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article discusses the templates and underlying tasks that are used to synchronize sales invoice headers and lines directly from Dynamics 365 Supply Chain Management to Dynamics 365 Sales.
 

@@ -15,7 +15,7 @@ ms.custom:
 # Configure your domain name
 
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to configure a domain name for a Microsoft Dynamics 365 e-commerce site. 
 

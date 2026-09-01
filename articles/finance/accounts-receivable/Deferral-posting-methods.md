@@ -16,6 +16,8 @@ ms.dyn365.ops.version: 10.0.24
 
 # Deferral posting methods
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article describes the differences between the deferral posting methods for revenue and expense deferrals in Subscription billing.
 
 On the **Revenue and expense deferral parameters** page, the options for deferral posting methods are **Balance sheet** and **Profit and loss**. The example in this article will help explain the differences between the two methods and the reasons why you might use one method or the other.

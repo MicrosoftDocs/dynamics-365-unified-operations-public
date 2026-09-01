@@ -12,7 +12,7 @@ ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProdu
 
 # Create product model components
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Constraint-based product configuration models use components as building blocks to establish the product model structure. The components must be created before a product model can be built. The demo data company used to create this procedure is USMF.
 

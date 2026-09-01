@@ -13,7 +13,7 @@ ms.search.region: Russia
 
 # Configure financial reports in Excel (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create an electronic reporting (ER) configuration that contains a template for generating a financial report in an Excel format for Russia in Microsoft Dynamics 365 Finance.
 

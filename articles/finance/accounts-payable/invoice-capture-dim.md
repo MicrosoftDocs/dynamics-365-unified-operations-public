@@ -17,7 +17,7 @@ ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 
 # Invoice capture financial dimensions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about financial dimensions in Invoice capture and explains how to use them. It provides guidance for extending the solution to support financial dimensions that align with specific business requirements in Microsoft Dynamics 365 Finance.
 

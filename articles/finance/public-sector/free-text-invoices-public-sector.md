@@ -17,7 +17,7 @@ ms.assetid: 483e2726-ec48-4d1f-82f5-bffddea301ce
 
 # Free text invoices in the public sector
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the free text invoice functionality that's available for public sector entities, and answers common questions about using billing classifications and billing codes with free text invoices.
 

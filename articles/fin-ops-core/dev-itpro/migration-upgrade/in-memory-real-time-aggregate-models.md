@@ -16,7 +16,7 @@ ms.assetid: 877db646-da4b-48b5-83ab-61ae59d91921
 
 # Transition from Analysis Services cubes to aggregate models
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to use in-memory, real-time aggregate models for analytics and why Microsoft transitioned from using Server Analysis Services (SSAS) cubes.
 

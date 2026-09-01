@@ -13,7 +13,7 @@ ms.custom:
 
 # Optimize confirmed dates for CTP line changes
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The *optimize confirmed dates for CTP line changes* feature ensures that confirmed ship and receipt dates on sales order lines stay accurate when you modify fields that affect transport days. When you use capable-to-promise (CTP) with Planning Optimization, this feature automatically adjusts the confirmed dates to optimize delivery without requiring user action.
 

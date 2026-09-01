@@ -15,7 +15,7 @@ ms.assetid: 99079d81-fde2-4432-8cee-82bbcc3bd57e
 
 # Payments FAQ
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article answers frequently ask questions about payment options in Microsoft Dynamics 365 Commerce.
 

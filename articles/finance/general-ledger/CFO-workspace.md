@@ -16,7 +16,7 @@ ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 
 # Add financial dimensions to the CFO workspace
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to add financial dimensions to the Chief Financial Officer (CFO) workspace, so that they can be used for the ledger and budget reports. The CFO workspace has an **Overview** tab and a **Financial** tab. The reports on these two tabs are backed by two measures: LedgerActivityMeasure and BudgetActivityMeasure. There's a relation between those two measures and the DimensionCombinationEntity entity. Therefore, you can select dimensions.
 

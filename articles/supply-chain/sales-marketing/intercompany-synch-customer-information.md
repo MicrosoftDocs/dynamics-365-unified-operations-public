@@ -11,7 +11,7 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 
 # Synchronize intercompany customer information
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Customer information is synchronized if the **Customer information** field is enabled when the sales order is created or a change is made to the customer, vendor reference, or customer requisition number.
 

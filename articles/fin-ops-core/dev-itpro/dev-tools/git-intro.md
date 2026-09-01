@@ -15,6 +15,8 @@ ms.dyn365.ops.version: 10.0.31
 
 # X++ in Git
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 [Git](/devops/develop/git/what-is-git) is the modern standard for version control. It's also [Microsoft's default version control system](/azure/devops/repos/tfvc/comparison-git-tfvc?view=azure-devops&preserve-view=true#which-version-control-system-should-i-use) provider that's recommended for general development. X++ developers might already be familiar with the [existing guidance](version-control-metadata-navigation.md) to set up Team Foundation Version Control (TFVC) for X++, but many organizations are standardizing on Git. This article introduces the concept of X++ code management in Git and outlines key considerations for teams that want to use Git tools for X++ development.
 
 ## Considerations and limitations

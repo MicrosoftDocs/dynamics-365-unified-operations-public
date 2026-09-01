@@ -12,7 +12,7 @@ ms.search.form: WHSRFMenuItem,WHSWorkTemplateTable
 
 # Pick line grouping
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Pick line grouping enables you to combine multiple work lines that have the same item and location into a single pick. The user sees this pick on the mobile device. Warehouse workers can follow the most efficient instructions, but the system still maintains required work line separation for different containers, orders, and other categories.
 

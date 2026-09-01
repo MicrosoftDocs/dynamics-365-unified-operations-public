@@ -13,7 +13,7 @@ ms.custom:
 
 # Working with serialized items
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to register serial numbers on packing slips or invoices during the sales process. This functionality is useful if a company wants to capture serial numbers for service and warranty purposes, but doesn't need to maintain serial numbers in inventory from receipt to issue.
 

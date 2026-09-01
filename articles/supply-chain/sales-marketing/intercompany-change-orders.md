@@ -11,7 +11,7 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 
 # Change intercompany orders
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 If you change an intercompany sales order or purchase order, the corresponding sales order or purchase order in the corresponding company also reflects that change.
 

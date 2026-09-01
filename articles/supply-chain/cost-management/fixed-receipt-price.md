@@ -15,7 +15,7 @@ ms.custom:
 
 # Fixed receipt price
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 **Fixed receipt price** is an option that you can select on an item model group when you use an inventory model other than *Standard cost* or *Moving weighted average*. In early versions of Microsoft Dynamics AX, this option was named **Standard cost**. It was renamed **Fixed receipt price** when the new standard cost inventory model was introduced in Dynamics AX 2012. This article explains how you can configure and use fixed receipt prices in Dynamics 365 Supply Chain Management.
 

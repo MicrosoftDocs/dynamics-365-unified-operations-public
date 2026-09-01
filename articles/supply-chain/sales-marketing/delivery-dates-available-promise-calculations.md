@@ -13,7 +13,7 @@ ms.search.form: SalesATP, SalesAvailableDlvDates, SalesCarrier
 
 # Order promising
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about order promising. Order promising helps you reliably promise delivery dates to your customers and gives you flexibility so that you can meet those dates.
 

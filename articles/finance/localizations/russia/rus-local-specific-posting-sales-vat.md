@@ -14,7 +14,7 @@ ms.search.validFrom: 2019-07-23
 
 # Local specific posting of sales VAT 
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure settings for posting value-added tax (VAT) payable transactions for Russia in Microsoft Dynamics 365 Finance.
 

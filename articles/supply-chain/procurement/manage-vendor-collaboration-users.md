@@ -13,7 +13,7 @@ ms.custom:
 
 # Manage vendor collaboration users
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to request the provisioning of new vendor collaboration users and how to add new vendor collaboration contacts.
 

@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Create customer and vendor records with an address in Peru
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create customer and vendor records that have an address in Peru in Microsoft Dynamics 365 Finance.
 

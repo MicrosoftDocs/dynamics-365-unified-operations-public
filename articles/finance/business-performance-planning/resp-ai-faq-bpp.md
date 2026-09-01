@@ -14,6 +14,8 @@ ms.collection: bap-ai-copilot
 
 # Responsible AI FAQ for generative help and guidance in Business performance planning
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 ## What is generative help and guidance?
 
 Generative help and guidance is a Microsoft Copilot feature in Business performance planning. It provides a conversational interface where users can ask Copilot questions about the app. This feature helps new users learn how to navigate the app. In addition, it helps experienced users stay up to date about new features.

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Modern receipt designer in Commerce headquarters
 description: Learn how to use the modern React-based receipt designer in Microsoft Dynamics 365 Commerce headquarters to create, edit, preview, save, and reuse receipt format designs.
 author: anush6121
@@ -13,7 +13,7 @@ ms.custom:
 
 # Modern receipt designer in Commerce headquarters
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 The modern receipt designer provides a React-based design experience for Commerce receipt formats directly from Commerce headquarters. It replaces the legacy **ClickOnce** designer launch experience with a browser-based designer that you can open from the **Receipt formats** page. The designer includes a visual canvas, template selection, reusable templates, localized field labels and preview data, custom receipt fields, validation, and preview support.
 

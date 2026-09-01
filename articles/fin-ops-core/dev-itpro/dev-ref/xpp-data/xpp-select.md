@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Select data
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The **select** statement fetches or manipulates data from the database.
 

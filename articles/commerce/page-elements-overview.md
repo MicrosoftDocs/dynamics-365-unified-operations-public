@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Page model glossary
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes the various elements that are used on Microsoft Dynamics 365 Commerce site pages.
 

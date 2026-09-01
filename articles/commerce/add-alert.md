@@ -14,7 +14,7 @@ ms.custom:
 
 # Promo banner module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article covers promo banner modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 

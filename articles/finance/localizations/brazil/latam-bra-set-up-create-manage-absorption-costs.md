@@ -14,7 +14,7 @@ ms.search.validFrom: 2017-12-31
 
 # Set up, create, and manage absorption costs 
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to set up, create, and manage absorption costs for Brazil with Microsoft Dynamics 365 Finance.
 

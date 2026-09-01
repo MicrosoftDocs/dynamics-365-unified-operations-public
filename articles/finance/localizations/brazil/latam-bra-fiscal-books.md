@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Brazil fiscal books overview
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article provides information about fiscal books. Fiscal books are one of three projects that make up the Public Digital Bookkeeping System (SPED). They help you consolidate fiscal and statutory books into electronic files to fulfill the requirements for SPED.
 

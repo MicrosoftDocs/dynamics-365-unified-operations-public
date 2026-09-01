@@ -16,7 +16,7 @@ ms.assetid: 3e42ccb5-b9d7-4a70-8db9-4206d10fd433
 
 # Use one payment to settle invoices that span multiple discount periods
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article shows how multiple invoices are paid when each invoice qualifies for a cash discount. The scenarios in this article highlight how the cash discounts that are taken vary, depending on when the payment is made.
 

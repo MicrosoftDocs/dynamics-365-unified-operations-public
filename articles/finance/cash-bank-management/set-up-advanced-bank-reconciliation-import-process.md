@@ -18,7 +18,7 @@ ms.assetid: 45dae275-ea45-4c7e-b38f-89297c7b5352
 
 # Set up the advanced bank reconciliation import process
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!NOTE]
 > This functionality will be deprecated September 2022, new users should use electronic reporting. For more information, see [Set up advanced bank reconciliation import by using Electronic reporting](../accounts-payable/import-bai2-er.md).

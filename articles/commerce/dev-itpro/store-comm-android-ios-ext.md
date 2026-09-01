@@ -14,7 +14,7 @@ ms.custom:
 
 # Store Commerce Hardware station extensibility for Android, iOS, and macOS devices
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to build Microsoft Dynamics 365 Commerce Store Commerce apps for Android, iOS, and macOS with Hardware station extensibility.
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Calculate fixed asset depreciation across legal entities
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Fixed asset depreciation can be run across legal entities in a single step. This procedure shows you to how set up and run the process for multiple legal entities. It uses the accountant role and demo data for the USMF legal entity.
 

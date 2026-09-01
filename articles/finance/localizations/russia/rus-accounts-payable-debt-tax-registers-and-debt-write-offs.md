@@ -13,7 +13,7 @@ ms.search.region: Russia
 
 # Accounts payable debt tax registers and debt write-offs
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with accounts payable debt tax registers and debt write-offs for Russia in Microsoft Dynamics 365 Finance.
 

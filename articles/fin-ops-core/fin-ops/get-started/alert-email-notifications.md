@@ -17,7 +17,7 @@ ms.custom:
 
 # Client alert notifications by email
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can define custom alert rules that monitor filtered views of data and automatically send email notifications when predefined events occur. The option to send email notifications is available for all supported alert types, and you can also turn on email notifications for existing alert rules.
 

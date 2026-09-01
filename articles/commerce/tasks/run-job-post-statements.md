@@ -14,7 +14,7 @@ ms.custom:
 ---
 # Configure and run job to post statements
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Learn how to configure and run a recurring batch job to post statements for a selected store or group of stores in Microsoft Dynamics 365 Commerce.
 

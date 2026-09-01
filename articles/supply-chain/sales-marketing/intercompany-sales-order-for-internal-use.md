@@ -11,7 +11,7 @@ ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 
 # Create an intercompany sales order for internal use
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Typically, an intercompany sales order is created automatically, based on an intercompany purchase order. You can also manually create an intercompany sales order, which then generates an intercompany purchase order in the intercompany customer's legal entity.
 

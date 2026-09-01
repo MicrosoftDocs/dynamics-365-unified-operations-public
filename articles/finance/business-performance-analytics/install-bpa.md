@@ -12,6 +12,8 @@ audience: Application User
 
 # Install Business performance analytics
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article describes how to install Business performance analytics.
 
 > [!Important]

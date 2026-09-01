@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 10.0.45
 
 # Electronic invoicing for Singapore
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article helps you get started with electronic invoicing for Singapore. Set up the system to generate, submit, and receive electronic invoices in the Singaporean extension of the [PEPPOL International (PINT)](https://www.peppolguide.sg/billing/) format in Microsoft Dynamics 365 Finance by using the last mile connector.
 

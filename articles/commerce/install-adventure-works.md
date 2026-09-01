@@ -14,7 +14,7 @@ ms.custom:
 
 # Install the Adventure Works theme
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to install the Adventure Works theme in Microsoft Dynamics 365 Commerce.
 

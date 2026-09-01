@@ -14,7 +14,7 @@ ms.search.validFrom: 2019-03-01
 
 # Russian address formats
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with Russian address formats and import data from the Russian Federation Information Address System (FIAS) with Microsoft Dynamics 365 Finance.
 

@@ -13,7 +13,7 @@ ms.search.region: Italy
 
 # Quarterly VAT communication report
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 According to Legislative Decree no. 127/2015, article 1, and Decree Law 78/2010, article 21, **Periodic VAT payment communication** (**Comunicazione IVA periodica con prospetto di liquidazione, LIPE**) information must be transmitted electronically in XML format to the Italian tax authorities.
 

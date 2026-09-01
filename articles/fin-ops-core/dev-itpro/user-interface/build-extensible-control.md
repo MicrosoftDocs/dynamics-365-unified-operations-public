@@ -18,7 +18,7 @@ ms.assetid: ccc9c341-a233-4bb0-93e7-399d19fdea18
 
 # Build extensible controls
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to create new application controls that have a property sheet in Visual Studio and have server-side business logic.
 

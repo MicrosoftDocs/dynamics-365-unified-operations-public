@@ -14,7 +14,7 @@ ms.search.validFrom: 2019-05-01
 
 # Assessed tax declaration (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and use assessed tax declarations for Russia in Microsoft Dynamics 365 Finance.
 

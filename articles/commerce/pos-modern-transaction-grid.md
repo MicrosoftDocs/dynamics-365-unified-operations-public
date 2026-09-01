@@ -1,4 +1,4 @@
-﻿---
+---
 title: Modernized transaction grid in Store Commerce
 description: Learn about the modernized transaction grid in Store Commerce POS, including inline line actions, contextual discount visibility, loyalty prompts, and notifications.
 author: anush6121
@@ -12,7 +12,7 @@ ms.custom:
 
 # Modernized transaction grid in Store Commerce
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 **Applies to:** Dynamics 365 Commerce version 10.0.42 and later
 

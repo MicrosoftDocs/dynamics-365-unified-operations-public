@@ -14,7 +14,7 @@ ms.custom:
 
 # Cash out gift card balance for a retail customer
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains the cash out gift card feature of the Microsoft Dynamics 365 Commerce Store Commerce app.
 

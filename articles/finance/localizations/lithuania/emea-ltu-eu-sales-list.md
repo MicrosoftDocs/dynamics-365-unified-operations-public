@@ -12,6 +12,8 @@ ms.reviewer: johnmichalak
 
 # EU sales list for Lithuania
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article explains how to set up the European Union (EU) sales list report for Lithuania in Microsoft Dynamics 365 Finance.
 
 The Lithuanian EU sales list report contains information about the sale of goods and services for reporting in XML format. The Lithuanian EU sales list report includes the following fields:

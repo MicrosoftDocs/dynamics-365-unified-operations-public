@@ -13,7 +13,7 @@ ms.custom:
 
 # Set up vendor accounts
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the types of information that you must specify when you create a new vendor account.
 

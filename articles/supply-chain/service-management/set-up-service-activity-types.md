@@ -14,7 +14,7 @@ ms.custom:
 
 # Set up service activity types
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 1. Do one of the following steps:
     - Go to **Sales and marketing** > **Setup** > **Activities** > **Activity types**.

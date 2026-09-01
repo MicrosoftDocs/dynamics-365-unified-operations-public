@@ -11,7 +11,7 @@ ms.custom: bap-template
 
 # Create customer and vendor records with an address in Bolivia
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The Bolivian customer and vendor configuration contains the fiscal information that the fiscal authorities require. It also contains a reference to the document classes that can be used in transactions with customers and vendors.
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 8.1
 
 # Configure ledgers
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about how to configure ledgers for each legal entity. It includes information about how to select currencies, fiscal calendars, the chart of accounts, and the account structures that you use with each legal entity.
 

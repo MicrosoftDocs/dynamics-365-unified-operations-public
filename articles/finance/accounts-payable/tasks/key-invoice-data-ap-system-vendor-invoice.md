@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Key invoice data in accounts payable using a vendor invoice
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This task guide creates a vendor invoice from a purchase order and view the results of matching the purchase order, receipt, and invoice (3 way matching).
 

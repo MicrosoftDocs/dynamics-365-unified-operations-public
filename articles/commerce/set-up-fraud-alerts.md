@@ -16,7 +16,7 @@ ms.custom:
 
 # Set up and work with call center fraud alerts
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to set up criteria and rules to put potentially fraudulent sales orders on hold for further review. Use the fraud check feature to determine the validity of the information in a sales order. If the information in the sales order appears to be questionable, based on an organization's fraud criteria and rules, the order can be put on hold for further review. In this case, the order can't be released to the warehouse for further processing until the hold is cleared.
 

@@ -15,7 +15,7 @@ ms.search.validFrom: 2020-01-06
 
 # Note integration
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 During business processes, Microsoft Dynamics 365 users often gather information about their customers. They record this information as activities and notes. This article describes the integration of note data in dual-write.
 

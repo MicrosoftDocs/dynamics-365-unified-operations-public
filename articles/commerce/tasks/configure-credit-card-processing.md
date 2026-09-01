@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Configure credit card processing
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to view the list of payment providers and how to configure a payment account for accounts receivable in Microsoft Dynamics 365 Commerce.
 

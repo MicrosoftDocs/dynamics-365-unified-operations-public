@@ -13,7 +13,7 @@ ms.custom:
 
 # Onboard the Asset Management mobile app
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 [!INCLUDE [asset-management-sample-app](../../includes/asset-management-sample-app.md)]
 

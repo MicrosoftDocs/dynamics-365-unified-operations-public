@@ -16,6 +16,8 @@ ms.dyn365.ops.version: 10.0.14
 
 # Financial reporting FAQ
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article provides answers to frequently asked questions about Financial reporting.
 
 ## How do I restrict access to a report by using tree security?

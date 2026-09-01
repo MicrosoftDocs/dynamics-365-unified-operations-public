@@ -12,7 +12,7 @@ ms.search.form:
 
 # Wave allocation
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Wave processing can be time consuming, and most of the processing time is spent in the allocation step and in the work creation step.
 

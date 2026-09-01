@@ -15,7 +15,7 @@ ms.custom:
 
 # MY-00011 03 Generate Customer Credit note for Project sales
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to create and print a project credit note for GST in Malaysia with Microsoft Dynamics 365 Finance.
 

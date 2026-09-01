@@ -18,7 +18,7 @@ ms.assetid: 281c7ea6-4dfd-4d1f-994f-c361ee299dbe
 
 # View journal entries and transactions
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains the various ways that you can view journal entries and transactions. 
 

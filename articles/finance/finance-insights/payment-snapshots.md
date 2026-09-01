@@ -17,7 +17,7 @@ ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 
 # Snapshots overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Snapshots let organizations edit and save information about their cash position and cash forecasts at a point in time. You can compare the snapshot with actual financials, examine the variance, and use that information to improve cash flow forecasts over time. More specifically, snapshots can be used in the following ways:
 

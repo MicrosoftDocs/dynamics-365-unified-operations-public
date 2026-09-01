@@ -17,7 +17,7 @@ ms.custom:
 
 # Authentication in Dynamics 365 Finance + Operations (on-premises) environments
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains authentication in Dynamics 365 Finance + Operations (on-premises). It also provides background information about how the process works so that if you encounter issues with authentication, you can work to resolve them.
 

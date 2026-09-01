@@ -16,7 +16,7 @@ ms.assetid: 612f2988-b2b9-420d-9825-40b99dc0e204
 
 # Cost controlling mobile workspace
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 [!INCLUDE [lcs-freeze-banner](../../includes/lcs-freeze-banner.md)]
 

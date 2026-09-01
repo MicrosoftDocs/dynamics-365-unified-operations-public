@@ -13,7 +13,7 @@ ms.search.validFrom: 2024-03-20
 
 # Batch parameter versioning
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In finance and operations apps, use batch processing to run tasks asynchronously in the background. Batch jobs can range from simple tasks such as data import to complex calculations or integrations.
 

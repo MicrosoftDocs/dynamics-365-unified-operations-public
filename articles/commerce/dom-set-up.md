@@ -14,7 +14,7 @@ ms.custom:
 
 # Set up DOM
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to set up distributed order management (DOM) functionality in Microsoft Dynamics 365 Commerce.
 

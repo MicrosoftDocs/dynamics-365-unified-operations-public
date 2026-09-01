@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Dimension Entry Control subpattern
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about the Dimension Entry Control subpattern. Use this subpattern when you have a group or tab page that uses the Dimension Entry control (DEC).
 

@@ -17,7 +17,7 @@ ms.assetid: 1e3a39d3-f9b3-4073-9730-c96a607243e2
 
 # Positive pay overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about positive pay, which is used to generate an electronic list of checks that you can present to a bank.
 

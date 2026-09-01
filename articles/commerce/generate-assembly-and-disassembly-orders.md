@@ -11,7 +11,7 @@ ms.search.validFrom: 2023-10-23
 ---
 # Generate assembly and disassembly orders
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to generate assembly and disassembly orders for retail product kits in Microsoft Dynamics 365 Commerce.
 

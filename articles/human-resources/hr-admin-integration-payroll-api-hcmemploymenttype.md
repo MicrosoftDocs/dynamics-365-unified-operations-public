@@ -23,6 +23,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Payroll - Employment type option set
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 This article describes the Employment type option set for Dynamics 365 Human Resources.

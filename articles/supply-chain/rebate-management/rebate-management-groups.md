@@ -13,7 +13,7 @@ ms.custom:
 
 # Rebate management groups
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Rebate management calculations can be driven by groups. Rebate management groups can be created for customers, vendors, and items. They can be attached to a master record.
 

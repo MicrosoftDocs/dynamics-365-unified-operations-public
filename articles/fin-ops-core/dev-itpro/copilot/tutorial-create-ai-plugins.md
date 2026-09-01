@@ -13,7 +13,7 @@ ms.date: 10/01/2024
 
 # Tutorial: Create AI tools with finance and operations business logic
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Finance and operations apps let you create AI tools to extend the capabilities of copilot experiences in Microsoft Copilot Studio by using business logic in finance and operations code. These tools are headless operations that don't require specific application context in the finance and operations client. They can be added to Copilot for finance and operations apps to extend the in-app chat experience, or they can be added to other custom copilots. Learn more in [Create AI tools with finance and operations business logic](copilot-ai-plugins.md).
 

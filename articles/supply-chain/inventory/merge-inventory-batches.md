@@ -13,7 +13,7 @@ ms.custom:
 
 # Merge inventory batches
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about how to consolidate two or more inventory batches into a merged batch.
 

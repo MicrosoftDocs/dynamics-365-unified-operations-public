@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.16
 
 # Process collection letters example
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article shows an example that demonstrates the process of creating, printing, and posting collection letters. The example is based on the **Ignore payments and credit memos when calculating collection letter code** option in Credit and collections. It uses data in the USMF demo company and a new customer, US-045.
 

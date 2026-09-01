@@ -14,7 +14,7 @@ ms.search.validFrom: 2016-06-30
 
 # Set up an invoice declaration for vendors
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up an Icelandic invoice declaration in Microsoft Dynamics 365 Finance.
 

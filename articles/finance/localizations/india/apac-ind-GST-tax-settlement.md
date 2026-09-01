@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Rule-based tax settlement
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 ## Set up rule-based tax settlement
 

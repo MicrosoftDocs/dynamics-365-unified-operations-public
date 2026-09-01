@@ -15,7 +15,7 @@ ms.assetid: 0bbe7453-624f-4551-a1d0-842484067311
 
 # Cross-company data sharing overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Cross-company data sharing enables you to share company-specific master, reference, and setup data across companies within a finance and operations deployment.
 

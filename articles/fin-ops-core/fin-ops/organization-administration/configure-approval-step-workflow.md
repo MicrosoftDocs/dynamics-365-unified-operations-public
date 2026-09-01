@@ -16,7 +16,7 @@ ms.assetid: 8b478e3d-d6b4-403b-aae0-f639a71ca36c
 
 # Configure approval steps in a workflow
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to configure the properties of an approval step.
 

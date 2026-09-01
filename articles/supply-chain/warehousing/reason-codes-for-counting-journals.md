@@ -12,7 +12,7 @@ ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 
 # Reason codes for inventory counting
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Reason codes help you analyze the results of a counting process and any discrepancies that occur during that process. You can specify the reason for doing the count, such as a broken pallet or a stock adjustment that is based on inventory samples. At the same time, use the adjustment functionality to post the value of on-hand inventory adjustments to the appropriate offset account, based on the reason for each inventory adjustment.
 

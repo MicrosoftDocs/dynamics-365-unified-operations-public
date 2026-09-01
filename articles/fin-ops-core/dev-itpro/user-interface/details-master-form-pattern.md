@@ -18,7 +18,7 @@ ms.custom:
 
 # Details Master form pattern
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides information about the Details Master form pattern. A details form is the primary method for entering data.
 

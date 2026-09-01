@@ -15,6 +15,8 @@ ms.dyn365.ops.version:
 
 # Copy visual
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 This article describes how to use the **Copy** visual in the Business performance planning application. To fully use this application, you must also install Microsoft Power BI visuals. For information about how to install Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals).
 
 The **Copy** visual lets you effortlessly transfer baseline data, including actuals or forecasts, to new planning or forecasting scenarios. The ability to select the level of detail during the copy process allows for precise scenario creation. For example, you can easily copy data from the previous year's actuals and use it as the foundation for a new plan. You can make a complete copy of the data, or you can apply dimensional filters to copy data only for a specific department or product, for example.

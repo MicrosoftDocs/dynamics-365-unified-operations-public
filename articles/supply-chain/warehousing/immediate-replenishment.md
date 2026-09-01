@@ -12,7 +12,7 @@ ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 
 # Immediate replenishment
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Immediate replenishment lets you replenish inventory immediately after a location directive line fails to allocate inventory. The replenishment is based on a single line in the setup of the location directive. If inventory isn't on hand in the unit of measure that is specified by that line, replenishment of that unit of measure occurs immediately.
 

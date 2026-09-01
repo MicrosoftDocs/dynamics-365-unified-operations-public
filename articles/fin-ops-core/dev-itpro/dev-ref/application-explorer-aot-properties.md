@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Application Explorer properties
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the properties that appear in the **Properties** window of Microsoft Visual Studio for items in Application Explorer.
 

@@ -12,7 +12,7 @@ ms.search.form: EcoResCategoryHierarchyListPage, EcoResCategoryHierarchyCreate, 
 
 # Classify a product using category hierarchies
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to classify a product using category hierarchies. Use category hierarchies to classify products for export, procurement, sales, or other purposes. Typically, a product manager performs this task. The example uses product number M0009 in demo data company USMF.
 

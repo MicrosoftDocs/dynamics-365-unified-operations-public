@@ -13,7 +13,7 @@ ms.custom:
 
 # Rebate statuses
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Rebate statuses help you to track the status of each Rebate management deal. You can also use them for reporting and inquiry purposes. You can set up and name as many rebate status values as you require to support your business process.
 

@@ -27,6 +27,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Request a leave of absence
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 In Dynamics 365 Human Resources, you can submit a request for a leave of absence and check the status of your leave requests.

@@ -14,7 +14,7 @@ ms.custom:
 
 # Remove Cloud Scale Unit extensions
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to remove extensions from the Cloud Scale Unit (CSU). It applies to version 10.0.16 or later of the software development kit.
 

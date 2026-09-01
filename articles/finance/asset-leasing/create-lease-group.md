@@ -16,7 +16,7 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 
 # Create a lease group
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to set up lease groups. You need lease groups to create new leases. Each lease group associates with lease books. Lease books determine the default books that the system must create for each lease. You can assign specific accounts to a lease group on the **Lease posting parameters** page.
 

@@ -16,7 +16,7 @@ ms.assetid: 301bd80e-f8b1-4f12-8194-e6d7de736084
 
 # Balanced journals for interunit accounting
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article shows how a journal is automatically balanced when a balancing financial dimension is selected on the Ledger page.
 

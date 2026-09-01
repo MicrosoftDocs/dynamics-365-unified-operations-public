@@ -16,7 +16,7 @@ ms.custom:
 
 # Electronic invoicing in Saudi Arabia 
 
-[!INCLUDE[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to get started with phase two of electronic invoicing for Saudi Arabia in Microsoft Dynamics 365 Finance.
 

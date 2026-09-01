@@ -12,7 +12,7 @@ ms.custom:
 ---
 # Associate a Dynamics 365 Commerce site with an online channel
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article explains how to bind your Microsoft Dynamics 365 Commerce site to one or more online stores.
 

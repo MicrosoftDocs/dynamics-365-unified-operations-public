@@ -19,7 +19,7 @@ ms.custom:
 
 # Data upgrade process for AX 2012 to Dynamics 365 Finance + Operations (on-premises)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
 > Upgrade currently supports only Dynamics AX 2012 R2 or Dynamics AX 2012 R3. For each release, update to the latest available cumulative update before upgrading to latest finance and operations application release.

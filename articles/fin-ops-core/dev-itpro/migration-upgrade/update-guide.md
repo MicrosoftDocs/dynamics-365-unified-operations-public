@@ -15,6 +15,8 @@ ms.dyn365.ops.version: Platform update 10
 
 # Manage finance and operations updates and your custom code lifecycle
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article describes application lifecycle use cases for finance and operations implementations. It's focused on the following scenarios:
 
 + Managing your source code development branches

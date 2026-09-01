@@ -1,4 +1,4 @@
-﻿---
+---
 title: Released products V2 entity
 description: Learn about the Released products V2 data entity in finance and operations migration projects with Dynamics 365.
 author: edupont04
@@ -11,6 +11,8 @@ ms.collection: FastTrack
 ---
 
 # Released products V2 entity
+
+[!INCLUDE [banner](../../../includes/banner.md)]
 
 The **Released products V2** entity imports and updates released distinct products and product masters. It requires that the shared product has already been created.
 

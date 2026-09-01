@@ -16,7 +16,7 @@ ms.assetid: 5c97ab81-632b-4043-a940-674bcb496c80
 
 # Letters of credit and import collections
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides general information about letters of credit and import collections. Both types of bank document are often used for the purchase and sale of goods across international borders.
 

@@ -15,7 +15,7 @@ ms.custom:
 
 # Service level agreements overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A service level agreement (SLA) is an agreement between a service company and a service customer. In a SLA, the customer agrees to a minimum response time based on when the service company records the issue and when the issue is resolved.
 

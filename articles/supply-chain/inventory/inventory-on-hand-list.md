@@ -13,7 +13,7 @@ ms.search.form: InventOnhandItem, InventOnHandItemListPage, WHSOnHand
 
 # Inventory on-hand list
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to use the **On-hand list** page to inspect on-hand inventory details. Use this page to understand where the goods are, what's available, what's expected, and what's reserved for use.
 

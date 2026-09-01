@@ -15,7 +15,7 @@ ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
 
 # VAT declaration for Lithuania (FR0600)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and generate a value-added tax (VAT) declaration for Lithuania in the XML format (FR0600), and how to preview it in Microsoft Excel.
 

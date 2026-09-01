@@ -16,7 +16,7 @@ ms.assetid: dc44dea2-22ce-401e-98b9-d289e0e2825b
 
 # Download electronic reporting configurations from Lifecycle Services
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to download the newest version of [Electronic reporting (ER) configurations](general-electronic-reporting.md#Configuration) from the [Shared asset library](../lifecycle-services/asset-library.md) in Microsoft Dynamics Lifecycle Services.
 

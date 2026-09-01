@@ -13,7 +13,7 @@ ms.custom:
 
 # Less than truckload (LTL) classes
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 A less than truckload (LTL) class is a freight shipping class that classifies items for shipment. Generally, every type of product or commodity has a National Motor Freight Classification (NMFC) code that corresponds to a specific freight class number for LTL shipments. LTL freight classes represent categories of items, whereas NMFC codes relate to specific commodities in each of the 18 freight classes.
 

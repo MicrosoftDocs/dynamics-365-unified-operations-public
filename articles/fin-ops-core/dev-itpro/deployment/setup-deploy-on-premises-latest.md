@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Platform update 56
 
 # Set up and deploy on-premises environments (Application 10.0.32 and later)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Application version 10.0.32 later. Application version 10.0.32 includes platform update 56.
 

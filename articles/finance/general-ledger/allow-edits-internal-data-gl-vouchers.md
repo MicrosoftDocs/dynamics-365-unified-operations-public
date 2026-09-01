@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.29
 
 # Allow edits to internal data on general ledger vouchers
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 When you post accounting entries to the general ledger, use the **Description** field to store internal notes or documentation. If the information is incorrect, it can cause confusion and make period-end closing more difficult. This feature helps the accounting manager or accounting supervisor fix mistakes by editing the **Description** field on posted vouchers in the general ledger.
 

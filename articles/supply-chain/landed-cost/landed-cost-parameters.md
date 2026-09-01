@@ -13,7 +13,7 @@ ms.search.form: ITMParameters
 
 # Landed cost parameters setup
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You use the **Landed cost parameters** page to set up general information and configuration settings used across the **Landed cost** module for posting, status updates, number sequences, and behavior. The parameter setup is shared across legal entities, and an administrator can modify it.
 

@@ -13,7 +13,7 @@ ms.search.form: DataValidationWorkspace
 
 # Data validation checklist workspace
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 
 This article provides an overview of the **Data validation checklist workspace** and the associated configuration.

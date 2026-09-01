@@ -16,7 +16,7 @@ ms.assetid: 4aa0a2da-be45-4dc3-97bf-b84bcf83144c
 
 # Case management overview
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 By planning, tracking, and analyzing cases, you can develop efficient resolutions that can be used for similar issues. For example, when customer service representatives or Human Resources generalists create cases, they can find information in knowledge articles to help them work more efficiently. The following examples show how cases can be used for different situations in an organization.
 

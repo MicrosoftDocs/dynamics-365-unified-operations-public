@@ -13,7 +13,7 @@ ms.custom:
 
 # Buffer profile and levels
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 After you identify your decoupling points (key items that you strategically keep in stock), decide how much stock (buffer) to keep at each one. This task is the second step of Demand Driven Materials Resource Planning (DDMRP).
 

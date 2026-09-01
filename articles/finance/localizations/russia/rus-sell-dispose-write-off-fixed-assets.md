@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-10-28
 
 # Sell, dispose, and write off assets (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to sell, dispose, and write off assets for Russia in Microsoft Dynamics 365 Finance.
 

@@ -10,7 +10,7 @@ ms.custom: bap-template
 
 # Set up and create fiscal notes for unprocessed invoices in Brazil tax reform
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to configure Brazilian parameters and create a fiscal document for an unprocessed invoice in Brazil tax reform in Dynamics 365 Finance.
 

@@ -14,7 +14,7 @@ ms.custom:
 
 # Compliance overview
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides an overview of the compliance guidance that Microsoft Dynamics 365 Commerce offers to help you make your company's sites compliant. Compliance is an important factor for all businesses because it helps their user base connect with their site content. By staying compliant, you can also help protect your company from expensive legal action or hefty fines.
 

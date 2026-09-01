@@ -16,7 +16,7 @@ ms.assetid: 7815bddd-c4f4-4bc3-a29b-315458065374
 
 # Document printing overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can print documents by using either a local printer or a network-connected device. This article provides an overview of how documents are printed.
 

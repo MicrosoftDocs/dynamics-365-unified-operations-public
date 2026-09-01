@@ -12,7 +12,7 @@ ms.search.form: EntAssetObjectLoanSend, EntAssetObjectLoanListPage, EntAssetObje
 
 # Asset loans
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
  
 

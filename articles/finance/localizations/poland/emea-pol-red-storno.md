@@ -15,7 +15,7 @@ ms.search.validFrom: 2016-05-31
 
 # Activate storno accounting for Poland
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to activate and set up storno accounting for Poland in Microsoft Dynamics 365 Finance.
 

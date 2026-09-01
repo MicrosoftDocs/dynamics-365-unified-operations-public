@@ -12,7 +12,7 @@ ms.search.form: WHSWaveTableListPage, WHSWaveStepCode, WHSReplenishmentTemplates
 
 # Wave step codes
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Wave step codes are codes that users can set up and use to link specific instances of wave methods to a corresponding template. The templates include templates for replenishment, containerization, label printing, load building, and sorting.
 

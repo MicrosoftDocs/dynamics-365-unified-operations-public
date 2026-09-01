@@ -16,7 +16,7 @@ ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 
 # EMPTYLIST ER function
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The `EMPTYLIST` function returns an empty *Record list* value by using the specified list as a source for the list structure.
 

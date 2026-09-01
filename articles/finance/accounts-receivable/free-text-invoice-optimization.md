@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Free text invoice optimization
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 As of Microsoft Dynamics 365 Finance version 10.0.41, the performance of free text invoices can be optimized. This article describes changes that can help speed up the performance of the free text invoice page in Dynamics 365 Finance.
 

@@ -17,7 +17,7 @@ ms.custom:
 
 # Post vouchers from other modules, like sales invoices
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes how to post Chinese vouchers from the general ledger, inventory movement journals, sales invoices, and purchase invoices for China in Microsoft Dynamics 365 Finance.
 

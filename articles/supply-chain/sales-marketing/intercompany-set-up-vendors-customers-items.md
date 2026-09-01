@@ -13,7 +13,7 @@ ms.custom:
 
 # Set up vendors, customers, and items for intercompany trade
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 To prepare your organization for intercompany trade, you must define the vendors and customers with whom you will be trading internally. You must then associate these vendors and customers with the items that you'll be purchasing or selling.
 

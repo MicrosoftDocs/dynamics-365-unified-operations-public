@@ -13,7 +13,7 @@ ms.custom:
 
 # Reservations in Warehouse management
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the reservation functionality in Warehouse management and provides information about how it's implemented.
 

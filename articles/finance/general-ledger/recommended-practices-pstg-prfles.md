@@ -17,6 +17,8 @@ ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 
 # Recommended practices for posting profiles
 
+[!INCLUDE [banner](../../includes/banner.md)]
+
 Follow these recommended practices when configuring posting profiles throughout the system. This article describes different scenarios and the corresponding recommended practices.
 
 ## Set the Do not allow manual entry flag

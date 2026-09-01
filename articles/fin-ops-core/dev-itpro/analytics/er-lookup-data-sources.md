@@ -17,7 +17,7 @@ ms.assetid:
 
 # Configure Lookup data sources to use ER application-specific parameters
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The [Electronic reporting (ER)](general-electronic-reporting.md) application-specific parameters feature lets you configure data filtering in an ER format so that it's based on a set of abstract rules. You can configure this set of rules to use the data source of the **Lookup** type that is available in an ER format. Use the user interface (UI) that is automatically generated based on the settings of the **Lookup** data source of the corresponding ER format and the current legal entity data to specify real rules beyond the ER components designers. Eventually, the ER format's **Lookup** data source accesses the specified rules when this ER format is executed.
 

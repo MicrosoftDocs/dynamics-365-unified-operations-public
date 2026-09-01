@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Platform update 17
 
 # AX 2009 migration – Generate maps
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Before you migrate your data from Microsoft Dynamics AX 2009 to finance and operations, align your source data with your target environment. This article explains how to generate source-to-target mappings.
 

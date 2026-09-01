@@ -13,7 +13,7 @@ ms.custom:
 
 # Configure Inventory Visibility data sources
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article offers a comprehensive overview of data source configuration for Inventory Visibility. It covers the essential steps for setting up and optimizing data source configurations to enhance your inventory management processes.
 

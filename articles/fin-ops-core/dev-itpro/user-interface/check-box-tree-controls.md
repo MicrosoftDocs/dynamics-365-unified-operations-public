@@ -17,7 +17,7 @@ ms.custom:
 
 # Check box support in tree controls
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article is intended as a primer for using check box controls in the tree control. It's not a general “how to” for using tree controls.
 

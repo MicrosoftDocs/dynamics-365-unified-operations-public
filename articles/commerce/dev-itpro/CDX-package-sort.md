@@ -14,7 +14,7 @@ ms.custom:
 
 # Sort Commerce Data Exchange packages by primary index
 
-[!include [banner](../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../finance/includes/banner.md)]
 
 This article provides an overview of the Microsoft Dynamics 365 Commerce feature to sort Commerce Data Exchange (CDX) packages by a primary index per package.
 

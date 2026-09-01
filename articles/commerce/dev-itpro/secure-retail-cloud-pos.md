@@ -15,7 +15,7 @@ ms.custom:
 
 # Security best practices for Store Commerce for web in shared environments
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Store Commerce for web is a web application that runs in the context of a browser. This article provides recommendations that can help secure Store Commerce for web in a shared environment.
 

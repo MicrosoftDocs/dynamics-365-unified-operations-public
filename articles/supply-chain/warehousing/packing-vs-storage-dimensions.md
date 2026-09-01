@@ -13,7 +13,7 @@ ms.search.form: EcoResPhysicalProductDimensions, WHSPhysDimUOM
 
 # Set different dimensions for packing and storage
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Some items are packed or stored in such a way that you need to track physical dimensions differently for each of several different processes. The *Packaging product dimensions* feature lets you set up one or several types of dimensions for each product. Each dimension type provides a set of physical measurements (weight, width, depth, and height), and establishes the process where those physical measurement values apply. When you enable this feature, your system supports the following types of dimensions:
 

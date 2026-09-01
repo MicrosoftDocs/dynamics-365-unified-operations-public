@@ -16,7 +16,7 @@ ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
 
 # Correct calculation of deferral schedules and unbilled revenue during subscription termination
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 In version 10.0.44 of Microsoft Dynamics 365 Finance, the termination adjustment is calculated by using the exchange rate that is effective on the termination date.
 

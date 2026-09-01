@@ -1,4 +1,4 @@
-﻿---
+---
 title: Fiscal printer integration sample for Italy
 description: This article provides an overview of the fiscal integration sample for Italy in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Fiscal printer integration sample for Italy
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 [!include [banner](../../../finance/includes/preview-banner.md)]
 
 This article provides an overview of the fiscal integration sample for Italy in Microsoft Dynamics 365 Commerce.

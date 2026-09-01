@@ -15,7 +15,7 @@ ms.assetid: 45dbba14-aba6-4571-be0d-5d1aba3515d9
 
 # Organizational training Power BI content
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the finance and operations - organizational training Power BI content.
 

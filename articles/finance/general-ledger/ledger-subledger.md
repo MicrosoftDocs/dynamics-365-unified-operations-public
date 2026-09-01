@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 8.1
 
 # Ledger and subledger accounting overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## What is a ledger?
 

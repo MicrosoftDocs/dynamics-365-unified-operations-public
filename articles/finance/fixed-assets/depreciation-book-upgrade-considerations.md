@@ -18,7 +18,7 @@ ms.assetid: cf434099-36f9-4b0f-a7c8-bed091e34f39
 
 # Depreciation book upgrade overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the current book functionality in Fixed assets. This functionality is based on the value model functionality that was available in earlier versions, but it also includes all the functionality that was previously provided only in depreciation books. The value model functionality and depreciation book functionality are now merged into a single concept known as a book. Book functionality lets you use a single set of pages, inquiries, and reports for all your organization's fixed asset processes. This article provides some things that you should consider before you upgrade.
 

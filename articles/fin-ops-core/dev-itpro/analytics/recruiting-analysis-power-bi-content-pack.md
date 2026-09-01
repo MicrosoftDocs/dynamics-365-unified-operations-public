@@ -16,7 +16,7 @@ ms.assetid: 38e6827b-0819-473c-bc47-821a1ec482b8
 
 # Recruiting Power BI content
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the **Recruiting** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that build the content.
 

@@ -13,6 +13,8 @@ ms.search.region: Global for most topics. Set Country/Region name for localizati
 
 # Cloud-hosted environments can't use business events or virtual entities and receive a 400 error
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 When you set up business events or virtual entities in a cloud-hosted environment, you might receive the following error message:
 
 > Response Status code does not indicate success : 400 (\{"error":"invalid\_client","error\_description";"Expected aud `https://securityservice.operations365.dynamics.com` but found."\})

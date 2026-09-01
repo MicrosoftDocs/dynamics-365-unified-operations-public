@@ -13,7 +13,7 @@ ms.custom:
 ---
 # Image component
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to use the Image component in the online software development kit (SDK) to embed images into a module in Microsoft Dynamics 365 Commerce.
 

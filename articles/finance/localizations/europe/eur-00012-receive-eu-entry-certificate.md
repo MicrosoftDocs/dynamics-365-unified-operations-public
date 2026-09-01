@@ -15,7 +15,7 @@ ms.search.form: CustEntryCertificateJour_W
 
 # EUR-00012 Receive an EU entry certificate
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to register an EU entry certificate that a third party issues and your customer sends.
 

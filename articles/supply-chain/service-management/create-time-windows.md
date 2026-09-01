@@ -13,7 +13,7 @@ ms.custom:
 
 # Create time windows
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can use time windows to optimize the scheduling of service order lines.
 

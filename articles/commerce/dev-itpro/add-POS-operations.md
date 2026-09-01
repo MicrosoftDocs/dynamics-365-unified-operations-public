@@ -14,7 +14,7 @@ ms.custom:
 
 # Add POS operations to POS layouts by using Button grid designer
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to create a new point of sale (POS) operation and add it to the POS layout by using Button grid designer. This article applies to the following applications where Platform update 8 and the Application update 4 hotfix are installed:
 

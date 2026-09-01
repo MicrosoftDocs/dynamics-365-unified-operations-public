@@ -18,7 +18,7 @@ ms.service: dynamics-365-op
 
 # Installation steps for Retail channel components in an on-premises environment
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article covers the installation steps for Commerce channel components in an on-premises environment.
 

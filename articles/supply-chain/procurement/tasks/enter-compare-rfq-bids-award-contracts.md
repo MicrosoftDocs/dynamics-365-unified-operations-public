@@ -13,7 +13,7 @@ ms.custom:
 
 # Enter and compare RFQ bids and award contracts
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to enter replies to a request for quotation (RFQ), score and compare bids, and then award the contract to one of the vendors. You can use this procedure in the **USMF** demo data company.
 

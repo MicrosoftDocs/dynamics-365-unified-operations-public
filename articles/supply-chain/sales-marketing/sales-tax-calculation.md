@@ -12,7 +12,7 @@ ms.search.form:
 
 # Calculate sales totals when prices include sales tax
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides example scenarios that show how sales totals and discounts are calculated when prices include and exclude sales tax.
 

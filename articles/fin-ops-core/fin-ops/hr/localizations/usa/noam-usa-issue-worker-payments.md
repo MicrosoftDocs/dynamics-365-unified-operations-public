@@ -16,7 +16,7 @@ ms.assetid: 64c9c810-23ff-4af6-a282-a4db4c60c0d5
 
 # Issue worker payments
 
-[!include [banner](../../../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../../../finance/includes/banner.md)]
 
 This article explains how to submit pay statements, generate checks or electronic payments, generate a positive pay file for payroll, and post the payment journal.
 

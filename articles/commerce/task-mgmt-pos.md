@@ -14,7 +14,7 @@ ms.custom:
 
 # Task management in POS
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes task management in Microsoft Dynamics 365 Commerce point of sale (POS).
 

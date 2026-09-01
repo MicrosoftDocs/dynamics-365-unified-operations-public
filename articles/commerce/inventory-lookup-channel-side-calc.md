@@ -13,7 +13,7 @@ ms.custom:
 ---
 # POS inventory lookup with channel-side calculation
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how the point of sale (POS) inventory lookup operation works with channel-side inventory calculation in Microsoft Dynamics 365 Commerce.
 

@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 8.0.0
 
 # Create exchange rate providers in finance and operations version 8.0
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the steps that are required in order to set up an exchange rate provider in Microsoft Dynamics 365 Finance version 8.0 (April 2018). For the purpose of illustration, the OANDA exchange rate service is used throughout this article.
 

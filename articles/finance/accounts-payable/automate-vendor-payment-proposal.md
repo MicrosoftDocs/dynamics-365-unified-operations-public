@@ -15,7 +15,7 @@ ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
 
 # Automate vendor payment proposals
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Organizations that pay vendors on a recurring schedule can now automate the process of generating vendor payment proposals. Vendor payment proposal automations define the following details:
 

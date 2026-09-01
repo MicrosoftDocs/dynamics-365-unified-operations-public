@@ -18,7 +18,7 @@ ms.service: dynamics-365-op
 ---
 # On-premises deployment home page
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can deploy Dynamics 365 Finance + Operations (on-premises). When you choose an on-premises deployment type, the system requirements, hardware sizing, and functionality differ from a cloud deployment. This article provides links to content that contains information specific to on-premises deployments.
 

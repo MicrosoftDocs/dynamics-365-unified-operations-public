@@ -16,7 +16,7 @@ ms.assetid: 999b43b2-f149-4145-9d85-e2a62cd8da1e
 
 # Fleet Management sample application
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the Fleet Management sample application.
 

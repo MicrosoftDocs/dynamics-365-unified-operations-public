@@ -13,7 +13,7 @@ ms.search.form: SMAServiceOrderTable
 
 # View the start time and duration of a service order
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can view when the work on the service order was started and when the service order is going to be completed.
 

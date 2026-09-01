@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Create exchange rate providers
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the steps to set up an exchange rate provider. For illustration, the article uses the OANDA exchange rate service. By following the steps in this article, you create a functional exchange rate provider. The code is production code. You can find the source in the **ExchangeRateProviderOanda** class. You can reference this class as you read through this article. To request an OANDA test account and receive information about the OANDA exchange rate service, see [OANDA Exchange Rates API](https://developer.oanda.com/exchange-rates-api/).
 

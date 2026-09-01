@@ -16,7 +16,7 @@ ms.assetid: 3e49f8eb-d9a8-418c-a73d-687da4ca0c96
 
 # Create shareable, secure URLs (deep links)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Learn how to create shareable, secure URLs to forms and records.
 

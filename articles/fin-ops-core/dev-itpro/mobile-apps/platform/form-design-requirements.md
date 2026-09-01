@@ -15,7 +15,7 @@ ms.custom:
 
 # Form design requirements
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 [!include [mobile app deprecated](../../includes/mobile-app-deprecation-banner.md)]
 
 This section provides guidelines for building forms that work well with the mobile app.

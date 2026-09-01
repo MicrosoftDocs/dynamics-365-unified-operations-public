@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 10.0.48
 
 # What's new or changed in Dynamics 365 Commerce 10.0.48 (June 2026)
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article lists features that are new or changed in Microsoft Dynamics 365 Commerce preview version 10.0.48. This version has a build number of 10.0.2645 and is available on the following schedule:
 

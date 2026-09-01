@@ -17,7 +17,7 @@ ms.service: dynamics-365-op
 
 # Hardware sizing requirements for on-premises environments
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 Before you begin the hardware and infrastructure sizing process for an on-premises environment, review the [System requirements for cloud deployments](system-requirements.md) and [Setup and deployment instructions](../deployment/setup-deploy-on-premises-environments.md) to understand the underlying infrastructure.
 

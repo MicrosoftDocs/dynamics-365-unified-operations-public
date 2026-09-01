@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Manage device based user access to finance and operations apps
 
-[!INCLUDE[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 With [improved user license management and validation](https://www.microsoft.com/dynamics-365/blog/it-professional/2025/09/25/simplifying-license-management-dynamics-365-finance-operations/),
 administrators can now use [enhanced tools and reporting](security-gov-overview.md) to optimize access and licensing within finance and operations apps. As a part of this change, users without assigned licenses can no longer access finance and operations apps.

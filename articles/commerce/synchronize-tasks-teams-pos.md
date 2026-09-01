@@ -14,7 +14,7 @@ ms.custom:
 
 # Synchronize task management between Microsoft Teams and Dynamics 365 Commerce POS
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes how to synchronize task management between Microsoft Teams and Microsoft Dynamics 365 Commerce point of sale (POS).
 

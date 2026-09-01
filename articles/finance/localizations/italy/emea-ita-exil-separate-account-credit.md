@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.7
 
 # Separate accounts for credit notes
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 In Italy, a company can define the accounting policy so that credit note amounts post to ledger accounts that differ from the revenue accounts. Use this approach to track the amount that you issue on credit notes.
 

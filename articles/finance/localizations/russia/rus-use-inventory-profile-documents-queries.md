@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-10-28
 
 # Use an inventory profile in documents and queries
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with inventory profiles for Russia in Microsoft Dynamics 365 Finance.
 

@@ -12,7 +12,7 @@ ms.search.form: WHSParameters, WHSWaveProcessingRemovedShipment
 
 # Automatic rewaving of nonallocated shipment lines
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Automatic rewaving of nonallocated shipment lines automatically creates work orders for failed shipment lines. Therefore, those work orders don't have to be manually monitored and created.
 

@@ -13,7 +13,7 @@ ms.custom:
 
 # Reverse the production order status
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to reverse production order status.
 

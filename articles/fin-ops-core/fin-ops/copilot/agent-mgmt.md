@@ -15,7 +15,7 @@ ms.collection:
 
 # Enable agent management
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the agent management feature in Microsoft Dynamics 365 finance and operations apps.
 

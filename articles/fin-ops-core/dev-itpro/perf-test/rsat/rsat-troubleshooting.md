@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Troubleshoot the Regression suite automation tool
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article contains information about how to troubleshoot the Regression suite automation tool (RSAT).
 

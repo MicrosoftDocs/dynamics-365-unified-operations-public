@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Configure and report Italian sales tax books
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to configure and generate Italian sales tax books.
 

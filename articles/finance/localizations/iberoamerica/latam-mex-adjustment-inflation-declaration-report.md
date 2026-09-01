@@ -16,7 +16,7 @@ ms.assetid: 9076bf16-0021-47ad-a3b9-1bab75c583ec
 
 # Adjustment inflation declaration report
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 You can process inflation adjustments by using INPC rates, various methods (such as opening balance, balance, monthly balance, and transaction date), and various dimensions.
 

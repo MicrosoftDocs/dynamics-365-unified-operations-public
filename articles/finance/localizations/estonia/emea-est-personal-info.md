@@ -14,7 +14,7 @@ ms.search.validFrom: 2017-12-31
 
 # Personal information requests for Estonia
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Estonian law lets people ask companies for reports that show the personal information the companies track. The reports also show who viewed, created, updated, and deleted this information.
 

@@ -15,7 +15,7 @@ ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport
 
 # Prepare your environment to generate a GDPdU audit file
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to prepare your environment to generate a GDPdU audit file in Microsoft Dynamics 365 Finance.
 

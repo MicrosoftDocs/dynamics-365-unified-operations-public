@@ -12,6 +12,8 @@ ms.reviewer: johnmichalak
 
 # EU Sales list for Estonia
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 This article provides information about the European Union (EU) sales list report for Estonia. The Estonian EU sales list report contains information about the sale of goods and services for reporting in XML format. The following fields are included on the Estonian EU sales list report:
 
 - **EU sales list header:**

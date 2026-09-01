@@ -17,7 +17,7 @@ ms.assetid:
 
 # Use JOIN data sources to get data from multiple application tables in Electronic reporting (ER) model mappings
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 While configuring Electronic reporting (ER) model mappings or formats, you can [add](#review) required data sources of the **Join** type. At design time, you configure a **Join** data source as a set of several data sources, each of which returns a list of records. For every data source except the first one, you need to define the necessary conditions to join records of the current and previous data sources. At runtime, a configured data source of **Join** type [returns](#executeERformat) a single joined list of records containing fields from the records of nested data sources.
 

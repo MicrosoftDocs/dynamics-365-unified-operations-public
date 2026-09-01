@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Set up a sales tax hierarchy and the setoff rules
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 ## Maintain tax hierarchies
 

@@ -12,7 +12,7 @@ ms.search.validFrom: 2023-11-07
 
 # Results of DOM runs
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes the results of distributed order management (DOM) runs in Microsoft Dynamics 365 Commerce.
 

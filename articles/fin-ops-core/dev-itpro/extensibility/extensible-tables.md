@@ -14,7 +14,7 @@ ms.dyn365.ops.version: Platform update 20
 
 # Write extensible tables
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tables have a rich extension model that extenders can use to add fields, field groups, indexes, relations, methods, and more.
 

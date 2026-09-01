@@ -12,7 +12,7 @@ ms.search.form:
 
 # Period charges
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Period charges let you charge customers when a collection of orders that were invoiced over a specified period failed to meet specific criteria. The *Period charges* feature supports the setup of period charge rules that identify these invoices and define applicable charges. Charges can be calculated based on a minimum charge amount (such as minimum delivery fee), a minimum order quantity, or a combination of both.
 

@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.5
 
 # Define tax rate type
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to define the tax rate type and assign it to the relevant master data. This task is part of the master data setup that is required to make the India localization solution for Goods and Services Tax (GST) available.
 

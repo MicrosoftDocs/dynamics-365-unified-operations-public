@@ -14,7 +14,7 @@ ms.custom:
 
 # Pricing settings
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes the various settings for pricing and discount management in Microsoft Dynamics 365 Commerce headquarters. By using these settings, organizations can define the pricing behavior in their Commerce solution to meet specific business needs.
 

@@ -26,6 +26,8 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Map skills
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 You can create a skill-mapping search to find a qualified person in Dynamics 365 Human Resources. Skill-mapping searches return results for criteria you enter by looking through the following information:

@@ -17,6 +17,8 @@ ms.search.validFrom: 2021-06-10
 
 # Change data in Azure Data Lake 
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 > [!NOTE]
 > Over the past 12 months, we've been working to fill in gaps and add new features that members of the user community have highlighted. [Microsoft Azure Synapse Link for Dataverse service built into Power Apps](/power-apps/maker/data-platform/azure-synapse-link-select-fno-data), the successor to the **Export to Data Lake** feature in finance and operations apps, is generally available and ready for you. Azure Synapse Link provides one experience for working with data from all Microsoft Dynamics 365 apps.
 >

@@ -23,6 +23,7 @@ ms.dyn365.ops.version: Human Resources
 
 # Payroll integration API introduction
 
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 >[!NOTE]

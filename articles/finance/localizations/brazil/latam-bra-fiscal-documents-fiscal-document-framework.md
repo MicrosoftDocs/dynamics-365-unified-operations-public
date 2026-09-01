@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Fiscal documents and fiscal document framework for Brazil
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes fiscal documents for Brazil.
 

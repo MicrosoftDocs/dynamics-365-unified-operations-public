@@ -14,7 +14,7 @@ ms.search.validFrom: 2020-06-01
 
 # Prerequisites for ISO 20022 credit transfer format
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Before you can set the ISO20022 payment format, you need to import the most recent versions of the following electronic reporting configuration from Lifecycle Services (LCS):
 

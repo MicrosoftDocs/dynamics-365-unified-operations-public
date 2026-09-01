@@ -14,7 +14,7 @@ ms.search.region: Singapore
 
 # IRAS Audit File (IAF) for Singapore
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to set up and generate the IRAS Audit File (IAF) for Singapore for legal entities that have a primary address in Singapore in Microsoft Dynamics 365 Finance.
 

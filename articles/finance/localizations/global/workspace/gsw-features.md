@@ -12,7 +12,7 @@ ms.reviewer: johnmichalak
 
 # Globalization Studio workspace features 
 
-[!INCLUDE[banner](../../../includes/banner.md)]
+[!INCLUDE [banner](../../../includes/banner.md)]
 
 [!INCLUDE[banner](../../../includes/rsc-to-gsw-banner.md)]
 

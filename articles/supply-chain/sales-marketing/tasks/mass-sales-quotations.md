@@ -12,7 +12,7 @@ ms.search.form: SalesQuotationTemplateGroup, SalesQuotationListPage, SalesCreate
 
 # Mass create sales quotations
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure demonstrates how to efficiently create quotations offering a set of products or services that are to be sent to multiple customers. This mass quotation creation is based on quotation templates. You can run this procedure on your own data or in demo data company USMF.
 

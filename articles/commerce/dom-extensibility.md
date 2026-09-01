@@ -12,7 +12,7 @@ ms.search.validFrom: 2023-11-07
 
 # DOM extensibility
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes the extensibility of distributed order management (DOM) in Microsoft Dynamics 365 Commerce.
 

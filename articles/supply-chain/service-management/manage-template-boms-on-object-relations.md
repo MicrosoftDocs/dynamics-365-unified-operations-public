@@ -16,7 +16,7 @@ ms.custom:
 
 # Manage template BOMs on object relations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## Attach a template BOM to a service object
 

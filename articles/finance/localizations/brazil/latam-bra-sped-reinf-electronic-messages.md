@@ -15,6 +15,8 @@ ms.custom:
 
 # Set up electronic messages for SPED-Reinf events
 
+[!INCLUDE [banner](../../../includes/banner.md)]
+
 Microsoft Dynamics 365 Finance introduces electronic message functionality. By using this functionality, you can maintain and track various processes for electronic messages when there's an exchange of information between Finance and tax authority web services.
 
 Before you issue SPED-Reinf events to the government website, use the predefined configuration that Microsoft prepared to meet SPED-Reinf requirements. Microsoft delivers this configuration as a data entity. After you import it into Finance, you can generate, validate, and deliver all events that are described in the SPED-Reinf scope.

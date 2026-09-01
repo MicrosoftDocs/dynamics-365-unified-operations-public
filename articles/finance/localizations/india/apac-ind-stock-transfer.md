@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.5
 
 # Stock transfer orders for India
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Use transfer orders to process inventory transfers between warehouses. In India, if the shipping and receiving branches of the organization have different tax registration numbers, calculate and post the India Goods and Services Tax (GST) for the transfer order. You can define the tax base as the current cost price of the item being transferred or a special transfer price. Post the tax amount as GST payable for the transfer shipment and as GST recoverable upon the transfer receipt. Use an **Interim transit** account as an offset account for the posting, and nullify it when the transfer order is fully received. 
 

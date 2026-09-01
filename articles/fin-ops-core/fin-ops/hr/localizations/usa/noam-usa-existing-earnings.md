@@ -16,7 +16,7 @@ ms.assetid: 233c40f6-3e9e-4ed4-b42c-4643a68946e1
 
 # Process existing earnings
 
-[!include [banner](../../../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../../../finance/includes/banner.md)]
 
 This article describes tasks, such as releasing or holding earnings, that you can complete after you generate an earnings statement. You must release earnings statement lines before you generate pay statements.
 

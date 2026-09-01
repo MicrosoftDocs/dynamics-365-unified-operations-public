@@ -15,7 +15,7 @@ ms.assetid: 3b2a9b85-f779-4358-b347-7b11a8e7960c
 
 # EventHandlerResult classes in request or response scenarios
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 You can declare delegate methods and delegate handler methods to support a request/response scenario where the delegate calling logic requests the subscribers to provide a response. To support this scenario, you typically pass the **EventHandlerResult** class as a parameter, and the delegate handler methods provide their result by using one of the result methods on the class. However, the **EventHandlerResult** class can only contain a single result. If multiple subscribers provide their individual results, the last respondent wins and overwrites the results from the previous subscribers.
 

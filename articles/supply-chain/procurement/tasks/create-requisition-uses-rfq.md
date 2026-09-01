@@ -13,7 +13,7 @@ ms.custom:
 
 # Create a requisition that uses an RFQ
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to add price and vendor information to a purchase requisition from a request for quotation (RFQ) process. The example shown in this guide can be used in the USMF demo data company, and you must be logged in as an Admin to complete all the steps. The tasks in this guide would typically be done by procurement professionals.
 

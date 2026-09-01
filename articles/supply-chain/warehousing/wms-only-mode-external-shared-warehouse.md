@@ -12,7 +12,7 @@ ms.search.form: WHSSourceSystem, WHSEWManagementSystem, WHSShipmentOrderIntegrat
 
 # Warehouse management only mode with external shared warehouses
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to use Warehouse management only mode to support external shared warehouse processing. This approach allows warehouse management functionality to be consolidated into a separate legal entity that handles requests from multiple sales subsidiaries (legal entities) in Microsoft Dynamics 365 Supply Chain Management.
 

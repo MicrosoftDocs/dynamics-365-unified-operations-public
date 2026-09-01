@@ -16,7 +16,7 @@ ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
 
 # Data maintenance jobs for cleaning temporary data
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 As of Microsoft Dynamics 365 Finance version 10.0.44, data maintenance jobs are automatically scheduled. These jobs clean up the following data:
 

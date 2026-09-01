@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Export letter of credit
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article describes exporting a letter of credit. For more information, see [Set up bank facilities and posting profiles for letter of credit](set-up-bank-facilities-posting-profiles-letter-credit.md) to configure and create bank facilities and posting profiles. 
 

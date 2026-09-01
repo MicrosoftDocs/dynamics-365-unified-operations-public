@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # System tables
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article contains the documentation available for the System classes.
 

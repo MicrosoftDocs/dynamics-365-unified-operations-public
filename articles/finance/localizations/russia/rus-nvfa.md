@@ -14,7 +14,7 @@ ms.search.validFrom: 2018-10-28
 
 # Primary forms for NVFA, working clothes, and special riggings (Russia)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to work with primary forms for not valuable fixed assets (NVFA), working clothes, and special riggings for Russia in Microsoft Dynamics 365 Finance.
 

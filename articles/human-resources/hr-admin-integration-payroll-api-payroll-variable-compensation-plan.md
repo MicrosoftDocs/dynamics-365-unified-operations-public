@@ -23,6 +23,7 @@ ms.dyn365.ops.version: Human Resources
 
 # Payroll variable compensation plan
 
+[!INCLUDE [banner](../includes/banner.md)]
 
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]

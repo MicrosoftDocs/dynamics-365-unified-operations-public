@@ -12,7 +12,7 @@ ms.custom:
 
 # Modernized search results view in Store Commerce
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 **Applies to:** Dynamics 365 Commerce version 10.0.47 and later
 

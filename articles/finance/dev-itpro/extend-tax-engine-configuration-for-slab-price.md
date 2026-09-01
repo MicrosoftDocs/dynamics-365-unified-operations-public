@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 7.3
 
 # Extend Tax engine configurations for slab price
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to extend the Tax engine configuration for slab price. Before you extend the Tax engine (also referred to as GTE), you must complete the [prerequisites](extend-tax-engine-configurations.md#prerequisites).
 

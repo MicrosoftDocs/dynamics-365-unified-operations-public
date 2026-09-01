@@ -14,7 +14,7 @@ ms.assetid: 92223189-69a8-4a40-b867-ef9b4f14c23d
 
 # ICMS-ST complement and restitution process and declaration for RS, SC, and SP states
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The Brazilian states of Rio Grande do Sul (RS), São Paulo (SP), and Santa Catarina (SC) define and implement a new process for calculating and reporting the compensation and restitution of ICMS-ST tax amounts in internal operations to final consumers when goods are acquired under the Tax substitution regime (ICMS-ST). This process applies to retail and non-retail companies.
 

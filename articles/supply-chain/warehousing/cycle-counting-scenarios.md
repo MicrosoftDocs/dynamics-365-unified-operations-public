@@ -13,7 +13,7 @@ ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThres
 
 # Cycle counting example scenarios
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides a collection of scenarios that explore the cycle counting features of Microsoft Dynamics 365 Supply Chain Management. It first describes the requirements for your existing Supply Chain Management environment. It then explains how to configure cycle counting and describes all the cycle counting stages. When you finish, you should have a good understanding of cycle counting, including guided cycle counting, blind cycle counting, spot cycle counting, cycle count thresholds, and cycle count plans.
 

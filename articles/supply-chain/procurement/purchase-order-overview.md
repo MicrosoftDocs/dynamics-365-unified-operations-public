@@ -13,7 +13,7 @@ ms.custom:
 
 # Purchase order overview
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides general information about purchase orders (POs) and links to other articles that are related to the various stages that a PO goes through.
 

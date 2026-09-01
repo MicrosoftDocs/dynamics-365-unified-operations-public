@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.4
 
 # Purchases of fixed assets
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 1. Go to **General ledger** \> **Journals** \> **General journal**.
 1. Create a journal, and name it.

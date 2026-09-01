@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Version 1611
 
 # Select account groups for Chinese voucher types
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to select account groups when you set up voucher types for China.
 

@@ -16,7 +16,7 @@ ms.custom:
 
 # Create recommendations with demo data
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article provides guidance on how to use omnichannel product recommendations in Tier-1 single box environments by using prepopulated, customizable demo data.
 

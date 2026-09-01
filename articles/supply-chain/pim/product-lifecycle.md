@@ -13,7 +13,7 @@ ms.custom:
 
 # Product lifecycle states
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 *Product lifecycle states* document the lifecycle state of a released product or variant. They control which business processes (such as purchase orders, production, planning, or forecasts) can use released products or variants assigned to a given lifecycle state.
 

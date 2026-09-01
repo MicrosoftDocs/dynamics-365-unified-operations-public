@@ -14,7 +14,7 @@ ms.search.validFrom: 2020-01-01
 
 # Customer electronic invoices in Germany (DE-00022)
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 To comply with European Union (EU) Directive 2014/55/EU, Microsoft implemented the Germany-specific **xRechnung** format.
 

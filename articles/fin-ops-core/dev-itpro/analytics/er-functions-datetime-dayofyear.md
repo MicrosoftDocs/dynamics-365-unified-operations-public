@@ -16,7 +16,7 @@ ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 
 # DAYOFYEAR ER function
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 The `DAYOFYEAR` function returns an *Integer* value that represents the number of days between January 1 and the specified date.
 

@@ -14,7 +14,7 @@ ms.custom:
 
 # Configure express payments for PayPal
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to configure express payments for PayPal to enable faster checkout capabilities in Microsoft Dynamics 365 Commerce.
 

@@ -15,7 +15,7 @@ ms.search.form: LedgerJournalTable, LedgerJournalTransCustBillOfExchange, CustOp
 
 # FR-00004 Protest and post a bill of exchange journal
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to protest a bill of exchange for a legal entity whose primary address is in France in Microsoft Dynamics 365 Finance.
 

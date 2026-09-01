@@ -12,7 +12,7 @@ ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 
 # Cross-docking from production orders to outbound docks
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to manage the process of cross-docking material that is being reported as finished from a production line to an outbound transportation dock.
 

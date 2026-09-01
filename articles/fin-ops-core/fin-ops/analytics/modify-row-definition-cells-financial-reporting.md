@@ -16,7 +16,7 @@ ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
 
 # Modify row definition cells
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article describes the information that you need for each cell in a row definition on a financial report and explains how to enter that information.
 

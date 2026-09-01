@@ -15,7 +15,7 @@ ms.dyn365.ops.version:
 
 # Business performance planning Excel add-in FAQ
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides answers to frequently asked questions about the Microsoft Excel add-in for business performance planning.
 

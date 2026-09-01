@@ -16,7 +16,7 @@ ms.assetid: 585d5b0b-1b79-4a03-ab18-528918070377
 
 # Create vendor payments by using a payment proposal
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article provides an overview of the payment proposal options and includes some examples that show how payment proposals work. Payment proposals are often used to create vendor payments, because the query can be used to quickly select vendor invoices for payment, based on criteria such as the due date and cash discount. 
 

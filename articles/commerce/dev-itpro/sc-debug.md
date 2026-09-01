@@ -15,7 +15,7 @@ ms.custom:
 
 # Debug Store Commerce extensions using Visual Studio Code
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to debug Microsoft Dynamics 365 Commerce Store Commerce extensions by using Visual Studio Code.
 

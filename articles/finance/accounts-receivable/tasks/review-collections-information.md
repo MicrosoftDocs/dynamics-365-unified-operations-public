@@ -16,7 +16,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 # Review collections information
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This article explains how to review collections information as well as various setup options and collections transactions. This procedure uses the USMF demo company.
 

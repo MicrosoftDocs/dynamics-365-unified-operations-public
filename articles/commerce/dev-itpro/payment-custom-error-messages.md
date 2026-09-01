@@ -14,7 +14,7 @@ ms.custom:
 
 # Create custom localized error messages for payment terminal extensions
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how to create custom localized error messages for payment terminal extensions.
 

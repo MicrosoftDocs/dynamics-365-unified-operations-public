@@ -16,7 +16,7 @@ ms.custom: sfi-image-nochange
 
 # Build operations
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article reviews the process to build projects and full build of model packages.
 

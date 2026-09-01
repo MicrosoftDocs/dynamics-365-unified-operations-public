@@ -17,7 +17,7 @@ ms.assetid: 92223189-69a8-4a40-b867-ef9b4f14c23d
 
 # Set up default descriptions for posting of Tax fiscal documents
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Follow these steps to set up default descriptions for voucher transactions that are posted from Tax fiscal documents.
 

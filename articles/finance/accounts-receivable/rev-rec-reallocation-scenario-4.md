@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.14
 
 # Revenue recognition reallocation – Scenario 4
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 This article goes through a reallocation scenario where a line is removed from an existing, partially invoiced sales order. This scenario produces the same result, regardless of whether the line is removed from the sales order or set to a canceled status.
 

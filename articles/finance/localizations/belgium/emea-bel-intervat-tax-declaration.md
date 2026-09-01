@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # INTERVAT tax declaration
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 > [!NOTE]
 > This feature is replaced by the VAT declaration functionality. For more information, see [VAT declaration (Belgium)](emea-bel-vat-declaration-belgium.md).
 

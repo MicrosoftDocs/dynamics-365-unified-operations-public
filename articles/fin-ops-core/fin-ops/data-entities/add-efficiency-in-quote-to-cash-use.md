@@ -14,7 +14,7 @@ ms.search.form: CustParameters, SalesQuotationTable, SalesQuotationTable, SalesT
 
 # Work with added efficiency in quote-to-cash with Dynamics 365 Sales
 
-[!include [banner](../../../finance/includes/banner.md)]
+[!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article describes how to work with the improved quote-to-cash features when you integrate with Microsoft Dynamics 365 Sales. It provides information about how the  enhanced features that you enable affect the behavior of the integrated system. For more information about how to enable these improvements for your system, see [Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md).
 

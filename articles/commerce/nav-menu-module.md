@@ -14,7 +14,7 @@ ms.custom:
 
 # Navigation menu module
 
-[!include [banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 This article describes navigation menu modules and explains how to add them to site pages in Microsoft Dynamics 365 Commerce.
 

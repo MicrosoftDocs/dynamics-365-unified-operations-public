@@ -13,7 +13,7 @@ ms.custom:
 
 # Apply a purchase agreement when creating a purchase order
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to use a purchase agreement when you create a purchase order. The purchase agreement must be applied when you create the purchase order because there are general terms that should be copied to the purchase order header. Typically this task would be carried out by a purchasing agent. As a prerequisite for this guide, you must have an effective purchase agreement with a product quantity commitment for a vendor and items. The same procedure can be used if you have a purchase agreement with other types of commitments.
 

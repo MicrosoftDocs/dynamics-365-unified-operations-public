@@ -13,7 +13,7 @@ ms.search.form: WMSArrivalOverview, InventTransRegister
 
 # Register the receipt of returned items
 
-[!include [banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 There are two methods for registering the receipt of returned items. The first method is a warehouse receiving process that uses the **Arrival overview** page. The second uses the **Registration** page.
 

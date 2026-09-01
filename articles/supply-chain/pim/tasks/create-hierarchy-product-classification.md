@@ -12,7 +12,7 @@ ms.search.form: EcoResCategoryHierarchyListPage, EcoResCategoryHierarchyCreate, 
 
 # Create a hierarchy of product classification
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 This procedure shows how to create a new category hierarchy and assign a commodity code hierarchy type. The demo data company used to create this procedure is USMF. This procedure is intended for the category manager.
 

@@ -12,7 +12,7 @@ ms.search.form: ProjProjectContractsListPage, ProjInvoiceTable, ProjProjectsList
 
 # Bill for maintenance on customer-owned assets
 
-[!include [banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 The *Work order billing* feature lets you create, process, and bill maintenance work that is done on assets that your customers own. This feature lets you perform the following tasks:
 

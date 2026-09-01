@@ -25,6 +25,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Set up the careers site in the HR Recruiting app
 
+[!INCLUDE [banner](../includes/banner.md)]
+
 This article explains how to install and configure the careers site in the HR Recruiting app in Microsoft Dynamics 365 Human Resources. You can change many aspects of your careers site, such as the background, introduction, images, privacy policy, and site name.
 
 ## Install
