@@ -1,16 +1,16 @@
 ---
-title: Use a QR code to connect the mobile app to Supply Chain Management
+title: Read connection settings from a QR code
 description: Learn how to generate and scan QR codes to quickly configure the Warehouse Management mobile app.
 author: pefreita
 ms.author: pefreita
 ms.topic: how-to
-ms.date: 08/13/2026
+ms.date: 09/02/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
 ---
 
-# Use a QR code to connect the mobile app to Supply Chain Management
+# Read connection settings from a QR code
 
 [!INCLUDE [banner](../includes/banner.md)]
 
@@ -24,7 +24,7 @@ Other methods for setting connection information include using a connection sett
 
 The feature for QR code–based connection configuration supports all connection types that the Warehouse Management mobile app supports:
 
-- **UsernamePassword** (recommended) – Username/password authentication. Combine it with `"UseBroker": true` to enable [brokered authentication](warehouse-app-authenticate-user-based.md#sso) and single sign-on (SSO). The examples in this article use this connection type.
+- **UsernamePassword** (recommended) – Username/password authentication. Combine it with `"UseBroker": true` to enable [brokered authentication](warehouse-app-conditional-access-enable.md) and single sign-on (SSO). The examples in this article use this connection type.
 - **DeviceCode** (not recommended) – Interactive [device code flow](warehouse-app-authenticate-user-based.md#deviceCodeFlow) authentication.
 
 > [!IMPORTANT]
@@ -41,8 +41,6 @@ Create a JSON configuration that includes your connection details. Follow the in
             "ConnectionName": "Connection1",
             "ActiveDirectoryResource": "https://yourenvironment1.cloudax.dynamics.com",
             "Company": "USMF",
-            "IsEditable": true,
-            "IsDefaultConnection": false,
             "ConnectionType": "UsernamePassword",
             "UseBroker": true,
             "AuthCloud": "AzureGlobal"
@@ -70,8 +68,6 @@ Follow these steps to ask Copilot to generate a QR code for your JSON configurat
                 "ConnectionName": "Production",
                 "ActiveDirectoryResource": "https://yourenvironment.cloudax.dynamics.com",
                 "Company": "USMF",
-                "IsEditable": true,
-                "IsDefaultConnection": true,
                 "ConnectionType": "UsernamePassword",
                 "UseBroker": true,
                 "AuthCloud": "AzureGlobal"
@@ -108,8 +104,6 @@ $jsonConfig = @"
             "ConnectionName": "Production",
             "ActiveDirectoryResource": "https://yourenvironment.cloudax.dynamics.com",
             "Company": "USMF",
-            "IsEditable": true,
-            "IsDefaultConnection": true,
             "ConnectionType": "UsernamePassword",
             "UseBroker": true,
             "AuthCloud": "AzureGlobal"

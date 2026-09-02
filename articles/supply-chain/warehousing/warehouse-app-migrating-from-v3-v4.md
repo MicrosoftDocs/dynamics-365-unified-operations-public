@@ -4,7 +4,7 @@ description: Learn how to migrate from Warehouse Management mobile application f
 author: pefreita
 ms.author: pefreita
 ms.topic: how-to
-ms.date: 08/13/2026
+ms.date: 09/02/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -25,8 +25,8 @@ For V4, Microsoft rewrote the code for the Warehouse Management mobile app to ta
 > [!TIP]
 >
 > - The [Migration information](#migration-information) section provides important advice that can help you avoid unexpected disruptions during the migration process.
-> - The [Rollout](#rollout) section provides the rollout schedule and download details.
-> - If you're migrating iOS devices, read the [Migrating from V3 to V4 for iOS](#migration-information-ios) section before you begin — connection settings are not preserved on iOS and Device Code authentication is no longer supported.
+> - The [V3 support timeline](#timeline) provides the rollout schedule and download details.
+> - If you're migrating iOS devices, read the [Migrating from V3 to V4 for iOS](#migration-information-ios) section before you begin. Connection settings aren't preserved on iOS and Device Code authentication isn't supported.
 
 ## <a name="rollout"></a>Rollout
 
@@ -57,7 +57,7 @@ V4 supports a smooth transition from V3. The following considerations summarize 
     - Don't uninstall V3. Instead, download the V4 installer and select the **Upgrade** option.
     - If you're running V3.0.7 or older, first upgrade to V3.0.8 or V3.0.9, then upgrade to V4.
 
-- **On iOS devices, connection settings aren't preserved on upgrade** – You must reconfigure connections manually after installing V4. To simplify this process, prepare QR codes in advance. Learn more in [Use a QR code to connect the mobile app to Supply Chain Management](warehouse-app-qr-code.md).
+- **On iOS devices, connection settings aren't preserved on upgrade** – You must reconfigure connections manually after installing V4. To simplify this process, prepare QR codes in advance. Learn more in [Read connection settings from a QR code](warehouse-app-qr-code.md).
 - **MDM Deployment** – If you use a mobile device management (MDM) solution to distribute the app, the connection settings are preserved when you migrate from V3.0.9 to V4, or from V4 to any later version of V4.
 - **Concurrent operation** – V3 and V4 can operate simultaneously in the same warehouse environment without conflicts provided they're installed on separate devices. You can use different authentication methods for each version without conflict. This capability allows for a phased rollout of V4 without disrupting ongoing operations. However, you can't run V3 and V4 on the same device at the same time.
 - **V3 requests remain active** – Microsoft doesn't block requests coming from V3. You can continue using V3 until you're ready to migrate.
@@ -69,12 +69,12 @@ V4 supports a smooth transition from V3. The following considerations summarize 
 
 ### <a name="migration-information-ios"></a> Migrating from V3 to V4 for iOS
 
-Microsoft started the official release of WMA iOS V4 on 23 February 2026. The rollout is phased, starting with a limited percentage of users and gradually increasing over time.
+Microsoft started the official release of WMA iOS V4 on February 23, 2026. The rollout is phased, starting with a limited percentage of users and gradually increasing over time.
 
 > [!IMPORTANT]
 > iOS migration has two key differences from Android and Windows:
 >
-> - **Connection settings aren't preserved** – When upgrading from V3 to V4 on iOS, you lose existing connection settings. You must manually reconfigure connections after the upgrade. To simplify this process, generate QR codes in advance. Learn more in [Use a QR code to connect the mobile app to Supply Chain Management](warehouse-app-qr-code.md).
+> - **Connection settings aren't preserved** – When upgrading from V3 to V4 on iOS, you lose existing connection settings. You must manually reconfigure connections after the upgrade. To simplify this process, generate QR codes in advance. Learn more in [Read connection settings from a QR code](warehouse-app-qr-code.md).
 > - **Device Code authentication isn't supported on iOS V4** – Before upgrading, ensure your environment is configured for username/password authentication.
 
 #### Before you upgrade iOS devices
@@ -110,16 +110,7 @@ If critical problems arise while you're testing V4, you can return to V3.0.9. Th
 
 ### Authentication in cloud environments
 
-The following authentication changes apply when you use a cloud environment of Supply Chain Management.
-
-- **One-time reauthentication** – App users must complete a single authentication process the first time they use the app on each device that is migrated to V4. After a device is successfully migrated, it stays authenticated. You won't need to reauthenticate the device again when updating to future versions of V4.
-- **Windows platform configuration** – For Windows applications, you must add a new redirect URI to your Azure application registration:
-    1. Open the [Azure portal](https://portal.azure.com).
-    1. Go to **App Registrations**.
-    1. Select your Microsoft Entra ID registration.
-    1. Go to **Manage** > **Authentication**.
-    1. Select **Add a platform**, and then select **Mobile and desktop applications**.
-    1. In the **Custom redirect URIs** field, enter `ms-appx-web://microsoft.aad.brokerplugin/{clientId}` (where *{clientId}* is your Microsoft Entra client ID).
+App users must complete a single authentication process the first time they use the app on each device that is migrated to V4. After a device is successfully migrated, it stays authenticated. You don't need to reauthenticate the device when updating to future versions of V4.
 
 ### Authentication in on-premises environments
 
@@ -136,65 +127,18 @@ The following table summarizes the supported authentication methods for each pla
 
 | Platform | Cloud environment | On-premises environment |
 | --- | --- | --- |
-| **Windows** | Username/password, Broker, Device code<sup>1</sup> | Username/password, Device code<sup>1</sup> |
+| **Windows** | Username/password, Device code<sup>1</sup> | Username/password, Device code<sup>1</sup> |
 | **Android** | Username/password, Device code<sup>1</sup> | Username/password only |
 | **iOS** | Username/password only | Username/password only |
 
+Brokered authentication isn't a separate authentication method. It's an option of username/password authentication that enables single sign-on (SSO). Learn more in [Single sign-on](warehouse-app-authenticate-user-based.md#sso).
+
 <sup>1</sup> For backward compatibility, these platforms still support device code flow, but Microsoft no longer recommends it because it's a frequent target of phishing attacks. It's blocked by default in *new* Microsoft Entra ID tenants and doesn't support single sign-on (SSO) or brokered authentication. Use the migration to V4 as an opportunity to move these devices to username/password authentication. Learn more in [Device code flow authentication](warehouse-app-authenticate-user-based.md#deviceCodeFlow).
 
-## <a name="rollout"></a>Transition period support
-
-### V3 support timeline
+## <a name="timeline"></a>V3 support timeline
 
 Use the following timeline to plan your transition from V3 and ensure devices are migrated to V4 before support ends.
 
 - **End of support** – May 2026 (estimated).
-- **Final version** – Version 3.0.9 is the final V3 release. Any reported issues will be addressed in V4.
-- **Feature development** – No new features will be developed for V3.
-
-## New features in V4
-
-The following subsections summarize the key new features and improvements that are introduced in V4 of the Warehouse Management mobile app.
-
-### Camera improvements
-
-V4 provides improved camera scanning capabilities. Here are some examples:
-
-- **Faster scanning** – Scan speed and accuracy are dramatically improved.
-- **Expanded bar code support** – The app now supports a wider range of bar code formats. As of version 4.1.5, camera scanning also reads GS1 DataBar, GS1 DataBar Limited, GS1 DataBar Expanded, Micro QR Code, Micro PDF417, and ITF-14 on both Android and iOS. On iOS, it also reads MSI Plessey. Learn more in [Scan bar codes using a camera in the Warehouse Management mobile app](scan-bar-codes-using-a-camera.md).
-- **Multiple bar code support** – Scan multiple bar codes in a single operation.
-- **Hardware independence** – There's less dependency on physical bar code scanners in environments where camera scanning is viable.
-
-### Customizable themes
-
-V4 provides an enhanced user experience through comprehensive theming options. Here are some examples:
-
-- **Eleven unique themes** – A complete set of professionally designed themes is available.
-- **Dual-mode support** – Each theme is available in both dark mode and light mode.
-- **Unified settings** – Manage theme preferences through the **Settings** interface.
-
-### Enhanced audio experience
-
-V4 offers expanded audio customization for improved user interaction.
-
-- **Over 15 sound combinations** – An extensive library of notification and interaction sounds is available.
-- **Personalization** – Workers can customize their device audio experience.
-- **Centralized configuration** – Sound settings are integrated with theme preferences.
-
-### Advanced diagnostics
-
-V4 supports comprehensive diagnostic capabilities for improved troubleshooting and maintenance. Here are some examples:
-
-- **Wi-Fi diagnostics**
-    - **Self-diagnostic capabilities** – Each device can independently assess its network connectivity.
-    - **Service ping tests** – Verification of connectivity to critical services is automated.
-    - **Proactive monitoring** – Detect network-related problems early.
-
-- **Local logging system**
-    - **Human-readable logs** – The log format is improved for easier troubleshooting.
-    - **Filtering capabilities** – Advanced log filtering allows for targeted analysis.
-    - **Export functionality** – Easily export the log for support and analysis purposes.
-
-- **Accessible scan testing**
-    - **Simplified access** – Scan test functionality doesn't require developer menu navigation.
-    - **User-friendly interface** – The testing process is streamlined for users.
+- **Final version** – Version 3.0.9 is the final V3 release. The development team will address any reported issues in V4.
+- **Feature development** – The development team won't develop new features for V3.

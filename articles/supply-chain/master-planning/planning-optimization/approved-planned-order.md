@@ -56,7 +56,18 @@ The following illustration shows how you can use the **Status** value that is as
 ![Planned order flow.](media/approved-planned-orders-1.png)
 
 > [!TIP]
-> We recommend that you approve any modified planned orders. Otherwise, the edits are ignored and overwritten by the next planning run.
+> We recommend that you approve all modified planned orders because the next planning run will ignore and overwrite all unapproved edits.
+
+## Avoid approving or editing planned orders during a planning run
+
+The preceding text and illustration explain how approving planned orders prevents the system from ignoring and overwriting edits to those orders. However, an exception to this behavior might occur if you make changes to planned orders while the system is executing a full regenerative planning run.
+
+This exception applies to all types of planned orders (production, purchase, and transfer) and can result in the system not preserving your changes, including split orders and field values (quantities, prices, dates, and so on). Even if you approve a planned order and therefore expect to find it after the next regenerative planning run, the order might not be available if you approved it in the middle of a planning run.
+
+This exception occurs because, early in the planning run, the system creates a snapshot in the database during the data export stage. Then, at the end of the planning run, the system creates a new plan version, re-inserts the exported approved planned orders, and clears the previous plan version. As a result, if you approve planned orders or make changes to already approved planned orders during the exact period between the data export and re-insertion, the system overwrites those approved orders and ignores any changes to already approved planned orders. However, the demand still exists, and the planning run still considers it.
+
+> [!TIP]
+> To completely avoid the risk of badly timed edits being ignored and overwritten, run master planning outside normal business hours.
 
 ## Related information
 

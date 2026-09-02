@@ -74,6 +74,7 @@ To correct or cancel a product receipt, follow these steps:
 >
 > - When correcting a product receipt, you can only reduce the received quantity. To raise the quantity, you must post a new product receipt journal.
 > - Late selection isn't supported for product receipt posting. A product receipt number is required when you post a packing slip, but when you use late selection, this number isn't available because no parameter table exists and the system doesn't create an interaction during batch recurrence processing. Therefore, late selection is disabled for packing slip posting to ensure successful batch processing.
+> - When you cancel a product receipt, the system posts a separate reversal transaction instead of modifying the original receipt. This transaction can consume a new number from the *product receipt*/*packing slip* number sequence. Therefore, the cancellation might have a different internal product receipt or packing slip ID, and the original number might no longer appear in the product receipt report.
 
 ## Auto post product receipts when using WMS
 
