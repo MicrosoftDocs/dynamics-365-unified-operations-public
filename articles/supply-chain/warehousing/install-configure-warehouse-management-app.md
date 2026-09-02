@@ -4,7 +4,7 @@ description: Learn how to install the Warehouse Management mobile app on each of
 author: pefreita
 ms.author: pefreita
 ms.topic: how-to
-ms.date: 08/16/2026
+ms.date: 09/02/2026
 ms.reviewer: kamaybac
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 ms.custom:
@@ -29,31 +29,6 @@ The Warehouse Management mobile app is available for Microsoft Windows, Google A
 - Windows 10 May 2020 update 1904.1 or later
 - Android 7.0 or later
 - iOS 13.0 or later
-
-### External URLs required by the app
-
-For the Warehouse Management mobile app to function correctly, your internal network must allow it to access the following external URLs:
-
-- \*.microsoft.com
-- \*.microsoftonline.com
-- login.windows.net
-- \*.appcenter.ms
-- \*.ces.microsoftcloud.com
-- \*.onyx.azure.net
-- play.google.com
-- itunes.apple.com
-- \*.cdn-apple.com
-- \*.networking.apple
-- login.microsoftonline.com
-- login.microsoft.com
-- sts.windows.net
-- login.partner.microsoftonline.cn
-- login.chinacloudapi.cn
-- login.microsoftonline.us
-- login-us.microsoftonline.com
-- \*.applicationinsights.azure.com
-- \*.applicationinsights.azure.us
-- \*.applicationinsights.azure.cn
 
 ## Get the Warehouse Management mobile app
 
@@ -100,7 +75,7 @@ After a device authenticates with Supply Chain Management, each worker who uses 
 For details about each authentication method and how to set it up, see [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md).
 
 > [!IMPORTANT]
-> Use [username/password authentication](warehouse-app-authenticate-user-based.md#usernamePasswordFlow), preferably combined with [brokered authentication](warehouse-app-authenticate-user-based.md#sso), for all new and existing deployments. [Device code flow](warehouse-app-authenticate-user-based.md#deviceCodeFlow) remains available for backward compatibility, but Microsoft no longer recommends it because it's a frequent target of phishing attacks. It's blocked by default in *new* Microsoft Entra ID tenants, it isn't supported on iOS, and it doesn't support single sign-on (SSO).
+> Use [username/password authentication](warehouse-app-authenticate-user-based.md#usernamePasswordFlow) for all new and existing deployments. You can optionally combine it with [brokered authentication](warehouse-app-conditional-access-enable.md) to support SSO. [Device code flow](warehouse-app-authenticate-user-based.md#deviceCodeFlow) remains available for backward compatibility, but Microsoft no longer recommends it because it's a frequent target of phishing attacks. It's blocked by default in *new* Microsoft Entra ID tenants, it isn't supported on iOS, and it doesn't support single sign-on (SSO).
 
 If a device is lost or compromised, you can revoke its authentication by following the instructions provided in [Remove access for a device that uses user-based authentication](warehouse-app-authenticate-user-based.md#revoke).
 
@@ -127,24 +102,23 @@ The following subsections explain how to create and import the settings.
 
 ### <a name="connection-file-qr"></a>Create a connection settings file or QR code
 
-You can import connection settings from either a file or a QR code. (Learn more in [Use a QR code to connect the mobile app to Supply Chain Management](warehouse-app-qr-code.md).) For both approaches, you must first create a settings file that uses JavaScript Object Notation (JSON) format and syntax. The file must include a connection list that contains the individual connections that you need to add. The following table summarizes the parameters that you must specify in the connection settings file.
+You can import connection settings from either a file or a QR code. (Learn more in [Read connection settings from a QR code](warehouse-app-qr-code.md).) For both approaches, you must first create a settings file that uses JavaScript Object Notation (JSON) format and syntax. The file must include a connection list that contains the individual connections that you need to add.
+
+The following table summarizes the parameters that you can specify for each connection. Required parameters are listed first, followed by optional parameters.
 
 | Parameter | Description |
 |---|---|
 | `"ConnectionName"` | Specify the name of the connection setting. The maximum length is 20 characters. Because this value is the unique identifier for a connection setting, ensure that it's unique in the list. If a connection that has the same name already exists on the device, the settings from the imported file override it. |
-| `"ActiveDirectoryClientAppId"` | <p>Don't include this parameter if you're using `"AuthCloud": "AzureGlobal"`.</p><p>Specify the client ID that you noted while setting up Microsoft Entra ID. Learn more in [User-based authentication](warehouse-app-authenticate-user-based.md).</p> |
 | `"ActiveDirectoryResource"` | Specify the root URL of Supply Chain Management. |
-| `"ActiveDirectoryTenant"` | <p>Don't include this parameter if you're using `"AuthCloud": "AzureGlobal"`.</p><p>Specify the Microsoft Entra ID domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Microsoft-Entra-ID-domain-name>`. Here's an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. For more information about how to find your Microsoft Entra ID domain name, see [Locate important IDs for a user](/partner-center/find-ids-and-domain-names).</p> |
 | `"Company"` | Specify the legal entity in Supply Chain Management that you want the application to connect to. |
-| `"ConnectionType"` | <p>(Optional) Specify how the connection authenticates with the environment. The default value is `"UsernamePassword"`. Valid values are:</p><ul><li>[`"UsernamePassword"`](warehouse-app-authenticate-user-based.md#usernamePasswordFlow) (recommended) – Use username/password authentication, optionally combined with `"UseBroker": true` for [brokered authentication and SSO](warehouse-app-authenticate-user-based.md#sso).</li><li>[`"DeviceCode"`](warehouse-app-authenticate-user-based.md#deviceCodeFlow) (not recommended) – Use device code flow.</li></ul><p>**Note:** Device code flow is still accepted for backward compatibility, but Microsoft no longer recommends it because it's a frequent target of phishing attacks. Microsoft Entra ID security default settings block device code flow by default in *new* tenants (including new tenants that are created for testing), and it isn't supported on iOS. Specify `"UsernamePassword"` in new connection settings, and update existing settings that use `"DeviceCode"`. You can't import client secrets.</p> |
-| `"IsEditable"` | (Optional) Specify whether the app user can edit the connection setting. Valid values are `"true"` and `"false"`. The default value is `"true"`. |
-| `"IsDefaultConnection"` | (Optional) Specify whether the connection is the default connection. A connection that's set as the default connection is automatically preselected when the app is opened. Only one connection can be set as the default connection. Valid values are `"true"` and `"false"`. The default value is `"false"`. |
-| `"CertificateThumbprint"` | (Optional) For Windows devices, you can specify the certificate thumbprint for the connection. For Android devices, the app user must select the certificate the first time that a connection is used. |
-| `"UseBroker"` | <p>(Optional) This parameter applies only to the `"UsernamePassword"` connection type. It determines whether a broker is used for [single sign-on (SSO)](warehouse-app-authenticate-user-based.md#sso) authentication. Set it to `"true"` for broker-based authentication. Set it to `"false"` to require manual input of a user name and password. It works with the following authentication systems:</p><ul><li>Intune Company Portal ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) only)</li><li>Microsoft Authenticator ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) and [iOS](/mem/intune/user-help/sign-in-to-the-company-portal))</li><li>[Integrated Windows authentication (IWA)](/entra/identity-platform/msal-authentication-flows#integrated-windows-authentication-iwa)</li></ul> |
+| `"AuthCloud"` | <p>Specify the type of Microsoft Entra ID app registration to authenticate with:</p><ul><li>`"AzureGlobal"` (recommended) – Authenticate by using the global Microsoft Entra ID application that Microsoft registers and maintains. This option supports most scenarios, including [Microsoft Entra Conditional Access](warehouse-app-conditional-access-enable.md). You don't have to register or maintain your own Microsoft Entra ID app, and you must not specify an `"ActiveDirectoryClientAppId"` value for the connection.</li><li>`"Manual"` – Authenticate through your own custom Microsoft Entra ID app registration. Use this option only when the global application doesn't apply to your deployment. If you choose this option, you must [register and maintain a custom app in Microsoft Entra ID](warehouse-app-authenticate-user-based.md#create-service) and specify an `"ActiveDirectoryClientAppId"` value for the connection.</li></ul> |
+| `"ActiveDirectoryClientAppId"` | (Optional) Required only when you set `"AuthCloud": "Manual"`. Specify the client ID of your custom app registration. Learn more in [Manually create an application registration in Microsoft Entra ID](warehouse-app-authenticate-user-based.md#create-service). |
+| `"ConnectionType"` | <p>(Optional) Specify how the connection authenticates with the environment. The default value is `"UsernamePassword"`. Valid values are:</p><ul><li>[`"UsernamePassword"`](warehouse-app-authenticate-user-based.md#usernamePasswordFlow) (recommended) – Use username/password authentication, optionally combined with `"UseBroker": true` for [brokered authentication and SSO](warehouse-app-authenticate-user-based.md#sso).</li><li>[`"DeviceCode"`](warehouse-app-authenticate-user-based.md#deviceCodeFlow) (not recommended) – Use device code flow.</li></ul><p>**Note:** Device code flow is still accepted for backward compatibility, but Microsoft no longer recommends it because it's a frequent target of phishing attacks. Microsoft Entra ID security default settings block device code flow by default in *new* tenants (including new tenants that are created for testing), and it isn't supported on iOS. Specify `"UsernamePassword"` in new connection settings, and update existing settings that use `"DeviceCode"`.</p> |
+| `"UseBroker"` | <p>(Optional) This parameter applies only to the `"UsernamePassword"` connection type. It determines whether a broker is used for [single sign-on (SSO)](warehouse-app-authenticate-user-based.md#sso) authentication. Set it to `"true"` for broker-based authentication. Set it to `"false"` to require manual input of a user name and password. Learn more about the broker that each platform requires in [Device requirements](warehouse-app-conditional-access-enable.md#device-requirements).</p> |
 | `"DomainName"` | (Optional) This parameter applies only to the `"UsernamePassword"` connection type. It allows you to implement a simplified sign-in process. If you don't set this field, workers must always enter their full Microsoft Entra ID user principal name (UPN) to sign in. A UPN has the form \<*user name*\>@\<*domain name*\>. If you specify the \<*domain name*\> part here, workers can sign in by entering only the \<*user name*\> part. (Even if you set the domain name here, workers can still sign in using their full UPN.) |
-| `"AuthCloud"` | <p>Specify the type of Microsoft Entra ID app registration to authenticate with:</p><ul><li>`"AzureGlobal"` – Authenticate by using a global Microsoft Entra ID application that's registered and maintained by Microsoft. This option is recommended for most scenarios, including [Microsoft Entra Conditional Access](warehouse-app-conditional-access-enable.md). If you choose this option, you don't have to register or maintain your own Microsoft Entra ID app, and you shouldn't specify `"ActiveDirectoryTenant"` or `"ActiveDirectoryClientAppId"` values for this connection.</li><li>`"Manual"` – Authenticate through your own custom Microsoft Entra ID app registration. Use this option only if you have specific requirements that the global application doesn't meet (for example, certain on-premises environment configurations). If you choose this option, you must [register and maintain a custom app in Microsoft Entra ID](warehouse-app-authenticate-user-based.md#create-service) and also specify `"ActiveDirectoryTenant"` and `"ActiveDirectoryClientAppId"` values for this connection.</li></ul> |
+| `"ActiveDirectoryTenant"` | (Optional) Applies only when you set `"AuthCloud": "Manual"`. Specify the Microsoft Entra ID domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Microsoft-Entra-ID-domain-name>`. Here's an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. Learn more about how to find your Microsoft Entra ID domain name in [Locate important IDs for a user](/partner-center/find-ids-and-domain-names). |
 
-The following example shows a valid connection settings file that contains two connections. As you can see, the connection list (named `"ConnectionList"` in the file) is an object that has an array that stores each connection as an object. Each object must be enclosed in braces (\{\}) and separated by commas, and the array must be enclosed in brackets (\[\]).
+The following example shows a valid connection settings file that contains three connections: *Connection1* uses the global application (no client ID is needed), *Connection2* uses a custom app registration with brokered authentication, and *Connection3* uses a custom app registration where workers enter a user name and password manually.
 
 ```json
 {
@@ -153,57 +127,28 @@ The following example shows a valid connection settings file that contains two c
             "ConnectionName": "Connection1",
             "ActiveDirectoryResource": "https://yourenvironment1.cloudax.dynamics.com",
             "Company": "USMF",
-            "IsEditable": true,
-            "IsDefaultConnection": false,
             "ConnectionType": "UsernamePassword",
             "UseBroker": true,
             "AuthCloud": "AzureGlobal"
         },
         {
-            "ActiveDirectoryClientAppId":"aaaaaaaa-bbbb-ccccc-dddd-eeeeeeeeeeee",
             "ConnectionName": "Connection2",
+            "ActiveDirectoryClientAppId": "aaaaaaaa-bbbb-ccccc-dddd-eeeeeeeeeeee",
             "ActiveDirectoryResource": "https://yourenvironment2.cloudax.dynamics.com",
-            "ActiveDirectoryTenant": "https://login.windows.net/contosooperations.onmicrosoft.com",
             "Company": "USMF",
-            "IsEditable": false,
-            "IsDefaultConnection": true,
-            "CertificateThumbprint": "aaaabbbbcccccdddddeeeeefffffggggghhhhiiiii",
-            "ConnectionType": "Certificate",
+            "ConnectionType": "UsernamePassword",
+            "UseBroker": true,
             "AuthCloud": "Manual"
         },
         {
-            "ActiveDirectoryClientAppId":"aaaaaaaa-bbbb-ccccc-dddd-eeeeeeeeeeee",
             "ConnectionName": "Connection3",
+            "ActiveDirectoryClientAppId": "aaaaaaaa-bbbb-ccccc-dddd-eeeeeeeeeeee",
             "ActiveDirectoryResource": "https://yourenvironment3.cloudax.dynamics.com",
             "ActiveDirectoryTenant": "https://login.windows.net/contosooperations.onmicrosoft.com",
             "Company": "USMF",
-            "IsEditable": true,
-            "IsDefaultConnection": false,
-            "ConnectionType": "ClientSecret",
-            "AuthCloud": "Manual"
-        },
-        {
-            "ActiveDirectoryClientAppId":"aaaaaaaa-bbbb-ccccc-dddd-eeeeeeeeeeee",
-            "ConnectionName": "Connection4",
-            "ActiveDirectoryResource": "https://yourenvironment4.cloudax.dynamics.com",
-            "ActiveDirectoryTenant": "https://login.windows.net/contosooperations.onmicrosoft.com",
-            "Company": "USMF",
-            "IsEditable": true,
-            "IsDefaultConnection": false,
             "ConnectionType": "UsernamePassword",
             "UseBroker": false,
-            "AuthCloud": "Manual"
-        },
-        {
-            "ActiveDirectoryClientAppId":"aaaaaaaa-bbbb-ccccc-dddd-eeeeeeeeeeee",
-            "ConnectionName": "Connection5",
-            "ActiveDirectoryResource": "https://yourenvironment5.cloudax.dynamics.com",
-            "ActiveDirectoryTenant": "https://login.windows.net/contosooperations.onmicrosoft.com",
-            "Company": "USMF",
-            "IsEditable": true,
-            "IsDefaultConnection": false,
-            "UseBroker": true,
-            "ConnectionType": "UsernamePassword",
+            "DomainName": "contosooperations.onmicrosoft.com",
             "AuthCloud": "Manual"
         }
     ]
@@ -211,9 +156,6 @@ The following example shows a valid connection settings file that contains two c
 ```
 
 You can either save the information as a JSON file or [generate a QR code](warehouse-app-qr-code.md) that has the same content. If you save the information as a file, save it by using the default name, *connections.json*, especially if you'll store it in the default location on each mobile device.
-
-> [!NOTE]
-> None of the preceding examples use `"ConnectionType": "DeviceCode"`. The app still accepts that value for backward compatibility, but Microsoft no longer recommends device code flow. Learn more in [Device code flow authentication](warehouse-app-authenticate-user-based.md#deviceCodeFlow).
 
 ### Save the connection settings file on each device
 
@@ -246,11 +188,6 @@ Follow these steps to import connection settings from a file or a QR code.
     - If you're importing the connection settings by scanning a QR code, select **Add from QR code**. The app prompts you for permission to use the device's camera. After you give permission, the camera starts, so that you can use it for scanning. Depending on the quality of the device's camera and the complexity of the QR code, you might find it difficult to get a correct scan. In that case, try to reduce the complexity of the QR code by generating only one connection per QR code. (Currently, you can use only the device's camera to scan the QR code.)
 
 1. After the connection settings load successfully, the selected connection appears.
-1. Complete one of the following steps to select the authentication certificate, depending on which type of device that you're using.
-
-    - If you're using an Android device and are using a certificate for authentication, the device prompts you to select the certificate.
-    - If you're using an iOS device and are using a certificate for authentication, select **Edit connection settings** and then select **Select certificate**. On the page that opens, select **Select certificate** to open a file browser and select your certificate file. The app then shows a **Certificate is selected** confirmation. Enter the certificate password and select **Import certificate**. Finally, save the connection settings.
-
 1. The app connects to your Supply Chain Management server and shows the sign-in page.
 
 ## <a name="config-manually"></a>Manually configure the application
@@ -273,29 +210,24 @@ If you don't have a file or QR code, you can manually configure the app on the d
     - **Company** – Enter the legal entity (company) in Supply Chain Management that you want the application to connect to.
     - **Authentication method** – Select one of the following values to specify the method that you use to authenticate with Supply Chain Management. The method that you select here must match the setup of the app in Azure.
 
-        - *Username and password* (recommended) – Authenticate by using SSO or by asking the user to enter a user name and password. [Username and password](warehouse-app-authenticate-user-based.md#usernamePasswordFlow) supports [brokered authentication](warehouse-app-authenticate-user-based.md#sso) for sophisticated, phishing-resistant sign-in mechanisms such as QR code plus PIN sign-in.
+        - *Username and password* (recommended) – Authenticate by using SSO or by asking the user to enter a user name and password. [Username and password](warehouse-app-authenticate-user-based.md#usernamePasswordFlow) supports [brokered authentication](warehouse-app-conditional-access-enable.md), which provides phishing-resistant sign-in.
         - *Device code* (not recommended) – Authenticate by using the [device code flow](warehouse-app-authenticate-user-based.md#deviceCodeFlow). This option remains available for backward compatibility, but Microsoft no longer recommends it because it's a frequent target of phishing attacks. Microsoft Entra ID security defaults block it by default in *new* tenants (including new tenants that are created for testing), it isn't available on iOS, and it doesn't support SSO or brokered authentication. If a device is still configured this way, reconfigure it to use *Username and password*.
 
     - **Cloud** – Specify the type of Microsoft Entra ID app registration to authenticate with:
 
-        - *Azure Global* (recommended) – Authenticate by using the global Microsoft Entra ID application that's registered and maintained by Microsoft. This option supports most scenarios, including [Microsoft Entra Conditional Access](warehouse-app-conditional-access-enable.md). If you choose this option, you don't have to register or maintain your own Microsoft Entra ID app.
-        - *Manual* – Authenticate through your own [custom Microsoft Entra ID app registration](warehouse-app-authenticate-user-based.md#create-service). Use this option only if you have specific requirements that the global application doesn't meet (for example, certain on-premises environment configurations). If you choose this option, you must [register and maintain a custom app in Microsoft Entra ID](warehouse-app-authenticate-user-based.md#create-service) and also specify **Microsoft Entra ID client ID** and **Microsoft Entra ID tenant** values for this connection.
+        - *Azure Global* (recommended) – Authenticate by using the global Microsoft Entra ID application that's registered and maintained by Microsoft. This option supports most scenarios, including [Microsoft Entra Conditional Access](warehouse-app-conditional-access-enable.md). You don't have to register or maintain your own Microsoft Entra ID app, and you don't have to enter a client ID or tenant.
+        - *Manual* – Authenticate through your own [custom Microsoft Entra ID app registration](warehouse-app-authenticate-user-based.md#create-service). Use this option only when the global application doesn't apply to your deployment because you connect to a Finance + Operations (on-premises) environment, you connect to a cloud other than Azure Global (such as a sovereign cloud), or you have specific requirements that the global application doesn't meet. If you choose this option, you must register and maintain a custom app in Microsoft Entra ID and specify a **Microsoft Entra ID client ID** value for the connection.
 
-        - **Microsoft Entra ID client ID** – This field is available only when the **Cloud** field is set to *Manual*. Enter the client ID that you noted while setting up Microsoft Entra ID. Learn more in [User-based authentication](warehouse-app-authenticate-user-based.md).
-    - **Microsoft Entra ID tenant** – This field is available only when the **Cloud** field is set to *Manual*. Enter the Microsoft Entra ID domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Microsoft-Entra-ID-domain-name>`. Here's an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. For more information about how to find your Microsoft Entra ID domain name, see [Locate important IDs for a user](/partner-center/find-ids-and-domain-names).
+    - **Microsoft Entra ID client ID** – This field is available only when the **Cloud** field is set to *Manual*. Enter the client ID of your custom app registration. Learn more in [User-based authentication](warehouse-app-authenticate-user-based.md).
+    - **Microsoft Entra ID tenant** – (Optional) This field is available only when the **Cloud** field is set to *Manual*. Enter the Microsoft Entra ID domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Microsoft-Entra-ID-domain-name>`. Here's an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. Learn more about how to find your Microsoft Entra ID domain name in [Locate important IDs for a user](/partner-center/find-ids-and-domain-names).
 
         > [!IMPORTANT]
         > Don't end this value with a slash (/).
 
-    - **Use Broker** – This option applies only when the **Authentication method** field is set to *Username and password*. It determines whether a broker is used for [SSO](warehouse-app-authenticate-user-based.md#sso) authentication with Intune Company Portal ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) only) or Microsoft Authenticator ([Android](/mem/intune/user-help/sign-in-to-the-company-portal) and [iOS](/mem/intune/user-help/sign-in-to-the-company-portal)). Set this option to *Yes* for broker-based authentication and SSO. Set it to *No* to require manual input of a user name and password.
+    - **Use Broker** – This option applies only when the **Authentication method** field is set to *Username and password*. It determines whether a broker is used for [SSO](warehouse-app-authenticate-user-based.md#sso) authentication. Set this option to *Yes* for broker-based authentication and SSO. Set it to *No* to require manual input of a user name and password. Learn more about the broker that each platform requires in [Device requirements](warehouse-app-conditional-access-enable.md#device-requirements).
     - **Domain name** – This field applies only when the **Authentication method** field is set to *Username and password*. You can use it to make sign-in easier for workers. If you don't set this field, workers must enter their full Microsoft Entra ID user principal name to sign in. A user principal name has the form \<*user name*\>@\<*domain name*\>. If you specify the \<*domain name*\> part here, workers can sign in by entering only the \<*user name*\> part. (Nevertheless, workers can still enter their full user principal name.)
 
 1. Select the **Save** button in the upper-right corner of the page.
-1. If you're using a certificate for authentication, complete one of the following steps:
-
-    - For Android devices, select the certificate when prompted.
-    - For iOS devices, follow the instructions given in step 5 in the [Import the connection settings](#config) section.
-
 1. The app connects to your Supply Chain Management server and shows the sign-in page.
 
 ## <a name="revoke"></a>Remove access for a lost or compromised device
