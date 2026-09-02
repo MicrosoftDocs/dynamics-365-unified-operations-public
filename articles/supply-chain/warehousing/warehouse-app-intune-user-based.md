@@ -4,7 +4,7 @@ description: Learn how to mass deploy the Warehouse Management app with user-bas
 author: pefreita
 ms.author: pefreita
 ms.topic: how-to
-ms.date: 08/13/2026
+ms.date: 09/02/2026
 ms.reviewer: kamaybac
 ms.search.form:
 ms.custom:
@@ -25,7 +25,7 @@ This article explains how to mass deploy the Warehouse Management mobile app wit
 
 ## Prerequisites
 
-To use an MDM solution to deploy the Warehouse Management mobile app and the related authentication certificates, you must have the following resources available:
+To use an MDM solution to deploy the Warehouse Management mobile app and its connection settings, you must have the following resources available:
 
 - Warehouse Management mobile app version 4.0 or later on all mobile platforms. (If you're still running version 3.x, [migrate to version 4](warehouse-app-migrating-from-v3-v4.md) before proceeding.)
 - A valid store account for each mobile platform that you support ([Microsoft account](https://account.microsoft.com/account/), [Google Account](https://www.google.com/account/about/), and/or [Apple Account](https://account.apple.com/sign-in))
@@ -114,9 +114,6 @@ The following subsections provide examples that show how to set up Intune to pro
 ### Create a connection JSON file
 
 To set up managed configuration for all mobile platforms, create a connection JSON file as described in [Create a connection settings file or QR code](install-configure-warehouse-management-app.md#connection-file-qr). This file enables the mobile app to connect to and authenticate with your Dynamics 365 Supply Chain Management environment.
-
-> [!TIP]
-> If your JSON file includes more than one connection, set one as the default connection by setting the `IsDefaultConnection` parameter to *true*. If you don't set a default connection, the app prompts the user to manually select an initial connection from the available options.
 
 ### Set up Intune to support managed configuration for Android devices
 

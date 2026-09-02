@@ -6,7 +6,7 @@ ms.author: pefreita
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: whats-new
-ms.date: 08/25/2026
+ms.date: 09/02/2026
 ms.custom:
   - bap-template
   - sfi-ropc-nochange
@@ -25,6 +25,18 @@ Starting with version 4.1.1.0, every V4 and later release is tagged with its pub
 
 > [!TIP]
 > For upcoming release dates, see [Warehouse Management mobile app release schedule](warehouse-app-control-updates.md). That article also describes optional ways to validate a release before it reaches your warehouse floor.
+
+## Release notes for version 4.1.6.0 (September 2, 2026)
+
+Version 4.1.6.0 is a hotfix release.
+
+### Bug fixes in version 4.1.6.0
+
+- **Spinner control** – Fixed an issue where the spinner control reset the entered value to *0* when a worker entered a value that was greater than *20*.
+
+### Improvements in version 4.1.6.0
+
+- **External numeric keypads** – You can now use an external numeric keypad (numpad) to enter digits in the app.
 
 ## Release notes for version 4.1.5.0 (August 25, 2026)
 
