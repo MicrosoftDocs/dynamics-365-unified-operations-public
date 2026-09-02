@@ -4,7 +4,7 @@ description: Learn how to set up e-reporting in France.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 07/28/2026
+ms.date: 09/02/2026
 ms.custom:
   - bap-template
 ms.reviewer: johnmichalak 
@@ -49,26 +49,26 @@ Learn more about how to import ER configurations in [Import Electronic reporting
 
 ## <a id="configure-asp"></a>Configure application-specific parameters for the e-Reporting XML (FR) format
 
-To correctly populate the `TransactionReportType > Transaction > CategoryCode` field in the France e-reporting XML output, you must configure application-specific parameters for the format.
+To correctly populate the `TransactionReportType > Transaction > CategoryCode` field in the France e-reporting XML output, configure application-specific parameters for the format.
 
-The `CategoryCode` identifies the type of reported transaction according to the French regulatory classification. The correct value must be derived based on the transaction characteristics in your system.
+The `CategoryCode` identifies the type of reported transaction according to the French regulatory classification. Derive the correct value based on the transaction characteristics in your system.
 
-The **TransCategoryCodeLookup** application-specific parameter enables flexible determination of the `CategoryCode` in the report. You can configure this lookup to align your business data with the required reporting classifications.
+Use the **TransCategoryCodeLookup** application-specific parameter to flexibly determine the `CategoryCode` in the report. Configure this lookup to align your business data with the required reporting classifications.
 
 The following values are supported:
 
-- TLB1: Transactions – Goods (B2C aggregated / sales of goods)
+- TLB1: Transactions – Goods (B2C aggregated or sales of goods)
 - TPS1: Transactions – Services
-- TNT1: Transactions – Non-territorial / outside VAT scope
-- TMA1: Transactions – Mixed / aggregated categories
+- TNT1: Transactions – Non-territorial or outside VAT scope
+- TMA1: Transactions – Mixed or aggregated categories
 
 To configure the **TransCategoryCodeLookup**, follow these steps:
 
 1. In the configuration tree, under the **Invoices Communication Model**, select the **e-Reporting XML (FR)** format.
-1. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
+1. On the **Action** pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
 1. On the **Application specific parameters** page, select the latest version of the format that you want to define conditions for.
 1. On the **Lookups** FastTab, select the **TransCategoryCodeLookup** lookup, and define the appropriate conditions.
-1. On the **Conditions** FastTab, define which combination of **Tax code**, **Sales tax group**, **Item sales tax group** must correspond to a specific lookup result.
+1. On the **Conditions** FastTab, define which combination of **Tax code**, **Sales tax group**, and **Item sales tax group** must correspond to a specific lookup result.
 1. Assign the appropriate **TransactionCategoryCode** value for each combination.
 1. After you finish setting up conditions, in the **State** field, select **Completed**. Then save the configuration.
 
@@ -119,7 +119,7 @@ This structure allows you to:
 
 ## <a id="set-up-em-parameters"></a>Set up EM parameters for the France e-reporting
 
-To enable France e-reporting processing, you must configure Electronic Messages (EM) parameters. This setup defines how the system collects data, structures messages, enriches them with extra data, and processes them during report generation.
+To enable France e-reporting processing, configure the Electronic Messages (EM) parameters. This setup defines how the system collects data, structures messages, enriches them with extra data, and processes them during report generation.
 
 The configuration includes:
 
@@ -155,7 +155,7 @@ To set up message item additional fields, follow these steps:
 1. In the same processing setup, go to the **Message item additional fields** section.
 1. Set fields for each relevant message item type. The default configuration defines the following values:
 
-   | Message item type| Field name | Default value |
+   | Message item type | Field name | Default value |
    | ----- | ----- | ----- |
    | FR-eRep Transactions B2C | FR-eRep TaxDueDateTypeCode | 3 |
    | FR-eRep Transactions Invoice | FR-eRep TaxDueDateTypeCode | 3 |
@@ -200,7 +200,7 @@ Different groups of users might require access to different electronic message p
 
 To limit access to the **FR e-reporting** processing, follow these steps:
 
-1. In Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic message processing**.
+1. In Finance, go to **Tax** > **Setup** > **Electronic messages** > **Electronic message processing**.
 1. Select the **FR e-reporting** processing.
 1. On the **Security roles** FastTab, add the security groups that must work with this processing for testing purposes. If you don't define a security group for the processing, only a system administrator can see the processing on the **Electronic messages** page.
 
@@ -297,10 +297,13 @@ During execution, the **FR‑eRep GenerateReportFile** class:
 - Applies the reporting structure and mappings.
 - Generates a structured XML output file.
 
-The generated file represents:
+The **FR-eRep GenerateReportFile** class generates one or several electronic messages with attached output files, depending on the data that's being reported. Message items are split into separate electronic messages by the following criteria:
 
-- One reporting document for the reporting period.
-- A collection of transactions and payment data.
+- **Data type** – transaction data and payment data are reported in separate files.
+- **Document direction** – outgoing documents (customer sales) and incoming documents (vendor reverse charge) are reported in separate files.
+- **Reporting period** – items are split by the reporting period that's derived from the **VAT regime** parameter, the operation date (transaction data) or collection date (payment data) and report generation date. Each file covers a single reporting period.
+
+As a result, each electronic message and generated file represents one reporting document for a single combination of data type, direction, and reporting period. A period that was already submitted and later changed is regenerated as a rectifying (RE) transmission is new message items are found relevant to that period.
 
 Within the **FR e-reporting** processing:
 
@@ -311,7 +314,7 @@ Within the **FR e-reporting** processing:
 After this class executes:
 
 - A structured XML output file is generated for the electronic message.
-- The file contains all relevant transactions and payment data.
+- The file contains all relevant transactions or payment data.
 
 The settings of this class control the execution of logic that drives data collection, processing, and output generation.
 
@@ -326,10 +329,30 @@ The settings of this class control the execution of logic that drives data colle
 | Payments report type     | Status to Pending                | FR-eRep Payment Entry Pending  |
 | Payments report type     | Status to Excluded                | FR-eRep Payment Entry Excluded    |
 
+##### Reporting period and VAT regime
+
+The **FR-eRep GenerateReportFile** executable class groups message items into separate reports by reporting period, in addition to the invoice direction (incoming/outgoing) and data type (transaction/payment). Each generated report (electronic message) covers exactly one reporting period. Items that belong to different periods are never combined into the same report.
+
+The reporting period is derived from the declarant's VAT regime together with the date of the operation (for transaction data) or the collection date (for payment data), as required by the French e-reporting regulation. Configure the following parameters.
+
+| Parameter name | Value | Description |
+|----------------|----------|----------|
+| **VAT regime** | <li>Standard VAT regime - Monthly, </br> <li>Simplified VAT regime - Quarterly, </br> <li>Franchise in base VAT regime | Specifies the VAT regime of the declarant. This value drives the reporting-period granularity that's applied when the file is generated. |
+
+The **VAT regime** value determines the reporting period as follows.
+
+| VAT regime | Transaction data period | Payment data period |
+| ------------- | ------------------------ | --------------------- |
+| Standard VAT regime - Monthly | Ten-day periods (1–10, 11–20, 21–end of month) | Monthly |
+| Simplified VAT regime - Quarterly | Monthly | Monthly |
+| Franchise in base VAT regime | Bimonthly civil periods (Jan–Feb, Mar–Apr, May–Jun, Jul–Aug, Sep–Oct, Nov–Dec) | Same bimonthly period |
+
+When you regenerate a report for a reporting period that you already submitted and subsequently changed, you must issue the transmission as a rectifying transmission (RE – Rectificative) rather than a new initial transmission (IN – Initiale). In the generated file, the transmission type is represented by a single report tag whose value the system populates from the **FR-eRep TypeCode** additional field of the electronic message. Accordingly, the **FR-eRep TypeCode** additional field must hold the rectifying value (RE) before the report is regenerated; otherwise, the system populates the report tag with the initial value and regenerates an initial transmission. If you transmit reports outside Dynamics 365 Finance, you are responsible for setting the **FR-eRep TypeCode** additional field to **RE** after a reporting period is successfully submitted. If you use the EDICOM integration provided by Microsoft, this step is performed automatically: the system sets the **FR-eRep TypeCode** additional field to **RE** upon receipt of the authority's confirmation of a successful submission. Together with per-period reporting, the correct transmission type ensures that reports meet the platform's period-consistency requirements and are not rejected with a period-control error (`REJ_PER`).
+
 ## <a id="set-up-multi-tax"></a>Set up FR e-Reporting to report in multiple VAT registrations legal entity
 
 The multiple VAT registrations legal entity scenario applies to organizations that operate with multiple VAT registration numbers within the same legal entity.
-This scenario is supported if you're using the [Tax Calculation](../global/global-tax-calcuation-service-overview.md) functionality and enabled the [Support multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md) parameter in the **Tax calculation parameters** page.
+This scenario is supported if you use the [Tax Calculation](../global/global-tax-calcuation-service-overview.md) functionality and enable the [Support multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md) parameter in the **Tax calculation parameters** page.
 
 In this scenario, you must group and report transactions per VAT registration, rather than for the whole legal entity. When you enable multiple VAT registrations, you assign each transaction (for example, customer invoice, vendor invoice, or tax transaction) a tax registration number.
 

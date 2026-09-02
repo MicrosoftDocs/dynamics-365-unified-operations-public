@@ -4,7 +4,7 @@ description: Learn how to set up and report electronically transaction in France
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 07/28/2026
+ms.date: 09/02/2026
 ms.custom:
   - bap-template
 ms.reviewer: johnmichalak 
@@ -36,6 +36,16 @@ This restriction includes:
 - Payment data for transactions where VAT is due upon payment
 
 E-reporting complements e-invoicing by ensuring that the tax authorities receive data for all VAT-relevant transactions.
+
+### Reporting periods
+
+France e-reporting data is transmitted per reporting period. The declarant's **VAT regime** and the date of the operation (transaction data) or collection (payment data) determine the period:
+
+- Standard VAT regime - Monthly – transaction data in ten-day periods; payment data monthly.
+- Simplified VAT regime - Quarterly – monthly periods.
+- Franchise in base VAT regime – bimonthly (two-month civil) periods.
+  
+Each transmission covers a single period. A previously submitted period is corrected through a rectifying transmission. This alignment ensures that reports meet the platform's period-consistency requirements. Select the **VAT regime** when you configure report generation. For more information, see [How to prepare your Dynamics 365 Finance for French e-Reporting](emea-fra-e-reporting-preparation.md).
 
 ## Feature availability
 
