@@ -4,7 +4,7 @@ description: Learn how to report electronically transaction in France.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 07/28/2026
+ms.date: 09/02/2026
 ms.custom:
   - bap-template
 ms.reviewer: johnmichalak 
@@ -67,12 +67,12 @@ To report France e-reporting data, follow these steps.
 
 To populate data, follow these steps:
 
-1. In Finance, go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic message items**.
+1. In Finance, go to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic message items**.
 1. On the Action Pane, select **Run processing**.
 1. In the dialog, in the **Processing** field, select **FR e-Reporting**.
 1. Select the **Choose action** checkbox, and then, in the **Action** field, select the **FR-eRep Populate Report Data** action.
 1. Expand the **Run in the background** FastTab and specify the **Recurrence** settings for the **FR-eRep Populate Report Data** action. For example, if you want the system to collect data for e-reporting on a daily basis, define the recurrence pattern as every weekday.
-1. Mark the **Batch processing** checkbox to execute the **FR-eRep Populate Report Data** action in the background according to defined recurrence settings.
+1. Select the **Batch processing** checkbox to execute the **FR-eRep Populate Report Data** action in the background according to the defined recurrence settings.
 
 ### Review e-reporting entries
 
@@ -84,7 +84,7 @@ After data is populated, you can control which records are included in the repor
 To review e-reporting entries, follow these steps:
 
 1. In Finance, go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic message items**.
-1. On the Action Pane, select **Update status**.
+1. On the **Action** pane, select **Update status**.
 1. In the dialog, in the **Processing** field, select **FR e-Reporting**.
 1. In the **Action** field, select relevant action.
 1. In the **New status** field, select the status to apply to the selected message items.
@@ -93,11 +93,40 @@ This step ensures that only relevant data is included in the final report.
 
 ### Generate reports
 
-You can generate different report outputs depending on your reporting needs:
+You can generate different report outputs depending on your reporting needs. The following actions are available:
 
-- FR-eRep Generate Transactions Report – transactions only
-- FR-eRep Generate Payments Report – payments only
-- FR-eRep Generate Full Report – combined report
+- **FR-eRep Generate Transactions Report** – transactions only
+- **FR-eRep Generate Payments Report** – payments only
+- **FR-eRep Generate Full Report** – combined report
+
+The action that you select determines which data type is included in the run, according to your company's business needs. Choose **FR-eRep Generate Full Report** to let the system process all collected message items and decide automatically how to distribute them, or choose **FR-eRep Generate Transactions Report** or **FR-eRep Generate Payments Report** to restrict the run to a single data type.
+
+Regardless of which action you select, the system automatically distributes the collected message items into one or several electronic messages and output files, so that each file contains only records that belong together for reporting. An output file is created for each unique combination of the following criteria:
+
+- **Data type** – transaction data and payment data are always reported in separate files.
+- **Document direction** – outgoing documents (customer sales) and incoming documents (vendor reverse charge, that is, purchases self-assessed by the declarant) are reported in separate files.
+- **Reporting period** – records are separated by the reporting period that's derived from the **VAT regime** parameter of the **FR-eRep GenerateReportFile** executable class, together with the operation date (transaction data) or the collection date (payment data) and report generation date. Each file covers a single reporting period.
+
+As a result, a single generation run can create multiple electronic messages and files attached to them. For example, when you run **FR-eRep Generate Full Report** for a declarant on the **Standard VAT regime - Monthly regime**, the system can produce separate files for outgoing and incoming transaction data for each ten-day period, and separate files for outgoing and incoming payment data for each month, based on the records that were collected. When you run **FR-eRep Generate Transactions Report** or **FR-eRep Generate Payments Report**, the same split applies but is limited to the selected data type.
+
+Each generated file carries a transmission-type tag whose value the system populates from the **FR-eRep TypeCode** additional field of the electronic message (**IN** – Initiale for an initial transmission or **RE** – Rectificative for a rectifying transmission). For more information about how the reporting period and the VAT regime are configured, see [How to prepare your Dynamics 365 Finance for French e-Reporting](emea-fra-e-reporting-preparation.md).
+
+The system includes message items in a generated file only when their reporting period is complete. A reporting period is considered complete after its last day has passed. Items that belong to a period that's still open—that is, a period whose end date hasn't yet been reached—aren't included in any file. They remain in the system and are picked up automatically for generation after the period is complete. This behavior ensures that a period is reported only once its data is final, and that a file is never transmitted for a period that's still in progress.
+
+>[!TIP]
+>**Example**
+>
+>A declarant uses the **Standard VAT regime - Monthly** VAT regime, so transaction data is reported in ten-day periods (1–10, 11–20, and 21–end of month). The following invoices have been collected as message items:
+>
+>- Invoice A, dated 5 September – belongs to the 1–10 September period.
+>- Invoice B, dated 15 September – belongs to the 11–20 September period.
+>- Invoice C, dated 25 September – belongs to the 21–30 September period.
+>
+>  The 1–10 September period was already generated and submitted. The current date is 26 September. When report generation runs on 26 September, the outcome is as follows:
+>
+>- 1–10 September – The period is complete and was already submitted. If its data changed, the system regenerates the file for this period as a rectifying transmission (**RE** – Rectificative), which cancels and replaces the previously submitted aggregate. Invoice A is reported in this rectifying file. If you use the EDICOM integration provided by Microsoft, the **FR-eRep TypeCode** additional field is set to **RE** automatically upon receipt of the authority's confirmation of a successful submission. If you don't use the EDICOM integration, you must update the **FR-eRep TypeCode** additional field to **RE** manually before you regenerate the file for this period.
+>- 11–20 September – The period is complete but hasn't been reported yet. The system generates a new electronic message for the initial transmission (**IN** – Initiale) for this period. Invoice B is reported in this new file.
+>- 21–30 September – The period is still open on 26 September, because its last day hasn't passed. Invoice C isn't included in any file and remains untouched. It's picked up automatically for generation after 30 September, once the period is complete.
 
 To generate reports, follow these steps:
 
@@ -118,7 +147,7 @@ Use **FR-eRep Regenerate Report File** if you need to submit a corrected report 
 
 To regenerate reports, follow these steps:
 
-1. In Finance, go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic messages**.
+1. In Finance, go to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic messages**.
 1. For the **FR e-Reporting** processing, find and select the electronic message that you previously submitted.
 1. Expand the **Additional fields** FastTab and select the **FR-eRep TypeCode** additional field. Select **RE** value (Rectificative) for the **FR-eRep TypeCode** additional field.
 1. Select **Generate report** button on the **Messages** FastTab to regenerate the report.
@@ -131,10 +160,11 @@ Use **FR-eRep Mark Report as Submitted** to complete the process. This action ch
 
 To finalize reporting, follow these steps:
 
-1. In Finance, go to **Tax > Inquiries and reports > Electronic messages > Electronic message**.
+1. In Finance, go to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic message**.
 1. On the Action Pane, select **Update status**.
 1. In the dialog, in the **Processing** field, select **FR e-Reporting**.
 1. In the **Action** field, select the **FR-eRep Mark Report as Submitted** action.
 1. In the **New status** field, select the **FR-eRep Report Submitted** status to apply to the selected message.
+1. Set the value of the **FR-eRep TypeCode** additional field to **RE** so that any subsequent regeneration of the report for this period is generated as a rectifying transmission.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
