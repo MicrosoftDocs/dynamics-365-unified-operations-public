@@ -2843,6 +2843,8 @@
             href: supplier-engagement/supplier-engagement-portal-invoices.md
           - name: View consignment details
             href: supplier-engagement/supplier-engagement-portal-consignment.md
+        - name: Supplier Engagement frequently asked questions
+          href: supplier-engagement/suppler-engagement-frequently-asked-questions.md
       - name: Integrate with contract lifecycle management systems
         items:
         - name: Contract lifecycle management integration overview
