@@ -18,21 +18,24 @@ The Warehouse Management mobile app supports QR code configuration to simplify t
 
 QR codes can contain connection configuration data in JavaScript Object Notation (JSON) format. Therefore, you can quickly deploy and set up the Warehouse Management app across multiple devices. This method is useful for IT administrators who must configure multiple devices. It's also useful when configurations must be shared with warehouse workers.
 
-Other methods for setting connection information include using a connection settings file and manually entering the details. Learn more about these options in [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md).
+Other ways to deliver connection settings include your mobile device management (MDM) provider, a connection settings file, and manual entry on the device. To compare them, see [Choose how to distribute connection settings](install-configure-warehouse-management-app.md#distribute).
 
 ## Supported connection types
 
 The feature for QR code–based connection configuration supports all connection types that the Warehouse Management mobile app supports:
 
-- **UsernamePassword** (recommended) – Username/password authentication. Combine it with `"UseBroker": true` to enable [brokered authentication](warehouse-app-conditional-access-enable.md) and single sign-on (SSO). The examples in this article use this connection type.
+- **UsernamePassword** (recommended) – Username/password authentication. The examples in this article use this connection type.
 - **DeviceCode** (not recommended) – Interactive [device code flow](warehouse-app-authenticate-user-based.md#deviceCodeFlow) authentication.
 
 > [!IMPORTANT]
-> Although QR codes can still specify `"ConnectionType": "DeviceCode"`, Microsoft no longer recommends device code flow because it's a frequent target of phishing attacks. Microsoft Entra ID security default settings block device code flow by default in *new* tenants, so a QR code that specifies this connection type might not work. It's also not supported on iOS. Use `"UsernamePassword"` (ideally with `"UseBroker": true`) in the QR codes that you generate. Learn more in [Device code flow authentication](warehouse-app-authenticate-user-based.md#deviceCodeFlow).
+> Specify `"UsernamePassword"` in the QR codes that you generate. A QR code can still specify `"ConnectionType": "DeviceCode"`, but that flow is blocked by default in new tenants, so the code might not work. Learn more in [Device code flow authentication](warehouse-app-authenticate-user-based.md#deviceCodeFlow).
+
+> [!NOTE]
+> The examples in this article omit the optional `"UseBroker"` parameter, because you don't need to set it. Learn more in [Connection settings reference](warehouse-app-connection-settings.md#connection-file-qr).
 
 ## Step 1: Prepare your configuration JSON code
 
-Create a JSON configuration that includes your connection details. Follow the instructions in [Create a connection settings file or QR code](install-configure-warehouse-management-app.md#connection-file-qr). The JSON code should have the following structure.
+Create a JSON configuration that includes your connection details. Follow the instructions in [Connection settings reference](warehouse-app-connection-settings.md#connection-file-qr). The JSON code should have the following structure.
 
 ```json
 {
@@ -42,7 +45,6 @@ Create a JSON configuration that includes your connection details. Follow the in
             "ActiveDirectoryResource": "https://yourenvironment1.cloudax.dynamics.com",
             "Company": "USMF",
             "ConnectionType": "UsernamePassword",
-            "UseBroker": true,
             "AuthCloud": "AzureGlobal"
         }
     ]
@@ -69,7 +71,6 @@ Follow these steps to ask Copilot to generate a QR code for your JSON configurat
                 "ActiveDirectoryResource": "https://yourenvironment.cloudax.dynamics.com",
                 "Company": "USMF",
                 "ConnectionType": "UsernamePassword",
-                "UseBroker": true,
                 "AuthCloud": "AzureGlobal"
             }
         ]
@@ -105,7 +106,6 @@ $jsonConfig = @"
             "ActiveDirectoryResource": "https://yourenvironment.cloudax.dynamics.com",
             "Company": "USMF",
             "ConnectionType": "UsernamePassword",
-            "UseBroker": true,
             "AuthCloud": "AzureGlobal"
         }
     ]
@@ -133,4 +133,4 @@ After you generate the required QR code, distribute it in any of the following w
 
 ## Step 4: Scan the QR code on each device
 
-To use the generated QR code to configure a device, follow the steps in [Import the connection settings](install-configure-warehouse-management-app.md#config).
+To use the generated QR code to configure a device, follow the steps in [Import the connection settings on a device](install-configure-warehouse-management-app.md#config).
