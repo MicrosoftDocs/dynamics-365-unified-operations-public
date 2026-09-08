@@ -6,7 +6,7 @@ ms.author: shubhamshr
 ms.reviewer: kamaybac
 ms.search.form: PurchTableListPage, PurchParmUpdate
 ms.topic: how-to
-ms.date: 08/10/2026
+ms.date: 09/08/2026
 ms.custom:
   - bap-template
 ---
@@ -57,6 +57,12 @@ The *Confirm purchase orders* batch job processes purchase orders in bulk. Follo
 
 > [!NOTE]
 > When **Print management destination** is set to *Yes*, the system always uses the *After* print behavior in batch processing, even if you set **Print** to  *Current* (the batch job always saves and runs with **Print** set to *After*). With *After*, if one purchase order in a batch fails validation (for example, because of a credit management check or because change management is enabled), the document sending step might not run for any purchase orders in the same batch, even those that were confirmed successfully.
+
+### Where to find confirmation history after a recurring batch runs
+
+The **Confirmations** page that you open from a purchase order shows *posting-parameter* records. These records are staging data for the current batch operation, not the permanent confirmation history. On every recurrence, the *Confirm purchase orders* batch job clears the existing records in its posting-parameter set before it selects the purchase orders for the next run. As a result, purchase orders from a previous run no longer appear on that page. This behavior is by design, and the **Late selection** setting isn't the reason that the previous staging records are cleared.
+
+The permanent confirmation history isn't affected. To review confirmations for audit or historical purposes, go to **Accounts payable** > **Purchase orders** > **Purchase order confirmations**, and then filter by purchase order, vendor, confirmation number, or date. Build reports and integrations from the purchase order confirmation journals rather than from the posting-parameter staging tables.
 
 ## Configure email delivery of purchase order confirmation documents
 

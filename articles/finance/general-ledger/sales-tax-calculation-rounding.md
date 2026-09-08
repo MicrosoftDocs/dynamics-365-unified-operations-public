@@ -4,7 +4,7 @@ description: Access an overview of sales tax calculation and rounding and explai
 author: EricWangChen
 ms.author: wangchen
 ms.topic: overview
-ms.date: 06/15/2026
+ms.date: 09/08/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -27,11 +27,23 @@ Several parameters control sales tax calculation and rounding:
 
 - **Calculation method** – Set on the **General ledger parameters** page. It defines whether the system calculates the tax base amount per document or per line. If you set the **Marginal base** parameter for the sales tax code to **Net amount of invoice balance**, the system always calculates the tax base amount per document, regardless of the setting of this parameter.
 - **Rounding by** – Set for the sales tax group. It defines whether the system rounds the tax amount per sales tax code or per sales tax code combination.
-- **Origin** – Set for the sales tax code. It defines how the system calculates the tax amount. For more information, see [Sales tax calculation methods in the Origin field](sales-tax-calculation-methods-origin-field.md).
-- **Marginal base** – This parameter is set for the sales tax code and determines which amount is used to select the appropriate tax rates on the **Sales tax code values** page. For more information, see [Sales tax rates based on the Marginal base and Calculation methods](marginal-base-field.md).
+- **Origin** – Set for the sales tax code. It defines how the system calculates the tax amount. Learn more in [Sales tax calculation methods in the Origin field](sales-tax-calculation-methods-origin-field.md).
+- **Marginal base** – This parameter is set for the sales tax code and determines which amount is used to select the appropriate tax rates on the **Sales tax code values** page. Learn more in [Sales tax rates based on the Marginal base and Calculation methods](marginal-base-field.md).
 - **Sales tax rounding rule** – This parameter is set for the sales tax code and defines how the determined sales tax amount is rounded, including the rounding precision and the rounding method.
+- **Sales tax amount per invoice line** – This option determines whether the calculated sales tax amount is stored on each individual document line. Learn more in [Store the sales tax amount on each invoice line](#store-the-sales-tax-amount-on-each-invoice-line).
 
 The rest of this article presents some typical examples of sales tax calculation and rounding that use a combination of the preceding parameters.
+
+## Store the sales tax amount on each invoice line
+
+The **Sales tax amount per invoice line** option determines whether the sales tax amount that you calculate for a document is also stored on each individual line of the document, such as a purchase order line or a sales order line.
+
+To set this option, go to **Tax** > **Setup** > **Parameters** > **General ledger parameters**. On the **Sales tax** tab, expand **Tax options** and then set **Sales tax amount per invoice line**.
+
+- When **Sales tax amount per invoice line** is set to *Yes*, the system stores the calculated sales tax amount on each line during confirmation or posting, and it populates the per-line **Sales tax amount** field.
+- When **Sales tax amount per invoice line** is set to *No*, the system still calculates sales tax for the document and keeps it visible on the sales tax transactions (for example, on **Purchase** > **Tax** > **Sales tax**), but the per-line **Sales tax amount** field remains blank or zero.
+
+This option applies prospectively to processing that occurs after you save the change. It doesn't retroactively populate the per-line amount on documents that were already processed. An existing document can receive the stored per-line amount only through a supported confirmation or posting action, and only when its current state makes that action available. Review this legal-entity tax setting with your tax and accounting administrators before you change it because it affects how tax amounts are stored and displayed across sales and purchase documents.
 
 ## Scenario for the examples
 
@@ -59,12 +71,12 @@ The rest of this article presents some typical examples of sales tax calculation
 | 2           | Code 1         | 42.42         | 4.25             |
 | 2           | Code 2         | 42.42         | 4.25             |
 
-The tax base amount is calculated per line:
+Calculate the tax base amount per line:
 
 - **Line 1:** 42.42
 - **Line 2:** 42.42
 
-The tax amount is calculated per sales tax code:
+Calculate the tax amount per sales tax code:
 
 - **Line 1:**
 
@@ -76,7 +88,7 @@ The tax amount is calculated per sales tax code:
   - Tax amount for sales tax code 1 = 42.42 &times; 10 percent = 4.242
   - Tax amount for sales tax code 2 = 42.42 &times; 10 percent = 4.242
 
-The tax amount is rounded per sales tax code:
+Round the tax amount for each sales tax code:
 
 - **Line 1:**
 
@@ -105,21 +117,21 @@ The tax amount is rounded per sales tax code:
 | 2           | Code 1         | 42.42         | 4.24             |
 | 2           | Code 2         | 42.42         | 4.24             |
 
-The tax base amount is calculated per document:
+Calculate the tax base amount per document:
 
 - Tax base amount = 42.42 + 42.42 = 84.84
 
-The tax amount is calculated per sales tax code:
+Calculate the tax amount per sales tax code:
 
 - Tax amount for sales tax code 1 = 84.84 &times; 10 percent = 8.484
 - Tax amount for sales tax code 2 = 84.84 &times; 10 percent = 8.484
 
-The tax amount is rounded per sales tax code:
+Round the tax amount for each sales tax code:
 
 - Rounded tax amount for sales tax code 1 = 8.49
 - Rounded tax amount for sales tax code 2 = 8.49
 
-The rounded tax amount is allocated to each line per sales tax code:
+Allocate the rounded tax amount to each line per sales tax code:
 
 - Allocate the rounded tax amount for sales tax code 1 (8.49) to line 1 (4.25) and line 2 (4.24).
 - Allocate the rounded tax amount for sales tax code 2 (8.49) to line 1 (4.25) and line 2 (4.24).
@@ -141,12 +153,12 @@ The rounded tax amount is allocated to each line per sales tax code:
 | 2           | Code 1         | 42.42         | 4.72             |
 | 2           | Code 2         | 42.42         | 4.72             |
 
-The tax base amount is calculated per line:
+Calculate the tax base amount per line:
 
 - **Line 1:** 42.42
 - **Line 2:** 42.42
 
-The tax amount is calculated per sales tax code:
+Calculate the tax amount per sales tax code:
 
 - **Line 1:**
 
@@ -158,7 +170,7 @@ The tax amount is calculated per sales tax code:
   - Tax amount for sales tax code 1 = 42.42 &times; 10 percent &divide; (1 – 10 percent) = 4.7133
   - Tax amount for sales tax code 2 = 42.42 &times; 10 percent &divide; (1 – 10 percent) = 4.7133
 
-The tax amount is rounded per sales tax code:
+Round the tax amount for each sales tax code:
 
 - **Line 1:**
 
@@ -187,21 +199,21 @@ The tax amount is rounded per sales tax code:
 | 2           | Code 1         | 42.42         | 4.71             |
 | 2           | Code 2         | 42.42         | 4.71             |
 
-The tax base amount is calculated per document:
+Calculate the tax base amount per document:
 
 - Tax base amount = 42.42 + 42.42 = 84.84
 
-The tax amount is calculated per sales tax code:
+Calculate the tax amount per sales tax code:
 
 - Tax amount for sales tax code 1 = 84.84 &times; 10 percent &divide; (1 – 10 percent) = 9.4267
 - Tax amount for sales tax code 2 = 84.84 &times; 10 percent &divide; (1 – 10 percent) = 9.4267
 
-The tax amount is rounded per sales tax code:
+Round the tax amount for each sales tax code:
 
 - Rounded tax amount for sales tax code 1 = 9.43
 - Rounded tax amount for sales tax code 2 = 9.43
 
-The rounded tax amount is allocated to each line per sales tax code:
+Allocate the rounded tax amount to each line per sales tax code:
 
 - Allocate the tax amount for sales tax code 1 (9.43) to line 1 (4.72) and line 2 (4.71).
 - Allocate the tax amount for sales tax code 2 (9.43) to line 1 (4.72) and line 2 (4.71).
@@ -223,28 +235,28 @@ The rounded tax amount is allocated to each line per sales tax code:
 | 2           | Code 1         | 42.42         | 4.24             |
 | 2           | Code 2         | 42.42         | 4.24             |
 
-The tax base amount is calculated per line:
+Calculate the tax base amount per line:
 
 - **Line 1:** 42.42
 - **Line 2:** 42.42
 
-The tax amount is calculated per sales tax code:
+Calculate the tax amount per sales tax code:
 
 - **Line 1:**
 
   - Tax amount for sales tax code 1 = 42.42 &times; 10 percent = 4.242
-  - tax amount for sales tax code 2 = 42.42 &times; 10 percent = 4.242
+  - Tax amount for sales tax code 2 = 42.42 &times; 10 percent = 4.242
 
 - **Line 2:**
 
   - Tax amount for sales tax code 1 = 42.42 &times; 10 percent = 4.242
   - Tax amount for sales tax code 2 = 42.42 &times; 10 percent = 4.242
 
-The tax amount is rounded per sales tax code combination:
+Round the tax amount per sales tax code combination:
 
-- Total sales tax amount = 4.242 + 4.242 + 4.242 + 4.242 = 16.968, which is rounded up to 16.97
+- Total sales tax amount = 4.242 + 4.242 + 4.242 + 4.242 = 16.968, which rounds up to 16.97
 
-The rounded tax amount is allocated to each line per sales tax code:
+Allocate the rounded tax amount to each line per sales tax code:
 
 - Allocate the sales tax amount (16.97) to line 1 and line 2:
 
@@ -275,20 +287,20 @@ The rounded tax amount is allocated to each line per sales tax code:
 | 2           | Code 1         | 42.42         | 4.24             |
 | 2           | Code 2         | 42.42         | 4.24             |
 
-The tax base amount is calculated per document:
+Calculate the tax base amount per document:
 
 - Tax base amount = 42.42 + 42.42 = 84.84
 
-The tax amount is calculated per sales tax code:
+Calculate the tax amount per sales tax code:
 
 - Tax amount for sales tax code 1 = 84.84 &times; 10 percent = 8.484
 - Tax amount for sales tax code 2 = 84.84 &times; 10 percent = 8.484
 
-The tax amount is rounded per sales tax code combination:
+Round the tax amount per sales tax code combination:
 
-- Total sales tax amount = 8.484 + 8.484 = 16.968, which is rounded up to 16.97
+- Total sales tax amount = 8.484 + 8.484 = 16.968, which rounds up to 16.97
 
-The rounded tax amount is allocated to each line per sales tax code:
+Allocate the rounded tax amount to each line per sales tax code:
 
 - Allocate the sales tax amount (16.97) to line 1 and line 2:
 
@@ -319,12 +331,12 @@ The rounded tax amount is allocated to each line per sales tax code:
 | 2           | Code 1         | 42.42         | 4.71             |
 | 2           | Code 2         | 42.42         | 4.72             |
 
-The tax base amount is calculated per line:
+Calculate the tax base amount per line:
 
 - **Line 1:** 42.42
 - **Line 2:** 42.42
 
-The tax amount is calculated per sales tax code:
+Calculate the tax amount per sales tax code:
 
 - **Line 1:**
 
@@ -336,11 +348,11 @@ The tax amount is calculated per sales tax code:
   - Tax amount for sales tax code 1 = 42.42 &times; 10 percent &divide; (1 – 10 percent) = 4.7133
   - Tax amount for sales tax code 2 = 42.42 &times; 10 percent &divide; (1 – 10 percent) = 4.7133
 
-The tax amount is rounded per sales tax code combination:
+Round the tax amount per sales tax code combination:
 
-- Total sales tax amount = 4.7133 + 4.7133 + 4.7133 + 4.7133 = 18.8532, which is rounded up to 18.86
+- Total sales tax amount = 4.7133 + 4.7133 + 4.7133 + 4.7133 = 18.8532, which rounds up to 18.86
 
-The rounded tax amount is allocated to each line per sales tax code:
+Allocate the rounded tax amount to each line per sales tax code:
 
 - Allocate the sales tax amount (18.86) to line 1 and line 2:
 
@@ -371,20 +383,20 @@ The rounded tax amount is allocated to each line per sales tax code:
 | 2           | Code 1         | 42.42         | 4.71             |
 | 2           | Code 2         | 42.42         | 4.72             |
 
-The tax base amount is calculated per document:
+Calculate the tax base amount per document:
 
 - Tax base amount = 42.42 + 42.42 = 84.84
 
-The tax amount is calculated per sales tax code:
+Calculate the tax amount per sales tax code:
 
 - Tax amount for sales tax code 1 = 84.84 &times; 10 percent &divide; (1 – 10 percent) = 9.4267
 - Tax amount for sales tax code 2 = 84.84 &times; 10 percent &divide; (1 – 10 percent) = 9.4267
 
-The tax amount is rounded per sales tax code combination:
+Round the tax amount per sales tax code combination:
 
-- Total sales tax amount = 9.4267 + 9.4267 = 18.8534, which is rounded up to 18.86
+- Total sales tax amount = 9.4267 + 9.4267 = 18.8534, which rounds up to 18.86
 
-The rounded tax amount is allocated to each line per sales tax code:
+Allocate the rounded tax amount to each line per sales tax code:
 
 - Allocate the sales tax amount (18.86) to line 1 and line 2:
 
