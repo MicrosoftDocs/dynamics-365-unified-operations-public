@@ -6,7 +6,7 @@ ms.author: johnmichalak
 ms.topic: overview
 ms.custom: 
   - bap-template
-ms.date: 01/21/2026
+ms.date: 09/08/2026
 ms.reviewer: johnmichalak 
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -210,6 +210,11 @@ To speed up the import of data, enable parallel processing for importing a file 
     - In the **Entity** field, select the entity. If the entity field is empty, the empty value is the default setting for all subsequent imports, if the entity supports parallel import.
     - In the **Import threshold record count** field, enter the threshold record count for import. This value determines the record count that each thread processes. If a file has 10,000 records, a record count of 2,500 with a task count of four means each thread processes 2,500 records.
     - In the **Import task count** field, enter the count of import tasks. The count can't exceed the max batch threads allocated for batch processing in **System administration \>Server configuration**.
+
+Some entities run custom import-sequence processing during staging and therefore don't support parallel import. For these entities, such as *Vendors V2*, the **Import task count** must be *1*. If you enter a value greater than 1, Data management rejects the setting and indicates that an entity with a custom sequence doesn't support more than one task. This behavior is by design. Set **Import task count** to *1* for the entity, and then run and monitor the import from the **Data management** workspace.
+
+> [!IMPORTANT]
+> This validation applies only to the task count for a single entity execution. It doesn't define a supported design for splitting an import file across separate jobs. Validate any separate-job or file-splitting approach with representative data in a non-production environment.
 
 > [!NOTE]
 > Adding too many parallel tasks causes the underlying infrastructure to use the resource capacity at 100% and impacts the environment performance and other operations. Understand the resource capacity of the environment and consumption based on the parallel import tasks configured and limit the number of tasks.

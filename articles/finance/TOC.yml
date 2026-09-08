@@ -2494,6 +2494,8 @@
                       href: localizations/iberoamerica/ltm-Colombia-purchase-vat-book.md
                     - name: Configure electronic invoice parameters for Colombia
                       href: localizations/iberoamerica/ltm-colombia-configure-electronic-invoice.md
+                    - name: Configure the Colombia support document and adjustment note
+                      href: localizations/iberoamerica/ltm-colombia-support-document.md
                     - name: Configure printing for the Withholding certificate format for Colombia
                       href: localizations/iberoamerica/ltm-colombia-withholding-certificate.md
                     - name: Format 1001 file for Colombia issue configuration

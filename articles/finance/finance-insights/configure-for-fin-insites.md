@@ -70,7 +70,7 @@ When you install the Finance insights add-in, it automatically enables all Finan
 If you previously installed the Finance insights add-in, uninstall it before you complete the following procedure.
 
 > [!NOTE]
-> If you previously installed the Export to Data Lake add-in in Lifecycle Services, uninstall it before you install the Finance Insights add-in. The Export to Data Lake add-in is deprecated. For more information, see [Export to Data Lake in finance and operations apps](../../fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake.md).
+> If you previously installed the Export to Data Lake add-in in Lifecycle Services, uninstall it before you install the Finance Insights add-in. The Export to Data Lake add-in is deprecated. For more information, see [Export to Data Lake in finance and operations apps](../../fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates.md).
 
 To install the Finance insights add-in, follow these steps:
 

@@ -6,7 +6,7 @@ ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal, PurchLine, AgreementLines
 ms.topic: how-to
-ms.date: 07/21/2025
+ms.date: 09/08/2026
 ms.custom:
   - bap-template
 ---
@@ -27,7 +27,7 @@ To prevent your purchase agreement from being used and confirmed, mark the agree
 
 ## Responsible workers on purchase agreements
 
-You can identify a primary responsible worker and secondary responsible worker on the purchase agreement classification. These values will be inherited by the resulting purchase agreement. You're not required to add responsible workers to the purchase agreement, and they can be modified directly on a per case basis on the purchase agreement itself. You can't specify a secondary responsible worker without a primary responsible worker, although you don't have to have a secondary responsible worker. You can't specify the same worker as both the primary and secondary responsible worker.
+You can identify a primary responsible worker and secondary responsible worker on the purchase agreement classification. The resulting purchase agreement inherits these values. You're not required to add responsible workers to the purchase agreement, and you can modify them directly on a case-by-case basis on the purchase agreement itself. You can't specify a secondary responsible worker without a primary responsible worker, although you don't have to have a secondary responsible worker. You can't specify the same worker as both the primary and secondary responsible worker.
 
 ## Commitment types
 
@@ -40,7 +40,7 @@ Each line in a purchase agreement is a commitment to buy something. You can use 
 
 ## Pricing terms for purchase agreements
 
-Pricing terms can vary, depending on the type of commitment. The pricing terms from purchase agreements override any other pricing terms that are set up for trade agreements. The following table describes the price-related fields that are affected by each commitment type. Fields that contain *Yes* can be updated on an order line.
+Pricing terms can vary, depending on the type of commitment. The pricing terms from purchase agreements override any other pricing terms that are set up for trade agreements. The following table describes the price-related fields that are affected by each commitment type. You can update fields that contain *Yes* on an order line.
 
 | Commitment type                   | Unit price | Price unit | Discount percent | Cash discount amount |
 |-----------------------------------|------------|------------|------------------|----------------------|
@@ -77,6 +77,19 @@ When you create a PO, you can apply a purchase agreement to it. Information from
 
 You can select a purchase agreement only when you're creating a PO. You can't select a purchase agreement after the PO has been created.  
 In some situations where POs are created indirectly, you can control whetherSupply Chain Management automatically searches for applicable purchase agreements. For example, you might do this when you're automatically firming planned POs or creating POs that are based on sales orders.
+
+### Delivery address defaults from a purchase agreement
+
+When you apply a purchase agreement to a PO, you're prompted to transfer the currency and delivery address from the agreement. If you select **Yes**, the agreement values replace the values that are already on the PO. Select **No** if you want to keep the existing PO delivery address.
+
+The transfer uses the default values that are saved on the purchase agreement header. If the agreement doesn't yet have a saved set of header defaults, there's no address for the transfer to apply, so it clears the delivery address on the PO instead of replacing it. This behavior is by design.
+
+To make sure that the agreement address is transferred, follow these steps:
+
+1. Open the purchase agreement and confirm that it's marked as effective and remains valid through the required delivery date.
+1. On the agreement header, update at least one field. For example, reselect the **Delivery name** or **Delivery address** value.
+1. Save the agreement. Saving the header creates the default values, including the delivery address, that the transfer uses.
+1. Return to the PO, select the purchase agreement again, and select **Yes** at the transfer prompt. Verify that the expected delivery address remains on the PO.
 
 ## Matching policy on purchase agreements
 

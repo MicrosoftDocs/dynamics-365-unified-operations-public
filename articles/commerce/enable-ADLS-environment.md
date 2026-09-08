@@ -34,7 +34,7 @@ For more information about Azure Data Lake Storage Gen2 and how to set it up, se
 ## Configuration steps
 
 This section covers the configuration steps necessary for enabling Azure Data Lake Storage Gen2 in an environment as it relates to product recommendations.
-For a more in-depth overview of the steps required to enable Azure Data Lake Storage Gen2, see [Make entity store available as a Data Lake](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
+For a more in-depth overview of the steps required to enable Azure Data Lake Storage Gen2, see [Make entity store available as a Data Lake](../fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates.md).
 
 ### Enable Azure Data Lake Storage in the environment
 
@@ -72,7 +72,7 @@ If you didn't already complete the steps for [enabling product recommendations a
 
 ## Additional resources
 
-[Make entity store available as a data lake](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md)
+[Make entity store available as a data lake](../fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates.md)
 
 [Product recommendations overview](product-recommendations.md)
 
