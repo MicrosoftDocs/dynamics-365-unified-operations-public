@@ -349,8 +349,6 @@ items:
             href: sysadmin/archive-project-actuals.md
         - name: Finance and operations apps archive with Dataverse long term retention FAQ
           href: sysadmin/archive-faq.md
-    - name: Export to Azure Data Lake (deprecated)
-      href: data-entities/Azure-Data-Lake-GA-version-overview.md
     - name: Database movement operations
       items:
       - name: Overview

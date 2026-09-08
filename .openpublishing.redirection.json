@@ -28779,6 +28779,41 @@
       "source_path": "articles/supply-chain/procurement/procurement-agent-supplier-com-setup.md",
       "redirect_url": "/dynamics365/supply-chain/procurement/procurement-agent-supplier-com-setup-wizard",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/Azure-data-lake-Change-feeds.md",
+      "redirect_url": "/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates#export-to-azure-data-lake-deprecated-november-30-2026",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/Azure-Data-Lake-Enhanced-Metadata.md",
+      "redirect_url": "/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates#export-to-azure-data-lake-deprecated-november-30-2026",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/Azure-Data-Lake-GA-version-overview.md",
+      "redirect_url": "/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates#export-to-azure-data-lake-deprecated-november-30-2026",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/Azure-Data-Lake-Generates-Biz-events.md",
+      "redirect_url": "/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates#export-to-azure-data-lake-deprecated-november-30-2026",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md",
+      "redirect_url": "/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates#export-to-azure-data-lake-deprecated-november-30-2026",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md",
+      "redirect_url": "/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates#export-to-azure-data-lake-deprecated-november-30-2026",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake.md",
+      "redirect_url": "/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates#export-to-azure-data-lake-deprecated-november-30-2026",
+      "redirect_document_id": false
     }
   ]
 }

@@ -26,7 +26,7 @@ This article explains how to make product recommendations that are based on arti
 1. Ensure that you have a valid Dynamics 365 Commerce Recommendations license.
 1. Ensure that Entity store is connected to a customer-owned Azure Data Lake Storage Gen2 account. Learn more in [Ensure that Azure Data Lake Storage is purchased and successfully verified in the environment](enable-ADLS-environment.md).
 1. Confirm that Microsoft Entra Identity configuration contains an entry for Recommendations.
-1. Ensure that the Entity store daily refresh to Azure Data Lake Storage Gen2 is scheduled. Learn more in [Ensure that the Entity store refresh is automated](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
+1. Ensure that the Entity store daily refresh to Azure Data Lake Storage Gen2 is scheduled. Learn more in [Ensure that the Entity store refresh is automated](../fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates.md).
 1. Enable RetailSale measurements for Entity store. Learn more in [Work with measures](/dynamics365/ai/customer-insights/pm-measures).
 1. Ensure that your environment has the serving and cooking regions in the currently supported regions configured as follows:
 

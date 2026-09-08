@@ -49,7 +49,7 @@ To set up Microsoft Power Platform, follow the instructions in [Enable the Micro
 
 ### Install the Export to Data Lake add-in
 
-To install the Export to Data Lake add-in, follow the instructions in [Install Export to Azure Data Lake add-in](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md).
+To install the Export to Data Lake add-in, follow the instructions in [Install Export to Azure Data Lake add-in](../../fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates.md).
 
 > [!NOTE]
 > Make note of the configuration values, because you will need them for some of the steps that follow.

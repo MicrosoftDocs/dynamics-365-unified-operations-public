@@ -28,7 +28,7 @@ Finance insights is transitioning to Business performance analytics as its data 
 > - Update window: February 1, 2026 (midnight UTC) through March 31, 2026 (midnight UTC)
 > - Export to Data Lake discontinuation: February 2026
 
-For more information about the Export to Data Lake deprecation, see [Export to Data Lake in finance and operations apps](../../fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake.md).
+For more information about the Export to Data Lake deprecation, see [Export to Data Lake in finance and operations apps](../../fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates.md).
 
 ### Migration benefits
 

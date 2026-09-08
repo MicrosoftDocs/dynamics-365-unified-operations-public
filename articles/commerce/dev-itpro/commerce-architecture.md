@@ -152,7 +152,7 @@ The Commerce ratings and reviews solution lets online retail customers enter pro
 
 #### Azure Data Lake Storage
 
-When you bring your own Azure Data Lake Storage account, you can take advantage of structured business data from back-office operations and clickstream data from the e-commerce storefront. This data flows back into intelligence services such as product recommendations, customer insights, and commerce analytics to power customer-centric business processes and user experiences. You can embed those business processes and user experiences back into Dynamics 365 Commerce headquarters, the POS, and e-commerce storefronts. For more information, see [Make Entity store available as Data Lake](../../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
+When you bring your own Azure Data Lake Storage account, you can take advantage of structured business data from back-office operations and clickstream data from the e-commerce storefront. This data flows back into intelligence services such as product recommendations, customer insights, and commerce analytics to power customer-centric business processes and user experiences. You can embed those business processes and user experiences back into Dynamics 365 Commerce headquarters, the POS, and e-commerce storefronts. For more information, see [Make Entity store available as Data Lake](../../fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates.md).
 
 #### Dataverse
 

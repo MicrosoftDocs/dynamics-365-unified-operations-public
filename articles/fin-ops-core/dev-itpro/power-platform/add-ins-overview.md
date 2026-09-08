@@ -33,7 +33,7 @@ The Inventory Visibility Add-in is an independent and highly scalable microservi
 
 ### Export to Azure Data Lake
 
-The Export to Azure Data Lake feature is based on a microservice that exports finance and operations app data to Azure Data Lake and keeps the data fresh. To learn more, see [Configure export to Azure Data Lake](../data-entities/configure-export-data-lake.md).
+The Export to Azure Data Lake feature is based on a microservice that exports finance and operations app data to Azure Data Lake and keeps the data fresh. To learn more, see [Configure export to Azure Data Lake](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md).
 
 ### IoT Intelligence
 
