@@ -6,7 +6,7 @@ ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder, PurchConfirmationRequestJournal
 ms.topic: how-to
-ms.date: 07/21/2025
+ms.date: 09/08/2026
 ms.custom:
   - bap-template
 ---
@@ -34,32 +34,45 @@ The following articles provide an overview of the various stages that a PO goes 
 
 ## Types of purchase orders
 
-There are three types of POs. When you create a PO, you must specify the type. You can set up a default order type for new orders on the **Procurement and sourcing parameters** page.
+There are three types of purchase orders. When you create a purchase order, you must specify the type. Set up a default order type for new orders on the **Procurement and sourcing parameters** page.
 
 | PO type | Description |
 |---|---|
 | Journal | Use this type to create a draft order. This type doesn't affect stock quantities or generate inventory transactions. The PO journal lines aren't included in master scheduling. |
-| Purchase order | Use this type to create POs when orders are confirmed with a vendor, and as the orders are processed through receipt and invoicing before payment is made to the vendor. This type of PO is the most common. |
-| Returned order | Use this type when you return goods to the vendor. This type of order requires that you specify the return material authorization (RMA) number that the vendor gives you. You specify the RMA number on the **General** tab of the PO. The order lines must have negative quantities. |
+| Purchase order | Use this type to create purchase orders when you confirm orders with a vendor, and as the orders are processed through receipt and invoicing before payment is made to the vendor. This type of purchase order is the most common. |
+| Returned order | Use this type when you return goods to the vendor. This type of order requires that you specify the return material authorization (RMA) number that the vendor gives you. Specify the RMA number on the **General** tab of the purchase order. The order lines must have negative quantities. |
+
+## Purchase order data entities
+
+If you integrate purchase orders with external systems through [OData](../../fin-ops-core/dev-itpro/data-entities/odata.md) or the [Data management framework](../../fin-ops-core/dev-itpro/data-entities/data-entities.md), be aware of which purchase order types each standard data entity covers.
+
+The *Purchase order headers V2* (`PurchPurchaseOrderHeaderV2Entity`) and *Purchase order lines V2* (`PurchPurchaseOrderLineV2Entity`) data entities include only records where the purchase order type is *Purchase order*. By design, they don't return *Returned order* records. Therefore, queries against these entities don't include purchase return orders, and you can't create or update purchase return orders through them.
+
+There's currently no separate standard public data entity for purchase return order headers and lines.
+
+If your integration must read or write purchase return orders, use the [extensibility model](../../fin-ops-core/dev-itpro/extensibility/extensibility-home-page.md) to create a custom data entity that exposes the header and line data that you require. Before you use a custom entity in production, test its validations, table relations, cross-company behavior, and create and update operations.
+
+> [!IMPORTANT]
+> Don't modify the generated SQL view behind a standard data entity, and don't change the application database directly. These approaches bypass supported application validation, and your changes can be overwritten when the database is synchronized.
 
 ## Purchase order statuses
 
-POs include several status fields that indicate the progress of the order. All these fields are visible in the **Header** view of the order, and a few of them are also visible in the grid overview of all orders. The **Purchase order status** field shows the status for quantities on the order. The following values are available:
+POs include several status fields that indicate the progress of the order. You can see all these fields in the **Header** view of the order. You can also see some of these fields in the grid overview of all orders. The **Purchase order status** field shows the status for quantities on the order. The following values are available:
 
-- *Open order* – Orders have been created, and quantities are on order.
-- *Received* – The full quantity on the order has been received, but they haven't been invoiced yet.
-- *Invoiced* – The full quantity on the order has been invoiced. If an order has been partially received or invoiced, then neither *Received* status nor *Invoiced* status is appropriate. Therefore, the order will still have a status of *Open order*.
-- *Canceled* – An order was confirmed but later canceled. Therefore, this status indicates that there are no longer any open quantities on order.
+- *Open order* – Orders are created, and quantities are on order.
+- *Received* – You received the full quantity on the order, but you didn't invoice it yet.
+- *Invoiced* – You invoiced the full quantity on the order. If an order is partially received or invoiced, *Received* status and *Invoiced* status aren't appropriate. Therefore, the order still has a status of *Open order*.
+- *Canceled* – You confirmed an order but later canceled it. Therefore, this status indicates that there are no longer any open quantities on order.
 
-The **Document status** field helps you quickly review the order's progress in terms of documents that have been processed. It shows the status of the most recent document that has been completed for the order. The following values are available:
+The **Document status** field helps you quickly review the order's progress in terms of documents that are processed. It shows the status of the most recent document that is completed for the order. The following values are available:
 
-- *None* – No document has been processed for the order yet.
-- *Purchase inquiry* – A purchase inquiry has been generated, and the order is awaiting feedback from the vendor.
-- *Purchase order* – Confirmation has been processed on the order.
-- *Product receipt* – Product receipt has been processed on the order.
-- *Invoice* – An invoice has been accounted with the order.
+- *None* – No document is processed for the order yet.
+- *Purchase inquiry* – The system generated a purchase inquiry, and the order is awaiting feedback from the vendor.
+- *Purchase order* – The system processed confirmation of the order.
+- *Product receipt* – The system processed product receipt on the order.
+- *Invoice* – The system accounted an invoice with the order.
 
-The **Approval status** field is used when a PO goes through a review process or workflow. The following values are available:
+Use the **Approval status** field when a PO goes through a review process or workflow. The following values are available:
 
 - *Draft*, *In review*, and *Rejected* – These statuses are used only when an approval workflow is used for the PO.
 - *Approved* – This status is assigned to orders that have completed workflow approval. Orders that are created without using an approval workflow receive a status of *Approved* immediately.

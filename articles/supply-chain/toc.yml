@@ -4272,7 +4272,7 @@
               href: warehousing/warehouse-app-qr-code.md
             - name: Mass deploy the mobile app with user-based authentication
               href: warehousing/warehouse-app-intune-user-based.md
-            - name: Brokered authentication and Conditional Access (advanced)
+            - name: Brokered authentication and Conditional Access
               href: warehousing/warehouse-app-conditional-access-enable.md
             - name: Create a custom application registration
               href: warehousing/warehouse-app-custom-app-registration.md
