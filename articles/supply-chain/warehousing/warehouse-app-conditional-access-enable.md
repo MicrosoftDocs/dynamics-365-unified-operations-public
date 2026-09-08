@@ -6,7 +6,7 @@ ms.author: pefreita
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 09/02/2026
+ms.date: 09/07/2026
 ms.custom:
   - bap-template
 ---
@@ -17,9 +17,14 @@ ms.custom:
 
 The Warehouse Management mobile app supports *brokered authentication*, a sign-in method where an OS-level identity broker, such as Microsoft Authenticator or Intune Company Portal, handles authentication and token management on behalf of the app. When you use brokered authentication, the broker provides Microsoft Entra ID with device identity, compliance status, and security signals during every authentication request.
 
-Brokered authentication isn't a separate authentication method. It's an option of [username/password authentication](warehouse-app-authenticate-user-based.md#usernamePasswordFlow) that does two things: it enables [single sign-on](warehouse-app-authenticate-user-based.md#sso) (SSO), and it makes the app compatible with Microsoft Entra Conditional Access policies that depend on device signals. This article covers both. Use it as the single reference for setting up brokered authentication, whether or not you use Conditional Access.
+> [!IMPORTANT]
+> Brokered authentication is an advanced capability. It isn't required, and most deployments don't need it. The app signs workers in through the system browser or a native web view, without Microsoft Authenticator, Intune Company Portal, or any other companion app. Read this article only if you want single sign-on (SSO) or Conditional Access policies that depend on device signals. Otherwise, see [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md).
+>
+> If you already use brokered authentication, keep it. Nothing about it is deprecated, and no change is required.
 
-Brokered authentication makes the app compatible with [Microsoft Entra Conditional Access](/entra/identity/conditional-access/overview) policies. Conditional Access is an optional, opt-in policy engine in Microsoft Entra ID that your organization's IT administrators can configure to control access based on conditions such as user identity, device compliance, location, and risk level. For example, you might use Conditional Access to require multifactor authentication (MFA) or block access from unmanaged devices. Conditional Access isn't required to run the Warehouse Management mobile app—enable it only if your organization chooses to enforce these policies.
+Brokered authentication isn't a separate authentication method. It's an option of [username/password authentication](warehouse-app-authenticate-user-based.md#usernamePasswordFlow) that does two things: it enables [single sign-on](warehouse-app-authenticate-user-based.md#sso) (SSO), and it makes the app compatible with Microsoft Entra Conditional Access policies that depend on device signals. This article covers both. Use it as the single reference for brokered authentication, whether or not you use Conditional Access.
+
+[Microsoft Entra Conditional Access](/entra/identity/conditional-access/overview) is an optional policy engine that controls access based on conditions such as user identity, device compliance, location, and risk level. It isn't required to run the Warehouse Management mobile app.
 
 > [!IMPORTANT]
 > The Warehouse Management mobile app supports *connecting* through brokered authentication. It doesn't define, configure, or enforce Conditional Access policies, and it doesn't change how your policies are evaluated. Responsibilities are divided as follows:
@@ -30,7 +35,7 @@ Brokered authentication makes the app compatible with [Microsoft Entra Condition
 > Because policy design depends on your organization's security requirements, the guidance in this article covers only the app-side setup. For policy decisions and troubleshooting of the policies themselves, work with your Microsoft Entra ID and device management administrators.
 
 > [!NOTE]
-> Brokered authentication is optional, and the app has no mandatory broker dependency. The app signs workers in through the system browser or a native web view when brokered authentication isn't enabled. Enable it when your Conditional Access policies depend on the device signals that a broker provides, such as device compliance.
+> The `"UseBroker"` connection setting defaults to `true`. Therefore, if you don't set it, the app tries to use a broker. This default doesn't create a requirement—when no broker is available on the device, the app signs workers in through the system browser or a native web view instead. Deploying a broker is a security design decision that your organization owns.
 
 This article explains how to enable brokered authentication on the Warehouse Management mobile app so that your organization can enforce Conditional Access policies.
 
@@ -52,8 +57,8 @@ To use brokered authentication, your device must meet the following requirements
 
 - You must be running Warehouse Management mobile app version 4.0.28 or later.
 - Your device must be running a [supported version](install-configure-warehouse-management-app.md#operating-system-requirements) of Windows, Android, or iOS.
-- The device must be registered with Microsoft Entra ID (via Workplace Join or Microsoft Entra registration). This requirement comes from brokered authentication, not from the app itself. Without brokered authentication, the app signs in on devices in any registration state. Learn more in [Device registration requirements](warehouse-app-authenticate-user-based.md#device-registration).
-- A broker app must be installed on the device (see the following table).
+- The device must be registered with Microsoft Entra ID. The broker can perform this registration (Workplace Join) as part of the first sign-in, so it isn't necessarily something that you set up in advance. The app itself doesn't require any particular registration state. Learn more in [Device registration requirements](warehouse-app-authenticate-user-based.md#device-registration).
+- A broker app must be installed on the device (see the following table). If no broker is installed, the app falls back to browser-based sign-in, and device signals aren't available to Conditional Access.
 
 | **Platform** | **Broker app required** |
 |---|---|
@@ -78,13 +83,13 @@ Brokered authentication works with the global Microsoft Entra ID application—y
 
 The global application is provided as a Microsoft first-party application (FPA) and is available on the Azure commercial cloud. If your environment is deployed on a US government cloud—such as US Government Community Cloud (GCC) or GCC High—the global application isn't available, and you must use a manual app registration instead.
 
-If you already use a manual app registration for other reasons (such as on-premises environment requirements or a government cloud deployment), it also works with brokered authentication. Learn more in [Manually create an application registration in Microsoft Entra ID](warehouse-app-authenticate-user-based.md#create-service).
+If you already use a manual app registration for other reasons (such as on-premises environment requirements or a government cloud deployment), it also works with brokered authentication. Learn more in [Create a custom application registration](warehouse-app-custom-app-registration.md).
 
 <a name="config-devices"></a>
 
 ## Configure devices to use brokered authentication
 
-When you use the global application, brokered authentication is enabled by default on all platforms. You can configure devices manually through the app UI or automatically by distributing a JSON file via QR code or MDM.
+When you use the global application, the `"UseBroker"` setting defaults to `true` on all platforms, so the app tries to use a broker without extra configuration. A broker still has to be present on the device for brokered authentication to take effect. You can configure devices manually through the app UI or automatically by distributing a JSON file via QR code or MDM.
 
 If you don't want to use brokered authentication, set the **Brokered authentication** option to *No* on the **Edit connection** page (or set `"UseBroker": false` in the JSON configuration). If the device doesn't have Microsoft Authenticator installed, the app falls back to a standard username and password connection.
 
@@ -110,7 +115,7 @@ To manually set up a connection, follow these steps on each device:
 
 ### Configure the connection by using a QR code or MDM system
 
-To prepare for automatic connection configurations distributed by using a QR code or MDM system, create a JSON file that contains the connection details. Learn more in [Configure the application by importing connection settings](install-configure-warehouse-management-app.md#configure-the-application-by-importing-connection-settings).
+To prepare for automatic connection configurations distributed by using a QR code or MDM system, create a JSON file that contains the connection details. Learn more in [Connection settings reference](warehouse-app-connection-settings.md#connection-file-qr).
 
 For all platforms, the connection must use username/password authentication, which you specify as follows in the JSON file:
 
