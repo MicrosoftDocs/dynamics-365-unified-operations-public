@@ -21,7 +21,9 @@ Automated deployment and configuration of Warehouse Management can be more effic
 This article explains how to mass deploy the Warehouse Management mobile app with user-based authentication by using Microsoft Intune.
 
 > [!IMPORTANT]
-> To use MDM, you must configure the Warehouse Management mobile app to use [username/password authentication](warehouse-app-authenticate-user-based.md#usernamePasswordFlow) with [single sign-on](warehouse-app-authenticate-user-based.md#sso). You can't distribute authentication tokens to mobile devices by using MDM.
+> To use MDM, configure the Warehouse Management mobile app to use [username/password authentication](warehouse-app-authenticate-user-based.md#usernamePasswordFlow). You can't distribute authentication tokens to mobile devices by using MDM.
+>
+> Single sign-on (SSO) isn't required. Without it, MDM still delivers the app and its connection settings to every device, and each worker signs in manually one time on their device. SSO only removes that one-time sign-in.
 
 ## Prerequisites
 
@@ -29,18 +31,20 @@ To use an MDM solution to deploy the Warehouse Management mobile app and its con
 
 - Warehouse Management mobile app version 4.0 or later on all mobile platforms. (If you're still running version 3.x, [migrate to version 4](warehouse-app-migrating-from-v3-v4.md) before proceeding.)
 - A valid store account for each mobile platform that you support ([Microsoft account](https://account.microsoft.com/account/), [Google Account](https://www.google.com/account/about/), and/or [Apple Account](https://account.apple.com/sign-in))
-- [Microsoft Entra ID](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/Overview) (Microsoft Entra ID Premium P2 license)
+- [Microsoft Entra ID](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/Overview). Mass deployment doesn't itself require a premium Microsoft Entra plan, but features that you choose to enable might. Learn more in [Licensing considerations](warehouse-app-authenticate-user-based.md#licensing).
 - [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/#home) (the Intune website)
 
 ## Authentication behavior after mass deployment
 
 After you deploy the app through MDM, the authentication experience depends on whether single sign-on (SSO) is enabled.
 
-- **With SSO (recommended for MDM)** — If a worker is already signed in to another app on the device (such as Microsoft Teams, Intune Company Portal, or Outlook) by using the same Microsoft Entra ID account, the Warehouse Management mobile app reuses that authentication token. No separate sign-in is needed to connect the app. Workers might still need to sign in by using their warehouse app user account depending on your [user account configuration](warehouse-app-authenticate-user-based.md#scenarios).
-- **Without SSO** — Workers must manually authenticate the app on each device after deployment. This requirement applies when using username/password authentication without brokered authentication, or the legacy [device code flow](warehouse-app-authenticate-user-based.md#deviceCodeFlow) (not recommended). This approach doesn't benefit from the automatic token-sharing that makes MDM most efficient.
+- **Without SSO (default)** — Each worker signs in to the app one time on their device. Deployment of the app and its connection settings is still fully automatic; only that first sign-in is manual.
+- **With SSO (optional)** — If the worker is already signed in to another app on the device with the same Microsoft Entra ID account, the app reuses that token, so no separate sign-in is needed. SSO requires [brokered authentication](warehouse-app-conditional-access-enable.md), which is an advanced option.
+
+Depending on your [user account configuration](warehouse-app-authenticate-user-based.md#scenarios), workers might still sign in with a mobile device user account in either case.
 
 > [!IMPORTANT]
-> Don't use [device code flow](warehouse-app-authenticate-user-based.md#deviceCodeFlow) for MDM deployments. It doesn't support SSO, so every device requires a manual sign-in, and Microsoft no longer recommends it because it's a frequent target of phishing attacks. Configure username/password authentication with a broker instead.
+> Don't use [device code flow](warehouse-app-authenticate-user-based.md#deviceCodeFlow) for MDM deployments. Configure username/password authentication instead.
 
 ## Set up the source files for distribution
 
@@ -53,7 +57,7 @@ The following subsections provide examples that show how to set up Intune to fet
 Follow these steps to set up Intune to fetch the Warehouse Management mobile app from [Google Play](https://play.google.com/store/apps/details?id=com.Microsoft.WarehouseManagement).
 
 1. Sign in to the Microsoft Endpoint Manager admin center.
-1. Go to **Apps \> Android**.
+1. Go to **Apps** > **Android**.
 1. On the **Android apps** page, on the toolbar, select **Add**.
 1. In the **Select app type** dialog box, in the **App type** field, select *Managed Google Play app*. Then select **Select**.
 1. On the **Managed Google Play** page, if you're setting up Google Play for the first time, you're prompted to sign in to Google Play. Sign in by using your Google account.
@@ -72,7 +76,7 @@ Follow these steps to set up Intune to fetch the Warehouse Management mobile app
 Follow these steps to set up Intune to fetch the Warehouse Management mobile app from [Microsoft Store](https://apps.microsoft.com/store/detail/warehouse-management/9PD35CDQCMG3).
 
 1. Sign in to the Microsoft Endpoint Manager admin center.
-1. Go to **Apps \> Windows**.
+1. Go to **Apps** > **Windows**.
 1. On the toolbar, select **Add**.
 1. In the **Select app type** dialog box, in the **App type** field, select *Microsoft Store app (new)*. Then select **Select**.
 1. On the **Add App** page, on the **App information** tab, select the **Search the Microsoft Store app (new)** link.
@@ -88,10 +92,10 @@ Follow these steps to set up Intune to fetch the Warehouse Management mobile app
 Follow these steps to set up Intune to fetch the Warehouse Management mobile app from the Apple App Store.
 
 1. Sign in to the Microsoft Endpoint Manager admin center.
-1. Go to **Devices \> iOS/iPadOS**.
+1. Go to **Devices** > **iOS/iPadOS**.
 1. On the **iOS/iPad enrollment** tab, select the **Apple MDM Push certificate** tile.
 1. In the **Configure MDM Push Certificate** dialog box, follow the on-screen instructions to create and upload the required Apple MDM push certificate. For more information about this step, see [Get an Apple MDM push certificate](/mem/intune/enrollment/apple-mdm-push-certificate-get).
-1. Go to **Apps \> iOS/iPadOS**.
+1. Go to **Apps** > **iOS/iPadOS**.
 1. On the toolbar, select **Add**.
 1. In the **Select app type** dialog box, in the **App type** field, select *iOS store app*. Then select **Select**.
 1. On the **Add App** page, on the **App information** tab, select the **Search the App Store** link.
@@ -104,7 +108,7 @@ Follow these steps to set up Intune to fetch the Warehouse Management mobile app
 
 ## Manage connection configurations
 
-The Warehouse Management mobile app lets you import connection settings as a managed configuration through an MDM solution. The same **ConnectionsJson** configuration key is shared across all platforms.
+The Warehouse Management mobile app lets you import connection settings as a managed configuration through an MDM solution. All platforms share the same **ConnectionsJson** configuration key.
 
 > [!TIP]
 > For Android devices, MDM managed configuration is the recommended method for delivering connection settings in enterprise deployments. Due to Android's [scoped storage](https://developer.android.com/about/versions/11/privacy/storage) restrictions (enforced starting with Android 11), external tools can no longer place a `connections.json` file in the app's private data folder. MDM managed configuration bypasses this limitation by delivering settings through app configuration policies rather than the file system.
@@ -113,15 +117,15 @@ The following subsections provide examples that show how to set up Intune to pro
 
 ### Create a connection JSON file
 
-To set up managed configuration for all mobile platforms, create a connection JSON file as described in [Create a connection settings file or QR code](install-configure-warehouse-management-app.md#connection-file-qr). This file enables the mobile app to connect to and authenticate with your Dynamics 365 Supply Chain Management environment.
+To set up managed configuration for all mobile platforms, create a connection JSON file as described in [Connection settings reference](warehouse-app-connection-settings.md#connection-file-qr). This file enables the mobile app to connect to and authenticate with your Dynamics 365 Supply Chain Management environment.
 
 ### Set up Intune to support managed configuration for Android devices
 
 Follow these steps to set up Intune to support managed configuration for Android devices.
 
 1. Sign in to the Microsoft Endpoint Manager admin center.
-1. Go to **Apps \> App configuration policies**.
-1. On the **App configuration policies** page, on the toolbar, select **Add \> Managed devices**.
+1. Go to **Apps** > **App configuration policies**.
+1. On the **App configuration policies** page, on the toolbar, select **Add** > **Managed devices**.
 1. On the **Create app configuration policy** page, on the **Basics** tab, set the following fields:
     - **Name** – Enter a name for the policy.
     - **Platform** – Select *Android Enterprise*.
@@ -145,7 +149,7 @@ Follow these steps to set up Intune to support managed configuration for Android
 Follow these steps to set up Intune to support managed configuration for Windows devices.
 
 1. Sign in to the Microsoft Endpoint Manager admin center.
-1. Go to **Devices \> Windows**.
+1. Go to **Devices** > **Windows**.
 1. On the **Windows devices** page, on the **Configuration profiles** tab, on the toolbar, select **Create profile**.
 1. In the **Create a profile** dialog box, set the following fields:
     - **Platform** – Select *Windows 10 and later*.
@@ -178,8 +182,8 @@ Follow these steps to set up Intune to support managed configuration for Windows
 Follow these steps to set up Intune to support managed configuration for iOS devices.
 
 1. Sign in to the Microsoft Endpoint Manager admin center.
-1. Go to **Apps \> App Configuration policies**.
-1. On the **App configuration policies** page, on the toolbar, select **Add \> Managed devices**.
+1. Go to **Apps** > **App Configuration policies**.
+1. On the **App configuration policies** page, on the toolbar, select **Add** > **Managed devices**.
 1. On the **Create app configuration policy** page, on the **Basics** tab, set the following fields:
     - **Name** – Enter a name for the app configuration profile.
     - **Platform** – Select *iOS/iPadOS*.
