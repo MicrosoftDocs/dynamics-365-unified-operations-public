@@ -4,7 +4,7 @@ description: Learn how to set up and configure the Account reconciliation agent 
 author: twheeloc
 ms.author: bking
 ms.topic: overview
-ms.date: 08/03/2026
+ms.date: 09/08/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -20,8 +20,6 @@ ms.assetid: 9d8f55cb-b2cf-4e01-89cf-0e21f5c8ae1f
 [!INCLUDE [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-> [!NOTE]
-> Microsoft is enhancing the Account Reconciliation Agent to give customers more configuration flexibility and predictable credit consumption. Until these improvements are released, the Microsoft team must activate this agent. To request activation and be guided through the process, complete this [form](https://forms.office.com/r/wCREkgRH6D).
 
 This article explains how system administrators can set up and configure the Account reconciliation agent in Microsoft Dynamics 365 Finance.
 Customers can use Power Platform admin center to set up and configure the Account reconciliation agent. For more information, see [Deploy Dynamics 365 agents by using the agent deployment wizard](../../fin-ops-core/dev-itpro/copilot/agent-deployment.md).
