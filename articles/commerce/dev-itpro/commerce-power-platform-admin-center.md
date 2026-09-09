@@ -2,7 +2,7 @@
 title: Manage Dynamics 365 Commerce deployments in Power Platform admin center (preview)
 description: Learn how to use the Dynamics 365 Commerce deployments and extension validation in Power Platform admin center (preview).
 author: ashishmsft
-ms.date: 06/19/2026
+ms.date: 09/10/2026
 ms.topic: overview
 ms.author: asharchw
 ms.reviewer: mirao
@@ -19,12 +19,12 @@ ms.custom:
 > [!IMPORTANT]
 > This experience is currently available as part of a public preview release. Features, regions, user interface labels, and available lifecycle actions can change before general availability. The content and the functionality too are subject to change.
 
-Dynamics 365 Commerce now provides public preview support for Commerce deployment and extensibility scenarios in [Power Platform admin center](https://admin.powerplatform.microsoft.com/). This preview release lets Commerce administrators use Power Platform admin center to manage Commerce Scale Unit (CSU) deployment and extension validation scenarios for Commerce environments.
+Dynamics 365 Commerce now provides public preview support for Commerce deployment and extensibility scenarios in [Power Platform admin center](https://admin.powerplatform.microsoft.com/). This preview release lets Commerce administrators use Power Platform admin center to manage Commerce Scale Unit (CSU), point-of-sale (POS), and E-commerce deployment and extension validation scenarios for Commerce environments.
 
 The preview is designed for sandbox-first validation. Use it to familiarize yourself with the Power Platform admin center experience, validate Commerce extension deployment flows, and prepare for future Commerce environment management capabilities.
 
 > [!NOTE]
-> Begin with sandbox and nonproduction environments. Migration from existing Lifecycle Services (LCS) managed Commerce deployments to Power Platform admin center isn't supported during public preview.
+> Begin with sandbox and nonproduction environments. Migration from existing Lifecycle Services (LCS) managed Commerce deployments to Power Platform admin center isn't supported during public preview. For production CSU or e-commerce, continue to use Lifecycle Services (LCS) until Commerce in Power Platform admin center moves to general availability.
 
 ## What is Commerce in Power Platform admin center?
 
@@ -61,13 +61,54 @@ Public preview support for Commerce in Power Platform admin center focuses on Co
 Depending on your environment and preview availability, use Power Platform admin center to:
 
 - View Commerce scale units that are associated with a Commerce environment.
-- Create a Commerce Scale Unit for a supported Commerce environment.
+- Create a Commerce Scale Unit (CSU) for a supported Commerce environment.
 - Review scale unit details, such as region, status, and deployed version.
-- Run supported lifecycle actions, such as update, retry, restart, or delete, where those actions are available.
+- Run supported lifecycle actions, such as update, retry, restart, or delete, where the actions are available.
+
+Commerce management in Power Platform admin center supports CSU, POS, and e-commerce. It provides a lifecycle model that aligns with other Dynamics 365 and Power Platform workloads. Commerce extensibility is supported by using a unified extension model. Extensions are built and packaged by using Azure Pipelines, Power Platform admin center orchestrates deployment, and Commerce deployment services retrieve and install extension artifacts as part of the environment lifecycle.
+
+You can also use Power Platform admin center to:
+
 - Deploy Commerce extensions for CSU, Store Commerce point of sale (POS), and e-commerce scenarios.
 - Use Azure Pipelines to build, package, and publish Commerce extension artifacts for deployment.
 
-Commerce management in Power Platform admin center supports CSU, POS, and e-commerce. It provides a lifecycle model that aligns with other Dynamics 365 and Power Platform workloads. Commerce extensibility is supported by using a unified extension model. Extensions are built and packaged by using Azure Pipelines, Power Platform admin center orchestrates deployment, and Commerce deployment services retrieve and install extension artifacts as part of the environment lifecycle.
+### Deploy and manage Commerce Scale Units and point of sale solutions
+
+#### Deploy and manage Commerce Scale Units
+
+Use the **Scale units (Preview)** tab in Power Platform admin center to create, monitor, and manage Commerce Scale Units (CSUs) that are linked to a Commerce headquarters environment.
+
+1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Go to the **Dynamics 365 Commerce** experience for the Commerce headquarters environment.
+1. Select the headquarters environment that you want to manage.
+1. Select the **Scale units (Preview)** tab.
+1. Review the scale units that are already linked to the headquarters environment. The list shows details such as **Name**, **Region**, **Status**, and **Type**.
+1. To create a scale unit, select **Add**.
+1. In the confirmation dialog, select **Create**. A new tab opens for scale unit setup.
+1. On the **Add a Commerce scale unit** page, confirm the selected headquarters environment.
+1. Select the target **Region**.
+1. Select the target **Version**. If required, select **Specify version**, and then enter the Commerce version.
+1. Review and accept the data residency consent for transmission and copying of data between the headquarters region and the Commerce scale unit region.
+1. Review and accept the terms of service.
+1. Submit the request to create the CSU.
+1. Return to the **Scale units (Preview)** tab and monitor the deployment status.
+1. After deployment, select a scale unit row to view details such as type, region, version, CSU Core status, Commerce scale unit ID, headquarters environment ID, scale unit name, extension status, servicing history, activity type, and deployment status.
+1. Depending on the scale unit status and preview availability, supported lifecycle actions can include **Update**, **History**, **Delete**, and **Restart**.
+
+#### Deploy and manage e-commerce components
+
+Before you set up e-commerce in Power Platform admin center, make sure that a Commerce Scale Unit (CSU) is already deployed for the Commerce environment. E-commerce setup requires an associated CSU.
+
+1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Go to the **Dynamics 365 Commerce** experience for the Commerce environment.
+1. Select the **E-Commerce (Preview)** tab.
+1. Select **Setup** or **Initialize** to enable e-commerce components for the environment.
+1. Enter the **Environment name**.
+1. Select the associated **Commerce scale unit**.
+1. Select the target **Geography**.
+1. Enter one or more **Custom domains**, separated by semicolons (**;**).
+1. Select the **Security group for system admin**. This group is granted access to administer the e-commerce environment.
+1. Select **Initialize**. After initialization starts, monitor the e-commerce setup status in Power Platform admin center.
 
 ## How it works
 
@@ -101,6 +142,7 @@ Before you use the preview, confirm that your environment and deployment compone
 - Confirm that Dynamics 365 Commerce is provisioned for the environment.
 - Confirm that the appropriate Commerce components are available for your scenario, such as CSU, POS, e-commerce, or a combination.
 - Confirm that the environment is on a supported version for the preview.
+- Confirm that the Dynamics 365 Finance and Operations Provisioning app and the Dynamics 365 Commerce application are installed in the Power Platform environment.
 - Confirm that you have appropriate permissions to manage the environment in Power Platform admin center.
 - Confirm that the target geography is supported. For availability information, see the [Explore feature geography](https://aka.ms/FeatureGeographicAvailabilityReport) report.
 
@@ -123,7 +165,7 @@ Collect the values needed by the pipeline and deployment flow.
 | Extension type | CSU, POS, e-commerce, or a combined package. |
 | Extension name | Customer-readable name that identifies the package. |
 | Version | Package version that you can trace to source and build output. |
-| Target environment | Sandbox or nonproduction environment where the package will be validated. |
+| Target environment | Sandbox or nonproduction environment where the package is validated. |
 | Artifact location | Azure DevOps artifact, pipeline artifact, or storage location used by the release step. |
 | Deployment owner | Team or person responsible for validating the deployment. |
 
@@ -266,7 +308,7 @@ Use the Commerce CSU extension release pipeline template that's provided for the
 1. Select **Pipelines**, and then select **New pipeline**.
 1. Select the source repository for your extension code or pipeline template.
 1. Select **Existing Azure Pipelines YAML file**.
-1. Select the CSU extension release pipeline template.
+1. Select the CSU extension release pipeline template from the [Dynamics365Commerce.ScaleUnit](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit) GitHub repository.
 1. Select **Continue**.
 1. Confirm that the pipeline references the variable group `Commerce-ScaleUnit-Extension-Release-Variables`.
 1. Confirm that the pipeline consumes the CSU package artifact from the build pipeline.
@@ -319,6 +361,7 @@ Validate e-commerce deployments by opening the target site and testing the pages
 Review the following considerations before you use the preview:
 
 - Start with sandbox and nonproduction environments.
+- Each environment can create up to two trial Commerce Scale Units. Trial CSUs are intended for preview validation and might be removed after the public preview ends.
 - Migration from LCS-managed Commerce environments or CSUs to Power Platform admin center isn't supported during public preview.
 - New production Commerce deployments can continue through LCS until general availability.
 - Feature availability, supported regions, lifecycle actions, and user interface labels can change before general availability.
