@@ -6,7 +6,7 @@ ms.author: johnmichalak
 ms.topic: concept-article
 ms.custom: 
   - bap-template
-ms.date: 05/01/2026
+ms.date: 09/10/2026
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Italy
@@ -27,7 +27,7 @@ The following types of records are supported:
 
 - Record A: Declaration header
 - Record B: Company information and other additional information of declaration
-- Record D: Operations ST, SV, SX , DI
+- Record D: Operations ST
 - Record Z: Quantity of reported records by type
 
 ## General settings that are required for the Model 770 report
@@ -40,7 +40,7 @@ Complete the following tasks before you create a Model 770 report:
 
 ## Set up address information
 
-Use the **Address setup** page to set up the country/region code, state and region codes, and county and municipality codes for a contractor or self-employed vendor who should be included on a Model 770 report. You must set up address information for all contractors and self-employed vendors for whom you withhold taxes from payments. For information about the address codes, see the instructions that the Italian government has published for the Model 770 report on the [Italian Revenue Agency](https://www.agenziaentrate.gov.it) website.
+Use the **Address setup** page to set up the country/region code, state and region codes, and county and municipality codes for a contractor or self-employed vendor who should be included on a Model 770 report. You must set up address information for all contractors and self-employed vendors for whom you withhold taxes from payments. For information about the address codes, see the instructions that the Italian government published for the Model 770 report on the [Italian Revenue Agency](https://www.agenziaentrate.gov.it) website.
 
 1. Select **Organization administration** > **Addresses** > **Address setup**.
 1. Select **Country/region**, and then, in the **Country/region** field, enter the two-letter International Organization for Standardization (ISO) country/region code for Italy.
@@ -69,7 +69,7 @@ Use the **General ledger parameters** page to set up a number sequence for the M
 
 ## Set up related information for vendors
 
-1. Select **Accounts payable** > **Vendors** > **All vendors**, and then select a required vendor.
+1. Select **Accounts payable** > **Vendors** > **All vendors**, and then select a vendor.
 1. On the **Invoice and delivery** FastTab, in the **Fiscal code** field, enter the fiscal code of the vendor.
 
     > [!NOTE]
@@ -86,7 +86,7 @@ Download the *current versions* of the following Electronic reporting (ER) confi
 - **Data model:** Italian tax reports model
 - **Format:** Modello770 report (IT)
 
-For instruction about how to download ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+For instructions about how to download ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 ## Create and export the Model 770 report
 
@@ -122,7 +122,7 @@ The Model 770 report exports the information to an ASCII file that you submit to
 1. In the **Editorial comments** field, select the section that the company must file the withheld tax for.
 
     > [!NOTE]
-    > The default section is Section II. Select a section according to the instructions that the Italian government has published for the Model 770 report on the [Italian Revenue Agency](https://www.agenziaentrate.gov.it) website.
+    > The default section is Section II. Select a section according to the instructions that the Italian government published for the Model 770 report on the [Italian Revenue Agency](https://www.agenziaentrate.gov.it) website.
 
 1. In the **Type of declarer** field, specify the type of declarer who sends the tax declaration to the tax authority:
 
