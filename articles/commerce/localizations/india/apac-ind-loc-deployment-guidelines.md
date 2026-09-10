@@ -1,8 +1,8 @@
 ---
-title: Deployment guidelines for cash registers for India
+title: Deployment guidelines for cash registers for India (deprecated)
 description: This article provides a deployment guide for the Microsoft Dynamics 365 Commerce localization for India.
 author: EvgenyPopovMBS
-ms.date: 02/27/2026
+ms.date: 09/11/2026
 ms.topic: how-to
 ms.reviewer: mirao
 ms.search.region: India
@@ -11,9 +11,12 @@ ms.search.validFrom: 2018-01-31
 ms.custom: 
   - bap-template
 ---
-# Deployment guidelines for cash registers for India
+# Deployment guidelines for cash registers for India (deprecated)
 
 [!INCLUDE [banner](../../../finance/includes/banner.md)]
+
+> [!IMPORTANT]
+> This setup guidance is deprecated.
 
 This article is a deployment guide that shows how to enable the requirements for Goods and Services Tax (GST) in the Microsoft Dynamics 365 Commerce app's localization for India. For more information about the localization for India, see [Goods and Services Tax (GST) integration for cash registers for India](apac-ind-cash-registers.md).
 
@@ -24,7 +27,7 @@ This functionality consists of extensions for the Commerce runtime (CRT) and poi
 
 ## Prerequisites
 
-Make sure that the Visual C++ Redistributable Packages are present on the machine that you're running GST calculations on. For Cloud POS, and for Modern POS in online mode, this machine is Commerce Scale Unit. For Modern POS in offline mode, it's the Modern POS machine itself. For information about how to download the packages, see [Download the Visual C++ Redistributable Packages](https://www.microsoft.com/download/details.aspx?id=48145).
+Ensure that the Visual C++ Redistributable Packages are present on the machine that you're running GST calculations on. For Cloud POS, and for Modern POS in online mode, this machine is Commerce Scale Unit. For Modern POS in offline mode, it's the Modern POS machine itself. For information about how to download the packages, see [Download the Visual C++ Redistributable Packages](https://www.microsoft.com/download/details.aspx?id=48145).
 
 ## Development environment
 
@@ -34,7 +37,7 @@ To set up a development environment so that you can test and extend the function
 
 1. Find the extension configuration file for CRT:
 
-    - **Commerce Scale Unit:** The file is named **commerceruntime.ext.config**. You can find it in the **bin\\ext** folder under the Microsoft Internet Information Services (IIS) Commerce Scale Unit site location.
+    - **Commerce Scale Unit:** The file is named **commerceruntime.ext.config**. You can find it in the **bin\ext** folder under the Microsoft Internet Information Services (IIS) Commerce Scale Unit site location.
     - **Local CRT on Modern POS:** The file is named **CommerceRuntime.MPOSOffline.Ext.config**. You can find it under the local CRT client broker location.
 
 1. Register the CRT change in the extension configuration file, as shown in the following example.
@@ -68,11 +71,11 @@ To set up a development environment so that you can test and extend the function
 <add source="assembly" value="Microsoft.Dynamics.Commerce.RetailProxy.TaxRegistrationIdIndia" />
 ```
 
-### The Modern POS extension components
+### Modern POS extension components
 
 To enable the Tax Registration ID extension, follow these steps:
 
-1. Open the solution at **RetailSdk\POS\ModernPOS.sln**, and make sure that it compiles without errors. Also make sure that you can run Modern POS from Microsoft Visual Studio by using the Run command. (Don't customize Modern POS. You must enable User Account Control [UAC], and uninstall previously installed instances of Modern POS.)
+1. Open the solution at **RetailSdk\POS\ModernPOS.sln**, and ensure that it compiles without errors. Also, ensure that you can run Modern POS from Visual Studio by using the Run command. Don't customize Modern POS. Enable User Account Control (UAC), and uninstall previously installed instances of Modern POS.
 1. Enable the extension in the **POS.Extensions\extensions.json** file by adding the following lines:
 
     ``` xml
@@ -84,11 +87,11 @@ To enable the Tax Registration ID extension, follow these steps:
 1. Build the solution.
 1. Run Modern POS and test the functionality.
 
-### The Cloud POS extension components
+### Cloud POS extension components
 
 To enable the Tax Registration ID extension, follow these steps:
 
-1. Open the solution at **RetailSdk\POS\CloudPOS.sln**, and make sure that it compiles without errors.
+1. Open the solution at **RetailSdk\POS\CloudPOS.sln**, and ensure that it compiles without errors.
 1. Enable the extension in **POS.Extensions\extensions.json** by adding the following lines:
 
     ``` xml

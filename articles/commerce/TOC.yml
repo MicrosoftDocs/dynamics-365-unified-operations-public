@@ -2756,6 +2756,8 @@
             href: dev-itpro/install-csu-dev-env.md
           - name: Commerce SDK build pipeline (independent packaging)
             href: dev-itpro/build-pipeline.md
+        - name: Commerce extension developer skill (preview)
+          href: dev-itpro/commerce-extension-developer-skill.md
         - name: Payments
           items:
           - name: Deploy payment connectors

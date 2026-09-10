@@ -2,7 +2,7 @@
 title: Goods and Services Tax (GST) integration for e-commerce sites for India
 description: This article provides an overview of the Microsoft Dynamics 365 Commerce e-commerce functionality that's available for India. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
-ms.date: 02/26/2026
+ms.date: 09/11/2026
 ms.topic: how-to
 ms.reviewer: mirao
 ms.search.region: India
@@ -43,7 +43,7 @@ GST can also be calculated for shipping charges that you add to an e-commerce or
 
 ### Customer registration numbers
 
-Customers can enter their registration numbers and other information on the **My profile** page of the e-commerce site. The following registration information can be entered:
+Customers can enter their registration numbers and other information on the **My profile** page of the e-commerce site. They can enter the following registration information:
 
 - PAN.
 - GST registration number type. The registration number can be the GSTIN, Government Department Unique ID (GDI), or unique identification (UID) number.
@@ -65,8 +65,8 @@ Before you set up e-commerce capabilities for India, configure a Commerce enviro
 
 The following packages in the **dynamics365-commerce** feed include India-specific modules:
 
-- **@msdyn365-commerce-marketplace/address-extensions** – This package includes the **Invoice address for India** module.
-- **@msdyn365-commerce-marketplace/tax-registration-numbers** – This package includes the **Tax registration numbers for India** module.
+- **@msdyn365-commerce-marketplace/address-extensions**: This package includes the **Invoice address for India** module.
+- **@msdyn365-commerce-marketplace/tax-registration-numbers**: This package includes the **Tax registration numbers for India** module.
 
 However, these packages use a different namespace. To use these packages, add registry entries for the namespace.
 
@@ -88,6 +88,7 @@ yarn add @msdyn365-commerce-marketplace/tax-registration-numbers
 In the **package.json** file, update the package version to a specific version.
 
 > [!IMPORTANT]
+>
 > - The package version should match the module library version to ensure that all features work as expected.
 > - The minimum version for the Commerce module library and SDK should be 10.0.23 (9.33).
 
@@ -110,10 +111,7 @@ For more information about how to create e-commerce sites and work with e-commer
 
 To work with GST in e-commerce, enable the India-specific functionality on the Commerce channel side:
 
-- If you're using Commerce version 10.0.33 or earlier, configure extensions for channel components. For more information, see the [deployment guidelines](apac-ind-loc-deployment-guidelines.md).
-- If you're using Commerce version 10.0.34 or later, enable the feature, **(India) Enable Tax engine for Commerce for India** in the **Feature management** workspace in Commerce headquarters. This feature ensures that the [Tax engine](../../../finance/general-ledger/tax-engine.md) is used to calculate India GST for in-store and e-commerce transactions.
-- If you're using Commerce version 10.0.33 or earlier and are migrating to Commerce version 10.0.34 or later, follow the steps in [Migrate to Commerce version 10.0.34 or later](apac-ind-loc-deployment-guidelines.md#migrate-to-commerce-version-10034-or-later).
-
-Also, enable the **(India) Calculate GST based on invoice address for e-commerce orders** feature in the **Feature management** workspace in Commerce headquarters.
+- Enable the **(India) Enable Tax engine for Commerce for India** feature in the **Feature management** workspace in Commerce headquarters. This feature ensures that the [Tax engine](../../../finance/general-ledger/tax-engine.md) is used to calculate India GST for in-store and e-commerce transactions.
+- Also, enable the **(India) Calculate GST based on invoice address for e-commerce orders** feature in the **Feature management** workspace in Commerce headquarters.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
