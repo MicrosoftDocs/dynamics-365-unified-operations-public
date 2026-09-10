@@ -4,7 +4,7 @@ description: Learn about how to edit internal data on general ledger vouchers, i
 author: kweekley
 ms.author: kweekley
 ms.topic: how-to
-ms.date: 06/24/2026
+ms.date: 09/08/2026
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -18,13 +18,13 @@ ms.dyn365.ops.version: 10.0.29
 
 [!INCLUDE [banner](../includes/banner.md)]
 
-When you post accounting entries to the general ledger, use the **Description** field to store internal notes or documentation. If the information is incorrect, it can cause confusion and make period-end closing more difficult. This feature helps the accounting manager or accounting supervisor fix mistakes by editing the **Description** field on posted vouchers in the general ledger.
+When you post accounting entries to the general ledger, use the **Description** and **Financial tag** fields to store information for internal analysis. If the information is incorrect, it can cause confusion and make period-end closing more difficult. This feature helps the accounting manager or accounting supervisor fix mistakes by editing the **Description** and **Financial tag** fields on posted vouchers in the general ledger.
 
-Changes to posted vouchers in the general ledger are limited to data that's internal in nature. This feature will never allow you to edit data such as amounts, posting dates, ledger accounts, and the transaction currency. Changes to that data affect the external reporting of financial statements and must be done only through new general ledger vouchers.
+Changes to posted vouchers in the general ledger are limited to data that's internal in nature. This feature never allows you to edit data such as amounts, posting dates, ledger accounts, and the transaction currency. Changes to that data affect the external reporting of financial statements and must be done only through new general ledger vouchers.
 
 ## Edit internal data on general ledger vouchers
 
-Before internal data on general ledger vouchers can be edited, the user who edits posted vouchers must be assigned to the Accounting manager or Accounting supervisor role. You can add permissions to other roles too, by customizing the security roles.
+Before you can edit internal data on general ledger vouchers, assign the user who edits posted vouchers to the **Accounting manager** or **Accounting supervisor** role. You can also add permissions to other roles by customizing the security roles.
 
 You can edit data only from the **Voucher transactions** page.
 
@@ -41,19 +41,21 @@ On the **Edit internal voucher data** page, you see the following data for each 
 - Voucher
 - Current description
 - New description
+- Current financial tags
+- New financial tags
 
-    [![Journal voucher.](./media/edit-internal-voucher-data.png)](./media/edit-internal-voucher-data.png)
+    [![Edit internal voucher data page showing description and financial tag fields.](./media/edit-internal-voucher-data.png)](./media/edit-internal-voucher-data.png)
 
 > [!NOTE]
-> You can edit only the **New description** field. By default, the value matches the value of the **Current description** field, so that you can quickly fix minor mistakes in the description.
+> You can edit only the **New description** and **New financial tags** fields. By default, their values match the **Current description** and **Current financial tags** fields, so you can change only the information that's incorrect.
 
-1. Modify the **New description** field on each row, or delete the description from each row.
+1. Modify the **New description** or **New financial tags** fields on each row, or delete their values.
 
    Alternatively, if you need to update multiple rows with the same value, follow these steps:
 
       1. Select the rows to edit, and then select **Bulk update selected records**.
-      1. In the **Field to edit** field, select the field to edit. Currently, the lookup includes only the **New description** field.
-      1. In the **New value** field, enter a new description.
+      1. In the **Field to edit** field, select the description or financial tag field to edit.
+      1. In the **New value** field, enter the new value.
       1. Select **Update**. All the selected records are updated with the new value.
 
       [![Bulk update selected records dialog box.](./media/bulk-update-selected-records.png)](./media/bulk-update-selected-records.png)
@@ -80,6 +82,6 @@ The **Audit trail of edits** page shows the following information:
 - **Reason for edit** – The reason that the user entered for the edit.
 - **Created by** – The user who made the edit.
 
-To view the details of each audit trail, drill down on the **Created date and time** value. The **View edited voucher properties** page shows the same information as the original edit page, including the previous description and the updated description.
+To view the details of each audit trail, drill down on the **Created date and time** value. The **View edited voucher properties** page shows the same information as the original edit page, including the previous and updated descriptions and financial tags.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

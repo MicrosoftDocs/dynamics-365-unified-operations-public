@@ -4,7 +4,7 @@ description: Learn about account structures and financial dimensions, including 
 author: aprilolson
 ms.author: aolson
 ms.topic: article
-ms.date: 07/20/2026
+ms.date: 09/08/2026
 ms.update-cycle: 1095-days
 ms.custom: evergreen
 ms.reviewer: twheeloc
@@ -92,7 +92,7 @@ For example, suppose AS1 (active) allows `100..199` and AS2 (active) allows `200
 
 ### Creating and applying criteria
 
-The **Segments** and **Allowed values details** section provides a grid for entering the rules that the system follows during validation when posting. You can type directly in the cells in the grid, import the rules from Excel, or use the **Allowed value details** section for guidance.
+The **Segments** and **Allowed values details** sections provide a grid for entering the rules that the system follows during validation when posting. You can type directly in the cells in the grid, import the rules from Excel, or use the **Allowed value details** section for guidance.
 
 The **Allowed value details** section guides you through creating criteria by using **Operators** such as begins with, is between, includes, and many others.
 
@@ -146,6 +146,10 @@ The **Allowed value details** section at the bottom of the form always uses semi
 
 :::image type="content" source="media/account-structure-deb-semicolons.png" alt-text="Screenshot showing correct use of semicolons in the criteria field.":::
 
+#### Allowing all values
+
+When every nonblank value is valid for a segment, use a single asterisk (`*`) as the allowed value. If blank is also valid, include it separately (`*;""`). Don't use the **Begins with** operator with an empty value to represent all values. Use a restrictive criterion only when the segment must match a specific value, prefix, or range.
+
 #### Wildcards can't be used in ranges
 
 Don't use wildcard characters (asterisks) inside a range. A range is intended to specify all values between two string values of the same length. For example, to allow all accounts between 100000 and 399999, enter `100000..399999` - not `100*..399*`.
@@ -157,7 +161,7 @@ When a wildcard appears inside a range, the system looks for values that literal
 - `*500*` with the **Is like** operator - matches all values that contain `500` anywhere (for example, 150000, 250099).
 
 > [!TIP]
-> Don't rely solely on the collapsed criteria string in the grid to understand how the system interprets your criteria. Always check the **Allowed value details** section below it, which converts each criterion into a readable sentence.
+> Don't rely solely on the collapsed criteria string in the grid to understand how the system interprets your criteria. Always check the **Allowed value details** section, which converts each criterion into a readable sentence.
 
 ### Maximum number of segments
 
@@ -203,7 +207,7 @@ Criteria: Where Main account is between 400000 and 499999, then add customer. It
 |-----------------|
 |\* |
 
-In this simplified example, all values and blank are allowed so \* and "&nbsp;" are used.
+In this simplified example, all values and blank are allowed, so \* and "&nbsp;" are used.
 
 For more information, see [Plan your chart of accounts](plan-chart-of-accounts.md), [Financial dimensions](financial-dimensions.md), and [Enter account and dimension combinations (segmented entry control)](enter-account-dimension-combinations-segmented-entry-control.md).
 

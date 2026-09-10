@@ -4,7 +4,7 @@ description: Learn best practices for designing, configuring, and activating acc
 author: aprilolson
 ms.author: aolson
 ms.topic: article
-ms.date: 03/25/2026
+ms.date: 09/08/2026
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -32,7 +32,7 @@ When you define allowed values for a segment, use ranges and wildcards wherever 
 For example, instead of listing each allowed department number individually:
 
 | Main account | Department |
-|---|---|
+| --- | --- |
 | 400000..999999 | 001 |
 | 400000..999999 | 002 |
 | 400000..999999 | 003 |
@@ -53,7 +53,7 @@ Reuse account structures wherever possible to reduce maintenance. When the same 
 
 ### Position the main account first
 
-Make the main account the first segment in the account structure, or as close to the front as possible. This gives users the best guided experience during account entry, because the system identifies the correct structure as soon as the main account value is entered. Verify that any third-party solutions you use support the main account in the first position.
+Make the main account the first segment in the account structure, or as close to the front as possible. This arrangement provides users with the best guided experience during account entry, because the system identifies the correct structure as soon as the main account value is entered. Verify that any third-party solutions you use support the main account in the first position.
 
 ### Don't rely solely on advanced rules
 
@@ -67,55 +67,76 @@ Consider your business needs, growth plan, and maintenance plan when designing s
 
 Account structure activation synchronizes all unposted transactions to match the new structure. The more unposted transactions there are, the longer activation takes. The following practices help keep activation times reasonable.
 
+### Test changes in a nonproduction environment
+
+Before you activate a changed account structure in production, test it in a nonproduction environment that has representative account combinations and unposted transactions. Confirm that the structure validates the intended combinations, blocks invalid combinations, and completes activation in an acceptable amount of time.
+
 ### Reduce unposted transactions before activating
 
 The single biggest factor in activation time is the volume of unposted transactions. Before activating, consider:
 
 - **Posting pending transactions** — If business rules allow, post any pending journals, free text invoices, vendor invoices, and other documents with open accounting distributions before activation.
-- **Cleaning up unused distributions** — Some source documents may have accounting distributions with no associated accounting event. These records can typically be regenerated later. Work with the team that owns the source document process to determine if cleanup is appropriate.
+- **Cleaning up unused distributions** — Some source documents might have accounting distributions with no associated accounting event. You can typically regenerate these records later. Work with the team that owns the source document process to determine if cleanup is appropriate.
 - **Saving and removing journal work** — If posting isn't possible, use Excel to save in-progress journal work, remove the ledger accounts from the journals, activate the structure, and then reimport the saved work afterward.
 
 ### Schedule activation during low-activity periods
 
-Activation performs best when the system isn't simultaneously processing new transactions. Plan your activation for off-hours or maintenance windows, and temporarily suspend activity that could interfere with the process:
+Activation works best when the system isn't processing new transactions. Plan your activation for off-hours or maintenance windows, and temporarily suspend activity that could interfere with the process:
 
-- **Pause automated batch processes** — Temporarily suspend batch jobs that create or process transactions, such as vendor invoice processing, free text invoice posting, budget register entries, and similar recurring jobs. Resume these jobs after activation completes.
+- **Pause automated batch processes** — Temporarily suspend batch jobs that create or process transactions, such as vendor invoice processing, free text invoice posting, budget register entries, and similar recurring jobs. Resume these jobs after activation finishes.
 - **Stop data imports and OData integrations** — Temporarily disable recurring data imports, Data Management Framework jobs, and OData integrations that create or modify transactions with financial dimensions.
 - **Inform users to avoid entering transactions** — Ask users to hold off on entering journals, invoices, purchase orders, and other documents that generate accounting distributions during the activation window.
-- **Turn off ISV and third-party batch jobs** — Temporarily disable batch jobs from third-party modules that process documents. Several are known to cause activation jobs to fail silently. Run these batch jobs and similar third-party processes only after activation completes.
+- **Turn off ISV and third-party batch jobs** — Temporarily disable batch jobs from third-party modules that process documents. Several are known to cause activation jobs to fail silently. Run these batch jobs and similar third-party processes only after activation finishes.
+- **Schedule activation outside long-running financial processes** — Avoid running processes such as foreign currency revaluation during activation. After activation finishes, validate the changed structure before starting these processes.
 
 > [!NOTE]
-> These suspensions are temporary and only needed for the duration of the activation. Resume all batch jobs, integrations, and normal user activity as soon as activation completes.
+> These suspensions are temporary and only needed for the duration of the activation. Resume all batch jobs, integrations, and normal user activity as soon as activation finishes.
 
 ### Activate one structure at a time
 
-Only activate one account structure at a time. If multiple activation batch jobs run simultaneously, they block each other because they're updating the same underlying data. This causes each activation to take much longer than it would on its own.
+Only activate one account structure at a time. If multiple activation batch jobs run simultaneously, they block each other because they're updating the same underlying data. This blockage causes each activation to take much longer than it would on its own.
 
-If you need to activate multiple structures, activate them sequentially — wait for one to complete before starting the next.
+If you need to activate multiple structures, activate them sequentially — wait for one to finish before starting the next.
+
+### Monitor long-running activation
+
+Depending on the volume of unposted transactions, [activation can take from a few seconds to several hours](tasks/create-account-structures.md#activating-account-structures). A longer duration than previous activations doesn't by itself mean that processing has stopped. Review the [activation status](tasks/create-account-structures.md#monitoring-activation-status) to confirm that the activation tasks are still running or have completed.
+
+Don't cancel a running activation. Canceling resets the process, and resubmitting starts the activation from the beginning. It doesn't resume from where it left off.
+
+If a transient database error interrupts activation, the batch process retries the activation from the beginning. The total elapsed time can therefore include work from more than one attempt. Use the activation status and batch job history to identify the current attempt.
+
+### Validate after activation
+
+After activation finishes:
+
+1. Review [the activation status](tasks/create-account-structures.md#monitoring-activation-status), and confirm that every activation task completed successfully.
+1. Validate representative journal lines, simulate posting where available, and test representative documents that use the changed structure.
+1. Resume paused batch jobs and integrations, and review their first processing cycle for dimension validation errors.
 
 ### Treat activation as a periodic process
 
-Account structure activation is intended to be a periodic process — quarterly, annually, or whenever business requirements change. If you find that you need to update structures on a weekly or daily basis, consider whether the structures can be redesigned for easier maintenance. Structures that require constant changes due to routine events (like adding new project records) may benefit from using ranges or wildcards that automatically accommodate new values.
+Account structure activation is intended to be a periodic process - quarterly, annually, or whenever business requirements change. If you need to update structures on a weekly or daily basis, consider whether you can redesign the structures for easier maintenance. Structures that require constant changes due to routine events (like adding new project records) might benefit from using ranges or wildcards that automatically accommodate new values.
 
 ## Reducing advanced rule complexity
 
-Having too many advanced rules or advanced rule structures associated with a single account structure can significantly slow down activation. Performance issues have been observed when the number of advanced rules per structure exceeds approximately 20.
+Having too many advanced rules or advanced rule structures associated with a single account structure can significantly slow down activation. Performance issues occur when the number of advanced rules per structure exceeds approximately 20.
 
 To reduce complexity:
 
-- **Consolidate rules** — If possible, transfer advanced rule criteria directly into the account structure instead of using separate rules.
-- **Reduce the number of rule structures** — Fewer rule structures per account structure means less evaluation time during activation.
+- **Consolidate rules** - If possible, transfer advanced rule criteria directly into the account structure instead of using separate rules.
+- **Reduce the number of rule structures** - Fewer rule structures per account structure means less evaluation time during activation.
 
 ### Factors that affect activation performance
 
 The following factors can contribute to slow activation:
 
 | Factor | Description |
-|---|---|
-| Large volume of unposted transactions | All unposted transactions must be synced to the new structure. |
-| Active users and concurrent processing | Users entering transactions, automated batch processes, and data imports that create transactions during activation compete for the same resources. |
+| --- | --- |
+| Large volume of unposted transactions | The system syncs all unposted transactions to the new structure. |
+| Active users and concurrent processing | Users enter transactions, and automated batch processes and data imports create transactions during activation. These processes compete for the same resources. |
 | Multiple simultaneous activations | Running more than one activation at a time causes blocking, as each process updates the same data. |
-| [Highly variable dimensions](/dynamics365/finance/cost-accounting/high-var-dimensions) | Non-financial data (like document numbers, serial numbers, or timestamps) used as financial dimensions creates unique dimension combinations that can't be grouped for bulk updates. |
+| [Highly variable dimensions](/dynamics365/finance/cost-accounting/high-var-dimensions) | Non-financial data, such as document numbers, serial numbers, or timestamps, used as financial dimensions creates unique dimension combinations that can't be grouped for bulk updates. |
 | Too many advanced rules | More than approximately 20 advanced rules per structure can cause extended AOS processing time with no SQL activity. |
 | ISV extensions on transaction tables | Extensions that override set-based operations can force the system to fall back to slower row-by-row updates. |
 | Open budget data | Large volumes of open budget records add to the processing workload. |
