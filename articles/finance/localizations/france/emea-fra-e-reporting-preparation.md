@@ -4,7 +4,7 @@ description: Learn how to set up e-reporting in France.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 09/02/2026
+ms.date: 09/10/2026
 ms.custom:
   - bap-template
 ms.reviewer: johnmichalak 
@@ -14,7 +14,7 @@ ms.search.form: CustTable, VendTable, OMLegalEntity
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-# How to prepare your Dynamics 365 Finance for French e-Reporting
+# How to prepare your Dynamics 365 Finance for French e-reporting
 
 [!INCLUDE [banner](../../includes/banner.md)]
 
@@ -25,7 +25,7 @@ To enable France e-reporting, complete the following steps:
 - [Import a package of data entities that includes a predefined EM setup](#data-entities)
 - [Set up EM parameters for the France e-reporting](#set-up-em-parameters)
 
-Optionally, you can [set up France e-Reporting to report in multiple VAT registrations legal entity](#set-up-multi-tax) if applicable.
+Optionally, you can [set up France e-reporting to report in multiple VAT registrations legal entity](#set-up-multi-tax) if applicable.
 
 ## <a id="configurations"></a>Import and configure ER configurations
 
@@ -79,20 +79,20 @@ Because the ER configurations use the names of some predefined entities, use a s
 
 To import a package of data entities, follow these steps:
 
-1. In [Lifecycle Services](https://lcs.dynamics.com/v2), go to the **Shared asset library**, and select **Data package** as the asset type. Then find `FR eReporting EM setup v.1 ID1103856.zip` in the list of data package files, and download it to your computer.
-1. After the `FR eReporting EM setup v.1 ID1103856.zip` file is downloaded, in Finance, select the company that you want to work with France e-reporting, and then go to **Workspaces** \> **Data management**.
+1. In [Lifecycle Services](https://lcs.dynamics.com/v2), go to the **Shared asset library**, and select **Data package** as the asset type. Then find `FR eReporting EM setup v.1 ID1103856.zip` or a later version in the list of data package files, and download it to your computer.
+1. After the `FR eReporting EM setup v.1 ID1103856.zip` file (or a later version) is downloaded, in Finance, select the company that you want to work with France e-reporting, and then go to **Workspaces** \> **Data management**.
 1. Before you import setup data from the package of data entities, make sure that the data entities in your application are refreshed and synced. In the **Data management** workspace, go to **Framework parameters** \> **Entity settings**, and then select **Refresh entity list**. Wait for confirmation that the refresh is complete. For more information about how to refresh the entity list, see [Entity list refresh](../../../fin-ops-core/dev-itpro/data-entities/data-entities.md#entity-list-refresh).
 1. Validate that the source data and target data are correctly mapped. For more information, see [Validate that the source data and target data are mapped correctly](../../../fin-ops-core/fin-ops/data-entities/data-import-export-job.md#validate-that-the-source-data-and-target-data-are-mapped-correctly).
-1. Import data from the `FR eReporting EM setup v.1 ID1103856.zip` file into the selected company. In the **Data management** workspace, select **Import**, and then, on the **Import** FastTab, in the **Group name** field, select a value.
+1. Import data from the `FR eReporting EM setup v.1 ID1103856.zip` file (or a later version) into the selected company. In the **Data management** workspace, select **Import**, and then, on the **Import** FastTab, in the **Group name** field, select a value.
 1. On the **Selected entities** FastTab, select **Add file**.
 1. In the **Source data format** field, select **Package**, and then select **Upload and add**.
-1. Find and select the `FR eReporting EM setup v.1 ID1103856.zip` file that you downloaded in step 1.
+1. Find and select the `FR eReporting EM setup v.1 ID1103856.zip` file (or a later version) that you downloaded in step 1.
 1. Wait until the data entities from the file are listed in the grid on the **Selected entities** FastTab, and then select **Close**.
 1. On the Action Pane, select **Import** or **Import now** to start the import.
 
 For more information, see [Data management](../../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=%2ffin-and-ops%2ftoc.json).
 
-The `FR eReporting EM setup v.1 ID1103856.zip` package provides a setup for the **FR e-Reporting** electronic messages processing that you can use.
+The `FR eReporting EM setup v.1 ID1103856.zip` package (or a later version) provides a setup for the **FR e-Reporting** electronic messages processing that you can use.
 
 ### Electronic message definitions in France e-reporting
 
@@ -333,7 +333,7 @@ The settings of this class control the execution of logic that drives data colle
 
 The **FR-eRep GenerateReportFile** executable class groups message items into separate reports by reporting period, in addition to the invoice direction (incoming/outgoing) and data type (transaction/payment). Each generated report (electronic message) covers exactly one reporting period. Items that belong to different periods are never combined into the same report.
 
-The reporting period is derived from the declarant's VAT regime together with the date of the operation (for transaction data) or the collection date (for payment data), as required by the French e-reporting regulation. Configure the following parameters.
+The reporting period comes from the declarant's VAT regime together with the date of the operation (for transaction data) or the collection date (for payment data), as required by the French e-reporting regulation. Configure the following parameters.
 
 | Parameter name | Value | Description |
 |----------------|----------|----------|
@@ -347,12 +347,12 @@ The **VAT regime** value determines the reporting period as follows.
 | Simplified VAT regime - Quarterly | Monthly | Monthly |
 | Franchise in base VAT regime | Bimonthly civil periods (Jan–Feb, Mar–Apr, May–Jun, Jul–Aug, Sep–Oct, Nov–Dec) | Same bimonthly period |
 
-When you regenerate a report for a reporting period that you already submitted and subsequently changed, you must issue the transmission as a rectifying transmission (RE – Rectificative) rather than a new initial transmission (IN – Initiale). In the generated file, the transmission type is represented by a single report tag whose value the system populates from the **FR-eRep TypeCode** additional field of the electronic message. Accordingly, the **FR-eRep TypeCode** additional field must hold the rectifying value (RE) before the report is regenerated; otherwise, the system populates the report tag with the initial value and regenerates an initial transmission. If you transmit reports outside Dynamics 365 Finance, you are responsible for setting the **FR-eRep TypeCode** additional field to **RE** after a reporting period is successfully submitted. If you use the EDICOM integration provided by Microsoft, this step is performed automatically: the system sets the **FR-eRep TypeCode** additional field to **RE** upon receipt of the authority's confirmation of a successful submission. Together with per-period reporting, the correct transmission type ensures that reports meet the platform's period-consistency requirements and are not rejected with a period-control error (`REJ_PER`).
+When you regenerate a report for a reporting period that you already submitted and subsequently changed, you must issue the transmission as a rectifying transmission (RE – Rectificative) rather than a new initial transmission (IN – Initiale). In the generated file, the transmission type is represented by a single report tag whose value the system populates from the **FR-eRep TypeCode** additional field of the electronic message. Accordingly, the **FR-eRep TypeCode** additional field must hold the rectifying value (RE) before the report is regenerated; otherwise, the system populates the report tag with the initial value and regenerates an initial transmission. If you transmit reports outside Dynamics 365 Finance, you are responsible for setting the **FR-eRep TypeCode** additional field to **RE** after a reporting period is successfully submitted. If you use the EDICOM integration provided by Microsoft, this step is performed automatically: the system sets the **FR-eRep TypeCode** additional field to **RE** upon receipt of the authority's confirmation of a successful submission. Together with per-period reporting, the correct transmission type ensures that reports meet the platform's period-consistency requirements and aren't rejected with a period-control error (`REJ_PER`).
 
 ## <a id="set-up-multi-tax"></a>Set up FR e-Reporting to report in multiple VAT registrations legal entity
 
 The multiple VAT registrations legal entity scenario applies to organizations that operate with multiple VAT registration numbers within the same legal entity.
-This scenario is supported if you use the [Tax Calculation](../global/global-tax-calcuation-service-overview.md) functionality and enable the [Support multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md) parameter in the **Tax calculation parameters** page.
+You support this scenario when you use the [Tax Calculation](../global/global-tax-calcuation-service-overview.md) functionality and enable the [Support multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md) parameter in the **Tax calculation parameters** page.
 
 In this scenario, you must group and report transactions per VAT registration, rather than for the whole legal entity. When you enable multiple VAT registrations, you assign each transaction (for example, customer invoice, vendor invoice, or tax transaction) a tax registration number.
 
