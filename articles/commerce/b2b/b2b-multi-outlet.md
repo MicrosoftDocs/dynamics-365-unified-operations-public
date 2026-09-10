@@ -2,9 +2,9 @@
 title: B2B multioutlet capabilities (preview)
 description: Learn about the key features and benefits of native business-to-business (B2B) multioutlet capabilities in Microsoft Dynamics 365 Commerce.
 author: Jcava-Evenica
-ms.date: 05/07/2026
+ms.date: 09/10/2026
 ms.topic: overview
-ms.reviewer: johnmichalak
+ms.reviewer: mirao
 ms.search.region: Global
 ms.author: v-jcavataio
 ms.search.validFrom: 2021-01-31
@@ -72,7 +72,7 @@ This shift affects user management, sales order creation, storefront behavior, a
 With B2B multioutlet support:
 
 - Each signed-in user is represented as a contact (not a person-type customer account).
-- A single contact can be associated with one or more organizations or outlets through customer hierarchies.
+- You can associate a single contact with one or more organizations or outlets through customer hierarchies.
 - Contacts inherit purchasing rules such as pricing, catalogs, credit limits, fulfillment, and channel access from the active organization or outlet context.
 
 This approach reduces identity duplication and simplifies administration as organizations add outlets or change staffing.
@@ -81,8 +81,8 @@ This approach reduces identity duplication and simplifies administration as orga
 
 When you enable B2B multioutlet support:
 
-- Sales orders are created against the organization account, represented by the customer hierarchy.
-- The contact is recorded on the sales order for auditing and tracking, but the contact doesn't own the purchasing account.
+- You create sales orders against the organization account, which the customer hierarchy represents.
+- You record the contact on the sales order for auditing and tracking, but the contact doesn't own the purchasing account.
 
 This approach consolidates purchasing activity under the organization regardless of which contact placed the order.
 
@@ -92,7 +92,7 @@ This approach consolidates purchasing activity under the organization regardless
 
 The B2B multioutlet feature updates the standard business partner prospect flow to automatically create a contact associated with the new organization instead of a person-type customer account. The system links the contact to a customer hierarchy with no extra configuration changes required.
 
-### Management of user access through customer hierarchies
+### Manage user access through customer hierarchies
 
 Customer hierarchies are the primary control point for managing B2B multioutlet access. Administrators use customer hierarchies to associate contacts with organizations or outlets and manage their access.
 
@@ -118,6 +118,14 @@ Contacts who placed orders can't be fully removed from the hierarchy. Disabling 
 #### Capture a reason when disabling access
 
 When a contact is disabled, administrators are prompted to enter a reason (for example, role change, temporary suspension, or the user left the organization). This reason is stored for auditing and operational visibility.
+
+### B2B permission groups
+
+In B2B businesses, different individuals might handle the ordering process. Currently, B2B users have only two roles, which can limit customers and increase operational risk. So, define permission groups as sets of access configurations that you can maintain and assign through Commerce headquarters.
+
+This functionality is part of the multioutlet feature and initially includes the default permission groups **Admin** and **User** for backward compatibility. You can edit these groups to fit your business needs, and create and assign more roles as needed. You can also assign a default permission group when you create users in the storefront to provide a controlled and consistent experience.
+
+You can also extend the permission group model to accommodate unique and complex business needs for user access.
 
 ### Storefront experiences for multioutlet users
 
@@ -153,9 +161,21 @@ Wishlists are contact aware with this feature, letting each user maintain their 
 
 Distributors can use a single set of credentials for multiple B2B buyer and seller organizations through the same process using customer hierarchies that B2B buyer organizations have access to. The channel assignment functionality through the customer hierarchy works with this feature, aligning organizations with the correct list of distributor (direct or indirect) options on the B2B website.
 
-#### Account manager access to contact-based users through On behalf of (OBO) capabilities
+#### Account manager access to contact-based users through on behalf of (OBO) capabilities
 
 OBO-enabled sales representatives or account managers can select contact-based users in their assigned organizations to act on behalf of those contacts and access the same controls. The OBO user can then switch between organizations and users within the same session, with the website dynamically updating products, distributor options, pricing, and more. Also, clear labeling on orders and order templates created through OBO includes the representative's or account manager's name and the selected contact's name. Adding or removing access to an organization is as simple as assigning the appropriate sales group to the organization account. OBO users can authenticate by using their Commerce headquarters credentials through a separate sign-in option on the B2B website.
+
+#### Contact-based organization users module
+
+The organization users module provides tools to help organizations manage employees who need storefront access without requiring customer service assistance. You can use it to create new contacts or disable existing contacts under the currently selected organization, along with their associated customer hierarchy.
+
+After you create a new storefront-created user by using the **Organization Users** page, and after processing the **P-0001** and **Synchronize customers and channel requests** jobs, you can complete the same storefront registration steps that are needed for headquarters-created users. Contact users who are deactivated from the storefront require the same jobs to run before the change takes effect. A system-populated deactivation reason is also set to maintain consistency with the headquarters deactivation process.
+
+A default permission group (initially, **User**) is automatically assigned to contact users created through the storefront. If you need additional permissions for a user, use the existing Commerce headquarters user creation and update steps.
+
+#### Updates to requesting invoices and statements
+
+Additional options are available to users to help with sending invoice and account balance information to other contacts configured in Headquarters. Email contacts assigned to the organization and current contact user (as well as the contact on an invoice, where applicable) are available from these areas in the account management suite of modules.
 
 ### Contact-aware call center experiences
 
@@ -164,16 +184,16 @@ B2B multioutlet support extends to assisted selling in Commerce by improving how
 When you enable B2B multioutlet support:
 
 - The organization account remains the customer for the sales order.
-- A contact field can be used to associate the individual who placed or requested the order.
+- You can use a contact field to associate the individual who placed or requested the order.
 - For storefront-originated orders, the system can populate the contact reference automatically.
 
 #### Updated contact-based customer search option
 
-Updated options within the customer service form are available to search for a specific contact in the system through various identifying information. Once you find a contact, you can select from their related organizations to create a new order or review previously placed orders that are connected with that contact. The existing option to search by organization is available as well, with updates to the user interface for related contact information.
+Updated options within the customer service form are available to search for a specific contact in the system through various identifying information. When you find a contact, you can select from their related organizations to create a new order or review previously placed orders that are connected with that contact. The existing option to search by organization is available as well, with updates to the user interface for related contact information.
 
 #### Behavior for inactive contacts
 
-- Only active contacts associated with the selected organization or outlet can be used on new sales orders.
+- You can use only active contacts associated with the selected organization or outlet on new sales orders.
 - If a contact becomes inactive after placing an order, the existing order remains unchanged and retains the contact reference.
 - If all contacts are inactive, customer service users can still create sales orders by using the organization account, without associating a contact.
 
@@ -182,7 +202,7 @@ Updated options within the customer service form are available to search for a s
 The B2B multioutlet ordering with contact-based access feature is available starting with Commerce release version 10.0.48.
 
 > [!NOTE]
-> You can't reverse this migration or disable the feature after it's enabled. So, we strongly recommend testing in a nonproduction environment.
+> You can't reverse this migration or disable the feature after you enable it. So, test it in a nonproduction environment.
 
 To enable the feature, follow these steps:
 
@@ -191,9 +211,16 @@ To enable the feature, follow these steps:
 1. Run the **Migrate B2B Multi-Outlet Customers** batch job (**Retail and Commerce** > **Retail and Commerce IT**). This step is mandatory for environments with existing B2B customers.
 1. Run the Commerce Data Exchange (CDX) **1010 (Customers)** job.
 
+## Import customer hierarchies and contacts
+
+After you enable this feature, use the following entities to import customer hierarchies and contacts from different data sources and file formats by using data management:
+
+- **Customer hierarchies**: Use the **Customer Hierarchies (CustomerHierarchyEntity)** entity to import customer hierarchies that are associated with specific organization accounts. Populate the organization's party ID in the **ORGANIZATIONPARTYNUMBER** field, along with other required entity data.
+- **Contacts**: Use the **Contacts V2 (smmContactPersonV2Entity)** entity to import users under specific organization accounts. Populate the organization's party ID in the **ASSOCIATEDPARTYNUMBER** field, along with other required entity data. These contacts are automatically associated with the customer hierarchy through the link between contacts under the organization account and those listed in the customer hierarchy.
+
 ## Existing B2B customer migration
 
-Enabling this feature requires a one-time batch job execution to migrate any existing B2B customers, B2B2B channels (distributors), and OBO configurations and users as part of the activation process. The batch job is called **Migrate B2B Multi-Outlet Customers** and is located under **Retail and Commerce** > **Retail and Commerce IT**. This batch job performs the following steps:
+To enable this feature, run a one-time batch job that migrates existing B2B customers, B2B2B channels (distributors), and OBO configurations and users. This batch job is part of the activation process. The batch job, **Migrate B2B Multi-Outlet Customers**, is located under **Retail and Commerce** > **Retail and Commerce IT**. This batch job performs the following steps:
 
 1. Finds all organization-type customers attached to a customer hierarchy.
 1. Creates a contact under the organization for each person-type customer attached to the customer hierarchy. This contact uses the same Party ID as the person-type account for traceability.
