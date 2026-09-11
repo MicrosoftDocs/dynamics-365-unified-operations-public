@@ -6,7 +6,7 @@ ms.author: twheeloc
 ms.topic: concept-article
 ms.custom: 
   - bap-template
-ms.date: 01/15/2026
+ms.date: 09/11/2026
 ms.reviewer: twheeloc
 audience: IT Pro
 ms.search.region: global
@@ -38,7 +38,7 @@ The dual-write table maps for products are designed to flow data only one way, f
 Product information contains all the information that's related to the product and its definition, such as the product dimensions or the tracking and storage dimensions. As the following table shows, a collection of table maps is created to sync products and related information.
 
 | Finance and operations apps | Other Dynamics 365 apps | Description |
-|---|---|---|
+| --- | --- | --- |
 | [All products](mapping-reference.md#138) | msdyn\_globalproducts | The all products table contains all the products that are available in finance and operations apps, both released products and nonreleased products. |
 | [CDS released distinct products](mapping-reference.md#213) | Product | The **Product** table contains the columns that define the product. It includes individual products (products with subtype product) and product variants. |
 | [Colors](mapping-reference.md#170) | msdyn\_productcolors | |
@@ -48,7 +48,7 @@ Product information contains all the information that's related to the product a
 | [DV released products](mapping-reference.md#243) | msdyn\_sharedproductdetails | The **DV released products** entity is a simpler version of the **Released products V2** entity. It contains product master–relevant information and relies on Dataverse plugins to automatically update relevant products from **msdyn\_sharedproductdetails** to **Product**. It's available in the Dynamics 365 Supply Chain Extended v2.3.4.294 solution. |
 | [Product categories](mapping-reference.md#166) | msdyn\_productcategories | The product category table contains each product category and information about its structure and characteristics. |
 | [Product category assignments](mapping-reference.md#167) | msdyn\_productcategoryassignments | The product category assignments table can be used to assign a product to a category. |
-| [Product category hierarchies](mapping-reference.md#168) | msdyn\_productcategoryhierarchies | You use product hierarchies to categorize or group products. The category hierarchies are available in Dataverse through the Product category hierarchy table.|
+| [Product category hierarchies](mapping-reference.md#168) | msdyn\_productcategoryhierarchies | You use product hierarchies to categorize or group products. The category hierarchies are available in Dataverse through the Product category hierarchy table. |
 | [Product category hierarchy roles](mapping-reference.md#169) | msdyn\_productcategoryhierarchyroles | Product hierarchies can be used for different roles in Dynamics 365 finance and operations apps. They specify which category is used in each role where the product category role table is used. |
 | [Product default order settings V2](mapping-reference.md#175) | msdyn\_productspecificdefaultordersettings | |
 | [Product dimension groups](mapping-reference.md#173) | msdyn\_productdimensiongroups | The product dimension group defines which product dimensions define the product. |
@@ -95,7 +95,7 @@ The synchronization of products is done from the finance and operations app to D
 As of Dynamics 365 Supply Chain Management version 10.0.39 and Dynamics 365 Supply Chain Extended v2.3.4.294, a new approach is introduced for product synchronization, to help improve overall performance.
 
 The new data entities, [DV released distinct products](mapping-reference.md#242) and [DV released products](mapping-reference.md#243), contain only the information that's synced to Dataverse. Therefore, the data entities are more performant because they have fewer joins and data sources. The Dataverse plugins take care of updating the relevant product information from **msdyn\_sharedproductdetails** to **Product**.
- 
+
 As is mentioned in [Sync on-demand with the Supply Chain Management pricing engine](../../../fin-ops/data-entities/pricing-engine.md), Dynamics 365 Sales uses the Dynamics 365 Supply Chain Management pricing engine for price-related calculations. Therefore, UnitCost and SalesPrice are no longer needed or synced to Dataverse.
 
 To start to use this new approach, verify that you use Dynamics 365 Supply Chain Management version 10.0.39 or older, and that the Dynamics 365 Supply Chain Extended v2.3.4.294 solution is installed on Microsoft Power Platform. The old dual-write maps, [CDS released distinct products](mapping-reference.md#213) and [Released products V2](mapping-reference.md#189), should be stopped, and the new maps should be started. Because the plugins are designed to work with the new maps, they're automatically triggered and run only when the new maps are activated.
@@ -104,14 +104,13 @@ If you stop the new [DV released distinct products](mapping-reference.md#242) an
 
 When you run initial synchronization, the [DV released products](mapping-reference.md#243) map should be run first, and then the [DV released distinct products](mapping-reference.md#242) should be run.
 
-Finance and operations apps | Customer engagement apps |
----
-|---
-[CDS released distinct products](mapping-reference.md#213) | Product |
-[Released products V2](mapping-reference.md#189) | msdyn\_sharedproductdetails |
-[DV released distinct products](mapping-reference.md#242) | Product |
-[DV released products](mapping-reference.md#243) | msdyn\_sharedproductdetails |
-[All products](mapping-reference.md#138) | msdyn\_globalproducts |
+| Finance and operations apps | Customer engagement apps |
+| --- | --- |
+| [CDS released distinct products](mapping-reference.md#213) | Product |
+| [Released products V2](mapping-reference.md#189) | msdyn\_sharedproductdetails |
+| [DV released distinct products](mapping-reference.md#242) | Product |
+| [DV released products](mapping-reference.md#243) | msdyn\_sharedproductdetails |
+| [All products](mapping-reference.md#138) | msdyn\_globalproducts |
 
 ## Product dimensions
 
@@ -119,36 +118,33 @@ Product dimensions are characteristics that identify a product variant. The four
 
 :::image type="content" source="media/dual-write-product-two.png" alt-text="Screenshot of data model for product dimensions.":::
 
-Finance and operations apps | Customer engagement apps |
----
-|---
-[Colors](mapping-reference.md#170) | msdyn\_productcolors
-[Sizes](mapping-reference.md#174) | msdyn\_productsizes
-[Styles](mapping-reference.md#178) | msdyn\_productstyles
-[Configurations](mapping-reference.md#171) | msdyn\_productconfigurations
+| Finance and operations apps | Customer engagement apps |
+| --- | --- |
+| [Colors](mapping-reference.md#170) | msdyn\_productcolors |
+| [Sizes](mapping-reference.md#174) | msdyn\_productsizes |
+| [Styles](mapping-reference.md#178) | msdyn\_productstyles |
+| [Configurations](mapping-reference.md#171) | msdyn\_productconfigurations |
 
 When a product has different product dimensions (for example, a product master has Size and Color as product dimensions), each distinct product (that is, each product variant) is defined as a combination of those product dimensions. For example, product number B0001 is an extra-small black T-shirt, and product number B0002 is a small black T-shirt. In this case, the existing combinations of product dimensions are defined. For example, the T-shirt from the preceding example can be extra-small and black, small and black, medium and black, or large and black, but it can't be extra-large and black. In other words, the product dimensions that a product master can take are specified, and variants can be released based on these values.
 
 To keep track of the product dimensions that a product master can take, the following tables are created and mapped in Dataverse for each product dimension. For more information, see [Product information overview](../../../../supply-chain/pim/product-information.md).
 
-Finance and operations apps | Customer engagement apps |
----
-|---
-[Product master colors](mapping-reference.md#187) | msdyn\_sharedproductcolors |
-[Product master configurations](mapping-reference.md#188) | msdyn\_sharedproductconfigurations |
-[Product master sizes](mapping-reference.md#190) | msdyn\_sharedproductsizes |
-[Product master styles](mapping-reference.md#191) | msdyn\_sharedproductstyles |
-[Product Number Identified Barcode](mapping-reference.md#164) | msdyn\_productbarcodes |
+| Finance and operations apps | Customer engagement apps |
+| --- | --- |
+| [Product master colors](mapping-reference.md#187) | msdyn\_sharedproductcolors |
+| [Product master configurations](mapping-reference.md#188) | msdyn\_sharedproductconfigurations |
+| [Product master sizes](mapping-reference.md#190) | msdyn\_sharedproductsizes |
+| [Product master styles](mapping-reference.md#191) | msdyn\_sharedproductstyles |
+| [Product Number Identified Barcode](mapping-reference.md#164) | msdyn\_productbarcodes |
 
 ## Default order settings and product-specific default order settings
 
 Default order settings define the site and warehouse where items are sourced from or stored. They also define the minimum, maximum, multiple, and standard quantities that are used for trading or inventory management, the lead times, the stop flag, and the order promising method. This information is available in Dataverse by using the default order settings and product-specific default order settings entity. For more information about the functionality, see [Default order settings for dimensions and product variants](../../../../supply-chain/production-control/default-order-settings.md).
 
-Finance and operations apps | Customer engagement apps |
----
-|---
-[Default order settings](mapping-reference.md#172) | msdyn\_productdefaultordersettings |
-[Product default order settings V2](mapping-reference.md#175) | msdyn\_productspecificdefaultordersettings |
+| Finance and operations apps | Customer engagement apps |
+| --- | --- |
+| [Default order settings](mapping-reference.md#172) | msdyn\_productdefaultordersettings |
+| [Product default order settings V2](mapping-reference.md#175) | msdyn\_productspecificdefaultordersettings |
 
 ## Unit of measure and unit of measure conversions
 
@@ -160,17 +156,16 @@ The unit of measure concept is integrated between finance and operations apps an
 
 The following are the differences between Dynamics 365 finance and operations apps and Dynamics 365 Sales units of measure:
 
-- In Dynamics 365 finance and operations apps, there are units of measure conversions inter-class and intra-class. It's possible to make changes to the sales unit between different classes (inter-class), provided that an existing conversion exists for the product. 
-- In Dynamics 365 Sales, you can only change the unit to another unit in the same group. 
-- With the standard integration provided, where a unit group is created in Dynamics 365 Sales for each unit class in Dynamics finance and operations app, then it's not possible to change the sales unit of the product in Dynamics 365 Sales to another unit in a different group. This is a restriction in Dynamics 365 Sales. This means that it's not possible to do an inter-class conversion in finance and operations apps and sync it to Dynamics 365 Sales. 
-- If the scenario for doing an inter-class unit conversion in finance and operations apps and then syncing to Dynamics 365 Sales is needed, the default implementation must be changed. All the units from finance and operations apps must be synced to a single unit group in Dynamics 365 Sales that represents the finance and operations unit class. This synchronization can be achieved by customizing the dual-write mapping template for units and mapping msdyn\_externalunitclassname to a fixed value instead of UNITCLASS. 
+- In Dynamics 365 finance and operations apps, there are units of measure conversions inter-class and intra-class. You can change the sales unit between different classes (inter-class), provided that an existing conversion exists for the product.
+- In Dynamics 365 Sales, you can only change the unit to another unit in the same group.
+- By using the standard integration provided, where a unit group is created in Dynamics 365 Sales for each unit class in Dynamics finance and operations app, you can't change the sales unit of the product in Dynamics 365 Sales to another unit in a different group. This restriction exists in Dynamics 365 Sales. This restriction means that you can't do an inter-class conversion in finance and operations apps and sync it to Dynamics 365 Sales.
+- If you need to do an inter-class unit conversion in finance and operations apps and then sync it to Dynamics 365 Sales, change the default implementation. Sync all the units from finance and operations apps to a single unit group in Dynamics 365 Sales that represents the finance and operations unit class. You can achieve this synchronization by customizing the dual-write mapping template for units and mapping msdyn\_externalunitclassname to a fixed value instead of UNITCLASS.
 
-Finance and operations apps | Customer engagement apps |
----
-|---
-[Product specific unit conversions](mapping-reference.md#176) | msdyn\_productspecificunitofmeasureconversions |
-[Units](mapping-reference.md#219) | uoms
-[Unit conversions](mapping-reference.md#199) | msdyn\_unitofmeasureconversions
+| Finance and operations apps | Customer engagement apps |
+| --- | --- |
+| [Product specific unit conversions](mapping-reference.md#176) | msdyn\_productspecificunitofmeasureconversions |
+| [Units](mapping-reference.md#219) | uoms |
+| [Unit conversions](mapping-reference.md#199) | msdyn\_unitofmeasureconversions |
 
 ## Initial synchronization of units data matching between finance and operations apps and Dataverse
 
@@ -184,8 +179,8 @@ First, it's important to note that the integration key for unit is msdyn\_symbol
 
 For units matching/overlapping in finance and operations apps and other Dynamics 365 apps:
 
-+ **The unit belongs to a unit group in other Dynamics 365 apps that corresponds to the associated unit class in finance and operations apps.** In this case, the msdyn\_symbol column in other Dynamics 365 apps must be filled in with the unit symbol from finance and operations apps. Therefore, when the data is matched, the unit group is set as "Externally maintained" in other Dynamics 365 apps.
-+ **The unit belongs to a unit group in other Dynamics 365 apps that doesn't correspond to the associated unit class in finance and operations apps. (There's no existing unit class in finance and operations apps for the unit class in other Dynamics 365 apps.)** In this case, the msdyn\_symbol column must be filled in with a random string. This value must be unique in other Dynamics 365 apps.
+- **The unit belongs to a unit group in other Dynamics 365 apps that corresponds to the associated unit class in finance and operations apps.** In this case, the msdyn\_symbol column in other Dynamics 365 apps must contain the unit symbol from finance and operations apps. When you match the data, set the unit group as "Externally maintained" in other Dynamics 365 apps.
+- **The unit belongs to a unit group in other Dynamics 365 apps that doesn't correspond to the associated unit class in finance and operations apps. (There's no existing unit class in finance and operations apps for the unit class in other Dynamics 365 apps.)** In this case, fill the msdyn\_symbol column with a random string. This value must be unique in other Dynamics 365 apps.
 
 For units and unit classes in finance and operations apps not existing in other Dynamics 365 apps:
 
@@ -199,21 +194,19 @@ The msdyn\_symbol column must be filled in for all units. The units can always b
 
 The product policies are sets of policies that are used to define products and their characteristics in inventory. The product dimension group, product tracking dimension group, and storage dimension group can be found as product policies.
 
-Finance and operations apps | Customer engagement apps |
----
-|---
-[Product dimension groups](mapping-reference.md#173) | msdyn\_productdimensiongroups |
-[Storage dimension groups](mapping-reference.md#177) | msdyn\_productstoragedimensiongroups |
-[Tracking dimension groups](mapping-reference.md#179) | msdyn\_producttrackingdimensiongroups |
+| Finance and operations apps | Customer engagement apps |
+| --- | --- |
+| [Product dimension groups](mapping-reference.md#173) | msdyn\_productdimensiongroups |
+| [Storage dimension groups](mapping-reference.md#177) | msdyn\_productstoragedimensiongroups |
+| [Tracking dimension groups](mapping-reference.md#179) | msdyn\_producttrackingdimensiongroups |
 
 ## Product hierarchies
 
-Finance and operations apps | Customer engagement apps |
----
-|---
-[Product category assignments](mapping-reference.md#167) | msdyn\_productcategoryassignments |
-[Product category hierarchies](mapping-reference.md#168) | msdyn\_productcategoryhierarchies |
-[Product category hierarchy roles](mapping-reference.md#169) | msdyn\_productcategoryhierarchyroles |
+| Finance and operations apps | Customer engagement apps |
+| --- | --- |
+| [Product category assignments](mapping-reference.md#167) | msdyn\_productcategoryassignments |
+| [Product category hierarchies](mapping-reference.md#168) | msdyn\_productcategoryhierarchies |
+| [Product category hierarchy roles](mapping-reference.md#169) | msdyn\_productcategoryhierarchyroles |
 
 ## Integration key for products
 
@@ -251,11 +244,10 @@ For more information about the constraints of dual-write initial synchronization
 
 ### Install dual-write after a finance and operations environment and a Dataverse environment (with Field Service) is deployed
 
-The following error might appear when you install dual-write in a finance and operations environment with a Dataverse environment (including Field Service): 
+When you install dual-write in a finance and operations environment with a Dataverse environment (including Field Service), you might see the following error message:
 
 > Dynamics365SupplyChainExtended GenericManagedPropertyFailure Microsoft.Crm.CrmException: The evaluation of the current component(name=Attribute, id=29245505-73df-4220-a894-b65c81616fe5) in the current operation (Create) failed during managed property evaluation of condition: Managed Property Name: iscomponentcreationenabled; Component Name: Attribute;
 
-This is a known issue on the installation and if you receive this error, contact Microsoft Support. 
+This error message indicates a known issue with the installation. If you see this error message, contact Microsoft Support.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
-

@@ -5,7 +5,7 @@ author: RamaKrishnamoorthy
 ms.author: johnmichalak
 ms.topic: concept-article
 
-ms.date: 01/15/2026
+ms.date: 09/11/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: global
@@ -33,8 +33,7 @@ Organization hierarchy table maps are available for one-way synchronization of d
 An organization is a group of people who work together to carry out a business process or achieve a goal. Organizational hierarchies represent the relationships between the organizations that make up your business. You can define the following types of internal organizations: legal entities, operating units, and teams. As the following table shows, a collection of table maps is created to sync legal entities, operating units, and related organization hierarchy information.
 
 | Finance and operations apps | Customer engagement apps     | Description |
----
---------------------|--------------------------------|---
+| --- | --- | --- |
 | [Legal entities](mapping-reference.md#102) | cdm_companies | | 
 | [Legal entities](mapping-reference.md#142) | msdyn_internalorganizations | |
 | [Operating unit](mapping-reference.md#143) | msdyn_internalorganizations | |

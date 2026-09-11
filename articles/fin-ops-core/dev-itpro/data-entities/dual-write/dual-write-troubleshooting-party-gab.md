@@ -6,7 +6,7 @@ ms.author: johnmichalak
 ms.topic: troubleshooting-general
 ms.custom: 
   - bap-template
-ms.date: 01/15/2026
+ms.date: 09/11/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -43,14 +43,13 @@ You might receive the following error message when you try to add an address to 
 
 To fix this issue, make sure that the key on the **Address** table is set as shown in the following table.
 
-Property | Value
----
-|---
-Display Name | Location Key
-Name | msdyn_locationkey
-Fields | msdn_locationid, parentid
-Status | Active
-System Job | (blank)
+| Property | Value |
+| --- | --- |
+| Display Name | Location Key |
+| Name | msdyn_locationkey |
+| Fields | msdn_locationid, parentid |
+| Status | Active |
+| System Job | (blank) |
 
 If you didn't install Dual-write Party and Global Address Book Solutions, the key on this table is set to the **msdyn_locationid** field. Install the dual-write orchestration solution version (version 2.2.2.60 or later). This version replaces the previous key created on the **Address** table.
 
