@@ -4,7 +4,7 @@ description: Learn how to get started with Electronic invoicing for Germany in M
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
-ms.date: 03/13/2026
+ms.date: 09/11/2026
 ms.reviewer: johnmichalak
 ms.search.region: Germany
 ms.search.validFrom: 2022-11-03
@@ -16,13 +16,13 @@ ms.custom:
 
 [!INCLUDE [banner](../../includes/banner.md)]
 
-To comply with European Union (EU) Directive 2014/55/EU, the Germany-specific **xRechnung** format was implemented. This article explains how to set up and process customer electronic invoices in **xRechnung** format.
+To comply with European Union (EU) Directive 2014/55/EU, Microsoft implemented the Germany-specific **xRechnung** format. This article explains how to set up and process customer electronic invoices in **xRechnung** format.
 
 ## Prerequisites
 
-Before you complete the procedures in this article, make sure the following prerequisites are met:
+Before you complete the procedures in this article, ensure you meet the following prerequisites:
 
-- The primary address of the legal entity must be in Germany.
+- The primary address of the legal entity is in Germany.
 - To enable the generation of electronic invoices in **xRechnung** format version **3** and later, import the specified or later versions of the following Electronic reporting (ER) format configurations. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
   - **Sales Invoice DE** (version 288.9.16.11)
@@ -50,30 +50,28 @@ Before you complete the procedures in this article, make sure the following prer
 1. On the **Addresses** FastTab, add a valid primary address for the legal entity.
 1. On the **Foreign trade and logistics** FastTab, in the **VAT exempt number export** field, enter a valid tax registration number for the legal entity.
 1. On the **Bank account information** FastTab, in the **Routing number** field, enter a valid number for the legal entity.
-1. In the **Bank account** field, enter the reference to the legal entity bank account.
+1. In the **Bank account** field, enter the reference to the legal entity bank account. Ensure that you define a valid International Bank Account Number (IBAN) for the selected bank account.
 
-    > [!NOTE]
-    > Make sure that a valid International Bank Account Number (IBAN) is defined for the selected bank account.
+> [!NOTE]
+> Dynamics 365 Finance automatically retrieves the contact information for the legal entity from the related **Person** that is associated with the current user.
 
 ### Configure customer data
 
 1. Go to **Accounts receivable** > **Customers** > **All customers**, and select a customer.
 1. On the **Addresses** FastTab, add a valid address for the customer.
 1. On the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid tax registration number for the customer.
-1. Set the **eInvoice** option to **Yes** to enable electronic invoices to be generated.
+1. Set the **eInvoice** option to **Yes** to enable electronic invoices.
 1. Set the **eInvoice attachment** option to **Yes** to attach a PDF copy of the printable invoice to the electronic invoice, if an attachment is necessary.
-1. On the **Sales demographics** FastTab, in the **Primary contact** field, select the person who is considered the buyer's contact.
+1. On the **Sales demographics** FastTab, in the **Primary contact** field, select the person who is the buyer's contact.
 
     > [!NOTE]
-    > All available contact persons must already be defined for the selected customer.
-
-1. On the **Sales demographics** FastTab, in the **Employee responsible** field, select the person who is considered the seller's contact.
+    > Define all available contact persons for the selected customer.
 
 ### Configure units of measure
 
 1. Go to **Organization administration** > **Setup** > **Units** > **Units**.
 1. Select a unit ID, and then select **External codes**.
-1. On the **External codes** page, in the **Overview** section, in the **Code** column, enter a code that corresponds to the selected unit ID.
+1. On the **External codes** page, in the **Overview** section, enter a code in the **Code** column that corresponds to the selected unit ID.
 1. Select the **Standard code** checkbox.
 1. In the **Value** section, enter the external code to use as the [units](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/) of measure code for international trade.
 
@@ -114,7 +112,7 @@ When you register free text invoices, invoices that are based on sales orders, o
 
 ### Generate e-invoices
 
-When you post an invoice, you can generate an electronic invoice from any invoice journal. Select the invoice, and then, on the Action Pane, on the **Invoice** tab, in the **Document** group, select **Send** > **Original**.
+When you post an invoice, you can generate an electronic invoice from any invoice journal. Select the invoice. On the **Action** pane, on the **Invoice** tab, in the **Document** group, select **Send** > **Original**.
 
 :::image type="content" source="../media/emea-nor-ger-einvoice.jpg" alt-text="Screenshot of sending an e-invoice.":::
 
