@@ -2,9 +2,9 @@
 # required metadata
 
 title: Commerce Chat with Microsoft Copilot Studio module
-description: This article describes the Commerce Chat with Power Virtual Agents module that integrates Microsoft Power Virtual Agents with Dynamics 365 Commerce websites.
+description: This article describes the Commerce Chat with Microsoft Copilot Studio module that integrates Microsoft Copilot Studio with Dynamics 365 Commerce websites.
 author: josaw1
-ms.date: 09/02/2025
+ms.date: 09/08/2026
 ms.topic: how-to
 audience: IT Pro
 ms.reviewer: v-chrgriffin
@@ -13,7 +13,6 @@ ms.author: asharchw
 ms.search.validFrom: 2022-09-07
 ms.custom:
   - bap-template
-  - sfi-image-nochange
 ---
 
 # Commerce Chat with Microsoft Copilot Studio module
@@ -22,7 +21,7 @@ ms.custom:
 
 This article describes the Commerce Chat with Microsoft Copilot Studio module that integrates Microsoft Copilot Studio with Dynamics 365 Commerce websites.
 
-The Commerce Chat with Microsoft Copilot Studio feature empowers Dynamics 365 e-commerce customers to use Microsoft Copilot Studio chatbot capabilities to handle their queries. As of the Dynamics 365 Commerce 10.0.30 release, this feature can be incorporated into e-commerce websites by using the Commerce Chat with Microsoft Copilot Studio module that is part of the Commerce module library.
+The Commerce Chat with Microsoft Copilot Studio feature empowers Dynamics 365 e-commerce customers to use Microsoft Copilot Studio agent capabilities to handle their queries. As of the Dynamics 365 Commerce 10.0.30 release, this feature can be incorporated into e-commerce websites by using the Commerce Chat with Microsoft Copilot Studio module that is part of the Commerce module library.
 
 The Commerce Chat with Microsoft Copilot Studio feature helps businesses achieve the following goals:
 
@@ -35,40 +34,45 @@ The Commerce Chat with Microsoft Copilot Studio feature helps businesses achieve
 
 ## <a id="prereq"></a>Prerequisites for using Microsoft Copilot Studio
 
-To use the Commerce Chat with Microsoft Copilot Studio feature, you must first create a Microsoft Copilot Studio chatbot for your e-commerce website. For instructions, see [Create and delete Microsoft Copilot Studio bots](/power-virtual-agents/authoring-first-bot).
+To use the Commerce Chat with Microsoft Copilot Studio feature, you must first create a Microsoft Copilot Studio agent for your e-commerce website. For instructions, see [Create and delete Microsoft Copilot Studio agents](/microsoft-copilot-studio/authoring-first-bot).
 
-After you configure the chatbot, follow the procedures below to obtain the bot ID, and tenant ID chatbot parameter values you'll use to configure the Commerce chat experience. 
+After you configure the agent, follow the procedures below to obtain the bot ID and tenant ID parameter values that you'll use to configure the Commerce chat experience.
 
-### Find the bot ID of Microsoft Copilot Studio chatbot
+### Find the bot ID of a Microsoft Copilot Studio agent
 
-To find the bot ID of a Microsoft Copilot Studio chatbot in the Microsoft Copilot Studio web app, follow these steps:
+The bot ID isn't shown directly in the Microsoft Copilot Studio user interface. To obtain it, you request a Direct Line token for your agent and read the bot ID from that token.
 
-1. In the left navigation menu, select **Settings \> Channels**.
-1. Select **Mobile app**.
-1. In the **Mobile app** flyout menu, under **Token Endpoint**, select **Copy** to copy the token endpoint URL.
-1. Open a new browser tab and navigate to the **Token Endpoint**. A JSON result displays. Copy the value of the **token** property. The value is a JWT.
-1. Decode the JWT. In the decoded result, the **bot ID** is found in the **bot** field.
+To find the bot ID of a Microsoft Copilot Studio agent, follow these steps:
 
-:::image type="content" source="../media/chat-module-pva-botid.png" alt-text="Find bot ID of Microsoft Copilot Studio bot":::
+1. In Microsoft Copilot Studio, open your agent, and then select the **Channels** tab.
+1. Under **Other channels**, select **Direct Line Speech**.
+1. In the **Direct Line Speech** pane, under **Get connected**, select **Copy** next to **Token Endpoint** to copy the token endpoint URL.
 
-:::image type="content" source="../media/chat-module-pva-directlinetoken.png" alt-text="Direct line token result":::
+    :::image type="content" source="../media/chat-module-pva-botid.png" alt-text="Screenshot of the Channels tab in Microsoft Copilot Studio with the Direct Line Speech channel selected and the Token Endpoint value highlighted in the Direct Line Speech pane.":::
 
-:::image type="content" source="../media/chat-module-pva-directlinetoken-decoded.png" alt-text="Direct line token result decoded":::
+1. Open a new browser tab, and go to the token endpoint URL. A JSON result is displayed. Copy the value of the **token** property. The value is a JSON Web Token (JWT).
 
-> [!NOTE]
-> The bot ID differs from the bot app ID.
+    :::image type="content" source="../media/chat-module-pva-directlinetoken.png" alt-text="Screenshot of the JSON result that is returned by the token endpoint, which includes the token property.":::
 
-For more information on how to copy the bot ID parameter values, see [Retrieve your Microsoft Copilot Studio bot parameters](/power-virtual-agents/publication-connect-bot-to-custom-application#retrieve-your-power-virtual-agents-bot-parameters).
+1. Decode the JWT. In the decoded result, the bot ID is the value of the **bot** claim.
 
-### Find the tenant ID of a Microsoft Copilot Studio chatbot
+    :::image type="content" source="../media/chat-module-pva-directlinetoken-decoded.png" alt-text="Screenshot of the decoded Direct Line token that shows the bot claim.":::
 
-To find the tenant ID of a Microsoft Copilot Studio chatbot in the Microsoft Copilot Studio web app, follow these steps:
+> [!IMPORTANT]
+> Microsoft Copilot Studio shows several identifiers that are easy to confuse. The **Bot ID** module property requires the value of the **bot** claim in the decoded Direct Line token. Don't use the **Entra Agent ID** or the **Environment ID** values that are shown under **Settings \> Advanced \> Metadata**. Those values are different identifiers, and the chat module won't connect if you use them.
 
-1. In the left navigation menu, select **Settings \> Details**.
-1. Select **Advanced**.
-1. Select the copy symbol to copy the **Tenant ID** value.
+For more information about agent parameters, see [Publish an agent to mobile or custom apps](/microsoft-copilot-studio/publication-connect-bot-to-custom-application).
 
-:::image type="content" source="../media/chat-module-pva-tenantid.png" alt-text="Find tenant ID of a Microsoft Copilot Studio":::
+### Find the tenant ID of a Microsoft Copilot Studio agent
+
+To find the tenant ID of a Microsoft Copilot Studio agent, follow these steps:
+
+1. In Microsoft Copilot Studio, open your agent, and then select **Settings**.
+1. In the settings list, select **Advanced**.
+1. Expand the **Metadata** section.
+1. Next to **Tenant ID**, select the copy symbol to copy the value.
+
+:::image type="content" source="../media/chat-module-pva-tenantid.png" alt-text="Screenshot of the Metadata section on the Advanced settings page in Microsoft Copilot Studio, with the Tenant ID value highlighted.":::
 
 ## Configure your e-commerce site 
 
@@ -79,7 +83,7 @@ To add the chat module to your site's header fragment in Commerce site builder, 
 1. In Commerce site builder for your site, go to **Fragments**.
 1. Select **New**.
 1. In the **Select a fragment** dialog, select the **Commerce Chat with Microsoft Copilot Studio** module, enter a name for the fragment, and then select **OK**.
-1. In the outline view, select the **Msdyn365 pva chat connector** slot.
+1. In the outline view, select the **Msdyn365 pva chat connector** slot. (The slot name still uses the module's original internal name, `msdyn365-pva-chat-connector`.)
 1. In the properties pane on the right, follow these steps:
 
     1. Under **Bot Parameters**, in the **Bot Framework Webchat Chat CDN URL** field, leave the default value (for example, `https://cdn.botframework.com/botframework-webchat/latest/webchat.js`).
@@ -93,12 +97,15 @@ To add the chat module to your site's header fragment in Commerce site builder, 
 1. In the **Select modules** dialog, select the chat fragment that you created earlier, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 
+> [!NOTE]
+> Your Microsoft Copilot Studio agent must be published before the chat module can connect to it. If the agent is unpublished, or if it requires end-user authentication, the chat window fails to start a conversation on your site.
+
 ## Proactive chat parameters
 
 For a complete list of proactive chat configuration parameters, see [Commerce chat module proactive chat parameters](chat-proactive-chat-parameters.md).
 
 > [!NOTE]
-> Currently, Microsoft Copilot Studio doesn't support Microsoft Entra ID B2C (Microsoft Entra B2C) authentication. It supports only anonymous Retail Cloud Scale Unit (RCSU) calls to get product availability or interact with other anonymous APIs. Calls to authenticated APIs via Microsoft Copilot Studio chatbots require an explicit customer sign-in.
+> Currently, Microsoft Copilot Studio doesn't support Microsoft Entra ID B2C (Microsoft Entra B2C) authentication. It supports only anonymous Retail Cloud Scale Unit (RCSU) calls to get product availability or interact with other anonymous APIs. Calls to authenticated APIs via Microsoft Copilot Studio agents require an explicit customer sign-in.
 
 ## Additional resources
 
