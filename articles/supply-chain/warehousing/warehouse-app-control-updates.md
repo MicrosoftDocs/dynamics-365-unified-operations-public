@@ -30,8 +30,9 @@ The following table lists the current and scheduled releases of the Warehouse Ma
 
 | Release version | Availability in Microsoft App Center | App store rollout begins | Status |
 |---|---|---|---|
-| 4.1.6.0 | September 2, 2026 | September 2, 2026 | Released |
-| 4.1.5.0 | August 11, 2026 | August 25, 2026 | Released |
+| 4.2.0.0 | September 29, 2026 | October 6, 2026 | Released |
+| 4.1.6.0 | September 2, 2026 | Complete | Released |
+| 4.1.5.0 | August 11, 2026 | Skipped | Released |
 | 4.1.4.0 | May 28, 2026 | Complete | Released |
 | 4.1.3.0 | May 18, 2026 | Complete | Released |
 | 4.1.2.0 | May 6, 2026 | Complete | Released |
