@@ -4,7 +4,7 @@ description: This article lists the features and enhancements that are included 
 author: johnmichalak
 ms.author: johnmichalak
 ms.reviewer: johnmichalak
-ms.date: 08/28/2026
+ms.date: 09/11/2026
 ms.update-cycle: 1095-days
 ms.topic: whats-new
 ms.custom: 
@@ -38,7 +38,7 @@ This section has a table that lists enhancements included in this release when a
 
 | Module or feature area | Feature name | More information | Enabled by |
 | --- | --- | --- | --- |
-| Developer tools | X++ | Starting with PU74 , Microsoft no longer supports Microsoft Visual Studio 2022 for X++ development. Only Visual Studio 2026 is supported. | &nbsp; |
+| Developer tools | X++ | Starting with PU75, Microsoft no longer supports Microsoft Visual Studio 2022 for X++ development. Only Visual Studio 2026 is supported. | &nbsp; |
 | Batch telemetry to Application Insights | Batch job occurrence telemetry | Microsoft introduced Batch job occurrence telemetry as an enhancement to the existing Microsoft Dynamics 365 Finance and Operations batch telemetry. The additional telemetry provides visibility into the lifecycle of individual batch job executions, enabling administrators to monitor job progress, completion status, and execution outcomes. Previously, telemetry was available only at the batch task level, making it difficult to track end-to-end job execution. Batch job occurrence telemetry addresses this gap by providing execution-level insights. The telemetry is available in **PU74/10.0.50 (build >= 7.0.8219.0)** and is backported to **PU73/10.0.49 (build >= 7.0.8199.5)** and **PU72/10.0.48 (build >= 7.0.7996.85)**. Contact Microsoft support if the required flight (BatchJobOccurrenceTelemetryFlight) isn't enabled in your environments. - [Learn more](../../dev-itpro/monitoring-telemetry/monitoring-available-telemetry.md#batch-telemetry) | System admin |
 | Agent foundation | ERP MCP data tool enhancements | Enhancements to the data tools in the Dynamics 365 ERP MCP server include: <br><ul><li>SQL `SELECT` now supports arithmetic between aggregates, for example `SUM(a) - SUM(b)`. <li>Field name validation returns an explicit error for an invalid field instead of failing opaquely or silently returning an unexpected shape. <li>Actions return their full parameter set, including inherited parameters. <li>Added `queryTimeout` support added to the underlying **SysDA** framework for protocol data path requirements. </li></ul><br><p>These enhancements are available in **PU73/10.0.49 PQU-1** (version 7.0.8199.29 and up), and are backported to **PU72/10.0.48 PQU-5** (version 7.0.7996.107 and up) and **PU71/10.0.47 PQU-11** (version 7.0.7858.166 and up). | By default |
 | Agent foundation | ERP MCP form tool enhancements | Enhancements to the form tools in the Dynamics 365 ERP MCP server include: <br><ul><li>Support for **Group Option Button controls** (`FrameOptionButton = Radio` and `Check`), a control family that previously couldn't be read or set. <li>Control resolution hardening: find-by-name, grid group resolution, and a preference for non-lookup controls when setting values, which removes a class of ambiguous-target failures. <li>Menu item label resolution, including resolution via search. <li>Document upload and document viewer control support. </li></ul><br><p>These enhancements are available in **PU73/10.0.49 PQU-1** (version 7.0.8199.29 and up), and are backported to **PU72/10.0.48 PQU-5** (version 7.0.7996.107 and up) and **PU71/10.0.47 PQU-11** (version 7.0.7858.166 and up). | By default |
