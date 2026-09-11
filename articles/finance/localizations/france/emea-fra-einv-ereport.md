@@ -4,7 +4,7 @@ description: Learn how to work with Electronic invoicing for France in Microsoft
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
-ms.date: 08/06/2026
+ms.date: 09/11/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 10.0.48
 This article helps you get started with electronic invoicing for France. Set up the system to generate, submit, and receive electronic invoices and other related documents in the required format in Microsoft Dynamics 365 Finance through a certified service provider acting as an Approved Platform (*Platform Agréée* - **PA**).
 
 > [!NOTE]
-> This electronic invoicing approach uses an invoicing service that's applicable only to cloud deployments of Microsoft Dynamics 365 Finance.
+> This electronic invoicing approach uses an invoicing service that works only with cloud deployments of Microsoft Dynamics 365 Finance.
 
 Watch the overview of the French electronic invoicing implementation in Finance.
 
@@ -33,7 +33,7 @@ Watch the overview of the French electronic invoicing implementation in Finance.
 
 ### Prerequisites
 
-Before you start, make sure you have the following prerequisites:
+Before you start, ensure you have the following prerequisites:
 
 - The company is a registered taxpayer in France.
 - The company has a signed agreement with the selected Approved Platform and obtained the credentials required for establishing a secure connection to the Approved Platform's infrastructure.
@@ -70,7 +70,7 @@ Add the following element to the key vault:
 Set up electronic invoicing Key Vault parameters.
 
 1. Go to **Organization administration** > **Setup** > **Electronic document parameters**.
-1. On the **Electronic invoicing** tab, in **Key Vault settings**, in **Key Vault**, select the key vault reference you created earlier.
+1. On the **Electronic invoicing** tab, in **Key Vault settings**, select the key vault reference you created earlier.
 1. In **SAS token secret**, select the storage account secret URL used to authenticate access to the storage account.
 1. Select **Key Vault parameters**.
 1. On the **Key Vault parameters** page, in **Certificates**, select **Add** and create an element of the appropriate type for each secret described earlier.
@@ -82,7 +82,7 @@ Set up electronic invoicing Key Vault parameters.
 
 For more information, see [Create a Key Vault reference](../global/gs-e-invoicing-set-up-parameters.md#create-a-key-vault-reference).
 
-## Synchronization of the Electronic invoicing service with Finance
+## Synchronize the electronic invoicing service with Finance
 
 After you complete all the configuration steps described in the previous chapters, validate the configuration.
 
@@ -105,18 +105,47 @@ After you complete all the configuration steps described in the previous chapter
 > [!IMPORTANT]
 > Make sure that the **Vendor invoice Mapping to destination** and **Response message model mapping to destination (FR domestic)** Electronic Reporting configurations are marked as **Default for model mapping**.
 
+## Configure the application-specific parameters
+
+> [!NOTE]
+> Application-specific parameters were introduced starting from specific **versions** of Electronic reporting (ER) format configurations. For earlier versions, you can skip this section.
+
+Before you begin, ensure that you import the following or later versions of ER format configurations:
+
+- UBL Sales e-invoice (FR).version.**322.29.41**
+- UBL Sales e-credit note (FR).version.**322.25.54**
+- UBL Project e-invoice (FR).version.**322.21.51**
+- UBL Project e-credit note (FR).version.**322.24.56**
+
+To configure the application-specific parameters, follow these steps:
+
+1. In the **Globalization Studio** workspace, select the **Electronic reporting** tile, and then select the **Reporting configurations** tile.
+1. On the **Configurations** page, select the **UBL Sales e-invoice (FR)** format configuration.
+1. On the **Configurations** menu, in the **Application specific parameters** section, select **Setup**.
+1. Ensure that the required **version** of the configuration is selected in the left-hand list.
+1. In the **Lookups** section, ensure that the **PaymentMethodLookup** lookup is selected.
+1. In the **Conditions** section, select **Add** to add a condition.
+1. In the **Name** column for the new condition, select the method of payment that's defined in the application. Then, in the **Lookup result** column, select a standardized method of payment code according to the subset of [UN/EDIFACT Code list 4461](https://unece.org/fileadmin/DAM/trade/untdid/d16b/tred/tred4461.htm).
+1. Add specific conditions for each method of payment that's defined in the system.
+
+    > [!NOTE]
+    > In the **Name** column, you can select the **\*Blank\*** or **\*Not blank\*** placeholder value instead of a specific method of payment.
+
+1. In the **State** field, change the state of the application-specific parameters to **Completed**. Then select **Save** to save your changes.
+1. Repeat steps 2 through 9 for the **UBL Sales e-credit note (FR)**, **UBL Project e-invoice (FR)**, and **UBL Project e-credit note (FR)** ER format configurations as required.
+
 ## Configure the electronic invoicing features
 
 The **French electronic invoice (FR)** and **French electronic invoice status (FR)** features publish some parameters with default values. Before you deploy the features, review the default values and update them so they reflect your business operations.
 
-Review and update the **French electronic invoice (FR)** feature configuration:
+To review and update the **French electronic invoice (FR)** feature configuration, follow these steps:
 
 1. Go to **Globalization Studio** and select the **Electronic invoicing** tile. Import the globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 1. Copy the imported **French electronic invoice (FR)** globalization feature and select your configuration provider, as described in [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
 1. On the **Versions** tab, check that the **Draft** version is selected.
 1. On the **Feature parameters** tab, specify these required **Edicom** connection and integration parameters:
 
-    - **Domain** – Use the domain number (can be also referred to as **Service ID**) from Edicom to identify the company.
+    - **Domain** – Use the domain number (can also be referred to as **Service ID**) from Edicom to identify the company.
     - **Group** – Use the group code for internal routing within the Edicom infrastructure.
     - **Destination** – Construct the destination by appending **_EDIWIN** to the Domain/Service ID number. For example, if the Domain number is **123456**, enter **123456_EDIWIN**.
     - **Token** – Select the name of the [token](#Tok) you created earlier.
@@ -210,7 +239,7 @@ The system preconfigures electronic documents when you deploy the globalization 
 :::image type="content" source="e-invoice-fra-channels.jpg" alt-text="Screenshot of the configuration on the Integration channels tab of the Electronic document parameters page.":::
 
 > [!NOTE]
-> If you use integration channels names other than **InvStatus**, **EdiStatus**, and **EdiImport**, or import source name other than **ResponseXml**, you need to make related changes in the involved context configurations and invoicing feature setups' applicability rules and variables.
+> If you use integration channel names other than **InvStatus**, **EdiStatus**, and **EdiImport**, or import source name other than **ResponseXml**, you need to make related changes in the involved context configurations and invoicing feature setups' applicability rules and variables.
 
 ## Set up registration numbers
 
@@ -305,10 +334,10 @@ Add the registration numbers.
 1. On the Action Pane, select **Registration IDs**.
 1. On the **Registration ID** FastTab, select **Add**, set **Registration type** to the [SIREN](#SIREN) type you created earlier, and enter the SIREN number in the **Registration number** column.
 1. Select **Add**, set **Registration type** to the [SIRET](#SIRET) type you created earlier, and enter the SIRET number in the **Registration number** column.
-1. Define the Tax exempt ([VAT](#VAT)) number whatever way is used in your company.
+1. Define the Tax exempt ([VAT](#VAT)) number in the way your company uses.
 
 > [!NOTE]
-> If you don't define the registration number with the **VAT** registration category, the value from **Organization administration** > **Organizations** > **Legal entities** > **Foreign trade and statistics** > **INTRASTAT** > **VAT exempt number export** is used.
+> If you don't define the registration number with the **VAT** registration category, the system uses the value from **Organization administration** > **Organizations** > **Legal entities** > **Foreign trade and statistics** > **INTRASTAT** > **VAT exempt number export**.
 
 ## Configure customer data
 
@@ -328,8 +357,8 @@ To enter the address, follow these steps:
 To enter the registration numbers, follow these steps:
 
 1. Go to **Accounts receivable** > **Customers** > **All customers**.
-1. On the Action Pane, on the **Customer** tab, in the **Registration** group, select **Registration IDs**.
-1. Select the **Address** that the registration numbers belong to. Make sure that the **Purpose** of the selected address contains the **Delivery** and **Invoice** values.
+1. On the **Action** pane, on the **Customer** tab, in the **Registration** group, select **Registration IDs**.
+1. Select the **Address** that the registration numbers belong to. Ensure that the **Purpose** of the selected address contains the **Delivery** and **Invoice** values.
 1. On the **Registration ID** FastTab, select **Add** to create a registration ID.
 1. In the **Registration type** field, select the [SIREN](#SIREN) registration type that you created earlier.
 1. Select **Add**, and in the **Registration type** field, select the [SIRET](#SIRET) registration type that you created earlier.
@@ -339,7 +368,7 @@ To enter the registration numbers, follow these steps:
 1. In the **Registration number** field, enter a valid [VAT](#VAT) number for the selected customer.
 
 > [!NOTE]
-> If you don't define the registration number with the **VAT** registration category, the value from **Accounts receivable** > **Customers** > **All customers** > **Invoice and delivery** > **SALES TAX** > **Tax exempt number** is used.
+> If you don't define the registration number with the **VAT** registration category, the system uses the value from **Accounts receivable** > **Customers** > **All customers** > **Invoice and delivery** > **SALES TAX** > **Tax exempt number**.
 
 ## <a id="ElAddr"></a>Configure electronic addresses
 
@@ -386,7 +415,7 @@ To enter the Buyer schema codes, follow these steps:
 
 For both Seller and Buyer identification, the system uses the electronic address you define as the **EndpointID** value with the **schemeID** attribute set to **0225** (FRCTC ELECTRONIC ADDRESS) by default, according to the [Electronic Address Scheme (EAS)](https://docs.peppol.eu/poacc/billing/3.0/codelist/eas/).
 
-You can change the code of the electronic address scheme to any value that better fits your business processes by configuring the **CompanyEndpointType** and **CustomerEndpointType** electronic document properties types for sellers and buyers respectively. The values defined via these electronic document properties have higher priority and overwrite the default **0225** value.
+You can change the code of the electronic address scheme to any value that better fits your business processes by configuring the **CompanyEndpointType** and **CustomerEndpointType** electronic document properties types for sellers and buyers respectively. The values defined through these electronic document properties take priority and overwrite the default **0225** value.
 
 You can also control the interpretation of the Buyer's **Branch ID** value. By default, the system considers it as an entire electronic address. Alternatively, you can configure the **ElectronicAddressSuffix** electronic document property to force the system to interpret the Branch ID value only as a *SUFFIX* part of the electronic address. The whole electronic address is generated as the concatenation of the Buyer's **SIREN_**, **SIRET_**, and the **SUFFIX**.
 
@@ -511,7 +540,7 @@ The following types of invoices are processed during the submission.
 - Project credit notes - electronic invoices of **381** type are generated.
 - Customer prepayment invoices created using [Customer prepayment invoices](../../accounts-receivable/customer-prepayment-invoice.md) functionality - electronic invoices of **386** type are generated.
 
-### Inquiring statuses of submitted e-invoices
+### Check the status of submitted e-invoices
 
 To check the initial status of the submitted electronic invoices from Edicom, follow these steps:
 
@@ -583,19 +612,19 @@ View successfully received invoices: go to **Accounts payable** \> **Invoices** 
 
 ## Send electronic invoice responses
 
-Some business scenarios assume sending responses for either incoming or outgoing electronic invoices. The responses result in assigning mandatory document statuses that conclude the electronic invoices lifecycle.
+Some business scenarios require sending responses for either incoming or outgoing electronic invoices. The responses result in assigning mandatory document statuses that conclude the electronic invoices lifecycle.
 
 ### Send responses for Customer and Project invoices
 
-The current implementation allows sending only *payment reception confirmation* responses to your Buyers. To enter responses, follow these steps.
+The current implementation allows sending only *payment reception confirmation* responses to your buyers. To enter responses, follow these steps.
 
-1. Go to **Accounts receivable** > **Inquires and reports** > **Invoices** > **Invoice journal** for Sales and Free text invoices or to **Project management and accounting** > **Project invoices** > **Project invoices**.
+1. Go to **Accounts receivable** > **Inquiries and reports** > **Invoices** > **Invoice journal** for Sales and Free text invoices or to **Project management and accounting** > **Project invoices** > **Project invoices**.
 1. Select a specific invoice in the list. On the Action Pane, on the **Invoice** / **Project invoice** tab, in the **Document** group, select **Add response**.
-1. In the **Response code** field, select the required value from the list. The **Amount paid** field is automatically populated based on payments settled against this invoice.
+1. In the **Response code** field, select the value you want from the list. The **Amount paid** field is automatically populated based on payments settled against this invoice.
 1. Select **OK**, and then close the page.
 
    > [!NOTE]
-   > You can also use a dedicated procedure in **Organization administration** > **Periodic** > **Electronic documents** > **Generate payment responses** for mass generation of payment responses for eligible invoices. These invoices must be already submitted to EDICOM and fully paid in Dynamics 365 Finance.
+   > For mass generation of payment responses for eligible invoices, use the dedicated procedure in **Organization administration** > **Periodic** > **Electronic documents** > **Generate payment responses**. These invoices must be already submitted to EDICOM and fully paid in Dynamics 365 Finance.
 
 1. After you manually enter or automatically generate payment responses, go to **Organization administration** > **Periodic** > **Electronic documents** > **Submit electronic documents**.
 1. In the **Record to include** section, make sure that the required **Customer invoice response** records are selected.
@@ -613,9 +642,9 @@ The current implementation allows sending only *payment reception confirmation* 
 The current implementation only supports sending *refusal* responses to your sellers. To enter responses, follow these steps:
 
 1. Go to **Accounts payable** > **Invoices** > **Pending vendor invoice**.
-1. Select a specific invoice in the list. On the Action Pane, on the **Vendor invoice** tab, in the **Actions** group, select **Add response**.
+1. Select a specific invoice in the list. On the **Action** pane, on the **Vendor invoice** tab, in the **Actions** group, select **Add response**.
 1. In the **Response code** field, select the required value from the list.
-1. In the **Reason code** field, select the required value from the list.
+1. In the **Reason code** field, select the value you want from the list.
 1. Select **OK**, and then close the page.
 
    > [!NOTE]
@@ -636,7 +665,7 @@ The current implementation only supports sending *refusal* responses to your sel
 
 ### <a id="StatusCodes"></a>List of lifecycle status codes
 
-The list of mandatory status codes supported in electronic invoicing for Microsoft Dynamics 365 Finance.
+The following table lists the mandatory status codes supported in electronic invoicing for Microsoft Dynamics 365 Finance.
 
 | Code | Status | Requirement | Description |
 | ------------ | ------------------ | ----------------------------------- | --------------------------------- |
@@ -646,7 +675,7 @@ The list of mandatory status codes supported in electronic invoicing for Microso
 | 213 | Rejected | **Mandatory** | The invoice is rejected by either issuer's or receiver's PA. |
 
 > [!NOTE]
-> The electronic invoicing functionality in Microsoft Dynamics 365 Finance isn't limited to the statuses listed in the preceding table. The system can receive any valid status from your buyers' PAs through Edicom. At the same time, the current implementation supports sending only refusal responses to your sellers and payment reception confirmation responses to your buyers.
+> The electronic invoicing functionality in Microsoft Dynamics 365 Finance isn't limited to the preceding list of statuses. The system can receive any valid status from your buyers' PAs through Edicom. At the same time, the current implementation supports sending only refusal responses to your sellers and payment reception confirmation responses to your buyers.
 > You can find the full list of statuses in the [Specifications and standards for electronic invoicing](https://www.impots.gouv.fr/specifications-externes-b2b).
 
 ### <a id="ERconfigs"></a>List of Electronic Reporting configurations
@@ -695,7 +724,7 @@ The following configurable electronic document properties are used during the ge
 
 ### <a id="Tutorial"></a>Configuration tutorial video
 
-Watch the tutorial video about the configuration of Frecn electronic invoicing in Dynamics 365 Finance.
+Watch the tutorial video about the configuration of French electronic invoicing in Dynamics 365 Finance.
 > [!VIDEO 848427f7-6557-451b-9e80-0d8cf891aea9]
 
 ## More information

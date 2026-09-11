@@ -6,7 +6,7 @@ ms.author: benebotg
 ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 04/03/2026
+ms.date: 09/11/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: global
@@ -23,10 +23,9 @@ This article describes the integration of site and warehouse data between financ
 
 With the integration with Dataverse, these concepts and all their related information are available in Dataverse using the sites and warehouses data tables in the following table.
 
-Finance and operations apps | Customer engagement apps     | Description
----
------------------------|---------------------------|---
-[Sites](mapping-reference.md#156) | msdyn_operationalsites | |
-[Warehouses](mapping-reference.md#204) | msdyn_warehouses | |
+| Finance and operations apps | Customer engagement apps   | Description |
+| -------------------------- | --------------------------- | --- |
+| [Sites](mapping-reference.md#156) | msdyn_operationalsites | |
+| [Warehouses](mapping-reference.md#204) | msdyn_warehouses | |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

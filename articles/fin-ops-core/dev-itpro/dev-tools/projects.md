@@ -4,7 +4,7 @@ description: The finance and operations project type is part of the development 
 author: josaw1
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 03/30/2026
+ms.date: 09/11/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -34,19 +34,18 @@ To create a new, empty project, follow these steps:
 
 Every project has several important properties. To set the properties for a project, right-click the project in **Solution Explorer**, and then select **Properties**. The following table describes these properties.
 
-Property | Description
----
-|---
-Startup Object type | The type of object that the project uses as the **Startup Object** when the project runs. The following types are available:<br>Form<br>Class<br>Output menu item
-|Startup Object | The object that the project invokes when it runs.
-|Company | The default company that the project uses when it runs.
-|Partition | The partition that the project uses when it runs.
-|Project File | The name of the file that contains information about the project.
-|Project Folder | The location of the project.
-|Model | The model that the project is associated with. All elements in the project must be in the selected model.
-|Model Publisher | A read-only value that indicates the publisher of the model.
-|Layer | A read-only value that indicates the application layer that the model is located in.
-|Synchronize database on build | A value that indicates whether the synchronize operation for tables is performed when the build action is performed for the project.
+| Property | Description |
+| --- | --- |
+| Startup Object type | The type of object that the project uses as the **Startup Object** when the project runs. The following types are available:<br>Form<br>Class<br>Output menu item |
+| Startup Object | The object that the project invokes when it runs. |
+| Company | The default company that the project uses when it runs. |
+| Partition | The partition that the project uses when it runs. |
+| Project File | The name of the file that contains information about the project. |
+| Project Folder | The location of the project. |
+| Model | The model that the project is associated with. All elements in the project must be in the selected model. |
+| Model Publisher | A read-only value that indicates the publisher of the model. |
+| Layer | A read-only value that indicates the application layer that the model is located in. |
+| Synchronize database on build | A value that indicates whether the synchronize operation for tables is performed when the build action is performed for the project. |
 
 Of these properties, the **Model** property is particularly important. You must specify which model the project is associated with. All the elements that you create or add to the project must be part of this model. The **Startup Object type** and **Startup Object** properties are useful when you test and debug your application. When you start your project (by pressing F5 for debugging or Ctrl+F5 for no debugging), the specified form loads, or the **main()** method from the specified class runs. The method must have the following signature: `public static void main(Args _args)`.
 

@@ -4,7 +4,7 @@ description: Learn about the recommended method for implementing keyboard shortc
 author: jasongre
 ms.author: jasongre
 ms.topic: how-to
-ms.date: 08/04/2026
+ms.date: 09/11/2026
 ms.update-cycle: 1095-days
 ms.reviewer: twheeloc
 ms.search.region: Global
@@ -86,7 +86,7 @@ The following table provides a short, non-exhaustive list of keyboard shortcuts 
 
 Some browsers don't allow the following keyboard shortcuts to be overridden. Therefore, you shouldn't choose the following key combinations, because the shortcut won't work in all browsers.
 
-| | | | |
+| &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 | --- | --- | --- | --- |
 | Alt+A | Alt+T | Ctrl+F4 | Alt+Tab |
 | Alt+C | Alt+V | Alt+F5 | Alt+Shift+Tab |

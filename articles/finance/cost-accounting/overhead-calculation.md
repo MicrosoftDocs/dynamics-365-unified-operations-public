@@ -4,7 +4,7 @@ description: Learn about the typical processes for calculating and allocating ov
 author: AndersEvenGirke
 ms.author: twheeloc
 ms.topic: article
-ms.date: 05/27/2026
+ms.date: 09/11/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: global
@@ -326,13 +326,12 @@ The following table shows the result when the Packaging services are applied as 
 
 In financial accounting, you post a cost of 10,000.00 for electricity to a dummy cost center ID. This posting alerts cost accountants that they need to allocate this cost. In cost accounting, costs flow across organizational units and levels based on the policies and rules that you apply. Each cost associates with an allocation base that provides the best assessment for the allocation of costs.
 
-Cost element | Cost object<br>CC099 | Cost object<br>CC001 | Cost object<br>CC002 | Cost object<br>CC003 | Cost object<br>CC004 | Cost object<br>Proj 1 | Cost object<br>Proj 2 | Cost object<br>Prod 1 | Cost object<br>Prod 2 | Total
----
-|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:
-10001 Electricity | 0.00 | 0.00 | 0.00 | 0.00 |  | 30.00 | 10.00 | 7,770.57 | 2,189.43 | 10,000.00 |
-Unclassified | 0.00 |  |  |  |  |  |  |  |  |  |
-Fixed cost | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |  |  | 776.36 | 223.64 | 1,000.00 |
-Variable cost | 000 | 0.00 | 0.00 | 0.00 | 0.00 | 30.00 | 10.00 | 6,994.21 | 1,965.79 | 9,000.00 |
+| Cost element | Cost object<br>CC099 | Cost object<br>CC001 | Cost object<br>CC002 | Cost object<br>CC003 | Cost object<br>CC004 | Cost object<br>Proj 1 | Cost object<br>Proj 2 | Cost object<br>Prod 1 | Cost object<br>Prod 2 | Total |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 10001 Electricity | 0.00 | 0.00 | 0.00 | 0.00 |  | 30.00 | 10.00 | 7,770.57 | 2,189.43 | 10,000.00 |
+| Unclassified | 0.00 |  |  |  |  |  |  |  |  |  |
+| Fixed cost | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |  |  | 776.36 | 223.64 | 1,000.00 |
+| Variable cost | 000 | 0.00 | 0.00 | 0.00 | 0.00 | 30.00 | 10.00 | 6,994.21 | 1,965.79 | 9,000.00 |
 
 > [!NOTE]
 > This article shows how a primary cost element, 10001 Electricity, flows through the cost objects. Therefore, you allocate this overhead cost to the lowest level in the organization. In other words, the cost objects at the lowest level bear the cost. If you require a visual flow of the cost between the cost objects, you can use the cost roll-up policy rules to visualize the flow of the cost. For more information, see [Cost rollup policy and overhead calculation](cost-rollup.md).

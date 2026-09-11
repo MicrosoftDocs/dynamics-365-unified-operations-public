@@ -4,7 +4,7 @@ description: Learn about column definitions. A column definition is a report com
 author: aprilolson
 ms.author: aolson
 ms.topic: article
-ms.date: 06/01/2026
+ms.date: 09/11/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -206,9 +206,8 @@ Conditional spanning headers can span multiple columns that are based on specifi
 A user is creating a report for a dynamic six-month forecast. The user wants the word "Actual" to be printed over the columns that contain actual data, and the word "Budget" to be printed over the columns that contain budget forecasts. Each month that the report is run, there's one more actual column and one less budget column. Although the user can modify the column definition manually each time that the report is generated to adjust the headers, to save time and effort, the user decides to create conditional spanning headers that automatically create headers over the appropriate columns each time that the report is run. The user opens Report Designer, select **Column Definition** in the navigation pane, and opens the column definition for the report. The user then enters the following information. The base period in the report definition is 4.
 
 | Format   |  A   | B     | C      | D   | E        | F       | G       | H      | I     | J       | K       | L             | M     |
-|------|------|-------|-------|---------|----------|---------|---------|---------|------|---------|---------------|-------|--------|
-
-| Header 1   |    | Actual    | Budget    |   |    |   |    |    |     |          |        |         |               |               |
+| ------ | ------ | ------- | ------- | --------- | ---------- | --------- | --------- | --------- | ------ | --------- | --------------- | ------- | -------- |
+| Header 1   |    | Actual    | Budget    |   |    |   |    |    |     |          |        |         |               |
 | Header 2   |     | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong |
 | Header 3    |   |   |   |    |     |    |    |     |               |               |               |               |               |
 | Column type  | DESC | FD   | FD     | FD    | FD   | FD    | FD      | FD  | FD    | FD    | FD    | FD            | FD            |
@@ -345,7 +344,7 @@ The type of information that each column on a report includes is specified by th
 1. Select a column type in the list. The following table describes the various column types.
 
 | Column type code | Description |
-|------------------|-------------|
+| ------------------ | ------------- |
 | FD | Display financial data when you use a **Link to Financial Dimensions** column in the row definition. When you select the **FD** column type, default settings are automatically specified for the following rows: **Book Code/Attribute Category:** ACTUAL, **Book Code/Attribute Category:** ACTUAL, **Fiscal Year:** BASE, **Period:** BASE, **Periods Covered:** PERIODIC, **Column Width:** 14. You can change these default settings. |
 | CALC | Display the result of a simple or complex calculation that is specified in the **Formula** cell. For more information, see [Advanced formatting options in financial reporting](advanced-formatting-options-financial-reporting.md). |
 | DESC | Display the row description from the row definition. Although the description column is often the first column on the report, it can be in any position. |

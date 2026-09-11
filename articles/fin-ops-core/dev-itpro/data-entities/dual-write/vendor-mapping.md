@@ -6,7 +6,7 @@ ms.author: johnmichalak
 ms.topic: concept-article
 ms.custom: 
   - bap-template
-ms.date: 01/15/2026
+ms.date: 09/11/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: global
@@ -39,8 +39,7 @@ If you want to continue to store vendor data in the **Account/Contact** table, y
 Vendor data includes all information about the vendor, such as the vendor group, addresses, contact information, payment profile, and invoice profile. A collection of table maps work together during vendor data interaction, as shown in the following table.
 
 | Finance and operations apps | Customer engagement apps     | Description |
----
--------------------------|-----------------------------|------------
+| ------------------------- | ----------------------------- | ------------ |
 | [CDS Contacts V2](mapping-reference.md#115) | contacts | This template synchronizes all primary, secondary, and tertiary contact information, for both customers and vendors. |
 | [Name affixes](mapping-reference.md#155) | msdyn_nameaffixes | This template synchronizes name affixes reference data, for both customers and vendors. |
 | [Payment day lines CDS V2](mapping-reference.md#157) | msdyn_paymentdaylines | This template synchronizes payment day lines reference data, for both customers and vendors. |
@@ -53,4 +52,3 @@ Vendor data includes all information about the vendor, such as the vendor group,
 | [Vendor payment method](mapping-reference.md#201) | msdyn_vendorpaymentmethods | This template synchronizes vendor payment method information. |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
-

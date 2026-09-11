@@ -6,7 +6,7 @@ ms.author: johnmichalak
 ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 01/15/2026
+ms.date: 09/11/2026
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: global
@@ -24,8 +24,7 @@ In a business application, ledger data defines the core setup for how a company 
 Ledger data includes a collection of core financial table maps that work together during data interaction, as shown in the following table.
 
 | Finance and operations apps | Customer engagement apps     | Description |
----
-------------------------------|----------------------------------|------------
+| --- | --- | --- |
 | [CDS Exchange Rates](mapping-reference.md#123) | msdyn_currencyexchangerates | |
 | [Chart of accounts](mapping-reference.md#121) | msdyn_chartofaccountses | |
 | [Currencies](mapping-reference.md#218) | transactioncurrencies | |
