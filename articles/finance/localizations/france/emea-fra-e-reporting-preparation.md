@@ -4,7 +4,7 @@ description: Learn how to set up e-reporting in France.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 09/10/2026
+ms.date: 09/11/2026
 ms.custom:
   - bap-template
 ms.reviewer: johnmichalak 
@@ -24,6 +24,7 @@ To enable France e-reporting, complete the following steps:
 - [Configure application-specific parameters for the ER format](#configure-asp)
 - [Import a package of data entities that includes a predefined EM setup](#data-entities)
 - [Set up EM parameters for the France e-reporting](#set-up-em-parameters)
+- [Configure sales tax codes for the France e-reporting](#configure-sales-tax-codes)
 
 Optionally, you can [set up France e-reporting to report in multiple VAT registrations legal entity](#set-up-multi-tax) if applicable.
 
@@ -348,6 +349,18 @@ The **VAT regime** value determines the reporting period as follows.
 | Franchise in base VAT regime | Bimonthly civil periods (Jan–Feb, Mar–Apr, May–Jun, Jul–Aug, Sep–Oct, Nov–Dec) | Same bimonthly period |
 
 When you regenerate a report for a reporting period that you already submitted and subsequently changed, you must issue the transmission as a rectifying transmission (RE – Rectificative) rather than a new initial transmission (IN – Initiale). In the generated file, the transmission type is represented by a single report tag whose value the system populates from the **FR-eRep TypeCode** additional field of the electronic message. Accordingly, the **FR-eRep TypeCode** additional field must hold the rectifying value (RE) before the report is regenerated; otherwise, the system populates the report tag with the initial value and regenerates an initial transmission. If you transmit reports outside Dynamics 365 Finance, you are responsible for setting the **FR-eRep TypeCode** additional field to **RE** after a reporting period is successfully submitted. If you use the EDICOM integration provided by Microsoft, this step is performed automatically: the system sets the **FR-eRep TypeCode** additional field to **RE** upon receipt of the authority's confirmation of a successful submission. Together with per-period reporting, the correct transmission type ensures that reports meet the platform's period-consistency requirements and aren't rejected with a period-control error (`REJ_PER`).
+
+## <a id="configure-sales-tax-codes"></a>Configure sales tax codes
+
+The `/TransactionsReport/Invoice/TaxSubTotal/TaxCategory/Code` element identifies the VAT category that applies to the reported tax subtotal. 
+Specify the value by using the UNTDID 5305 (Duty, tax, or fee category code) code list, which is the code list referenced by EN 16931 for VAT category classification. 
+In Dynamics 365 Finance, this value is derived from the sales tax information that is posted for the invoice. 
+The mapping between internal sales tax codes and the required UNTDID 5305 values is maintained through **External codes** that are associated with the tax setup to ensure that the code reported in the electronic report complies with the target format requirements.
+
+1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax codes**.
+1. Select a sales tax code. On the **Action** pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
+1. In the **Overview** section, create a line for the selected unit. Enter the sales tax code from step 2 in the **External code** field and select the **Standard code** checkbox.
+1. In the **Value** section, enter an external code according to the [Duty or tax or fee category code (Subset of UNCL5305)](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5305/) in the **Value** field.
 
 ## <a id="set-up-multi-tax"></a>Set up FR e-Reporting to report in multiple VAT registrations legal entity
 
