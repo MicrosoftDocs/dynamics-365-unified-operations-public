@@ -548,6 +548,8 @@
                   items:
                     - name: Set up multiple element revenue allocation
                       href: accounts-receivable/sb-rev-alloc-setup.md
+                    - name: Multiple element revenue allocation termination revenue adjustment (preview)
+                      href: accounts-receivable/multiple-element-revenue-allocation.md  
             - name: Payments and settlements
               items:
                 - name: Customer payment overview
