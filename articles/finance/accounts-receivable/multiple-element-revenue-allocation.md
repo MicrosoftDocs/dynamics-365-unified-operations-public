@@ -1,5 +1,5 @@
 ---
-title: Configure Multiple element revenue allocation (preview)
+title: Configure Multiple element revenue allocation termination revenue adjustment (preview)
 description: Multiple element revenue allocation termination revenue adjustments let you terminate a complete billing schedule, allocate amounts, and clear deferred contract revenue account balances. 
 author: twheeloc
 ms.author: twheeloc
@@ -10,8 +10,10 @@ ms.topic: article
 
 # Multiple element revenue allocation termination revenue adjustments overview (preview)
 
-This functionality is available as a preview in Microsoft Dynamics 365 Finance version 10.0.49.
+[!INCLUDE [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
+Starting in Microsoft Dynamics 365 Finance version 10.0.49, the **Multiple element revenue allocation termination revenue adjustment (preview)** feature is available.
 The **Multiple element revenue allocation termination revenue adjustment (preview)** feature is a Subscription billing capability that supports complete termination of a billing schedule containing lines that participate in a Multiple element revenue allocation arrangement. Termination must be initiated from the billing schedule header. During termination, the system evaluates the Multiple element revenue allocation arrangement, allocates applicable termination amounts according to extended standalone selling price proportions, and clears remaining deferred contract revenue account balances when required. The accounting treatment depends on the selected termination method.
 
 If the termination is later removed and the related transactions remain eligible for reversal, the system restores the affected schedule and reverses a Multiple element revenue allocation clearing journal only when one was created during termination processing.
