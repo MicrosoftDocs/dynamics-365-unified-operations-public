@@ -488,6 +488,8 @@
                   href: accounts-receivable/subscription-billing-summary.md
                 - name: Performance improvements for subscription billing
                   href: accounts-receivable/sub-bill-perf-improve.md
+                - name: Multiple element revenue allocation
+                  href: accounts-receivable/multiple-element-revenue-allocation.md
                 - name: Recurring contract billing
                   items:
                     - name: Set up recurring contract billing
