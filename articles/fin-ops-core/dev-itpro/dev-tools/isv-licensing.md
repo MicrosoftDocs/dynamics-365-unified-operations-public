@@ -4,7 +4,7 @@ description: Learn about the independent software vendor (ISV) licensing feature
 author: pnghub
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 01/20/2026
+ms.date: 09/18/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -179,7 +179,7 @@ Follow these steps to enable licensing for your solution.
     | serialnumber    | The customer's tenant ID (labeled "Serial number" in the screenshot).       |
     | expirationdate  | Optional: The expiration date for the license.                               |
     | usercount       | Optional: The number that custom validation logic can use as required. This number could be users, but isn't limited to users. |
-    | SignatureVersion| Optional: Defines the hashing algorithm to be used for license generation. Value 1 defines SHA1. Value 2 defines SHA256 and the default value is 2. IMPORTANT: SHA1 will be deprecated in a future release. It's recommended to use 2 for this parameter. After SHA1 is deprecated, ISV Licensing will work with SHA256 (value 2). |
+    | SignatureVersion| **Optional: Specifies the hashing algorithm used for license generation. Value 1 corresponds to SHA1, and value 2 corresponds to SHA256. The default value is 2 (SHA256). SHA1 is deprecated starting with Platform update 73 (build 7.0.8129.0). Use SHA256 (value 2) when generating ISV licenses.** |
     | UseLegacyCryptoServiceProvider| Optional: Use an older CryptoServiceProvider. If generating the license key fails, this option allows users to use on an older version of ISV License generation. The default value is 0 and should only be used to provide a fallback mechanism if there's an error with the default value. This parameter is available in Dynamics 365 Finance version 10.0.36. |
     | AllowCrossDomainInstallation| Optional: This parameter provides ISVs (Independent Software Vendors) with the ability to generate licenses that can be used across different environments for the same tenant (customer). The default value is set to **false**, which means the tenant can't use the same ISV license across different environments or reuse the same ISV license within the same environment when the admin domain name changes. When the value is set to **true**, the customer can install the same ISV license across different environments associated with the same tenant or when the customer changes the admin domain name of the environment. This parameter is available in Dynamics 365 Finance version 10.0.38 and higher. |
     | subjectname| Specifies the subject name of the certificate that is installed in the cert store (Current User/My). To load the certificate, you can use either the subjectname or certificatepath/password, but not both. This parameter is available in Dynamics 365 Finance version 10.0.37 and higher. |

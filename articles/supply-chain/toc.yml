@@ -535,6 +535,8 @@
         items:
         - name: Asset types
           href: asset-management/setup-for-objects/object-types.md
+        - name: Asset spare parts
+          href: asset-management/setup-for-objects/spare-parts.md
         - name: Condition assessment
           href: asset-management/setup-for-objects/condition-assessment.md
         - name: Asset manufacturer and model
