@@ -4,7 +4,7 @@ description: Learn about the release schedule for service updates for unified en
 author: aarsh-msft
 ms.author: sharmaaarsh
 ms.topic: article
-ms.date: 05/04/2026
+ms.date: 09/15/2026
 ms.custom: bap-template
 ms.reviewer: twheeloc
 ms.search.region: Global
@@ -37,26 +37,23 @@ For information about the maintenance windows for each region, see [What are the
 > [!IMPORTANT]
 >
 > 1. This service update only applies to unified environments managed through Power Platform admin center.
-> 1. Weekday support is also available for production environments through the maintenance settings page as mentioned [here](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-faq?context=/dynamics365/context/commerce#how-do-i-configure-my-production-environment-to-receive-pqu-updates-on-weekdays).
+> 1. To learn how to configure maintenance settings and manage service updates, see [Manage service updates for unified environments](/power-platform/admin/unified-experience/manage-service-updates-unified-environments).
 
 ## Release schedule
 
-### <a name="schedule"></a> Service update 10.0.48 schedule
+### <a name="schedule"></a> Service update 10.0.49 schedule
 
-**App version:** 10.0.2645.32
+**App version:** 10.0.2790.46
 
-**Platform version:** 7.0.7996.33
+**Platform version:** 7.0.8199.32
 
-**Unified Environment Provisioning Application Version:** 10.0.48.1
+**Unified Environment Provisioning Application Version:** 10.0.49.2
 
 | Stations | Upcoming sandbox schedule | Upcoming production schedule |
 |---|---|---|
-| Station 1 | July 1 to July 2, 2026 | NA |
-| Station 2 | July 6 to July 7, 2026 | July 18 to July 19, 2026 |
-| Station 3 | July 6 to July 7, 2026 | July 18 to July 19, 2026 |
-| Station 4 | July 13 to July 14, 2026 | July 25 to July 26, 2026 |
-| Station 5 | July 20 to July 21, 2026 | August 1 to August 2, 2026  |
-| Station 6 | July 20 to July 21, 2026 | August 1 to August 2, 2026 |
-
-> [!IMPORTANT]
-> This update applies only to environments that are on version 10.0.46 or earlier. For version 10.0.47 environments and later, the update is skipped.
+| Station 1 | September 23 to September 24, 2026 | NA |
+| Station 2 | September 28 to September 29, 2026 | October 10 to October 11, 2026 |
+| Station 3 | September 28 to September 29, 2026 | October 10 to October 11, 2026 |
+| Station 4 | October 5 to October 6, 2026 | October 17 to October 18, 2026 |
+| Station 5 | October 12 to October 13, 2026 | October 24 to October 25, 2026  |
+| Station 6 | October 12 to October 13, 2026 | October 24 to October 25, 2026 |
