@@ -4,7 +4,7 @@ description: Learn about the release schedule for proactive quality updates (PQU
 author: rashmansur
 ms.author: sharmaaarsh
 ms.topic: article
-ms.date: 09/08/2026
+ms.date: 09/14/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -77,9 +77,9 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.48 PQU-1 | July 8, 2026 | July 8, 2026 to August 1, 2026| Completed | 10.0.2645.81 | 7.0.7996.74 |
 | 10.0.48 PQU-2 | July 22, 2026 | July 22, 2026 to August 15, 2026| Completed | 10.0.2645.90 | 7.0.7996.81 |
 | 10.0.48 PQU-3 | August 5, 2026 | August 5, 2026 to August 29, 2026| Completed | 10.0.2645.99 | 7.0.7996.88 |
-| 10.0.48 PQU-4 | August 19, 2026 | August 19, 2026 to September 12, 2026| In-Progress | 10.0.2645.111 | 7.0.7996.102 |
+| 10.0.48 PQU-4 | August 19, 2026 | August 19, 2026 to September 12, 2026| Completed | 10.0.2645.111 | 7.0.7996.102 |
 | 10.0.48 PQU-5 | September 2, 2026 | September 2, 2026 to September 26, 2026| In-Progress | 10.0.2645.124 | 7.0.7996.111 |
-| 10.0.48 PQU-6 | September 16, 2026 | September 16, 2026 to October 10, 2026| Not Started | | |
+| 10.0.48 PQU-6 | September 16, 2026 | September 16, 2026 to October 10, 2026| In-Progress | 10.0.2645.136 | 7.0.7996.119 |
 | 10.0.48 PQU-7 | September 30, 2026 | September 30, 2026 to October 24, 2026| Not Started | | |
 | 10.0.48 PQU-8 | October 14, 2026 | October 14, 2026 to November 7, 2026| Not Started | | |
 | 10.0.48 PQU-9 | October 28, 2026 | October 28, 2026 to November 21, 2026| Not Started | | |
@@ -165,24 +165,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | September 28 to October 1, 2026 | October 3 to October 4, 2026 |
 | Station 6 | September 28 to October 1, 2026 | October 3 to October 4, 2026 |
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.48 Release-4 train schedule
-
-**App version: 10.0.2645.111**
-
-**Platform version: 7.0.7996.102**
-
-**Unified Environment Provisioning Application Version: 10.0.48.5**
-
-| Stations | Upcoming sandbox schedule | Upcoming production schedule |
-|---|---|---|
-| Station 1 | August 19 to August 22, 2026 | N/A |
-| Station 2 | August 24 to August 27, 2026 | August 29 to August 30, 2026 |
-| Station 3 | August 24 to August 27, 2026 | August 29 to August 30, 2026 |
-| Station 4 | August 31 to September 3, 2026 | September 5 to September 6, 2026 |
-| Station 5 | September 7 to September 10, 2026 | September 12 to September 13, 2026 |
-| Station 6 | September 7 to September 10, 2026 | September 12 to September 13, 2026 |
-
-### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.48 Release-5 train schedule
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.48 Release-5 train schedule
 
 **App version: 10.0.2645.124**
 
@@ -198,6 +181,23 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 4 | September 14 to September 17, 2026 | September 19 to September 20, 2026 |
 | Station 5 | September 21 to September 24, 2026 | September 26 to September 27, 2026 |
 | Station 6 | September 21 to September 24, 2026 | September 26 to September 27, 2026 |
+
+### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.48 Release-6 train schedule
+
+**App version: 10.0.2645.136**
+
+**Platform version: 7.0.7996.119**
+
+**Unified Environment Provisioning Application Version: 10.0.48.7**
+
+| Stations | Upcoming sandbox schedule | Upcoming production schedule |
+|---|---|---|
+| Station 1 | September 16 to September 19, 2026 | N/A |
+| Station 2 | September 21 to September 24, 2026 | September 26 to September 27, 2026 |
+| Station 3 | September 21 to September 24, 2026 | September 26 to September 27, 2026 |
+| Station 4 | September 28 to October 1, 2026 | October 3 to October 4, 2026 |
+| Station 5 | October 5 to October 8, 2026 | October 10 to October 11, 2026 |
+| Station 6 | October 5 to October 8, 2026 | October 10 to October 11, 2026 |
 
 > [!IMPORTANT]
 > At least five days in advance, Microsoft updates the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that are notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../deployment/plannedmaintenance-selfservice.md#windows).
