@@ -4,7 +4,7 @@ description: Access answers to frequently asked questions about archiving data i
 author: nandadevrmenon
 ms.author: nrajeevmenon
 ms.topic: faq
-ms.date: 08/04/2026
+ms.date: 09/15/2026
 ms.custom: 
   - bap-template
 ms.reviewer: twheeloc
@@ -138,6 +138,19 @@ To fix this problem, make sure that for each customized table field, the followi
 When a data archive job ends in an **Error** state, you can't schedule new archive jobs for the same archive scenario. Any existing job in a **Scheduled** state for that scenario stays in the queue. This behavior helps prevent further disruptions or data inconsistencies within that specific data archive scenario.
 If you encounter this issue, contact Support for assistance in diagnosing and resolving the underlying cause.
 You can continue to run other data archive scenarios. For example, you can execute the **Tax archive** job while the **General Ledger archive** job remains in a failed state.
+
+## General ledger job failed with "There are entities with missing or non-public table fields. EntityName: SubledgerVoucherGeneralJournalEntryBiEntity, MissingFields: [DocumentType]"
+
+**Resolution**
+
+To resolve the issue, update the application to the version listed for your release or later.
+
+> | Release | Availability |
+> |---|---|
+> | 10.0.48/Platform update 72 | 10.0.2645.139 or higher |
+> | 10.0.49/Platform update 73 | 10.0.2790.66 or higher |
+
+After the update is complete, open a support case with Microsoft support. Support will identify and resume the jobs that failed because of this issue. Monitor the archive workspace to verify that the affected jobs resume processing.
 
 ### Common installation failure cases and resolutions
 
