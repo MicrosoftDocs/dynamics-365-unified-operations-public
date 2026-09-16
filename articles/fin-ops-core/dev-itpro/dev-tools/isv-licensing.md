@@ -18,7 +18,7 @@ ms.custom: sfi-image-nochange
 
 [!INCLUDE [banner](../includes/banner.md)]
 
-This article describes the independent software vendor (ISV) licensing feature. It includes information about benefits and capabilities of the ISV licensing feature, and explains how to enable licensing for an ISV solution, create a package and generate a customer-specific license, and create self-signed certificates for test purposes.
+This article describes the independent software vendor (ISV) licensing feature. It includes information about the benefits and capabilities of the ISV licensing feature. It also explains how to enable licensing for an ISV solution, create a package and generate a customer-specific license, and create self-signed certificates for test purposes.
 
 The Microsoft Dynamics ecosystem provides tools and frameworks that let independent software vendors (ISVs) build, deploy, sell, and monetize vertical industry solutions that can be repackaged. The ISV licensing feature provides the following benefits:
 
@@ -45,7 +45,7 @@ Each ISV solution that is tied to a license runs only when a valid license key e
 
 ### License types: Boolean and Number
 
-ISVs can create two types of licenses: **Boolean** and **Number**. ISVs can associate an expiration date with either type of license. This expiration date applies only to the ISV licenses and is independent of the system expiration date. A Boolean license is a simple activation license. Set the type of license (**Boolean** or **Number**) through a property in the license code node. ISVs can write their own custom logic to check the count that the ISV license provides, to make sure that their solutions are used within the license terms. For more information, see [Licensing Framework for ISVs](/dynamicsax-2012/developer/licensing-framework-for-isvs-of-microsoft-dynamics-ax).
+ISVs can create two types of licenses: **Boolean** and **Number**. ISVs can associate an expiration date with either type of license. This expiration date applies only to the ISV licenses and is independent of the system expiration date. A Boolean license is a simple activation license. Set the type of license (**Boolean** or **Number**) through a property in the license code node. ISVs can write their own custom logic to check the count that the ISV license provides, to ensure that their solutions are used within the license terms. For more information, see [Licensing Framework for ISVs](/dynamicsax-2012/developer/licensing-framework-for-isvs-of-microsoft-dynamics-ax).
 
 ### License validation errors
 
@@ -60,14 +60,17 @@ For HSM-based certificates, only those with an RSA private key are supported, as
 > [!NOTE]
 > Authenticode certificates have various cryptographic service providers. The ISV licensing feature uses Enhanced cryptographic provider, which also covers Base cryptographic provider. Many independent providers offer Authenticode certificates.
 
+> [!IMPORTANT]
+> To strengthen security, support for SHA1-based ISV license signatures was removed in platform build 7.0.8129.0 (Platform update 73). Because SHA1 uses a weaker hashing algorithm, it's no longer supported for license generation. Use SHA256 (**SignatureVersion** value 2) when you generate ISV licenses.
+
 ## Certificate import and export
 
-Use the certificate to sign your customer license files and validate the license files at the time of import. Authenticode certificates support four file formats. For the ISV licensing feature, you must have the certificate files in two formats:
+Use the certificate to sign your customer license files and validate the license files when you import them. Authenticode certificates support four file formats. For the ISV licensing feature, you need the certificate files in two formats:
 
-- **Personal Information Exchange (PFX, also known as PKCS #12)** – The PKCS #12 format, which uses the .pfx file name extension, supports secure storage of certificates, private keys, and all certificates in a certification path. The PKCS #12 format is the only file format that can be used to export a certificate and its private key.
+- **Personal Information Exchange (PFX, also known as PKCS #12)** – The PKCS #12 format, which uses the .pfx file name extension, supports secure storage of certificates, private keys, and all certificates in a certification path. The PKCS #12 format is the only file format that can export a certificate and its private key.
 - **Base64-encoded X.509** – The Base64 format supports storage of a single certificate. This format doesn't support storage of the private key or certification path.
 
-There's a restriction on the format. Use the PFX (PKCS #12) format only to export the certificate together with its private key for signing and generating purposes. Never share it outside the ISV organization. Use the DER-encoded binary X.509 format, which uses the .cer file name extension, to export the public key of the certificate that must be embedded in the Application Object Tree (AOT) License. Distribute this public key to customers via the model. It's used when a license is imported, to make sure that the license is signed by the ISV license that owns the private key.
+There's a restriction on the format. Use the PFX (PKCS #12) format only to export the certificate together with its private key for signing and generating purposes. Never share it outside the ISV organization. Use the DER-encoded binary X.509 format, which uses the .cer file name extension, to export the public key of the certificate that must be embedded in the Application Object Tree (AOT) License. Distribute this public key to customers via the model. It's used when a license is imported, to ensure that the license is signed by the ISV license that owns the private key.
 
 > [!NOTE]
 > Instead of using .pfx files, ISVs can now also opt for HSM (Hardware Security Module)–based keys for private key storage, with the tool able to load the certificate directly from the store. However, the public key is still required in the Base64-encoded X.509 format.
@@ -76,14 +79,14 @@ There's a restriction on the format. Use the PFX (PKCS #12) format only to expor
 
 Follow these steps to enable licensing for your solution.
 
-1. Create an ISV solution. In Visual Studio, select **File > New project**. In the **New Project** dialog, select **Installed > Templates > Dynamics 365**. Create a **Finance Operations** project. In this example, name the project **NewISVSolution**.
+1. Create an ISV solution. In Visual Studio, select **File** > **New project**. In the **New Project** dialog, select **Installed** > **Templates** > **Dynamics 365**. Create a **Finance Operations** project. In this example, name the project **NewISVSolution**.
 
     :::image type="content" source="media/isv_new_isv_project.png" alt-text="Screenshot of creating an ISV solution.":::
 
 1. Add the certificate's public key (.cer file) to your project as a resource. To create a certificate for testing, see [Appendix: Create self-signed certificates for test purposes](#appendix-create-self-signed-certificates-for-test-purposes).
 
-    1. Right-click the project in Solution Explorer, and then select **Add > New item**.
-    1. Under **Installed > Dynamics 365 Items**, select **Labels And Resources**, and then select **Resource**. Name the resource. In this example, name the resource **ISVCert**.
+    1. Right-click the project in Solution Explorer, and then select **Add** > **New item**.
+    1. Under **Installed** > **Dynamics 365 Items**, select **Labels And Resources**, and then select **Resource**. Name the resource. In this example, name the resource **ISVCert**.
 
         :::image type="content" source="media/isv_new_resource.png" alt-text="Screenshot of clicking Resource.":::
 
@@ -95,7 +98,7 @@ Follow these steps to enable licensing for your solution.
 
         :::image type="content" source="media/isv_resource_cer.png" alt-text="Screenshot of adding the certificate as a resource.":::
 
-1. Create a license code. Right-click the project in Solution Explorer, and then select **Add > New item**. Under **Installed > Dynamics 365 Items**, choose **Configuration**. In the list, choose **License Code** and name the license code. In this example, name the license code **ISVLicenseCode**. Select **Add**.
+1. Create a license code. Right-click the project in Solution Explorer, and then select **Add** > **New item**. Under **Installed** > **Dynamics 365 Items**, choose **Configuration**. In the list, choose **License Code** and name the license code. In this example, name the license code **ISVLicenseCode**. Select **Add**.
 
     :::image type="content" source="media/isv_new_license_code.png" alt-text="Screenshot of creating a license code.":::
 
@@ -103,7 +106,7 @@ Follow these steps to enable licensing for your solution.
 
     :::image type="content" source="media/isv_map_license_cert.png" alt-text="Screenshot of mapping the certificate to the license code.":::
 
-1. Create one or more configuration keys. Right-click the project in Solution Explorer, and then select **Add > New item**. Under **Installed > Dynamics 365 Items**, choose **Configuration**. In the list, choose **Configuration Key**. Name the key and select **Add**. In this example, name the configuration key **ISVConfigurationKey1**.
+1. Create one or more configuration keys. Right-click the project in Solution Explorer, and then select **Add** > **New item**. Under **Installed** > **Dynamics 365 Items**, choose **Configuration**. In the list, choose **Configuration Key**. Name the key and select **Add**. In this example, name the configuration key **ISVConfigurationKey1**.
 
     :::image type="content" source="media/isv_new_configuration_key.png" alt-text="Screenshot of creating a configuration key.":::
 
@@ -111,7 +114,7 @@ Follow these steps to enable licensing for your solution.
 
     :::image type="content" source="media/isv_select_license_code.png" alt-text="Screenshot of associating the license code with the configuration keys.":::
 
-1. Associate a configuration key to an element in your solution. For example, create a new form. Right-click the project in Solution Explorer, and then select **Add > New item**. Under **Installed > Dynamics 365 Items**, choose **User Interface**. In the list, choose **Form** and give it a name. In this example, name the form **ISVForm**.
+1. Associate a configuration key to an element in your solution. For example, create a new form. Right-click the project in Solution Explorer, and then select **Add** > **New item**. Under **Installed** > **Dynamics 365 Items**, choose **User Interface**. In the list, choose **Form** and give it a name. In this example, name the form **ISVForm**.
 
     :::image type="content" source="media/isv_new_form.png" alt-text="Screenshot of creating a new form.":::
 
@@ -133,13 +136,13 @@ Follow these steps to enable licensing for your solution.
 
 ## Create a package and generate a customer-specific license
 
-1. Collect the tenant name and ID for the customer to issue the license to. You can find this information at **Settings \> Help \& Support \> About** on the **Licenses** tab.
+1. Collect the tenant name and ID for the customer to issue the license to. Find this information at **Settings \> Help & Support \> About** on the **Licenses** tab.
 
     :::image type="content" source="./media/isv_tenant_id.png" alt-text="Screenshot of customer's tenant name and ID.":::
 
 1. Generate a license for the customer (tenant ID and name), and sign the license by using the certificate's private key. Pass the following parameters to the **axutil genlicense** command to create the license file.
 
-    **For environments on version >= 10.0.43**
+    **For environments on version 10.0.43 and later**
 
     | Parameter name  | Description                                                                  |
     |-----------------|------------------------------------------------------------------------------|
@@ -167,7 +170,7 @@ Follow these steps to enable licensing for your solution.
     C:\AOSService\PackagesLocalDirectory\Bin\axutil genlicense /file:c:\templicense.txt /licensecode:ISVLicenseCode /serialnumber:4dbfcf74-c5a6-4727-b638-d56e51d1f381 /certificatepath:c:\tempisvcert.pfx /password:********
     ```
 
-    **For environments on version < 10.0.43**
+    **For environments on version earlier than 10.0.43**
 
     | Parameter name  | Description                                                                  |
     |-----------------|------------------------------------------------------------------------------|
@@ -179,7 +182,7 @@ Follow these steps to enable licensing for your solution.
     | serialnumber    | The customer's tenant ID (labeled "Serial number" in the screenshot).       |
     | expirationdate  | Optional: The expiration date for the license.                               |
     | usercount       | Optional: The number that custom validation logic can use as required. This number could be users, but isn't limited to users. |
-    | SignatureVersion| **Optional: Specifies the hashing algorithm used for license generation. Value 1 corresponds to SHA1, and value 2 corresponds to SHA256. The default value is 2 (SHA256). SHA1 is deprecated starting with Platform update 73 (build 7.0.8129.0). Use SHA256 (value 2) when generating ISV licenses.** |
+    | SignatureVersion| **Specifies the hashing algorithm used for license generation. Value 1 corresponds to SHA1, and value 2 corresponds to SHA256. SHA1 is deprecated starting with Platform update 73 (build 7.0.8129.0). Use SHA256 (value 2) when generating ISV licenses.** |
     | UseLegacyCryptoServiceProvider| Optional: Use an older CryptoServiceProvider. If generating the license key fails, this option allows users to use on an older version of ISV License generation. The default value is 0 and should only be used to provide a fallback mechanism if there's an error with the default value. This parameter is available in Dynamics 365 Finance version 10.0.36. |
     | AllowCrossDomainInstallation| Optional: This parameter provides ISVs (Independent Software Vendors) with the ability to generate licenses that can be used across different environments for the same tenant (customer). The default value is set to **false**, which means the tenant can't use the same ISV license across different environments or reuse the same ISV license within the same environment when the admin domain name changes. When the value is set to **true**, the customer can install the same ISV license across different environments associated with the same tenant or when the customer changes the admin domain name of the environment. This parameter is available in Dynamics 365 Finance version 10.0.38 and higher. |
     | subjectname| Specifies the subject name of the certificate that is installed in the cert store (Current User/My). To load the certificate, you can use either the subjectname or certificatepath/password, but not both. This parameter is available in Dynamics 365 Finance version 10.0.37 and higher. |
@@ -238,7 +241,7 @@ You can deliver solutions in two forms:
 - Model files (source code)
 - Deployable packages (binary)
 
-To protect your configuration keys and license codes, release them in binary form by using a deployable package. Customers can install and interact with those elements in Visual Studio. Although customers can refer to items in the deployable package, they can't access source code or make modifications to the items. (However, they can create extensions.) More details about the capability to release solutions in binary form are available soon. The deployable package (binary) can also include classes and other logic that your customer doesn't require access to and shouldn't be able to customize.
+To protect your configuration keys and license codes, release them in binary form by using a deployable package. Customers can install and interact with those elements in Visual Studio. Although customers can refer to items in the deployable package, they can't access source code or make modifications to the items. (However, they can create extensions.) More details about the capability to release solutions in binary form are coming soon. The deployable package (binary) can also include classes and other logic that your customer doesn't require access to and shouldn't be able to customize.
 
 :::image type="content" source="./media/isv_protected_solution.png" alt-text="Screenshot of protected vs. unprotected ISV solutions.":::
 
@@ -252,7 +255,7 @@ To install ISV licenses in production systems, you must use a deployable package
 1. Make a copy of the package template.
 1. Put the license file in the following folder within the package template: ImportISVLicense.zip\\AosService\\Scripts\\License
 
-You can install more than one license at a time. If one of the licenses depends on another license, make sure that it's named accordingly. (Licenses are installed in alphabetical order.)
+You can install more than one license at a time. If one of the licenses depends on another license, ensure that you name it accordingly. (Licenses are installed in alphabetical order.)
 
 ## Appendix: Create self-signed certificates for test purposes
 
