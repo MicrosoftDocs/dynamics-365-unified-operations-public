@@ -6,7 +6,7 @@ ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 12/09/2025
+ms.date: 09/16/2026
 ms.custom: 
   - bap-template
 ---
@@ -166,6 +166,8 @@ Supply Chain Management provides the following optional functionality for calcul
 
 > [!TIP]
 > When configuring auto charges for accounts payable in Dynamics 365 Finance, you might see duplicate charge calculations if you set up auto charges for both specific vendors (*Table*) and all vendors (*All*). This situation occurs because the system applies all relevant auto charge configurations, regardless of hierarchy, whenever you create a new purchase order. For example, if you set up a charge code with account code *All*, the system applies that charge code to every purchase order, even if you also set up other specific vendor or group configurations.
+>
+> To avoid unintended duplicate charges, configure the *Table*, *Group*, and *All* criteria so they don't overlap for the same purchase order or line. Use *Table* or *Group* to target specific vendors, vendor groups, items, or item groups. Use *All* only when the charge should apply in addition to every other matching auto charge; the system doesn't treat it as a fallback when no more-specific configuration matches.
 
 ## Allocate charges from the header to a line
 
