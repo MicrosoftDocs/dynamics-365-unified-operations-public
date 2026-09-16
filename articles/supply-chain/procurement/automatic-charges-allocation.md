@@ -6,7 +6,7 @@ ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 12/09/2025
+ms.date: 09/16/2026
 ms.custom: 
   - bap-template
 ---
@@ -15,7 +15,7 @@ ms.custom:
 
 [!INCLUDE [banner](../includes/banner.md)]
 
-Based on the customer or vendor that you're working with or the item that you're selling, you might want to apply specific additional charges. The *charges* feature in Microsoft Dynamics 365 Supply Chain Management helps you automatically apply charges to purchase orders or sales orders.
+Depending on the customer or vendor you're working with or the item you're selling, you might want to apply specific additional charges. The *charges* feature in Microsoft Dynamics 365 Supply Chain Management helps you automatically apply charges to purchase orders or sales orders.
 
 Automatic charges (auto charges) are automatically applied when you create a sales order or a purchase order. You can define auto charges for specific vendors, customers, groups of vendors, groups of customers, items, or groups of items. You can also define auto charges that apply to all vendors, customers, or items.
 
@@ -55,8 +55,8 @@ To apply charges, you must first define charges codes.
     - **Prorate** – Set this option to *Yes* if you want to prorate your charges. This option is available only for sales orders.
     - **Maximum amount** – Enter the maximum amount that's allowed for the charges code. This field is used to validate charges for vendor invoices. It's available only for purchase orders.
 
-        > [!NOTE]
-        > To turn on the functionality for validating charges for purchase orders, go to **Accounts payable** > **Setup** > **Accounts payable parameters**. On the **Invoice validation** FastTab, in the **Invoice validation** section, set the **Enable invoice matching validation** option to *Yes*.
+    > [!NOTE]
+    > To turn on the functionality for validating charges for purchase orders, go to **Accounts payable** > **Setup** > **Accounts payable parameters**. On the **Invoice validation** FastTab, in the **Invoice validation** section, set the **Enable invoice matching validation** option to *Yes*.
 
 1. The **Posting** FastTab includes **Debit** and **Credit** sections. Set the following fields, depending on the ledger that you want to post the charges to:
 
@@ -134,16 +134,16 @@ After you set up your charge codes, follow these steps to define the auto charge
     - *All* – Assign charges to all modes of delivery.
 
 1. *For sales orders only:* In the **Mode of delivery relation** field, select a specific mode of delivery if you set the **Mode of delivery code** field to *Table*. If you set the **Mode of delivery code** field to *Group*, select a mode of delivery group.
-1. On the **Lines** FastTab, define the charges and the charge rates that the current auto charge uses. You can use the toolbar on this FastTab to add as many lines as you require. For each line, set the following fields:
+1. On the **Lines** FastTab, define the charges and the charge rates that the current auto charge uses. Use the toolbar on this FastTab to add as many lines as you require. For each line, set the following fields:
 
     - **Currency** – Select the currency that you want to use to calculate the charge. This field applies to the *Header* and *Line* levels for sales quotation and sales order charges.
     - **Charges code** – Select the code for the charge.
     - **Category** – Select one of the following values:
 
-        - *Fixed* – Enter the charge as a fixed amount on the line. You can use fixed charges on charges both in the order header and on the order lines.
-        - *Pcs* – Base the charge on unit with no unit of measure conversion. *Pcs* in this case represents any unit of measure and not the specific *Pcs* unit of measure. You can use these charges only on order lines. They appear when you calculate the order total.
-        - *Percent* – Enter the charge as a percentage on the line. You can use percentage charges on charges both in the order header and on the order lines.
-        - *Intercompany percent* – Enter the charge as a percentage on the line for intercompany orders. You can use intercompany percentage charges only on order lines.
+        - *Fixed* – Enter the charge as a fixed amount on the line. Use fixed charges on charges both in the order header and on the order lines.
+        - *Pcs* – Base the charge on unit with no unit of measure conversion. *Pcs* in this case represents any unit of measure and not the specific *Pcs* unit of measure. Use these charges only on order lines. They appear when you calculate the order total.
+        - *Percent* – Enter the charge as a percentage on the line. Use percentage charges on charges both in the order header and on the order lines.
+        - *Intercompany percent* – Enter the charge as a percentage on the line for intercompany orders. Use intercompany percentage charges only on order lines.
         - *External* – A third-party service that's associated with one or more shipping carriers calculates the charge.
         - *Specific unit* – Express the charge value in the unit of measure on the charge line. Unit of measure conversion is used to apply it proportionally to the unit of measure on the sales line. This category applies only to the *Line* level.
         - *Specific unit match* – Express the charge value in the unit of measure on the charge line. The unit of measure on the sales line must match this unit of measure for the charge line to be applied. No unit of measure conversion is applied. This category applies only to the *Line* level.
@@ -159,17 +159,19 @@ After you set up your charge codes, follow these steps to define the auto charge
 
 *For sales orders only:* If you want to calculate tiered charges, see [Tiered charges on sales orders](/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders) for information.
 
-Supply Chain Management provides the following optional functionality for calculating auto charges. You might need to enable and configure these features before you can use them. For more information, follow the links.
+Supply Chain Management provides the following optional functionality for calculating auto charges. You might need to enable and configure these features before you can use them. Learn more in the following articles:
 
 - [Auto charge compounding and sequencing](../sales-marketing/auto-charge-sequence-compound.md)
 - [Units of measure for line-level charges](../sales-marketing/line-charges-specific-unit.md)
 
 > [!TIP]
 > When configuring auto charges for accounts payable in Dynamics 365 Finance, you might see duplicate charge calculations if you set up auto charges for both specific vendors (*Table*) and all vendors (*All*). This situation occurs because the system applies all relevant auto charge configurations, regardless of hierarchy, whenever you create a new purchase order. For example, if you set up a charge code with account code *All*, the system applies that charge code to every purchase order, even if you also set up other specific vendor or group configurations.
+>
+> To avoid unintended duplicate charges, configure the *Table*, *Group*, and *All* criteria so they don't overlap for the same purchase order or line. Use *Table* or *Group* to target specific vendors, vendor groups, items, or item groups. Use *All* only when the charge should apply in addition to every other matching auto charge; the system doesn't treat it as a fallback when no more-specific configuration matches.
 
 ## Allocate charges from the header to a line
 
-The following procedure shows how to allocate header-level charges to a line. Before you start this procedure, you should already have a header-level charge of the *fixed amount* type and an order where you apply that charge. Additionally, the order should already include at least one line item.
+The following procedure shows how to allocate header-level charges to a line. Before you start this procedure, ensure you have a header-level charge of the *fixed amount* type and an order where you apply that charge. Also, the order should already include at least one line item.
 
 1. Open the purchase order or charge order.
 1. On the Action Pane, follow one of these steps:
@@ -210,7 +212,7 @@ The following examples show how to update header-level charges and select a new 
 
 This example shows that if you customize the value of a header auto charge and then update the mode of delivery for the purchase order, the system resets the header auto charge to its original value.
 
-1. Go to **Procurement and sourcing \> Purchase orders \> All purchase orders** and open a purchase order that includes a header auto charge of type *fixed amount*.
+1. Go to **Procurement and sourcing** > **Purchase orders** > **All purchase orders** and open a purchase order that includes a header auto charge of type *fixed amount*.
 1. On the Action Pane, open the **Purchase** tab and, in the **Charges** group, select **Maintain charges**.
 1. For the existing header auto charge, enter a new value in the **Charges value** field.
 1. On the Action Pane, select the **Back** button to return to the purchase order.
@@ -225,7 +227,7 @@ This example shows that if you customize the value of a header auto charge and t
 
 This example shows that if you allocate a header auto charge to a line and then update the mode of delivery for the order, the system reapplies the original header auto charge while leaving the allocated charge applied to the line.
 
-1. Go to **Procurement and sourcing \> Purchase orders \> All purchase orders** and open a purchase order that includes a header auto charge of type *fixed amount*.
+1. Go to **Procurement and sourcing** > **Purchase orders** > **All purchase orders** and open a purchase order that includes a header auto charge of type *fixed amount*.
 1. On the Action Pane, open the **Purchase** tab and, in the **Charges** group, select **Maintain charges**.
 
     Note the header auto charges listed here.
@@ -239,7 +241,7 @@ This example shows that if you allocate a header auto charge to a line and then 
 
 1. On the Action Pane, select the **Back** button to return to the purchase order.
 1. On the **Purchase order lines** FastTab, select a purchase order line.
-1. On the **Purchase order lines** FastTab toolbar, select **Financials \> Maintain charges**.
+1. On the **Purchase order lines** FastTab toolbar, select **Financials** > **Maintain charges**.
 
     Note that the previous header auto charge is now shown here, at the line level.
 
