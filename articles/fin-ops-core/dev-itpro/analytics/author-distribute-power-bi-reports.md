@@ -2,7 +2,7 @@
 title: Create analytical reports by using Power BI Desktop
 description: This article walks you through the process of authoring Power BI reports by using the local Entity Store database. 
 author: johnmichalak
-ms.author: johnmichalak
+ms.author: kvivek
 ms.topic: how-to
 ms.date: 10/22/2025
 ms.reviewer: johnmichalak
