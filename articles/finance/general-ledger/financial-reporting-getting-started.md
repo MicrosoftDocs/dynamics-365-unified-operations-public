@@ -1,9 +1,9 @@
 ---
 title: Financial reporting overview
 description: Learn about where to access financial reporting in Microsoft Dynamics 365 Finance and how to use the financial reporting capabilities.
-author: aprilolson
+author: jinniew
 ms.author: aolson
-ms.date: 06/01/2026
+ms.date: 09/17/2026
 ms.reviewer: twheeloc
 ms.topic: article
 ms.collection: get-started 
@@ -29,12 +29,25 @@ This article describes where to access financial reporting and how to use the fi
 
 The Financial reporting add-in lets financial and business professionals create, maintain, deploy, and view financial statements. Financial reporting includes dimension support. Therefore, account segments or dimensions are immediately available. No additional tools or configuration steps are required after installation.
 
-1. In Lifecycle Services, confirm that the Power Platform integration is configured and available. For more information, see [Configure Microsoft Power Platform](../business-performance-analytics/configure-bpa.md#configure-microsoft-power-platform).
+### Power Platform admin center (Recommended)
+
+1. Go to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Select **Environments**, and then select your environment.
+1. Under **Resources**, select **Dynamics 365 apps**.
+1. Select **Install app**.
+1. Search for and select **Microsoft Dynamics 365 Financial Reporting**.
+1. Review and accept the legal terms and privacy statement.
+1. Select **Install**.
+
+### Lifecycle Services (Legacy)
+
+Alternatively, for Lifecycle Services-managed environments:
+
+1. In Lifecycle Services, confirm that Power Platform integration is configured and available.
 1. Select **Install a new add-in**, and search for **Financial reporting**.
 1. Agree to the terms, and then select **Install**.
 
-> [!NOTE]
-> Environments managed in Power Platform admin center (PPAC) such as Unified developer experience environments don't have the option to install the Financial reporting add-in. Contact support if you need to set up Financial reporting on a PPAC based environment.
+If **Microsoft Dynamics 365 Financial Reporting** isn't available or installation fails, contact Microsoft Support with your environment ID, region, and error message.
 
 ## Uninstall the Financial reporting add-in
 
@@ -49,7 +62,7 @@ The Financial reporting add-in lets financial and business professionals create,
 You can find the **Financial reporting** menu in the following locations:
 
 - **General Ledger** > **Inquiries and reports**
-- **Budgeting** > **Inquires and reports** > **Basic budgeting**
+- **Budgeting** > **Inquiries and reports** > **Basic budgeting**
 - **Budgeting** > **Inquiries and reports** > **Budget planning**
 - **Budgeting** > **Inquiries and reports** > **Budget control**
 - Consolidations
@@ -61,7 +74,7 @@ To create and generate financial reports for a legal entity, set up the followin
 - Chart of accounts
 - Currency
 - Post a transaction to at least one account
-- MainAccount is listed in the **Selected** column on the **Financial reporting setup** page (**General ledger > Ledger setup > Financial reporting setup**)
+- MainAccount is listed in the **Selected** column on the **Financial reporting setup** page (**General ledger** > **Ledger setup** > **Financial reporting setup**)
 
 ## Granting security access to Financial reporting
 
@@ -69,30 +82,30 @@ The financial reporting functions are available to users who have the appropriat
 
 ### Duties
 
-| Duty label            | Description                                    | AOT name                         |
-|-----------------------|--------------------------------------|----------------------------------|
-| Maintain financial reporting security | Maintain Financial reporting security and perform administrative tasks. | FinancialReportsSecurityMaintain |
-| Maintain financial reports     | Design and maintain financial reports.                | FinancialReportsMaintain         |
-| Generate financial reports  | Generate and refresh financial reports.                     | FinancialReportsGenerate         |
+| Duty label            | Description              | AOT name                         |
+|---------------|-----------------------|----------------------------------|
+| Maintain financial reporting security | Maintain financial reporting security and perform administrative tasks. | FinancialReportsSecurityMaintain |
+| Maintain financial reports     | Design and maintain financial reports.   | FinancialReportsMaintain    |
+| Generate financial reports  | Generate and refresh financial reports.      | FinancialReportsGenerate         |
 | Review financial performance          | Review and analyze financial performance.            | FinancialReportsPerfReview       |
 
 ### Privileges
 
-| Privilege label                       | Description                                 | AOT name                         |
-|---------------------------------------|-------------------------------------------|----------------------------------|
-| Maintain financial reporting security | Maintain Financial reporting security and perform administrative tasks. | FinancialReportsSecuritySystemMaintain |
-| Maintain financial reports     | Design and maintain financial reports.              | FinancialReportsMaintainReports  |
+| Privilege label             | Description          | AOT name                         |
+|-----------------------|---------------------|----------------------------------|
+| Maintain financial reporting security | Maintain financial reporting security and perform administrative tasks. | FinancialReportsSecuritySystemMaintain |
+| Maintain financial reports     | Design and maintain financial reports.       | FinancialReportsMaintainReports  |
 | Generate financial reports            | Generate and refresh financial reports.        | FinancialReportsGenerateReports  |
-| View financial reports                | View financial reports.                     | FinancialReportsView             |
+| View financial reports   | View financial reports.   | FinancialReportsView             |
 
 ### Roles
 
-| Privilege label     | Duty                     | Roles                                                    |
-|---------------------|----------------------|--------------------------------------------------------------|
+| Privilege label     | Duty                     | Roles                               |
+|---------------------|----------------------|-----------------------------------------|
 | Maintain financial reporting security | Maintain Financial reporting security | Security administrator               |
 | Maintain financial reports            | Maintain financial reports            | Accounting Manager, Accounting Supervisor, Financial Controller, Budget Manager |
-| Generate financial reports      | Generate financial reports    | CEO, CFO, Accountant                                    |
-| View financial reports       | Review financial performance       | None assigned                                     |
+| Generate financial reports | Generate financial reports | CEO, CFO, Accountant         |
+| View financial reports| Review financial performance  | None assigned            |
 
 After you add a user or change a role, the user can access Financial reporting within a few minutes.
 
@@ -112,23 +125,23 @@ The **Financial report retention policies** feature contains the following chang
   - An expiration of 90 days.
   - An option to set the report to never expire.
 
-When an expiration, such as 90 days, is selected, it's applied 90 days from today. This is different behavior than the 90 days from the original generation date set when the report was generated.
+When you select an expiration, such as 90 days, you apply it 90 days from today. This behavior differs from the 90 days from the original generation date set when the report was generated.
 
 Additional options will be considered in future functionality. The expiration of 90 days is the default, and users with appropriate permissions can override the default on the **Financial reports** list page.
 
 ### Historical accuracy after transaction edits
 
-Beginning with Financial reporting release 10.0.45, fact versioning was removed from the Financial reporting database (MRDB). When you rerun or drill into a previously generated report, the detail is recalculated using the current transaction data. If the underlying transaction was edited after the original report was produced, drill-down lines may differ from the original snapshot. Top-level balances in the saved report don't change.
+Beginning with Financial reporting release 10.0.45, fact versioning was removed from the Financial reporting database (MRDB). When you rerun or drill into a previously generated report, the detail is recalculated using the current transaction data. If the underlying transaction was edited after the original report was produced, drill-down lines might differ from the original snapshot. Top-level balances in the saved report don't change.
 
 >[!NOTE]
-> Export the report to Excel or PDF when it's finalized if you require an immutable audit copy.
+> To create an immutable audit copy, export the report to Excel or PDF when you finalize it.
 
 ### Historical accuracy after transaction edits
 
-Beginning with Financial reporting release 10.0.45, fact versioning was removed from the Financial reporting database (MRDB). When you rerun or drill into a previously generated report, the detail is recalculated using the current transaction data. If the underlying transaction was edited after the original report was produced, drill-down lines may differ from the snapshot you first saw. Top-level balances in the saved report don't change.
+Starting with Financial reporting release 10.0.45, the Financial reporting database (MRDB) no longer supports fact versioning. When you rerun or drill into a previously generated report, the detail recalculates by using the current transaction data. If someone edits the underlying transaction after you generate the original report, the drill-down lines might differ from the snapshot you first saw. The top-level balances in the saved report don't change.
 
 >[!Tip]
-> Export the report to Excel or PDF when it's finalized if you require an immutable audit copy.
+> To create an immutable audit copy, export the report to Excel or PDF when you finalize it.
 
 ## Default reports
 
@@ -137,24 +150,24 @@ Financial reporting provides 22 default financial reports. Every report uses the
 <!--Each report in the following table links to an Office Mix presentation about the report.-->
 
 | Default report                           | Description                |
-|-------------------------------------------|--------------------------------------------------------------------------------|
+|-------------------------------------------|-----------------------------------|
 | 12 Month Rolling Single Column Income Statement – Default | View an organization's profitability for the past 12 months in a single column.            |
 | 12 Month Trend Income Statement – Default     | View an organization's profitability for each of the last 12 months. These 12 months can span more than one fiscal year.      |
 | Actual vs Budget – Default     | View detailed balance information for all accounts for the original budget, and compare the revised budget to actuals that have a variance.    |
-| Audit Details – Default                                  | View detailed balance information for all accounts. This report shows debit and credit balances in the reporting currency and the local currency, together with additional transaction information, such as the user ID, the user who last modified the data, the date of the last modification, and the journal ID. |
-| Balance List – Default                                   | View detailed balance information for all accounts. This report shows opening and closing balances, and debit and credit balances for the current period and year to date, together with additional transaction information, such as the voucher.                          |
-| Balance Sheet – Default               | View the organization's financial position for the year.                      |
+| Audit Details – Default       | View detailed balance information for all accounts. This report shows debit and credit balances in the reporting currency and the local currency, together with additional transaction information, such as the user ID, the user who last modified the data, the date of the last modification, and the journal ID. |
+| Balance List – Default  | View detailed balance information for all accounts. This report shows opening and closing balances, and debit and credit balances for the current period and year to date, together with additional transaction information, such as the voucher.            |
+| Balance Sheet – Default  | View the organization's financial position for the year.    |
 | Balance Sheet and Income Statement Side by Side - Default | View the organization's financial position and profitability for the year side by side.     |
-| Cash Flow – Default         | Gain insight into the cash that's coming in to and going out of the organization.                 |
-| Detailed JE and TB Review – Default            | View opening balance and activity information for all accounts.         |
+| Cash Flow – Default | Gain insight into the cash that's coming in to and going out of the organization.                 |
+| Detailed JE and TB Review – Default   | View opening balance and activity information for all accounts.         |
 | [Detailed Trial Balance - Default](trial-balance-financial-reports.md)| View balance information for all accounts that have debit and credit balances, and the net of these balances, together with the transaction date, voucher, and journal description.         |
 | Expenses Three Year Quarterly Trend – Default   | Gain insight into expenses for the past 12 quarters over the previous three years.  |
-| Financial Captions JE and TB Review – Default            | See an overview of the balances and activity for the asset, liability, owner's equity, revenue, expense, gain, or loss financial captions.   |
+| Financial Captions JE and TB Review – Default   | See an overview of the balances and activity for the asset, liability, owner's equity, revenue, expense, gain, or loss financial captions.   |
 | [Income Statement – Default](income-statement-financial-report.md)| View the organization's profitability for the current period and the year to date.          |
-| Ledger Transaction List – Default                        | View detailed balance information for all accounts. This report shows debit and credit balances, together with additional transaction information, such as the transaction date, journal number, voucher, posting type, and trace number.                |
-| Ratios – Default                                          | View the solvency, profitability, and efficiency ratios for the organization for the year.       |
+| Ledger Transaction List – Default    | View detailed balance information for all accounts. This report shows debit and credit balances, together with additional transaction information, such as the transaction date, journal number, voucher, posting type, and trace number.                |
+| Ratios – Default  | View the solvency, profitability, and efficiency ratios for the organization for the year.       |
 | Rolling 12 Month Expenses – Default      | Gain insight into expenses for each of the last 12 months. These 12 months can span more than one fiscal year.        |
-| Rolling Quarter Income Statement – Default               | View the organization's profitability on a quarterly basis for the past year and the year to date.    |
+| Rolling Quarter Income Statement – Default       | View the organization's profitability on a quarterly basis for the past year and the year to date.    |
 | Side by Side Balance Sheet – Default                      | View the organization's financial position for the year. This report shows assets and liability, and shareholder equity side by side.               |
 | [Summary Trial Balance – Default](trial-balance-financial-reports.md)| View balance information for all accounts that have opening and closing balances, and debit and credit balances together with their net difference.                                      |
 | [Summary Trial Balance Year Over Year – Default](trial-balance-financial-reports.md)| View balance information for all accounts that have opening and closing balances, and debit and credit balances together with their net difference for the current year and the past year.                  |
@@ -163,11 +176,11 @@ Financial reporting provides 22 default financial reports. Every report uses the
 
 ## Opening financial reports
 
-When you select the **Financial reporting** menu, the list of default financial reports for the company is shown. You can then open or modify a report. To open one of the default reports, select the report name. The first time that a report is opened, it's automatically generated for the previous month. For example, if you open a report for the first time in August 2019, the report is generated for July 31, 2019. After a report is opened, you can start exploring it by drilling down on specific pieces of data and changing report options.
+When you select the **Financial reporting** menu, you see the list of default financial reports for the company. You can open or modify a report. To open one of the default reports, select the report name. The first time you open a report, the system automatically generates it for the previous month. For example, if you open a report for the first time in August 2019, the system generates the report for July 31, 2019. After you open a report, you can start exploring it by drilling down on specific pieces of data and changing report options.
 
 ## Creating and modifying financial reports
 
-From the financial reports list, you can create a new report or modify an existing report. If you have the appropriate permissions, you can create a new financial report by selecting **New** on the Action Pane. A report designer program is downloaded to your device. After the report designer starts, you can then create the new report. After you save the new report, it appears in the financial reports list. The list shows only reports that were created for the company that you're using in Dynamics 365 Finance.
+From the financial reports list, you can create a new report or modify an existing report. If you have the appropriate permissions, you can create a new financial report by selecting **New** on the Action Pane. The system downloads a report designer program to your device. After the report designer starts, you can create the new report. After you save the new report, it appears in the financial reports list. The list shows only reports that were created for the company that you're using in Dynamics 365 Finance.
 
 ## Reporting tree definitions
 
@@ -177,9 +190,9 @@ You can create an unlimited number of reporting trees to display your organizati
 
 ## Update the Financial reporting version through slipstreaming
 
-Finance and operations apps are updated every month. However, Financial reporting isn't necessarily updated on that cadence. Moreover, customers have more options about when they implement updates for finance and operations apps. Financial reporting updates are automatically installed. Financial reporting has a designated version that's consumed in a customer environment when a service update is implemented, when downtime is initiated, or when a customer's environment is in Maintenance mode. This process is known as *slipstreaming* or *true-up*, because all customer implementations are set to the same version of Financial reporting.
+Finance and operations apps are updated every month. However, Financial reporting isn't necessarily updated on that cadence. Moreover, customers have more options about when they implement updates for finance and operations apps. Financial reporting updates are automatically installed. Financial reporting has a designated version that you consume in a customer environment when a service update is implemented, when downtime is initiated, or when a customer's environment is in Maintenance mode. This process is known as *slipstreaming* or *true-up*, because all customer implementations are set to the same version of Financial reporting.
 
-Changes that are released in each version can be found in [What's new or changed in Dynamics 365 Finance](../../finance/get-started/whats-new-home-page.md). Platform updates and bug fixes can be found in the "Additional Resources" section at the bottom of the page for each release.
+You can find changes that are released in each version in [What's new or changed in Dynamics 365 Finance](../../finance/get-started/whats-new-home-page.md). You can find platform updates and bug fixes in the "Additional Resources" section at the bottom of the page for each release.
 
 The selected slipstreamed version is a reviewed and validated version of Financial reporting that's ready for production. It's compatible with any previous or future version of Dynamics 365 Finance. For example, Financial reporting can be on the latest 10.0.19 build while the customer is still on application version 10.0.16.
 
