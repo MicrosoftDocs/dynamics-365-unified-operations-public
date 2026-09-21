@@ -4,7 +4,7 @@ description: Learn about the concept of price attributes, including an outline o
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: overview
-ms.date: 04/28/2026
+ms.date: 09/21/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -14,12 +14,12 @@ ms.search.form:
 
 [!INCLUDE [banner](../includes/banner.md)]
 
-One of the key functions of a price manager is to work together with the product manager to accomplish the following tasks:
+A key function of a price manager is to work with the product manager to accomplish the following tasks:
 
 - Identify and classify products, customers, and order modes (for example, by region, pack size, brand, or age) to reflect each product's differentiating features, customer segments, and price sensitivity.
-- Set up pricing rules that consider any combination of the customer, product, and order attributes to set up a flexible pricing architecture.
+- Set up pricing rules that consider any combination of the customer, product, and order attributes to create a flexible pricing architecture.
 
-The Unified pricing management module provides *price attributes*. These attributes let price managers and sales promotion managers mark and group price differentiators defined for *products*, *customers*, and *sales order information*, and set up the pricing rules. Here are some examples of pricing rules:
+The Unified pricing management module provides *price attributes*. By using these attributes, price managers and sales promotion managers can mark and group price differentiators for *products*, *customers*, and *sales order information*, and set up the pricing rules. Here are some examples of pricing rules:
 
 - Sales trade agreement prices
 - Margin component price adjustments
@@ -32,7 +32,7 @@ Define these pricing rules by using combinations of price attributes to define t
 
 ## Price attribute sources
 
-Microsoft Dynamics 365 Commerce and Dynamics 365 Supply Chain Management can maintain prices based on price groups, discount groups, product categories, product variants, storage dimensions, and tracking dimensions. These pricing factors are fixed, and can't be extended or changed to accommodate additional pricing criteria. Examples of possible product-based pricing variables include product types, brands, flavors, pack types, and pack sizes.
+Microsoft Dynamics 365 Commerce and Dynamics 365 Supply Chain Management can maintain prices based on price groups, discount groups, product categories, product variants, storage dimensions, and tracking dimensions. You can't extend or change these fixed pricing factors to accommodate additional pricing criteria. Examples of possible product-based pricing variables include product types, brands, flavors, pack types, and pack sizes.
 
 Customer groups don't always provide enough control over the setup of customer-based pricing. Therefore, customer-based pricing variables can also include customer area, payment method, payment terms, and loyalty program membership.
 
@@ -43,17 +43,18 @@ Unified pricing management offers three price attribute sources that can serve a
 | Attribute group | Source | Source table | Price attributes |
 |---|---|---|---|
 | Header attribute group | Order (header) | Order table | The attributes provide out-of-box fields from the order header. You can extend them to add more fields. |
-| Header attribute group | Order (header) | Order attributes; Attributes of the attribute group that are defined as the order attribute group in parameters | Configurable |
+| Header attribute group | Order (header) | Order attributes<br><br>Attributes of the attribute group that are defined as the **Sales order attribute group** in **Pricing management parameters**. | Configurable |
 | Header attribute group | Customer | Customer master | The attributes provide out-of-box fields from customer masters. You can extend them to add more fields. |
-| Header attribute group | Customer | Attributes of the customer attribute group that are defined as the customer attribute group in parameters | Configurable |
-| Line attribute group | Product | Product master; Released product master | The attributes provide out-of-box fields from product masters. You can extend them to add more fields. |
-| Line attribute group | Product | Associated product attributes that are defined as price attributes and assigned to a product | Configurable |
+| Header attribute group | Customer |  Customer attributes<br><br>Attributes of the customer attribute group that are defined as the **Customer attribute group** in **Pricing management parameters**. | Configurable |
+| Line attribute group | Product | Product master<br><br>Released product master | The attributes provide out-of-box fields from product masters. You can extend them to add more fields. |
+| Line attribute group | Product | Product master attributes<br><br>Associated product attributes that are defined as price attributes and assigned to a product. | Configurable |
 | Line attribute group | Order (line) | Order line | The attributes provide out-of-box fields from the order line. You can extend them to add more fields. |
+| Line attribute group | Order (line) | Order line attributes<br><br>Attributes of the attribute group that are defined as the **Sales line attribute group** in **Pricing management parameters**. | Configurable |
 
 Each pricing rule allows for the combination of one header attribute group and one line attribute group.
 
 > [!NOTE]
-> The number of attributes can affect the performance of the pricing engine. For pricing rule data entities (such as sales trade agreement prices, discounts, and rebates), up to 14 price attributes can be imported into Unified pricing management. Each pricing rule allows for the combination of one header attribute group (which can have up to seven header price attributes) and one line attribute group (which can have up to seven line price attributes).
+> The number of attributes can affect the performance of the pricing engine. For pricing rule data entities (such as sales trade agreement prices, discounts, and rebates), you can import up to 14 price attributes into Unified pricing management. Each pricing rule allows for the combination of one header attribute group (which can have up to seven header price attributes) and one line attribute group (which can have up to seven line price attributes).
 
 ## Next steps
 
