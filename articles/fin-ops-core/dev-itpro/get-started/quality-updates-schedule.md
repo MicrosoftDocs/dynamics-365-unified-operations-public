@@ -4,7 +4,7 @@ description: Learn about the release schedule for proactive quality updates (PQU
 author: rashmansur
 ms.author: sharmaaarsh
 ms.topic: article
-ms.date: 09/14/2026
+ms.date: 09/21/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -67,9 +67,9 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.47 PQU-8 | July 15, 2026 | July 15, 2026 to August 8, 2026| Completed | 10.0.2527.160 | 7.0.7858.134 |
 | 10.0.47 PQU-9 | July 29, 2026 | July 29, 2026 to August 22, 2026| Completed | 10.0.2527.174 | 7.0.7858.145 |
 | 10.0.47 PQU-10 | August 12, 2026 | August 12, 2026 to September 5, 2026| Completed | 10.0.2527.187 | 7.0.7858.152 |
-| 10.0.47 PQU-11 | August 26, 2026 | August 26, 2026 to September 19, 2026| In-Progress | 10.0.2527.197 | 7.0.7858.163 |
+| 10.0.47 PQU-11 | August 26, 2026 | August 26, 2026 to September 19, 2026| Completed | 10.0.2527.197 | 7.0.7858.163 |
 | 10.0.47 PQU-12 | September 9, 2026 | September 9, 2026 to October 3, 2026| In-Progress | 10.0.2527.208 | 7.0.7858.166 |
-| 10.0.47 PQU-13 | September 23, 2026 | September 23, 2026 to October 17, 2026| Not Started | | |
+| 10.0.47 PQU-13 | September 23, 2026 | September 23, 2026 to October 17, 2026| In-Progress | 10.0.2527.215 | 7.0.7858.174 |
 | 10.0.47 PQU-14 | October 7, 2026 | October 7, 2026 to October 31, 2026| Not Started | | |
 | 10.0.47 PQU-15 | October 21, 2026 | October 21, 2026 to November 14, 2026| Not Started | | |
 | 10.0.47 PQU-16 | November 4, 2026 | November 4, 2026 to November 28, 2026| Not Started | | |
@@ -131,24 +131,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | September 21 to September 24, 2026 | October 3 to October 4, 2026 |
 | Station 6 | September 22 to September 25, 2026 | October 3 to October 4, 2026 |
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.47 Release-11 train schedule
-
-**App version: 10.0.2527.197**
-
-**Platform version: 7.0.7858.163**
-
-**Unified Environment Provisioning Application Version: 10.0.47.12**
-
-| Stations | Upcoming sandbox schedule | Upcoming production schedule |
-|---|---|---|
-| Station 1 | August 26 to August 29, 2026 | N/A |
-| Station 2 | August 31 to September 3, 2026 | September 5 to September 6, 2026 |
-| Station 3 | August 31 to September 3, 2026 | September 5 to September 6, 2026 |
-| Station 4 | September 7 to September 10, 2026 | September 12 to September 13, 2026 |
-| Station 5 | September 14 to September 17, 2026 | September 19 to September 20, 2026 |
-| Station 6 | September 14 to September 17, 2026 | September 19 to September 20, 2026 |
-
-### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.47 Release-12 train schedule
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.47 Release-12 train schedule
 
 **App version: 10.0.2527.208**
 
@@ -164,6 +147,23 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 4 | September 21 to September 24, 2026 | September 26 to September 27, 2026 |
 | Station 5 | September 28 to October 1, 2026 | October 3 to October 4, 2026 |
 | Station 6 | September 28 to October 1, 2026 | October 3 to October 4, 2026 |
+
+### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.47 Release-13 train schedule
+
+**App version: 10.0.2527.215**
+
+**Platform version: 7.0.7858.174**
+
+**Unified Environment Provisioning Application Version: 10.0.47.14**
+
+| Stations | Upcoming sandbox schedule | Upcoming production schedule |
+|---|---|---|
+| Station 1 | September 23 to September 26, 2026 | N/A |
+| Station 2 | September 28 to October 1, 2026 | October 3 to October 4, 2026 |
+| Station 3 | September 28 to October 1, 2026 | October 3 to October 4, 2026 |
+| Station 4 | October 5 to October 8, 2026 | October 10 to October 11, 2026 |
+| Station 5 | October 12 to October 15, 2026 | October 17 to October 18, 2026 |
+| Station 6 | October 12 to October 15, 2026 | October 17 to October 18, 2026 |
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.48 Release-5 train schedule
 
