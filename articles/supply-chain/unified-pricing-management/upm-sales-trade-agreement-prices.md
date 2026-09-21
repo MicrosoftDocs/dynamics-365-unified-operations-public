@@ -4,7 +4,7 @@ description: Learn about sales trade agreement prices, including an outline on c
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: overview
-ms.date: 04/27/2026
+ms.date: 09/21/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: GUPPricingSetupInquiryResult, GUPParameters, PriceDiscAdmName, PriceDiscAdmTable, PriceDiscAdm
@@ -56,13 +56,7 @@ Several configuration settings affect the way that sales trade agreements work i
 1. On the **General** tab, set the **Date type** field to the type of date that you use when you set up criteria for matching pricing rule records. The available values are *Today*, *Requested ship date*, *Requested receipt date*, and *Created date*.
 
 > [!NOTE]
-> If your organization uses only Unified pricing management and doesn't use traditional trade 
-agreements (created via **Sales and marketing > Prices and discounts > Trade agreement journals**), the 
-parameters on the **Activate price/discount** page (**Sales and marketing > Setup > Prices and discounts >
-> Activate price/discount**) aren't required. You can safely set all toggles on this page to *No*. 
-These parameters control which combinations of customer/item dimensions are available for traditional 
-trade agreement journal lines, and they have no effect on UPM pricing rules, price structures, or price 
-component codes.
+> If your organization uses only Unified pricing management and doesn't use traditional trade agreements (created via **Sales and marketing** > **Prices and discounts** > **Trade agreement journals**), the parameters on the **Activate price/discount** page (**Sales and marketing** > **Setup** > **Prices and discounts** > **Activate price/discount**) aren't required. You can safely set all toggles on this page to *No*. These parameters control which combinations of customer/item dimensions are available for traditional trade agreement journal lines, and they have no effect on UPM pricing rules, price structures, or price component codes.
 
 ### Concurrency example
 
@@ -178,6 +172,7 @@ Follow these steps to add, view, and manage pricing rules for a sales trade agre
     - **Unit** – Select the unit that the specified price applies to.
     - **Amount in currency** – Enter the price that applies to the line.
     - **Currency** – Select the currency that you used to specify the price in the **Amount in currency** field.
+    - **Include generic currency** – Select this checkbox if the line should also apply to sales in other currencies. The system then converts the amount from your generic currency to the transaction currency. This checkbox is available only if the **Currency** field is set to the generic currency that's defined for your system. Learn more in [Manage pricing rules using a generic base currency](upm-generic-base-currency.md).
     - *Inventory dimensions* – Use columns that show inventory dimensions (such as **Color**, **Warehouse**, and **Serial number**) to further refine the conditions for a line. To select which dimensions are shown in the grid, select **Inventory \> Dimensions** on the toolbar.
 
     > [!TIP]
