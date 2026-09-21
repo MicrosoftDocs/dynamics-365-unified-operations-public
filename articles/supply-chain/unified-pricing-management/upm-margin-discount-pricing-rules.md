@@ -4,7 +4,7 @@ description: Learn how to configure pricing rules for margin component price adj
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: how-to
-ms.date: 04/27/2026
+ms.date: 09/21/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: RetailPeriodicDiscount, RetailMixAndMatchLineGroups, GUPPriceAdjustPriceAttributeGroupEdit, GUPDiscountPriceComponentGroupExclusionList, GUPFundList, RetailMixAndMatchLineGroupSetup
@@ -54,6 +54,7 @@ Set the following fields on the **General** FastTab for all types of pricing rul
 
 - **Status** – Set this field to *Enabled* or *Disabled*. Only enabled records are available for calculations. New records are set to *Disabled* and can be enabled only after you finish setting all the required fields. All fields are read-only for enabled rules. Therefore, you must disable a rule before you can edit it.
 - **Currency** – Select the currency that the rule applies to.
+- **Include generic currency** – Select this checkbox if the rule should also apply to transactions in other currencies. The system then converts the amount from your generic currency to the transaction currency. This checkbox is shown only if generic currency pricing is turned on for your system, and you should select it only for rules that are defined in the generic currency. Learn more in [Manage pricing rules using a generic base currency](upm-generic-base-currency.md).
 - **Price component** – This read-only field shows the type of pricing rule (*Discounts* or *Margin component*).
 - **Price component code** – Select the [price component code](upm-price-component-code.md) that the rule applies to. Only existing price component codes of the applicable type are listed.
 - **Header price attribute group type** – This read-only field indicates how customers that the rule applies to are selected. It shows *All* if the rule applies to all customers. It shows *Group* if the rule applies to only a set of customers, as defined by values that are assigned to attributes that are part of an attribute group. You can set the value for the current rule by selecting **Header price attribute group** on the Action Pane. For more information, see the [Set up header price attribute values](#header-attributes) section of this article.

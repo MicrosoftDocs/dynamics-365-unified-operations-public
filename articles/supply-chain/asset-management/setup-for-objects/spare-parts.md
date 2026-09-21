@@ -41,7 +41,7 @@ You can view and create spare parts on the **Asset type defaults** and **Spare p
 
 ### Manage spare parts on the Asset type defaults page
 
-To open the **Asset type defaults** page, go to**Asset management** > **Setup** > **Asset type defaults**. When you open the **Asset type defaults** page, you see only the spare parts for the selected combination of asset type, asset manufacturer, and asset model.
+To open the **Asset type defaults** page, go to **Asset management** > **Setup** > **Asset type defaults**. When you open the **Asset type defaults** page, you see only the spare parts for the selected combination of asset type, asset manufacturer, and asset model.
 
 To see whether a spare part is used anywhere else in Asset Management (for example, in relation to assets and work orders), select the line on the **Spare parts** FastTab and then select **Item where used** from the FastTab toolbar to open the **Item where used** dialog. Set filtering options in this dialog as required and then select **OK** to view the items.
 

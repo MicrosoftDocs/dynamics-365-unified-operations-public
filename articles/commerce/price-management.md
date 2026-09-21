@@ -2,7 +2,7 @@
 title: Retail sales price management
 description: Learn about the concepts for creating and managing sales prices in Microsoft Dynamics 365 Commerce.
 author: ShalabhjainMSFT
-ms.date: 01/27/2026
+ms.date: 09/21/2026
 ms.topic: how-to
 ms.reviewer: mirao
 ms.search.region: Global
@@ -215,7 +215,7 @@ The Commerce pricing engine **doesn't support** the following pricing features:
 
 - Attribute-based pricing.
 - Vendor discount pass-through.
-- The generic currency feature. In other words, even if a trade agreement has the **Include generic currency** toggle turned on, the trade agreement is still valid only for the currency that's defined in it.
+- The generic currency feature. In other words, even if a trade agreement has the **Include generic currency** toggle turned on, the trade agreement is still valid only for the currency that's defined in it. This limitation doesn't apply if the Unified pricing management module is turned on. Learn more in [Manage pricing rules using a generic base currency](../supply-chain/unified-pricing-management/upm-generic-base-currency.md).
 - The standard Supply Chain Management pricing engine supports the pricing calculation based on the requested ship date and the requested receipt date, together with the current date. However, retail pricing currently doesn't support these values. For B2C scenarios, customers don't expect the requested delivery date to affect the item price. In some cases, retailers have both B2B and B2C operations. For B2B operations, it's common to change prices based on the delivery dates. These retailers can use Supply Chain Management pricing for their B2B business and retail pricing for their B2C business. Retail pricing goes into effect only if the application user is added as a call center user, so that the retailers can assign specific users who work with the Supply Chain Management pricing and also assign a few who work with retail pricing. In other words, these users should be added as call center users. Additionally, the **Use today's date for calculating prices** property must be turned on in the **Miscellaneous** section on the **Pricing and discounts** tab of the **Commerce parameters** page. In this way, users can continue to use the Accounts receivable parameter value for the requested ship date or requested receipt date for Supply Chain Management pricing. However, the retail pricing continues to use today's date for pricing calculations.
 - For trade agreements, **only** the following dimensions are supported in the Commerce pricing engine:
 
