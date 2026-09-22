@@ -2531,6 +2531,8 @@
           href: unified-pricing-management/upm-concurrence-cross-codes.md
       - name: Manage pricing rules using a generic base currency
         href: unified-pricing-management/upm-generic-base-currency.md
+      - name: Simulate prices based on sales order line attributes
+        href: unified-pricing-management/upm-simulate-prices-line-attributes.md
       - name: Calculate prices and discounts without creating sales orders
         href: unified-pricing-management/upm-calculate-prices-without-sales-orders.md
       - name: Calculate prices for external systems through the pricing calculation API

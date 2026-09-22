@@ -43,7 +43,7 @@ To use the features that are described in this article, your system must meet th
 
 ## Choose the generic currency and conversion options
 
-Before you can flag any pricing rule as a generic-currency rule, you must nominate the currency to use and specify how the system converts prices out of it. Follow these steps.
+Before you can flag any pricing rule as a generic-currency rule, you must nominate the currency to use and specify how the system converts prices out of it. Follow these steps:
 
 1. Go to **Pricing management** > **Setup** > **Pricing management parameters**.
 1. Open the **General** tab.
@@ -73,7 +73,7 @@ Pricing rules aren't automatically treated as generic-currency rules. You must s
 
 ### Sales trade agreement prices
 
-For trade agreement prices, set the option on the journal lines that you post to create the agreements. Follow these steps to define a trade agreement price in the generic currency.
+For trade agreement prices, set the option on the journal lines that you post to create the agreements. Follow these steps to define a trade agreement price in the generic currency:
 
 1. Go to **Pricing management** > **During-sales pricing** > **Sales trade agreement price** > **Trade agreement journals**.
 1. Create a journal, or select an existing one, and then select **Lines**.
@@ -85,7 +85,7 @@ The setting carries over to the resulting agreement, where you can review it in 
 
 ### Discounts and margin price adjustments
 
-For margin component price adjustments and all discount types, set the option on the rule record itself. Follow these steps.
+For margin component price adjustments and all discount types, set the option on the rule record itself. Follow these steps:
 
 1. Open the page for the type of pricing rule that you want to create, as described in [Pricing rules for discounts and margin price adjustments](upm-margin-discount-pricing-rules.md).
 1. Create the rule, or select an existing disabled rule.
