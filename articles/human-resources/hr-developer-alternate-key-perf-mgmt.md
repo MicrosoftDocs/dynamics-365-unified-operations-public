@@ -6,7 +6,7 @@ ms.author: twheeloc
 ms.reviewer: twheeloc
 ms.search.form:
 ms.topic: how-to
-ms.date: 05/13/2024
+ms.date: 08/19/2026
 audience: Application User
 ms.custom: 
   - bap-template
@@ -21,7 +21,7 @@ ms.custom:
 The following table shows the fields that are available as alternate keys in Microsoft Dynamics 365 Human Resources release 10.0.40 and later to enable set-based operations on data entities for specific tables in performance management.
 
 | Table | Field |
-|---|---|
+| --- | --- |
 | HcmPerfJournalLinks | LinkId |
 | HcmPerfJournalComment | CommentId |
 | HcmPerfJournal | EntryId |
@@ -34,7 +34,7 @@ When you upgrade the environments, some of them might encounter the following er
 > Exception: System.InvalidOperationException: Database execution failed: The CREATE UNIQUE INDEX statement terminated because a duplicate key was found for the object name.
 
 > [!NOTE]
-> Uniqueness for the preceding fields is enforced as part of previous upgrades. Because of customizations, back-end database interventions, or very old demo data, fields that contain non-unique records lead to DBsync errors and upgrade failure.
+> Previous upgrades enforce uniqueness for the preceding fields. Because of customizations, back-end database interventions, or very old demo data, fields that contain non-unique records lead to DBsync errors and upgrade failure.
 
 ### Mitigation
 
@@ -51,7 +51,7 @@ To avoid the error, follow these steps before you upgrade the environments.
     > [!NOTE]
     > The selected batch job should have a batch task. Select the batch job that contains tasks.
 
-3. Change the status of the batch job to **Waiting**. The job is rerun and removes the duplicates for the specific table.
+3. Change the status of the batch job to **Waiting**. The job reruns and removes the duplicates for the specific table.
 4. You can now start the upgrade.
 
 > [!NOTE]

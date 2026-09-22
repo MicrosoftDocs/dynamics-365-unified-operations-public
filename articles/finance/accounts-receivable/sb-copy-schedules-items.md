@@ -4,7 +4,7 @@ description: Learn about how to copy billing schedules, including step-by-step p
 author: JodiChristiansen
 ms.author: jchrist
 ms.topic: how-to
-ms.date: 11/04/2021
+ms.date: 08/20/2026
 ms.reviewer: twheeloc 
 audience: Application User
 ms.search.region: Global
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.24
 
 [!INCLUDE [banner](../includes/banner.md)]
 
-You can use the **Copy schedule** page to create a new billing schedule from an existing billing schedule. The new billing schedule will have the same settings as the original billing schedule. You can also use the page to copy items from one billing schedule to another.
+Use the **Copy schedule** page to create a new billing schedule from an existing billing schedule. The new billing schedule has the same settings as the original billing schedule. You can also use the page to copy items from one billing schedule to another.
 
 ## Copy a billing schedule
 
@@ -31,7 +31,7 @@ To copy a billing schedule, follow these steps:
 6. Select **View preview** to view and select the billing schedule lines that you want to copy.
 7. Select **Copy**.
 
-After the copy process is completed, the new billing schedule appears at the bottom of the **All billing schedules** or **Active billing schedules** list page, and on the **Billing schedules** page.
+When the copy process finishes, the new billing schedule appears at the bottom of the **All billing schedules** or **Active billing schedules** list page, and on the **Billing schedules** page.
 
 ## Copy items from one billing schedule to another
 
@@ -39,11 +39,11 @@ After the copy process is completed, the new billing schedule appears at the bot
 2. On the **Billing schedule** tab, select **Copy schedule**.
 3. In the **Customer account** field, select the customer account.
 4. In the **Billing schedule number** field, select a billing schedule number.
-4. Update the billing start and end dates.
-5. Update the values of the following fields as required: **End user account**, **Partner account**, **Customer reference**, **Customer requisition** and **Deferral start date**.
-6. Select **View preview** to view and select the billing schedule lines that you want to copy to an existing billing schedule.
-7. Select **Copy**.
+5. Update the billing start and end dates.
+6. Update the values of the following fields as required: **End user account**, **Partner account**, **Customer reference**, **Customer requisition**, and **Deferral start date**.
+7. Select **View preview** to view and select the billing schedule lines that you want to copy to an existing billing schedule.
+8. Select **Copy**.
 
-After the copy process is completed, review the billing schedule that you copied the items to, and make sure that the items were added as you expected.
+After the copy process is completed, review the billing schedule that you copied the items to, and ensure that the items were added as you expected.
 
 <!--## Additional resources-->

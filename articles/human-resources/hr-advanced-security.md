@@ -4,7 +4,7 @@
 title: Restrict access to workers by legal entity
 description: This article explains how to set up worker access by legal entity.
 author: twheeloc
-ms.date: 09/03/2025
+ms.date: 08/19/2026
 ms.topic: how-to
 # optional metadata
 
@@ -47,7 +47,7 @@ For example, a user has access to the **Worker** page and has access only to the
 
 ## View worker information
 
-If the feature for restricting access to worker information is enabled, the restricted user sees the worker's name in some lists.
+If you enable the feature that restricts access to worker information, a restricted user sees the worker's name in some lists.
 
 For example, a user who has access only to the USMF legal entity experiences the following behavior:
 
@@ -55,15 +55,15 @@ For example, a user who has access only to the USMF legal entity experiences the
 - If the user drills down on the worker's name, a blank **Worker** page will appear.
 
 > [!TIP]
-> If you want restricted users to see blank values for worker names, add the **Restrict access to workers** security privilege to the user roles on the **Security configuration** page.
+> To make restricted users see blank values for worker names, add the **Restrict access to workers** security privilege to the user roles on the **Security configuration** page.
 
-After you enable the feature, you must complete some extra steps to set permissions for each user whose view must be restricted.
+After you enable the feature, complete these extra steps to set permissions for each user whose view you want to restrict:
 
 1. On the **Users** page, select a user.
-2. Select a role for the user. The **Assign organizations** option becomes available.
-3. Select **Assign organizations**.
-4. On the new page, select **Grant access to specific organizations individually**, and then select the organizations that the user should have access to.
-5. Repeat steps 2 through 4 for every other role that the user has, including the system user role.
+1. Select a role for the user. The **Assign organizations** option becomes available.
+1. Select **Assign organizations**.
+1. On the new page, select **Grant access to specific organizations individually**, and then select the organizations that the user should have access to.
+1. Repeat steps 2 through 4 for every other role that the user has, including the system user role.
 
 > [!NOTE]
 > The legal entities that a user has access to must match across all the user's roles.

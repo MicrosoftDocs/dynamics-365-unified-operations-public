@@ -4,7 +4,7 @@
 title: Maintain employee injury and illness information
 description: This article describes how to create an injury or illness case.
 author: twheeloc
-ms.date: 07/03/2024
+ms.date: 08/20/2026
 ms.topic: how-to 
  
 # optional metadata 
@@ -27,11 +27,11 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-It is recommended to complete the 'Setup injury and illness' procedure first, as some of the setup information is used here. 
+Complete the 'Setup injury and illness' procedure first, as this procedure uses some of the setup information.
 
-This procedure describes the basic steps for creating an injury or illness case. In addition to the details of the injury or illness, a case status is tracked. By default, cases have a status of **Open**. You can manage the status by using the **Case status** menu item at the top of the page.
+This procedure describes the basic steps for creating an injury or illness case. In addition to the details of the injury or illness, you track a case status. By default, cases have a status of **Open**. Manage the status by using the **Case status** menu item at the top of the page.
 
-1. Go to **Human resources > Workers > Injury and illness > Injury or illness incidents**.
+1. Go to **Human resources** > **Workers** > **Injury and illness** > **Injury or illness incidents**.
 2. Select **New**.
 3. In the **Case description** field, enter a value (for example, **Wrist injury**).
 4. In the **Worker** field, enter or select a value (for example, **Ana Bowman**).
@@ -77,6 +77,6 @@ This procedure describes the basic steps for creating an injury or illness case.
 32. In the **Treatment details** field, enter a value (for example, **X-ray confirms fracture, wear splint**).
 33. Select **Save**.
 
-The case status can be updated at any time. If processing of the injury or illness is in progress, set the status to **In process**. After you close the incident, you can only add or remove costs, treatments, or filings that are related to the incident. To change other information, you must reopen the case.
+You can update the case status at any time. If processing of the injury or illness is in progress, set the status to **In process**. After you close the incident, you can only add or remove costs, treatments, or filings that are related to the incident. To change other information, you must reopen the case.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

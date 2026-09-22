@@ -4,7 +4,7 @@ description: Learn about the freeze on new project creation in Microsoft Dynamic
 author: laneswenka
 ms.author: laswenka
 ms.topic: concept-article
-ms.date: 07/10/2026
+ms.date: 09/22/2026
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -46,6 +46,8 @@ The following scenarios aren't affected by this change:
 
 New customers should use the [Power Platform admin center](https://aka.ms/OneAdmin-Overview) to manage their Finance, Supply Chain Management, and Project Operations environments. The Power Platform admin center provides a unified administration experience for these products.
 
+Existing customers can use the self-service migration feature, now available in public preview, to move management of eligible environments from Lifecycle Services to the Power Platform admin center. Migration is a one-way, per-environment operation. For preparation, limitations, and step-by-step instructions, see [Migrate finance and operations environments from Lifecycle Services to Power Platform admin center](migrate-lifecycle-services-environments-power-platform-admin-center.md).
+
 ## Exception process
 
 If you have a business-critical need to create a new Lifecycle Services project, you can submit an exception request through the [Lifecycle Services Project Creation Exception form](https://aka.ms/LCSProjectCreationException). Microsoft reviews exception requests on a case-by-case basis. Approval isn't guaranteed and depends on the specific circumstances of the request.
@@ -56,6 +58,6 @@ If you have a business-critical need to create a new Lifecycle Services project,
 |------|-----------|
 | January 2026 | Code freeze in preparation for the Lifecycle Services project creation freeze |
 | February 16, 2026 | New Lifecycle Services project creation frozen for new customers |
-| Mid-2026 | Self-service migration tooling preview for existing Lifecycle Services customers |
+| September 2026 | Self-service environment migration available in public preview for existing Lifecycle Services customers |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
