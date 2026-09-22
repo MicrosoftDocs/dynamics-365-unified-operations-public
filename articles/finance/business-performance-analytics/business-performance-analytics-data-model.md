@@ -11,7 +11,7 @@ audience: Application User
 ms.search.form: business-performance-analytics
 ---
 
-# Business performance analytics data model 
+# Business performance analytics data model
 
 [!INCLUDE [banner](../../includes/banner.md)]
 
@@ -19,7 +19,7 @@ ms.search.form: business-performance-analytics
 
 A dimensional data model is a framework designed to optimize the performance of complex queries in a data warehouse. It organizes data into fact tables and dimension tables to facilitate easy and intuitive data analysis.
 
-#### Key Components
+### Key components
 
 1. **Fact Table**:
    - **Definition** - The central table in a dimensional model, containing quantitative data for analysis.
@@ -59,4 +59,3 @@ A dimensional data model is a framework designed to optimize the performance of 
   2. We modeled at the lowest grain (e.g., every line on an invoice is represented in the facts).
   3. We grouped each business process into a value chain for reference (Record to Report, Procure to Pay, etc.).
   4. We created a Bus Matrix to represent the facts and dimensions for your reference. For more information, see the Bus Matrix report in Business Performance Analytics.
-

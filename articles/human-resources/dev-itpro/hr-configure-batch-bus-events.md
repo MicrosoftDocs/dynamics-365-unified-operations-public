@@ -7,7 +7,7 @@ author: twheeloc
 ms.author: twheeloc
 ms.reviewer: twheeloc
 ms.topic: how-to
-ms.date: 5/23/2023
+ms.date: 8/20/2026
 ms.custom:
 
 ---
@@ -23,17 +23,17 @@ Customers can configure business events to run in a batch. This capability gives
 Here are some examples of Human Resources business events that can run in a batch:
 
 - Employee start date is approaching
-- Course due soon 
-- Certificate overdue 
+- Course due soon
+- Certificate overdue
 - Position transition date is approaching
 
 ## Configure business events to run in a batch
 
 1. Go to the business event catalog.
-2. Select the endpoints of the business events.
-3. Select **Activate** to activate the business events.
-4. On the **Human Resources shared parameters** page, select **Business events**.
-5. In the **Days** field, enter the batch job recurrence in days.
-6. Select **Create batch jobs**, and then select **OK**.
+1. Select the endpoints of the business events.
+1. Select **Activate** to activate the business events.
+1. On the **Human Resources shared parameters** page, select **Business events**.
+1. In the **Days** field, enter the batch job recurrence in days.
+1. Select **Create batch jobs**, and then select **OK**.
 
 If you select **Set default values**, all the values are reset.

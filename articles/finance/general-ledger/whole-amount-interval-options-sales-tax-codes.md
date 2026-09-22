@@ -4,7 +4,7 @@ description: Learn about the options for the Calculation method field on sales t
 author: kailiang
 ms.author: kailiang
 ms.topic: article
-ms.date: 10/24/2022
+ms.date: 08/20/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -14,7 +14,7 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 96166db4-b7ca-470b-aeb7-0a66fe0554c4
 ---
 
-# Whole amount and Interval calculation options for sales tax codes
+# Whole amount and interval calculation options for sales tax codes
 
 [!INCLUDE [banner](../includes/banner.md)]
 
@@ -25,19 +25,19 @@ You can set up a sales tax code to be calculated based on a whole amount or an i
 - Whole amount – The tax rate is applied to the whole taxable amount.
 - Interval – The taxable amount is divided into parts, each of which falls in a range that has a specific sales tax rate. The part of the amount that falls in a given interval is taxed according to the tax rate for that interval. The sales tax is the sum of the tax amounts that are calculated for each amount interval.
   > [!NOTE]
-  > The Interval option is available only when you select Line in the Calculation method field in the Sales tax area of the General ledger parameters page.
+  > The Interval option is available only when you select **Line** in the **Calculation method** field in the **Sales tax** area of the **General ledger parameters** page.
 
-Intervals are set up in the Sales tax code values page by entering Minimum and Maximum limit amounts per tax rate. For taxes to be calculated on all taxable amounts, regardless of which calculation method is selected, intervals must follow these rules:
+Set up intervals in the **Sales tax code values** page by entering **Minimum** and **Maximum limit amounts** per tax rate. For taxes to be calculated on all taxable amounts, regardless of which calculation method you select, intervals must follow these rules:
 
-- The first interval must have a Minimum limit of zero.
-- The last interval must have a Maximum limit of zero, which indicates infinity.
-- The Maximum limit of an interval must be the Minimum limit of the next interval.
+- The first interval must have a **Minimum limit** of zero.
+- The last interval must have a **Maximum limit** of zero, which indicates infinity.
+- The **Maximum limit** of an interval must be the Minimum limit of the next interval.
 
-If an amount is the Maximum limit of the previous interval and the Minimum limit of the next interval, the sales tax rate of the first interval will be applied to the amount. If an amount falls outside the intervals that are defined by upper and lower limits, a sales tax rate of zero will be applied.
+If an amount is the **Maximum limit** of the previous interval and the **Minimum limit** of the next interval, the sales tax rate of the first interval applies to the amount. If an amount falls outside the intervals that are defined by upper and lower limits, a sales tax rate of zero applies.
 
 ## Example: Whole amount method of calculation
 
-In the Sales tax code values page, sales tax rates are set up in the following intervals:
+In the **Sales tax code values** page, set up sales tax rates in the following intervals:
 
 | Minimum limit     | Maximum limit     | Tax rate     |
 |-------------------|-------------------|--------------|
@@ -45,7 +45,7 @@ In the Sales tax code values page, sales tax rates are set up in the following i
 | 50.00             | 100.00            | 20%          |
 | 100.00            | 0.00              | 10%          |
 
-The sales tax is calculated on the whole taxable amount.
+Calculate the sales tax on the whole taxable amount.
 
 | Taxable amount (price) | Calculation    | Sales tax |
 |------------------------|----------------|-----------|
@@ -56,7 +56,7 @@ The sales tax is calculated on the whole taxable amount.
 
 ## Example: Interval method of calculation
 
-In the Values page, sales tax rates are set up in the following intervals:
+On the **Values** page, set up sales tax rates in the following intervals:
 
 | Minimum limit     | Maximum limit     | Tax rate     |
 |-------------------|-------------------|--------------|

@@ -4,7 +4,7 @@
 title: Map skills
 description: You can create a skill-mapping search to find a qualified person in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 03/23/2021
+ms.date: 08/19/2026
 ms.topic: article
 # optional metadata
 
@@ -38,24 +38,25 @@ You can create a skill-mapping search to find a qualified person in Dynamics 365
 - Positions
 - Project experience
 
-For example, you can find people in your organization who have earned their CPA.
+For example, you can find people in your organization who earned their CPA.
 
-Skill-mapping profiles allow you to find current employees or candidates with qualifications that directly correspond to business needs.
+Skill-mapping profiles help you find current employees or candidates with qualifications that directly correspond to business needs.
 
 > [!NOTE]
-> Only workers, applicants, and contact persons who are selected to be included in skill-mapping searches will display in a skill-mapping results list, or be included in a skill profile. To include a person in skill mapping searches, set the **Include in skill mapping** selection to **Yes** in the following pages:<br>
+> Only workers, applicants, and contact persons who you select to include in skill-mapping searches appear in a skill-mapping results list or skill profile. To include a person in skill-mapping searches, set the **Include in skill mapping** selection to **Yes** in the following pages:<br>
+>
 > - Worker<br>
 > - Employee<br>
 > - Applicant<br>
 > - Contacts<br>
 
-To create a skill mapping, go to **Employee development > Links > Skill mapping**. To create a skill-mapping profile, go to **Employee development > Links > Skill mapping profiles**.
+To create a skill mapping, go to **Employee development** > **Links** > **Skill mapping**. To create a skill-mapping profile, go to **Employee development** > **Links** > **Skill mapping profiles**.
 
 ## Skill gap analysis and skill profile analysis
 
-You can create a skill profile analysis to view a list of a person's competencies. You can create a skill gap analysis to compare a person’s skills and the skills required for a job.
+Create a skill profile analysis to view a list of a person's competencies. Create a skill gap analysis to compare a person’s skills with the skills required for a job.
 
-To create a gap analysis, go to **Employee development > Links > Skill gap analysis job - person**. To create a skill profile analysis, go to **Employee development > Links > Skill profile analysis**.
+To create a gap analysis, go to **Employee development** > **Links** > **Skill gap analysis job - person**. To create a skill profile analysis, go to **Employee development** > **Links** > **Skill profile analysis**.
 
 ## See also
 

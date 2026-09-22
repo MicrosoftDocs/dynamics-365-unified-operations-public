@@ -1,10 +1,10 @@
 ---
 title: General budget reservations
 description: Learn about general budget reservations for Public sector. General budget reservations are only available in the outlined conditions.
-author: brpotter
+author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 08/29/2021
+ms.date: 08/20/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 8.1
 
 [!INCLUDE [banner](../includes/banner.md)]
 
-A *general budget reservation* is a document that is sometimes also referred to as a *commitment*. Public sector entities often use this document to set aside or earmark budgeted funds so that they aren't available for other purposes. Typically, these reservations are made before any vendors have been selected for the purchase. By using general budget reservations, an organization can explicitly track planned expenditures for management and reporting purposes. Each purchase requisition, purchase order, or vendor invoice that is generated can be associated with at least one general budget reservation.
+A *general budget reservation* is a document that's sometimes referred to as a *commitment*. Public sector entities often use this document to set aside or earmark budgeted funds so that they aren't available for other purposes. Typically, these reservations are made before you select any vendors for the purchase. By using general budget reservations, an organization can explicitly track planned expenditures for management and reporting purposes. You can associate each purchase requisition, purchase order, or vendor invoice that you generate with at least one general budget reservation.
 
 General budget reservations are available only if the following conditions are met:
 
@@ -35,11 +35,12 @@ You can create different types of general budget reservation to specify various 
 In the general budget reservation, you can also view accounting distributions and subledger journal lines for the transaction.
 
 > [!NOTE]
-> Ledger accounts used on general budget reservations must be included in budget control. If those accounts aren't included in budget control, the following will occur. 
->- General budget reservation and their consuming documents won't be encumbered or pre-encumbered. 
->- Carry-forward transactions won't create budget register entries. 
->- Canceling and finalizing general budget reservations won't reduce carry-forward budget.
->- Ledger accounts won't be included on the budget analysis and budget control statistics inquiries.
+> Ledger accounts used on general budget reservations must be included in budget control. If those accounts aren't included in budget control, the following problems occur.
+>
+>- General budget reservation and their consuming documents aren't encumbered or pre-encumbered.
+>- Carry-forward transactions don't create budget register entries.
+>- Canceling and finalizing general budget reservations don't reduce carry-forward budget.
+>- Ledger accounts aren't included on the budget analysis and budget control statistics inquiries.
 
 If you use project accounting, you can turn on tracking of committed costs for general budget reservations.
 
@@ -50,6 +51,5 @@ A general budget reservation is relieved differently, depending on the document 
 - If the document is a purchase order, the reservation is relieved when the purchase order is *confirmed*.
 - If the document is an invoice, and it doesn't reference a purchase order or purchase agreement, the general budget reservation is relieved when the invoice is *posted*.
 - If the document is a purchase requisition, the reservation is relieved when the purchase requisition is *approved*.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
