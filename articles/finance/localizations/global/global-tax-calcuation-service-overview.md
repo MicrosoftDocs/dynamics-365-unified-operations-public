@@ -6,7 +6,7 @@ ms.author: epodkolzina
 ms.topic: overview
 ms.custom: 
   - bap-template
-ms.date: 02/17/2026
+ms.date: 09/22/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-04-01
@@ -39,9 +39,9 @@ Import and set up your Tax Calculation configuration by using the version that m
 
 | Finance or Supply Chain Management version | Tax configuration version |
 | --------------- | --------------------------------------- |
+| 10.0.49         | Tax Calculation Configuration 50.78.273 |
+| 10.0.48         | Tax Calculation Configuration 50.78.269 |
 | 10.0.47         | Tax Calculation Configuration 50.78.269<br> This configuration is also compatible with all lower supported versions.|
-| 10.0.46         | Tax Calculation Configuration 47.73.265 |
-| 10.0.45         | Tax Calculation Configuration 47.73.265 |
 
 > [!IMPORTANT] 
 > To use **Tax Calculation Configuration 50.78.269**, you need to synchronize **Tax measure types**.

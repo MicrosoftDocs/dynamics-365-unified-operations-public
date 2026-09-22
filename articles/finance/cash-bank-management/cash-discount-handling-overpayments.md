@@ -18,20 +18,21 @@ ms.assetid: a94d0fd0-57ba-4054-93c8-519d01d50e19
 
 [!INCLUDE [banner](../includes/banner.md)]
 
-This article provides scenarios that show how a payment is handled when the customer takes a cash discount but also overpays. 
+This article provides scenarios that show how a payment is handled when the customer takes a cash discount but also overpays.
 
 An invoice is considered overpaid when the payment amount is more than the invoice amount minus the cash discount. To specify how an obtainable cash discount difference is handled when an invoice is overpaid, use the **Cash discount administration** and **Maximum overpayment or underpayment** fields on the **Accounts receivable parameters** page. In the following example, the customer has overpaid the invoice by 0.50.
 
-| Invoice total | Cash discount available | Amount to be paid, which includes the cash discount | Amount the customer actually pays |
-|---------------|-------------------------|-----------------------------------------------------|-----------------------------------|
-| 105.00        | 10.50                   | 94.50                                               | 95.00                             |
+|Invoice total|Cash discount available | Amount to be paid, which includes the cash discount | Amount the customer actually pays |
+|---------------|---------------------|-----------------------------------------------------|-----------------------------------|
+| 105.00        | 10.50                   | 94.50                     | 95.00                             |
 
 ## Cash discount administration = Specific
-When **Specific** is selected in the **Cash discount administration** field on the **Accounts for automatic transactions** page, the full cash discount is taken. The overpayment amount either is posted to a cash discount difference ledger account or remains a balance on the customer’s account. The behavior depends on whether the overpayment amount is between 0.00 and the amount that is entered in the **Maximum overpayment or underpayment** field, or whether the overpayment amount is more than the **Maximum overpayment or underpayment** amount.
+
+When you select **Specific** in the **Cash discount administration** field on the **Accounts for automatic transactions** page, the customer takes the full cash discount. The overpayment amount either posts to a cash discount difference ledger account or remains a balance on the customer’s account. This behavior depends on whether the overpayment amount is between 0.00 and the amount that you enter in the **Maximum overpayment or underpayment** field, or whether the overpayment amount is more than the **Maximum overpayment or underpayment** amount.
 
 ### Scenario 1
 
-In this scenario, the overpayment amount is between 0.00 and the maximum overpayment or underpayment. An invoice for 105.00 is entered, and a cash discount is available if the invoice is paid within seven days.
+In this scenario, the overpayment amount is between 0.00 and the maximum overpayment or underpayment. You enter an invoice for 105.00, and a cash discount is available if you pay the invoice within seven days.
 
 | Invoice total | Cash discount available | Amount to be paid, which includes the cash discount |
 |---------------|-------------------------|-----------------------------------------------------|
@@ -56,16 +57,16 @@ The following accounting entries are generated for the payment and the settlemen
 
 **Settlement**
 
-| Account                                                                                                          | Debit amount | Credit amount |
-|------------------------------------------------------------------------------------------------------------------|--------------|---------------|
-| Cash discount (the **Main account for customer discounts** field on the **Cash discounts** page)                 | 10.50        |               |
-| Accounts receivable                                                                                              |              | 10.50         |
-| Customer cash discount (the **Customer cash discount** field on the **Account for automatic transactions** page) |              | 0.50          |
-| Accounts receivable                                                                                              | 0.50         |               |
+| Account                                                   | Debit amount | Credit amount |
+|-----------------------------------------------------|--------------|---------------|
+| Cash discount (the **Main account for customer discounts** field on the **Cash discounts** page) | 10.50   |               |
+| Accounts receivable                     |              | 10.50         |
+| Customer cash discount (the **Customer cash discount** field on the **Account for automatic transactions** page) |  | 0.50    |
+| Accounts receivable                                                | 0.50         |               |
 
 ### Scenario 2
 
-In this scenario, the overpayment amount exceeds the maximum overpayment or underpayment amount. An invoice for 105.00 is entered, and a cash discount is available if the invoice is paid within seven days.
+In this scenario, the overpayment amount exceeds the maximum overpayment or underpayment amount. You enter an invoice for 105.00, and a cash discount is available if you pay the invoice within seven days.
 
 | Invoice total | Cash discount available | Amount to be paid, which includes the cash discount |
 |---------------|-------------------------|-----------------------------------------------------|
@@ -79,7 +80,7 @@ The customer submits a payment for 95.00 within the cash discount period. The pa
 | Payment       | -95.00 | -0.50   |
 | Cash discount | -10.50 | 0.00    |
 
-The overpayment amount of 0.50 will remain as an open balance on the payment and can be settled against another invoice. The following accounting entries are generated for the payment and the settlement. 
+The overpayment amount of 0.50 remains as an open balance on the payment and can be settled against another invoice. The following accounting entries are generated for the payment and the settlement.
 
 **Payment**
 
@@ -90,23 +91,24 @@ The overpayment amount of 0.50 will remain as an open balance on the payment and
 
 **Settlement**
 
-| Account                                                                                          | Debit amount | Credit amount |
-|--------------------------------------------------------------------------------------------------|--------------|---------------|
-| Cash discount (the **Main account for customer discounts** field on the **Cash discounts** page) | 10.50        |               |
-| Accounts receivable                                                                              |              | 10.50         |
+| Account                                          | Debit amount | Credit amount |
+|---------------------------------------------------|--------------|---------------|
+| Cash discount (the **Main account for customer discounts** field on the **Cash discounts** page) | 10.50      |               |
+| Accounts receivable                                                         |              | 10.50         |
 
 ## Cash discount administration = Unspecific
-When **Unspecific** is selected in the **Cash discount administration** field on the **Accounts for automatic transactions** page, the cash discount amount is reduced by the overpayment amount. This behavior always applies, regardless of whether the overpayment amount is over or under the amount that is entered in the **Maximum overpayment or underpayment** field.
+
+When you select **Unspecific** in the **Cash discount administration** field on the **Accounts for automatic transactions** page, the cash discount amount is reduced by the overpayment amount. This behavior always applies, regardless of whether the overpayment amount is over or under the amount that you enter in the **Maximum overpayment or underpayment** field.
 
 ### Scenario 3
 
-In this scenario, an invoice for 105.00 is entered, and a cash discount is available if the invoice is paid within seven days.
+In this scenario, you enter an invoice for 105.00, and a cash discount is available if you pay the invoice within seven days.
 
 | Invoice total | Cash discount available | Amount to be paid, which includes the cash discount |
 |---------------|-------------------------|-----------------------------------------------------|
 | 105.00        | 10.50                   | 94.50                                               |
 
-The customer submits a payment for 95.00 within the cash discount date. The payment is settled against the invoice for 105.00. After the invoice and payment are settled, the following transactions are created for the customer in Accounts receivable.
+The customer submits a payment for 95.00 within the cash discount date. The payment settles the invoice for 105.00. After the invoice and payment are settled, the following transactions are created for the customer in Accounts receivable.
 
 | Transaction   | Amount | Balance |
 |---------------|--------|---------|
@@ -114,7 +116,7 @@ The customer submits a payment for 95.00 within the cash discount date. The paym
 | Payment       | -95.00 | -0.00   |
 | Cash discount | -10.00 | 0.00    |
 
-The cash discount amount is reduced from 10.50 to 10.00. The payment and invoice are considered settled. 
+The cash discount amount is reduced from 10.50 to 10.00. The payment and invoice are considered settled.
 
 **Payment**
 
@@ -125,15 +127,9 @@ The cash discount amount is reduced from 10.50 to 10.00. The payment and invoice
 
 **Settlement**
 
-| Account                                                                                          | Debit amount | Credit amount |
-|--------------------------------------------------------------------------------------------------|--------------|---------------|
-| Cash discount (the **Main account for customer discounts** field on the **Cash discounts** page) | 10.50        |               |
-| Accounts receivable                                                                              |              | 10.50         |
-
-
-
-
-
-
+| Account                                                          | Debit amount | Credit amount |
+|---------------------------------------------------------|--------------|---------------|
+| Cash discount (the **Main account for customer discounts** field on the **Cash discounts** page) | 10.50        |             |
+| Accounts receivable                                                     |              | 10.50         |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

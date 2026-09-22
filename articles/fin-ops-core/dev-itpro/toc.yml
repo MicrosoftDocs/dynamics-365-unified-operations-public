@@ -1093,6 +1093,8 @@ items:
         items:
         - name: Lifecycle Services project creation freeze
           href: lifecycle-services/lcs-project-creation-freeze.md
+        - name: Migrate environments from Lifecycle Services to Power Platform admin center (preview)
+          href: lifecycle-services/migrate-lifecycle-services-environments-power-platform-admin-center.md
         - name: Lifecycle Services resources
           href: lifecycle-services/lcs.md
         - name: Lifecycle Services for customers

@@ -4,7 +4,7 @@ description: There are several ways to create cost elements in Cost accounting. 
 author: twheeloc
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 08/29/2022
+ms.date: 08/20/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -13,41 +13,42 @@ ms.search.form: CAMDimension, CAMAXMainAccountDimensionMemberProviderConfigurati
 ms.dyn365.ops.version: Version 7.0.0
 ---
 
-# Create cost elements 
+# Create cost elements
 
 [!INCLUDE [banner](../../includes/banner.md)]
 
-There are several ways to create cost elements in Cost accounting. This procedure shows how to create cost elements by importing main accounts via a data connector. The USMF demo company was used to create this procedure. This procedure is for a Cost accounting feature that was added in Dynamics 365 for Operations, version 1611.
-
+You can create cost elements in Cost accounting in several ways. This procedure shows how to create cost elements by importing main accounts through a data connector. This procedure uses the USMF demo company.
 
 ## Create new cost elements
-1. Go to **Cost accounting > Dimensions > Cost element dimensions**.
-2. Click **New**.
-3. In the **Name** field, type a value.
-4. In the **Data connector for dimension members** field, enter or select a value.
-5. In the **Description** field, type a value.
-6. Click **Save**.
+
+1. Go to **Cost accounting** > **Dimensions** > **Cost element dimensions**.
+1. Select **New**.
+1. Enter a name in the **Name** field.
+1. Enter or select a value in the **Data connector for dimension members** field.
+1. Enter a description in the **Description** field.
+1. Select **Save**.
 
 ## Configure the data connector
-1. Click **Configure dimension member provider**.
-2. In the **Chart of accounts** field, enter or select a value.
+
+1. Select **Configure dimension member provider**.
+1. Enter or select a value in the **Chart of accounts** field.
     * Select **Shared** to use the shared chart of accounts.  
-3. Click **New**.
-4. In the list, mark the selected row.
-    * You can apply filters to accounts to meet your criteria.  
-5. In the **From main account** field, enter or select a value.
-6. In the **To main account** field, enter or select a value.
-7. Click **OK**.
+1. Select **New**.
+1. Mark the selected row in the list.
+    * Apply filters to accounts to meet your criteria.  
+1. Enter or select a value in the **From main account** field.
+1. Enter or select a value in the **To main account** field.
+1. Select **OK**.
 
 ## Import main accounts
-1. Click **Import dimension members**.
-    * Main accounts will be imported into Cost accounting and used as cost elements.  
-2. Click **OK**.
+
+1. Select **Import dimension members**.
+    * Import main accounts into Cost accounting and use them as cost elements.  
+1. Select **OK**.
 
 ## View the imported accounts as cost elements
-1. Click **View dimension members**.
+
+1. Select **View dimension members**.
     * View the imported ledger accounts as cost elements in your business that costs can flow to.  
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
