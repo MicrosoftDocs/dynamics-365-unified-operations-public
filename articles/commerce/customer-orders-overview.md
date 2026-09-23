@@ -2,7 +2,7 @@
 title: Customer orders in point of sale (POS)
 description: Learn how to create and manage customer orders in Microsoft Dynamics 365 Commerce point of sale (POS).
 author: josaw1
-ms.date: 05/12/2026
+ms.date: 09/23/2026
 ms.topic: how-to
 ms.search.form: RetailFunctionalityProfile 
 ms.reviewer: mirao
@@ -47,50 +47,50 @@ In Commerce version 10.0.12 and later, organizations can define whether the ware
 
 When you work with customer orders in POS, consider some of the settings of the store channel. Find these settings on the **Stores** page in headquarters.
 
-- **Warehouse** – This field shows the warehouse that the system uses when decrementing inventory for cash and carry and customer pickup orders tied to this store. Use unique warehouses for each store channel to prevent conflicting business logic problems across stores.
-- **Shipping Warehouse** - This field shows the warehouse that the system uses when decrementing inventory for customer orders to ship from the selected store. If the feature **Ability to specify locations as “Shipping” or “Pickup” enabled within Fulfillment group** is enabled in your environment, POS users can choose a specific warehouse to ship from in POS, instead of choosing a store to ship from. Therefore, when that feature is enabled, the shipping warehouse is no longer used, since the user picks the specific warehouse to ship the order from when the order is created.
-- **Fulfillment group assignment** – Select this button (on the **Set up** tab on the Action Pane) to link the fulfillment groups that are referenced to show options for pickup locations or shipment origins when customer orders are created in POS.
-- **Use destination-based tax** – This option indicates whether the shipping address is used to determine the tax group that is applied to order lines that are shipped to the customer's address.
-- **Use customer-based tax** – This option indicates whether the tax group that is defined for the customer's delivery address is used to tax customer orders that are created in POS for shipment to the customer's home.
+- **Warehouse**: This field shows the warehouse that the system uses when decrementing inventory for cash and carry and customer pickup orders tied to this store. Use unique warehouses for each store channel to prevent conflicting business logic problems across stores.
+- **Shipping Warehouse**: This field shows the warehouse that the system uses when decrementing inventory for customer orders to ship from the selected store. If the feature **Ability to specify locations as “Shipping” or “Pickup” enabled within Fulfillment group** is enabled in your environment, POS users can choose a specific warehouse to ship from in POS, instead of choosing a store to ship from. Therefore, when that feature is enabled, the shipping warehouse is no longer used, since the user picks the specific warehouse to ship the order from when the order is created.
+- **Fulfillment group assignment**: Select this button (on the **Set up** tab on the Action Pane) to link the fulfillment groups that are referenced to show options for pickup locations or shipment origins when customer orders are created in POS.
+- **Use destination-based tax**: This option indicates whether the shipping address is used to determine the tax group that is applied to order lines that are shipped to the customer's address.
+- **Use customer-based tax**: This option indicates whether the tax group that is defined for the customer's delivery address is used to tax customer orders that are created in POS for shipment to the customer's home.
 
 ### Set up customer order parameters
 
 Before you try to create customer orders in POS, configure the appropriate parameters in headquarters. Find these parameters on the **Customer orders** tab of the **Commerce parameters** page.
 
-- **Default order type** – This legacy property isn't supported.
-- **Default deposit percentage** – Enter the percentage of the order total amount that the customer must pay as a deposit before an order can be confirmed. Depending on their privileges, store associates might be able to override the amount by using the **Deposit override** operation in POS, if that operation is configured for the transaction screen layout.
+- **Default order type**: This legacy property isn't supported.
+- **Default deposit percentage**: Enter the percentage of the order total amount that the customer must pay as a deposit before an order can be confirmed. Depending on their privileges, store associates might be able to override the amount by using the **Deposit override** operation in POS, if that operation is configured for the transaction screen layout.
      > [!NOTE]
      > The deposit percentage setting is ignored if a business-to-business (B2B) type customer belonging to a customer hierarchy is added to the customer order. For such customers, the default deposit percentage is always set to zero, but the cashier can override the deposit percentage by using the **Deposit override** operation.
 
-- **Pickup mode of delivery** – Enter the mode of delivery that the system should apply to sales order lines that are configured for pickup in POS.
-- **Carryout mode of delivery** – Enter the mode of delivery that the system should apply to sales order lines that are considered carryout order lines when a mixed cart is created, where some lines are picked up or shipped, and other lines are carried out by the customer immediately.
-- **Cancellation charge percentage** – If a charge should be applied when a customer order is canceled, enter the amount of that charge.
-- **Cancellation charge code** – Enter the accounts receivable charge code that the system should use when a cancellation charge is applied to canceled customer orders through POS. The charge code defines the financial posting logic for the cancellation charge.
+- **Pickup mode of delivery**: Enter the mode of delivery that the system should apply to sales order lines that are configured for pickup in POS.
+- **Carryout mode of delivery**: Enter the mode of delivery that the system should apply to sales order lines that are considered carryout order lines when a mixed cart is created, where some lines are picked up or shipped, and other lines are carried out by the customer immediately.
+- **Cancellation charge percentage**: If a charge should be applied when a customer order is canceled, enter the amount of that charge.
+- **Cancellation charge code**: Enter the accounts receivable charge code that the system should use when a cancellation charge is applied to canceled customer orders through POS. The charge code defines the financial posting logic for the cancellation charge.
      > [!NOTE]
      > When advanced auto charges features aren't enabled, create a dedicated charge code for cancellation charges instead of reusing the shipping charge code, since the latter choice might result in unexpected behavior when the system selects the sales tax group for the charge. Choose a cancellation charge code name and description that makes it clear to cashiers that the cancellation charge code is only for cancellations.
-- **Shipping charge code** – If the **Use advanced auto charges** option is set to **Yes**, this parameter setting has no effect. If that option is set to **No**, users are prompted to manually enter a shipping charge when they create customer orders in POS. Use this parameter to map an accounts receivable charge code to apply to orders when users enter a shipping charge. The charge code defines the financial posting logic for the shipping charge.
-- **Use advanced auto charges** – Set this option to **Yes** to use system-calculated auto charges when customer orders are created in POS. These auto charges can calculate shipping fees or other order or item-specific charges. For more information about how to set up and use advanced auto charges, see [Omnichannel advanced auto charges](./omni-auto-charges.md).
+- **Shipping charge code**: If the **Use advanced auto charges** option is set to **Yes**, this parameter setting has no effect. If that option is set to **No**, users are prompted to manually enter a shipping charge when they create customer orders in POS. Use this parameter to map an accounts receivable charge code to apply to orders when users enter a shipping charge. The charge code defines the financial posting logic for the shipping charge.
+- **Use advanced auto charges**: Set this option to **Yes** to use system-calculated auto charges when customer orders are created in POS. These auto charges can calculate shipping fees or other order or item-specific charges. For more information about how to set up and use advanced auto charges, see [Omnichannel advanced auto charges](./omni-auto-charges.md).
 
 ### Update transaction screen layouts in POS
 
-Make sure that you configure the POS [screen layout](./pos-screen-layouts.md) to support the creation and management of customer orders. Also, configure all required POS operations. Here are some of the POS operations that are recommended to correctly support customer order creation and management:
+Ensure that you configure the POS [screen layout](./pos-screen-layouts.md) to support the creation and management of customer orders. Also, configure all required POS operations. Here are some of the POS operations that are recommended to correctly support customer order creation and management:
 
-- **Ship all products** – Use this operation to specify that all lines in the transaction cart are shipped to a destination.
-- **Ship selected products** – Use this operation to specify that selected lines in the transaction cart are shipped to a destination.
-- **Pick up all products** – Use this operation to specify that all lines in the transaction cart are picked up from a selected store location.
-- **Pick up selected products** – Use this operation to specify that selected lines in the transaction cart are picked up from a selected store location.
-- **Carry out all products** – Use this operation to specify that all lines in the transaction cart are carried out. If you use this operation in POS, the customer order is converted to a cash-and-carry transaction.
-- **Carryout out selected products** – Use this operation to specify that selected lines in the transaction cart are being carried out by the customer at the time of purchase. This operation is useful only in a [hybrid order](./hybrid-customer-orders.md) scenario.
-- **Recall order** – Use this operation to search and retrieve customer orders so that POS users can edit, cancel, or perform fulfillment-related operations on them as required.
-- **Change mode of delivery** – Use this operation to quickly change the mode of delivery for lines that are already configured for shipment, without requiring that users go through the "ship all products" or "ship selected products" flow again.
-- **Deposit override** – Use this operation to change the deposit amount that the customer pays for the selected customer order.
+- **Ship all products**: Use this operation to specify that all lines in the transaction cart are shipped to a destination.
+- **Ship selected products**: Use this operation to specify that selected lines in the transaction cart are shipped to a destination.
+- **Pick up all products**: Use this operation to specify that all lines in the transaction cart are picked up from a selected store location.
+- **Pick up selected products**: Use this operation to specify that selected lines in the transaction cart are picked up from a selected store location.
+- **Carry out all products**: Use this operation to specify that all lines in the transaction cart are carried out. If you use this operation in POS, the customer order is converted to a cash-and-carry transaction.
+- **Carry out selected products**: Use this operation to specify that selected lines in the transaction cart are being carried out by the customer at the time of purchase. This operation is useful only in a [hybrid order](./hybrid-customer-orders.md) scenario.
+- **Recall order**: Use this operation to search and retrieve customer orders so that POS users can edit, cancel, or perform fulfillment-related operations on them as required.
+- **Change mode of delivery**: Use this operation to quickly change the mode of delivery for lines that are already configured for shipment, without requiring that users go through the "ship all products" or "ship selected products" flow again.
+- **Deposit override**: Use this operation to change the deposit amount that the customer pays for the selected customer order.
 
 :::image type="content" source="media/customer-order-screen-layout.png" alt-text="Screenshot of operations on the POS transaction screen.":::
 
 ## Work with customer orders in POS
 
 > [!NOTE]
-> Revenue recognition functionality isn't currently supported for use in Commerce channels (e-commerce, POS, call center). Don't add items configured with revenue recognition to orders created in Commerce channels. 
+> Revenue recognition functionality isn't currently supported for use in Commerce channels (e-commerce, POS, call center). Don't add items configured with revenue recognition to orders created in Commerce channels.
 
 ### Create a customer order for products that are shipped to the customer
 
@@ -148,17 +148,55 @@ When store associates perform fulfillment actions on an order (such as picking o
 
 For cash and carry transactions, the system blocks the transaction if the customer's credit limit is exceeded and the **Message when exceeding credit limit** setting in **Credit and collections parameters** is set to **Error**. This behavior remains unchanged regardless of whether credit management is enabled.
 
+### Set expedite options for customer orders in POS and release the orders to warehouse
+
+Starting in Dynamics 365 Commerce version 10.0.49, store associates can select an expedite option for a customer order directly in POS, and admins can configure orders to be sent to the warehouse for fulfillment as soon as the order is created. Use this functionality to support faster turnaround for customers who need their order shipped or picked up sooner than the standard fulfillment timeline, and to help your warehouse team prioritize rushed orders during picking.
+
+#### Turn on expedite options in POS
+
+This capability is available by default, but the POS controls are hidden until you turn them on for a store or group of stores. Configure the following settings on the **Functionality profile** page in Commerce headquarters, for the stores where you want store associates to use expedite options:
+
+- **Display expedite options on POS**: Turn on this setting to show the expedite option control in POS after a store associate selects a mode of delivery for a customer order.
+- **Trigger release to warehouse with order creation**: Select one or more expedite options that should cause the order to be released to the warehouse for fulfillment as soon as the order is created, instead of waiting for the standard order processing schedule.
+
+> [!NOTE]
+> If you don't select any expedite options for the **Trigger release to warehouse with order creation** setting, selecting an expedite option in POS won't cause the order to be released to the warehouse immediately. Instead, such orders are released either manually from the back-office or via the batch job that releases orders to the warehouse.
+
+#### Set a default expedite option for a mode of delivery
+
+You can configure a default expedite option for each mode of delivery. When a store associate selects that mode of delivery in POS, the corresponding expedite option is automatically selected. The store associate can still change the expedite option to a different value before completing the order.
+
+#### Select an expedite option in POS
+
+To select an expedite option when you create a customer order in POS, follow these steps:
+
+1. Add a customer and products to the transaction, and then select a mode of delivery (for example, ship or pick up).
+1. If an expedite option control is shown, review the default expedite option (if it's configured), or select the expedite option that applies to the order.
+1. Complete the order as usual.
+
+If the selected expedite option is configured to trigger a release to the warehouse, the order gets created in the back-office in real time, even if the store is configured to process customer orders asynchronously.
+
+#### Use expedite options to prioritize warehouse picking
+
+The expedite option selected on a customer order is available on the Warehouse Management mobile app (WMS app). Warehouse teams can use this information to adjust picking priority so that rushed or expedited orders move higher on the picking work list, ahead of standard orders. This feature helps ensure that the orders your customers are waiting on sooner are fulfilled sooner, without requiring warehouse staff to manually search for or flag urgent orders.
+
+> [!NOTE]
+>
+> - To take advantage of this feature, your warehouse operations team must configure work creation and prioritization rules in Warehouse Management to account for the expedite option. Work with your warehouse implementation team to set up prioritization based on expedite options.
+>
+> - There's an existing field called **MCR Expedite** which is used for saving the expedite option on the call center orders. However, you can't use this property for SCM sales orders or POS orders and hence, a new **Expedite** property has been introduced on the sales order. This new **Expedite** field gets updated when you create orders from POS. So, this new property can have a different value than the **MCR Expedite** field. If you currently use the existing **MCR Expedite** field for any downstream business processes, review your configuration before you turn on this feature. The **MCR Expedite** field will be retired in future releases. So, if your business depends on these fields matching, then you would need to implement customization to keep these in sync. Also, contact Microsoft to discuss your scenario, to evaluate enabling additional downstream business processes to this new **Expedite** field.
+
 ### Edit an existing customer order
 
 You can recall and edit retail orders created in either the online or store channel through POS as required.
 
 > [!IMPORTANT]
-> Not all retail orders can be edited through the POS application. If the [Enable order completion](./set-up-order-processing-options.md#enable-order-completion) setting is turned on for the call center channel, orders that are created in a call center channel can't be edited through POS. To ensure correct payment processing, orders that originated in a call center channel and that use **Enable order completion** functionality must be edited through the call center application in headquarters.
+> You can't edit all retail orders through the POS application. If the [Enable order completion](./set-up-order-processing-options.md#enable-order-completion) setting is turned on for the call center channel, orders created in a call center channel can't be edited through POS. To ensure correct payment processing, orders that originated in a call center channel and that use **Enable order completion** functionality must be edited through the call center application in headquarters.
 
 > [!NOTE]
-> Microsoft recommends that you don't edit orders and quotations in POS created by a non-call center user in headquarters. Those orders and quotes don't use the Commerce pricing engine, so if they're edited in POS, the Commerce pricing engine reprices them.
+> Microsoft recommends that you don't edit orders and quotations in POS created by a non-call center user in headquarters. Those orders and quotes don't use the Commerce pricing engine. So, if they're edited in POS, the Commerce pricing engine reprices them.
 
-Users can edit eligible orders through the POS application even if the order is partially fulfilled. However, orders that are fully invoiced still can't be edited through POS. To enable this capability, turn on the **Edit partially fulfilled orders in Point of Sale** feature in the **Feature management** workspace. If this feature isn't enabled, or if you're using version 10.0.16 or earlier, users can only edit customer orders in POS if the order is fully open. Further, if the feature is enabled, you can limit which stores can edit partially fulfilled orders. You can also configure the option to disable this capability for specific stores through the **Functionality profile** under the **General** tab.
+Users can edit eligible orders through the POS application even if the order is partially fulfilled. However, orders that are fully invoiced still can't be edited through POS. To enable this capability, turn on the **Edit partially fulfilled orders in Point of Sale** feature in the **Feature management** workspace. If this feature isn't enabled, or if you're using version 10.0.16 or earlier, users can only edit customer orders in POS if the order is fully open. If the feature is enabled, you can limit which stores can edit partially fulfilled orders. You can also configure the option to disable this capability for specific stores through the **Functionality profile** under the **General** tab.
 
 1. Select **Recall order**.
 1. Use **Search** to enter filters to find the order, and then select **Apply**.
@@ -192,7 +230,7 @@ To cancel a customer order, follow these steps:
 1. Select **Recall order**.
 1. Use **Search** to enter filters to find the order, and then select **Apply**.
 1. Select the order in the list of results, and then select **Cancel**. If the **Cancel** button is unavailable, the order is in a state where it can't be canceled.
-1. If cancellation charges are configured, confirm them. You can adjust the cancellation charges before you confirm them, as required. 
+1. If cancellation charges are configured, confirm them. You can adjust the cancellation charges before you confirm them, as required.
 1. From the transaction cart, complete the cancellation process by selecting a payment operation. If deposits that you paid exceed the cancellation charge, refund payments might be due.
 1. To exit the cancellation process without saving any changes, use the **Void transaction** operation.
 
