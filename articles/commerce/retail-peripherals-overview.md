@@ -3,7 +3,7 @@ title: Connect peripherals to POS in Commerce
 description: This article provides an overview of the concepts related to Microsoft Dynamics 365 Commerce peripherals.
 author: anush6121
 ms.author: anvenkat
-ms.date: 09/11/2026
+ms.date: 09/23/2026
 ms.topic: overview
 ms.reviewer: mirao
 ms.search.region: Global
@@ -141,7 +141,7 @@ Commerce supports the OPOS industry standard as the primary peripheral device pl
 - **Control object**: The control object for a device class (such as line displays) provides the interface for the software program. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) provides a standardized set of OPOS control objects that are known as the common control objects (CCOs). The CCOs are used to test the POS component of Commerce. The testing helps guarantee that if Commerce supports a device class through OPOS, many device types are supported if the manufacturer provides a service object built for OPOS. You don't have to explicitly test each device type.
 - **Service object**: The service object provides communication between the control object (CCO) and the device. Typically, the device manufacturer provides the service object for a device. However, in some cases, you might have to download the service object from the manufacturer's website. For example, a more recent service object might be available. To find the address of the manufacturer's website, see your hardware documentation.
 
-:::image type="content" source="./media/retail_peripherals_overview01.png" alt-text="Screenshot of control object and service object.":::
+:::image type="content" source="./media/retail_peripherals_overview01.png" alt-text="Screenshot of control object and service object." lightbox="./media/retail_peripherals_overview01.png":::
 
 Support for the OPOS implementation of OLE for POS helps guarantee that, if the device manufacturers and POS publishers implement the standard correctly, POS systems and supported devices can work together, even if they weren't previously tested together.
 
@@ -184,14 +184,22 @@ To use an Adyen payment terminal as a receipt printer, complete the following se
 1. Configure the Adyen payment connector and a supported Adyen payment terminal for the store.
 1. Ensure that the payment terminal has an integrated printer and is configured for receipt printing.
 1. Add a printer with the **Network** type in the hardware profile that's assigned to the POS register.
-1. Enter **`MicrosoftAdyenDeviceV001`** in the **Device name** field in the printer configuration.
-1. Configure the same Adyen payment terminal as the **PIN pad** in the hardware profile.
-1. Configure the receipt formats that you want Commerce to use for the POS register.
+     1. Enter "MicrosoftAdyenDeviceV001" in the **Device name** field in the printer configuration.
+     1. Set the **Receipt profile ID** such that it triggers the receipt printing that you want to print.
+     1. Modify the receipt formats to meet the column requirements of the integrated printer on Adyen. You need to adjust the width of the receipts to meet the printer limits.
+1. Configure the same Adyen payment terminal as the **PIN pad** in the hardware profile. This step ensures that the payment terminal that you use for capturing payments also initiates the receipt printing.
+1. Navigate to the register that uses this hardware profile and open the **Configure IP address** form.
+     1. Under the **Printer** section, select the **Network** type printer and use the same **Receipt profile ID** as selected in the hardware profile.
+     1. Set the serial number or IP address of the payment terminal in the **IP address** field.
+     1. Enter "MicrosoftAdyenDeviceV001" in the **Device name** field in the printer configuration.
+1. Under the PIN pad section, set up the same payment terminal IP address or serial number so that the payment capture uses this payment terminal.
 
 When POS generates a receipt, Commerce sends the receipt to the configured Adyen payment terminal for printing.
 
 > [!NOTE]
 > Receipt printing is available only for Adyen payment terminals that include an integrated printer. Contact Adyen for information about supported terminal models and terminal printer configuration.
+
+:::image type="content" source="media/Payments/adyen-printer.png" alt-text="Enable printing on the Adyen printer." lightbox="media/Payments/adyen-printer.png":::
 
 ## Hardware station deployment options
 
