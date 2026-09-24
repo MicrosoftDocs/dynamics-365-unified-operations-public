@@ -4,7 +4,7 @@ description: This article describes how to complete the prerequisites for Busine
 author: damienmaspero
 ms.author: damienma
 ms.topic: article
-ms.date: 08/27/2026
+ms.date: 09/23/2026
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
@@ -142,6 +142,9 @@ Before you install Business performance analytics, set up the following configur
         - **Project**
         - **Service management**
         - **Trade** – Charges, Invoice matching, Transfer orders, Warehouse and Transportation management
+
+> [!IMPORTANT]
+> Business performance analytics requires the **SQL row version change tracking (preview)** feature as it depends on the Dynamics 365 Finance and Operations virtual entities solution. If you have customizations, ISV integrations, or environment-specific flights that disable SQL row version change tracking for Finance and Operations virtual entities, Business performance analytics installation might fail. Before you install Business performance analytics, confirm that SQL row version change tracking is enabled and that no customization or ISV-required configuration disables it. If an ISV integration requires SQL row version change tracking to be disabled, contact Microsoft support before you install Business performance analytics. For more information, see [Allow Row version change tracking for tables and data entities](../../fin-ops-core/dev-itpro/data-entities/rowversion-change-track.md).
 
 #### Required configurations in Power Platform Admin Center
 
