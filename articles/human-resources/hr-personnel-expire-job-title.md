@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Expire jobs and titles (preview)
+title: Expire jobs and titles
 description: This article describes how jobs and titles can be expired. 
 author: ramagadu
 ms.date: 11/25/2025
@@ -22,20 +22,18 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-# Expire jobs and titles (preview)
+# Expire jobs and titles
 
 [!INCLUDE [banner](../includes/banner.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 ## Overview
 
 As organizations evolve, certain jobs and job titles become obsolete. To help HR teams maintain clean data and reduce clutter, Dynamics 365 Human Resources lets you expire jobs and job titles. Expired items are removed from selection lists for new assignments while their historical records remain available for reporting and compliance.
-To expire jobs and job titles, enable the **Ability to expire jobs, and job titles (preview)** feature in Feature management.  
+To expire jobs and job titles, enable the **Ability to expire jobs, and job titles** feature in Feature management.  
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ### Key benefits
 
