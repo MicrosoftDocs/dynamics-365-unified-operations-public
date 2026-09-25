@@ -23,6 +23,16 @@ In Commerce version 10.0.10 and later, you can turn off real-time service calls 
 
 When you correctly configure and manage channel-side calculation, it provides a more reliable estimate of current store inventory. It uses transactional data that's in the Commerce channel database but that Commerce headquarters might not yet have information about. For example, if you use the existing real-time service call for inventory lookups in POS, Commerce headquarters probably doesn't yet have information about a cash-and-carry sale that just occurred for a product. Therefore, the on-hand inventory value that Commerce headquarters returns for that product probably exceeds the store's actual on-hand inventory by one unit. However, if you use channel-side calculation, the cash-and-carry sale factors into the calculation and deducts from the on-hand value shown. Although the values that both the channel-side calculation and the real-time service call provide are only estimates of on-hand inventory, the value that the channel-side calculation provides is much more likely to be accurate for the current store.
 
+## Example scenario: Reducing oversell risk from offline sales in a multichannel operation
+
+In retail operations that combine physical and online sales, inventory discrepancies often originate from transactions that occur outside the online channel. A common example is a walk-in or phone-based sale that is processed at the store level but not yet reflected in Commerce headquarters, because of the synchronization interval of the 1130 job.
+
+Consider a retailer that has 10 units of a product in stock. A walk-in customer purchases three units, and the transaction is recorded in the local point of sale (POS) database. Until the next headquarters sync runs, the central system still shows 10 units available. During this window, an online customer who is browsing the e-commerce site also sees 10 units and places an order for eight. The result is an oversell of one unit. This oversell leads to a canceled order and a customer refund. If the sale originated from a third-party marketplace, it can also damage the seller's marketplace rankings.
+
+When channel-side calculation is enabled, the local POS transaction is factored into the inventory count immediately, without waiting for headquarters synchronization. The online channel reads from the local channel database and shows seven units available. The eight-unit order is blocked before it's placed. Therefore, the oversell is prevented entirely.
+
+This approach is especially valuable for retailers that process manual or offline orders alongside their online channels. When a manual order is created and confirmed, the stock reduction is reflected in the local channel database right away. Online customers see an updated inventory count before the next headquarters sync runs. In this way, stock levels stay accurate across all customer touchpoints, and real-time service calls to headquarters aren't required.
+
 ## Configure POS inventory lookup to use channel-side calculation
 
 > [!NOTE]
