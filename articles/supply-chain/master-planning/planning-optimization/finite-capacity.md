@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ReqParameters, ReqPlanSched, WrkCtrTable
 ms.topic: how-to
-ms.date: 07/21/2025
+ms.date: 09/23/2026
 ms.custom:
   - bap-template
 ---
@@ -21,6 +21,26 @@ Finite capacity planning and scheduling creates a more realistic schedule for th
 
 > [!NOTE]
 > Finite capacity planning and scheduling works in nearly the same way, regardless of whether you use Planning Optimization or the deprecated master planning engine. However, Planning Optimization doesn't use the **Bottleneck time** fence parameter. When you use Planning Optimization, bottleneck resources are always scheduled by using the same time fence as non-bottleneck resources (as indicated by the finite capacity time fence).
+
+## Production-order sequencing with finite capacity
+
+Planning Optimization can schedule multiple planned production orders in parallel. When those orders compete for the same finite-capacity resource, scheduling tasks reserve capacity independently. The task that reserves capacity first determines which production order gets the earlier time slot. Planning Optimization doesn't guarantee requirement-date order or planning-priority order.
+
+For example, two planned production orders require the same machine:
+
+- Order A has an earlier requirement date and a higher planning priority.
+- Order B has a later requirement date and a lower planning priority.
+
+Because the orders can be scheduled in parallel, Order B might reserve the earlier available capacity. The production scheduling sequence can therefore differ from requirement-date order and planning-priority order. From a user's perspective, the sequence is non-deterministic. Don't rely on demand priority to determine which production order gets capacity first.
+
+The following terms describe different parts of planning:
+
+- **Demand priority** – The importance assigned to a demand line.
+- **Replenishment priority** – The priority used to plan supply that fulfills demand. Priority-based planning uses this priority to determine replenishment or order-fulfillment priority.
+- **Requirement date** – The date when the demand or supply is required. Planned production orders are backward-scheduled from this date.
+- **Production scheduling sequence** – The order in which production orders are scheduled and reserve finite capacity.
+
+Planning priority doesn't control the production scheduling sequence. Learn more about the scope of planning priority in [Priority-based planning](priority-based-planning.md#planning-priority-and-production-scheduling).
 
 ## Set up finite capacity functionality
 
