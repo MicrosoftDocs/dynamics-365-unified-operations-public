@@ -2934,6 +2934,12 @@
                           href: localizations/france/emea-fra-e-reporting-details.md
                         - name: Seller and Buyer identification (CompanyId) in French e-reporting
                           href: localizations/france/emea-fra-e-reporting-companyid.md
+                        - name: Set up and use the EDICOM integration for France e-Reporting
+                          href: localizations/france/emea-fra-e-reporting-edicom-integration-guide.md
+                        - name: Use France e-reporting in Dynamics 365 Finance to submit using EDICOM connection
+                          href: localizations/france/emea-fra-e-reporting-edicom-submission.md
+                        - name: Report numbering and identifiers in French e-reporting
+                          href: localizations/france/emea-fra-e-reporting-report-numbering.md
                     - name: EU sales list
                       href: localizations/france/emea-fra-eu-sales-list.md
                     - name: French Intrastat
