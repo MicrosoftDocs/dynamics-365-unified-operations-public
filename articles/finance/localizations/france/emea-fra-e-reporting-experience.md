@@ -4,7 +4,7 @@ description: Learn how to report electronically transaction in France.
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 09/02/2026
+ms.date: 09/28/2026
 ms.custom:
   - bap-template
 ms.reviewer: johnmichalak 
@@ -17,6 +17,15 @@ ms.dyn365.ops.version: Version 7.0.0
 # How to use France e-reporting in Dynamics 365 Finance
 
 [!INCLUDE [banner](../../includes/banner.md)]
+
+This article describes how to work with France e-reporting in Dynamics 365 Finance. It walks you through the step-by-step experience of collecting the transactions and payments for a reporting period, generating (and, when needed, regenerating) the France e-reporting document, reviewing the results, and completing the reporting for the period. Each generated document is represented as one electronic message that contains the data for a single reporting period and direction.
+
+After the document is generated, you have different options to submit it to the French tax authorities:
+
+- **Submit directly from Dynamics 365 Finance through the EDICOM connection.** You send the document to the tax authorities without leaving the application, and the status is updated automatically based on the authority's response. For this flow, see [How to use France e-reporting in Dynamics 365 Finance to submit using EDICOM connection](emea-fra-e-reporting-edicom-submission.md).
+- **Submit by another means.** You transmit the generated document to the tax authorities through a channel of your choice. This channel isn't described in this article.
+
+The flow in this article finishes when the document is generated. If you submit by another means, you then manually change the electronic message status to submitted to record that the e-report was transmitted.
 
 You run the France e‑reporting process through the [Electronic messages](../../general-ledger/electronic-messaging-setup.md) framework. This process is a sequence of actions that you can use to:
 
@@ -46,18 +55,18 @@ The reporting process typically follows these steps:
 
 The following actions are available in the France e‑reporting process:
 
-| Action name                              | Description                                                                 | Parameters | Initial statuses | Result statuses |
-|------------------------------------------|-----------------------------------------------------------------------------|------------|------|------------|
-| FR-eRep Populate Report Data             | Collects transaction and payment data and creates message items             | Action type: Message item execution level<br> Executable class: FR-eRep PopulateMessageItems | - | <li>FR-eRep Payment Entry Created</li><li>FR-eRep Transaction Entry Created</li> |
-| FR-eRep Exclude Transaction Entry        | Excludes a transaction entry from the reporting process                     | Action type: User processing | <li>FR-eRep Transaction Entry Created</li><li>FR-eRep Transaction Entry Pending</li>| <li>FR-eRep Transaction Entry Excluded</li> |
-| FR-eRep Exclude Payment Entry            | Excludes a payment entry from the reporting process                         | Action type: User processing | <li>FR-eRep Payment Entry Created</li><li>FR-eRep Payment Entry Pending</li>| <li>FR-eRep Payment Entry Excluded</li> |
-| FR-eRep Reactivate Transaction Entry     | Restores a previously excluded transaction entry                            | Action type: User processing | <li>FR-eRep Transaction Entry Excluded</li>| <li>FR-eRep Transaction Entry Created</li> |
-| FR-eRep Reactivate Payment Entry         | Restores a previously excluded payment entry                                | Action type: User processing | <li>FR-eRep Payment Entry Excluded</li>| <li>FR-eRep Payment Entry Created</li> |
-| FR-eRep Generate Transactions Report     | Generates a report containing only transaction data                         | Action type: Message execution level<br> Format mapping: e-Reporting XML (FR)<br> Executable class: FR-eRep GenerateReportFile<br>Show dialog: No<br>Hide action class parameters: Yes  | <li>FR-eRep Transaction Report Created</li><li>FR-eRep Transaction Report Pending</li><li>FR-eRep Report Generated</li><li>FR-eRep Report Submitted</li> | <li>FR-eRep Report Generated (Successfully executed)</li><li>FR-eRep Report Generation Failed (Technical error)</li><li>FR-eRep Transaction Report Excluded (Cancel)</li><li>FR-eRep Transaction Report Pending (Business error)</li> |
-| FR-eRep Generate Payments Report         | Generates a report containing only payment data                             | Action type: Message execution level<br> Format mapping: e-Reporting XML (FR)<br> Executable class: FR-eRep GenerateReportFile<br>Show dialog: No<br>Hide action class parameters: Yes  | <li>FR-eRep Payment Report Created</li><li>FR-eRep Payment Report Pending</li><li>FR-eRep Report Generated</li><li>FR-eRep Report Submitted</li> | <li>FR-eRep Report Generated (Successfully executed)</li><li>FR-eRep Report Generation Failed (Technical error)</li><li>FR-eRep Payment Report Excluded (Cancel)</li><li>FR-eRep Payment Report Pending (Business error)</li> |
-| FR-eRep Generate Full Report             | Generates a complete report including both transactions and payments        | Action type: Message execution level<br> Format mapping: e-Reporting XML (FR)<br> Executable class: FR-eRep GenerateReportFile<br>Show dialog: No<br>Hide action class parameters: Yes  | <li>FR-eRep Transaction Report Created</li><li>FR-eRep Transaction Report Pending</li><li>FR-eRep Payment Report Created</li><li>FR-eRep Payment Report Pending</li><li>FR-eRep Report Generated</li><li>FR-eRep Report Submitted</li> | <li>FR-eRep Report Generated (Successfully executed)</li><li>FR-eRep Report Generation Failed (Technical error)</li><li>FR-eRep Transaction Report Excluded (Cancel)</li><li>FR-eRep Transaction Report Pending (Business error)</li><li>FR-eRep Payment Report Excluded (Cancel)</li><li>FR-eRep Payment Report Pending (Business error)</li> |
-| FR-eRep Regenerate Report File           | Regenerates the report after data changes or corrections                    | Action type: Electronic reporting export message<br>Format mapping: e-Reporting XML (FR)<br>Show dialog: No | <li>FR-eRep Report Generated</li><li>FR-eRep Report Generation Failed</li><li>FR-eRep Report Submitted</li> | <li> FR-eRep Report Generated (Successfully executed) </li><li> FR-eRep Report Generation Failed (Technical error)</li> |
-| FR-eRep Mark Report as Submitted         | Marks the report as submitted after completion of the reporting process     | Action type: Message level user processing | <li>FR-eRep Report Generated | <li>FR-eRep Report Submitted |
+| Action name                              | Description                                                                 | Parameters |
+|------------------------------------------|-----------------------------------------------------------------------------|------------|
+| FR-eRep Populate Report Data             | Collects transaction and payment data and creates message items             | Action type: Message item execution level<br> Executable class: FR-eRep PopulateMessageItems |
+| FR-eRep Exclude Transaction Entry        | Excludes a transaction entry from the reporting process                     | Action type: User processing |
+| FR-eRep Exclude Payment Entry            | Excludes a payment entry from the reporting process                         | Action type: User processing |
+| FR-eRep Reactivate Transaction Entry     | Restores a previously excluded transaction entry                            | Action type: User processing |
+| FR-eRep Reactivate Payment Entry         | Restores a previously excluded payment entry                                | Action type: User processing |
+| FR-eRep Generate Transactions Report     | Generates a report containing only transaction data                         | Action type: Message execution level<br> Format mapping: e-Reporting XML (FR)<br> Executable class: FR-eRep GenerateReportFile<br>Show dialog: No<br>Hide action class parameters: Yes  |
+| FR-eRep Generate Payments Report         | Generates a report containing only payment data                             | Action type: Message execution level<br> Format mapping: e-Reporting XML (FR)<br> Executable class: FR-eRep GenerateReportFile<br>Show dialog: No<br>Hide action class parameters: Yes  |
+| FR-eRep Generate Full Report             | Generates a complete report including both transactions and payments        | Action type: Message execution level<br> Format mapping: e-Reporting XML (FR)<br> Executable class: FR-eRep GenerateReportFile<br>Show dialog: No<br>Hide action class parameters: Yes  |
+| FR-eRep Regenerate Report File           | Regenerates the report after data changes or corrections                    | Action type: Message execution level<br> Format mapping: e-Reporting XML (FR)<br> Executable class: FR‑eRep RegenerateReportFile<br>Show dialog: No<br>Hide action class parameters: Yes |
+| FR-eRep Mark Report as Submitted         | Marks the report as submitted after completion of the reporting process     | Action type: Message level user processing |
 
 ## Action flow details
 
@@ -70,8 +79,8 @@ To populate data, follow these steps:
 1. In Finance, go to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic message items**.
 1. On the Action Pane, select **Run processing**.
 1. In the dialog, in the **Processing** field, select **FR e-Reporting**.
-1. Select the **Choose action** checkbox, and then, in the **Action** field, select the **FR-eRep Populate Report Data** action.
-1. Expand the **Run in the background** FastTab and specify the **Recurrence** settings for the **FR-eRep Populate Report Data** action. For example, if you want the system to collect data for e-reporting on a daily basis, define the recurrence pattern as every weekday.
+1. Select the **Choose action** checkbox. In the **Action** field, select the **FR-eRep Populate Report Data** action.
+1. Expand the **Run in the background** FastTab and specify the **Recurrence** settings for the **FR-eRep Populate Report Data** action. For example, if you want the system to collect data for e-reporting daily, set the recurrence pattern to every weekday.
 1. Select the **Batch processing** checkbox to execute the **FR-eRep Populate Report Data** action in the background according to the defined recurrence settings.
 
 ### Review e-reporting entries
@@ -83,7 +92,7 @@ After data is populated, you can control which records are included in the repor
 
 To review e-reporting entries, follow these steps:
 
-1. In Finance, go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic message items**.
+1. In Finance, go to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic message items**.
 1. On the **Action** pane, select **Update status**.
 1. In the dialog, in the **Processing** field, select **FR e-Reporting**.
 1. In the **Action** field, select relevant action.
@@ -130,7 +139,7 @@ The system includes message items in a generated file only when their reporting 
 
 To generate reports, follow these steps:
 
-1. In Finance, go to **Tax \> Inquiries and reports \> Electronic messages \> Electronic message items**.
+1. In Finance, go to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic message items**.
 1. On the Action Pane, select **Run processing**.
 1. In the dialog, in the **Processing** field, select **FR e-Reporting**.
 1. Select the **Choose action** checkbox, and then, in the **Action** field, select one of the actions: **FR-eRep Generate Full Report**, **FR-eRep Generate Transactions Report**, or **FR-eRep Generate Payments Report**.
@@ -155,6 +164,11 @@ To regenerate reports, follow these steps:
 When you generate an XML file for the FR e-Reporting, you attach it to the electronic message. To view the file, select the electronic message, and select the **Attachments** button (paper clip symbol) in the upper-right corner of the page. On the **Attachments for Message** page, select the attachment, and then, on the Action Pane, select **Open**.
 
 ### Finalize reporting
+
+The steps in this section apply when you submit the generated e-report to the tax authorities outside of Dynamics 365 Finance, through a channel of your choice. After you transmit the e-report, you manually change the electronic message status to submitted to record that the reporting for the period is complete.
+
+> [!NOTE]
+> If you use the direct submission integration with EDICOM, you don't finalize the reporting manually. Instead, you submit the generated e-report to the French tax authorities directly from Finance, and the status is updated automatically based on the authority's response. To continue with the direct submission flow, see [How to use France e-reporting in Dynamics 365 Finance to submit using EDICOM connection](emea-fra-e-reporting-edicom-submission.md).
 
 Use **FR-eRep Mark Report as Submitted** to complete the process. This action changes the electronic message status to **FR-eRep Report Submitted**, indicating that the report is successfully submitted to the French tax authorities through an approved intermediary platform.
 
