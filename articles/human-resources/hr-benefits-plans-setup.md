@@ -3,8 +3,8 @@
 
 title: Create a benefits plan
 description: This article shows how to set up benefit plans in Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 05/14/2026
+author: ramagadu
+ms.date: 09/24/2026
 ms.topic: how-to
 # optional metadata
 
@@ -17,7 +17,8 @@ audience: Application User
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anisagrawal
+ms.author: ramagadu
+ms.reviewer: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
@@ -70,6 +71,7 @@ This article shows how to set up benefit plans in Dynamics 365 Human Resources.
    | Savings (for example, 401(k)) | Employer match | Specifies whether the employer contributes to an employee savings plan. |
    | Savings (for example, 401(k)) | Employer match percent | The percentage of an employee contribution that the employer matches. |
    | Savings (for example, 401(k)) | Employer match cap | The maximum percentage the employer matches. For example, if an employer matches 100% of employee contributions up to 6% of the employee’s pay, the employer match cap is 6%. |
+   | Savings (for example, 401(k))<br><br>FSA | Allow ongoing contribution changes | Allows future-dated contribution changes for this plan throughout the benefit period without re-enrollment. This option is available only when the **Enable ongoing benefit contribution changes** feature is turned on in Feature management. The default value is **No**. For more information, see [Change HSA and savings plan contributions during the year](hr-benefits-change-contributions.md). |
 
 1. On the **Setup** tab, enter values for the following fields:
 
@@ -84,7 +86,7 @@ This article shows how to set up benefit plans in Dynamics 365 Human Resources.
    | **Vendor account** (Benefit supplier) | The vendor that the company pays premiums to for the plan. |
    | **Name** (Benefit supplier) | The name of the vendor. |
    | **Vendor reference** (Benefit supplier) | The vendor’s reference for the plan. For example, the company’s group plan number. |
-   | **Alternate reference** (Benefit supplier) | The vendor’s alternate reference for the plan. For example, the company’s account number. |
+   | **Alternate reference** (Benefit supplier) | The vendor’s alternate reference for the plan, such as the company’s account number. |
    | **Currency** (Benefit supplier) | The currency that you use to pay premiums to the supplier. |
    | **Expense account** (Benefit supplier) | The general ledger account that you use as the expense account for plan premiums. |
    | **Vendor account** (Benefit administrator) | The vendor the company pays to administrate the plan. If the plan is self-administered, leave this field blank. |
@@ -123,7 +125,7 @@ You can view the workers who are enrolled in a selected benefit plan.
 
 ## Attach coverage options
 
-You can add coverage options to the selected benefits plan. Attaching coverage options brings the rate and deduction setup together for a coverage option. Example: For a medical plan, the user would select a Family coverage option. They would then need to select the Family rate for the associated plan (set in Rate setup) and the deduction for the associated plan (set in Rate setup). This provides the cost for the employer and employee for a selected coverage. Then you would repeat the process for an Employee+1 coverage or Employee coverage.
+You can add coverage options to the selected benefits plan. Attaching coverage options brings the rate and deduction setup together for a coverage option. For example, for a medical plan, select a Family coverage option. Then select the Family rate for the associated plan (set in Rate setup) and the deduction for the associated plan (set in Rate setup). This setup provides the cost for the employer and employee for a selected coverage. Repeat the process for an Employee+1 coverage or Employee coverage.
 
 1. In the **Benefits management** workspace, under **Plans**, select **Benefit plans**.
 1. On the **Benefits** tab in the navigation bar, select **Attach coverage options**.
