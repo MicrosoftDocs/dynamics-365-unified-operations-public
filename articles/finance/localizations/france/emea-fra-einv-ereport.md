@@ -4,7 +4,7 @@ description: Learn how to work with Electronic invoicing for France in Microsoft
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
-ms.date: 09/11/2026
+ms.date: 09/29/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -136,7 +136,7 @@ To configure the application-specific parameters, follow these steps:
 
 ## Configure the electronic invoicing features
 
-The **French electronic invoice (FR)** and **French electronic invoice status (FR)** features publish some parameters with default values. Before you deploy the features, review the default values and update them so they reflect your business operations.
+The **French electronic invoice (FR)** and **French electronic invoice status (FR)** features publish parameters with default values. Before you deploy the features, review the default values and update them so they reflect your business operations.
 
 To review and update the **French electronic invoice (FR)** feature configuration, follow these steps:
 
@@ -487,24 +487,30 @@ Set up units of measure.
 
 1. Go to **Organization administration** > **Setup** > **Units** > **Units**.
 1. Select a unit ID, and then select **External codes**.
-1. On **External codes**, in **Overview**, enter the unit ID in the **Code** column.
-1. Select the check box in the **Standard code** column.
+1. On **External codes**, in **Overview**, enter the same unit ID in the **Code** column.
+1. In the **External code definition** column, add a meaningful description and select the check box in the **Standard code** column.
 1. In the **Value** section, enter the external code from the [UNECE Recommendation 20 code list](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/) in the **Value** field.
 
    > [!NOTE]
    > If no specific unit of measure applies, the system uses the default value **EA**.
 
-## Configure sales tax codes
+## Configure sales tax codes and exempt codes
 
 1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax codes**.
 1. Select a sales tax code. On the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
-1. In the **Overview** section, create a line for the selected unit. Enter the sales tax code from step 2 in the **External code** field.
+1. In the **Overview** section, create a line for the selected sales tax code. Enter the sales tax code from step 2 in the **External code** field.
+1. In the **External code definition** column, add a description. Select the checkbox in the **Standard code** column.
 1. In the **Value** section, enter an external code according to the [Duty or tax or fee category code (Subset of UNCL5305)](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5305/) in the **Value** field.
-1. Go to **Tax** \> **Setup** \> **Sales tax** \> **Sales tax exempt codes**.
-1. Define exempt codes that you use for nontaxable, zero-rated, or exempted operations.
-
+1. Save your changes.
+1. Go to **Tax** > **Setup** > **Sales tax** > **Sales tax exempt codes**.
+1. Select an existing exempt code or create a new one. On the Action Pane, select **External codes**.
+1. In the **Overview** section, create a new line. In the **Code** column, enter the **VATEX** value exactly as shown. This value defines the set of external codes for sales tax exempt codes that you use in both E-invoicing and E-reporting for all internal exempt codes you configure in Microsoft Dynamics 365 Finance. If you already have the **VATEX** code defined, skip this step.
+1. In the **External code definition** column, add a description.
+1. In the **Value** section, enter an external code for the selected exempt code according to the official categorization introduced in France, such as *VATEX-FR-298SEXDECIESA*, in the **Value** field. 
 > [!NOTE]
-> The exempt codes can have any value that your company uses internally, but the **Description** field must contain the standardized tax exemption code according to the official categorization introduced in France, such as *VATEX-FR-298SEXDECIESA*. The value from the **Description** field is used as **Tax Exemption Reason** when generating the output XML files for electronic invoices.
+> The exempt codes' external codes are used when populating the **TaxExemptionReasonCode** XML elements. Sales tax exempt codes descriptions are used for populating the related informative **TaxExemptionReason** XML elements.
+> 
+> If you don't define external codes for exempt codes, the **TaxExemptionReasonCode** XML elements aren't generated. Only sales tax exempt codes descriptions are used for populating the **TaxExemptionReason** XML elements.
 
 ## Issue electronic invoices
 
@@ -532,8 +538,8 @@ Check the submission results at **Organization administration** > **Periodic** >
 
 The following types of invoices are processed during the submission.
 
-- Invoices based on Sales orders - electronic invoices of **380** type are generated.
-- Credit notes based on Sales orders - electronic invoices of **381** type are generated.
+- Invoices based on sales orders - electronic invoices of **380** type are generated.
+- Credit notes based on sales orders - electronic invoices of **381** type are generated.
 - Free text invoices - electronic invoices of **380** type are generated.
 - Free text credit notes - electronic invoices of **381** type are generated.
 - Project invoices - electronic invoices of **380** type are generated.

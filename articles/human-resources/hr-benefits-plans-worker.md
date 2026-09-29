@@ -3,8 +3,8 @@
 
 title: Create worker benefit plans
 description: This article describes how to create, select, and confirm worker benefit plans in Microsoft Dynamics 365 Human Resources.
-author: twheeloc
-ms.date: 05/14/2026
+author: ramagadu
+ms.date: 09/24/2026
 ms.topic: how-to
 # optional metadata
 
@@ -17,7 +17,8 @@ audience: Application User
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anisagrawal
+ms.author: ramagadu
+ms.reviewer: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
@@ -49,5 +50,9 @@ Create worker benefit plans in Microsoft Dynamics 365 Human Resources to select 
    | Plans | The **Plans** FastTab contains the plans that meet the filter criteria you specified. The relevant configuration options that HR staff set and the enrollment selections that employees choose are included on each line. The **Qualified** field specifies whether there's a validation conflict with the plan selection. |
 
 1. Select **Save**.
+
+## Change contributions during the year
+
+If you turn on the **Enable ongoing benefit contribution changes** feature, you can change the employee contribution for a confirmed Savings or FSA enrollment during the benefit period. On the **Plans** FastTab, select the enrollment, and then select **Change contribution** in the action pane above the grid. The system ends the current enrollment record and creates a new enrollment record with the new contribution amount from the effective date. For more information, see [Change HSA and savings plan contributions during the year](hr-benefits-change-contributions.md).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -755,6 +755,8 @@ items:
             href: hr-benefits-plans-worker.md
           - name: Prorate the employee contribution amount  
             href: prorate-contributions.md
+          - name: Change health savings account and savings plan contributions during the year
+            href: hr-benefits-change-contributions.md
           - name: Set up future life events
             href: hr-benefits-plans-future-life-events.md
           - name: Set up flex credit programs

@@ -4187,7 +4187,7 @@
             href: warehousing/consolidate-shipments-load-planning-workbench.md
           - name: Scenario 4 - Consolidate shipments by using the shipment consolidation workbench
             href: warehousing/consolidate-shipments-manual-workbench.md
-          - name: Scenario 5 - Consolidate shipments manually by using the Consolidate shipments page
+          - name: Scenario 5 - Manually consolidate shipments by using the Consolidate shipments page
             href: warehousing/consolidate-shipments-manual-form.md
         - name: Wave creation and processing
           href: warehousing/wave-processing.md
