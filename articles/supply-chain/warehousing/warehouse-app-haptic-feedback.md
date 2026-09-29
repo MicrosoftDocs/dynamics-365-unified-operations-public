@@ -44,6 +44,8 @@ Wearable devices from ProGlove are the first to be specifically supported with h
 
 The app is built to support a growing ecosystem of smart wearables. Future updates will continue to add support for other hardware partners, freeing you to choose the devices that best fit your operational needs.
 
+If you're a hardware provider building a two-way integration that receives warehouse forms and sends user input, see [Integrate hardware with the Warehouse Management mobile app](warehouse-app-hardware-integration.md). The form bridge is separate from haptic signaling and requires an administrator to allow the provider app on each Android device.
+
 ## Scenario: hands-free picking
 
 This scenario walks through a typical hands-free picking flow and shows where haptic feedback is triggered during scanning and validation so that workers can confirm success or spot errors without looking at the screen.

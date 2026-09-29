@@ -21,6 +21,8 @@ One common method for integrating scanning hardware with the Warehouse Managemen
 
 This article explains how to set up a mobile device to provide intent output for bar code scanning. If your bar code scanner already works correctly with the Warehouse Management app, you don't have to read this article.
 
+If you're a hardware provider building a two-way integration that receives warehouse forms and sends user input, see [Integrate hardware with the Warehouse Management mobile app](warehouse-app-hardware-integration.md). That integration uses a separate form bridge protocol and requires your provider app to be listed in **Allowed apps**.
+
 > [!NOTE]
 > Intent output often replaces keystroke output. Therefore, you shouldn't configure your device to use both types of output at the same time.
 
@@ -43,4 +45,3 @@ To configure your mobile device to use this feature, look for the following sett
 ## Verify your configuration
 
 After configuring intent output, test the setup by scanning a known barcode on a field in the Warehouse Management mobile app. If the scanned value appears correctly in the field, the configuration is working. If the field remains empty or shows unexpected characters, review the intent settings on your device and ensure that keystroke output is disabled.
-

@@ -6,7 +6,7 @@ ms.author: pefreita
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 09/07/2026
+ms.date: 09/29/2026
 ms.custom:
   - bap-template
 ---
@@ -36,6 +36,8 @@ Brokered authentication isn't a separate authentication method. It's an option o
 
 > [!NOTE]
 > The `"UseBroker"` connection setting defaults to `true`. Therefore, if you don't set it, the app tries to use a broker. This default doesn't create a requirement—when no broker is available on the device, the app signs workers in through the system browser or a native web view instead. Deploying a broker is a security design decision that your organization owns.
+>
+> [QR code and PIN sign-in](warehouse-app-authenticate-qr-code.md) is available only on Android and iOS/iPadOS, not Windows. It's browser-based and non-brokered. The app handles broker selection automatically when you enable this sign-in method.
 
 This article explains how to enable brokered authentication on the Warehouse Management mobile app so that your organization can enforce Conditional Access policies.
 
@@ -113,11 +115,13 @@ To manually set up a connection, follow these steps on each device:
 1. Select **Save**.
 1. Sign in with the worker's Microsoft Entra credentials.
 
-### Configure the connection by using a QR code or MDM system
+### Configure the connection by using a connection setup QR code or MDM system
 
-To prepare for automatic connection configurations distributed by using a QR code or MDM system, create a JSON file that contains the connection details. Learn more in [Connection settings reference](warehouse-app-connection-settings.md#connection-file-qr).
+To distribute connection settings through a connection setup QR code or MDM system, create a connection configuration JSON file that contains the connection details. Learn more in [Connection settings reference](warehouse-app-connection-settings.md#connection-file-qr).
 
-For all platforms, the connection must use username/password authentication, which you specify as follows in the JSON file:
+A *connection setup QR code* imports connection settings. It isn't the same as a *sign-in QR code*. Learn more in [QR code and PIN sign-in for the Warehouse Management mobile app](warehouse-app-authenticate-qr-code.md).
+
+For all platforms, the connection must use username/password authentication, which you specify as follows in the connection configuration JSON file:
 
 - `"ConnectionType": "UsernamePassword"`
 
@@ -142,7 +146,7 @@ The following example shows a JSON configuration that uses the global applicatio
 > [!NOTE]
 > If you use a custom app registration instead of the global application, set `"AuthCloud": "Manual"` and include a value for `"ActiveDirectoryClientAppId"`.
 
-Learn more about distributing the JSON file to your devices in [Read connection settings from a QR code](warehouse-app-qr-code.md) and [Mass deploy the mobile app with user-based authentication](warehouse-app-intune-user-based.md).
+Learn more about distributing the JSON file to your devices in [Import connection settings from a QR code](warehouse-app-qr-code.md) and [Mass deploy the mobile app with user-based authentication](warehouse-app-intune-user-based.md).
 
 ## Conditional Access policy configuration
 
