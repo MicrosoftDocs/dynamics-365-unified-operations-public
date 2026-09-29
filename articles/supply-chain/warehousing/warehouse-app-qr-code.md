@@ -1,34 +1,35 @@
 ---
-title: Read connection settings from a QR code
-description: Learn how to generate and scan QR codes to quickly configure the Warehouse Management mobile app.
+title: Import connection settings from a QR code
+description: Learn how to generate and scan connection setup QR codes to import JSON settings into the Warehouse Management mobile app.
 author: pefreita
 ms.author: pefreita
 ms.topic: how-to
-ms.date: 09/02/2026
+ms.date: 09/29/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
 ---
 
-# Read connection settings from a QR code
+# Import connection settings from a QR code
 
 [!INCLUDE [banner](../includes/banner.md)]
 
-The Warehouse Management mobile app supports QR code configuration to simplify the connection setup process. Instead of manually entering connection details, you can scan a QR code that contains all the required configuration information.
+A *connection setup QR code* contains Warehouse Management mobile app settings in JavaScript Object Notation (JSON) format. Scan it to import the environment URL, company, and authentication preferences instead of entering them manually. You can use the same code to configure multiple devices.
 
-QR codes can contain connection configuration data in JavaScript Object Notation (JSON) format. Therefore, you can quickly deploy and set up the Warehouse Management app across multiple devices. This method is useful for IT administrators who must configure multiple devices. It's also useful when configurations must be shared with warehouse workers.
+> [!NOTE]
+> *Connection setup isn't authentication.* To set up the connection on Android, iOS/iPadOS, or Windows, scan a *connection setup QR code* in the Warehouse Management mobile app by going to **Connection setup** > **Add from QR code**. Setting up the connection isn't the same as authenticating (signing in). On Android and iOS/iPadOS only, workers can authenticate by using a different *sign-in QR code* on the Microsoft Entra ID sign-in page and enter the worker's PIN. Learn more in [QR code and PIN sign-in for the Warehouse Management mobile app](warehouse-app-authenticate-qr-code.md).
 
 Other ways to deliver connection settings include your mobile device management (MDM) provider, a connection settings file, and manual entry on the device. To compare them, see [Choose how to distribute connection settings](install-configure-warehouse-management-app.md#distribute).
 
 ## Supported connection types
 
-The feature for QR code–based connection configuration supports all connection types that the Warehouse Management mobile app supports:
+A connection setup QR code can configure any connection type supported by the app. The connection type determines how the worker signs in after import:
 
 - **UsernamePassword** (recommended) – Username/password authentication. The examples in this article use this connection type.
 - **DeviceCode** (not recommended) – Interactive [device code flow](warehouse-app-authenticate-user-based.md#deviceCodeFlow) authentication.
 
 > [!IMPORTANT]
-> Specify `"UsernamePassword"` in the QR codes that you generate. A QR code can still specify `"ConnectionType": "DeviceCode"`, but that flow is blocked by default in new tenants, so the code might not work. Learn more in [Device code flow authentication](warehouse-app-authenticate-user-based.md#deviceCodeFlow).
+> Specify `"UsernamePassword"` in the connection setup QR codes that you generate. A code can still specify `"ConnectionType": "DeviceCode"`, but that flow is blocked by default in new tenants, so sign-in might fail after import. Learn more in [Device code flow authentication](warehouse-app-authenticate-user-based.md#deviceCodeFlow).
 
 > [!NOTE]
 > The examples in this article omit the optional `"UseBroker"` parameter, because you don't need to set it. Learn more in [Connection settings reference](warehouse-app-connection-settings.md#connection-file-qr).
@@ -133,4 +134,4 @@ After you generate the required QR code, distribute it in any of the following w
 
 ## Step 4: Scan the QR code on each device
 
-To use the generated QR code to configure a device, follow the steps in [Import the connection settings on a device](install-configure-warehouse-management-app.md#config).
+To import a connection setup QR code, follow the instructions in [Import the connection settings on a device](install-configure-warehouse-management-app.md#config). Use **Add from QR code**, not the Microsoft Entra ID sign-in page. The worker signs in separately after the settings are imported.

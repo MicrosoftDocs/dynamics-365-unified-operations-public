@@ -4,7 +4,7 @@ description: Access answers to many of the most frequently asked questions about
 author: pefreita
 ms.author: pefreita
 ms.topic: faq
-ms.date: 09/02/2026
+ms.date: 09/29/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -43,6 +43,10 @@ No. Service-based authentication is deprecated only for the Warehouse Management
 Use [username/password authentication](warehouse-app-authenticate-user-based.md#usernamePasswordFlow) for all new and existing deployments. It works on all supported platforms, supports mass deployment, and needs no companion app on the device. If you want single sign-on (SSO) or Conditional Access policies that depend on device signals, add [brokered authentication](warehouse-app-conditional-access-enable.md), which is an advanced option. Microsoft Entra ID QR code and PIN sign-in currently requires browser-based authentication, so it can't be combined with brokered authentication yet.
 
 [Device code flow](warehouse-app-authenticate-user-based.md#deviceCodeFlow) is still accepted for backward compatibility, but it's no longer recommended. Learn more in [What is device code flow, and why is it no longer recommended?](#device-code-flow) later in this article.
+
+## Does importing a connection setup QR code sign in the worker?
+
+No. A *connection setup QR code* contains connection settings in JSON format and is scanned by going to  **Connection setup** > **Add from QR code** in the mobile app. It sets up the connection without signing in on Android, iOS/iPadOS, and Windows. However, on Android and iOS/iPadOS only, workers *can* use another kind of code (a *sign-in QR code*) together with a PIN number to sign in. QR code and PIN sign-in isn't supported on Windows. Learn more in [QR code and PIN sign-in for the Warehouse Management mobile app](warehouse-app-authenticate-qr-code.md).
 
 ## How many Microsoft Entra ID apps do I need to register in Azure?
 
@@ -87,10 +91,11 @@ Follow these steps to sign out the Microsoft Entra ID account that's signed in o
 1. Select **Select a connection**.
 1. Select **Sign out**.
 
+<a name="log-off-sign-out"></a>
+
 ## What's the difference between Log off and Sign out in the Warehouse Management mobile app?
 
 The Warehouse Management mobile app provides two similar-sounding actions that end different sessions. They aren't interchangeable.
-
 
 - **Log off** is a menu item that you configure in Supply Chain Management on the **Mobile device menu items** page (with **Mode** set to *Activity code* and **Activity code** set to *Log off*). When a worker selects **Log off**, the worker's session ends on the server. The worker's stored state (such as the last screen they were viewing) is cleared, and the next worker who signs in starts from the menu that's configured for their work user.
 - **Sign out** is a built-in button in the Warehouse Management mobile app. It signs the Microsoft Entra ID account out of the app on the current device, but it doesn't end the work user session in Supply Chain Management. The worker's server-side state is preserved, so the next time the same worker signs in on any device, the app returns to the screen that they last had open.
@@ -108,7 +113,7 @@ Yes. For details and instructions, see [Mass deploy the mobile app with user-bas
 
 ## What about single sign-on? Can I use the mobile app alongside Microsoft Teams to chat with my coworkers?
 
-Yes, [single sign-on (SSO)](warehouse-app-authenticate-user-based.md#sso) is supported. Among other capabilities, SSO lets you chat with coworkers through Microsoft Teams while you use the same account to sign in to the Warehouse Management mobile app.
+Yes, the app supports [single sign-on (SSO)](warehouse-app-authenticate-user-based.md#sso). Among other capabilities, SSO lets you chat with coworkers through Microsoft Teams while you use the same account to sign in to the Warehouse Management mobile app.
 
 If you're using SSO and sign out from one SSO app (such as Microsoft Teams), you also sign out of all other apps that use that same account (including the Warehouse Management mobile app).
 

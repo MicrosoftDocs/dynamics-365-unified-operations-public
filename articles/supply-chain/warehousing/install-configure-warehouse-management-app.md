@@ -4,7 +4,7 @@ description: Learn how to install the Warehouse Management mobile app on each of
 author: pefreita
 ms.author: pefreita
 ms.topic: how-to
-ms.date: 09/07/2026
+ms.date: 09/29/2026
 ms.reviewer: kamaybac
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 ms.custom:
@@ -89,21 +89,21 @@ If a device is lost or compromised, see [Remove access for a device that uses us
 Every device needs the same connection settings, expressed in JavaScript Object Notation (JSON) format. What differs is how you deliver that JSON to each device. To find your method, ask yourself the following questions:
 
 1. **Do you use a mobile device management (MDM) provider, such as Microsoft Intune?** If you do, use *MDM managed configuration*. It's the only method that requires no setup work on the device itself, and it works on all three platforms.
-1. **No MDM provider?** Use a *QR code*. It also works on all three platforms, and it's the practical choice for Android and iOS devices, which restrict file access.
+1. **No MDM provider?** Use a *connection setup QR code*. It works on all three platforms and is the practical choice for Android and iOS devices, which restrict file access.
 1. **Do you deploy to Windows devices and already push files or run scripts on them?** You can use a *JSON file* instead.
 1. **Are you setting up a single device or troubleshooting one?** Enter the settings with *manual input*.
 
 | Method | When to use it | Platform support | Work required on each device |
 |---|---|---|---|
 | [MDM managed configuration](warehouse-app-intune-user-based.md) (`ConnectionsJson` key) | You manage devices with an MDM provider. The provider pushes connection settings through app configuration policies, without touching the device file system. | Android, iOS, Windows | None |
-| [QR code](warehouse-app-qr-code.md) | You don't use an MDM provider, or you set up devices individually. The app scans a QR code that contains the connection JSON. | Android, iOS, Windows | Scan a code |
+| [Connection setup QR code](warehouse-app-qr-code.md) | You don't use an MDM provider, or you set up devices individually. The connection setup QR code encodes connection settings in JSON format, which the app imports when you scan the code. This step sets up the connection but doesn't authenticate a worker. | Android, iOS, Windows | Scan using **Add from QR code** |
 | [JSON file](warehouse-app-connection-settings.md#file-name-location) (*connections.json*) | You can place files on the device file system. | Windows; Android only through **Add from file** (see the following note) | None, if you use the default file name and location |
 | [Manual input](#config-manually) | You're setting up a single device or troubleshooting a connection. | Android, iOS, Windows | Type each setting |
 
 > [!IMPORTANT]
 > **Android limitation:** Starting with Android 11, [scoped storage](https://developer.android.com/about/versions/11/privacy/storage) prevents external tools (MDM file push, file managers, and USB transfer) from writing to the app's private folder. Therefore, a *connections.json* file can't be delivered to the [default path](warehouse-app-connection-settings.md#file-name-location) on Android.
 >
-> On Android, use *MDM managed configuration* or a *QR code* instead. To import a file on a single device, use the app's **Add from file** option, and select a JSON file from an accessible location, such as the downloads folder.
+> On Android, use *MDM managed configuration* or a *connection setup QR code* instead. To import a file on a single device, use the app's **Add from file** option, and select a JSON file from an accessible location, such as the downloads folder.
 
 <a name="connection-file-qr"></a>
 
@@ -117,7 +117,7 @@ After you create the settings, import them on the device as described in the nex
 
 ## Import the connection settings on a device
 
-Follow these steps to import connection settings from a file or a QR code.
+Follow these steps to import connection settings from a file or a *connection setup QR code*. Don't scan a worker's Microsoft Entra ID sign-in QR code here. For that separate flow, see [QR code and PIN sign-in](warehouse-app-authenticate-qr-code.md).
 
 1. Start the Warehouse Management mobile app on your mobile device. The first time that you start the app, a welcome message appears. Select **Connect**.
 1. If you're importing the connection settings from a file and you used the default name and location when you saved the file, the app might find the file automatically. In this case, skip ahead to step 4. Otherwise, select **Set up connection**, and then continue to step 3.
@@ -151,7 +151,7 @@ If you don't have a file or QR code, you can manually configure the app on the d
     - **Company** – Enter the legal entity (company) in Supply Chain Management that you want the application to connect to.
     - **Authentication method** – Select one of the following values to specify the method that you use to authenticate with Supply Chain Management. The method that you select here must match the setup of the app in Azure.
 
-        - *Username and password* (recommended) – Ask the worker to enter a user name and password. This option also supports [brokered authentication](warehouse-app-conditional-access-enable.md) and single sign-on, which are optional.
+        - *Username and password* (recommended) – Use standard interactive Microsoft Entra ID authentication, including [QR code and PIN sign-in](warehouse-app-authenticate-qr-code.md). [Brokered authentication](warehouse-app-conditional-access-enable.md) and single sign-on are separate options; QR code authentication is non-brokered.
         - *Device code* (not recommended) – Authenticate by using the [device code flow](warehouse-app-authenticate-user-based.md#deviceCodeFlow). If a device is still configured this way, reconfigure it to use *Username and password*.
 
     - **Cloud** – Specify the type of Microsoft Entra ID app registration to authenticate with:
@@ -165,8 +165,9 @@ If you don't have a file or QR code, you can manually configure the app on the d
         > [!IMPORTANT]
         > Don't end this value with a slash (/).
 
-    - **Use Broker** – This option applies only when the **Authentication method** field is set to *Username and password*. It determines whether a broker is used for [SSO](warehouse-app-authenticate-user-based.md#sso) authentication. Set this option to *Yes* for broker-based authentication and SSO. Set it to *No* to require manual input of a user name and password. Learn more about the broker that each platform requires in [Device requirements](warehouse-app-conditional-access-enable.md#device-requirements).
+    - **Use Broker** – This option applies only when the **Authentication method** field is set to *Username and password*. It determines whether a broker is used for [SSO](warehouse-app-authenticate-user-based.md#sso) authentication. Set this option to *Yes* for broker-based authentication and SSO. Set it to *No* for non-brokered authentication. This option doesn't restrict sign-in to passwords. When you enable **QRCode**, the app handles broker selection automatically. Learn more about the broker that each platform requires in [Device requirements](warehouse-app-conditional-access-enable.md#device-requirements).
     - **Domain name** – This field applies only when the **Authentication method** field is set to *Username and password*. You can use it to make sign-in easier for workers. If you don't set this field, workers must enter their full Microsoft Entra ID user principal name to sign in. A user principal name has the form \<*user name*\>@\<*domain name*\>. If you specify the \<*domain name*\> part here, workers can sign in by entering only the \<*user name*\> part. (Nevertheless, workers can still enter their full user principal name.)
+    - **QRCode** – On Android and iOS/iPadOS only, set this option to *Yes* to enable QR code sign-in for the connection. QR code and PIN sign-in isn't supported on Windows. Learn more about this option and its prerequisites in [QR code and PIN sign-in for the Warehouse Management mobile app](warehouse-app-authenticate-qr-code.md).
 
 1. Select the **Save** button in the upper-right corner of the page.
 1. The app connects to your Supply Chain Management server and shows the sign-in page.
