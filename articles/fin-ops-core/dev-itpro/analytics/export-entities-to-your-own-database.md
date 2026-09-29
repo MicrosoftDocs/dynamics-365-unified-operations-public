@@ -4,7 +4,7 @@ description: Learn  how to export entities to your own Azure SQL database, inclu
 author: priyanshasharma2808
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 01/15/2026
+ms.date: 09/26/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global 
 ms.search.validFrom: 2016-08-30 
@@ -58,8 +58,8 @@ If you're using the BYOD feature for integration for analytical purposes, consid
 
 Selecting the correct service tier and compute size is critical to secure expected performance. While doing this, consider the total, targeted workload, and not just the load based on the finance and operations export. For production environments, use at least the minimum tier specified in the following table:
 
-|    Edition            | Minimum Tier |
-|----------------------|-------------|
+| Edition | Minimum Tier |
+| ---------------------- | ------------- |
 | Premium | P4 or higher |
 | Standard | S6 or higher |
 | Business Critical | BC_Gen5_8 or higher |
@@ -70,8 +70,8 @@ Your specific BYOD usage might require a service tier greater than the minimum. 
 
 ## Configuring the entity export option
 
-1. Start the client, and then, in the **Data management** workspace, select the **Configure Entity export to database** tile.
-1. If you configured any databases, you see a list. Otherwise, you must configure a new database. In this case, select **New**, and then enter a unique name and a description for the new database. You can export entities into multiple databases.
+1. Start the client. In the **Data management** workspace, select the **Configure Entity export to database** tile.
+1. If you configured any databases, you see a list. Otherwise, configure a new database. In this case, select **New**, and then enter a unique name and a description for the new database. You can export entities into multiple databases.
 1. Enter the connection string in the following format:
 
     Data Source=&lt;logical server name&gt;,1433; Initial Catalog=&lt;your DB name&gt;; Integrated Security=False; User ID=&lt;SQL user ID&gt;; Password=&lt;password&gt;
@@ -81,7 +81,7 @@ Your specific BYOD usage might require a service tier greater than the minimum. 
 > [!NOTE]
 > The default extension field shown in the previous image doesn't apply to BYOD.
 
-1. Select **Validate**, and make sure that the connection is successful.
+1. Select **Validate**, and ensure that the connection is successful.
 
     - The **Create clustered column store indexes** option optimizes the destination database for selected queries by defining columnstore indexes for entities that you copy.
     - The **Enable triggers in target database** option sets  jobs to enable SQL triggers in the target database. This option lets you hook downstream processes into the trigger to orchestrate actions that must be started after records are inserted. One trigger is supported per bulk insert operation. The size of the bulk insert is determined by the **Maximum insert commit size** parameter in the Data management framework.
@@ -94,7 +94,7 @@ When the validation passes, the database that you configured for entity appears 
 
 You can now publish one or more entities to the new database by selecting the **Publish** option on the menu.
 
-### Publishing the entity schema to the database
+### Publish the entity schema to the database
 
 The **Publish** page enables several scenarios:
 
@@ -121,7 +121,7 @@ The **Compare source names** option lets you compare the entity schema in the de
 
 #### Configure change tracking
 
-Change tracking is a feature that's provided in SQL Server and SQL Database. Change tracking enables the database to track changes, including deletes, that are made on tables. The system uses change tracking to identify changes that are made to tables as transactions. However, because the application must track changes at the data entity level, there's more logic on top of SQL change tracking to make this functionality work. The steps to enable change tracking are explained later in this section.
+BYOD incremental exports use [SQL change tracking](../data-entities/entity-change-track.md), not the separate [row version change tracking](../data-entities/rowversion-change-track.md) mechanism. Before choosing a tracking scope, review [Table eligibility for change tracking](../data-entities/change-tracking-table-eligibility.md#sql-change-tracking).
 
 The **Change tracking** option on the **Publish** page lets you configure how changes are tracked on the underlying entity.
 
@@ -132,23 +132,23 @@ The following table describes the change tracking options that are available.
 | Option               | Description |
 |----------------------|-------------|
 | Enable primary table | An entity consists of several tables. Select this option to track all changes that are made to the primary table of the entity. When you change the primary table, the system inserts or updates the corresponding record in the destination database. Although data from the whole entity is written to the destination table, the system triggers the insert or update option only when the primary table is modified. |
-| Enable entire entity | Select this option to track all changes to the entity. These changes include changes to all the tables that make up the entity. When you change the entity, you make corresponding updates to the destination. |
-| Enable custom query  | This option lets a developer provide a custom query that the system runs to evaluate changes. This option is useful when you have a complex requirement to track changes from only a selected set of fields. You can also select this option when the exported entities were built by using a hierarchy of nested views. For more information, see [Enable change tracking for entities](../data-entities/entity-change-track.md). |
+| Enable entire entity | Select this option to track changes to the eligible tracked tables that make up the entity. Table eligibility restrictions still apply. When a tracked table changes, the system updates the corresponding entity record in the destination. |
+| Enable custom query  | This option lets a developer provide a custom query that the system runs to evaluate changes. This option is useful when you have a complex requirement to track changes from only a selected set of fields. You can also select this option when the exported entities were built by using a hierarchy of nested views. For more information, see [Enable SQL change tracking for data entities](../data-entities/entity-change-track.md). |
 
-To use change tracking, you must enable the **Change tracking** option as shown earlier in data management. This action is available on the **Data entities** list page, by going to **Data management > Data entities**. You need to select an entity and select from one of the options listed earlier to enable change tracking on the data entity.
+To use change tracking, you must enable the **Change tracking** option as shown earlier in data management. This action is available on the **Data entities** list page, by going to **Data management** > **Data entities**. You need to select an entity and select from one of the options listed earlier to enable change tracking on the data entity.
 
 If you republish an entity that exists in the destination database, the system warns you that existing data is deleted because of the new operation.
 
 When you confirm the publish operation, the system publishes the schema to the database, and you're notified when the operation is completed.
 
-By selecting the **Show published only** option on the **Publish** page, you can show only the entities that you published to a given destination database. The Publish function creates the entity schema in the database. You can go to the database and see the table schemas that were created, together with corresponding indexes.
+By selecting the **Show published only** option on the **Publish** page, you can show only the entities that you published to a given destination database. The **Publish** function creates the entity schema in the database. You can go to the database and see the table schemas that were created, together with corresponding indexes.
 
 > [!NOTE]
 > Currently, you can't use BYOD to export composite entities into a database. You must export each entity in the composite entity.
 
 ## Export data into your database
 
-After you publish entities to the destination database, use the Export function in the **Data management** workspace to move data. The Export function lets you define a Data movement job that contains one or more entities.
+After you publish entities to the destination database, use the **Export** function in the **Data management** workspace to move data. The **Export** function lets you define a data movement job that contains one or more entities.
 
 Use the **Export** page to export data into many target data formats, such as a comma-separated values (CSV) file. This page also supports SQL databases as another destination.
 

@@ -179,16 +179,16 @@ items:
             href: data-entities/configuration-data-packages.md
         - name: Configuration data templates
           href: data-entities/configuration-data-templates.md
-        - name: Track changes to an entity
+        - name: Table eligibility for change tracking
+          href: data-entities/change-tracking-table-eligibility.md
+        - name: Enable SQL change tracking for data entities
           href: data-entities/entity-change-track.md
-        - name: Allow row version change tracking for an entity
-          href: data-entities/rowversion-change-track.md          
+        - name: Row version change tracking for tables and data entities
+          href: data-entities/rowversion-change-track.md
         - name: Find information about standard data entities
           href: data-entities/data-entities-report.md
         - name: Data templates with multiple worksheets
           href: ../fin-ops/data-entities/excel-template-multiple.md
-        - name: Enable change tracking for entities
-          href: data-entities/entity-change-track.md 
         - name: Configuration keys and data entities
           href: ../fin-ops/data-entities/config-key-entities.md
         - name: Configuration data packages

@@ -1,10 +1,10 @@
 ---
 title: Row version change tracking for tables and data entities
-description: Learn how to enable row version change tracking for data entities and tables for finance and operations apps, includinga a table with comments for various rules.
+description: Learn how to enable row version change tracking for tables and data entities in finance and operations apps.
 author: pngub
 ms.author: johnmichalak
 ms.topic: how-to
-ms.date: 04/03/2026
+ms.date: 09/26/2026
 ms.reviewer: johnmichalak
 ms.custom: 
   - bap-template
@@ -21,9 +21,17 @@ ms.dyn365.ops.version: 10.0.31
 
 Finance and operations apps include a change tracking functionality option that's known as *row version change tracking*. By using this option, you can use Microsoft Dataverse for incremental synchronization of data. Change tracking is a prerequisite for several features, such as Data archival, Synapse integration, Mobile offline, and Relevance search. The eventual goal is to unify all existing finance and operations data synchronization frameworks into one that's based on Dataverse synchronization services.
 
+For the separate SQL change tracking mechanism configured in Data management, see [Enable SQL change tracking for data entities](entity-change-track.md).
+
 For row version change tracking functionality, add a new column of type **rowversion** to all tables in the data entity that requires change tracking. For more information about the **rowversion** column type, see [rowversion](/sql/t-sql/data-types/rowversion-transact-sql). For information about how to add a **rowversion** column to a table, see [Enable row version change tracking for tables](rowversion-change-track.md#enable-row-version-change-tracking-for-tables).
 
 The **rowversion** column stamps each table row with a version. SQL Server maintains a database-level counter that's incremented for each insert or update operation. You can detect changes to a table row by comparing the current value in the **rowversion** column with the previous value.
+
+## Identify supported tables and data entities
+
+For table exclusions, inheritance requirements, and feature-specific availability, see [Table eligibility for change tracking](change-tracking-table-eligibility.md#row-version-change-tracking).
+
+A supported table doesn't make every entity that uses it eligible. Data entities must also pass the [data entity validation rules](#enable-row-version-change-tracking-for-data-entities).
 
 ## Enable row version change tracking functionality
 
@@ -87,7 +95,7 @@ When you set the **Allow Row Version Change Tracking** property to **Yes** for a
 
 The **AifChangeTrackingDeletedObject** table tracks data entity row deletions.
 
-A system batch job named **Delete tracking history clean-up** removes records from the **AifChangeTrackingDeletedObject** table that exceed the retention period. The job deletes records in batches until the time-out criterion is reached. By default, the job runs every day at 1:00 AM. However, you can configure the recurrence and frequency of the job at **System Administration \> Batch Jobs**. Currently, the retention period is 10 days.
+A system batch job named **Delete tracking history clean-up** removes records from the **AifChangeTrackingDeletedObject** table that exceed the retention period. The job deletes records in batches until the timeout criterion is reached. By default, the job runs every day at 1:00 AM. However, you can configure the recurrence and frequency of the job at **System Administration \> Batch Jobs**. Currently, the retention period is 10 days.
 
 ## Retrieve entity changes
 
