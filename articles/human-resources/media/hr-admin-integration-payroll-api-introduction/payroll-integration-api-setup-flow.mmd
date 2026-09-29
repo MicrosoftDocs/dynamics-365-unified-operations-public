@@ -1,0 +1,6 @@
+flowchart LR
+    A["Dynamics 365 Finance and Operations Data Entities"] --> B["Payroll Data Sync<br/>Batch Job"]
+    B --> C["Dataverse : Enable Virtual<br/>Entities"]
+    C --> D["Register Microsoft Entra <br> App"]
+    D --> E["Add App as<br/>Dataverse User"]
+    E --> F["OData APIs Ready<br/>for Payroll Provider"]

@@ -270,7 +270,7 @@ The following scenarios illustrate how you can use the shipment consolidation po
 - Scenario 2: [Consolidate shipments when the shipment consolidation policy is overridden from the Release to warehouse page](../warehousing/consolidate-shipments-release-to-warehouse-override.md)
 - Scenario 3: [Consolidate shipments by releasing to warehouse from the outbound load planning workbench](../warehousing/consolidate-shipments-load-planning-workbench.md)
 - Scenario 4: [Consolidate shipments by using the shipment consolidation workbench](../warehousing/consolidate-shipments-manual-workbench.md)
-- Scenario 5: [Consolidate shipments manually by using the Consolidate shipments page](../warehousing/consolidate-shipments-manual-form.md)
+- Scenario 5: [Manually consolidate shipments by using the Consolidate shipments page](../warehousing/consolidate-shipments-manual-form.md)
 
 ## Related information
 
