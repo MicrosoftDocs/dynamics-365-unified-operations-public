@@ -4,7 +4,7 @@
 title: Payroll integration API introduction
 description: This article describes the Dynamics 365 Human Resources Payroll integration API.
 author: avanish2821
-ms.date: 03/25/2026
+ms.date: 09/28/2026
 ms.topic: concept-article
 # optional metadata
 
@@ -35,38 +35,97 @@ This article describes the Dynamics 365 Human Resources Payroll integration API.
 
 [![Payroll integration flow.](media/hr-admin-integration-payroll-api-introduction-flow.png)](media/hr-admin-integration-payroll-api-introduction-flow-2.png#lightbox)
 
-To enable the integration, Human Resources includes the following components:
+### Technical architecture and flow
 
-- [Functionality to mark an employee as ready to pay.](hr-compensation-payroll.md)
-- An integration API opening up the new functionality to integrating applications.
+The following diagram illustrates the technical integration flow from Finance and Operations through Microsoft Dataverse to the external payroll provider:
 
-## Microsoft Dataverse
-
-This API is built on Microsoft Dataverse. All RESTful interaction with this API is done via the Microsoft Dataverse Web API, which uses OData. This API is a subset of the Dataverse Web API. The Dataverse Web API defines characteristics such as authentication, SLAs, batch, concurrency control, and error handling.
-
-For more general information about the Microsoft Dataverse Web API, see:
-
-- [What is Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
-- [Use the Microsoft Dataverse Web API](/powerapps/developer/data-platform/webapi/overview)
-- [Microsoft Dataverse developer guide](/powerapps/developer/data-platform)
-
-This documentation includes details and developer guidance for using the Dataverse Web API, including the following topics:
-
-- [Authenticate to Microsoft Dataverse with the Web API](/powerapps/developer/data-platform/webapi/authenticate-web-api)
-- [Perform operations using the Web API](/powerapps/developer/data-platform/webapi/perform-operations-web-api)
-- [Use change tracking to synchronize data with external systems](/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems)
-
-### Virtual tables for Human Resources in Dataverse
-
-The endpoints for the Payroll integration API use the virtual table platform capabilities of Microsoft Dataverse. By default, the virtual tables and their associated API endpoints aren't deployed for Human Resources environments, enabling organizations to determine which OData endpoints will be exposed for the environment. To use the API, the virtual tables for the Human Resources entities must be generated for the environment.
-
-For information on generating the virtual tables for the API, see [Configure Dataverse virtual tables](./../fin-ops-core/dev-itpro/power-platform/admin-reference.md).
+```mermaid
+flowchart LR
+    A["Dynamics 365 Finance and Operations Data Entities"] --> B["Payroll Data Sync<br/>Batch Job"]
+    B --> C["Dataverse : Enable Virtual<br/>Entities"]
+    C --> D["Register Microsoft Entra <br> App"]
+    D --> E["Add App as<br/>Dataverse User"]
+    E --> F["OData APIs Ready<br/>for Payroll Provider"]
+```
 
 ## Data model
 
-The following diagram illustrates relationships within the API. Several types have foreign keys to other, pre-existing entities in Human Resources that aren't illustrated here. This document provides information on entities that are specific to payroll integration scenarios. However, there are many other entities in the Dataverse Web API for Human Resources that may also be relevant to your integration. Some of these entities are referenced in foreign key relationships or navigation properties.
+The following diagram illustrates relationships within the API. Several types have foreign keys to other, pre-existing entities in Human Resources that aren't illustrated here. This document provides information on entities that are specific to payroll integration scenarios. However, there are many other entities in the Dataverse Web API for Human Resources that might also be relevant to your integration. Some of these entities are referenced in foreign key relationships or navigation properties.
 
 [![Payroll Integration API data model.](media/hr-admin-payroll-api-data-model.png)](media/hr-admin-payroll-api-data-model.png#lightbox)
+
+## Microsoft Dataverse
+
+This API is built on Microsoft Dataverse using virtual tables. You perform all RESTful interaction with this API through the Microsoft Dataverse Web API (OData), which handles authentication, SLAs, batch processing, concurrency control, and change tracking.
+
+For more information about the Dataverse Web API, see:
+
+- [What is Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
+- [Use the Microsoft Dataverse Web API](/powerapps/developer/data-platform/webapi/overview)
+- [Authenticate to Microsoft Dataverse with the Web API](/powerapps/developer/data-platform/webapi/authenticate-web-api)
+- [Use change tracking to synchronize data with external systems](/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems)
+
+## Enable the integration
+
+To enable and use the Payroll integration API, complete the following four steps in order:
+
+[Step 1: Configure the batch job](#step-1-configure-the-batch-job)<br>
+[Step 2: Enable virtual entities](#step-2-enable-virtual-entities)<br>
+[Step 3: Register the Azure AD app](#step-3-register-the-azure-ad-app)<br>
+[Step 4: Add the app to Dataverse](#step-4-add-the-app-to-dataverse)<br>
+
+### Step 1: Configure the batch job
+
+Before the virtual entities can synchronize data, schedule the payroll data sync batch job in Dynamics 365 Human Resources. This job prepares and stages payroll data for integration.
+
+For detailed instructions on configuring batch recurrence and selecting entities, see [Schedule Payroll Data sync job](hr-admin-integration-payroll-api-data-sync-job.md).
+
+### Step 2: Enable virtual entities
+
+The endpoints for the Payroll integration API use the virtual table capabilities of Microsoft Dataverse. By default, the system doesn't deploy the virtual tables and their associated API endpoints for Human Resources environments.
+
+1. Ensure the system is configured with the required virtual table solutions and data sources. For more information, see [Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md) or [Admin reference for virtual entities](../fin-ops-core/dev-itpro/power-platform/admin-reference.md).
+2. Sign in to the [Power Apps maker portal](https://make.powerapps.com/).
+3. In the upper-right corner, select the appropriate environment.
+4. In the left navigation pane, select **Tables**, and then select **All**.
+5. Filter the **Table** column for **Available Finance and Operations Entity**.
+6. Select the table and select **Edit** on the toolbar.
+7. Search for the payroll integration entities (prefixed with `PayIntV`). Set both **Visible** and **Change tracking** to **Yes**. If an error occurs, select the row and select **Edit row using form** on the toolbar to update the settings.
+8. Repeat these steps for all required payroll integration entities.
+
+### Step 3: Register the Azure AD app
+
+Register an application in Azure Active Directory (Microsoft Entra ID) so that the Microsoft identity platform can provide authentication and authorization services for API calls.
+
+1. Open the [Azure portal](https://portal.azure.com/).
+2. In the Azure services list, select **App registrations**.
+3. Select **New registration**.
+4. In the **Name** field, enter a descriptive name for the app (for example, **Dynamics 365 Human Resources Virtual Tables**).
+5. Select **Register**.
+6. Note the **Application (client) ID** displayed in the app registration's **Overview** pane.
+7. In the left navigation pane, select **Certificates and secrets**.
+8. In the **Client secrets** section, select **New client secret**.
+9. Enter a description, choose an expiration duration, and select **Add**.
+10. Record the secret's **Value**.
+    > [!IMPORTANT]
+    > Record the secret's value immediately. It won't be displayed again after you navigate away from this page.
+
+For more information, see [Quickstart: Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app).
+
+### Step 4: Add the app to Dataverse
+
+Add the registered application as an application user in Dataverse and link it in Finance and Operations:
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+2. In the navigation pane, select **Manage** > **Environments**, and select your environment.
+3. Select **Settings** > **Users + permissions** > **Application users**.
+4. Select **New app user**, select **Add an app**, and select the **Application (client) ID** registered in Step 3.
+5. Select the business unit, and assign the **Basic User** and **Finance and operations basic user** security roles to the app user.
+6. In the Finance and Operations application, go to **System administration** > **Setup** > **Microsoft Entra ID applications**.
+7. Select **New**, and enter the **Client ID** and **Name** of the application.
+8. In the **User ID** field, select a user who has permission to read and write the payroll integration entities, and save the record.
+
+When you complete the setup, the OData endpoints are ready for the payroll provider to read and write data. For details on the available entities and their schemas, see [Payroll employee and related entities](#payroll-employee-and-related-entities).
 
 ## Payroll employee and related entities
 

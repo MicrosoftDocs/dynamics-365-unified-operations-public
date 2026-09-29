@@ -4,7 +4,7 @@ description: Learn how to configure the Warehouse Management app to connect to y
 author: pefreita
 ms.author: pefreita
 ms.topic: how-to
-ms.date: 09/02/2026
+ms.date: 09/29/2026
 ms.reviewer: kamaybac
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 ms.custom:
@@ -111,9 +111,9 @@ The Warehouse Management mobile app doesn't introduce its own identity licensing
 
 Features that you layer on top of sign-in have their own licensing requirements. Check the requirements for each feature that you plan to use:
 
-- **Conditional Access** – See [Microsoft Entra Conditional Access](/entra/identity/conditional-access/overview).
+- **Conditional Access** – See [What is Conditional Access?](/entra/identity/conditional-access/overview).
 - **QR code and PIN sign-in** – See [Prerequisites to enable the QR code authentication method](/entra/identity/authentication/how-to-authentication-qr-code#prerequisites-to-enable-the-qr-code-authentication-method).
-- **Microsoft Entra plans in general** – See [Microsoft Entra ID licensing](/entra/fundamentals/licensing).
+- **Microsoft Entra ID plans in general** – See [Microsoft Entra licensing](/entra/fundamentals/licensing).
 
 > [!IMPORTANT]
 > Using a shared device identity doesn't reduce the number of licenses that you need. A device account such as `device1@contoso.com` authenticates the app, but licensing for Supply Chain Management follows the people who do the work. If you license warehouse workers as frontline workers, you still need a license for each worker who uses the app, even when many workers share one device account.
@@ -124,22 +124,13 @@ Confirm your specific entitlements with your licensing contact and the [Dynamics
 
 ## Username/password authentication
 
-When you use username/password authentication, each human worker must enter the Microsoft Entra ID username and password associated either with the device or with themselves (depending on the [approach](#scenarios) you chose). They might also need to enter a mobile device user account ID and password, depending on their [warehouse worker record setup](mobile-device-work-users.md).
+The *Username and password* option uses standard interactive Microsoft Entra ID authentication for the account associated either with the device or with the worker (depending on the [approach](#scenarios) you choose). Workers might also need to enter a mobile device user account ID and password, depending on their [warehouse worker record setup](mobile-device-work-users.md).
 
 Microsoft recommends username/password authentication for all new and existing deployments. It works without any configuration: the app signs workers in through the system browser or a native web view, and it doesn't need Microsoft Authenticator, Intune Company Portal, or any other companion app. Most frontline deployments need nothing more than this.
 
 If you later want single sign-on or Conditional Access policies that depend on device signals, see [Advanced: brokered authentication and single sign-on](#sso).
 
-Microsoft Entra ID also offers *QR code and PIN sign-in*, which lets workers sign in quickly on shared devices by scanning a QR code and entering a PIN, instead of typing a full username and password every time. This flow works without Microsoft Authenticator or Intune Company Portal. Licensing and tenant prerequisites are listed in [Prerequisites to enable the QR code authentication method](/entra/identity/authentication/how-to-authentication-qr-code#prerequisites-to-enable-the-qr-code-authentication-method).
-
-> [!NOTE]
-> QR code and PIN sign-in has the following limitations:
->
-> - It's available only on Android and iOS/iPadOS devices. It isn't available on Windows devices.
-> - In the current version of the Warehouse Management mobile app, it works only when the app authenticates through the browser (browser-based authentication). It isn't supported when a broker handles the sign-in natively on the device. Therefore, you can't combine it with brokered authentication yet. Broader QR code sign-in support is planned for a future version of the app.
-> - A worker must complete their first sign-in by using another method before they can use QR code and PIN sign-in.
->
-> This QR code is a Microsoft Entra ID sign-in credential for workers. It's not the same as the QR code that you use to distribute connection settings to devices. Learn more in [Read connection settings from a QR code](warehouse-app-qr-code.md).
+Despite its name, the *Username and password* option also supports interactive sign-in methods that don't use a user name and password. One of them is *QR code and PIN sign-in*, which is available only on Android and iOS/iPadOS, not Windows. It lets workers sign in quickly on shared devices by scanning a QR code and entering a PIN instead of typing a full username and password every time. This flow works without Microsoft Authenticator or Intune Company Portal. Learn more about how to enable and use this sign-in method in [QR code and PIN sign-in for the Warehouse Management mobile app](warehouse-app-authenticate-qr-code.md).
 
 <a name="create-service"></a>
 
@@ -186,8 +177,8 @@ For the concepts, requirements, and setup steps, see [Brokered authentication an
 
 The Warehouse Management mobile app works on a device in any Microsoft Entra ID registration state. You can sign in on all of the following types of devices:
 
-- Microsoft Entra joined devices
-- Microsoft Entra registered devices
+- Microsoft Entra ID joined devices
+- Microsoft Entra ID registered devices
 - Devices that aren't joined
 - Devices that aren't registered at all, including a device that's new and has never been registered
 
@@ -211,7 +202,7 @@ To revoke access, follow these steps:
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 1. On the left navigation pane, select **Microsoft Entra ID**, and ensure that you're in the correct directory.
 1. In the **Manage** list, select **Users**.
-1. To open the user's profile, find the user account that's associated with the device or worker, and select the name.
+1. Find the user account that's associated with the device or worker, and select the name to open the user's profile.
 1. On the toolbar, select **Revoke sessions** to revoke the user account's sessions.
 
 > [!NOTE]
@@ -231,7 +222,7 @@ Device code flow is a two-step sign-in method that was originally designed for d
 - **It isn't available everywhere** – Device code flow isn't supported on iOS, and it isn't supported for Android devices that connect to on-premises environments.
 - **It doesn't support SSO** – It can't be combined with [brokered authentication](warehouse-app-conditional-access-enable.md).
 
-If your environment still depends on device code flow (for example, because you use test scripts or workflows that aren't updated yet), an admin can unblock it for the tenant by disabling security defaults. Because security defaults protect the whole tenant, treat this change as a temporary step while you update your setup to use username/password authentication. For more information, see [Microsoft Entra security defaults](/entra/fundamentals/security-defaults).
+If your environment still depends on device code flow (for example, because you use test scripts or workflows that aren't updated yet), an admin can unblock it for the tenant by disabling security defaults. Because security defaults protect the whole tenant, treat this change as a temporary step while you update your setup to use username/password authentication. For more information, see [Microsoft Entra ID security defaults](/entra/fundamentals/security-defaults).
 
 ### How device code flow works
 

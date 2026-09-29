@@ -4,7 +4,7 @@ description: Learn how to mass deploy the Warehouse Management app with user-bas
 author: pefreita
 ms.author: pefreita
 ms.topic: how-to
-ms.date: 09/02/2026
+ms.date: 09/29/2026
 ms.reviewer: kamaybac
 ms.search.form:
 ms.custom:
@@ -118,6 +118,8 @@ The following subsections provide examples that show how to set up Intune to pro
 ### Create a connection JSON file
 
 To set up managed configuration for all mobile platforms, create a connection JSON file as described in [Connection settings reference](warehouse-app-connection-settings.md#connection-file-qr). This file enables the mobile app to connect to and authenticate with your Dynamics 365 Supply Chain Management environment.
+
+The [QR code and PIN sign-in preference](warehouse-app-authenticate-qr-code.md) (`"PreferredAuthMethod": "QRCode"`) applies only to Android and iOS/iPadOS devices. Don't deploy this preference to Windows devices; QR code and PIN sign-in isn't supported there.
 
 ### Set up Intune to support managed configuration for Android devices
 

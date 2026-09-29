@@ -46,7 +46,7 @@ Version 4.1.5.0 is a cumulative update that includes new features, improvements,
 
 - **Camera scanning** – The camera scanner now recognizes more barcode formats. No configuration is required because the additional formats are detected automatically. You can also set the color and thickness of the scan frame that outlines the scanning area.
 - **Notification sounds** – You can now select a separate sound for success, failure, and warning notifications. A duplicate re-scan sound setting was also removed.
-- **ProGlove arm scanners** – Added the first version of the bridge for ProGlove arm scanners. Scanner input, including image capture, is now connected to the form flow. Learn more in [Advanced bar code scanner configuration](warehouse-app-adv-scanner-config.md).
+- **ProGlove arm scanners** – Added the first version of the bridge for ProGlove arm scanners. Scanner input, including image capture, is now connected to the form flow. Learn more in [Integrate hardware with the Warehouse Management mobile app](warehouse-app-hardware-integration.md).
 - **Client settings** – Added an editable **Client settings** option for connections. Use these settings in enterprise environments that have specific requirements, such as environments that require Transport Layer Security (TLS) 1.2 or that require workers to sign in every time they start the app. New connections now use user name and password authentication by default.
 
 ### Improvements in version 4.1.5.0
