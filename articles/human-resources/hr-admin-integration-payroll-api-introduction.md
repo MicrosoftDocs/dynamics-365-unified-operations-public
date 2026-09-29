@@ -19,6 +19,7 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
+ai-usage: ai-assisted
 ---
 
 # Payroll integration API introduction
@@ -39,20 +40,15 @@ This article describes the Dynamics 365 Human Resources Payroll integration API.
 
 The following diagram illustrates the technical integration flow from Finance and Operations through Microsoft Dataverse to the external payroll provider:
 
-```mermaid
-flowchart LR
-    A["Dynamics 365 Finance and Operations Data Entities"] --> B["Payroll Data Sync<br/>Batch Job"]
-    B --> C["Dataverse : Enable Virtual<br/>Entities"]
-    C --> D["Register Microsoft Entra <br> App"]
-    D --> E["Add App as<br/>Dataverse User"]
-    E --> F["OData APIs Ready<br/>for Payroll Provider"]
-```
+
+:::image type="content" source="media/hr-admin-integration-payroll-api-introduction/payroll-integration-api-setup-flow.png" alt-text="Diagram showing the payroll integration flow from Finance and Operations data entities through Dataverse setup to OData APIs for payroll providers."
 
 ## Data model
 
 The following diagram illustrates relationships within the API. Several types have foreign keys to other, pre-existing entities in Human Resources that aren't illustrated here. This document provides information on entities that are specific to payroll integration scenarios. However, there are many other entities in the Dataverse Web API for Human Resources that might also be relevant to your integration. Some of these entities are referenced in foreign key relationships or navigation properties.
 
-[![Payroll Integration API data model.](media/hr-admin-payroll-api-data-model.png)](media/hr-admin-payroll-api-data-model.png#lightbox)
+[:::image type="content" source="media/hr-admin-payroll-api-data-model.png" alt-text="Diagram of payroll API entities linked by PersonnelNumber, PositionId, PlanId, and JobId, including employee, position, and compensation plan.":::](media/hr-admin-payroll-api-data-model.png#lightbox)
+
 
 ## Microsoft Dataverse
 
