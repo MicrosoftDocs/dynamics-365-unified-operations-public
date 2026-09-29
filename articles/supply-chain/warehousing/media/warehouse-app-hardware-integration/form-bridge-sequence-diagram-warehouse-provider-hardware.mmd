@@ -1,0 +1,15 @@
+sequenceDiagram
+    participant WMA as Warehouse Management mobile app
+    participant Provider as Provider app
+    participant HW as Hardware
+
+    WMA->>Provider: com.microsoft.aierpmobile.FORM_DATA<br/>Send the current form
+    Provider->>HW: Present form, controls, and instructions
+    HW-->>Provider: Worker input or action
+    alt Apply control changes and submit the form
+        Provider->>WMA: com.microsoft.aierpmobile.CONTROL_CHANGES
+    else Submit the form without changing controls
+        Provider->>WMA: com.microsoft.aierpmobile.SUBMIT_FORM
+    else Close the current notification or instruction
+        Provider->>WMA: com.microsoft.aierpmobile.CLOSE_NOTIFICATION
+    end

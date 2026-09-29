@@ -4359,6 +4359,8 @@
             href: warehousing/work-user-sessions.md
         - name: Extend and customize the Warehouse Management mobile app
           items:
+          - name: Integrate hardware with the Warehouse Management mobile app
+            href: warehousing/warehouse-app-hardware-integration.md
           - name: Process guide framework
             href: supply-chain-dev/process-guide-framework.md
           - name: Assign step icons and titles
