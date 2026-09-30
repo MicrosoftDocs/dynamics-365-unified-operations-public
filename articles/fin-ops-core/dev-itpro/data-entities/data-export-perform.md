@@ -6,7 +6,7 @@ ms.author: johnmichalak
 ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 01/16/2026
+ms.date: 09/26/2026
 ms.reviewer: johnmichalak
 ---
 
@@ -22,7 +22,7 @@ Don't use JOINs in computed columns. Instead, add all the tables that are requir
 
 Computed columns are computed values that SQL Server returns as part of the process of running the data entity view. They have many possible uses, such as returning default values, casing logic, and formatting values. You must write the computed column formula so that SQL Server can quickly compute values and doesn't need large amounts of storage space.
 
-When you write a computed column formula, avoid a join to some table or view. Such a join forces SQL Server to compute the values row by row and keep them all in temporary storage. Instead, add the tables that are needed for the formula as data sources in the entity view. SQL Server can then join all the table data to all the rows in one operation instead of repeating the process for each row.
+When you write a computed column formula, avoid a join to a table or view. Such a join forces SQL Server to compute the values row by row and keep them all in temporary storage. Instead, add the tables that are needed for the formula as data sources in the entity view. SQL Server can then join all the table data to all the rows in one operation instead of repeating the process for each row.
 
 To test whether a computation is causing slowness, follow these steps:
 
@@ -75,6 +75,8 @@ The fewer columns you include in the `select` operation from the data entity, th
 The default mapping for an export project includes all the columns. If you're exporting a standard entity, check what columns it has. You might find columns that you don't use. In this case, remove those columns from the mapping, so that you don't transfer unnecessary data. If you're exporting your own entity, remove unneeded columns from the entity itself. Try to keep the total number of columns that your entity selects under 200.
 
 ## Implement defaultCTQuery to specify which tables changes are tracked for and to limit the amount of change data that must be processed
+
+This guidance applies to [SQL change tracking](entity-change-track.md) for Data management incremental exports. For table exclusions, see [Table eligibility for change tracking](change-tracking-table-eligibility.md#sql-change-tracking). For the separate row version mechanism, see its [data entity validation rules](rowversion-change-track.md#enable-row-version-change-tracking-for-data-entities), which exclude custom change tracking queries.
 
 Incremental export queries for change data on the tables in the data entity and exports only rows that are related to changed records. However, many entities have a large number of joins or joins to tables that aren't important for the processes that use the entity data. By implementing the `defaultCTQuery` method for your data entity, you can limit the change records that are processed. Return a query that joins the tables that you require change data for. Leave out any tables where the values aren't important for your process. This approach can speed up incremental export by skipping change data for less important entity tables.
 

@@ -4,7 +4,7 @@ description: Learn about how to enable Track changes for finance and operations 
 author: pnghub
 ms.author: johnmichalak
 ms.topic: article
-ms.date: 01/21/2026
+ms.date: 09/26/2026
 ms.custom: 
   - NotInToc
   - bap-template
@@ -20,11 +20,12 @@ ms.dyn365.ops.version: 10.0.31
 
 ## Row version change tracking for finance and operations
 
-A new change tracking option is added to finance and operations apps to enable incremental synchronization of data by using Microsoft Dataverse. The new change tracking option is a prerequisite for several features such as data archival, Synapse integration, mobile offline, and relevance search. The goal, over time, is to unify all existing finance and operations data synchronization frameworks into one that is based on Dataverse synchronization services.
+This article uses [row version change tracking](../data-entities/rowversion-change-track.md). Enabling the separate [SQL change tracking](../data-entities/entity-change-track.md) mechanism in Data management doesn't enable row version change tracking for a virtual table.
 
 ## Prerequisite to track changes for finance and operations virtual tables in Dataverse
 
-- Set the **Allow Row Version Change Tracking** metadata property to **Yes** for the data entity. For more information, see [Allow Row version change tracking for Data entities](../data-entities/rowversion-change-track.md).
+- Check [Table eligibility for change tracking](../data-entities/change-tracking-table-eligibility.md#row-version-change-tracking).
+- Complete the [row version configuration-key and database synchronization setup](../data-entities/rowversion-change-track.md#enable-row-version-change-tracking-functionality), enable the [underlying tables](../data-entities/rowversion-change-track.md#enable-row-version-change-tracking-for-tables), and enable and validate the [data entity](../data-entities/rowversion-change-track.md#enable-row-version-change-tracking-for-data-Entities).
 - Finance and operations entities must be visible in Dataverse. For more information, see [Enable Microsoft Dataverse virtual entities](enable-virtual-entities.md).
 
 ## Track changes for finance and operations virtual tables in Dataverse
