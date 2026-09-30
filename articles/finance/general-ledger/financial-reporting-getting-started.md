@@ -3,7 +3,7 @@ title: Financial reporting overview
 description: Learn about where to access financial reporting in Microsoft Dynamics 365 Finance and how to use the financial reporting capabilities.
 author: jinniew
 ms.author: aolson
-ms.date: 09/17/2026
+ms.date: 09/28/2026
 ms.reviewer: twheeloc
 ms.topic: article
 ms.collection: get-started 
@@ -29,6 +29,27 @@ This article describes where to access financial reporting and how to use the fi
 
 The Financial reporting add-in lets financial and business professionals create, maintain, deploy, and view financial statements. Financial reporting includes dimension support. Therefore, account segments or dimensions are immediately available. No additional tools or configuration steps are required after installation.
 
+You can get the Financial reporting add-in as a Dynamics 365 app in Power Platform admin center for supported Dynamics 365 Finance and Operations environments. Availability depends on the environment's cloud, geographic region, and applicable Dynamics 365 Finance entitlement. You enable the add-in through the applicable Finance and Operations application bundle.
+
+In public cloud, the Financial reporting add-in is available in the following geographies:
+
+- Asia Pacific
+- Australia/Oceania
+- Brazil/South America
+- Canada
+- Europe
+- France
+- India
+- Japan
+- North America
+- Norway
+- South Africa
+- Switzerland
+- United Arab Emirates
+- United Kingdom
+
+Availability will expand to more geographic regions and sovereign clouds as required platform dependencies become available.
+
 ### Power Platform admin center (Recommended)
 
 1. Go to [Power Platform admin center](https://admin.powerplatform.microsoft.com).
@@ -47,7 +68,7 @@ Alternatively, for Lifecycle Services-managed environments:
 1. Select **Install a new add-in**, and search for **Financial reporting**.
 1. Agree to the terms, and then select **Install**.
 
-If **Microsoft Dynamics 365 Financial Reporting** isn't available or installation fails, contact Microsoft Support with your environment ID, region, and error message.
+If **Microsoft Dynamics 365 Financial Reporting** isn't available, confirm that the environment is in a supported geography and that the tenant has the required Dynamics 365 Finance entitlement. If the app still isn't available or installation fails, contact Microsoft Support with your environment ID, region, and error message.
 
 ## Uninstall the Financial reporting add-in
 
