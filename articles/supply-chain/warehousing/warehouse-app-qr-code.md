@@ -52,6 +52,8 @@ Create a JSON configuration that includes your connection details. Follow the in
 }
 ```
 
+To also provision and lock app settings, such as the sign-in prompt, add a `ClientSettings` object next to `ConnectionList`. Each key makes the QR code denser, so include only the keys that you need. Learn more in [Client settings reference](warehouse-app-client-settings.md).
+
 ## Step 2: Generate a QR code
 
 There are several ways to generate a QR code. Use the method that best suits your needs.
