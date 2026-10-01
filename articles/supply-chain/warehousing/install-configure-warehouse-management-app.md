@@ -97,13 +97,15 @@ Every device needs the same connection settings, expressed in JavaScript Object 
 |---|---|---|---|
 | [MDM managed configuration](warehouse-app-intune-user-based.md) (`ConnectionsJson` key) | You manage devices with an MDM provider. The provider pushes connection settings through app configuration policies, without touching the device file system. | Android, iOS, Windows | None |
 | [Connection setup QR code](warehouse-app-qr-code.md) | You don't use an MDM provider, or you set up devices individually. The connection setup QR code encodes connection settings in JSON format, which the app imports when you scan the code. This step sets up the connection but doesn't authenticate a worker. | Android, iOS, Windows | Scan using **Add from QR code** |
-| [JSON file](warehouse-app-connection-settings.md#file-name-location) (*connections.json*) | You can place files on the device file system. | Windows; Android only through **Add from file** (see the following note) | None, if you use the default file name and location |
+| [JSON file](warehouse-app-connection-settings.md#file-name-location) (`connections.json`) | You can place files on the device file system. | Windows; Android only through **Add from file** (see the following note) | None, if you use the default file name and location |
 | [Manual input](#config-manually) | You're setting up a single device or troubleshooting a connection. | Android, iOS, Windows | Type each setting |
 
 > [!IMPORTANT]
-> **Android limitation:** Starting with Android 11, [scoped storage](https://developer.android.com/about/versions/11/privacy/storage) prevents external tools (MDM file push, file managers, and USB transfer) from writing to the app's private folder. Therefore, a *connections.json* file can't be delivered to the [default path](warehouse-app-connection-settings.md#file-name-location) on Android.
+> **Android limitation:** Starting with Android 11, [scoped storage](https://developer.android.com/about/versions/11/privacy/storage) prevents external tools (MDM file push, file managers, and USB transfer) from writing to the app's private folder. Therefore, a `connections.json` file can't be delivered to the [default path](warehouse-app-connection-settings.md#file-name-location) on Android.
 >
 > On Android, use *MDM managed configuration* or a *connection setup QR code* instead. To import a file on a single device, use the app's **Add from file** option, and select a JSON file from an accessible location, such as the downloads folder.
+
+To also provision and lock app settings, such as the sign-in prompt, add a `ClientSettings` object to the connection settings JSON. Every method in the previous table applies it, except manual input, and MDM always takes priority. Learn more in [Client settings reference](warehouse-app-client-settings.md).
 
 <a name="connection-file-qr"></a>
 

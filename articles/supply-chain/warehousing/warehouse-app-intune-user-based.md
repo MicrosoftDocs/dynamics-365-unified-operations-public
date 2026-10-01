@@ -121,6 +121,8 @@ To set up managed configuration for all mobile platforms, create a connection JS
 
 The [QR code and PIN sign-in preference](warehouse-app-authenticate-qr-code.md) (`"PreferredAuthMethod": "QRCode"`) applies only to Android and iOS/iPadOS devices. Don't deploy this preference to Windows devices; QR code and PIN sign-in isn't supported there.
 
+To provision app settings and prevent workers from changing settings or connections, add a `ClientSettings` object to the same JSON file. Learn more in [Client settings reference](warehouse-app-client-settings.md).
+
 ### Set up Intune to support managed configuration for Android devices
 
 Follow these steps to set up Intune to support managed configuration for Android devices.

@@ -4277,6 +4277,8 @@
             href: warehousing/install-configure-warehouse-management-app.md
           - name: Connection settings reference
             href: warehousing/warehouse-app-connection-settings.md
+          - name: Client settings reference
+            href: warehousing/warehouse-app-client-settings.md
           - name: User-based authentication
             href: warehousing/warehouse-app-authenticate-user-based.md
           - name: User-based authentication FAQ
