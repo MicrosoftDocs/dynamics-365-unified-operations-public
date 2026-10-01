@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ReqCreatePlanWorkspace
 ms.topic: troubleshooting-general
-ms.date: 05/05/2026
+ms.date: 09/23/2026
 ms.custom:
   - bap-template
 ai-usage: ai-assisted
@@ -272,6 +272,14 @@ When you enable Planning Optimization, the deprecated master planning engine is 
 Planning Optimization differs from the deprecated master planning engine design in some areas. This difference can also be caused by pending features.
 
 **Fix**: Run Planning Optimization fit analysis and then analyze the results while referring to the related documentation to understand the impact. Learn more in [Planning Optimization fit analysis](planning-optimization-fit-analysis.md).
+
+## Production orders aren't sequenced by requirement date or planning priority
+
+When multiple planned production orders compete for the same finite-capacity resource, the order that gets the earlier capacity might not have the earliest requirement date or highest planning priority.
+
+This behavior occurs because Planning Optimization can schedule production orders in parallel. The task that reserves capacity first determines which order gets the earlier time slot. Planning priority determines replenishment or order-fulfillment priority. It doesn't control the production scheduling sequence. From a user's perspective, the sequence is non-deterministic.
+
+This behavior is a current limitation. Don't rely on requirement dates or planning priorities to determine which production order reserves finite capacity first. Learn more in [Production-order sequencing with finite capacity](finite-capacity.md#production-order-sequencing-with-finite-capacity) and [Planning priority and production scheduling](priority-based-planning.md#planning-priority-and-production-scheduling).
 
 ## Can't disable Planning Optimization
 

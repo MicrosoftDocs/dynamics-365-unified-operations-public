@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 06/17/2025
+ms.date: 09/23/2026
 ms.custom: 
   - bap-template
 ---
@@ -17,9 +17,24 @@ ms.custom:
 
 This article describes the priority-based planning feature of Microsoft Dynamics 365 Supply Chain Management. The feature adds support for demand-driven planning, which is one step of [Demand Driven Material Requirements Planning (DDMRP)](ddmrp-overview.md). Priority-based planning enables the system to generate planned orders that are driven by planning priorities instead of requirement dates.
 
-Priority-based planning lets you prioritize replenishment orders to ensure that urgent demand is prioritized over less important demand. For example, a stockout replenishment order will be prioritized over a standard refill replenishment order. The system can automatically split larger orders into separate smaller orders where order lines are grouped by priority. It can then process all high-priority orders first.
+Priority-based planning lets you prioritize replenishment orders to ensure that urgent demand is prioritized over less important demand. For example, a stockout replenishment order will be prioritized over a standard refill replenishment order. The system can automatically split larger orders into separate smaller orders where order lines are grouped by priority. It can then process high-priority replenishment orders first when matching supply to demand.
 
 To get a quick overview of this feature, see the following video: [Planning optimization support for priority-based planning in Dynamics 365 Supply Chain Management](https://youtu.be/GmMHzFETTQc).
+
+## Planning priority and production scheduling
+
+Priority-based planning determines replenishment or order-fulfillment priority. It doesn't determine the sequence in which planned production orders are scheduled or reserve finite capacity.
+
+The following terms describe different parts of planning:
+
+- **Demand priority** – The importance assigned to a demand line.
+- **Replenishment priority** – The priority used to plan supply that fulfills demand. Priority-based planning uses this priority to prioritize replenishment orders.
+- **Requirement date** – The date when the demand or supply is required. Planned production orders are backward-scheduled from this date.
+- **Production scheduling sequence** – The order in which production orders are scheduled and reserve finite capacity.
+
+For example, consider two planned production orders that require the same finite-capacity machine. Order A has an earlier requirement date and a higher planning priority than Order B. Planning Optimization can schedule the orders in parallel. Therefore, Order B might reserve the earlier available capacity. The sequence isn't guaranteed to follow requirement-date order or planning-priority order. From a user's perspective, the sequence is non-deterministic.
+
+Demand priority therefore doesn't guarantee which production order gets capacity first. Learn more in [Production-order sequencing with finite capacity](finite-capacity.md#production-order-sequencing-with-finite-capacity).
 
 ## Where and how planning priorities are assigned
 
