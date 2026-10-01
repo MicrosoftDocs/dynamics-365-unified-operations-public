@@ -225,7 +225,8 @@ To configure electronic document parameters, follow these steps:
    :::image type="content" source="e-inv-pol-doc-parameters.jpg" alt-text="Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.":::
 
    > [!NOTE]
-   > To minimize the risk of accidental massive submissions, the system implements default filtering by document dates. In the **Date filed to filter** column, specify the exact selected table's field for filtering. In the **Days to look back** column, define the number of days to subtract from the current date to determine the earliest date for document processing. If you don't configure the **Date filed to filter** and **Days to look back** columns, the **Invoice date** equal to the current date is used by default.
+   > To minimize the risk of accidental massive submissions, the system implements default filtering by document dates. In the **Date filed to filter** column, specify the exact selected table's field for filtering. In the **Days to look back** column, define the number of days to subtract from the current date to determine the earliest date for document processing. If you don't configure the **Date filed to filter** and **Days to look back** columns, the default date field and the default **Days to look back** will be used.
+   > The default **Days to look back** is 3. The default **Date filed to filter** used depends on the document table, for the tables **Customer invoice journal**, **Vendor invoice journal** and **Project invoice journal**, **InvoiceDate** is used as default field. For **Journal lines** and **Fiscal transaction document**, **TransDate** is used as default field.
 
 1. For the **Customer Invoice journal** table name, select **Response types**.
 1. Select **New** to create a response type, and enter the following values:
