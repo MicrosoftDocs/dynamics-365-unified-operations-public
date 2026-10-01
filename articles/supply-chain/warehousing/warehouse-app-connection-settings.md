@@ -41,6 +41,10 @@ The following table summarizes the parameters that you can specify for each conn
 | `"DomainName"` | (Optional.) This parameter applies only to the `"UsernamePassword"` connection type. It allows you to implement a simplified sign-in process. If you don't set this field, workers must always enter their full Microsoft Entra ID user principal name (UPN) to sign in. A UPN has the form \<*user name*\>@\<*domain name*\>. If you specify the \<*domain name*\> part here, workers can sign in by entering only the \<*user name*\> part. (Even if you set the domain name here, workers can still sign in using their full UPN.) |
 | `"ActiveDirectoryTenant"` | (Optional) Applies only when you set `"AuthCloud": "Manual"`. Specify the Microsoft Entra ID domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Microsoft-Entra-ID-domain-name>`. Here's an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. Learn more about how to find your Microsoft Entra ID domain name in [Locate important IDs for a user](/partner-center/find-ids-and-domain-names). |
 
+## Include client settings in the connection settings file or QR code
+
+In addition to the `ConnectionList` object described in this article, the connection settings JSON file can also include a `ClientSettings` object, which provisions and locks app settings, such as the sign-in prompt and TLS version. Every delivery method applies it, and MDM always takes priority. Learn more in [Client settings reference](warehouse-app-client-settings.md).
+
 ## Example connection settings file
 
 The following example shows a valid connection settings file that contains three connections: *Connection1* uses the global application (no client ID is needed), *Connection2* uses a custom app registration with brokered authentication, and *Connection3* uses a custom app registration without brokered authentication.
@@ -88,7 +92,7 @@ This section applies when you deliver the settings as a file. If you use MDM man
 
 If you use the default name and location when you save the connection settings file on each device, the app automatically imports it, even during the first run after the app is installed. If you use a custom name or location for the file, the app user must specify the values during the first run. However, the app continues to use the specified name and location afterward.
 
-The default file name is *connections.json*. The default file location depends on which type of device you're using:
+The default file name is `connections.json`. The default file location depends on which type of device you're using:
 
 - **Windows:** `C:\Users\<User>\AppData\Local\Packages\Microsoft.WarehouseManagement_8wekyb3d8bbwe\LocalState`
 - **Android:** `Android\data\com.Microsoft.WarehouseManagement\files`. Because of [Android scoped storage limitations](install-configure-warehouse-management-app.md#distribute), external tools can't write to this path. Use MDM managed configuration or a QR code instead.
@@ -111,6 +115,7 @@ You can't remove a connection by using the connection settings file.
 
 - [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md)
 - [Choose how to distribute connection settings](install-configure-warehouse-management-app.md#distribute)
+- [Client settings reference for the Warehouse Management mobile app](warehouse-app-client-settings.md)
 - [Import connection settings from a QR code](warehouse-app-qr-code.md)
 - [Mass deploy the mobile app with user-based authentication](warehouse-app-intune-user-based.md)
 - [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md)
