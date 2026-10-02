@@ -6,7 +6,7 @@ ms.author: chuzheng
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 03/24/2026
+ms.date: 10/02/2026
 ms.custom:
   - bap-template
 ---
@@ -54,10 +54,11 @@ The following table summarizes what the pricing calculation API supports and doe
 
 | Supported | Not supported |
 |---|---|
-| Single-line price calculation per product | Multiline or cart-level discounts |
-| Simple discounts | Basket pricing or promotion concurrency |
-| Supply Chain Management pricing rules and pricing attributes | High-frequency or high-volume pricing calls |
-| Quantity-based pricing (default quantity is 1) | E-commerce or storefront scenarios |
+| Single-line price calculation per product | Basket pricing or promotion concurrency |
+| Simple discounts | High-frequency or high-volume pricing calls |
+| Multiline or cart-level discounts | E-commerce or storefront scenarios |
+| Supply Chain Management pricing rules and pricing attributes | |
+| Quantity-based pricing (default quantity is 1) | |
 | Variant price ranges for product masters | |
 
 ## Authentication
