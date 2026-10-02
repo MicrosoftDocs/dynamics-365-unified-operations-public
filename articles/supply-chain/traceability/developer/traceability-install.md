@@ -37,14 +37,14 @@ To use Traceability together with Dynamics 365 Supply Chain Management, you must
 - *Tracked components* – Enables component tracking in Supply Chain Management. As of Supply Chain Management version 10.0.45, this feature is turned on by default.
 - *(Preview) Traceability* – Integrates Traceability with the component tracking features in Supply Chain Management.
 
-## Microsoft Azure configuration
+## Register an application in Microsoft Entra ID
 
-### Register a new Microsoft Entra application
+A Microsoft Entra ID application enables external systems to authenticate and communicate with the Traceability add-in through its API. Follow these steps to register a new application:
 
 1. Sign in to the [Azure portal](https://ms.portal.azure.com/).
 1. Search for or navigate to the **App registrations** page.
 1. On the toolbar, select **New registration**.
-1. Fill out the **Register and application** page and select **Register**. For more information about these settings, see [Quickstart: Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app?tabs=certificate).
+1. Fill out the **Register an application** form and select **Register**. For more information about these settings, see [Quickstart: Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app?tabs=certificate).
 1. Your new app registration opens. On the left navigation pane, select **Overview**. Copy the **Application (client) ID** value to a temporary text file. You'll need it later when [setting up communication with the API](traceability-api.md).
 
 ## Install and configure the Traceability app in Power Apps

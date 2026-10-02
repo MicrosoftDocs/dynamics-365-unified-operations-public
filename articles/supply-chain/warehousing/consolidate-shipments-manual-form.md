@@ -42,7 +42,7 @@ Go to **Accounts receivable** > **Orders** > **All sales orders**, and create a 
     - **Item number:** *A0001* (an item that doesn't have a **Code 4** filter assigned)
     - **Quantity:** *1.00*
 
-1. Select **Inventory** > **Reservation**, and then on the **Action** pane, select **Reserve lot** to reserve the order line.
+1. Select **Inventory** > **Reservation**, and then on the Action Pane, select **Reserve lot** to reserve the order line.
 
 ### Create sales orders 3 and 4
 
@@ -56,7 +56,7 @@ Go to **Accounts receivable** > **Orders** > **All sales orders**, and create a 
     - **Item number:** *A0001* (an item that doesn't have a **Code 4** filter assigned)
     - **Quantity:** *1.00*
 
-1. Select **Inventory** > **Reservation**, and then on the **Action** pane, select **Reserve lot** to reserve the order line.
+1. Select **Inventory** > **Reservation**, and then on the Action Pane, select **Reserve lot** to reserve the order line.
 
 ## Release the orders to the warehouse
 
