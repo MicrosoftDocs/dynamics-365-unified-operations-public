@@ -1230,6 +1230,8 @@
                   items:
                     - name: Import currency exchange rates
                       href: general-ledger/import-currency-exchange-rates.md
+                    - name: OANDA rates provider (preview)
+                      href: general-ledger/OANDA-Rates-V2-Documentation-Draft-Version-2.md
                     - name: Dual currency
                       href: general-ledger/dual-currency.md
                     - name: Currency revaluation posting profile
