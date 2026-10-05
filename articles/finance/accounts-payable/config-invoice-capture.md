@@ -1,10 +1,10 @@
 ---
 title: Configure the Invoice capture solution
 description: Learn about how to configure the Invoice capture solution, including a step-by-step process that outlines various system preferences.
-author: leizi2015
-ms.author: zezhangzhao
+author: NishantNalawade
+ms.author: NNalawade
 ms.topic: overview
-ms.date: 07/28/2026
+ms.date: 10/02/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -23,7 +23,7 @@ After you install the Invoice capture solution, it provides default configuratio
 
 ## System preference
 
-1. **AI Builder model** – The default model is set to **Invoice processing model**. This prebuilt model can handle the most common invoices in various languages. However, it can't handle more complex invoice layouts. For those layouts, you can introduce your own models by uploading additional sample invoices, tagging the fields, and training the model. Additionally, you can define new model fields and map them to the fields in Invoice capture. You can transfer these additional captured fields to Dynamics 365 Finance to fulfill specific business requirements. You build a custom invoice model on top of the prebuilt model. However, before you apply it, be aware of the following limitations:
+ - **AI Builder model** – The default model is set to **Invoice processing model**. This prebuilt model can handle the most common invoices in various languages. However, it can't handle more complex invoice layouts. For those layouts, you can introduce your own models by uploading additional sample invoices, tagging the fields, and training the model. Additionally, you can define new model fields and map them to the fields in Invoice capture. You can transfer these additional captured fields to Dynamics 365 Finance to fulfill specific business requirements. You build a custom invoice model on top of the prebuilt model. However, before you apply it, be aware of the following limitations:
 
     - Key-value pairs aren't returned, and the **Map key-value pair fields** icon is disabled.
     - Confidence scores aren't returned.
@@ -31,11 +31,16 @@ After you install the Invoice capture solution, it provides default configuratio
     - Only one decimal precision formatting is allowed when a new currency field is defined.
     - Currency codes aren't returned. This limitation might affect the derivation of the currency code.
 
-1. **Channel for file upload** – The channel that's used to directly upload invoice files.
-1. **File filter** – Select the file filter to apply additional filtering to incoming files at the application level. In this case, invoice file processing is halted at the **Received files** stage.
-1. **Configuration group** – The configuration group that is used if a configuration group isn't set at the legal entity or vendor account level during invoice processing.
-1. **Use continuous learning** – Select this option to turn on the continuous learning feature. The continuous learning feature tries to record patterns between the invoice context and manually selected entities. Immediately after the invoice is successfully transferred, the relationship is recorded and applied to any invoice that arrives in the future and has the same context.
-1. **Auto invoice cleanup** – Select this option to automatically clean up transferred invoices and voided invoices that are older than 180 days every day. The job deletes both the invoice data and the original invoice file.
+ - **Channel for file upload** – The channel that's used to directly upload invoice files.
+ - **File filter** – Select the file filter to apply additional filtering to incoming files at the application level. In this case, invoice file processing halts at the **Received files** stage.
+ - **Configuration group** – The configuration group that's used if a configuration group isn't set at the legal entity or vendor account level during invoice processing.
+ - **Use continuous learning** – Select this option to turn on the continuous learning feature. The continuous learning feature tries to record patterns between the invoice context and manually selected entities. Immediately after the invoice is successfully transferred, the relationship is recorded and applied to any invoice that arrives in the future and has the same context.
+ - **Auto invoice cleanup** – Select this option to automatically clean up transferred invoices and voided invoices that are older than 180 days every day. The job deletes both the invoice data and the original invoice file.
+ - **Exclude cost invoice lines** – Select this option to hide and skip validation of cost invoice lines when cost invoices are transferred to Dynamics 365 Finance as an invoice journal. This option applies only when the target invoice type for cost invoices is set to **Invoice journal** in Finance.
+ - **Enable asynchronous processing** – Select this option to process OCR recognition in asynchronous mode. This setting is recommended for environments that process large invoices or high volumes. It uses batch requests to reduce processing time. When you select this option, the system polls for the OCR result after the recognition request is submitted. The system retries up to 12 times before the invoice is marked as failed. If all polling attempts are exhausted, the received file is set to **Canceled**, and the user can select **Retry** to resubmit it.
+ - **Only accept confirmed purchase orders** – Select this option to restrict invoice matching to purchase orders with a status of **Confirmed**. Invoices that reference unconfirmed purchase orders aren't processed.
+ - **Auto-clear invalid lookup values** – Select this option to automatically remove captured field values that don't match any entry in their corresponding lookup list. This action prevents invalid values from blocking invoice processing.
+ - **Quantity precision** – Select the number of decimal places used for invoice line quantity fields. The default value is **2**. You can increase this value to **3** for precision-sensitive industries where two decimal places are insufficient.
 
 ## Manage processing rules
 
@@ -59,17 +64,18 @@ In invoice capture processing, apply different derivation rules to ensure that t
 - **Validate total amount** – Select this parameter to confirm alignment between the calculated total invoice amount and the captured total amount.
 
   - If the line amount has a zero or null value, calculate the line net amount as *Unit price* &times; *Quantity*.
-  - If the total sale tax has a zero or null value, calculate the total sales tax as the sum of the sales tax lines.
+  - If the total sale tax has a zero or null value, the total sales tax is the sum of the sales tax lines.
 
     *Total amount* == *Sum (line amount)* + *Sum (charge lines)* &minus; *ABS(Discount)* + *Total sales tax*
 
     If there's no invoice line, or if the sum of the line amount is zero, the total amount validation is skipped.
 
-- **Credit note process** – Select the **Support credit note** parameter to automatically classify a document as a credit note if the document header contains terms such as **Credit note** or **Credit memo**.
+- **Credit note process** – Select the **Support credit note** parameter to automatically classify a document as a credit note if the document header contains terms such as **Credit note** or **Credit memo**. When a document is classified as a credit note, the amount and quantity fields are automatically adjusted to negative values if they're positive. You can customize the list of recognized terms by editing the **Credit note dictionary** field. The default terms are **credit note** and **credit memo**, separated by commas.
+- **Remove zero invoice lines** – Select this parameter to automatically remove invoice lines where the quantity, unit price, and line net amount are all zero or empty. This prevents empty lines captured by OCR from requiring manual review.
 
 ### Manage file filters (optional)
 
-**Manage file filters** lets administrators define additional filters for incoming invoice files. Files that don't meet the filter criteria are received, but they appear in the **Received files (Pending)** list with a status of **Canceled**. Clerks can review the files and decide whether to void and obsolete them.
+By using **Manage file filters**, administrators can define extra filters for incoming invoice files. The system receives files that don't meet the filter criteria, but they appear in the **Received files (Pending)** list with a status of **Canceled**. Clerks can review these files and decide whether to void and obsolete them.
 
 > [!NOTE]
 > This behavior differs from the behavior that's defined in the flow behind the channel. In that flow, the system doesn't receive files that don't meet the criteria.
@@ -87,7 +93,10 @@ Configure the following settings in the file filter:
 
     - PDF
     - PNG
+    - JPG
     - JPEG
+    - TIF
+    - TIFF
 
 1. **Supported file names** – Use file name rules to filter out files that aren't relevant to invoices. Apply different rules to accept files only when the name contains predefined strings, or to exclude files that contain the defined strings.
 1. **Image dimensions** – Set the image dimensions to be between 50 x 50 pixels and 10,000 x 10,000 pixels.
@@ -97,7 +106,7 @@ Configure the following settings in the file filter:
 
 Invoice capture processing requires two basic data types to classify invoices: legal entities and vendors.
 
-**Legal entities** are organizations that are registered with legal authorities and defined in Dynamics 365 Finance. You perform and record business activities separately for each legal entity. In Microsoft Power Platform, you link business units, security roles, and users to conform to the role-based security model. This link controls data access through business units and security roles, and allows accounts payable clerks to view only the invoices that are assigned to their users.
+**Legal entities** are organizations that are registered with legal authorities and defined in Dynamics 365 Finance. You perform and record business activities separately for each legal entity. In Microsoft Power Platform, you link business units, security roles, and users to conform to the role-based security model. This link controls data access through business units and security roles, and accounts payable clerks can view only the invoices that are assigned to their users.
 
 **Vendors** are individuals or organizations that supply goods or services to a business. In Dynamics 365 Finance, if a vendor provides services or products to multiple legal entities, you need to create a vendor account for each legal entity. You can record business activity for each legal entity. In Invoice capture, use the vendor master data to automatically derive the vendor account and help increase the touchless rate in invoice processing.
 
@@ -109,7 +118,7 @@ In the **Manage legal entities** process, you can't manually create legal entiti
 1. Select **Sync**.
 1. In the confirmation message box, select **OK**.
 
-After synchronization completes, a message shows the number of new legal entities. The list view automatically refreshes to show the new legal entities.
+When synchronization finishes, a message shows the number of new legal entities. The list view automatically refreshes to show the new legal entities.
 
 ### Sync vendors
 
