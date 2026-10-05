@@ -1,10 +1,10 @@
 ---
 title: Install the Invoice capture solution
 description: Learn about how to install the Invoice capture solution and integrate it with Microsoft Dynamics 365 Finance, including prerequisites.
-author: sunfzam
-ms.author: zezhangzhao
+author: NishantNalawade
+ms.author: NNalawade
 ms.topic: overview
-ms.date: 07/25/2026
+ms.date: 09/30/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -35,7 +35,7 @@ Before you can install the Invoice capture solution, ensure the following prereq
 
 ## Configure Dynamics 365 Finance
 
-When you enable the **Invoice Capture for Dynamics 365 Finance** feature, the **Invoice capture** menu is available under **Accounts Payable \> Set up \> Invoice capture**.
+When you enable the **Invoice Capture for Dynamics 365 Finance** feature, the **Invoice capture** menu becomes available under **Accounts Payable** > **Set up** > **Invoice capture**.
 
 Before you install Invoice capture, complete the following setup in Invoice capture:
 
@@ -79,7 +79,7 @@ Invoice capture supports integrated Power Platform environments.
 For an *integrated* Power Platform environment, the finance and operations virtual entity is already installed. To confirm that it's installed in the environment, follow these steps:
 
 1. In Power Platform admin center, go to **Environment**, and open the **Environment details** page.
-1. Select **Resource \> Dynamic 365 apps**.
+1. Select **Resource** > **Dynamics 365 apps**.
 1. Confirm that **Finance and Operations Virtual Entity** appears in the list, and that it has a status of **Installed**.
 
 To install Invoice capture, follow this step.
@@ -96,7 +96,7 @@ To install Invoice capture, follow this step.
 When a new solution version is available, the system notifies you. Follow these steps to upgrade the solution:
 
 1. In Power Platform admin center, go to **Environment**, and open the **Environment details** page.
-1. Select **Resource \> Dynamic 365 apps**.
+1. Select **Resource** > **Dynamics 365 apps**.
 1. If **Invoice Capture within Dynamics 365 Finance** shows **Upgrade available**, select **Update**, accept the terms of service, and confirm that you want to update the solution.
 
 ## Delete the Invoice capture solution
@@ -110,6 +110,7 @@ If you need to delete the Invoice capture solution, follow these steps:
     1. Dynamics 365 Invoice capture - Application
     1. Dynamics 365 Invoice capture Solution anchor
     1. Dynamics 365 Invoice capture - Controls
+    1. Dynamics 365 Invoice capture - Flows
     1. Dynamics 365 Invoice capture - Backend
     1. Dynamics 365 Invoice Capture - Permissions
     1. Dynamics 365 Invoice capture Base

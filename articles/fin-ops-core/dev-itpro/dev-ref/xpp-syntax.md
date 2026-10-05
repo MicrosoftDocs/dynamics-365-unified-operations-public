@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!INCLUDE [banner](../includes/banner.md)]
 
-This article provides the syntax reference for X++. 
+This article provides the syntax reference for X++.
 
 ## X++ keywords
 
@@ -76,7 +76,6 @@ The following table lists reserved X++ keywords. You can't use these keywords fo
 | **catch** | Used in exception handling. | Exception Handling with try, and catch Keywords |
 | **changeCompany** | Changes database settings to another company. | Change Company Design Pattern |
 | **class** | Declares a class. | Classes in X++ |
-| **client** | Method modifier. These modifiers aren't used anymore. All methods are executed on the server tier. | Method Modifiers |
 | **container** | Designates the `container` type. Containers contain a sequence of atomic values and other containers. | Containers |
 | **continue** | Forces the next iteration of a loop. | Continue Statements |
 | **count** | Returns the number of records from the rows specified by the `group by` clause in a `select` statement. | Select Statement Syntax |
@@ -142,7 +141,6 @@ The following table lists reserved X++ keywords. You can't use these keywords fo
 | **return** | Returns from a method. | Declaration of Methods |
 | **reverse** | Records are returned in reverse order. | Select Statement Syntax |
 | **select** | The `select` clause designates which columns or views are shown in the result set. | Select Statements |
-| **server** | Method modifier. This modifier is ignored and shouldn't be used, since all methods are executed on the server side. | Method Modifiers |
 | **setting** | Used with the `update_recordset` command. | update_recordset |
 | **static** | Static methods can't refer to instance variables (only to static variables). Invoke static methods by using the class name rather than on an instance of the class ("`MyClass.aStaticProcedure`"). | Method Modifiers |
 | **str** | Designates the `string` type. | Strings |
@@ -254,12 +252,12 @@ This section contains the BNF that defines the grammar of X++.
               ::= EXPR_HDR  IF_EXPR  SEMIOPT
               ::= RETTYPEID  FUNC_HDR  EVENT_DECL  BODY
     SEMIOPT ::= SEMICOLON_SYM
-            ::= 
+            ::=
     CLASS_DECL ::= CLASS_HEADER  LEFTBR_SYM  DCL_EVENTMAP  DCL_LIST  RIGHTBR_SYM
     CLASS_HEADER ::= ATTRIBUTE_DEF  CLASS_MODIFIERS  CLASSORINTERFACE  STD_ID  EXTENDS  IMPLEMENTS
     ATTRIBUTE_DEF ::= LEFT_BRKT_SYM  ATTRIBUTE_INIT  ATTRIBUTE_LIST  RETTYPEID  RGHT_BRKT_SYM
-                  ::= 
-    ATTRIBUTE_INIT ::= 
+                  ::=
+    ATTRIBUTE_INIT ::=
                    .
     ATTRIBUTE_LIST ::= ATTRIBUTE
                    ::= ATTRIBUTE_LIST  LIST_SEP_SYM  ATTRIBUTE
@@ -283,7 +281,7 @@ This section contains the BNF that defines the grammar of X++.
     CLASSORINTERFACE ::= CLASS_SYM
                      ::= INTERFACE_SYM
     CLASS_MODIFIERS ::= CLASS_MODS
-                    ::= 
+                    ::=
     CLASS_MODS ::= CLASS_MODIFIER
                ::= CLASS_MODS  RETTYPEID  CLASS_MODIFIER
     CLASS_MODIFIER ::= PUBLIC_SYM
@@ -292,12 +290,12 @@ This section contains the BNF that defines the grammar of X++.
                    ::= ABSTRACT_SYM
                    ::= PRIVATE_SYM
     EXTENDS ::= EXTENDS_SYM  STD_ID
-            ::= 
+            ::=
     IMPLEMENTS ::= IMPLEMENTS_SYM  IMPLEMENTLIST
-               ::= 
+               ::=
     IMPLEMENTLIST ::= STD_ID
                   ::= IMPLEMENTLIST  LIST_SEP_SYM  STD_ID
-    DCL_EVENTMAP ::= 
+    DCL_EVENTMAP ::=
     EVENT_DECL ::= ATTRIBUTE_DEF  EVENT_HEADER  PARM_DCL_LIST
     EVENT_HEADER ::= EVENT_MODIFIER  VOID_TYPE_SYM  STD_ID
     EVENT_MODIFIER ::= EVENT_SYM
@@ -305,7 +303,7 @@ This section contains the BNF that defines the grammar of X++.
     FUNCNAME ::= FUNCTYPE  STD_ID
     FUNCTYPE ::= FUNC_MODIFIERS  DECL_TYPE
     FUNC_MODIFIERS ::= FUNC_MODS
-                   ::= 
+                   ::=
     FUNC_MODS ::= RETTYPEID  FUNC_MODIFIER
               ::= FUNC_MODS  RETTYPEID  FUNC_MODIFIER
     FUNC_MODIFIER ::= PUBLIC_SYM
@@ -316,27 +314,25 @@ This section contains the BNF that defines the grammar of X++.
                   ::= ABSTRACT_SYM
                   ::= DISPLAY_SYM
                   ::= EDIT_SYM
-                  ::= SERVER_SYM
-                  ::= CLIENT_SYM
     BODY ::= LEFTBR_SYM  DCL_FUNC_LIST  SEMIOPT  SECAUTHZCHECK  STMTLIST  SECAUTHZEND  RIGHTBR_SYM
-    SECAUTHZCHECK ::= 
-    SECAUTHZEND ::= 
-    RETTYPEID ::= 
+    SECAUTHZCHECK ::=
+    SECAUTHZEND ::=
+    RETTYPEID ::=
     FUNCTION_DEF ::= FUNC_HEADER  PARM_DCL_LIST  LOCAL_BODY
     FUNC_HEADER ::= DECL_TYPE  STD_ID
     PARM_DCL_LIST ::= RETTYPEID  PARM_START  PARM_LIST_OPT  RGHT_PAR_SYM  RETTYPEID
     PARM_START ::= LEFT_PAR_SYM
     PARM_LIST_OPT ::= PARM_LIST
-                  ::= 
+                  ::=
     PARM_LIST ::= DCL_INIT
               ::= PARM_LIST  LIST_SEP_SYM  DCL_INIT
     LOCAL_BODY ::= LEFTBR_SYM  DCL_LIST  SEMIOPT  STMTLIST  RETTYPEID  RIGHTBR_SYM
     DCL_LIST ::= DCL_LIST2
-             ::= 
+             ::=
     DCL_LIST2 ::= DCL_STMT
               ::= DCL_LIST2  DCL_STMT
     DCL_FUNC_LIST ::= DCL_FUNC_LIST2
-                  ::= 
+                  ::=
     DCL_FUNC_LIST2 ::= DCL_STMT
                    ::= FUNCTION_DEF
                    ::= DCL_FUNC_LIST2  DCL_STMT
@@ -363,25 +359,25 @@ This section contains the BNF that defines the grammar of X++.
              ::= CLR_NAMESPACE  CLR_TYPE
     CLR_NAMESPACE ::= TYPE_ID  PERIOD_SYM
     CLR_ARRAY_TYPE_EXT ::= CLR_ARRAY_SPEC
-                       ::= 
+                       ::=
     CLR_ARRAY_SPEC ::= CLR_ARRAY_PART
                    ::= CLR_ARRAY_SPEC  CLR_ARRAY_PART
     CLR_ARRAY_PART ::= CLR_ARRAY_LEFT_PART  CLR_RECTANGULAR_LIST  RGHT_BRKT_SYM
     CLR_ARRAY_LEFT_PART ::= LEFT_BRKT_SYM
     CLR_RECTANGULAR_LIST ::= CLR_COMMA_LIST
-                         ::= 
+                         ::=
     CLR_COMMA_LIST ::= LIST_SEP_SYM
                    ::= CLR_COMMA_LIST  LIST_SEP_SYM
     STR_LEN ::= INT_SYM
-            ::= 
+            ::=
     ARR_DCL_IDX ::= LEFT_BRKT_SYM  RANGE  ARRAY_MEM  RGHT_BRKT_SYM
-                ::= 
+                ::=
     RANGE ::= IF_EXPR
-          ::= 
+          ::=
     ARRAY_MEM ::= LIST_SEP_SYM  IF_EXPR
-              ::= 
+              ::=
     ASG_CLAUSE ::= INIT_START  IF_EXPR
-               ::= 
+               ::=
     INIT_START ::= ASG_SYM
     ASG_STMT ::= LVAL_FLD  ASSIGN  IF_EXPR
              ::= LVAL_LIST  ASG_SYM  IF_EXPR
@@ -462,12 +458,12 @@ This section contains the BNF that defines the grammar of X++.
     CLR_SMPL_EXPR_COMMA_LIST ::= SMPL_EXPR
       ::= CLR_SMPL_EXPR_COMMA_LIST  LIST_SEP_SYM  SMPL_EXPR
     CLR_NOSIZED_ARRAY_SPEC ::= CLR_NOSIZED_ARRAY_LIST
-                           ::= 
+                           ::=
     CLR_NOSIZED_ARRAY_LIST ::= CLR_NOSIZED_ARRAY
                            ::= CLR_NOSIZED_ARRAY_LIST  CLR_NOSIZED_ARRAY
     CLR_NOSIZED_ARRAY ::= LEFT_BRKT_SYM  CLR_EMPTY_COMMA_LIST  RGHT_BRKT_SYM
     CLR_EMPTY_COMMA_LIST ::= CLR_EMPTY_RECT_COMMA_LIST
-                         ::= 
+                         ::=
     CLR_EMPTY_RECT_COMMA_LIST ::= LIST_SEP_SYM
                               ::= CLR_EMPTY_RECT_COMMA_LIST  LIST_SEP_SYM
     CONLITTERAL ::= LEFT_BRKT_SYM  IF_EXPR  EXPR_LIST  RGHT_BRKT_SYM
@@ -486,7 +482,7 @@ This section contains the BNF that defines the grammar of X++.
     DIRSEARCH ::= DIRS_HEADER  PERIOD_SYM  STD_ID  ARR_IDX
               ::= DIRS_HEADER  PERIOD_SYM  FLD_NUM  ARR_IDX
     DIRS_HEADER ::= LEFT_PAR_SYM  SET_DIRS  FIND_JOIN  RGHT_PAR_SYM
-    SET_DIRS ::= 
+    SET_DIRS ::=
     FIELD ::= QUALIFIER  STD_ID  ARR_IDX
           ::= QUALIFIER  FLD_NUM  ARR_IDX
           ::= STD_ID  ARR_IDX
@@ -494,13 +490,13 @@ This section contains the BNF that defines the grammar of X++.
               ::= STD_ID  PERIOD_SYM
     FLD_NUM ::= LEFT_PAR_SYM  IF_EXPR  RGHT_PAR_SYM
     ARR_IDX ::= LEFT_BRKT_SYM  SMPL_EXPR  RGHT_BRKT_SYM
-            ::= 
+            ::=
     EXPR_LIST ::= EXPR_LIST2
-              ::= 
+              ::=
     EXPR_LIST2 ::= LIST_SEP_SYM  IF_EXPR
                ::= EXPR_LIST2  LIST_SEP_SYM  IF_EXPR
     FUNCTION ::= FUNC_ID  LEFT_PAR_SYM  EVAL_FUNCTION_NAME  PAR_LIST  RGHT_PAR_SYM
-    EVAL_FUNCTION_NAME ::= 
+    EVAL_FUNCTION_NAME ::=
     EVAL_NAME ::= EVAL_ID  LEFT_PAR_SYM
               ::= STD_ID  LEFT_PAR_SYM
               ::= STD_ID  DBLCOLON_SYM  STD_ID  LEFT_PAR_SYM
@@ -515,7 +511,7 @@ This section contains the BNF that defines the grammar of X++.
     NAMESPACE ::= STD_ID  PERIOD_SYM
     EVAL ::= EVAL_NAME  PAR_LIST  RGHT_PAR_SYM
     PAR_LIST ::= PRM_LIST
-             ::= 
+             ::=
     PRM_LIST ::= PAR_ELEM
              ::= PRM_LIST  LIST_SEP_SYM  PAR_ELEM
     PAR_ELEM ::= IF_EXPR
@@ -524,9 +520,9 @@ This section contains the BNF that defines the grammar of X++.
     IARGS ::= STD_ID
           ::= STR_SYM
           ::= STD_ID  LIST_SEP_SYM  STD_ID
-          ::= 
+          ::=
     STMTLIST ::= STATEMENTS
-             ::= 
+             ::=
     STATEMENTS ::= STATEMENT
                ::= STATEMENTS  STATEMENT
     STATEMENT ::= COMPOUND_STMT
@@ -567,8 +563,8 @@ This section contains the BNF that defines the grammar of X++.
     CATCH_EXPR ::= CATCH_SYM  LEFT_PAR_SYM  IF_EXPR  RGHT_PAR_SYM
       ::= CATCH_SYM  LEFT_PAR_SYM  IF_EXPR  LIST_SEP_SYM  TABLEINSTANCE  RGHT_PAR_SYM
       ::= CATCH_SYM
-    PRE_CATCH ::= 
-    POST_CATCH ::= 
+    PRE_CATCH ::=
+    POST_CATCH ::=
     TABLEINSTANCE ::= INSTANCENAME
     INSTANCENAME ::= QUALIFIER  STD_ID  ARR_IDX
                  ::= STD_ID  ARR_IDX
@@ -588,7 +584,7 @@ This section contains the BNF that defines the grammar of X++.
             ::= LVAL_FLD  ASG_INC_DEC
             ::= ASG_INC_DEC  LVAL_FLD
     JOIN_LIST ::= JOIN_SPECS
-              ::= 
+              ::=
     JOIN_SPECS ::= JOIN_SPEC
                ::= JOIN_SPECS  JOIN_SPEC
     JOIN_SPEC ::= JOIN_ORDER  WHERE  IF_EXPR
@@ -602,7 +598,7 @@ This section contains the BNF that defines the grammar of X++.
     OUTER ::= OUTER_SYM
           ::= EXISTS_SYM
           ::= NOTEXISTS_SYM
-          ::= 
+          ::=
     SEARCH_STMT ::= SEARCH_JOIN  STATEMENT
     SEARCH_JOIN ::= SEARCH_WHERE  JOIN_LIST
     SEARCH_WHERE ::= SEARCH_ORDER  WHERE  IF_EXPR
@@ -619,9 +615,9 @@ This section contains the BNF that defines the grammar of X++.
     ORDER_GROUP ::= ORDERBY_CLAUSE  OPT_GROUPBY
                 ::= GROUPBY_CLAUSE  OPT_ORDERBY
     OPT_GROUPBY ::= GROUPBY_CLAUSE
-                ::= 
+                ::=
     OPT_ORDERBY ::= ORDERBY_CLAUSE
-                ::= 
+                ::=
     ORDERBY_CLAUSE ::= ORDER_SYM  OPT_BY  ORDER_ELEM
                    ::= ORDERBY_CLAUSE  LIST_SEP_SYM  ORDER_ELEM
     GROUPBY_CLAUSE ::= GROUP_SYM  OPT_BY  ORDER_ELEM
@@ -630,12 +626,12 @@ This section contains the BNF that defines the grammar of X++.
                ::= ORDER_QUALIFIER  STD_ID  INDEX  DIRECTION
     ORDER_QUALIFIER ::= STD_ID  PERIOD_SYM
     INDEX ::= LEFT_BRKT_SYM  INT_SYM  RGHT_BRKT_SYM
-          ::= 
+          ::=
     DIRECTION ::= ASCEND_SYM
               ::= DESCEND_SYM
-              ::= 
+              ::=
     OPT_BY ::= BY_SYM
-           ::= 
+           ::=
     SEARCH_USING ::= SEARCH_CLAUSE  USING_INDEX  STD_ID
                  ::= SEARCH_CLAUSE  USING_INDEX  HINT_SYM  STD_ID
                  ::= SEARCH_CLAUSE
@@ -643,11 +639,11 @@ This section contains the BNF that defines the grammar of X++.
     SEARCH_CLAUSE ::= WHILE_SYM  SELECT_SYM  SELECTOPT  CROSSCOMPANY_CLAUSE  VALIDTIMESTATE_CLAUSE  TABLE
     CROSSCOMPANY_CLAUSE ::= CROSSCOMPANY_SYM
                         ::= CROSSCOMPANY_SYM  COLON_SYM  STD_ID
-                        ::= 
+                        ::=
     VALIDTIMESTATE_CLAUSE ::= VALIDTIMESTATE_SYM  LEFT_PAR_SYM  STD_ID  LIST_SEP_SYM  STD_ID  RGHT_PAR_SYM
       ::= VALIDTIMESTATE_SYM  LEFT_PAR_SYM  STD_ID  RGHT_PAR_SYM
-      ::= 
-    SELECTOPT ::= 
+      ::=
+    SELECTOPT ::=
               ::= SELECTOPT  REVERSE_SYM
               ::= SELECTOPT  FIRSTFAST_SYM
               ::= SELECTOPT  FIRSTONLY_SYM
@@ -684,12 +680,12 @@ This section contains the BNF that defines the grammar of X++.
     FIELD_SPEC ::= STD_ID  INDEX
                ::= SUM_ELEM
     OPT_FROM ::= FROM_SYM  STD_ID
-             ::= 
-    SETFIELDSMODE ::= 
+             ::=
+    SETFIELDSMODE ::=
     UPDATE_STMT ::= UPDATETABLE  SET_SYM  SETFIELDSMODE  FIELDASSIGNMENTS  OPT_WHERE  JOIN_LIST  SEMICOLON_SYM
     UPDATETABLE ::= UPDATE_SYM  SELECTOPT  CROSSCOMPANY_CLAUSE  STD_ID
     OPT_WHERE ::= WHERE  IF_EXPR
-              ::= 
+              ::=
     FIELDASSIGNMENTS ::= FIELDASSIGNMENTS  LIST_SEP_SYM  FIELDASSIGNMENT
                      ::= FIELDASSIGNMENT
     FIELDASSIGNMENT ::= STD_ID  INDEX  ASG_SYM  IF_EXPR
@@ -703,7 +699,7 @@ This section contains the BNF that defines the grammar of X++.
     PRINT_CLAUSE ::= PRINT  IF_EXPR  EXPR_LIST
     PRINT ::= PRINT_SYM
     AT_CLAUSE ::= AT_SYM  IF_EXPR  LIST_SEP_SYM  IF_EXPR
-              ::= 
+              ::=
     WINDOW_STMT ::= WINDOW_SYM  IF_EXPR  LIST_SEP_SYM  IF_EXPR  AT_CLAUSE  SEMICOLON_SYM
     IF_STMT ::= ELSE_STMT
             ::= IF_CONDS

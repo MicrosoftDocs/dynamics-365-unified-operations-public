@@ -1,10 +1,10 @@
 ---
 title: Invoice capture solution configuration groups
 description: Learn about configuration groups in the Invoice capture solution, including a definition of configuration groups and an outline on assigning configuration groups.
-author: sunfzam
-ms.author: zezhangzhao
+author: NishantNalawade
+ms.author: NNalawade
 ms.topic: overview
-ms.date: 07/28/2026
+ms.date: 09/30/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -56,16 +56,19 @@ Administrators can define whether a manual review is required for each recognize
 In Invoice capture, different invoice types exist for incoming invoices. The invoice type determines several details:
 
 - It determines the validation logic that's used to ensure the completeness and correctness of invoices in Invoice capture.
-- It determines the invoice fields (on the header or lines) that are shown in the side-by-side viewer.
+- It determines the invoice fields (on the header or lines) that appear in the side-by-side viewer.
 - Together with the setting in Dynamics 365 Finance, it determines the data entity API that's called on the recipient side (by using the pending vendor invoice or invoice journal).
 
 Three invoice types exist in Invoice capture:
 
-- **PO invoice** – Invoices of this type are associated with purchase orders. The purchase order details must be determined on each invoice line. Both the header and the lines must be reviewed in Invoice capture.
-- **Header-only** – Invoices of this type are associated with purchase orders. The purchase order field on the invoice header is a mandatory field. If the **Automatically create invoice lines** feature is enabled, the invoice lines are automatically created from the purchase order in Finance, and users don't have to review the line details in Invoice capture. In addition, the line details aren't shown in the side-by-side viewer.
-- **Cost invoice** – Invoices of this type contain non-stock items. Those items can be either service items or procurement category items.
+- **PO invoice** – Invoices of this type associate with purchase orders. You must determine the purchase order details on each invoice line and review both the header and the lines in Invoice capture.
+- **Header-only** – Invoices of this type associate with purchase orders. The purchase order field on the invoice header is a mandatory field. If you enable the **Automatically create invoice lines** feature, the invoice lines are automatically created from the purchase order in Finance, and users don't have to review the line details in Invoice capture. In addition, the line details aren't shown in the side-by-side viewer.
+- **Cost invoice** – Invoices of this type contain nonstock items. Those items can be either service items or procurement category items.
 
 Admins can create a configuration group, select the supported invoice type, and assign the configuration group to the vendor level. This approach increases the touchless rate of invoice processing in Invoice capture.
+
+> [!NOTE]
+> When you enable both **PO invoice** and **Header-only** in a configuration group, and an invoice has a purchase order reference but no captured line items, the system automatically classifies the invoice as a header-only invoice. This classification prevents empty PO invoices from requiring manual reclassification.
 
 ### Define the control of invoice fields
 

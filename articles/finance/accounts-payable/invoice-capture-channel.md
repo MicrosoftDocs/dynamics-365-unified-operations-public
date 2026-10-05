@@ -1,10 +1,10 @@
 ---
 title: Manage channels in the Invoice capture solution
-description: Learn about how to manage channels in the Invoice capture solution, including an outlining defining channels and documents reeiving APIs.
-author: sunfzam
-ms.author: zezhangzhao
+description: Learn about how to manage channels in the Invoice capture solution, including an outlining defining channels and documents receiving APIs.
+author: NishantNalawade
+ms.author: NNalawade
 ms.topic: overview
-ms.date: 07/28/2026
+ms.date: 09/30/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -37,8 +37,8 @@ The Document receive API, **vis\_ExternalDocumentReceive**, is a Dataverse unbou
 ### Input parameters
 
 | Parameter name | Type | Required | Description |
-|----------------|------|----------|-------------|
-| ChannelId | string | Yes | Channel id  |
+| ---------------- | ------ | ---------- | ------------- |
+| ChannelId | string | Yes | Channel ID |
 | FileName | string | Yes | A file name with extension. |
 | FileContent | string | Yes | A Base64-encoded file. |
 | FileSetId | string | No | An optional parameter. |
@@ -84,7 +84,7 @@ By default, the flow template is set to **Microsoft Outlook 365**.
 The following table describes the additional properties that you must define to generate flows.
 
 | Flow template | Property | Description |
-|---------------|----------|-------------|
+| --------------- | ---------- | ------------- |
 | **Outlook.com** or **Microsoft Outlook 365** | Folder | The email folder under the root directory. The default folder is **Inbox**. (Subfolders aren't supported.) |
 | **Microsoft Outlook 365 shared mailbox** | Mailbox address and folder | The mailbox address is the shared mailbox address, and the default folder is **Inbox**. |
 | **SharePoint** | Site address | The address of the SharePoint site, such as `https://contoso.sharepoint.com/sites/sitename`. |
@@ -129,6 +129,12 @@ To create a new channel, administrators can follow these steps:
 
     - If the flow is successfully generated and activated, the **Manage flow** status is **On**.
     - If the flow is generated but isn't activated, an administrator can select **Edit** to set up the flow.
+
+## Assign a file filter to a channel
+
+Each channel can have its own file filter. When an invoice document is received through a channel, the channel-level file filter is applied first. If you don't assign a file filter to the channel, the file filter configured at the system level in **System preference** is used as the fallback.
+
+To assign a file filter to a channel, open the channel record and set the **File filter** field to the appropriate filter. Manage file filters at **Setup** \> **System setup** \> **Manage file filters**.
 
 ## Deactivate and activate a channel
 
