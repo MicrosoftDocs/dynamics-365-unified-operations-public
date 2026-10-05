@@ -278,7 +278,7 @@ Number sequence extensions control the GS1 compliance of specific number sequenc
         - **Unit:** *ea* (9016 ea = 322 Box = 46 PL)
 
     > [!NOTE]
-    > The items and quantities that are provided here are only examples. You must use the unit sequence group that you defined earlier, define appropriate unit conversions from *ea* to *Box* to *PL* for them, and ensure they have stock in warehouse *62*. For more information, see [Unit of measure and stocking policies](unit-measure-stocking-policies.md).
+    > The items and quantities that are provided here are only examples. Use the unit sequence group that you defined earlier, define appropriate unit conversions from *ea* to *Box* to *PL* for them, and ensure they have stock in warehouse *62*. Learn more in [Set up unit sequence groups](unit-measure-stocking-policies.md).
 
 1. Select sales order line 1. Then, in the **Sales order line** section, on the **Inventory** menu, select **Reservations**.
 1. On the **Reservation** page, on the Action Pane, select **Reserve lot**, and then close the page.
@@ -893,7 +893,7 @@ Number sequence extensions control the GS1 compliance of specific number sequenc
         - **Unit:** *ea* (9016 ea = 322 Box = 46 PL)
 
     > [!NOTE]
-    > The items and quantities that are provided here are only examples. You must use the unit sequence group that you defined earlier, define appropriate unit conversions from *ea* to *Box* to *PL* for them, and ensure they have stock in warehouse *62*. For more information, see [Unit of measure and stocking policies](unit-measure-stocking-policies.md).
+    > The items and quantities that are provided here are only examples. Use the unit sequence group that you defined earlier, define appropriate unit conversions from *ea* to *Box* to *PL* for them, and ensure they have stock in warehouse *62*. For more information, see [Set up unit sequence groups](unit-measure-stocking-policies.md).
 
 1. Select sales order line 1. Then, in the **Sales order line** section, on the **Inventory** menu, select **Reservations**.
 1. On the **Reservation** page, on the Action Pane, select **Reserve lot**, and then close the page.

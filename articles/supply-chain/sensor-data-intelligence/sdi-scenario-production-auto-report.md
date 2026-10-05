@@ -77,7 +77,7 @@ After you start a sensor-controlled job, you can open the **View counter** dialo
 
 :::image type="content" source="media/sdi-view-counter.png" alt-text="View counter dialog." lightbox="media/sdi-view-counter.png":::
 
-Counters are shown in one or two levels. The number of levels depends on the **Unit sequence group ID** defined on the finished product. Learn more about how to set up unit sequence groups in: [Unit of measure and stocking policies](../warehousing/unit-measure-stocking-policies.md).
+Counters are shown in one or two levels. The number of levels depends on the **Unit sequence group ID** defined on the finished product. Learn more about how to set up unit sequence groups in [Set up unit sequence groups](../warehousing/unit-measure-stocking-policies.md).
 
 ### Example of counters in a two level setup
 

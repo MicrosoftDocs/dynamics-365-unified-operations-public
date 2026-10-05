@@ -4477,7 +4477,7 @@
           href: warehousing/schedule-workload-capacity.md
         - name: Set up dispositions codes
           href: warehousing/tasks/set-up-dispositions-codes.md
-        - name: Unit of measure and stocking policies
+        - name: Set up unit sequence groups
           href: warehousing/unit-measure-stocking-policies.md
         - name: System grouping on an open work list
           href: warehousing/system-group-on-open-work-list.md
