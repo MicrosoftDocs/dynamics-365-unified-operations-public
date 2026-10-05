@@ -1,10 +1,10 @@
 ---
 title: Invoice capture solution mapping rules
 description: Learn about the setup of mapping rules in the Invoice capture solution, including an outline on managing mapping rules by using the app.
-author: sunfzam
-ms.author: zezhangzhao
+author: NishantNalawade
+ms.author: NNalawade
 ms.topic: overview
-ms.date: 07/28/2026
+ms.date: 09/30/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -78,7 +78,7 @@ Use an Excel add-in to manage rules in a batch. The following options are availa
 
 ### Download an Excel template
 
-To download an Excel template, select **Download template**. Then select the fields to include in the template.
+Select **Download template** to download an Excel template. Then select the fields to include in the template.
 
 ### Export to Excel
 

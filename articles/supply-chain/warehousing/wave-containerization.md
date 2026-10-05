@@ -4,7 +4,7 @@ description: Learn how to automate the containerization of loads, which create c
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 05/05/2026
+ms.date: 09/10/2026
 ms.custom:
   - bap-template
 ms.reviewer: kamaybac
@@ -16,6 +16,9 @@ ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, 
 [!INCLUDE [banner](../includes/banner.md)]
 
 This article describes how to automate the containerization of loads. Automated containerization creates containers and the picking work for shipments when a wave is processed.
+
+> [!NOTE]
+> By default, the wave containerization process automatically closes a container as the final step of work execution. Therefore, the container arrives at the packing station already closed, and you can't weigh, manifest, or label it there as an individual container. You can change this behavior so that the container is converted into a packing station container and left open when you put work to a packing station. Learn more in [Convert work containers at a packing station](packing-work.md#convert-containers-at-packing-station).
 
 To set up containerization, you must create the following components:
 
@@ -81,13 +84,13 @@ To set up a container build template, follow these steps:
 1. In the **Container group ID** field, select the container group from which to create containers.
 1. In the **Base query types** field, select the query type that determines what to pack and what to base the filter query on. The following options are available:
 
-      - **Sales allocation line** ─ Pack allocation lines that are created for sales orders.
-      - **Transfer allocation line** ─ Pack allocation lines that are created for transfer orders.
-      - **Container** ─ Pack a container that the containerization process already created. For example, this option is used for nesting containers.
-      - **Outbound order allocation line** ─ Pack allocation lines that are created for [outbound shipment orders](wms-only-mode-exchange-data.md#inbound-outbound-shipment-order-messages).
+    - **Sales allocation line** ─ Pack allocation lines that are created for sales orders.
+    - **Transfer allocation line** ─ Pack allocation lines that are created for transfer orders.
+    - **Container** ─ Pack a container that the containerization process already created. For example, this option is used for nesting containers.
+    - **Outbound order allocation line** ─ Pack allocation lines that are created for [outbound shipment orders](wms-only-mode-exchange-data.md#inbound-outbound-shipment-order-messages).
 
-        > [!NOTE]
-        > To use nesting containers, you must make the containerization method repeatable. Learn more in [Wave templates](wave-templates.md).
+    > [!NOTE]
+    > To use nesting containers, you must make the containerization method repeatable. Learn more in [Wave templates](wave-templates.md).
 
 1. On the **General** FastTab, in the **Wave step code** field, enter the unique identifier of the wave process method that links the container build template to steps in a wave template.
 1. Select the **Allow split picks** check box to allow workers to pack items from a work order in separate containers. This condition requires that the entire quantity fits in the container. The largest unit of measure in the allocation line is always used.
