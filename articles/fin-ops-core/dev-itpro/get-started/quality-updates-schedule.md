@@ -56,7 +56,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.46 PQU-5 | May 27, 2026 | June 1, 2026 to July 5, 2026| Completed | 10.0.2428.188 | 7.0.7778.118 |
 | 10.0.46 PQU-6 | June 24, 2026 | June 29, 2026 to August 1, 2026| Completed | 10.0.2428.205 | 7.0.7778.137 |
 | 10.0.46 PQU-7 | July 22, 2026 | July 27, 2026 to August 29, 2026| Completed | 10.0.2428.220 | 7.0.7778.145 |
-| 10.0.46 PQU-8 | August 21, 2026 | August 31, 2026 to October 3, 2026| In-Progress | 10.0.2428.236 | 7.0.7778.149 |
+| 10.0.46 PQU-8 | August 21, 2026 | August 31, 2026 to October 3, 2026| Completed | 10.0.2428.236 | 7.0.7778.149 |
 | 10.0.47 PQU-1 | April 8, 2026 | April 8, 2026 to May 2, 2026| Completed | 10.0.2527.78 | 7.0.7858.54 |
 | 10.0.47 PQU-2 | April 22, 2026 | April 22, 2026 to May 16, 2026| Canceled | - | - |
 | 10.0.47 PQU-3 | May 6, 2026 | May 6, 2026 to May 30, 2026| Completed | 10.0.2527.109 | 7.0.7858.96 |
@@ -68,9 +68,9 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.47 PQU-9 | July 29, 2026 | July 29, 2026 to August 22, 2026| Completed | 10.0.2527.174 | 7.0.7858.145 |
 | 10.0.47 PQU-10 | August 12, 2026 | August 12, 2026 to September 5, 2026| Completed | 10.0.2527.187 | 7.0.7858.152 |
 | 10.0.47 PQU-11 | August 26, 2026 | August 26, 2026 to September 19, 2026| Completed | 10.0.2527.197 | 7.0.7858.163 |
-| 10.0.47 PQU-12 | September 9, 2026 | September 9, 2026 to October 3, 2026| In-Progress | 10.0.2527.208 | 7.0.7858.166 |
+| 10.0.47 PQU-12 | September 9, 2026 | September 9, 2026 to October 3, 2026| Completed | 10.0.2527.208 | 7.0.7858.166 |
 | 10.0.47 PQU-13 | September 23, 2026 | September 23, 2026 to October 17, 2026| In-Progress | 10.0.2527.215 | 7.0.7858.174 |
-| 10.0.47 PQU-14 | October 7, 2026 | October 7, 2026 to October 31, 2026| Not Started | | |
+| 10.0.47 PQU-14 | October 7, 2026 | October 7, 2026 to October 31, 2026| In-Progress | 10.0.2527.227 | 7.0.7858.178 |
 | 10.0.47 PQU-15 | October 21, 2026 | October 21, 2026 to November 14, 2026| Not Started | | |
 | 10.0.47 PQU-16 | November 4, 2026 | November 4, 2026 to November 28, 2026| Not Started | | |
 | 10.0.47 PQU-17 | November 25, 2026 | November 25, 2026 to December 19, 2026| Not Started | | |
@@ -91,7 +91,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.48 PQU-15 | January 20, 2027 | January 20, 2027 to February 13, 2027| Not Started | | |
 | 10.0.48 PQU-16 | February 3, 2027 | February 3, 2027 to February 27, 2027| Not Started | | |
 | 10.0.48 PQU-17 | February 24, 2027 | February 24, 2027 to March 20, 2027| Not Started | | |
-| 10.0.49 PQU-1 | October 7, 2026 | October 7, 2026 to October 31, 2026 | Not Started | | |
+| 10.0.49 PQU-1 | October 7, 2026 | October 7, 2026 to October 31, 2026 | In-Progress | 10.0.2790.83 | 7.0.8199.55 |
 | 10.0.49 PQU-2 | October 21, 2026 | October 21, 2026 to November 14, 2026 | Not Started | | |
 | 10.0.49 PQU-3 | November 4, 2026 | November 4, 2026 to November 28, 2026 | Not Started | | |
 | 10.0.49 PQU-4 | November 18, 2026 | November 18, 2026 to December 12, 2026 | Not Started | | |
@@ -114,41 +114,7 @@ The following table shows the high-level train schedule. It includes a descripti
 > Canceled* - PQU will occur only on Station-1. Releases for other stations have been canceled due to the holiday deployment freeze, and the build will be available for manual uptake.
 > For environments configured with a weekday update schedule, updates are applied on the selected weekday following the published rollout schedule.
 
-### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.46 Release-8 train schedule
-
-**App version: 10.0.2428.236**
-
-**Platform version: 7.0.7778.149**
-
-**Unified Environment Provisioning Application Version: 10.0.46.10**
-
-| Stations | Upcoming sandbox schedule | Upcoming production schedule |
-|---|---|---|
-| Station 1 | August 31 to September 3, 2026 | N/A |
-| Station 2 | September 7 to September 10, 2026 | September 19 to September 20, 2026 |
-| Station 3 | September 8 to September 11, 2026 | September 19 to September 20, 2026 |
-| Station 4 | September 14 to September 17, 2026 | September 26 to September 27, 2026 |
-| Station 5 | September 21 to September 24, 2026 | October 3 to October 4, 2026 |
-| Station 6 | September 22 to September 25, 2026 | October 3 to October 4, 2026 |
-
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.47 Release-12 train schedule
-
-**App version: 10.0.2527.208**
-
-**Platform version: 7.0.7858.166**
-
-**Unified Environment Provisioning Application Version: 10.0.47.13**
-
-| Stations | Upcoming sandbox schedule | Upcoming production schedule |
-|---|---|---|
-| Station 1 | September 9 to September 12, 2026 | N/A |
-| Station 2 | September 14 to September 17, 2026 | September 19 to September 20, 2026 |
-| Station 3 | September 14 to September 17, 2026 | September 19 to September 20, 2026 |
-| Station 4 | September 21 to September 24, 2026 | September 26 to September 27, 2026 |
-| Station 5 | September 28 to October 1, 2026 | October 3 to October 4, 2026 |
-| Station 6 | September 28 to October 1, 2026 | October 3 to October 4, 2026 |
-
-### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.47 Release-13 train schedule
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.47 Release-13 train schedule
 
 **App version: 10.0.2527.215**
 
@@ -165,22 +131,22 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | October 12 to October 15, 2026 | October 17 to October 18, 2026 |
 | Station 6 | October 12 to October 15, 2026 | October 17 to October 18, 2026 |
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.48 Release-5 train schedule
+### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.47 Release-14 train schedule
 
-**App version: 10.0.2645.124**
+**App version: 10.0.2527.227**
 
-**Platform version: 7.0.7996.111**
+**Platform version: 7.0.7858.178**
 
-**Unified Environment Provisioning Application Version: 10.0.48.6**
+**Unified Environment Provisioning Application Version: 10.0.47.15**
 
 | Stations | Upcoming sandbox schedule | Upcoming production schedule |
 |---|---|---|
-| Station 1 | September 2 to September 5, 2026 | N/A |
-| Station 2 | September 7 to September 10, 2026 | September 12 to September 13, 2026 |
-| Station 3 | September 7 to September 10, 2026 | September 12 to September 13, 2026 |
-| Station 4 | September 14 to September 17, 2026 | September 19 to September 20, 2026 |
-| Station 5 | September 21 to September 24, 2026 | September 26 to September 27, 2026 |
-| Station 6 | September 21 to September 24, 2026 | September 26 to September 27, 2026 |
+| Station 1 | October 7 to October 10, 2026 | N/A |
+| Station 2 | October 12 to October 15, 2026 | October 17 to October 18, 2026 |
+| Station 3 | October 12 to October 15, 2026 | October 17 to October 18, 2026 |
+| Station 4 | October 19 to October 22, 2026 | October 24 to October 25, 2026 |
+| Station 5 | October 26 to October 29, 2026 | October 31 to November 1, 2026 |
+| Station 6 | October 26 to October 29, 2026 | October 31 to November 1, 2026 |
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.48 Release-6 train schedule
 
@@ -215,6 +181,23 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 4 | October 12 to October 15, 2026 | October 17 to October 18, 2026 |
 | Station 5 | October 19 to October 22, 2026 | October 24 to October 25, 2026 |
 | Station 6 | October 19 to October 22, 2026 | October 24 to October 25, 2026 |
+
+### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.49 Release-1 train schedule
+
+**App version: 10.0.2790.83**
+
+**Platform version: 7.0.8199.55**
+
+**Unified Environment Provisioning Application Version: 10.0.49.3**
+
+| Stations | Upcoming sandbox schedule | Upcoming production schedule |
+|---|---|---|
+| Station 1 | October 7 to October 10, 2026 | N/A |
+| Station 2 | October 12 to October 15, 2026 | October 17 to October 18, 2026 |
+| Station 3 | October 12 to October 15, 2026 | October 17 to October 18, 2026 |
+| Station 4 | October 19 to October 22, 2026 | October 24 to October 25, 2026 |
+| Station 5 | October 26 to October 29, 2026 | October 31 to November 1, 2026 |
+| Station 6 | October 26 to October 29, 2026 | October 31 to November 1, 2026 |
 
 > [!IMPORTANT]
 > At least five days in advance, Microsoft updates the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that are notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../deployment/plannedmaintenance-selfservice.md#windows).

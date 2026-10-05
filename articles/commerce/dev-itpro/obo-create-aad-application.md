@@ -57,7 +57,7 @@ To create a Microsoft Entra application for account manager sign-in in the Azure
     - `https://<EEID-tenant-subdomain>.ciamlogin.com/<EEID-tenant-ID>/federation/oauth2`
     - `https://<EEID-tenant-subdomain>.ciamlogin.com/<EEID-tenant-subdomain>.onmicrosoft.com/federation/oauth2`
 
-    Replace `<EEID-tenant-subdomain>` with the subdomain of your **Microsoft Entra External ID (EEID) tenant** - This is the tenant where the consumer or customer user data resides, not the employee or B2B tenant. Replace `<EEID-tenant-ID>` with the EEID tenant's directory (tenant) ID. For example, if your EEID tenant subdomain is `contoso-customers` and the tenant ID is `aaaa1111-bb22-cc33-dd44-eeee5555ffff`, the redirect URIs would be `https://contoso-customers.ciamlogin.com/aaaa1111-bb22-cc33-dd44-eeee5555ffff/federation/oauth2` and `https://contoso-customers.ciamlogin.com/contoso-customers.onmicrosoft.com/federation/oauth2`.
+    Replace `<EEID-tenant-subdomain>` with the subdomain of your **Microsoft Entra External ID (EEID) tenant** - This is the tenant where the consumer or customer user data resides, not the employee or B2B tenant. Replace `<EEID-tenant-ID>` with the EEID tenant's directory (tenant) ID. For example, if your EEID tenant subdomain is `contoso-customers` and the tenant ID is `aaaabbbb-0000-cccc-1111-dddd2222eeee`, the redirect URIs would be `https://contoso-customers.ciamlogin.com/aaaabbbb-0000-cccc-1111-dddd2222eeee/federation/oauth2` and `https://contoso-customers.ciamlogin.com/contoso-customers.onmicrosoft.com/federation/oauth2`.
 
     > [!NOTE]
     > Use lowercase letters when you enter your tenant's subdomain, even if the tenant is defined with uppercase letters in Microsoft Entra ID.
@@ -130,7 +130,7 @@ To configure an identity provider in your Azure B2C tenant for account manager s
 
 1. In the **Client ID** field, enter the application ID that you copied earlier.
 1. In the **Client secret** field, enter the client secret that you copied earlier.
-1. In the **Scope** field, enter `openid profile <Azure-B2B-Application-ID-URI>/user_impersonation`, where `<Azure-B2B-Application-ID-URI>` is the ID of the Azure B2B Microsoft Entra application. For example, use `openid profile api://00001111-aaaa-2222-bbbb-3333cccc4444/user_impersonation`. The **Scope** field format must be `openid profile <scope-name>`, where `<scope-name>` is the scope name you created in the [Create a Microsoft Entra application for account manager sign-in in the Azure B2B tenant](#create-a-microsoft-entra-application-for-account-manager-sign-in-in-the-azure-b2b-tenant) procedure.
+1. In the **Scope** field, enter `openid profile <Azure-B2B-Application-ID-URI>/user_impersonation`, where `<Azure-B2B-Application-ID-URI>` is the ID of the Azure B2B Microsoft Entra application. For example, use `openid profile api://aaaabbbb-0000-cccc-1111-dddd2222eeee/user_impersonation`. The **Scope** field format must be `openid profile <scope-name>`, where `<scope-name>` is the scope name you created in the [Create a Microsoft Entra application for account manager sign-in in the Azure B2B tenant](#create-a-microsoft-entra-application-for-account-manager-sign-in-in-the-azure-b2b-tenant) procedure.
 1. In the **Response type** field, select **code**.
 1. In the **Response mode** field, select **form_post**.  
 1. Under **Identity provider claims mapping**, select the following claims:
