@@ -2237,6 +2237,8 @@
           href: demand-planning/users-access.md
         - name: Convert a Demand planning environment from sandbox to production
           href: demand-planning/convert-demand-planning-environment-from-sandbox-to-production.md
+        - name: Demand planning data is moving to Dataverse storage
+          href: demand-planning/database-migration.md
       - name: Import data
         items:
         - name: View and customize tables for holding imported data
