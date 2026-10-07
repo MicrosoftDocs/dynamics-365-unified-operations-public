@@ -232,54 +232,164 @@ To create a completely new pricing attribute, complete the following steps:
 
 1. Create the pricing attribute class as described in [Create the pricing attribute in finance and operations apps](#create-the-pricing-attribute-in-finance-and-operations-apps).
 
+## Make the attribute available in CSU
+
+Skip this section if the source field already exists in CSU. These steps must be followed if 1) the field is new to both finance and operations apps and CSU, or 2) the field exists in finance and operations apps but not in CSU.
+
+1. In headquarters, open the **Commerce channel schema** page.
+1. Select the Commerce channel that you want to update.
+1. On the **Channel database extension SQL script** tab, select **Generate SQL script**.
+1. Apply the generated script to the channel database.
+
+   Don't add the field directly to the standard table in the `ax` schema. The generated script creates or updates an extension table in the `ext` schema. For example, an extension for `CustTable` is added to `ext.CustTableExt`.
+
+   For more information, see [Channel database extensions](../../commerce/dev-itpro/channel-db-extensions.md).
+
+1. Add the field to Commerce Data Exchange synchronization.
+
+   Commerce Data Exchange (CDX) copies data from headquarters to CSU.
+
+   The following example copies `CustTable.SalesDistrictId` to `ext.CustTableExt`. Replace `SalesDistrictId` with your field name. Add another `Field` element if you need to copy more than one field.
 
 
+   ```XML
+   <RetailCdxSeedData ChannelDBMajorVersion="7" ChannelDBSchema="ext" Name="AX7">
+      <Subjobs>
+       <Subjob Id="CustTable" TargetTableName="CustTableExt" TargetTableSchema="ext" OverrideTarget="false">
+           <AxFields>
+               <Field Name="SalesDistrictId" />
+           </AxFields>
+       </Subjob>
+      </Subjobs>
+   </RetailCdxSeedData>
+   ```
 
+1. Register the CDX file.
 
+   Add the following event handler so that Commerce uses the custom CDX file when it creates the synchronization setup.
 
+   ```XML
+   <?xml version="1.0" encoding="utf-8"?>
+   <AxClass xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+       <Name>RetailCDXSeedDataAX7EventHandler_Custom</Name>
+       <SourceCode>
+           <Declaration><![CDATA[
+   /// <summary>
+   /// Event handler that registers the custom CDX seed data resource for CDX seed data generation.
+   /// </summary>
+   internal class RetailCDXSeedDataAX7EventHandler_Custom
+   {
+   }
+   ]]></Declaration>
+           <Methods>
+               <Method>
+                   <Name>RetailCDXSeedDataBase_registerCDXSeedDataExtension</Name>
+                   <Source><![CDATA[
+       /// <summary>
+       /// Registers the extension CDX seed data resource to be used during CDX seed data generation.
+       /// </summary>
+       /// <param name="originalCDXSeedDataResource">The original CDX seed data resource name.</param>
+       /// <param name="resources">The list of resources to extend.</param>
+       [SubscribesTo(classStr(RetailCDXSeedDataBase), delegateStr(RetailCDXSeedDataBase, registerCDXSeedDataExtension))]
+       public static void RetailCDXSeedDataBase_registerCDXSeedDataExtension(str originalCDXSeedDataResource, List resources)
+       {
+           if (originalCDXSeedDataResource == resourceStr(RetailCDXSeedDataAX7))
+           {
+               resources.addEnd(resourceStr(RetailCDXSeedDataAX7_Custom));
+           }
+       }
 
-1. For *new* custom pricing attributes, you must programmatically set the `TypeName` column of the `GUPPRICINGATTRIBUTELINK` table to `Customization`. Create an extension to `GUPPricingAttributeRepository` and add a statement to the `toPriceAttributeLink()` method that programmatically sets the `TypeName` column for each new custom pricing attribute. Here's an example of how to do this:
+   ]]></Source>
+               </Method>
+           </Methods>
+       </SourceCode>
+   </AxClass>
+   ```
 
-    ```X++
-    [ExtensionOf(classStr(GUPPricingAttributeRepository))]
-    public static final class GUPPricingAttributeRepository_Extension
+   For more information, see [Enable custom Commerce Data Exchange synchronization via extension](../../commerce/dev-itpro/cdx-extensibility.md).
+
+1. Build and deploy the solution.
+1. In headquarters, run **Initialize commerce scheduler**.
+1. Open the scheduler subjob mapping for the source table and verify that the new field appears.
+
+## Build and configure the attribute
+
+After you create the pricing attribute and any required table or CDX extensions, follow these steps:
+
+1. Build the relevant extension models and the Global Unified Pricing model.
+1. Restart Internet Information Services (IIS), and then clear the cache for the finance and operations environment.
+1. Go to **Pricing management** > **Setup** > **Price attribute groups** > **Price attribute groups**.
+1. Select the price attribute group that you want to update.
+1. On the **Attributes** FastTab, add the custom pricing attribute.
+1. Repeat these steps for each price attribute group that should use the custom attribute.
+
+## Identify the attribute as a customization
+
+The `TypeName` column of the attribute's `GUPPRICINGATTRIBUTELINK` record must be set to `Customization`.
+
+### Set TypeName for a new pricing attribute
+
+For a new pricing attribute class, extend `GUPPricingAttributeRepository.toPriceAttributeLink()` and set `TypeName` when the pricing attribute link is created.
+
+```X++
+[ExtensionOf(classStr(GUPPricingAttributeRepository))]
+public static final class GUPPricingAttributeRepository_Extension
+{
+    public static GUPPricingAttributeLink toPriceAttributeLink(
+        GUPIPricingAttribute _pricingAttr)
     {
-        public static GUPPricingAttributeLink toPriceAttributeLink(GUPIPricingAttribute _pricingAttr)
+        GUPPricingAttributeLink link =
+            next toPriceAttributeLink(_pricingAttr);
+
+        if (link.AttributeName == fieldPName(
+            CustTable,
+            StatisticsGroup))
         {
-            GUPPricingAttributeLink link = next toPriceAttributeLink(_pricingAttr);
-    
-            if (link.AttributeName == "StatisticsGroup")
-            {
-                link.TypeName = (_pricingAttr as GUPPricingAttributeCustTableStatisticsGroup).getAttributeType();
-            }
-    
-            return link;
+            link.TypeName =
+                (_pricingAttr
+                    as GUPPricingAttributeCustTableStatisticsGroup)
+                    .getAttributeType();
         }
-    
+
+        return link;
     }
-    ```
+}
+```
 
-1. Build the relevant models, Global Unified Pricing (GUP) or extension, and restart Internet Information Services (IIS). Then, clear the cache for your Microsoft finance and operations apps.
-1. Open your Microsoft finance and operations app and go to **Pricing management** > **Setup** > **Price attribute groups** > **Price attribute groups**. Select the price attribute group that you want to customize and then use the **Attributes** FastTab to add your custom pricing attributes to it. Update each group as needed.
-1. Go to **Retail and Commerce** > **Retail and Commerce IT** > **Distribution Schedule** and run the *1210 Pricing management* job to sync changes to the Channel database.
-1. For *existing* custom pricing attributes, manually set the `TypeName` column of the `GUPPRICINGATTRIBUTELINK` table to `Customization` in SQL Server Management Studio (SSMS). Here's an example of how to set the `Customization` identifier:
+### Set TypeName for an existing pricing attribute link
 
-    ```SQL
-    update dbo.GUPPRICINGATTRIBUTELINK
-    set TYPENAME = 'Customization'
-    where ATTRIBUTENAME = 'Custom attribute name'
-    ```
+If the `GUPPRICINGATTRIBUTELINK` record already exists, update its `TypeName` value to `Customization`. The following SQL statement is an example.
 
-    The following image shows an example of how entries marked as custom are shown in the `GUPPRICINGATTRIBUTELINK` table.
+```SQL
+update dbo.GUPPRICINGATTRIBUTELINK
+set TYPENAME = 'Customization'
+where ATTRIBUTENAME = 'Custom attribute name'
+```
 
-    :::image type="content" source="media/ssms-customization.png" alt-text="SSMS customization." lightbox="media/ssms-customization.png":::
+The following image shows how entries marked as custom appear in the `GUPPRICINGATTRIBUTELINK` table.
 
-1. For `Customer` or `Product`, create a trade agreement journal that tests the new custom pricing attribute. For `SalesTable` or `SalesLine`, create an auto charge that tests the new custom pricing attribute. In both cases, make sure to set a specific value.
-1. Go to **Retail and Commerce** > **Retail and Commerce IT** > **Distribution Schedule**  and run the *9999 All jobs* job to sync changes to the Channel database.
-1. In POS, you should see the value configured in the trade agreement journal or that an auto charge was correctly applied.
+:::image type="content" source="media/ssms-customization.png" alt-text="Custom pricing attributes in the GUPPRICINGATTRIBUTELINK table in SQL Server Management Studio." lightbox="media/ssms-customization.png":::
+
+## Synchronize and test the attribute
+
+To synchronize and test the custom pricing attribute, follow these steps:
+
+1. Go to **Retail and Commerce** > **Retail and Commerce IT** > **Distribution schedule**.
+1. Run the **1210 Pricing management** job.
+1. Confirm that `GUPPRICINGATTRIBUTELINK.TypeName` is set to `Customization` for the custom attribute.
+1. Configure test data:
+
+   - For a `Customer` or `Product` attribute, set a value on a record and create a trade agreement journal that uses the attribute and value.
+   - For a `SalesTable` or `SalesLine` attribute, create an auto charge that uses the attribute and value.
+
+1. Run the **9999 All jobs** job.
+1. If you extended the channel database, verify that the field value was synchronized to the extension table in the `ext` schema.
+1. In POS, create a transaction that uses the configured record.
+1. Verify that the expected price or auto charge is applied.
+
+
 
 ## Troubleshooting
-
 ### You receive a POS notification that a custom request handler isn't implemented
 
 While creating a transaction in POS that is associated with one or more custom pricing attributes, you might receive an error message similar to the following message:
