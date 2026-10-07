@@ -201,8 +201,11 @@ For example, a sales order contains:
 |Product B |500|
 
 Order total = 1,500
+
 If a 20 percent prepayment is required, the system calculates:
+
 Prepayment = 1,500 × 20% = 300
+
 You manage the prepayment as a single amount for the sales order.
 
 When you select **Line** as the parameter, the system evaluates each sales order line separately.
