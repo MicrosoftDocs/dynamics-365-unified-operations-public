@@ -144,8 +144,8 @@ To create a completely new pricing attribute, complete the following steps:
    <?xml version="1.0" encoding="utf-8"?>
    <AxEdt xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns=""
        i:type="AxEdtString">
-       <Name>PricingGroup_EMP</Name>
-       <Label>PricingGroup_EMP</Label>
+       <Name>PricingGroup_Custom</Name>
+       <Label>PricingGroup_Custom</Label>
        <ArrayElements />
        <Relations />
        <TableReferences />
@@ -239,7 +239,7 @@ Skip this section if the source field already exists in CSU. These steps must be
 1. In headquarters, open the **Commerce channel schema** page.
 1. Select the Commerce channel that you want to update.
 1. On the **Channel database extension SQL script** tab, select **Generate SQL script**.
-1. Apply the generated script to the channel database.
+1. Apply the generated script to the Channel database.
 
    Don't add the field directly to the standard table in the `ax` schema. The generated script creates or updates an extension table in the `ext` schema. For example, an extension for `CustTable` is added to `ext.CustTableExt`.
 
@@ -312,22 +312,11 @@ Skip this section if the source field already exists in CSU. These steps must be
 1. In headquarters, run **Initialize commerce scheduler**.
 1. Open the scheduler subjob mapping for the source table and verify that the new field appears.
 
-## Build and configure the attribute
-
-After you create the pricing attribute and any required table or CDX extensions, follow these steps:
-
-1. Build the relevant extension models and the Global Unified Pricing model.
-1. Restart Internet Information Services (IIS), and then clear the cache for the finance and operations environment.
-1. Go to **Pricing management** > **Setup** > **Price attribute groups** > **Price attribute groups**.
-1. Select the price attribute group that you want to update.
-1. On the **Attributes** FastTab, add the custom pricing attribute.
-1. Repeat these steps for each price attribute group that should use the custom attribute.
-
 ## Identify the attribute as a customization
 
 The `TypeName` column of the attribute's `GUPPRICINGATTRIBUTELINK` record must be set to `Customization`.
 
-### Set TypeName for a new pricing attribute
+#### Set TypeName for a new pricing attribute
 
 For a new pricing attribute class, extend `GUPPricingAttributeRepository.toPriceAttributeLink()` and set `TypeName` when the pricing attribute link is created.
 
@@ -356,7 +345,7 @@ public static final class GUPPricingAttributeRepository_Extension
 }
 ```
 
-### Set TypeName for an existing pricing attribute link
+#### Set TypeName for an existing pricing attribute link
 
 If the `GUPPRICINGATTRIBUTELINK` record already exists, update its `TypeName` value to `Customization`. The following SQL statement is an example.
 
@@ -369,6 +358,19 @@ where ATTRIBUTENAME = 'Custom attribute name'
 The following image shows how entries marked as custom appear in the `GUPPRICINGATTRIBUTELINK` table.
 
 :::image type="content" source="media/ssms-customization.png" alt-text="Custom pricing attributes in the GUPPRICINGATTRIBUTELINK table in SQL Server Management Studio." lightbox="media/ssms-customization.png":::
+
+
+## Build and configure the attribute
+
+After you create the pricing attribute and any required table or CDX extensions, follow these steps:
+
+1. Build the relevant extension models and the Global Unified Pricing model.
+1. Restart Internet Information Services (IIS), and then clear the cache for the finance and operations environment.
+1. Go to **Pricing management** > **Setup** > **Price attribute groups** > **Price attribute groups**.
+1. Select the price attribute group that you want to update.
+1. On the **Attributes** FastTab, add the custom pricing attribute.
+1. Repeat these steps for each price attribute group that should use the custom attribute.
+
 
 ## Synchronize and test the attribute
 
@@ -383,7 +385,7 @@ To synchronize and test the custom pricing attribute, follow these steps:
    - For a `SalesTable` or `SalesLine` attribute, create an auto charge that uses the attribute and value.
 
 1. Run the **9999 All jobs** job.
-1. If you extended the channel database, verify that the field value was synchronized to the extension table in the `ext` schema.
+1. If you extended the Channel database, verify that the field value was synchronized to the extension table in the `ext` schema.
 1. In POS, create a transaction that uses the configured record.
 1. Verify that the expected price or auto charge is applied.
 
