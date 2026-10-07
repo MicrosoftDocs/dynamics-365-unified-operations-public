@@ -300,7 +300,7 @@ The IPC hardware station supports network peripherals directly through the hardw
 | Windows app | Yes                  | Yes                  |
 | Cloud POS   | No                   | Yes                  |
 | Android     | Yes                  | Yes                  |
-| iOS         | No                   | Yes                  |
+| iOS         | Yes                   | Yes                  |
 
 ## Supported device types by hardware station type
 
