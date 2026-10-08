@@ -4,7 +4,7 @@ description: Learn about supported options for reducing database storage in Dyna
 author: zhfk930129
 ms.author: fangzhan
 ms.topic: overview
-ms.date: 09/01/2026
+ms.date: 10/08/2026
 ms.reviewer: mirao
 audience: IT Pro
 ms.search.region: Global
@@ -43,7 +43,7 @@ The following table summarizes the supported options:
 | Retain posted Commerce transactions in long-term storage | Commerce headquarters, Commerce transaction tables | [Archive Commerce transactions](archive-transactions.md) | Generally available in Commerce version 10.0.47. |
 | Permanently delete old Commerce transactions | Commerce headquarters, Commerce transaction tables | [Purge Commerce transactions](purge-transactions.md) | Available in Commerce version 10.0.42 and enabled by default in version 10.0.47. |
 | Retain eligible sales orders in long-term storage | Commerce headquarters, sales order data | [Archive Supply Chain Management sales order data](../fin-ops-core/dev-itpro/sysadmin/archive-so.md?context=/dynamics365/context/commerce) | Sales orders must be fully invoiced and can't be part of an intercompany order chain. |
-| Automatically remove aged transactions and carts | CSU channel database | [DB maintenance agent](#db-maintenance-agent) (preview) | Rollout starts in August 2026 and gradually expands to all CSUs. Cleanup follows the retention settings in the POS and online store functionality profiles. |
+| Automatically remove aged transactions and carts | CSU channel database | [Automatic CSU database cleanup](#automatic-csu-database-cleanup) (preview) | Rollout starts in August 2026 and gradually expands to all CSUs. Cleanup follows the retention settings in the POS and online store functionality profiles. |
 
 ## Manage Commerce headquarters storage
 
@@ -112,12 +112,12 @@ Commerce headquarters has separate functionality profiles for POS and online sto
 
 Set **Days transactions exist** to the same value as, or close to, your return-policy period. For example, if the standard return period is 30 days, use 30 or 31 days. If your organization allows exceptions, use a value that also covers those exceptions. For more information, see [Commerce Data Exchange best practices](dev-itpro/CDX-Best-Practices.md#valuable-configurations). Set **Days carts exist** to the number of days that your organization must retain inactive carts.
 
-### DB maintenance agent
+### Automatic CSU database cleanup
 
 > [!IMPORTANT]
-> The DB maintenance agent is available as a public preview starting in August 2026. Microsoft is gradually rolling it out to all CSUs. So, availability can differ among CSUs during the rollout. The preview functionality is subject to change.
+> Automatic CSU database cleanup is available as a public preview starting in August 2026. Microsoft is gradually rolling it out to all CSUs. So, availability can differ among CSUs during the rollout. The preview functionality is subject to change.
 
-The DB maintenance agent applies the functionality-profile settings as follows:
+Automatic CSU database cleanup applies the functionality-profile settings as follows:
 
 | Channel | Setting | Data cleaned up |
 | ------- | ------- | --------------- |
