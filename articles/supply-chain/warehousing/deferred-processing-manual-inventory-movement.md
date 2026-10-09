@@ -78,6 +78,6 @@ For details about the impact on closed work dates, see [Deferred processing of w
 
 - [Deferred processing of warehouse work](deferred-put.md)
 - [Warehouse app event processing](warehouse-app-events.md)
-- [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md)
+- [Create and configure mobile device menu items](configure-mobile-devices-warehouse.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

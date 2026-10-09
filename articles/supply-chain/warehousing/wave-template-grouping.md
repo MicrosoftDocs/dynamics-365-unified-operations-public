@@ -14,14 +14,14 @@ ms.search.form: WHSWaveTableListPage, WHSWaveTemplateTable
 
 [!INCLUDE [banner](../includes/banner.md)]
 
-Wave template grouping enables the system to use [wave template](tasks/configure-wave-processing.md) setups to determine, based on criteria that you define, how it should split released lines and assign them to new or existing waves. This feature can be useful in warehouses where waves are created based on specific criteria, but where managers prefer to create waves automatically instead of manually. It enables the system to add each newly released shipment to the first wave that it finds that has matching grouping field values. If no match is found, the system creates a new wave for the new shipment.
+Wave template grouping enables the system to use [wave template](wave-templates.md) setups to determine, based on criteria that you define, how it should split released lines and assign them to new or existing waves. This feature can be useful in warehouses where waves are created based on specific criteria, but where managers prefer to create waves automatically instead of manually. It enables the system to add each newly released shipment to the first wave that it finds that has matching grouping field values. If no match is found, the system creates a new wave for the new shipment.
 
 > [!IMPORTANT]
 > Wave template grouping isn't supported for the work types *production raw material picking* or *Kanban picking*. This is because wave grouping is based on shipments and these work types don't use shipments.
 
 ## <a name="set-up-template"></a>Set a wave template to use wave template grouping
 
-To make wave template grouping available, follow these steps to set up your [wave template](tasks/configure-wave-processing.md).
+To make wave template grouping available, follow these steps to set up your [wave template](wave-templates.md).
 
 1. Go to **Warehouse management \> Setup \> Waves \> Wave templates**.
 1. In the left pane, select the wave template to set up. If you're preparing to work through the scenario later in this article by using demo data, select the **62 Shipping default** template.

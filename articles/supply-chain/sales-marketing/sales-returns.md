@@ -168,7 +168,7 @@ The return order includes a reference to the replacement order. If you create an
 
 ### Replacement by disposition code
 
-If you ship a replacement item to the customer and use the **Replace and scrap** or **Replace and credit** disposition action on the return order, use the process shown in the following illustration.  
+If you ship a replacement item to the customer and use the *Replace and scrap* or *Replace and credit* disposition action on the return order, use the process shown in the following illustration.  
 
 :::image type="content" source="./media/SalesReturn05.png" alt-text="Screenshot of the replacement process when a disposition code is used.":::
 
