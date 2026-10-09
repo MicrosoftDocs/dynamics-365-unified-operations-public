@@ -1028,6 +1028,8 @@
             href: tasks/push-products-distribution-center-store-buyers-push.md
           - name: Set up rules and parameters for cross-docking and buyer's push
             href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
+          - name: Cross-dock products from receiving warehouse to stores
+            href: tasks/cross-dock-products-receiving-warehouse-stores.md
     - name: Manage your orders
       items:
       - name: Customer orders

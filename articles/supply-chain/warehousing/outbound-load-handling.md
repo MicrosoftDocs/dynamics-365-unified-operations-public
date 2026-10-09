@@ -67,7 +67,7 @@ This process begins when [sales orders are created](../sales-marketing/tasks/cre
 
 A sales order must exist before an outbound load can be generated. Nevertheless, you can define outbound loads before running the [release to warehouse](#release-to-warehouse) procedure.
 
-Use the [Outbound load planning workbench](tasks/use-load-planning-workbench-plan-loads-shipments.md) and [Load building workbench](../transportation/tasks/load-building-workbench.md) processes to select the order lines and quantities that comprise a load.
+Use the [Outbound load planning workbench](../transportation/use-load-planning-workbench-plan-loads-shipments.md) and [Load building workbench](../transportation/tasks/load-building-workbench.md) processes to select the order lines and quantities that comprise a load.
 
 ### <a name="release-to-warehouse"></a>Release to warehouse
 

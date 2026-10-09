@@ -205,7 +205,7 @@ additionalContent:
       - url: /dynamics365/supply-chain/warehousing/install-configure-warehouse-management-app
         text: Install the mobile app
       - url: /dynamics365/supply-chain/warehousing/configure-mobile-devices-warehouse
-        text: Set up mobile devices for warehouse work
+        text: Create and configure mobile device menu items
       - url: /dynamics365/supply-chain/warehousing/mobile-device-work-users
         text: Mobile device user accounts
       - url: /dynamics365/supply-chain/warehousing/mobile-device-user-settings

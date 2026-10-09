@@ -25,7 +25,7 @@ You can specify a coverage time fence at each of the following levels:
 - **Item coverage** – You can override the coverage time fence that is inherited from the coverage group that is assigned to an item.
 - **Master plan** – You can override the coverage time fences that are inherited from the coverage group and item coverage settings.
 
-The following sections explain how to specify a coverage group at each level.
+The following sections explain how to specify a coverage time fence at each level.
 
 ## Set a coverage time fence for a coverage group
 

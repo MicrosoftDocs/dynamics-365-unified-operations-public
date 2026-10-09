@@ -1,5 +1,5 @@
 ---
-title: Set up mobile devices for warehouse work
+title: Create and configure mobile device menu items
 description: Learn how to configure the menu items that warehouse workers use to perform work on a mobile device with a table that defines various options.
 author: Mirzaab
 ms.author: mirzaab
@@ -11,7 +11,7 @@ ms.custom:
   - bap-template
 ---
 
-# Set up mobile devices for warehouse work
+# Create and configure mobile device menu items
 
 [!INCLUDE [banner](../includes/banner.md)]
 
@@ -504,7 +504,7 @@ To set up menus for mobile devices, follow these steps:
 
 ## Related information
 
-- [Set up a mobile device menu item for completing work of type Purchase order](tasks/set-up-mobile-device-menu.md)
+- [Set up a mobile device menu item for completing work of type Purchase order](tasks/set-up-mobile-device-menu-item-purchase-order-putaway.md)
 - [Set up a mobile device menu item to register received items](tasks/set-up-mobile-device-menu-item-register-received-items.md)
 - [Inventory statuses](../inventory/inventory-statuses.md)
 
