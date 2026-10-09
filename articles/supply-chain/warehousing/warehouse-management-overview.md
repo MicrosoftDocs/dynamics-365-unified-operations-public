@@ -1,12 +1,13 @@
 ---
 title: Warehouse management overview
-description: Learn how to use Warehouse management to monitor and automate warehouse processes, including a detailed list of warehouse management processes and resources. 
+description: Learn how Warehouse management supports inbound, outbound, and cross-warehouse operations through mobile work execution, automation, and analytics.
 author: Mirzaab
 ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form: WHSParameters, WHSWorkPool
 ms.topic: overview
-ms.date: 11/19/2025
+ms.date: 09/14/2026
+ai-usage: ai-assisted
 ms.custom:
   - bap-template
 ---
@@ -15,59 +16,95 @@ ms.custom:
 
 [!INCLUDE [banner](../includes/banner.md)]
 
-The Warehouse management module lets you manage warehouse processes in manufacturing, distribution, and retail companies. This module has a wide range of features to support the warehouse facility at an optimal level, at any time. Warehouse management is fully integrated with other business processes such as transportation, manufacturing, quality control, purchase, transfer, sales, and returns.
+The **Warehouse management** module controls how goods move through your facility, from the moment a truck arrives at the dock until a shipment leaves it. It directs work to warehouse workers, tracks inventory down to the individual location and license plate, and connects the warehouse floor to sales, procurement, production, quality, and transportation. Most of this behavior is defined through configuration instead of code. Therefore, you can adapt how a warehouse runs as order volumes, staffing, and layouts change.
+
+> [!NOTE]
+> Supply Chain Management includes two separate warehousing solutions. This article covers the **Warehouse management** module, which is often called *warehouse management processes* (WMS). The lighter-weight capabilities in the **Inventory management** module work differently, and most of the features that are described here don't apply to them. Learn more in [Inventory management overview](../inventory/inventory-home-page.md).
+
+## Warehouse layout and the rules that direct work
+
+Every other capability in the module depends on how you describe your warehouse to the system. You enable a warehouse for WMS by turning on the **Use warehouse management processes** option on the **Warehouses** page. You then model the physical space as zone groups, zones, location profiles, location types, and locations. [Warehouse configuration overview](warehouse-configuration.md) explains how these elements relate to each other, and how choices such as zoning by temperature or turnover rate affect efficiency later. If you're standing up several similar sites, you can copy a proven setup by using a [warehouse configuration template](../inventory/warehouse-template.md) instead of repeating the work.
+
+Locations carry the settings that protect you from impossible instructions. A [location profile](tasks/create-location-profile.md) groups locations that share the same handling policies, and [location stocking limits](location-stocking-limits.md) stop the system from directing a pallet to a location that can't hold it. You can refine this further with [additional location zones](additional-location-zones.md), [location product dimension mixing](location-product-dimension-mixing.md) rules, and [warehouse location status](warehouse-location-status.md) to keep damaged or quarantined space out of circulation. If you hold stock for more than one owner—as third-party logistics operations and consignment warehouses do—the [prevent multiple owners](prevent-multiple-owners-locations.md) constraint stops items with different owners from mixing in the same location. For the mechanics of building out the locations themselves, start with [Configure locations in a WMS-enabled warehouse](tasks/configure-locations-wms-enabled-warehouse.md).
+
+Two configuration objects then decide almost everything a worker is told to do. *Work templates* determine what work is created and how it's broken up, and *location directives* determine which locations that work points to. [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md) covers the pairing, and [Work with location directives](create-location-directive.md) goes deeper on the directive itself. Both rely on query-based rules, so you can express policies such as picking from a specific zone for a specific customer without changing code. These queries are where most implementation effort concentrates. You can validate them before they reach the floor with [location directive acceptance tests](location-directive-acceptance-tests.md), and tune them for speed by [optimizing location directive queries](location-directives-optimize.md). To shape what they consider in the first place, use [product filters](filters-and-filter-codes.md) and [user-configurable queries](user-configurable-queries-in-warehouse-management.md).
+
+## Inbound operations
+
+Receiving is where inventory accuracy is won or lost, so the module supports several levels of advance knowledge about what's arriving. When a supplier can send an advance shipping notice (ASN), you can consume it either [through data entities](import-asn-data-entity.md) or [as despatch advice messages](despatch-advice-notice.md), which lets receiving staff confirm against an expected shipment rather than key it in. [Warehouse handling of inbound loads for purchase and inbound shipment orders](inbound-load-handling.md) describes the load-based flow, and you can [create or modify an inbound load](create-or-modify-an-inbound-load.md) when plans change in transit.
+
+On the dock, workers register goods in the way that suits the shipment. That might be [license plate receiving](warehousing-mobile-device-app-license-plate-receiving.md) for palletized freight, [mixed license plate receiving](mixed-license-plate-receiving.md) when a pallet holds several items, or an [item arrival journal](tasks/register-items-advanced-warehousing.md) for a more traditional registration step. Returns that arrive without notice have their own path, described in [Receive unannounced sales returns](sales-returns-unannounced.md).
+
+Putaway then moves goods from the dock to storage. A [location directive for purchase order putaway](tasks/set-up-location-directive-purchase-order-put-away.md) and a [work template for purchase orders](tasks/set-up-work-template-purchase-orders.md) together define where receipts land. You can raise storage density by directing putaway [based on container types](inbound-putaway-by-container-type.md), or reduce travel by grouping several putaway tasks into [putaway clusters](putaway-clusters.md). Not every receipt should generate putaway work at all. [Work policies](warehouse-work-policies.md) let you register inventory without creating work when goods are consumed where they land, which is common in manufacturing-adjacent receiving areas. When inspection is part of receiving, [quality management for warehouse processes](../inventory/quality-management-for-warehouses-processes.md) and the [quality check](quality-check.md) step let you hold stock before it becomes available to promise.
+
+## Outbound operations
+
+Outbound processing offers the widest range of configuration options, because order profiles differ so much between businesses. Work begins when demand is [released to the warehouse](release-to-warehouse-process.md), which you can govern with a [release to warehouse rule](release-to-warehouse-rule.md) so that orders are only released when they can actually be fulfilled. Shipments are then grouped into outbound loads, which usually correspond to a physical truck or container. [Warehouse handling of outbound loads for sales, transfer, and outbound shipment orders](outbound-load-handling.md) describes that flow, including the [outbound shipment processing policies](outbound-load-handling.md#outbound-shipment-policies) that control what happens when the shipped quantity differs from the quantity ordered.
+
+Released demand is grouped into waves. [Wave creation and processing](wave-processing.md) explains the pipeline, which you shape through [wave templates](wave-templates.md), [wave step codes](wave-step-codes.md), [wave template grouping](wave-template-grouping.md), and the [wave allocation](wave-allocation-method.md) method. Waves are also where the system can [containerize](wave-containerization.md) orders using [container packing strategies](container-packing-strategy-overview.md), [build loads](advanced-load-building-during-wave.md), and print labels. When inventory isn't available at allocation time, [automatic rewaving of nonallocated shipment lines](auto-rewave-shipments.md) retries those lines instead of leaving them stranded, and [wave execution notifications](wave-execution-notifications.md) tell supervisors when something needs attention.
+
+Picking strategy is where labor cost concentrates. You can pick several orders in one trip with [cluster picking](set-up-cluster-picking.md) or [system-directed cluster picking](system-directed-cluster-pick.md), and consolidate similar lines through [pick line grouping](pick-line-grouping.md). To control the order in which tasks reach workers, use [system-directed work sequencing](system-directed-work-sequencing.md). Picked goods are then sorted to orders through [put to wall - put to store](put-to-wall-put-to-store.md) or [outbound sorting](outbound-sorting.md). [Warehouse slotting](warehouse-slotting.md) approaches the problem earlier by planning which items should sit in which picking locations before orders are even released. A newer option, currently in preview, assigns X, Y, and Z coordinates to locations so that the system can sequence pick lines along the shortest physical route. Learn more in [Warehouse spatial location overview](spatial-location-overview.md).
+
+Exceptions are a normal part of picking, and handling them well keeps a shift moving. Workers can record [over-picking for sales orders and transfer orders](over-picking-for-sales-and-transfer-orders.md), supervisors can [manually handle sales and transfer line picking exceptions](manual-order-line-picking-exception-handling.md), and you can automate recovery from short picks with [short picking item reallocation](tasks/set-up-short-picking-item-reallocation.md). [Cancel warehouse work for exception handling](cancel-warehouse-work.md) covers the cases where work must be undone.
+
+Packing and shipping close the cycle. [Packing work for packing outbound containers and processing shipments](packing-work.md) describes the station-based flow, with supporting detail on [packing materials and fees](pack-materials-packing-material-fees.md) and [setting different dimensions for packing and storage](packing-vs-storage-dimensions.md). Parcel volumes are handled through [small parcel shipping](small-parcel-shipping.md), which exchanges rates, labels, and tracking numbers with carriers through a rate engine. For freight planning, routing, and freight reconciliation beyond the four walls, the module hands off to [Transportation management overview](../transportation/transportation-management-overview.md).
+
+When many small orders ship to the same destination, [shipment consolidation policies](about-shipment-consolidation-policies.md) reduce the number of shipments you pay for. [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md) walks through the setup, and five worked scenarios cover the common variations, starting with [automatic release of sales orders](consolidate-shipments-automatic.md). Cross-docking skips storage entirely for goods that are already spoken for, either [from production orders to outbound docks](../production-control/cross-docking-opportunities.md) or through [planned cross docking](planned-cross-docking.md).
+
+## Inventory accuracy and availability
+
+Picking only works if stock is where the system believes it is, and in sufficient quantity. Replenishment keeps forward pick faces stocked, and the right strategy depends on how predictable your demand is. [Replenishment overview](replenishment.md) compares the available strategies, including [min-max replenishment](tasks/set-up-min-max-replenishment-process.md) for steady movers, [immediate replenishment](immediate-replenishment.md) when a wave uncovers a shortfall, and [zone threshold replenishment](zone-threshold-replenishment.md) for zone-level control.
+
+Counting keeps the record honest without stopping operations. [Cycle counting](cycle-counting.md) audits on-hand inventory continuously rather than through a full physical count, and [partial location cycle counting](partial-location-cycle-counting.md) narrows a count to part of a location. [Define cycle counting](tasks/define-cycle-counting.md) covers the setup, [cycle counting example scenarios](cycle-counting-scenarios.md) shows how the pieces combine in practice, and [reason codes for inventory counting](reason-codes-for-counting-journals.md) turn adjustments into data you can analyze later.
+
+Availability also depends on how inventory is reserved and restricted. [Reservations in Warehouse management](reservations-in-warehouse-management.md) explains how reservation works for WMS-enabled items, and the [flexible warehouse-level dimension reservation policy](flexible-warehouse-level-dimension-reservation.md) relaxes dimension requirements where full specificity isn't needed at order entry. [Inventory status](../inventory/inventory-statuses.md) and [inventory blocking](../inventory/inventory-blocking.md) keep stock that isn't sellable out of allocation. To move goods without an order driving it, use the [movement of inventory with associated work](move-inventory-associated-work.md) capabilities, and keep the data volumes manageable with the [on-hand entries cleanup job](onhand-cleanup.md).
+
+## Work and worker management
+
+Beyond individual processes, supervisors need control over the work itself. [Work line details](work-line-details.md) and the [work exceptions log](work-exceptions-log.md) show what's happening and what has gone wrong. You can hold work back with [work blocking and blocking reasons](work-blocking-reasons.md), divide a large task with [work split](work-split.md), or redirect it by [changing the work pool on work](change-work-pool-on-work.md). [Manage warehouse workers](manage-warehouse-workers.md) covers the worker records that connect a person to the work they're allowed to perform. [Dynamic work classification](dynamic-work-classification.md) is a more recent alternative to fixed setup. A Power Fx formula determines the work pool, priority, location directive codes, and work classes at the moment work is created. One work template and one rule can then replace the many near-identical templates that carrier-specific or deadline-specific handling used to require. To plan a shift before it starts, [schedule workload capacity](schedule-workload-capacity.md) and [schedule load utilization](schedule-load-utilization.md) help you determine whether the work fits the hours and the vehicles available.
+
+## The Warehouse Management mobile app
+
+Nearly all execution happens on a mobile device, so the app is where workers experience your configuration. [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md) covers deployment, with a [connection settings reference](warehouse-app-connection-settings.md) for the details. Sites still on version 3 should plan a move using [Migrate the Warehouse Management mobile app from V3 to V4](warehouse-app-migrating-from-v3-v4.md). The [release schedule](warehouse-app-control-updates.md) and the [support policy](warehouse-app-support-info.md) both matter when you decide how to validate a release before it reaches the floor. The [what's new](warehouse-app-whats-new.md) article lists the changes in each version.
+
+For IT administrators, [user-based authentication](warehouse-app-authenticate-user-based.md) ties app access to individual identities, which supports [Conditional Access](warehouse-app-conditional-access-enable.md) and lets you [mass deploy the app with Intune](warehouse-app-intune-user-based.md). A [QR code](warehouse-app-qr-code.md) can carry connection settings to a device without manual entry, and you can [create a custom application registration](warehouse-app-custom-app-registration.md) when your tenant requires one.
+
+What workers see is entirely configurable. You define the tasks available on a device through [mobile device menu items](configure-mobile-devices-warehouse.md). You then tune each step by [configuring fields](configure-app-field-names-priorities-warehouse.md), [promoting the fields that matter most](warehouse-app-promoted-fields.md), and [customizing step titles and instructions](mobile-app-titles-instructions.md) in the language your workers actually use. [Detours](warehouse-app-detours.md) let a worker step out of a flow to answer a question, such as [querying item data](warehouse-app-item-inquiry.md), and then return without losing their place. Scanning options range from [camera-based scanning](scan-bar-codes-using-a-camera.md) to [advanced scanner configuration](warehouse-app-adv-scanner-config.md) for wearable and arm-mounted devices, with [GS1 bar codes and QR codes](gs1-barcodes.md) for encoded data such as batch numbers and expiration dates. Wearable scanners can also confirm a scan or flag an error through [haptic feedback](warehouse-app-haptic-feedback.md), so workers keep their attention on the task instead of the screen.
+
+Two areas repay attention where turnover is high. [Accessibility features](warehouse-app-accessibility.md) and [user settings, color themes, and sound themes](warehouse-app-user-settings-themes.md) make the app usable in noisy, bright, or cold environments. And [Workload insights with Copilot](warehouse-management-mobile-app-insights.md) gives workers a natural-language summary of the open work in their warehouse at the start of a shift, which shortens the time spent working out what to do next. Administrators can watch the fleet through the [warehouse mobile devices workspace](mobile-device-workspace.md), [inspect active sessions](work-user-sessions.md), and diagnose problems on a device with the [app log](warehouse-app-log-view.md) and [Wi-Fi connectivity checks](warehouse-app-network-diagnostics.md).
+
+## Automation, printing, and extensibility
+
+Warehouses that run conveyors, sorters, or automated storage connect them through the [material handling equipment interface (MHAX)](mhax.md), which exchanges work events with external systems through inbound and outbound queues. Label printing is configured rather than coded: you define [container label layouts](print-container-labels.md), [license plate label layouts](print-license-plate-labels-using-label-layouts.md), and [document routing layouts](document-routing-layout-for-license-plates.md), then control output with [dynamic printer selection](dynamic-printing-selection.md) and, for wave-driven printing, [wave label printing](configure-wave-label-printing.md). [Custom label layouts and printing](custom-label-layouts-and-printing.md) and the [external label service](../supply-chain-dev/label-printing-using-external-label-service.md) cover more demanding label requirements. When a process needs behavior the standard steps don't provide, the [process guide framework](../supply-chain-dev/process-guide-framework.md) is the supported way to extend mobile device flows.
+
+## Monitoring and continuous improvement
+
+Once a warehouse is running, the question becomes where time is going. [Outbound workload visualization](outbound-workload-visualization.md) lets supervisors build charts of remaining picking work that are suitable for display on a floor monitor. When labor management is configured, those charts can also show the number of hours that the remaining picking work represents. For deeper analysis, [Analyze warehouse material movement through process mining](warehouse-material-movement-analysis.md) reconstructs actual material flows from completed work records, which often reveals travel and congestion that aren't visible in daily reporting.
+
+On the technical side, [Enable warehousing telemetry with Application Insights](application-insights-warehousing.md) and [Monitor Warehouse Management usage and performance](application-insights-monitor-usage-performance.md) give administrators evidence about how the system is behaving under real load. [Message processor messages for warehouse management processes](warehouse-message-processor-messages.md) helps you trace asynchronous processing when something doesn't complete.
+
+## Warehouse management only mode
+
+Not every organization wants to run its entire business in Supply Chain Management to get its warehousing capabilities. *Warehouse management only mode* dedicates a legal entity to warehouse operations, which can then serve other legal entities or an external system. It's the basis for two distinct situations: running WMS alongside [an external enterprise resource planning (ERP) or order management system](wms-only-mode-external-erp.md), and operating [an external shared warehouse](wms-only-mode-external-shared-warehouse.md) for other companies, as a third-party logistics provider would. This mode uses lightweight inbound and outbound shipment orders in place of sales, purchase, and transfer orders, so there's less to configure and maintain. [Warehouse management only mode overview](wms-only-mode-overview.md) describes the deployment options, and the [frequently asked questions](wms-only-mode-faq.md) address the boundaries of what the mode supports. Because the mode depends on an external system for master data and orders, [Exchange data between systems](wms-only-mode-exchange-data.md) sets out the recommended integration approach.
 
 ## Get started
 
-To start working with Warehouse management, you need to complete the setup of the general warehouse parameters to support the business processes of your company.
+A warehouse implementation is mostly a configuration exercise, and the module includes tooling to keep it organized. Work through the following stages:
 
-- Go to the **Warehouse management parameters** page under **Warehouse management** > **Setup** to set up general warehouse parameters.
+1. Open the **Warehouse implementation tasks** workspace and import the default configuration checklist. It lists the tasks needed to get a warehouse running and links directly to each configuration page. Learn more in [Get started with setting up the Warehouse management module](get-started-with-setting-up-module.md).
+1. Set the general parameters for the module at **Warehouse management** > **Setup** > **Warehouse management parameters**. These settings, including mandatory location types, underpin the rest of the configuration.
+1. Define your warehouse layout, starting with [Warehouse configuration overview](warehouse-configuration.md) and then [Configure locations in a WMS-enabled warehouse](tasks/configure-locations-wms-enabled-warehouse.md).
+1. Build the work templates and location directives that drive work, guided by [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md). Prove them with [acceptance tests](location-directive-acceptance-tests.md) before going live.
+1. Configure one complete flow end to end before adding others. Inbound putaway is a good first choice, using [Set up a location directive for purchase order putaway](tasks/set-up-location-directive-purchase-order-put-away.md) and [Set up a work template for purchase orders](tasks/set-up-work-template-purchase-orders.md).
+1. Set up the devices your workers will use, following [Create and configure mobile device menu items](configure-mobile-devices-warehouse.md) and [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md).
 
-You must configure components for inbound and outbound warehouse process workflows according to business requirements. The most important components that you must configure are wave templates, work templates, work pools, and location directives.
-
-- [Warehouse configuration overview](warehouse-configuration.md)
-- [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md)
-- [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md)
-- [Set up a location directive for purchase order putaway](./tasks/set-up-location-directive-purchase-order-put-away.md)
-- [Set up a work template for purchase orders](./tasks/set-up-work-template-purchase-orders.md)
-
-## Warehouse management processes (WMS)
-
-- Integrated support for source documents for sales orders, returns, transfer orders, production orders, and kanban  
-- Flexible, inbound and outbound material workflow support based on queries
-- Full integration with the Manufacturing and Transportation offerings
-- Full control of location stocking limits and location volumetrics
-- Inventory properties controlled by inventory status
-- Full batch and serial item support
-- Various item receiving capabilities
-- Multiple picking strategies
-- Out-of-the-box support for the next generation of bar code scanners
-- Pallet and container types for warehouse processes
-- Advanced counting capabilities
-- Label printing and label routing with Zebra ZPL support
-- Business intelligence integration into Power BI
-- Manual and automatic movement of inventory
-- Fully integrated quality control (QMS)
-- Full traceability of workers' material handling
-- Outbound wave processing
-- Manual packing and automatic containerization support
-- Cluster picking
-- Simple cross docking
+If you're moving from Microsoft Dynamics AX 2012, review [Upgrade warehouse management from Microsoft Dynamics AX 2012 to Supply Chain Management](upgrade-migration-warehouse-management-processes.md) before you plan the configuration work, because some concepts changed.
 
 ## Related information
 
-### What's new and in development
-
-Go to the [Dynamics 365 Release Planner](https://releaseplans.microsoft.com/?app=Supply+Chain+Management) to see what new features are released and what new features are in development.
-
-### Blogs
-
-You can find opinions, news, and other information about Warehouse management and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog).
-
-## Articles
-
-The following article explores various aspects of warehouse management in Dynamics 365 Supply Chain Management:
-
+- [Get started with setting up the Warehouse management module](get-started-with-setting-up-module.md)
+- [Warehouse configuration overview](warehouse-configuration.md)
+- [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md)
+- [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md)
 - [Reservations in Warehouse management](reservations-in-warehouse-management.md)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+- [Warehouse management only mode overview](wms-only-mode-overview.md)
