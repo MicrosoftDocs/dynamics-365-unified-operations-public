@@ -6,7 +6,7 @@ ms.author: chuzheng
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 10/24/2025
+ms.date: 10/13/2025
 ms.custom:
 - bap-template
 ---
@@ -15,21 +15,21 @@ ms.custom:
 
 [!INCLUDE [banner](../includes/banner.md)]
 
-Unified pricing management lets you configure pricing rules that can also consider values of custom pricing attributes for products, customers, orders, and order lines.
+Unified pricing management lets you configure pricing rules that also consider values of custom pricing attributes for products, customers, orders, and order lines.
 
-To use a custom pricing attribute in Dynamics 365 Commerce Point of Sale (POS), you must make the attribute available in Microsoft finance and operations apps and Commerce Scale Unit (CSU). You must also implement a custom request handler that uses `GetCustomizedPricingPropertiesRequest` and `GetCustomizedPricingPropertiesResponse`.
+To use a custom pricing attribute in Dynamics 365 Commerce Point of Sale (POS), make the attribute available in Microsoft finance and operations apps and Commerce Scale Unit (CSU). Also, implement a custom request handler that uses `GetCustomizedPricingPropertiesRequest` and `GetCustomizedPricingPropertiesResponse`.
 
 Custom attributes are marked in the `GUPPRICINGATTRIBUTELINK` table using a specific identifier, which indicates that they require special logic in CSU to be supported in POS. To mark a pricing attribute as custom, the `GUPPRICINGATTRIBUTELINK.TypeName` column must be set to `Customization`.
 
-In CSU logic, if a custom pricing attribute is validated as `GUPPRICINGATTRIBUTELINK.TypeName = 'Customization'`, then the system calls the custom request handler.
+In CSU logic, if a custom pricing attribute is validated as `GUPPRICINGATTRIBUTELINK.TypeName = 'Customization'`, the system calls the custom request handler.
 
 ## Prerequisites
 
-To use the features described in this article, you must be running version 10.0.46 or later of your Microsoft finance and operations apps.
+To use the features described in this article, run version 10.0.46 or later of your Microsoft finance and operations apps.
 
 ## First steps
 
-Start by setting up your environment to implement custom pricing attributes, as described in the following procedure:
+Set up your environment to implement custom pricing attributes, as described in the following procedure:
 
 1. Implement a custom request handler to process custom pricing attributes. Learn more in [Example custom request handler code](upm-custom-request-handler-example.md).
 1. Register the output library in the `CommerceRuntime.Ext.config` file. Here's an example of a custom request handler registration (if the output library were `Contoso.Commerce.Runtime.Services`).
@@ -42,7 +42,7 @@ Start by setting up your environment to implement custom pricing attributes, as 
 
 ## Create the pricing attribute in finance and operations apps
 
-To implement custom pricing attributes for products, customers, orders, and order lines, follow these steps:
+To implement custom pricing attributes for products, customers, orders, and order lines, follow the steps in the following section and refer to the provided examples.
 
 Create a class for each custom pricing attribute. The class must extend the appropriate class that derives from `GUPAbstractPricingAttribute` and must implement `GUPIPricingAttribute`.
 
@@ -52,9 +52,9 @@ Implement methods such as `getValueOfAttribute()`, `getName()`, and `getDataType
 - `GUPPricingAttributeSourceDiscovery` identifies the pricing attribute source and source level.
 - `GUPPricingAttributeFieldsDiscovery` identifies the related table and field.
 
-#### Example: Create a header-level customer attribute
+### Example 1: Create a header-level customer attribute
 
-The following example creates a header-level customer pricing attribute for the existing `CustTable.StatisticsGroup` field.
+The following example creates a header-level customer pricing attribute for the existing `CustTable.StatisticsGroup` field:
 
 ```X++
 /// <summary>
@@ -89,9 +89,9 @@ internal class GUPPricingAttributeCustTableStatisticsGroup extends GUPPricingAtt
 }
 ```
 
-#### Example: Create a line-level sales attribute
+### Example 2: Create a line-level sales attribute
 
-The following example creates a line-level pricing attribute for the existing `SalesLine.LineNum` field.
+The following example creates a line-level pricing attribute for the existing `SalesLine.LineNum` field:
 
 ```X++
 /// <summary>
@@ -135,10 +135,9 @@ internal final class GUPPricingAttributeSalesLineLineNum extends GUPPricingAttri
 
 Skip this section if the source field already exists on a finance and operations table.
 
-To create a completely new pricing attribute, complete the following steps:
+To create a new pricing attribute, follow these steps:
 
-1. Create an extended data type for the attribute, if an appropriate extended data type doesn't already exist.
-     An extended data type defines the type and maximum length of a field. The following sample creates a text field that can contain up to 50 characters.
+1. Create an extended data type for the attribute, if an appropriate extended data type doesn't already exist. An extended data type defines the type and maximum length of a field. The following sample creates a text field that can contain up to 50 characters.
 
    ```XML
    <?xml version="1.0" encoding="utf-8"?>
@@ -152,8 +151,11 @@ To create a completely new pricing attribute, complete the following steps:
        <StringSize>50</StringSize>
    </AxEdt>
    ```
+
 1. Create an extension for the source table.
-1. Add the new field to the table extension. The following sample adds four customer pricing fields.
+
+1. Add the new field to the table extension. The following sample adds four customer pricing fields:
+
      ```XML
    <?xml version="1.0" encoding="utf-8"?>
    <AxTableExtension xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
@@ -234,12 +236,15 @@ To create a completely new pricing attribute, complete the following steps:
 
 ## Make the attribute available in CSU
 
-Skip this section if the source field already exists in CSU. These steps must be followed if 1) the field is new to both finance and operations apps and CSU, or 2) the field exists in finance and operations apps but not in CSU.
+Skip this section if the source field already exists in CSU. Follow these steps if:
+
+- The field is new to both finance and operations apps and CSU, or
+- The field exists in finance and operations apps, but not in CSU.
 
 1. In headquarters, open the **Commerce channel schema** page.
 1. Select the Commerce channel that you want to update.
 1. On the **Channel database extension SQL script** tab, select **Generate SQL script**.
-1. Apply the generated script to the Channel database.
+1. Apply the generated script to the channel database.
 
    Don't add the field directly to the standard table in the `ax` schema. The generated script creates or updates an extension table in the `ext` schema. For example, an extension for `CustTable` is added to `ext.CustTableExt`.
 
@@ -250,7 +255,6 @@ Skip this section if the source field already exists in CSU. These steps must be
    Commerce Data Exchange (CDX) copies data from headquarters to CSU.
 
    The following example copies `CustTable.SalesDistrictId` to `ext.CustTableExt`. Replace `SalesDistrictId` with your field name. Add another `Field` element if you need to copy more than one field.
-
 
    ```XML
    <RetailCdxSeedData ChannelDBMajorVersion="7" ChannelDBSchema="ext" Name="AX7">
@@ -314,11 +318,11 @@ Skip this section if the source field already exists in CSU. These steps must be
 
 ## Identify the attribute as a customization
 
-The `TypeName` column of the attribute's `GUPPRICINGATTRIBUTELINK` record must be set to `Customization`.
+Set the `TypeName` column of the attribute's `GUPPRICINGATTRIBUTELINK` record to `Customization`.
 
-#### Set TypeName for a new pricing attribute
+### Set TypeName for a new pricing attribute
 
-For a new pricing attribute class, extend `GUPPricingAttributeRepository.toPriceAttributeLink()` and set `TypeName` when the pricing attribute link is created.
+For a new pricing attribute class, extend `GUPPricingAttributeRepository.toPriceAttributeLink()` and set `TypeName` when you create the pricing attribute link.
 
 ```X++
 [ExtensionOf(classStr(GUPPricingAttributeRepository))]
@@ -345,9 +349,9 @@ public static final class GUPPricingAttributeRepository_Extension
 }
 ```
 
-#### Set TypeName for an existing pricing attribute link
+### Set TypeName for an existing pricing attribute link
 
-If the `GUPPRICINGATTRIBUTELINK` record already exists, update its `TypeName` value to `Customization`. The following SQL statement is an example.
+If the `GUPPRICINGATTRIBUTELINK` record already exists, update its `TypeName` value to `Customization`. Here's a SQL statement example:
 
 ```SQL
 update dbo.GUPPRICINGATTRIBUTELINK
@@ -355,10 +359,9 @@ set TYPENAME = 'Customization'
 where ATTRIBUTENAME = 'Custom attribute name'
 ```
 
-The following image shows how entries marked as custom appear in the `GUPPRICINGATTRIBUTELINK` table.
+The following image shows how entries marked as `custom` appear in the `GUPPRICINGATTRIBUTELINK` table.
 
 :::image type="content" source="media/ssms-customization.png" alt-text="Custom pricing attributes in the GUPPRICINGATTRIBUTELINK table in SQL Server Management Studio." lightbox="media/ssms-customization.png":::
-
 
 ## Build and configure the attribute
 
@@ -370,7 +373,6 @@ After you create the pricing attribute and any required table or CDX extensions,
 1. Select the price attribute group that you want to update.
 1. On the **Attributes** FastTab, add the custom pricing attribute.
 1. Repeat these steps for each price attribute group that should use the custom attribute.
-
 
 ## Synchronize and test the attribute
 
@@ -389,9 +391,8 @@ To synchronize and test the custom pricing attribute, follow these steps:
 1. In POS, create a transaction that uses the configured record.
 1. Verify that the expected price or auto charge is applied.
 
-
-
 ## Troubleshooting
+
 ### You receive a POS notification that a custom request handler isn't implemented
 
 While creating a transaction in POS that is associated with one or more custom pricing attributes, you might receive an error message similar to the following message:
@@ -407,16 +408,16 @@ To address this issue, follow these steps:
 
 While creating a transaction in POS that is associated with one or more custom pricing attributes, you might receive one of the following error messages:
 
-> A custom product pricing attribute has been detected. Please contact your system administrator to verify the setup of custom attributes.
+> A custom product pricing attribute has been detected. Contact your system administrator to verify the setup of custom attributes.
 
 Or:
 
-> A custom customer pricing attribute has been detected. Please contact your system administrator to verify the setup of custom attributes.
+> A custom customer pricing attribute has been detected. Contact your system administrator to verify the setup of custom attributes.
 
 To address this issue, follow these steps:
 
 1. Verify that the CSU flight `UPSupportCustomPricingAttributesFlight` is enabled.
-1. Confirm that the new custom pricing attributes are identified as custom. The `GUPPRICINGATTRIBUTELINK.TypeName` column should be set to `Customization` for all custom pricing attributes.
+1. Confirm that the new custom pricing attributes are identified as custom. Set the `GUPPRICINGATTRIBUTELINK.TypeName` column to `Customization` for all custom pricing attributes.
 
 ### Further troubleshooting
 
