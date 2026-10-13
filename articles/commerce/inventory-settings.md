@@ -2,7 +2,7 @@
 title: Apply inventory settings
 description: Learn about inventory settings and how to apply them in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 01/23/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 ms.reviewer: mirao
 ms.search.region: Global
@@ -29,9 +29,14 @@ In Commerce site builder, you can define inventory thresholds and ranges for a p
 
 ## Inventory settings
 
-In Commerce, define inventory settings at **Site Settings \> Extensions \> Inventory Management** in site builder. There are six inventory settings, one of which is obsolete (deprecated):
+In Commerce, define inventory settings at **Site Settings \> Extensions \> Inventory Management** in site builder. There are seven inventory settings, one of which is obsolete (deprecated):
 
 - **Enable stock check in app** – This setting turns on a product inventory check. Buy box, cart, and pick up in store modules then check product inventory and allow a product to be added to the cart only if inventory is available. Inventory levels only display if this setting is turned on.
+- **Enable cross-legal-entity inventory lookup** – This setting lets B2B e-commerce sites display inventory and locations from stores and warehouses in multiple legal entities. The setting enables cross-legal-entity inventory behavior in the buy box, store selector, and warehouse and store locator modules.
+
+    > [!IMPORTANT]
+    > This setting is available as of Commerce version 10.0.50. In this release, cross-legal-entity e-commerce scenarios support inventory and location visibility only. Cross-legal-entity order fulfillment will be available in a future release.
+
 - **Inventory level based on** – This setting defines how inventory levels are calculated. The available values are **Total Available**, **Physical Available**, and **Out of stock threshold**. In Commerce, you can define inventory threshold and ranges for each product and category. The inventory APIs return product inventory information for both the **Total Available** property and the **Physical Available** property. You decide whether the **Total Available** or **Physical Available** value should be used to determine the inventory count and the corresponding ranges for in-stock and out-of-stock statuses.
 
     The **Out of stock threshold** value of the **Inventory level based on** setting is an old (legacy), obsolete value. When you select **Out of stock threshold**, the inventory count is determined from the results of the **Total Available** value, but the threshold is defined by the **Out of stock threshold** numeric setting that is described later. This threshold setting applies to all products across an e-commerce site. If inventory is below the threshold number, a product is determined to be out of stock. Otherwise, it's determined to be in stock. The capabilities of the **Out of stock threshold** value are limited, and it's not recommended that you use it in version 10.0.12 and later.
@@ -59,7 +64,7 @@ In Commerce, define inventory settings at **Site Settings \> Extensions \> Inven
 
 ## Modules that use inventory settings
 
-Buy box, wishlist, store selector, cart, and cart icon modules use inventory settings to show the inventory ranges and messages.
+Buy box, wishlist, store selector, warehouse and store locator, cart, and cart icon modules use inventory settings to show the inventory ranges and messages.
 
 In the example in the following illustration, a PDP shows an in-stock ("Available") message.
 
@@ -86,6 +91,8 @@ In the example in the following illustration, a cart shows an in-stock ("Availab
 [Account management pages and modules](account-management.md)
 
 [Store selector module](store-selector.md)
+
+[Warehouse and store locator module](warehouse-store-locator-module.md)
 
 [SDK and module library updates](e-commerce-extensibility/sdk-updates.md)
 

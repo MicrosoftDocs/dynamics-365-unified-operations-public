@@ -2,7 +2,7 @@
 title: Buy box module
 description: Learn about buy box modules and how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 01/14/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 ms.reviewer: mirao
 ms.search.region: Global
@@ -50,6 +50,7 @@ You can use themes to remove or change the order of buy box product properties a
 
 - **Media gallery** – Use this module to showcase images of a product on a product details page. For more information about this module, see [Media gallery module](media-gallery-module.md).
 - **Store selector** – Use this module to show a list of nearby stores where an item is available for pickup. It lets users enter a location to find stores that are nearby. For more information about this module, see [Store selector module](store-selector.md).
+- **Warehouse and store locator** – On B2B sites, use this module to show product inventory in stores and warehouses across legal entities. Learn more in [Warehouse and store locator module](warehouse-store-locator-module.md).
 - **Social share** - Add this module to the buy box to allow users to share product information on social media. For more information, see [Social share module](social-share-module.md).
 
 ## Buy box module settings
@@ -100,11 +101,25 @@ To add a buy box module to a new page and set the required properties, follow th
 1. Save and preview the page. Add the **?productid=&lt;product id&gt;** query string parameter to the URL of the preview page. In that way, the product context is used to load and render the preview page.
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it. A buy box should appear on the product details page.
 
+### Add a warehouse and store locator to a B2B buy box
+
+For B2B sites that use cross-legal-entity inventory lookup, add the warehouse and store locator directly to the buy box fragment.
+
+1. Open the buy box fragment used by the site's PDP template.
+1. Select the buy box module.
+1. In the **Warehouse locator** slot, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select **Warehouse and store locator**, and then select **OK**.
+1. Set the module's **Entry point** property to **Product detail page**.
+1. Configure the locator properties and optional map.
+1. Select **Save**, select **Finish editing**, and then select **Publish**.
+
 ## Additional resources
 
 [Module library overview](starter-kit-overview.md)
 
 [Store selector module](store-selector.md)
+
+[Warehouse and store locator module](warehouse-store-locator-module.md)
 
 [Media gallery module](media-gallery-module.md)
 

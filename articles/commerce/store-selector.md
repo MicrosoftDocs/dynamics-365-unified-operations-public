@@ -2,7 +2,7 @@
 title: Store selector module
 description: Learn about the store selector module and how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/29/2025
+ms.date: 10/13/2026
 ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin
@@ -28,6 +28,9 @@ The store selector module lets users enter a location (city, state, address, and
 - A store selector module can be used on a product details page (PDP) to select a store for pickup.
 - A store selector module can be used on a cart page to select a store for pickup.
 - A store selector module can be used on a standalone page that shows all available stores.
+
+> [!NOTE]
+> For B2B sites that use cross-legal-entity inventory lookup, use the warehouse and store locator module in the header and PDP buy box. The warehouse and store locator displays stores and warehouses across configured legal entities. Learn more in [Warehouse and store locator module](warehouse-store-locator-module.md).
 
 ## Fulfillment group setup in Commerce headquarters
 
@@ -176,6 +179,8 @@ To configure the store selector module to show available stores for a store loca
 [Azure Maps REST SDK](/azure/azure-maps/how-to-use-ts-rest-sdk)
 
 [Azure Maps module](azure-maps-module.md)
+
+[Warehouse and store locator module](warehouse-store-locator-module.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
