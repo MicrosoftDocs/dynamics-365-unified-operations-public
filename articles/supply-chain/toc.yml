@@ -1733,7 +1733,9 @@
         items:
         - name: Arrival overview
           href: inventory/arrival-overview.md
-        - name: Set up an item arrival overview profile
+        - name: Register items by using an item arrival journal
+          href: inventory/register-items-item-arrival-journal.md
+        - name: Set up an item arrivalr overview profile
           href: inventory/tasks/set-up-item-arrival-overview-profile.md
       - name: Quality management
         items:
@@ -3938,7 +3940,7 @@
           - name: Plan loads using hub consolidation overview
             href: transportation/plan-loads-hub-consolidation.md
           - name: Plan loads and shipments using the outbound load planning workbench
-            href: warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md
+            href: transportation/use-load-planning-workbench-plan-loads-shipments.md
         - name: USMCA certification of origin
           href: transportation/usmca-certification-of-origin.md
         - name: Commercial invoices
@@ -4049,8 +4051,6 @@
           href: warehousing/create-or-modify-an-inbound-load.md
         - name: Register items enabled for warehouse management processes using an item arrival journal
           href: warehousing/tasks/register-items-advanced-warehousing.md
-        - name: Register items for a basic warehousing enabled item using an item arrival journal
-          href: warehousing/tasks/register-items-basic-warehousing.md
         - name: Import inbound ASNs through data entities
           href: warehousing/import-asn-data-entity.md
         - name: Import inbound ASNs as despatch advice messages
@@ -4059,8 +4059,6 @@
           href: warehousing/sales-returns-unannounced.md
         - name: Manage inbound putaway based on container types
           href: warehousing/inbound-putaway-by-container-type.md
-        - name: Cross-dock products from receiving warehouse to stores
-          href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
         - name: Set up a location directive for purchase order putaway
           href: warehousing/tasks/set-up-location-directive-purchase-order-put-away.md
         - name: Set up a work template for purchase orders
@@ -4228,7 +4226,7 @@
           - name: Cycle counting
             href: warehousing/cycle-counting.md
           - name: Define cycle counting
-            href: warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md
+            href: warehousing/tasks/define-cycle-counting.md
           - name: Partial location cycle counting
             href: warehousing/partial-location-cycle-counting.md
           - name: Define partial location cycle counting process
@@ -4309,7 +4307,7 @@
           items:
           - name: Configure fields for the Warehouse Management mobile app
             href: warehousing/configure-app-field-names-priorities-warehouse.md
-          - name: Set up mobile devices for warehouse work
+          - name: Create and configure mobile device menu items
             href: warehousing/configure-mobile-devices-warehouse.md
           - name: Examples of mobile device menu item configurations
             items:
@@ -4320,7 +4318,7 @@
             - name: Set up a mobile device menu item for moving items by template
               href: warehousing/mobile-device-move-by-template-menu.md
             - name: Set up a mobile device menu item for completing work in a purchase order
-              href: warehousing/tasks/set-up-mobile-device-menu.md
+              href: warehousing/tasks/set-up-mobile-device-menu-item-purchase-order-putaway.md
             - name: Set up a mobile device menu item to register received items
               href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
             - name: Set up a mobile device menu item to provide a pick line overview
@@ -4419,8 +4417,6 @@
           href: warehousing/prevent-multiple-owners-locations.md
         - name: Wave generation and processing
           items:
-          - name: Configure wave processing example
-            href: warehousing/tasks/configure-wave-processing.md
           - name: Warehouse parameters for wave processing
             href: warehousing/wave-warehouse-parameters.md
           - name: Wave templates
@@ -4449,8 +4445,6 @@
             href: warehousing/print-container-labels.md
           - name: License plate label layouts and printing
             href: warehousing/print-license-plate-labels-using-label-layouts.md
-          - name: Enable license plate label printing
-            href: warehousing/tasks/license-plate-label-printing.md
           - name: Custom label layouts and printing
             href: warehousing/custom-label-layouts-and-printing.md
           - name: Document routing label layouts

@@ -29,7 +29,7 @@ To set up a mobile device menu item to provide a pick line overview, follow thes
     - **Use existing work:** *Yes*
     - **Directed by:** *User directed* or *System directed*
 
-    For more information about how to create menu items and use the various settings that are available on the **Mobile device menu items** page, see [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md).
+    For more information about how to create menu items and use the various settings that are available on the **Mobile device menu items** page, see [Create and configure mobile device menu items](configure-mobile-devices-warehouse.md).
 
 1. On the **General** FastTab, configure the feature by setting the **Show work line list** field to one of the following values:
 

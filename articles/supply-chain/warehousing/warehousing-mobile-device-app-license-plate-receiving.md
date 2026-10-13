@@ -78,7 +78,7 @@ For businesses that use the *License plate receiving* process to inbound receive
 
 ## More information
 
-- For more information about mobile device menu items, see [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md).
+- For more information about mobile device menu items, see [Create and configure mobile device menu items](configure-mobile-devices-warehouse.md).
 - For more information about work policies, see [work policies](warehouse-work-policies.md).
 - For more information about deferred receiving, see [mixed license plate receiving](mixed-license-plate-receiving.md#deferred-receiving-processing).
 - For more information about the *Report as finished* production scenario, see [Warehouse work policies overview](warehouse-work-policies.md).

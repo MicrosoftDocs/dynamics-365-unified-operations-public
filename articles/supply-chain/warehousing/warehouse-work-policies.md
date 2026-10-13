@@ -276,7 +276,7 @@ When the production order is reported as finished, no work is generated for puta
 
 ## More information
 
-For more information about mobile device menu items, see [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md).
+For more information about mobile device menu items, see [Create and configure mobile device menu items](configure-mobile-devices-warehouse.md).
 
 For more information about license plate receiving and work policies, see [License plate receiving via the Warehouse Management mobile app](warehousing-mobile-device-app-license-plate-receiving.md).
 

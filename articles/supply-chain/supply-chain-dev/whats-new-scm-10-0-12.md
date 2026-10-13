@@ -30,7 +30,7 @@ The following features are included in this release. The feature titles link to 
 
 - [Allow locking the job card touchscreen for sanitization](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/allow-locking-job-card-touchscreen-sanitization)<br> - Learn more in [Configure the production floor execution interface](../production-control/production-floor-execution-configure.md).
 
-- [Capture product variants and tracking dimensions in the warehouse app during load item receiving](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/capture-product-variants-tracking-dimensions-warehousing-app-during-load-item-receiving)<br> - Learn more in [Set up mobile devices for warehouse work](../warehousing/configure-mobile-devices-warehouse.md).
+- [Capture product variants and tracking dimensions in the warehouse app during load item receiving](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/capture-product-variants-tracking-dimensions-warehousing-app-during-load-item-receiving)<br> - Learn more in [Create and configure mobile device menu items](../warehousing/configure-mobile-devices-warehouse.md).
 
 - Cost calculation level (new BOM level)<br> - Learn more in [Cost calculation level](../cost-management/cost-calculation-level.md).
 

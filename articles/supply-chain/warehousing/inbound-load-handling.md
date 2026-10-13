@@ -240,7 +240,7 @@ You can leave all other settings at their default values.
 
 :::image type="content" source="media/inbound-mobile-menu-items.png" alt-text="Screenshot of mobile device menu item settings.":::
 
-For more information about how to set up mobile device menu items, see [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md).
+For more information about how to set up mobile device menu items, see [Create and configure mobile device menu items](configure-mobile-devices-warehouse.md).
 
 1. After you finish setting up the menu item, go to **Warehouse management > Setup > Mobile device > Mobile device menu**, and add the menu item to the menu structure for your mobile devices.
 

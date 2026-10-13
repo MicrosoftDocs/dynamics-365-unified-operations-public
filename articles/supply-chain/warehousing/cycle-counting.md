@@ -96,6 +96,6 @@ You can adjust differences in the counted value and then accept the counted valu
 
 ## Related information
 
-- [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md)
+- [Create and configure mobile device menu items](configure-mobile-devices-warehouse.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

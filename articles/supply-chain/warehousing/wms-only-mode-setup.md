@@ -104,7 +104,7 @@ To enable warehouse workers to use the Warehouse Management mobile app to regist
 - *Inbound shipment order line receiving (and put away)*
 - *Inbound shipment order item receiving (and put away)*
 
-For more information, see [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md).
+For more information, see [Create and configure mobile device menu items](configure-mobile-devices-warehouse.md).
 
 ## Set up master data and business events
 

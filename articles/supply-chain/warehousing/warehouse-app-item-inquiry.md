@@ -52,4 +52,4 @@ To enable this functionality, you must configure the mobile device menu item in 
     - **Activity code** – Select *Item inquiry*.
     - **Use process guide** – This setting is automatically set to *Yes* and can't be changed.
 
-1. Go to **Warehouse management** > **Setup** > **Mobile device menu** and add the new menu item to each menu where workers should access it. Learn more in [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md).
+1. Go to **Warehouse management** > **Setup** > **Mobile device menu** and add the new menu item to each menu where workers should access it. Learn more in [Create and configure mobile device menu items](configure-mobile-devices-warehouse.md).

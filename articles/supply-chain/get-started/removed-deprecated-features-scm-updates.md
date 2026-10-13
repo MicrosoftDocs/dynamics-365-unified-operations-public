@@ -144,7 +144,7 @@ Use this list to help you consider these removals and deprecations for your own 
 | **Replaced by another feature?**  | No. The process guide framework is required for all mobile device menu items that use the *Spot cycle counting* work creation process. The ability to turn off this option is being removed from the product. |
 | **Product areas affected** | Supply Chain Management – Warehouse management |
 | **Deployment option** | Cloud and on-premises |
-| **Status** | The **Use process guide** setting for mobile device menu items that use the *Spot cycle counting* work creation process is enabled by default in Supply Chain Management version 10.0.45, and it's mandatory in version 10.0.47. Approximately one year after the release of version 10.0.47, the non-process guide implementation is no longer supported and might eventually be removed from the product. Learn more in [Set up mobile devices for warehouse work](../warehousing/configure-mobile-devices-warehouse.md). |
+| **Status** | The **Use process guide** setting for mobile device menu items that use the *Spot cycle counting* work creation process is enabled by default in Supply Chain Management version 10.0.45, and it's mandatory in version 10.0.47. Approximately one year after the release of version 10.0.47, the non-process guide implementation is no longer supported and might eventually be removed from the product. Learn more in [Create and configure mobile device menu items](../warehousing/configure-mobile-devices-warehouse.md). |
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.42 release
 

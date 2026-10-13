@@ -98,7 +98,7 @@ You might have to regenerate your wave process methods to make the load building
 
 ### Set up wave templates
 
-To take advantage of advanced wave load building, you must include the *buildLoads* method in each relevant [wave template](tasks/configure-wave-processing.md).
+To take advantage of advanced wave load building, include the *buildLoads* method in each relevant [wave template](wave-templates.md).
 
 1. Go to **Warehouse management** > **Setup** > **Waves** > **Wave templates**.
 1. Select a wave template.

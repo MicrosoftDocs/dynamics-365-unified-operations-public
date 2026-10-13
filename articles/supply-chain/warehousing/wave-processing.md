@@ -199,6 +199,5 @@ The way the system displays your wave processing status messages depends on how 
 
 ## Related information
 
-- [Configure wave processing example](tasks/configure-wave-processing.md)
 - [Wave templates](wave-templates.md)
 - [Containerization](wave-containerization.md)
