@@ -37,7 +37,7 @@ The warehouse and store locator module has two entry points. Configure a separat
 
 | Entry point | Placement | Product context | Information shown |
 |---|---|---|---|
-| **Top ribbon** | **Warehouse locator** slot in the header module | No | Stores and warehouses across configured legal entities |
+| **Header** | **Warehouse locator** slot in the header module | No | Stores and warehouses across configured legal entities |
 | **Product detail page** | **Warehouse locator** slot in the buy box module | Yes | Stores, warehouses, and inventory availability for the selected product or variant |
 
 In PDP mode, buyers must select all required product dimensions before the module can retrieve availability for a variant.
@@ -73,23 +73,22 @@ Add the module to a header to let B2B buyers browse configured stores and wareho
 1. In the module properties pane, set **Entry point** to **Top ribbon**.
 1. Configure the heading, trigger text, search radius, filters, and other properties as required.
 1. To display a map, add an Azure Maps module or Map module to the locator's **Map** slot.
+1. If you added an Azure Maps module, select it, and then update its **Heading** property as required.
 1. Select **Save**, select **Finish editing** to check in the fragment, and then select **Publish**.
 
 ## Add the module to a PDP
 
-Add the module to the buy box fragment used by PDP templates to show product availability across legal entities.
+Add the module to the buy box module on a product details page to show product availability across legal entities.
 
-1. In Commerce site builder, go to **Fragments**, and open the buy box fragment used by the site's PDP template.
+1. In Commerce site builder, go to **Pages**, and open the product details page.
 1. Select the buy box module.
 1. In the **Warehouse locator** slot, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select **Warehouse and store locator**, and then select **OK**.
 1. In the module properties pane, set **Entry point** to **Product detail page**.
 1. Configure the heading, trigger text, search radius, filters, and other properties as required.
 1. To display a map, add an Azure Maps module or Map module to the locator's **Map** slot.
-1. Select **Save**, select **Finish editing** to check in the fragment, and then select **Publish**.
-
-> [!NOTE]
-> Add the warehouse and store locator module directly to the buy box module's **Warehouse locator** slot. You don't need to create a separate locator fragment.
+1. If you added an Azure Maps module, select it, and then update its **Heading** property as required.
+1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish**.
 
 ## Configure a map
 
