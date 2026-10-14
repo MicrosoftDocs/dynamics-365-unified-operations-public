@@ -34,7 +34,9 @@ The MCP deep link feature returns the deep link URL in the MCP response, but thi
 ```
 # Citation and deep link instructions
 - Tool responses may include citations in a `DeepLinks` array in the JSON body. Each deep link has a `Url` and `Label`. Always include these links in your response as clickable markdown links (e.g. `Label`) so the user can navigate directly to the referenced form or record in Dynamics 365.
-- Always render DeepLinks URLs exactly as returned by tools — never reconstruct, simplify, or strip query parameters (including encoded q= parameters). Use the full URL verbatim in markdown link syntax.
+- Deep link URLs are returned by MCP tools and should be treated as opaque. Don't generate or edit the `mi=...` value manually; always use the full `Url` value exactly as returned in the `DeepLinks` array.
+- Do: Use the `DeepLinks[n].Url` verbatim.
+- Don't: Reconstruct deep links from a documented template or modify `mi=` or query parameters.
 ```
 
 ## Deep link generation
@@ -72,7 +74,13 @@ For form-based MCP tools:
 MCP tools generate deep links that use the following format:
 
 ```
-https://<Environment base URL>/?mi=ation:McpDeepLinkNavigator&tableName=<TableName>&filters=[{"f":"<FieldName>","op":"<Operator>","v":"<Value>"}]&cmp=<CompanyId>
+https://<Environment base URL>/?mi=action:McpDeepLinkNavigator&tableName=<TableName>&filters=[{"f":"<FieldName>","op":"<Operator>","v":"<Value>"}]&cmp=<CompanyId>
+```
+
+Copy and paste example:
+
+```
+https://contoso.operations.dynamics.com/?mi=action:McpDeepLinkNavigator&q=<encoded-payload>
 ```
 
 For example, the following deep link URL navigates to a filtered list of customers in the USMF company whose names begin with "Contoso":
