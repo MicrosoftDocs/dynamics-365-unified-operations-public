@@ -99,9 +99,13 @@ For example, when the administrator views the **Dataverse database storage** rep
 
 To view the storage consumed by finance and operations data, follow these steps:
 
-1. Go to the [Power Platform admin center reports for finance and operations apps](/power-platform/admin/finance-operations-storage-capacity).
-1. Select **Capacity** \> **Finance and operations**.
-1. The administrator can view details of both the finance and operations application tables and the history tables. History tables that have no indexes consume less capacity than live application tables.
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the left navigation, select **Resources** or **Billing** > **Capacity**.
+1. On the **Capacity** page, review the Dataverse capacity details and locate finance and operations usage or allocations, if shown. If you don't see a finance and operations-specific tab, use the page search or filter, or the top search box, for "capacity" and open the relevant Dataverse capacity view.
+1. Review details for both the finance and operations application tables and the history tables. History tables that have no indexes consume less capacity than live application tables.
+
+> [!NOTE]
+> Navigation labels in the Power Platform admin center can vary by region or tenant and change over time. If you don't see **Resources** or **Billing** > **Capacity**, use the left navigation search to find **Capacity**.
 
 The live table consumes the highest capacity, followed by the history table, and then the \<*tablename*\>-Retained table in Dataverse long term retention.
 
