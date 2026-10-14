@@ -21,7 +21,12 @@ Model files let you distribute models to customers and partners, and you can ins
 
 ## Export a model into a model file for distribution
 
-To export an existing model into a model file, use the ModelUtil.exe tool and the **-export** directive. This tool is located in the packages bin folder (typically, `c:\packages\bin` or `i:\AosService\PackagesLocalDirectory\bin`).
+To export an existing model into a model file, use the ModelUtil.exe tool and the **-export** directive. `ModelUtil.exe` is located under the environment's **PackagesLocalDirectory**; the exact drive and path vary by deployment. Find your PackagesLocalDirectory and then open its `bin` folder.
+
+### Find PackagesLocalDirectory
+
+1. Search the machine for `ModelUtil.exe`. For example, use File Explorer to search all local drives. The tool is typically in `<PackagesLocalDirectory>\bin`.
+1. If you have an AOS webroot, open `web.config` and look for the `PackagesLocalDirectory` or metadata store setting. The setting and path vary by version and environment. Use that path as the metadata store and use its `bin` subfolder for `ModelUtil.exe`.
 
 ```Console
 ModelUtil.exe -export -metadatastorepath=[path of the metadata store] -modelname=[name of the model to export] -outputpath=[path of the folder where the model file should be saved]
@@ -30,7 +35,7 @@ ModelUtil.exe -export -metadatastorepath=[path of the metadata store] -modelname
 **Example**
 
 ```Console
-ModelUtil.exe -export -metadatastorepath=c:\packages -modelname="FleetManagement" -outputpath=c:\temp
+ModelUtil.exe -export -metadatastorepath="<PackagesLocalDirectory>" -modelname="FleetManagement" -outputpath="c:\temp"
 ```
 
 The preceding example creates an `.axmodel` file under `c:\temp`. Typically, you then upload the model file to the Asset Library of the customer project or the Microsoft Dynamics Lifecycle Services solution project.
