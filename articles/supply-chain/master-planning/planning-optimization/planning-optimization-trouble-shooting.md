@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ReqCreatePlanWorkspace
 ms.topic: troubleshooting-general
-ms.date: 05/05/2026
+ms.date: 10/15/2026
 ms.custom:
   - bap-template
 ai-usage: ai-assisted
@@ -49,7 +49,7 @@ An error in your Power Platform environment might prevent the installation of th
 
 ## Planning Optimization job times out
 
-Planning Optimization has a set timeout of 60 minutes. Therefore, if it runs for more than 60 minutes, the planning job stops because of a timeout.
+Planning Optimization cancels plan regeneration jobs that run for more than 90 minutes. A plan regeneration job that completes successfully after more than 60 minutes displays a warning. The warning doesn't mean that the job timed out.
 
 > [!TIP]
 > The following table summarizes the most effective approaches for improving Planning Optimization performance. Try them in order of impact.
@@ -58,7 +58,7 @@ Planning Optimization has a set timeout of 60 minutes. Therefore, if it runs for
 > |---|---|---|
 > | [Reduce time fences](#review-time-fences) | Time fences are larger than your business requires | High—coverage time fence has the largest effect |
 > | [Plan only needed products](#plan-only-for-the-products-you-need) | Many items are included that don't need planning | High |
-> | [Split large jobs](#split-large-planning-jobs-into-several-smaller-jobs) | A single job plans too many items for the 60-minute window | High |
+> | [Split large jobs](#split-large-planning-jobs-into-several-smaller-jobs) | A single job plans too many items for the 90-minute timeout | High |
 > | [Reduce scheduling time](#reduce-scheduling-time) | Finite capacity scheduling is enabled and adds significant time | Medium |
 > | [Reduce resource group size](#consider-reducing-the-size-of-your-resource-groups) | Large resource groups slow down scheduling calculations | Medium |
 > | [Review item coverage](#review-your-item-coverage-settings) | Multiple coverage lines apply the same settings for all warehouses | Low to medium |
@@ -129,7 +129,7 @@ If you have a large planning job that frequently times out, you might be able to
 
 #### Option 1: Run the same master plan but only for a subset of products
 
-For example, you have a master plan named *PlanA*. It runs nightly as a batch job for 1,000 items that have item numbers ranging from *A0001* through *A1000*. If this job often times out after 60 minutes, you can split it into three jobs, each of which runs for a third of the items. You run *PlanA* for the first third (*A0001* through *A0333*), then for the second third (*A0334* through *A0666*), and then for the last third (*A0667* through *A1000*). In this way, each smaller job has the full 60-minute timeout window. You're not trying to use the same 60 minutes to plan all 1,000 items.
+For example, you have a master plan named *PlanA*. It runs nightly as a batch job for 1,000 items that have item numbers ranging from *A0001* through *A1000*. If Planning Optimization often cancels this job at the 90-minute timeout, you can split it into three jobs, each of which runs for a third of the items. You run *PlanA* for the first third (*A0001* through *A0333*), then for the second third (*A0334* through *A0666*), and then for the last third (*A0667* through *A1000*). Each smaller job then has its own 90-minute timeout; the jobs don't share a single 90-minute window.
 
 To split a large job into several jobs, follow these steps:
 
@@ -257,15 +257,15 @@ Your data export might complete more quickly if you reduce the number of product
 
 If master planning runs but doesn't create any orders, check the following settings:
 
-- Make sure the items you're expecting to generate supply for are set up with a lifecycle state where **Exclude from master planning** is set to *No*.
-- If you're running a filtered plan, make sure that there aren't any typos in your filter values. (Learn more in [Run planning for a subset of items](plan-filters.md#apply-a-plan-filter).)
-- Make sure that there's demand for the items you're expecting master planning to create supply for.
+- Ensure the items you expect to generate supply for are set up with a lifecycle state where **Exclude from master planning** is set to *No*.
+- If you're running a filtered plan, ensure there aren't any typos in your filter values. (Learn more in [Run planning for a subset of items](plan-filters.md#apply-a-plan-filter).)
+- Ensure there's demand for the items you expect master planning to create supply for.
 
 ## Planning of batch jobs fails when Planning Optimization is enabled
 
-When you enable Planning Optimization, the deprecated master planning engine is automatically disabled. Master planning batch jobs that were created for the deprecated master planning engine fail if they're triggered while Planning Optimization is enabled. You might receive an error message such as *This operation triggered master planning that isn't supported when Planning Optimization is enabled*.
+When you enable Planning Optimization, the deprecated master planning engine is automatically disabled. Master planning batch jobs that you created for the deprecated master planning engine fail if you trigger them while Planning Optimization is enabled. You might receive an error message such as *This operation triggered master planning that isn't supported when Planning Optimization is enabled*.
 
-**Fix**: Cancel all master planning batch jobs that were created for the deprecated master planning engine.
+**Fix**: Cancel all master planning batch jobs that you created for the deprecated master planning engine.
 
 ## Planning Optimization results are different from earlier results
 
