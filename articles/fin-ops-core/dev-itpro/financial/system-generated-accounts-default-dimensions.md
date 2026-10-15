@@ -4,7 +4,7 @@ description: Learn how to keep dynamic accounts separate from default financial 
 author: ethanrimes
 ms.author: ethankallett
 ms.topic: best-practice
-ms.date: 09/30/2026
+ms.date: 10/01/2026
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2019-01-16
@@ -15,149 +15,200 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!INCLUDE [banner](../includes/banner.md)]
 
- This article provides guidance when your customizations and integrations create accounts, copy dimensions, or call financial dimension APIs. Keep account identities separate from default financial dimensions in your customizations and integrations. Mixing them can create invalid shared dimension data or cause errors during journal entry, posting, defaulting, integrations, and even read operations.
+This article explains how to keep dynamic accounts separate from default financial dimensions in customizations and integrations. A dynamic account identifies the account for a journal line based on its account type. Mixing a non-ledger dynamic account into a default dimension can cause validation errors that block journal entry, posting, batch, or integration operations. Use this guidance when your customizations and integrations create accounts, copy dimensions, or call financial dimension APIs.
 
 ## Recognize the validation messages
 
-An unsupported operation, or a read of an existing invalid default dimension, can produce this message:
+An unsupported call pattern can produce the following message:
 
 > We detected an attempt to create a default dimension with a system-generated journal account type. We will block these attempts soon. Review any customizations that might cause this error. Reference Dimension ID *\<unique reference ID\>* if you need to contact support.
 
-This message alone doesn't stop the operation. Its **Dimension ID** is a diagnostic reference for Microsoft Support, not a default- or ledger-dimension record ID.
+The message doesn't stop the operation. Its **Dimension ID** is a unique reference ID that Microsoft Support can use to locate diagnostic information, not a default- or ledger-dimension record ID.
 
-If enforcement blocks the operation, you receive:
+If enforcement blocks the operation, you receive the following error:
 
 > Function DimensionAttributeValueSetStorage::validateDimensionAttributeType was called incorrectly.
 
-Other APIs can also report *was called incorrectly*. Apply this guidance when the function is `DimensionAttributeValueSetStorage::validateDimensionAttributeType`.
+Because multiple APIs use *was called incorrectly*, apply this guidance only when the function is `DimensionAttributeValueSetStorage::validateDimensionAttributeType`.
 
 > [!IMPORTANT]
-> A call stack identifies where invalid input was detected, not necessarily where it was created. Both standard application code and customizations can encounter data created earlier. Correct the input and its source rather than suppressing validation.
+> Fix the customization or integration that constructs the dimension. Don't change validation settings, update financial dimension framework tables directly, or delete dimension records to work around the message.
+>
+> Validation runs before the dimension API returns and saves the default dimension; conversion results can also be cached. Removing the dynamic account attribute from the returned value doesn't prevent the message. Add the guard before the call.
 
-### Keep account identities and default dimensions separate
+## Keep account identities and default dimensions separate
 
-For `LedgerJournalACType::Ledger`, an account combination is main-account-backed. A **dynamic account** instead identifies a non-ledger account through a `DynamicAccount` attribute. The validation message calls this a *system-generated journal account type*. Default financial dimensions describe how a transaction is analyzed; the dynamic account identifies the record that the transaction is for.
+A dynamic account identifies the account for a journal line. Its account type determines which record or value backs the account. For `LedgerJournalACType::Ledger`, the dynamic account is a main-account-backed combination. A non-ledger dynamic account contains a system-generated `DynamicAccount` attribute that identifies a customer, vendor, bank account, project, fixed asset, or another backing record. The validation message refers to this case as a *system-generated journal account type*.
 
-The following table gives examples of non-ledger account types; it isn't exhaustive.
+The following table shows common non-ledger dynamic accounts.
 
-| Non-ledger account type | Record identified by the dynamic account |
-| --- | --- |
-| Customer | Customer record |
-| Vendor | Vendor record |
-| Bank | Bank account |
-| Project | Project record |
-| Fixed asset | Fixed asset record |
-| Worker | Worker record |
-| Item | Item record |
-
-Localization or extensions can provide other account types. These examples don't all use the same account-type enumeration or defaulting API.
-
-The following table summarizes selected EDTs; it isn't an exhaustive list of financial-dimension EDTs.
-
-| Extended data type (EDT) | Backing table | Contract |
+| Dynamic account | Account-type value | Backing record or value |
 | --- | --- | --- |
-| `DimensionDefault` | `DimensionAttributeValueSet` | Financial dimension values only; no `MainAccount` or `DynamicAccount` attributes. |
-| `DimensionDynamicAccount`, `DimensionDynamicDefaultAccount` | `DimensionAttributeValueCombination` | Account identity determined by the account type; it can be ledger or non-ledger. |
-| `LedgerDimensionAccount` | `DimensionAttributeValueCombination` | Main-account-backed combination with financial dimension values. |
-| `LedgerDimensionDefaultAccount` | `DimensionAttributeValueCombination` | Main account without financial dimension values. |
+| Customer | `LedgerJournalACType::Cust` | Customer account |
+| Vendor | `LedgerJournalACType::Vend` | Vendor account |
+| Bank | `LedgerJournalACType::Bank` | Bank account |
+| Project | `LedgerJournalACType::Project` | Project |
+| Fixed asset | `LedgerJournalACType::FixedAssets` | Fixed asset and, when required, asset book |
+| Worker or item | A value in another account-type enumeration | Worker employment or item |
+| Localized or custom account | A localized or extension-defined value | The record defined by the applicable account-type mapping |
 
-These EDTs contain 64-bit record IDs. A call can compile even when an argument comes from the wrong table. Trace where each ID was created; its variable name or EDT isn't proof.
+These account identities belong in a ledger dimension, not in a default dimension. A default dimension describes how a transaction is analyzed, whereas a dynamic account identifies the record that the transaction is for.
 
-Classify attributes by `DimensionAttribute.Type`: financial dimensions use `ExistingList` or `CustomList`, not `DynamicAccount` or `MainAccount`. A dynamic account for a customer or vendor is different from a **financial dimension value based on a customer or vendor**. The financial dimension value is valid in `DimensionDefault`; the dynamic account identity isn't.
+The dimension extended data types (EDTs) represent different data contracts.
 
-### Audit customizations and integrations
+| EDT | Backing table | Use |
+| --- | --- | --- |
+| `DimensionDefault` | `DimensionAttributeValueSet` | Financial dimension values only. Don't include a main account or dynamic account attribute. |
+| `DimensionDynamicAccount` and `DimensionDynamicDefaultAccount` | `DimensionAttributeValueCombination` | An account whose account type determines the backing entity. For `LedgerJournalACType::Ledger`, the value is a main-account combination. For a non-ledger account type, it's a dynamic account such as a customer, vendor, or bank account. |
+| `LedgerDimensionAccount` | `DimensionAttributeValueCombination` | A main-account-backed ledger account combination with financial dimension values. |
+| `LedgerDimensionDefaultAccount` | `DimensionAttributeValueCombination` | A main account without financial dimension values. |
 
-The following table is the complete checklist of identified mechanisms for constructing, propagating, or detecting invalid default dimensions. Review every row, including equivalent APIs, wrappers, and extensions.
+These EDTs contain 64-bit record IDs, so X++ can compile a call that violates the data contract.
 
-Review journal and offset-account defaulting, manual copy and edit helpers, posting and voucher creation, imports, OData and Data management mappings, and custom name and value resolvers. Also inspect display and report methods, entity `postLoad` and export code, workflow, and validation hooks: a read-oriented caller can invoke an API that constructs and saves dimensions.
+> [!NOTE]
+> A dynamic account for a customer or vendor differs from a financial dimension value based on a customer or vendor. The financial dimension value is valid in a `DimensionDefault`.
 
-| Code path to review | Problem and correction |
-| --- | --- |
-| `LedgerDimensionFacade::getDefaultDimensionFromLedgerDimension()`, its `LedgerDimensionProvider` wrapper, and `DimensionAttributeValueSetStorage::getDefaultDimensionFromDimensionCombination()` | Conversion excludes **only the main account**, not dynamic accounts. Use it only for a main-account-backed combination. For non-ledger accounts, obtain valid defaults from the document, journal, or backing record instead. |
-| `DimensionAttributeValueSetStorage.addItem()` / `addItemValues()` in custom constructors, mappings, or copy loops | An account attribute can enter storage directly, without conversion. Check the attribute type **before** resolving or adding values. Map account columns to the appropriate account or offset fields and financial dimension columns to default dimensions. Reject invalid mappings explicitly; don't silently drop their values. |
-| `LedgerDimensionDefaultingEngine::getDefaultDimension()` consuming specifier maps | Maps can contain account attributes from `getLedgerDimensionSpecifiers()`, invalid stored membership from `getDefaultDimensionSpecifiers()`, or custom entries. Verify every map's source and attribute types before rebuilding defaults. Exclude-main-account and include-main-account options don't filter dynamic accounts. |
-| `LedgerDimensionDefaultFacade::serviceMergeDefaultDimensions()` and equivalent defaulting or reference-copy paths | Merging or copying an invalid default set can propagate it. Trace **every source**, not just the result. A one-source merge can return the input unchanged, without validating its members. Merge is not a data-repair operation. |
-| `LedgerDimensionDefaultFacade::serviceReplaceAttributeValue()` | Replacement retains the target's other attributes and copies the selected attribute from the source. Replacing a department doesn't remove an unrelated invalid account attribute; selecting an account attribute can introduce one. Verify both the retained target and the selected source attribute. |
-| `DimensionAttributeValueSetStorage::find()` and `DimensionDefaultFacade::areEqual()` | Loading reconstructs stored members through `addItem`; comparison can load and save sets internally. An error can precede the intended edit or cleanup. Investigate the stored input rather than bypassing validation in the reader. |
-| `DimensionAttributeValueSetStorage.save()` in custom helpers | Save can revalidate dynamic account attributes. Trace how storage was populated; a save frame alone doesn't identify the original producer or prove that a write committed. |
+## Don't derive default dimensions from a dynamic account
 
-### X++ (incorrect): converting a dynamic account to default dimensions
+The following pattern is incorrect when the ledger dimension contains a customer, vendor, bank, project, fixed asset, worker, item, or another dynamic account.
 
-In this example, `dynamicAccount` identifies a customer, not a main account. The conversion call is invalid even though both values are record IDs.
+**X++ (incorrect)**
 
 ```xpp
 DimensionDynamicAccount dynamicAccount =
     LedgerDynamicAccountHelper::getDynamicAccountFromAccountNumber(
-        accountNumber, LedgerJournalACType::Cust);
+        accountNumber,
+        LedgerJournalACType::Cust);
 
+ledgerJournalTrans.LedgerDimension = dynamicAccount;
 ledgerJournalTrans.DefaultDimension =
-    LedgerDimensionFacade::getDefaultDimensionFromLedgerDimension(dynamicAccount); // Incorrect: converts a customer account identity to default dimensions.
+    LedgerDimensionFacade::getDefaultDimensionFromLedgerDimension(dynamicAccount); // Incorrect: Not main-account-backed.
 ```
 
-> [!WARNING]
-> Guard **before** conversion or construction. Conversion saves before returning, so converting a dynamic account and then removing its account attribute is too late. Loading can also fail before cleanup runs. Passing a zero value to `addItemValues()` isn't a workaround: attribute validation occurs before removal.
+The call compiles, but it treats a ledger-dimension combination that contains a dynamic account attribute as financial dimension values. `LedgerDimensionFacade::getDefaultDimensionFromLedgerDimension()` requires a main-account-backed combination. Check the account type or hierarchy first.
 
-Results can be cached, and some operations return an input without rebuilding it. The absence of a new message doesn't establish that the data or call pattern is valid.
+The same restriction applies to the lower-level `DimensionAttributeValueSetStorage::getDefaultDimensionFromDimensionCombination()` API.
 
-### Use an account-type-aware default dimension source
+## Use an account-type-aware default dimension source
 
-For `LedgerJournalTrans`, keep each side's fields and company context together:
+For a `LedgerJournalTrans` record, the account-side fields are `AccountType`, `LedgerDimension`, and `DefaultDimension`. The offset-side fields are `OffsetAccountType`, `OffsetLedgerDimension`, and `OffsetDefaultDimension`. Apply the same decision process to both sides, while keeping ledger-dimension and default-dimension values separate. For a ledger account, financial dimensions are already part of `LedgerDimension` or `OffsetLedgerDimension`, and the corresponding default-dimension field should be `0`.
 
-| Side | Account type and identity | Financial defaults |
-| --- | --- | --- |
-| Account | `AccountType`, `LedgerDimension` | `DefaultDimension` |
-| Offset | `OffsetAccountType`, `OffsetLedgerDimension` | `OffsetDefaultDimension` |
+Choose the default-dimension source as follows.
 
-For a **ledger** side, financial dimensions reside in its ledger dimension; the corresponding default-dimension field is `0`. Don't assign a default-set merge result to a ledger side's `DefaultDimension` or `OffsetDefaultDimension`. This rule applies to journal storage and isn't advice to clear dimensions to resolve an error.
+| Condition | Default-dimension source |
+| --- | --- |
+| The account type is `LedgerJournalACType::Ledger`. | Keep the financial dimension values in the main-account-backed ledger dimension, and set the corresponding default-dimension field to `0`. |
+| A default dimension already exists for a non-ledger dynamic account. | Use `DefaultDimension` or `OffsetDefaultDimension` as the highest-precedence source. |
+| The account is a supported non-ledger `LedgerJournalACType` value. | Use `LedgerJournalEngine::getAccountDefaultDimension()` and supply any required context. |
+| The account type is unsupported, extension-defined, uses another enumeration, or is a localized type that the method doesn't support. | Obtain the default dimension from the backing record or the applicable defaulting logic. |
 
-For a **non-ledger** side, preserve valid line and document defaults and use the applicable account-defaulting logic. `LedgerJournalEngine::getAccountDefaultDimension()` resolves supported `LedgerJournalACType` values from the backing record in the supplied company. Supply the asset book, localized standard or book, and transaction date required by that account type. The offset company can differ from the account company.
-
-This method doesn't resolve every account type. For unsupported or custom types, use the appropriate backing-record defaulting API. Don't interpret an empty result as proof that the method handled the account type. Worker defaults require the applicable employment, legal entity, and effective date.
-
-For other account-type enumerations, use `DimensionHierarchyHelper::getHierarchyTypeByAccountType()` with the enumeration ID and, when required, the discriminator that selects customer or vendor. `AccountStructure` denotes a main-account-backed type. Handle unmapped or extension-defined values explicitly. Don't cast them to `LedgerJournalACType` or assume every custom value has a mapping.
-
-### Compose dimensions in the supported direction
-
-Merge **valid default sets**, then supply them to the appropriate account-composition API. Preserve the process's defaulting precedence; `serviceMergeDefaultDimensions()` uses the first supplied value for each attribute.
-
-For example, with valid document/account defaults and a main-account-backed combination:
+The following example keeps the account and default dimension values separate for standard `LedgerJournalACType` values.
 
 ```xpp
-DimensionDefault mergedDefaults =
-    LedgerDimensionDefaultFacade::serviceMergeDefaultDimensions(
-        documentDefaults, accountDefaults);
+if (ledgerJournalTrans.AccountType == LedgerJournalACType::Ledger)
+{
+    ledgerJournalTrans.DefaultDimension = 0;
+}
+else
+{
+    DimensionDefault accountDefaultDimension =
+        LedgerJournalEngine::getAccountDefaultDimension(
+            ledgerJournalTrans.parmAccount(),
+            ledgerJournalTrans.Company,
+            ledgerJournalTrans.AccountType);
 
-LedgerDimensionAccount ledgerAccount =
-    LedgerDimensionFacade::serviceCreateLedgerDimension(
-        mainAccountCombination, mergedDefaults);
+    ledgerJournalTrans.DefaultDimension =
+        LedgerDimensionDefaultFacade::serviceMergeDefaultDimensions(
+            ledgerJournalTrans.DefaultDimension,
+            accountDefaultDimension);
+}
 ```
 
-Check each API's parameter order:
+> [!NOTE]
+> Apply the same decision process to the offset account by using `OffsetAccountType`, `OffsetLedgerDimension`, and `OffsetDefaultDimension`. For a ledger offset account, keep the financial dimensions in `OffsetLedgerDimension` and set `OffsetDefaultDimension` to `0`. For a non-ledger offset account, derive only a valid `DimensionDefault` and merge it into `OffsetDefaultDimension`.
 
-- `LedgerDimensionFacade::serviceCreateLedgerDimension(accountCombination, defaults)` takes the account first.
-- `LedgerDimensionFacade::serviceCreateLedgerDimForDefaultDim(defaults, accountCombination)` takes defaults first.
+For each attribute, `serviceMergeDefaultDimensions()` keeps the first supplied value. Put the highest-precedence source first.
 
-Swapping these IDs queries the wrong table; it isn't an implicit conversion between accounts and defaults. These APIs also differ in precedence, so don't substitute one for another just to avoid an error. For non-ledger accounts, keep the identity in the account flow and follow the journal's account-type-aware defaulting logic.
+Some account types need more context. Fixed assets can require a book ID; localized types can require a standard or book ID and transaction date. Pass the required parameters to `LedgerJournalEngine::getAccountDefaultDimension()`.
 
-### Don't hide or propagate an existing invalid default dimension
+The method handles only its switch cases and returns an empty value for others, including `LedgerJournalACType::Ledger` and `LedgerJournalACType::RCash`. The empty value is expected for a ledger account because its financial dimensions remain in the ledger dimension. For another unsupported type, use the journal line or backing record instead.
 
-Fixing a producer doesn't repair records that already reference its output. Don't disable validation, copy an invalid set into more records, catch the validation exception and return `0`, silently remove financial values, or retry unchanged input. Clearing caches or suppressing warnings isn't data repair.
+Types outside `LedgerJournalACType`, such as a worker in Expense management, aren't resolved. Read the default dimension from the backing record. Worker default dimensions are date-effective and stored per legal entity on the employment record.
 
-Don't assume a helper is read-only because its name starts with *get* or it runs during display or comparison. Helpers can save internally; discarding a result or rolling back the outer operation doesn't guarantee that nothing persisted.
+### Handle custom account-type enumerations
 
-Default-dimension sets are shared. Don't rewrite their hashes, delete their items, or repair their references directly in custom code or SQL. Don't depend on system-generated account columns in default-dimension tables; use account APIs instead. Removing such columns doesn't repair existing default-dimension sets. Contact Microsoft Support for an appropriate repair that preserves valid financial values and legitimate account identities.
+You need this check only when your customization uses an account-type enumeration other than `LedgerJournalACType`.
 
-### Diagnose and correct an occurrence
+```xpp
+DimensionHierarchyType hierarchyType =
+    DimensionHierarchyHelper::getHierarchyTypeByAccountType(
+        enum2int(accountType),
+        enumNum(MyAccountType));
+```
 
-1. Retain the complete message, diagnostic reference ID, timestamp, legal entity, and operation.
-2. Find the nearest conversion, add, map reconstruction, merge, replacement, load, or save in the stack. Trace its actual input IDs and attribute types to their sources. A map-producing method might already have returned and be absent from the stack.
-3. Correct invalid construction or mapping before the API call. For an existing invalid set, identify affected source and consumer records and arrange supported repair separately.
-4. Exercise each supported account type on both account and offset sides, including different companies and required asset/employment context. Cover new and previously affected records; journal entry, posting, batch, import/export, workflow, validation, and read/display paths.
-5. Confirm that account identity, expected financial dimensions, and defaulting precedence are preserved, not merely that the message disappeared. Include first-use and cached paths. A code correction alone isn't proof that existing data was repaired.
+Always pass the enumeration ID in the second parameter; otherwise, the method interprets the value as `LedgerJournalACType`. For a value shared by customers and vendors, also pass the third parameter.
 
-If the source remains unclear, contact Microsoft Support with the diagnostic details. Provide sensitive business data only when requested through an approved support channel.
+Only `DimensionHierarchyType::AccountStructure` is main-account-backed. The method raises an *incorrectly called* error for an account type that it can't map (such as dynamic accounts).
 
-#### See also
+The `getHierarchyTypeByAccountTypeDelegate` delegate is called only for an enumeration that the method doesn't handle. It doesn't cover extension-defined values in a handled enumeration. Some mappings depend on a configuration key, country/region, or feature. Implement a handler for a custom enumeration, and guard extension-defined and unmapped values.
+
+## Compose dimensions in the supported direction
+
+Use the correct EDTs for account and default-dimension record IDs. Merge default dimensions, and then apply the result to the account.
+
+```xpp
+DimensionDefault mergedDefaultDimension =
+    LedgerDimensionDefaultFacade::serviceMergeDefaultDimensions(
+        documentDefaultDimension,
+        accountDefaultDimension);
+
+LedgerDimensionAccount ledgerDimension =
+    LedgerDimensionFacade::serviceCreateLedgerDimension(
+        accountLedgerDimension,
+        mergedDefaultDimension);
+```
+
+Don't swap `DimensionDefault` and ledger-dimension arguments. Because both are record IDs, swapped arguments can compile but return zero, omit dimensions, use an unrelated record, or cause another validation error.
+
+## Audit customizations and integrations
+
+Search custom code for the following APIs and verify the source and destination of every dimension record ID.
+
+| API or pattern | What to verify |
+| --- | --- |
+| `LedgerDimensionFacade::getDefaultDimensionFromLedgerDimension()` | The argument is main-account-backed. For journal lines, guard the call by account type. |
+| `DimensionAttributeValueSetStorage::getDefaultDimensionFromDimensionCombination()` | The combination doesn't contain a `DynamicAccount` attribute. `LedgerDimensionFacade::getDefaultDimensionFromLedgerDimension()` calls this method directly, so switching between the two APIs doesn't change the outcome. Both exclude only the main account. |
+| `DimensionAttributeValueSetStorage::addItem()` and `addItemValues()` | The attribute is a financial dimension and its `DimensionAttribute.Type` isn't `DynamicAccount`. |
+| `LedgerDimensionDefaultingEngine::getLedgerDimensionSpecifiers()` followed by `getDefaultDimension()` | Don't feed ledger specifiers into default-dimension storage unless dynamic account attributes are excluded before the call. Setting the exclude-main-account or include-main-account parameters isn't sufficient, because the main account and dynamic account are separate attributes. |
+| `DimensionAttributeValueSetStorage::find()` and default-dimension merge or replace APIs | Every input is a real `DimensionDefault`. Existing invalid dimension sets can surface the same validation when they're read or copied. |
+| `LedgerDimensionFacade::serviceCreateLedgerDimension()`, `serviceCreateLedgerDimForDefaultDim()`, and `serviceMergeLedgerDimensions()` | Account and default-dimension arguments are in the documented positions and use the correct EDTs. `serviceCreateLedgerDimension()` takes the ledger dimension first and the default dimensions after it, and `serviceCreateLedgerDimForDefaultDim()` takes the default dimension first. Because both are record IDs, swapping them compiles. |
+| Data entity, OData, and Data management mappings | Account display values map to account or ledger-dimension fields. Financial dimension values map to default-dimension fields. |
+| Custom name/value resolvers or direct storage construction | Contracts don't name or add dynamic account attributes to a default dimension. |
+
+Don't rely only on the declared EDT; trace where the record ID was created. A posted ledger account combination is normally main-account-backed even for accounts receivable or payable. A non-ledger journal line can instead hold a dynamic account in `LedgerDimension` or `OffsetLedgerDimension`.
+
+## Diagnose and correct an occurrence
+
+1. Confirm that the function name in the error is `DimensionAttributeValueSetStorage::validateDimensionAttributeType`.
+1. If the nonblocking message includes a **Dimension ID**, retain that unique reference ID.
+
+    > [!NOTE]
+    > Dimension results can be cached, so the message might not appear for every call. Its absence doesn't prove that the call pattern changed. Verify the code path.
+
+1. Find the customization, ISV extension, or integration mapping that creates or copies the default dimension. Search first for the APIs in the preceding table.
+1. Trace the input record ID to its producer. For `LedgerJournalACType`, `AccountType == LedgerJournalACType::Ledger` identifies a main-account-backed ledger dimension. For another enumeration, guard unmapped values, and then call `DimensionHierarchyHelper::getHierarchyTypeByAccountType()` with the enumeration ID.
+1. For a dynamic account, stop converting its ledger dimension to a default dimension. Source valid default dimensions from the journal field, document, or backing account record instead.
+1. Keep the dynamic account in the ledger-dimension flow. Merge only valid default dimension sets, and apply them to the account with a ledger-dimension creation API.
+1. Complete the correction only when all the following conditions are met for each supported account type:
+
+    - No validation message or error occurs.
+    - The account identity is preserved.
+    - The expected default financial dimensions remain.
+    - Journal entry, posting, batch, and integration scenarios complete successfully.
+
+If you can't locate the caller, contact Microsoft Support and provide the complete message, unique reference ID, timestamp, legal entity, and operation that produced the message. Don't include sensitive business data unless Support requests it through an approved channel.
+
+## See also
 
 - [Default financial dimensions](dimension-defaulting.md)
 - [Best practices for financial dimension customizations](financial-dimension-customization-errors.md)
