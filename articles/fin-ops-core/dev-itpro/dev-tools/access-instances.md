@@ -4,7 +4,7 @@ description: Learn how to access development instances, configure local developm
 author: laneswenka
 ms.author: laswenka
 ms.topic: install-set-up-deploy
-ms.date: 03/10/2026
+ms.date: 10/15/2026
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -35,7 +35,7 @@ This article describes how to access development instances, configure local deve
 
 | Term      | Definition                             |
 |-----------|----------------------------------------|
-| End user  | A user who accesses an instance through the web client. The end user must have Microsoft Microsoft Entra credentials to access an instance and must be provisioned or added as a user of that instance. |
+| End user  | A user who accesses an instance through the web client. The end user must have Microsoft Entra credentials to access an instance and must be provisioned or added as a user of that instance. |
 | Developer | A user who develops code through the Microsoft Visual Studio environment. A developer requires Remote Desktop access to development environment (VM). The developer account must be an administrator on the VM. |
 
 ## Deploy cloud development environments
@@ -53,7 +53,7 @@ To deploy a cloud development environment in your Lifecycle Services project:
 
     :::image type="content" source="media/access-instances-3.jpeg" alt-text="Screenshot of the Deploy environment page.":::
 
-:::image type="content" source="media/CloudHostedPicture.jpg" alt-text="Screenshot of cloud-hosted instances.":::
+:::image type="content" source="media/cloudhostedpicture.jpg" alt-text="Screenshot of cloud-hosted instances.":::
 
 ## Cloud environment that is provisioned through Lifecycle Services
 
@@ -92,13 +92,13 @@ After you sign in to the environment through Remote Desktop, if you want to acce
 
 ### Delete cloud-hosted developer environments
 
-When you're done with the developer environment, or if troubleshooting an infrastructure issue is too time consuming, you can delete the environment from Lifecycle Services and create a new one later. To delete a cloud-hosted environment from Lifecycle Services, use the following steps:
+When you're done with the developer environment, or if troubleshooting an infrastructure issue takes too long, delete the environment from Lifecycle Services and create a new one later. To delete a cloud-hosted environment from Lifecycle Services, use the following steps:
 
 1. Go to your Lifecycle Services project navigation menu, and select **Cloud-hosted environments**.
 1. Highlight the environment that you want to remove and select **Deallocate**. This action powers down the machine in your Azure subscription.
-1. After the deallocation is successful, the environment is in a *Deallocated* state. You can now use the **Delete** button to start the deletion process.
+1. After the deallocation succeeds, the environment is in a *Deallocated* state. You can now use the **Delete** button to start the deletion process.
 
-You can't delete a cloud-hosted environment if the virtual network that you created with it's also being used by other cloud-hosted environments. This scenario isn't common, but in some cases customers want all their developer environments to reuse an existing virtual network so that they can share files more easily between them. If you implemented this scenario, you must delete the other environments before you delete the base environment that created the original virtual network, or move the shared virtual network outside of the resource group of the environment you're trying to delete.
+You can't delete a cloud-hosted environment if the virtual network that you created with it is also being used by other cloud-hosted environments. This scenario isn't common, but in some cases customers want all their developer environments to reuse an existing virtual network so that they can share files more easily between them. If you implemented this scenario, you must delete the other environments before you delete the base environment that created the original virtual network, or move the shared virtual network outside of the resource group of the environment you're trying to delete.
 
 If the delete operation fails, check to see if one of the following issues occurred:
 
@@ -115,7 +115,7 @@ If Lifecycle Services can't successfully complete the delete operation, the oper
 
 You can easily identify the environment’s resource group in the Azure subscription, as it has the same name as the environment in Lifecycle Services.
 
-## VM that is running locally
+## VM running locally
 
 You can download a virtual hard disk (VHD) from Lifecycle Services and set it up on a local machine. This system is a preconfigured one-box development environment of finance and operations apps that a developer can access. You can find the VHD in the Shared Asset library of Lifecycle Services under the asset type **Downloadable VHD**.
 
@@ -131,7 +131,7 @@ Follow the steps in this section if you're also configuring for Commerce.
 
 To use the downloadable VHD for POS customizations, complete the following step.
 
-- On the host computer, enable Nested VM support. For more information, see [Run Hyper-V in a Virtual Machine with Nested Virtualization](/virtualization/hyper-v-on-windows/user-guide/nested-virtualization).
+- On the host computer, enable nested VM support. For more information, see [Run Hyper-V in a Virtual Machine with Nested Virtualization](/virtualization/hyper-v-on-windows/user-guide/nested-virtualization).
 
 ### Running the virtual machine locally
 
@@ -148,35 +148,25 @@ Follow these steps to run the VM from Hyper-V Manager.
     > [!TIP]
     > You can resize the VM window by changing the screen resolution. Right-click the desktop on the VM, and then select **Screen resolution**. Select a resolution that works well for your display.
 
-1. Provision the administrator user. For more information, see the next section.
-1. Start the Batch Manager Service. This step is required if you're running batch jobs or workflows.
-
-    1. Open a **Command Prompt** window as an administrator.
-    1. Type **net start DynamicsAxBatch**, and then press Enter.
-
-   You can also start the service from the **Services** window.
-
+1. Provision the administrator user. For more information, see the section in the next step.
 1. [Apply updates](../migration-upgrade/upgrade-latest-platform-update.md#apply-a-platform-update-to-environments-that-are-not-connected-to-lcs) as needed.
 
 #### Commerce configuration
 
-For POS customizations, you must also follow these steps on the guest VM.
+For POS customizations, follow these steps on the guest VM.
 
 1. Download and install [Microsoft Emulator for Windows 10 Mobile Anniversary Update](/windows/uwp/debug-test-perf/test-with-the-emulator).
-1. Start the Hyper-V host service. For more information, see [Hyper-V: The Hyper-V Virtual Machine Management service must be running](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee956894(v=ws.10)). If errors occur during startup, you can also try to uninstall and reinstall the Hyper-V role on the guest VM.
+1. Start the Hyper-V host service. For more information, see [Hyper-V: The Hyper-V Virtual Machine Management service must be running](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee956894(v=ws.10)). If errors occur during startup, try uninstalling and reinstalling the Hyper-V role on the guest VM.
 
 ### Provision the administrator user
 
-For developer access, you must be an administrator on the instance. For environments that Lifecycle Services provisions, deploy with the correct user. For more information, see [Frequently asked questions](access-instances.md#frequently-asked-questions). To provision your own credentials as an administrator on a local VM, run the Admin user provisioning tool. On the local VM, a link is provided on the desktop.
+For developer access, you must be an administrator on the instance. For environments that Lifecycle Services provisions, deploy with the correct user. For more information, see [Frequently asked questions](access-instances.md#frequently-asked-questions). To provision your own credentials as an administrator on a local VM, see [Set up the downloadable VHD for first use](vhd-setup.md).
 
 1. Run the admin user provisioning tool as an administrator (right-click the icon, and then select **Run as administrator**).
 1. Enter your email address, and then select **Submit**.
 
 > [!NOTE]
 > The Admin user provisioning tool isn't supported in environments that Lifecycle Services provisions. Use it only on local VMs.
-
-> [!NOTE]
-> For local VMs that use the virtual hard drive (VHD) that was released for versions 10.0.24 and later, use the instructions in [Set up the downloadable VHD for first use](vhd-setup.md).
 
 ### Commerce configuration
 
@@ -199,12 +189,12 @@ The URL of the Cloud POS app is `https://usnconeboxax1pos.cloud.onebox.dynamics.
 
 ## Location of packages, source code, and other AOS configurations
 
-On a VM, you can find most of the application configuration by opening the web.config file of AOSWebApplication.
+On a VM, you can find most of the application configuration by opening the `web.config` file of AOSWebApplication.
 
 1. Start IIS.
 1. Go to **Sites** &gt; **AOSWebApplication**.
 1. Right-click, and then select **Explore** to open File Explorer.
-1. Open the web.config file in Notepad or another text editor. The following keys are of interest to many developers and administrators:
+1. Open the `web.config` file in Notepad or another text editor. The following keys are of interest to many developers and administrators:
 
     - **Aos.MetadataDirectory** – This key points to the location of the packages folder that contains platform and application binaries, and also source code. (Source code is available only in development environments.) Typical values are: `c:\packages`, `c:\AosServicePackagesLocalDirectory`, and `J:AosServicePackagesLocalDirectory`.
     - **DataAccess.Database** – This key holds the name of the database.
@@ -234,7 +224,7 @@ SELECT SECUREMERCHANTPROPERTIES FROM dbo.RETAILCHANNELPAYMENTCONNECTORLINE -- on
 ```
 
 ```SQL
-SELECT SECUREMERCHANTPROPERTIES FROM dbo.CREDITCARDACCOUNTSETUP -- payment service form 
+SELECT SECUREMERCHANTPROPERTIES FROM dbo.CREDITCARDACCOUNTSETUP -- payment service form
 ```
 
 ```SQL
@@ -244,7 +234,7 @@ SELECT CONNECTIONSTRING FROM dbo.RETAILCONNDATABASEPROFILE -- payment service co
 If you find preloaded values, set the attribute values to empty by using scripts similar to the following examples.
 
 > [!WARNING]
-> The example `UPDATE` scripts provided below are illustrative for newly provisioned environments experiencing the certificate issue described earlier. Only update values for the intended table or rows to avoid disruptive or destructive data updates. You might need more selectors if you're updating specific rows for the tables being updated.
+> The example `UPDATE` scripts provided in this article are illustrative for newly provisioned environments experiencing the certificate issue described earlier. Only update values for the intended table or rows to avoid disruptive or destructive data updates. You might need more selectors if you're updating specific rows for the tables being updated.
 
 ```SQL
 UPDATE dbo.RETAILHARDWAREPROFILE SET SECUREMERCHANTPROPERTIES=";)
@@ -272,7 +262,7 @@ Once you clear these values, use the forms in headquarters to set up your paymen
 To restart the local runtime and redeploy all the packages, follow these steps:
 
 1. Open File Explorer, and go to `C:\CustomerServiceUnit`.
-2. Right-click **AOSDeploy.cmd**, and then select **Run as administrator**.
+1. Right-click **AOSDeploy.cmd**, and then select **Run as administrator**.
 
 This process might take a while. The process completes when the `cmd.exe` window closes. If you want to just restart AOS (without redeploying the runtime), run **iisreset** from an administrator **Command Prompt** window, or restart **AOSWebApplication** from IIS.
 
@@ -280,7 +270,7 @@ This process might take a while. The process completes when the `cmd.exe` window
 
 ### Can I join cloud-hosted environments to my Microsoft Entra domain as it is currently deployed in a workgroup?
 
-These environments are self-contained. Microsoft hasn't tested or supported joining these environments to a Microsoft Entra domain when you deploy them through Azure.  
+These environments are self-contained. Microsoft didn't test or support joining these environments to a Microsoft Entra domain when you deploy them through Azure.
 
 ### Is there a way to hide the local account passwords in Lifecycle Services?
 
@@ -288,7 +278,7 @@ You can hide local account passwords by lowering a user's security role in the p
 
 ### Are cloud-hosted environments supported with Azure Bastion?
 
-Microsoft hasn't tested or supported these environments with Azure Bastion.  
+Microsoft didn't test or support these environments with Azure Bastion.
 
 ### Environment is in a failed state with the error message, "Updated Microsoft Entra ID Tenant is missing reply URL configuration." How do I resolve this issue?
 
@@ -296,7 +286,7 @@ This message indicates that a Tier 1/customer-managed environment is configured 
 
 1. (Recommended) Delete the environment and redeploy it by using the tenant in which you want to use the environment.
 1. Revert the settings to the tenant configuration that you used at the time of deployment.
-1. Follow the instructions in [How can I fix my existing environment when my environment is in a failed state or if I'm getting sign-in errors?](access-instances.md#how-can-i-fix-my-existing-environment-when-my-environment-is-in-a-failed-state-or-i-am-getting-sign-in-errors) to update the reply URL in the target tenant.  
+1. Follow the instructions in [How can I fix my existing environment when my environment is in a failed state or if I'm getting sign-in errors?](access-instances.md#how-can-i-fix-my-existing-environment-when-my-environment-is-in-a-failed-state-or-i-am-getting-sign-in-errors) to update the reply URL in the target tenant.
 
 ### As a partner/ISV, how can I facilitate cloud-hosted deployments for customers that I work with?
 
@@ -322,7 +312,7 @@ If you can't delete and redeploy an existing environment, add its URL to the con
 > [!NOTE]
 > Since you're manually adding these URLs, you also need to manually clean up these URLs when you delete the environment.
 
-1. If you don't already have it on your machine, install the Microsoft. Graph PowerShell module.
+1. If you don't already have it on your machine, install the Microsoft Graph PowerShell module.
 
     ```powershell
     Install-Module Microsoft.Graph
@@ -346,7 +336,7 @@ If you can't delete and redeploy an existing environment, add its URL to the con
 
     # Get Service Principal details
     $SP = Get-MgServicePrincipal -Filter "AppId eq '$Microsoft EntraRealm'"
-    
+
     # Add Reply URLs
     [System.Collections.ArrayList]$ReplyUrls = $SP.ReplyUrls
     $ReplyUrls.Add("$EnvironmentUrl")
@@ -354,7 +344,7 @@ If you can't delete and redeploy an existing environment, add its URL to the con
 
     #Set/Update Reply URL
     Update-MgServicePrincipal -ServicePrincipalId $SP.Id -ReplyUrls $ReplyUrls
-    
+
     # Log out
     Disconnect-MgGraph
     ```
