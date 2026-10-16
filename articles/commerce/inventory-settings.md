@@ -35,7 +35,7 @@ In Commerce, define inventory settings at **Site Settings \> Extensions \> Inven
 - **Enable cross-legal-entity inventory lookup** – This setting lets B2B e-commerce sites display inventory and locations from stores and warehouses in multiple legal entities. The setting enables cross-legal-entity inventory behavior in the buy box, store selector, and warehouse and store locator modules.
 
     > [!IMPORTANT]
-    > This setting is available as of Commerce version 10.0.50. In this release, cross-legal-entity e-commerce scenarios support inventory and location visibility only. Cross-legal-entity order fulfillment will be available in a future release.
+    > This setting is available as of Commerce version 10.0.50. In this release, cross-legal-entity e-commerce scenarios support inventory and location visibility only. Cross-legal-entity order fulfillment will be available in a future release. Cross-legal-entity requires Inventory Visibility to be enabled in CSU. For instructions, see [Enable Inventory Visibility for Commerce](../supply-chain/inventory/inventory-visibility-commerce-enable.md).
 
 - **Inventory level based on** – This setting defines how inventory levels are calculated. The available values are **Total Available**, **Physical Available**, and **Out of stock threshold**. In Commerce, you can define inventory threshold and ranges for each product and category. The inventory APIs return product inventory information for both the **Total Available** property and the **Physical Available** property. You decide whether the **Total Available** or **Physical Available** value should be used to determine the inventory count and the corresponding ranges for in-stock and out-of-stock statuses.
 
