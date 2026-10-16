@@ -1528,6 +1528,8 @@
             href: azure-maps-module.md
           - name: Store selector module
             href: store-selector.md
+          - name: Warehouse and store locator module
+            href: warehouse-store-locator-module.md
         - name: Account management modules
           items:
           - name: Account management pages and modules
