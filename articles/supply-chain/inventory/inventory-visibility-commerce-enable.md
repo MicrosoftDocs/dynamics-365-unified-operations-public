@@ -154,9 +154,9 @@ To set up Supply Chain Management to access the new key vault through the new ap
 
         The *\<KeyVaultName\>* and *\<SecretVersion\>* attributes are optional. However, the *\<SecretName\>* attribute is required, and is the **Name** value that you copied when you created the secret for the key vault (see step 10 in the [Create a key vault to hold the client secret for Inventory Visibility](#key-vault) section). If the secret version isn't defined in the Key Vault secret key, the system retrieves the active secret that has the latest expiration date. In most cases, you can define a Key Vault secret key in the following format:
 
-        *vault://\<SecretName\>*
+        *vault:///\<SecretName\>*
 
-        For example, if the name of your key vault secret is *commerce-iv-01-secret*, enter *vault://commerce-iv-01-secret*.
+        For example, if the name of your key vault secret is *commerce-iv-01-secret*, enter *vault:///commerce-iv-01-secret*.
 
     - **Secret type** – Select *Manual*.
 
