@@ -55,6 +55,18 @@ To configure the attribute for the online channel in Commerce headquarters, foll
 1. Select and open an associated attribute group, and then add the new product attribute to it.
 1. Go to **Retail and Commerce > Retail and Commerce IT > Distribution schedule**, and run the **1150** (**Catalog**) job. Schedule this job as a batch process that runs at the same frequency as the **Populate product attributes with inventory level** job.
 
+## Choose the right out-of-stock display behavior for your channel
+
+The decision to hide out-of-stock products or move them to the bottom of a product listing page depends on how your customers behave and how your catalog is structured.
+
+For retailers that sell products with strong brand or model loyalty, hiding out-of-stock items entirely is often the more effective approach. When a best-selling model goes out of stock, customers who are attached to that specific product tend to wait for it to return rather than switch to an alternative. Keeping it visible on the listing page reinforces that attachment and draws attention away from models that are actually available. Removing it from the list redirects that browsing traffic toward in-stock alternatives. In this way, sales keep moving, and the listing page doesn't become a source of frustration.
+
+Showing out-of-stock products also risks a negative customer experience. Shoppers who select a product only to find that it's unavailable often leave the site without purchasing anything. By contrast, a listing page that shows only available products gives customers a cleaner path to purchase.
+
+A practical approach for this scenario is to hide out-of-stock products by setting them to draft status when stock is depleted, and then reactivating them after inventory is replenished. In this way, the listing page stays focused on what customers can actually buy, and high-demand products return to full visibility as soon as stock is available again.
+
+For products where customers are more flexible about which variant or model they choose, moving out-of-stock items to the bottom of the list might be sufficient, because this approach preserves catalog visibility without disrupting the shopping experience.
+
 > [!NOTE]
 > In Commerce version 10.0.26 and earlier, after you add the inventory availability product attribute to an attribute group, you must also select **Set attribute metadata**, and then turn on the **Show attribute on channel**, **Retrievable**, **Can be refined**, and **Can be queried** options for the new product attribute.
 
