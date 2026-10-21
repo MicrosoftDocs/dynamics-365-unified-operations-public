@@ -4,7 +4,7 @@
 title: What's new or changed in the Human Resources recruiting app
 description: Learn about feature that are either new or changed in the Human Resources app.
 author: twheeloc
-ms.date: 01/12/2026
+ms.date: 10/20/2026
 ms.topic: how-to 
  
 # optional metadata 
@@ -29,8 +29,16 @@ ms.dyn365.ops.version: Version 10.0.27
 >[!Note]
 > Community interest groups have now moved from Yammer to Microsoft Viva Engage. To join a Viva Engage community and take part in the latest discussions, fill out the [Request access to Dynamics 365 Human Resources Viva Engage Community](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRyPMYnfFUN1MsQn3mD_HO19UQ0RJQTRFTjhPTFJWM01QVU5FQkxWRUhUVC4u) form and choose the community you want to join
 
-This article provides information about the Recruiting solution that helps to find and hire the best and most qualified candidate for a job opening. For more information, 
-see [Recruiting overview](hr-recruit-overview.md).
+This article provides information about the Recruiting solution that helps you find and hire the best and most qualified candidate for a job opening. For more information, see [Recruiting overview](hr-recruit-overview.md).
+
+## October 2026
+The October release of the Recruiting solution version 2.2.3575.1 (Career portal: 3.2.3574.1) contains the following feature enhancements and bug fixes.
+
+| Feature | Description |
+|---| ---|
+|External agency |Allows organizations to collaborate with external recruitment agencies to source and submit candidates for open positions. It helps recruiters manage agency partnerships, track candidate submissions, and streamline the hiring process through a centralized platform. For more information, see [Agency management](agency-management.md).|
+|Interview feedback improvements | Accurate feedback linking: Fixed an issue that prevented interview feedback from being linked to the corresponding hiring activity and panel member. Reliable page access: Resolved a related error that occurred when opening the feedback page, enabling users to access and review feedback without interruption.|
+|Bulk resume parsing fix |Candidate profiles can now be created reliably from uploaded resumes while input sanitization remains in place.|
 
 ## January 2026
 The January release of the Recruiting solution version 2.2.3306.1 (Career portal: 3.2.0.0) contains the following feature enhancements and bug fixes. 
