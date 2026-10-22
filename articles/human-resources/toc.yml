@@ -583,7 +583,7 @@ items:
           items:
           - name: Set up interview schedules
             href: hr-interview-schedule.md
-        - name: Agency management (preview)
+        - name: Agency management 
           items:
           - name: Agency management overview
             href: agency-management.md

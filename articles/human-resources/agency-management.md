@@ -4,7 +4,7 @@ description: Agency management enables internal recruiters to share job ads with
 author: twheeloc
 ms.author: twheeloc
 ms.reviewer: twheeloc
-ms.date: 07/26/2026
+ms.date: 10/22/2026
 ms.topic: article
 ---
 
@@ -12,7 +12,7 @@ ms.topic: article
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Agency management is a Dynamics 365 Human Resources feature that lets your recruiting team work with approved third-party agencies through the agency experience in the Career portal. Internal users decide which agencies can work on which job ads. Agency users can view shared job ads, acknowledge or deny work, submit candidates, and track the status of their submissions.
+Agency management is a Dynamics 365 Human Resources feature that your recruiting team can use to work with approved third-party agencies through the agency experience in the Career portal. Internal users decide which agencies can work on which job ads. Agency users can view shared job ads, acknowledge or deny work, submit candidates, and track the status of their submissions.
 
 This article explains how the feature works and how to complete the setup before agency users start using Career Portal.
 
@@ -82,20 +82,20 @@ Agency management ensures each agency works in its own isolated space.
 
 ### Environment requirements
 
-Before going live, confirm that:
+Before going live, confirm that you have:
 
-- The internal recruiting app is deployed and available.
-- The Recruiting add-on package is installed from Power Platform Admin Center (PPAC).
-- The Career portal package is installed from PPAC.
-- The Career portal is deployed and reachable by Agency management users.
-- Agency management is enabled on the **Agency management settings** page in the Recruiting add-on app.
-- Recruiter candidate creation flow is added to the Career portal cloud flows with the Agency recruiter role.
-- The Career portal is synced after adding the cloud flow.
-- At least one standard identity provider is configured for agency-user registration and sign-in on the Career portal, such as Microsoft, Microsoft Entra ID, or another identity provider supported by Power Pages.
-- Local username and password sign-in is disabled for agency users.
-- Outbound email delivery works for invitation, approval, and notification emails.
-- At least one test job ad is available for agency sharing.
-- At least one test agency manager, one test agency recruiter, and one test candidate are available.
+- Deployed and made available the internal recruiting app.
+- Installed the Recruiting add-on package from Power Platform Admin Center (PPAC).
+- Installed the Career portal package from PPAC.
+- Deployed the Career portal and made it reachable by Agency management users.
+- Enabled Agency management on the **Agency management settings** page in the Recruiting add-on app.
+- Added the Recruiter candidate creation flow to the Career portal cloud flows with the Agency recruiter role.
+- Synced the Career portal after adding the cloud flow.
+- Configured at least one standard identity provider for agency-user registration and sign-in on the Career portal, such as Microsoft, Microsoft Entra ID, or another identity provider supported by Power Pages.
+- Disabled local username and password sign-in for agency users.
+- Set up outbound email delivery for invitation, approval, and notification emails.
+- Created at least one test job ad for agency sharing.
+- Created at least one test agency manager, one test agency recruiter, and one test candidate.
 
 ### Install required packages from Power Platform Admin Center (PPAC)
 

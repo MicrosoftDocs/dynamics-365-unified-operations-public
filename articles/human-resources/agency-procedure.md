@@ -4,7 +4,7 @@ description: Set up Agency management in the Recruiting Add-on. Configure agency
 author: twheeloc
 ms.author: twheeloc
 ms.reviewer: twheeloc
-ms.date: 07/26/2026
+ms.date: 10/22/2026
 ms.topic: article
 ---
 
@@ -178,19 +178,19 @@ To offboard an agency, follow these steps:
 
 ### Application statuses
 
-|Status| Meaning |
+|Status|Meaning|
 |-------|-----------|
-|Submitted |The application is sent to the internal recruiting team.|
-|In Progress| The candidate is actively being considered.|
-|Rejected| The candidate isn't selected for the role.|
-|Hired| The candidate is hired.|
-|Withdrawn| The candidate or the agency withdraws the application.|
+|Submitted|The application is sent to the internal recruiting team.|
+|In Progress|The candidate is actively being considered.|
+|Rejected|The candidate isn't selected for the role.|
+|Hired|The candidate is hired.|
+|Withdrawn|The candidate or the agency withdraws the application.|
 
 ### Notifications
 
-|Event| Recipient|
+|Event|Recipient|
 |-------|----------|
-|Agency user invitation is created| Invited agency user|
-|Candidate consent is required| Candidate|
-|Agency withdraws a candidate| Candidate|
-|Candidate withdraws directly| Submitting agency recruiter and agency managers|
+|Agency user invitation is created|Invited agency user|
+|Candidate consent is required|Candidate|
+|Agency withdraws a candidate|Candidate|
+|Candidate withdraws directly|Submitting agency recruiter and agency managers|

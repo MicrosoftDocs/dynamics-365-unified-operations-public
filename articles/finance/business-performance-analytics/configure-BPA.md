@@ -145,6 +145,8 @@ Before you install Business performance analytics, set up the following configur
 
 > [!IMPORTANT]
 > Business performance analytics requires the **SQL row version change tracking (preview)** feature as it depends on the Dynamics 365 Finance and Operations virtual entities solution. If you have customizations, ISV integrations, or environment-specific flights that disable SQL row version change tracking for Finance and Operations virtual entities, Business performance analytics installation might fail. Before you install Business performance analytics, confirm that SQL row version change tracking is enabled and that no customization or ISV-required configuration disables it. If an ISV integration requires SQL row version change tracking to be disabled, contact Microsoft support before you install Business performance analytics. For more information, see [Allow Row version change tracking for tables and data entities](../../fin-ops-core/dev-itpro/data-entities/rowversion-change-track.md).
+>
+> For an example of an integration that might have compatibility issues with Business performance analytics, see [API-based payroll integration with Ceridian Dayforce](../../human-resources/hr-admin-payroll-api-integration-dayforce.md).
 
 #### Required configurations in Power Platform Admin Center
 
