@@ -31,12 +31,19 @@ ms.dyn365.ops.version: Version 10.0.27
 
 This article provides information about the Recruiting solution that helps you find and hire the best and most qualified candidate for a job opening. For more information, see [Recruiting overview](hr-recruit-overview.md).
 
+> [!NOTE]
+> To upgrade the Recruiting add-on, follow these steps:
+
+1. Delete the HCM Recruiting Careers solution.
+1. Select the language for Careers on the add-on app settings page.
+1. Install the Careers app.
+
 ## October 2026
 The October release of the Recruiting solution version 2.2.3575.1 (Career portal: 3.2.3574.1) contains the following feature enhancements and bug fixes.
 
 | Feature | Description |
 |---| ---|
-|External agency |Allows organizations to collaborate with external recruitment agencies to source and submit candidates for open positions. It helps recruiters manage agency partnerships, track candidate submissions, and streamline the hiring process through a centralized platform. For more information, see [Agency management](agency-management.md).|
+|Agency management |Allows organizations to collaborate with external recruitment agencies to source and submit candidates for open positions. It helps recruiters manage agency partnerships, track candidate submissions, and streamline the hiring process through a centralized platform. For more information, see [Agency management](agency-management.md).|
 |Interview feedback improvements | Accurate feedback linking: Fixed an issue that prevented interview feedback from being linked to the corresponding hiring activity and panel member. Reliable page access: Resolved a related error that occurred when opening the feedback page, enabling users to access and review feedback without interruption.|
 |Bulk resume parsing fix |Candidate profiles can now be created reliably from uploaded resumes while input sanitization remains in place.|
 

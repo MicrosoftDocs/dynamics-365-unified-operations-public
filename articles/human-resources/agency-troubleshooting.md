@@ -4,7 +4,7 @@ description: Troubleshoot Agency management in Dynamics 365 Human Resources
 author: twheeloc
 ms.author: twheeloc
 ms.reviewer: twheeloc
-ms.date: 07/26/2026
+ms.date: 10/22/2026
 ms.topic: article
 ---
 
@@ -19,8 +19,8 @@ Agency management in the Career portal is a collaboration model that external re
 This section covers common symptoms that agencies and administrators encounter, along with the checks, resolutions, and validation steps for each symptom. The following table describes each scenario.
 
 | Symptom | Check | Resolution | Validation |
-|----|----|----|----|
-| Agency user doesn't receive invitation email | Check the **Send agency user invitation email** flow and email connection. | Turn on the flow, repair the connection, and resend the invitation.| The user receives a valid invitation email. |
+| ---- | ---- | ---- | ---- |
+| Agency user doesn't receive invitation email | Check the **Send agency user invitation email** flow and email connection. | Turn on the flow, repair the connection, and resend the invitation. | The user receives a valid invitation email. |
 | Agency user can't sign in | Check the configured Career portal identity provider, invitation completion, and agency role assignment. | Correct the identity provider setup or role assignment, then ask the user to sign in again. Local username and password sign-in isn't supported for agency users. | The user can access only their agency workspace. |
 | Shared job ad doesn't appear in the Career portal | Check that the job ad was shared with the correct agency. | Update the job ad sharing selection and save or publish the change. | The job ad appears for the selected agency only. |
 | Candidate submission fails | Check the **Recruiter candidate creation** flow and required candidate fields. | Turn on or repair the flow, then verify required data and resume format. | The submission completes or enters the consent workflow. |
