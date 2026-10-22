@@ -4,7 +4,7 @@ description: Learn how to get started with Electronic invoicing for Chile in Mic
 author: Fhernandez0088
 ms.author: ankviklis
 ms.topic: get-started
-ms.date: 06/24/2025
+ms.date: 10/22/2026
 ms.reviewer: johnmichalak
 ms.custom:
   - bap-template
@@ -15,33 +15,33 @@ ms.custom:
 
 [!INCLUDE [banner](../../includes/banner.md)]
 
-This article provides information to help you get started with Electronic invoicing for Chile. It guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Electronic invoicing setup](../global/gs-e-invoicing-set-up-overview.md). For the last-mile integration with the Chilean Tax Authorities, Microsoft is partnering with Edicom.
+This article helps you get started with Electronic invoicing for Chile. It guides you through the configuration steps that depend on the country or region in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Electronic invoicing setup](../global/gs-e-invoicing-set-up-overview.md). For the last-mile integration with the Chilean Tax Authorities, Microsoft is partnering with Edicom.
 
 After you configure Electronic invoicing, you can generate, digitally sign, and submit the XML files of electronic invoices to the [Edicom](https://edicomgroup.com/electronic-invoicing/chile) authorized certification provider (PAC) according to the [regulatory requirements in Chile](https://www.sii.cl/servicios_online/1039-1182.html).
 
-![Diagram of the electronic invoicing workflow in Chile.](ltm-chl-e-invoice-workflow.jpg)
+:::image type="content" source="ltm-chl-e-invoice-workflow.jpg" alt-text="Screenshot of the diagram of the electronic invoicing workflow in Chile.":::
 
 > [!NOTE]
-> The electronic invoicing approach that this article describes is implemented by using an invoicing service that is applicable only to cloud deployments of Finance or Supply Chain Management.
+> The electronic invoicing approach that this article describes uses an invoicing service that works only with cloud deployments of Finance or Supply Chain Management.
 
 > [!IMPORTANT]
-> The new Electronic invoicing Globalization feature for Chile (outbound flow) requires that you run Finance version 10.0.40. Specifically, you must run build number 10.0.1935.60 or later. The feature can only be imported into the new Globalization Studio. It isn't supported in Regulatory Configuration Service (RCS).
+> The new Electronic invoicing Globalization feature for Chile (outbound flow) requires that you run Finance version 10.0.40. Specifically, you must run build number 10.0.1935.60 or later. You can only import the feature into the new Globalization Studio. Regulatory Configuration Service (RCS) doesn't support it.
 
 ## Prerequisites
 
-Before you begin the procedures in this article, the following prerequisites must be met:
+Before you begin the procedures in this article, complete the following prerequisites:
 
 1. Ensure that the settings for the Chilean legal entity are in place. For more information, see [Set up legal entity and tax information for Chile](ltm-chile-set-up-legal-entity-tax-information.md).
 1. [Configure electronic invoice parameters for Chile](ltm-chile-conf-electronic-invoice.md).
 1. Gain familiarity with and understanding of Electronic invoicing as it's described in [Electronic Invoicing service overview](../global/gs-e-invoicing-service-overview.md).
-1. Do the common part of Electronic Invoicing service configuration as it's described in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
-1. You must enable the following features in Feature management:
+1. Complete the common part of Electronic Invoicing service configuration as it's described in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
+1. Enable the following features in Feature management:
 
     - Electronic invoicing integration
 	- Electronic invoicing integration resubmit document from failed action
     - Execute update actions for submitted documents
 
-1. Make sure that the following Electronic reporting (ER) format configurations are imported. For more information, see:
+1. Import the following Electronic reporting (ER) format configurations. For more information, see:
 [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md),
 [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
@@ -58,7 +58,7 @@ Before you begin the procedures in this article, the following prerequisites mus
     > [!NOTE]
     > These formats are based on the corresponding **LATAM** format configurations that use the **Invoice model LATAM** and **Invoice model mapping LATAM** configurations. All required additional configurations are automatically imported.
 
-## Configure the Electronic invoicing feature
+## Country/region-specific configuration for Electronic invoicing for Chile
 
 The **Chilean electronic invoice (CL) "E-Invoicing for Chile: ISV last-mile connector with Edicom"** feature represents an outbound flow for issuing the following sales documents:
 
@@ -85,93 +85,333 @@ For Chile, there are at least three interactions with Edicom in the pipeline: fi
 
 1. Import the latest version of the **Chilean electronic invoice (CL)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md). The following illustrations show what the feature looks like after you import it from Dataverse.
 
-    ![Screenshot of the imported Globalization feature for Chile on the Electronic invoicing features page, including the information on the Versions tab.](ltm-chl-e-invoice-glob-feature-imported.png)
+    :::image type="content" source="ltm-chl-e-invoice-glob-feature-imported.png" alt-text="Screenshot of the imported Globalization feature for Chile on the Electronic invoicing features page, including the information on the Versions tab.":::
 
-    ![Screenshot that shows the information on the Configurations tab for the Globalization feature for Chile.](ltm-chl-e-invoice-glob-feature-imported2.png)
+If you go to the Configuration tab, as shown in the preceding screenshot, you see a page that displays information similar to the following table:
+
+| Name | Version | Status | Country/region code |
+| --- | --- | --- | --- |
+| Edicom Response Processing LATAM | 13.2.5 | Completed |  |
+| Edicom response error log import | 13.3 | Completed |  |
+| e-Shipping guide (CL) | 296.163.81.50 | Completed | CL |
+| Inventory e-invoice (CL) | 296.163.81.43 | Completed | CL |
+| Inventory Export e-Invoice (CL) | 296.163.81.27 | Completed | CL |
+| Project e-invoice (CL) | 296.142.60.26 | Completed | CL |
+| Project Export e-Invoice (CL) | 296.142.60.23 | Completed | CL |
+| Inventory e-invoice (CL) XML Import | 285.71.33 | Completed | CL |
+
+> [!NOTE]
+> The version numbers might change if the formats are updated. The table is for illustrative purposes only.
 
 1. Create a copy of the imported Globalization feature, and select your configuration provider. For more information, see [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
 1. On the **Versions** tab, confirm that the **Draft** version is selected.
-1. On the **Feature parameters** tab, specify values for the following connection and integration parameters that are required for interoperation with Edicom's API:
+1. On the **Feature parameters** tab, specify values for the following connection and integration parameters that are required for interoperation with Edicom's API. These parameters are general-purpose and are used across the different actions in the setups, so you only need to configure them once in this section.
 
-    - Select **Application**, and then enter the service ID number that you obtained.
-    - Select **Domain**, and then enter the same service ID number.
-    - Select **Get status schema name**, and then enter the schema name.
-    - Select **Group**, and then enter the group code that you obtained.
-    - Select **Signed XML schema name**, and then enter the schema name.
-    - Select **Destination name**, and then enter the service ID number concatenated with the string "_EDIWIN." For example, if the service ID number is 123456, enter **123456_EDIWIN**.
-    - Select **Submit invoice schema name**, and then enter the schema name.
-    - Select **Auth token**, and then select the name of the secret that you created for the token.
-    - Select **Web service URL**, and confirm the web address.
+    > [!TIP]
+    > The following table provides **example values** for each feature parameter, so you can understand the type of data that you should enter for each one. These values are **illustrative only** and were provided by Edicom to Microsoft for testing purposes. When you're onboarded, Edicom provides you with your own unique values to use in your configuration.
 
-    The following illustration shows these feature parameters set to the values that Edicom provided to Microsoft for testing purposes. The values that you enter will differ. Edicom provides these values to you when you're onboarded.
+	| Parameter | Description | Data type | Value |
+    | --- | --- | --- | --- |
+    | EdicomApplication | Application | String | &lt;ID\_PROVIDED\_EDICOM&gt; |
+    | EdicomDomain | Domain | String | &lt;ID\_PROVIDED\_EDICOM&gt; |
+    | EdicomGetStatusSchema | Get status schema name | String | IN\_DOCUMENT\_STATUS\_MICROSOFT\_CL |
+    | EdicomGroup | Group | String | &lt;GROUP\_ID&gt; |
+    | EdicomSignedXMLSchema | Signed XML schema name | String | EDIWIN-SOURCE-FILE\_XML\_CFE\_ADENDA\_&lt;ID\_PROVIDED\_EDICOM&gt; |
+    | EdicomSubmitInvoiceDestination | Destination name | String | &lt;ID\_PROVIDED\_EDICOM&gt;\_EDIWIN |
+    | EdicomSubmitInvoiceSchema | Submit invoice schema name | String | OUTBOUND\_DOCUMENT\_MICROSOFT\_CL |
+    | EdicomToken | Auth token | Secret name | Ediwin Chile Token |
+    | EdicomWebServiceURL | Web service URL | String | https://ipaasgw.edicomgroup.com |
 
-    ![Screenshot that shows the configured Feature parameters tab for the Globalization feature for Chile.](ltm-chl-e-invoice-glob-feature-parameters.png)
-
-1. The copy of the feature is always created as a **Draft** version. Regardless of whether you made changes, you must complete, publish, and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
+    > [!TIP]
+    > When configuring the feature parameters for Edicom integration, follow these steps:
+    >
+    > - Select **Application**, and enter the service ID number you got from Edicom.
+    > - Select **Domain**, and enter the same service ID number.
+    > - Select **Get status schema name**, and enter the provided schema name.
+    > - Select **Group**, and enter the group code you received.
+    > - Select **Signed XML schema name**, and enter the appropriate schema name.
+    > - Select **Destination name**, and enter the service ID number concatenated with "_EDIWIN". For example, if your service ID is 123456, enter **123456_EDIWIN**.
+    > - Select **Submit invoice schema name**, and enter the schema name.
+    > - Select **Auth token**, and choose the name of the secret you created for the token.
+    > - Select **Web service URL**, and verify the web address is correct.
+	
+1. The copy of the feature is always created as a **Draft** version. Regardless of whether you make changes, you must complete, publish, and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ### Outbound flow pipeline
 
-To review the processing pipeline, on the **Setups** tab, go to **Feature setup**, select the derived document type that you want, and then select **Edit**. The outbound flow consists of the following actions:
+The **Chile Electronic Invoice (CL) feature** includes six electronic invoice formats for Chile. Each format requires its own setup and configuration. The formats are:
 
-1. **Transform document** – Generate a format that can be sent to Edicom.
-1. **Integrate with Edicom** – Submit the generated invoice to Edicom.
-1. **Get status from Edicom for an invoice** – Fetch the signed XML from Edicom. This document might not be immediately available, because the PAC needs time to generate it.
+- **Inventory e-invoice (CL)**
+- **Inventory Export e-Invoice (CL)**
+- **e-Shipping guide (CL)**
+- **Inventory e-invoice (CL) XML Import**
+- **Project e-invoice (CL)**
+- **Project Export e-Invoice (CL)**
 
-    > [!NOTE]
-    > At this point in the flow, the concept of *update actions* comes into play. Notice that the **Update action** checkbox is selected for this step. Therefore, this step and all subsequent steps run in a loop until the system determines that a terminal state has been reached.
 
-1. **Get status from Edicom for an invoice** – Fetch the status of the submitted invoice from Edicom.
-1. **Process response** – Process the received response to determine whether a terminal state has been reached.
+The following sections provide guidance on the general configuration steps that apply to all six formats. They also explain specific considerations and requirements for each individual format, so you can ensure that each one is configured correctly according to its unique needs.
 
-    - If the status response indicates a failure, the pipeline is terminated, and the submission is marked as failed.
-    - Even if the status response indicates successful submission to the Chilean Internal Revenue Service (SII), the pipeline can't be completed yet, because customers or buyers in Chile can reject invoices for up to eight days. During this time, the pipeline is kept on hold in a **Pending execute update action** state. If a response is received that indicates customer rejection of the invoice, it's detected during the **Process response** step, and the pipeline is marked as failed.
+## Electronic invoice feature
 
-1. **Terminate pipeline** – Wait the specified number of days, and then terminate the pipeline. In the out-of-box default setup, the pipeline is terminated with a **Completed** status if more than nine days pass since the invoice was submitted. If there are no rejections, the **Terminate pipeline** step marks the pipeline as completed.
+### Setups-View
 
-![Screenshot of the outbound pipeline.](ltm-chl-e-invoice-outbound-pipeline.png)
+After you import the feature, the second screenshot shows five tabs: **Versions**, **Configurations**, **Feature parameters**, **Setups**, and **Tags**. Select the **Setups** tab, and then select **View**. This action opens the **Feature version setup** page:
+
+## Feature version setup
+
+This page allows you to review and configure the details of the feature setup for Chile. On the left side of this page, you see four sections: **Processing pipeline**, **Applicability rules**, **Variables**, and **Parameters**.
+
+### Processing pipeline
+
+The **Setup Actions and Parameters** section contains two distinct grids:
+
+#### Top right – Processing pipeline
+
+The **Processing pipeline** grid is similar to the following table:
+
+| Action | Action name | Description | Enable retry | Retry action | Export result | Update action |
+| --- | --- | --- | --- | --- | --- | --- |
+| Transform document | Generate invoice XML file |  |  |  |  |  |
+| Integrate with Edicom | Submit invoice |  |  |  |  |  |
+| Get status from Edicom for an invoice | Get signed XML from Edicom |  |  |  |  | **Checked** |
+| Get status from Edicom for an invoice | Get invoice status from Edicom |  |  |  |  |  |
+| Process response | Process invoice status response |  |  |  |  |  |
 
 > [!NOTE]
-> There is a similar setup for each format that is included in the **Chilean electronic invoice (CL)** feature. For Chile, there are six setups: five for sales documents (outbound flow) and one for import vendor invoices (inbound flow).
-> 
-> - Sales invoice derived
-> - Project invoices derived
-> - Export sales invoice derived
-> - Export project invoices derived
-> - Sales packing slips derived
-> - Import vendor invoice
->
-> ![Screenshot that shows the six setups for Chile.](ltm-chl-e-invoice-setups.png)
+> The **Get status from Edicom for an invoice** action is crucial in the flow, as it's marked with the **Update action** checkbox. This designation means that this specific step—and all steps following it—repeatedly execute in a loop. The system continues this process until the invoice reaches a final, terminal status, ensuring that the latest status from Edicom is always retrieved and processed.
 
-### Applicability rules
+#### Bottom right – Parameters
+The lower grid shows the parameters associated with the selected processing action. These parameters allow for fine-tuning of the selected step’s behavior. Each entry includes a parameter name, description, data type, and value, enabling you to configure processing logic according to your business requirements. 
 
-Applicability rules must be correctly configured to provide context, so that the exact Electronic invoicing Globalization feature that must run in Electronic Invoicing service can be found. Applicability rules are provided out of the box by checking the legal entity in the International Organization for Standardization (ISO) country/region code. This particular feature setup supports all three types of invoices: customer invoices, debit notes, and credit notes.
+#### Transform document parameters
 
-![Screenshot of the setup on the Applicability rules tab of the Feature version setup page.](ltm-chl-e-invoice-applicability-rules.png)
+| Name                   | Description                                                        | Value                          |
+|------------------------|--------------------------------------------------------------------|--------------------------------|
+| Input file             | Source file that provides the action with the data to execute.        | Variable: BusinessDocumentDataModel |
+| Direction              | Direction describes which format is used: import or export     | export                         |
+| Configuration          | Configuration describes the format that's executed               | Inventory e-Invoice: Inventory e-Invoice |
+| Configuration Integration point | Source file that provides data to the reporting runtime          | InvoiceCustomer                |
+| Custom file name       | Custom file name from the client                                   |                                |
+
+#### Linking the correct format in Transform document parameters
+
+When configuring the **Transform document** action in the processing pipeline, ensure the following:
+
+- **Configuration**: Set this value to the exact name of the feature format you're configuring.
+    - For example:
+        - Inventory e-invoice (CL) → Configuration: Inventory e-invoice (CL)
+        - Inventory Export e-Invoice (CL) → Configuration: Inventory Export e-Invoice (CL)
+        - e-Shipping guide (CL) → Configuration: e-Shipping guide (CL)
+        - Project e-invoice (CL) → Configuration: Project e-invoice (CL)
+        - Project Export e-Invoice (CL) → Configuration: Project Export e-Invoice (CL)
+
+- **Configuration Integration Point**:
+    - Configuration Integration Point:
+        - `InvoiceCustomer` — Inventory e-invoice (CL), Inventory Export e-Invoice (CL), e-Shipping guide (CL)
+        - `InvoiceProject` — Project e-invoice (CL), Project Export e-Invoice (CL)
+
+> [!TIP]
+> If the feature name contains "Project", use `InvoiceProject`. If it contains "Inventory," use `InvoiceCustomer`. Incorrect settings result in empty XML or missing required data.
+
+#### Integrate with Edicom parameters
+
+| Name             | Description                                  | Value                                               |
+|------------------|----------------------------------------------|-----------------------------------------------------|
+| Web service URL  | URL address to send request                  | FeatureParameter: EdicomWebServiceURL               |
+| Http request body| Http request body (can be empty)             | Generate invoice XML file: Output file              |
+| User name        | Key Vault secret name to store user name      |                                                     |
+| Password         | Key Vault secret name to store user password  |                                                     |
+| Client ID        | Client ID secret name in the KeyVault        |                                                     |
+| Client Secret    | Client Secret secret name in the KeyVault    |                                                     |
+| Auth token       | Auth token secret name in the KeyVault       | EdiwinChileToken                                |
+| Domain           | Domain                                       | FeatureParameter: EdicomDomain                      |
+| Application      | Application                                  | FeatureParameter: EdicomApplication                 |
+| Destination      | Destination                                  | FeatureParameter: EdicomSubmitInvoiceDestination    |
+| Schema           | Schema                                       | FeatureParameter: EdicomSubmitInvoiceSchema         |
+| Duplicates       | Duplicates                                   | 0                                                   |
+| Group            | Group                                        | FeatureParameter: EdicomGroup                       |
+| Custom file name | Custom file name from the client             | Generate invoice XML file: File name                |
+
+#### Get signed XML from Edicom parameters
+
+| Name            | Description                                    | Value                                    |
+|-----------------|------------------------------------------------|------------------------------------------|
+| Web service URL | URL address to send request                    | FeatureParameter: EdicomWebServiceURL     |
+| User name       | KeyVault secret name to store user name        |                                          |
+| Password        | KeyVault secret name to store user password    |                                          |
+| Client ID       | Client ID secret name in the KeyVault          |                                          |
+| Client Secret   | Client Secret secret name in the KeyVault      |                                          |
+| Auth token      | Auth token secret name in the KeyVault         | EdiwinChileToken                       |
+| Domain          | Domain                                         | FeatureParameter: EdicomDomain           |
+| Application     | Application                                    | FeatureParameter: EdicomApplication      |
+| Schema          | Schema                                         | FeatureParameter: EdicomSignedXMLSchema  |
+| Group           | Group                                          | FeatureParameter: EdicomGroup            |
+| ERP UUID        | Reference ID of the document submitted to Edicom | Submit invoice: ExternalID              |
+
+
+#### Get invoice status from Edicom parameters
+
+| Name           | Description                                         | Value                                 |
+|----------------|-----------------------------------------------------|---------------------------------------|
+| Web service URL| URL address to send request                         | FeatureParameter: EdicomWebServiceURL |
+| User name      | KeyVault secret name to store user name             |                                       |
+| Password       | KeyVault secret name to store user password         |                                       |
+| Client ID      | Client ID secret name in the KeyVault               |                                       |
+| Client Secret  | Client Secret secret name in the KeyVault           |                                       |
+| Auth token     | Auth token secret name in the KeyVault              | EdiwinChileToken                   |
+| Domain         | Domain                                              | FeatureParameter: EdicomDomain        |
+| Application    | Application                                         | FeatureParameter: EdicomApplication   |
+| Schema         | Schema                                              | FeatureParameter: EdicomGetStatusSchema|
+| Group          | Group                                               | FeatureParameter: EdicomGroup         |
+| ERP UUID       | Reference ID of the document submitted to Edicom    | Submit invoice: ExternalID            |
+
+#### Process response parameters
+
+| Name                        | Description                                 | Value                                                                 |
+|-----------------------------|---------------------------------------------|-----------------------------------------------------------------------|
+| Input file                  | Response to analyze                         | Get invoice status from Edicom: Output file                           |
+| Reporting configuration list| List of configurations used for response parsing | Edicom Response Processing LATAM: Edicom Response Processing LATAM    |
+| Custom file name            | Custom file name from the client            |                                                                       |
+| Reporting configuration list| List of configurations used for response parsing | Edicom response error log import: Edicom response error log import    |
+
+
+> [!NOTE]  
+> - If the status response indicates a failure, the pipeline terminates, and the submission is marked as failed.  
+> - If the status response indicates successful submission to the Chile Tax Authorities, the pipeline completes automatically.
+
+### Applicability rules and feature setup scope
+
+You must correctly configure applicability rules to provide context, so that the Electronic Invoicing service can find the exact Electronic Invoicing Globalization feature to run. The system provides these applicability rules by default by checking the legal entity’s International Organization for Standardization (ISO) country/region code.
+
+#### Applicability rules for Chile electronic invoice formats
+
+The following table lists the applicability rules for each electronic invoice format for Chile. Replace `<Legal Entity ID>` with the actual ID of your legal entity.
+
+### Sales invoice
+
+| And/or | And/or | Field | Operator type | Value | Data type |
+| --- | --- | --- | --- | --- | --- |
+| And |  | CountryISOCode | Equals | CL | string |
+|  |  | LegalEntityId | Equals | CLMF | string |
+|  | Or | DocumentType | Equals | Customer invoice | string |
+|  |  | DocumentType | Equals | Customer credit note | string |
+|  |  | DocumentType | Equals | Customer debit note | string |
+
+### Export sales invoice
+
+| And/or | And/or | Field | Operator type | Value | Data type |
+| --- | --- | --- | --- | --- | --- |
+| And |  | CountryISOCode | Equals | CL | string |
+|  |  | LegalEntityId | Equals | CLMF | string |
+|  | Or | DocumentType | Equals | Export customer invoice | string |
+|  |  | DocumentType | Equals | Export customer credit note | string |
+|  |  | DocumentType | Equals | Export customer debit note | string |
+
+### Project invoices
+
+| And/or | And/or | Field | Operator type | Value | Data type |
+| --- | --- | --- | --- | --- | --- |
+| And |  | CountryISOCode | Equals | CL | string |
+|  |  | LegalEntityId | Equals | CLMF | string |
+|  | Or | DocumentType | Equals | Project invoice | string |
+|  |  | DocumentType | Equals | Project credit note | string |
+|  |  | DocumentType | Equals | Project debit note | string |
+
+### Export project invoices
+
+| And/or | And/or | Field | Operator type | Value | Data type |
+| --- | --- | --- | --- | --- | --- |
+| And |  | CountryISOCode | Equals | CL | string |
+|  |  | LegalEntityId | Equals | CLMF | string |
+|  | Or | DocumentType | Equals | Export project invoice | string |
+|  |  | DocumentType | Equals | Export project credit note | string |
+|  |  | DocumentType | Equals | Export project debit note | string |
+
+### Sales packing slips
+
+| And/or | And/or | Field | Operator type | Value | Data type |
+| --- | --- | --- | --- | --- | --- |
+| And |  | CountryISOCode | Equals | CL | string |
+|  |  | LegalEntityId | Equals | CLMF | string |
+|  |  | DocumentType | Equals | Customer packing slip | string |
 
 ### Variables
 
-The following variables are used in the outbound data flow actions of the Chilean feature. (These variables are provided out of the box.)
+The outbound data flow actions for the Chile feature use the following variables. The system provides these variables.
 
-- **BusinessDocumentDataModel** – The Business Document Data model variable that is received from Finance or Supply Chain Management and transformed into the format that is required for submission.
-- **SignedXML** – The signed XML variable that is sent back to Finance or Supply Chain Management. This variable contains the base64-encoded response body from the **Get Signed XML from Edicom** step. It's used in the response types to save the signed XML that is obtained from Edicom as an attachment to the invoice journal. It's also used to generate printable reports through QR codes.
+- **BusinessDocumentDataModel** – The Business Document Data model variable that Finance or Supply Chain Management sends. The system transforms this variable into the format required for submission.
+- **SignedXML** – The signed XML variable that the system sends back to Finance or Supply Chain Management. This variable contains the base64-encoded response body from the **Get Signed XML from Edicom** step. The response types use this variable to save the signed XML that the system gets from Edicom as an attachment to the invoice journal. The system also uses this variable to generate printable reports through QR codes.
 
-![Screenshot of the setup on the Variables tab of the Feature version setup page.](ltm-chl-e-invoice-variables.png)
+| Name                      | Description                                       | Type        | Data type | Value                                           |
+|---------------------------|---------------------------------------------------|-------------|-----------|-------------------------------------------------|
+| BusinessDocumentDataModel | Contains the electronic document from the client  | From client | file      |                                                 |
+| SignedXML                 | Signed XML document in base64-encoded format      | To client   | file      | Get signed XML from Edicom.Base64ResponseBody   |
 
-After you import the **Electronic invoicing for Chile** feature that includes the out-of-box default feature setup, follow the steps in the next section to configure electronic documents.
+After you import the **Electronic invoicing for Chile** feature that includes the default feature setup, follow the steps in the next section to configure electronic documents.
+
+### Setups - Application Setup
+
+To configure the mapping between Dynamics 365 Finance source tables and electronic document formats, go to the **Setups** tab within the **Electronic invoice feature** section, and then select **Application Setup**. This step lets you define how data from Finance is linked to the correct electronic invoice formats for Chile.
+
+> [!NOTE]
+> Although you don't set this configuration at the general feature level, it acts globally for the selected feature setup. You don't need to repeat these steps for each individual format or feature - one configuration is sufficient for all supported document types within the feature.
+
+The following grid defines the link between the source table in Dynamics 365 Finance, the document context model, and the mapping configuration used for electronic invoicing:
+
+| Table name               | Context model / Context                  | Electronic document mapping      | Mapping name         | Description                                                                                  |
+|--------------------------|------------------------------------------|----------------------------------|----------------------|----------------------------------------------------------------------------------------------|
+| Customer invoice journal | Customer invoice context model / Customer invoice context | Invoice Model mapping LATAM      | Customer E-Invoice   | Maps customer invoices to the LATAM invoice model for electronic submission |
+| Project invoice          | Customer invoice context model / Project invoice context  | Invoice Model mapping LATAM      | Project E-Invoice    | Maps project invoices to the LATAM invoice model for electronic submission |
+| Vendor invoice journal   | Customer invoice context model / Self invoice context     | Invoice Model mapping LATAM      | Vendor E-Invoice     | Maps vendor invoices to the LATAM invoice model for electronic submission |
+| Customer transactions    | Customer invoice context model / Payment invoice          | Invoice Model mapping LATAM      | Customer Payments    | Maps customer payments to the LATAM invoice model for electronic submission |
+
+> [!TIP]
+> Ensure that the Context and Mapping name match the document type. Incorrect mappings cause errors in XML generation or submission to DGI.
 
 ## Configure electronic document parameters
 
-1. Make sure that the country/region-specific ER configurations for the document context and electronic document model mapping that are required for Chile are imported. For more information, see [Set up Electronic document parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
+To configure electronic document parameters, follow these steps:
+
+1. Import the country/region-specific ER configurations for the document context and electronic document model mapping that are required for Costa Rica. For more information, see [Set up Electronic document parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-1. In the **Electronic document** section, add records for the **Customer Invoice journal**, **Customer packing slip journal**, and **Project invoice** table names.
+1. In the **Electronic document** section, add records for the **Customer Invoice journal** and **Project invoice** table names.
 1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
 
-    ![Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.](ltm-chl-e-invoice-documents.png)
+The Electronic Document Parameters page in Dynamics 365 Finance. On the left-hand navigation pane, you can see the following options:
 
+- Electronic Document
+
+- Features
+
+- Electronic Invoicing
+
+- Integration Channels
+
+For the Electronic Document option on the right-hand side, the section labeled Electronic Reporting is displayed.
+
+Within Electronic Reporting, a grid is presented which lists the electronic document configurations. This grid includes important associations between:
+
+- The source table name
+
+- The document context model and context
+
+- The electronic document model mapping
+
+- The final mapping name used for generating the electronic invoice.
+
+This configuration is essential for determining how Dynamics 365 Finance maps internal data models to external electronic formats for submission to tax authorities or service providers.
+
+Configure the grid as follows:
+
+| Table name               | Microsoft-owned | Document context model         | Document context         | Electronic document model mapping | Mapping name        |
+|--------------------------|-----------------|--------------------------------|--------------------------|-----------------------------------|---------------------|
+| Customer invoice journal | No              | Customer invoice context model | Customer invoice context | Invoice Model mapping LATAM       | Customer E-Invoice  |
+| Project invoice          | No              | Customer invoice context model | Project invoice context  | Invoice Model mapping LATAM       | Project E-Invoice   |
+   
 1. Save your changes, and close the page.
 1. For each table name, follow these steps:
 
-    1. Select **Response types**, select **New** to create a response type that you will get from the back end, and enter the following values:
+    1. Select **Response types**, select **New** to create a response type that you get from the back end, and enter the following values:
 
         - In the **Response type** field, enter **SignedXML** (the default value). (See the [Variables](#variables) section of this article.)
         - In the **Description** field, enter any meaningful name. Alternatively, leave the field blank.
@@ -179,36 +419,39 @@ After you import the **Electronic invoicing for Chile** feature that includes th
         - In the **Model mapping** field, select **Edicom source file response format**.
 
     1. Repeat the preceding step, but set the **Submission status** field to **Pending update actions execution**. In this way, you can run a subset of the actions in the processing pipeline in a loop to continuously pull updated statuses and other information for the submitted documents from the tax authority.
+    In the standard view, you should see a table similar to the following:
 
-    ![Screenshot of the setup of the response type for the Customer Invoice journal table name on the Document updates for response types page.](ltm-chl-e-invoice-response-type.png)
+    | Response type | Description                        | Submission status                     | Data entity name | Model mapping                             |
+    |---------------|------------------------------------|---------------------------------------|------------------|--------------------------------------------|
+    | SignedXML     | Signed XML obtained from EDICOM    | Pending                               |                  | Edicom source file response import format  |
+    | SignedXML     | Signed XML obtained from EDICOM    | Pending update actions execution      |                  | Edicom source file response import format  |
 
     > [!NOTE]
-    > The response includes the signed XML that is obtained from Edicom. This signed XML is stored in the system as an attachment to the corresponding invoice journal. It will eventually be used to generate printable invoices through QR codes.
+    > The response includes the signed XML that you get from Edicom. The system stores this signed XML as an attachment to the corresponding invoice journal. You can use it later to generate printable invoices through QR codes.
 
 ## Issue electronic invoices
 
-After you complete all the required configuration steps, you can generate and submit electronic invoices for posted invoices by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. For more information about how to generate electronic invoices, see [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
+After you complete all the required configuration steps, you can generate and submit electronic invoices for posted invoices. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. For more information about how to generate electronic invoices, see [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
 
-To inquire about the results of a submission, go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**, and select the required document type. For more information, see [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
+To check the results of a submission, go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**, and select the required document type. For more information, see [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
 
-For Chile, after you submit the invoice, the submission status is set to **Pending update actions execution**. The response body is probably empty for the signed XML and the call to get the invoice status. An empty response body indicates that the XML wasn't available immediately after submission. To address the pending status, a function that is named **Execute update actions** is used. This function resumes the pipeline from the action that is marked as an update action, and then runs all subsequent actions in the pipeline in a loop. The status should change to **Executing** again. Then, after a few seconds, it reverts to **Pending update actions execution**.
+For Chile, after you submit the invoice, the submission status is set to **Pending update actions execution**. The response body is probably empty for the signed XML and the call to get the invoice status. An empty response body indicates that the XML isn't available immediately after submission. To address the pending status, use a function named **Execute update actions**. This function resumes the pipeline from the action that is marked as an update action. It then runs all subsequent actions in the pipeline in a loop. The status should change to **Executing** again. Then, after a few seconds, it reverts to **Pending update actions execution**.
 
-![Screenshot that shows the Execute update actions function being selected on the Functions dropdown menu.](ltm-chl-e-invoice-execute-update-action.png)
+:::image type="content" source="ltm-chl-e-invoice-execute-update-action.png" alt-text="Screenshot of the Execute update actions function being selected from the Functions dropdown menu.":::
 
 > [!NOTE]
 > By setting a recurrence schedule, you can configure the **Execute update actions** function to run in batch mode on a periodic basis.
 
-When you review the submission details, you should notice that the steps run again. This time, the signed XML is received.
+When you review the submission details, you should notice that the steps run again. This time, you receive the signed XML.
 
-![Screenshot that shows the signed XML received.](ltm-chl-e-invoice-signed-XML.png)
+:::image type="content" source="ltm-chl-e-invoice-signed-XML.png" alt-text="Screenshot of the submission details showing the signed XML received.":::
 
 As a result of the completed outbound flow, the signed XML is attached to the invoice journal as **EdicomSourceFile**.
 
-![Screenshot of the attached source file.](ltm-chl-e-invoice-attached-source-file.png)
+:::image type="content" source="ltm-invoice-attached-source-file.png" alt-text="Screenshot of the EdicomSourceFile attached to the invoice journal.":::
 
 If no business rejection or acceptance is received from the buyer after nine days, the **Terminate pipeline** action completes the pipeline.
 
-![Screenshot of the Terminate pipeline action.](ltm-chl-e-invoice-outbound-pipeline-terminated.png)
 
 ## More resources
 
