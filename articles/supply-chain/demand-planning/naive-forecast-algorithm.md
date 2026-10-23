@@ -1,5 +1,5 @@
 ---
-title: Naive forecasting (preview)
+title: Naive forecasting
 description: Learn about naive forecasting, which is a method to produce forecasts based on low data.
 author: AndersEvenGirke
 ms.author: aevengir
@@ -10,15 +10,11 @@ ms.reviewer: kamaybac
 ms.search.form:
 ---
 
-# Naive forecasting (preview)
+# Naive forecasting
 
 [!INCLUDE [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
 
 Forecasting models are useful for creating accurate forecasts when they have access to large amounts of data. However, in many cases, such data isn't available, leading to inaccurate results like overstocking or understocking. Naive forecasting is a method for handling small datasets that ensures forecasts are predictable and tied to historical data.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## The idea behind naive forecasting
 
@@ -38,7 +34,7 @@ When confronted with unpredictable outcomes, demand planning can use naive forec
 
 Naive forecasting applies when both of the following conditions are met:
 
-1. You must use the *Best fit model - version 2 (preview)* (or newer) forecasting algorithm. Naive forecasting isn't available for other forecast algorithms or as a separate algorithm.
+1. You must use the *Best fit model - version 2* (or newer) forecasting algorithm. Naive forecasting isn't available for other forecast algorithms or as a separate algorithm.
 1. Your dataset size is below the defined threshold, with no seasonality automatically detected. The following rules apply:
     - If auto seasonality detection is on but no seasonality pattern is detected, Demand planning uses a threshold of 14 days, 12 weeks, or 12 months (depending on the size of the time buckets in your input time series). If the number of data points is less than double the threshold, it's considered low data, and naive forecasting applies.
     - If auto seasonality detection is on and a seasonality pattern is detected, Demand planning applies a regular forecasting model.

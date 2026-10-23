@@ -1,5 +1,5 @@
 ---
-title: Forecast with signals (preview)
+title: Forecast with signals
 description: Learn how to work with forecasts that combine multiple inputs.
 author: AndersEvenGirke
 ms.author: aevengir
@@ -10,17 +10,13 @@ ms.reviewer: kamaybac
 ms.search.form:
 ---
 
-# Forecast with signals (preview)
+# Forecast with signals
 
 [!INCLUDE [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
 
 One way to improve the accuracy of a forecast is to include input signal data beyond just historical sales. You can add signals in your forecast models by including a *Signal* step. This type of step lets you include any signal as input data. You can then use the new *Forecast with signals* step to combine the signal input and main input to create the forecast.
 
 This article explains how to set up a forecast model that includes both a primary input (such as historical sales) and up to five signal inputs (such as inflation or weather data).
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Set up a forecast model that includes both input and signals
 

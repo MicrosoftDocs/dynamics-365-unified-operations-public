@@ -56,8 +56,8 @@ This version of Demand planning includes the following fixes and improvements:
 
 This version of Demand planning enhances basic forecast calculations by adding two new features:
 
-- The new *Best fit model - version 3 (preview)* forecast algorithm now includes the *Croston's method* forecasting model. It's designed specifically for intermittent demand, which is demand data with many zero-demand periods and occasional non-zero demands. Learn more in [Croston's method forecasting (preview)](croston-method.md).
-- Forecasting with signals by using the *XGBoost* forecast model now supports up to five signals. Learn more in [Forecast with signals (preview)](forecasts-with-signals.md).
+- The new *Best fit model - version 3* forecast algorithm now includes the *Croston's method* forecasting model. It's designed specifically for intermittent demand, which is demand data with many zero-demand periods and occasional non-zero demands. Learn more in [Croston's method forecasting](croston-method.md).
+- Forecasting with signals by using the *XGBoost* forecast model now supports up to five signals. Learn more in [Forecast with signals](forecasts-with-signals.md).
 
 ### New fixes and improvements in version 1.1
 
@@ -73,7 +73,7 @@ This version of Demand planning includes the following fixes and improvements:
 
 This version of Demand planning enhances basic forecast calculations by adding two new features:
 
-- The new *Best fit model - version 2 (preview)* forecast algorithm now applies naive forecasting when an input time series contains a low number of data points. This approach helps improve statistics forecasting results when input data is limited, such as for newly added products. Learn more at [Naive forecasting](naive-forecast-algorithm.md).
+- The new *Best fit model - version 2* forecast algorithm now applies naive forecasting when an input time series contains a low number of data points. This approach helps improve statistics forecasting results when input data is limited, such as for newly added products. Learn more at [Naive forecasting](naive-forecast-algorithm.md).
 - Time freeze can now preserve all manual forecast adjustments. This option ensures that all manually adjusted cell values remain at the adjusted value even after you recalculate an existing forecast. No freeze rules are required. Learn more at [Limit automatic time series updates with time freezes](time-freeze.md).
 
 ### New fixes and improvements in version 1.0.0.3424
@@ -143,7 +143,7 @@ This version of Demand planning includes the following fixes and improvements:
 
 This version of Demand planning adds several new features, as described in the following subsections.
 
-#### Autodetection of seasonality patterns is now available for all forecast algorithms (preview)
+#### Autodetection of seasonality patterns is now available for all forecast algorithms
 
 Automatic detection of seasonality patterns was introduced in Demand planning version 1.0.01700, but it was previously available only for the ARIMA [forecast algorithm](forecast-algorithm-types.md). In this version, it's now available for all forecast algorithms.
 
@@ -184,11 +184,11 @@ You can now filter the input used in calculation models. Create filters based on
 
 Copilot cursor prompts in Demand planning let you explore specific data points or data ranges in a forecast or time series. Each prompt presents a set of predefined questions that you can ask Copilot, which then returns insights into notable shifts, trends, anomalies, or deviations across multiple dimensions. Copilot replies using natural-language summaries and visuals, which make it easy for you to digest the information and use it to make informed decisions. Learn more in [Analyze demand plans with Copilot](demand-planning-copilot.md).
 
-#### Forecast with signals (preview)
+#### Forecast with signals
 
 One way to improve the accuracy of a forecast is to include input signal data beyond just historical sales. This version of Demand planning adds a new *Signal* step, which lets planners include any signal, such as inflation or weather data, as input to their forecast models. The current release supports up to one signal, though support for more signals might be added in a future release. The new *Forecast with signals* step lets you combine the signal input and main input to create the forecast. In the current version, *Forecast with signals* always uses the XGBoost demand forecasting algorithm, but support for other algorithms might be added in a future release. Learn more in [Forecast with signals](forecasts-with-signals.md).
 
-#### Autodetect seasonality patterns (preview)
+#### Autodetect seasonality patterns
 
 Seasonality patterns typically vary for different products and different locations, so using forecast models that try to apply the same pattern everywhere can result in inaccurate forecasts. This version of Demand planning adds an algorithm that automatically detects seasonality patterns for each combination of location and product and applies the result to its forecast calculations to help improve forecast accuracy. Automatic seasonality detection is only available when you use the ARIMA [forecast algorithm](forecast-algorithm-types.md). Learn more in [Design forecast models](design-forecast-models.md#forecast-steps).
 

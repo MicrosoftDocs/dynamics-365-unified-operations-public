@@ -184,7 +184,7 @@ We have recently added or significantly updated the following help articles. The
 | Feature area | New or updated articles |
 |---|---|
 | Demand planning | [Demand forecasting algorithms](../demand-planning/forecast-algorithm-types.md) |
-| Demand planning | [Forecast with signals (preview)](../demand-planning/forecasts-with-signals.md) |
+| Demand planning | [Forecast with signals](../demand-planning/forecasts-with-signals.md) |
 | Demand planning | [Design forecast models](../demand-planning/design-forecast-models.md) |
 | Demand planning | [Analyze demand plans with Copilot](../demand-planning/demand-planning-copilot.md) |
 | Inventory management | [Inventory on-hand list](../inventory/inventory-on-hand-list.md) |
