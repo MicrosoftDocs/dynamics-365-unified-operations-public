@@ -1,5 +1,5 @@
 ---
-title: Croston's method forecasting (preview)
+title: Croston's method forecasting
 description: Learn about Croston's method, which is a forecasting algorithm designed to handle intermittent demand.
 author: AndersEvenGirke
 ms.author: aevengir
@@ -11,15 +11,10 @@ ms.custom:
   - bap-template
 ---
 
-# Croston's method forecasting (preview)
+# Croston's method forecasting
 
 [!INCLUDE [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
-
 Forecasting models are useful for creating accurate forecasts when they have access to large amounts of data. However, in some cases, such data isn't available, leading to inaccurate results that can cause overstocking or understocking. *Croston's method* is a forecasting algorithm designed specifically for *intermittent demand*, which is demand data that includes many zero-demand periods with occasional nonzero demands.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Models and data
 
@@ -37,7 +32,7 @@ As with [naive forecasting](naive-forecast-algorithm.md), Croston's method is a 
 
 Croston's method forecasting applies when all of the following conditions are met:
 
-- You're using the *Best fit model - version 3 (preview)* (or newer) forecasting algorithm. Croston's method isn't available for other forecast algorithms or as a separate algorithm.
+- You're using the *Best fit model - version 3* (or newer) forecasting algorithm. Croston's method isn't available for other forecast algorithms or as a separate algorithm.
 - Your dataset doesn't fulfill the conditions for using the [naive forecasting algorithm](naive-forecast-algorithm.md).
 - Your dataset doesn't have a clear seasonal pattern.
 - Over 80% of values in the input time series are equal to zero.

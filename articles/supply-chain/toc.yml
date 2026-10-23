@@ -2261,13 +2261,13 @@
           href: demand-planning/forecast-profiles.md
         - name: Design forecast models
           href: demand-planning/design-forecast-models.md
-        - name: Forecast with signals (preview)
+        - name: Forecast with signals
           href: demand-planning/forecasts-with-signals.md
         - name: Demand forecasting algorithms
           href: demand-planning/forecast-algorithm-types.md
-        - name: Naive forecasting (preview)
+        - name: Naive forecasting
           href: demand-planning/naive-forecast-algorithm.md
-        - name: Croston's method forecasting (preview)
+        - name: Croston's method forecasting
           href: demand-planning/croston-method.md
         - name: Use your own custom Azure Machine Learning algorithms in Demand planning
           href: demand-planning/custom-azure-machine-learning-algorithms.md
