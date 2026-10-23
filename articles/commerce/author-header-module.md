@@ -2,7 +2,7 @@
 title: Header module
 description: Learn about header modules and how to create page headers in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 01/15/2026
+ms.date: 10/13/2026
 ms.topic: how-to
 ms.reviewer: mirao
 ms.search.region: Global
@@ -48,10 +48,13 @@ The following modules can be used in a header module:
 
 - **Store selector** - The store selector module can be included in a header module's store selector slot. It lets users browse and find nearby stores. Users can also specify a preferred store, which is then shown in the header. When the store selector module is included in the header module, its **Mode** property must be set to **Find stores**. For more information, see [Store selector module](store-selector.md).
 
+- **Warehouse and store locator** – On B2B sites, the warehouse and store locator module can be included in the header module's **Warehouse locator** slot. It lets buyers browse stores and warehouses across configured legal entities. Learn more in [Warehouse and store locator module](warehouse-store-locator-module.md).
+
 > [!NOTE]
 > - Support for using the cart icon module in header modules is available as of the Dynamics 365 Commerce version 10.0.11 release.
 > - Support for using the site selector module in header modules is available as of the Dynamics 365 Commerce version 10.0.14 release.
 > - Support for using the store selector module in header modules is available as of the Dynamics 365 Commerce version 10.0.15 release.
+> - Support for using the warehouse and store locator module in B2B header modules is available as of the Dynamics 365 Commerce version 10.0.50 release.
 
 ## Header module in the Adventure Works theme
 
@@ -88,6 +91,15 @@ To create a header fragment, follow these steps:
 1. In the property pane for the cart icon module, configure the properties as needed. If you want the cart icon to display a cart summary (also known as a mini cart) when users hover over it, select **Show mini cart**.
 1. Select **Save**, select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 
+For a B2B site that uses cross-legal-entity inventory lookup, add the warehouse and store locator to the header fragment.
+
+1. Select the header module in the header fragment.
+1. In the **Warehouse locator** slot, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select **Warehouse and store locator**, and then select **OK**.
+1. Set the module's **Entry point** property to **Top ribbon**.
+1. Configure the locator properties and optional map.
+1. Select **Save**, select **Finish editing**, and then select **Publish**.
+
 To help ensure that a header appears on every page, follow these steps on every page template that is created for the site.
 
 1. In the **Header** slot of the **Default page** module, add the footer fragment that you created.
@@ -112,6 +124,8 @@ To help ensure that a header appears on every page, follow these steps on every 
 [Site selector module](site-selector.md)
 
 [Store selector module](store-selector.md)
+
+[Warehouse and store locator module](warehouse-store-locator-module.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
