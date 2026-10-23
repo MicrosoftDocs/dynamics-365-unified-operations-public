@@ -2,7 +2,7 @@
 title: Buy box module
 description: Learn about buy box modules and how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 10/13/2026
+ms.date: 10/26/2026
 ms.topic: how-to
 ms.reviewer: mirao
 ms.search.region: Global
@@ -26,7 +26,7 @@ The URL of a product details page includes the product ID. The product ID provid
 
 The following image shows an example of a buy box module on a product details page.
 
-:::image type="content" source="./media/ecommerce-pdp-buybox.PNG" alt-text="Screenshot of a buy box module.":::
+:::image type="content" source="./media/ecommerce-pdp-buybox.PNG" alt-text="Screenshot of a buy box module." lightbox="media/ecommerce-pdp-buybox.PNG":::
 
 ## Buy box module properties and slots
 
@@ -42,24 +42,24 @@ You can use themes to remove or change the order of buy box product properties a
 
 ## Module properties
 
-- **Heading tag** – This property defines the heading tag for the product title. If the buy box is at the top of the page, set this property to **h1** to meet accessibility standards. 
+- **Heading tag**: This property defines the heading tag for the product title. If the buy box is at the top of the page, set this property to **h1** to meet accessibility standards.
 
-- **Enable "shop similar looks" recommendations** - This property allows the buy box to show links to products that look similar to the currently viewed item. This feature is available in Commerce release 10.0.13 and later.
+- **Enable "shop similar looks" recommendations**: This property allows the buy box to show links to products that look similar to the currently viewed item. This feature is available in Commerce release 10.0.13 and later.
 
 ## Modules that you can use in a buy box module
 
-- **Media gallery** – Use this module to showcase images of a product on a product details page. For more information about this module, see [Media gallery module](media-gallery-module.md).
-- **Store selector** – Use this module to show a list of nearby stores where an item is available for pickup. It lets users enter a location to find stores that are nearby. For more information about this module, see [Store selector module](store-selector.md).
-- **Warehouse and store locator** – On B2B sites, use this module to show product inventory in stores and warehouses across legal entities. Learn more in [Warehouse and store locator module](warehouse-store-locator-module.md).
-- **Social share** - Add this module to the buy box to allow users to share product information on social media. For more information, see [Social share module](social-share-module.md).
+- **Media gallery**: Use this module to showcase images of a product on a product details page. For more information about this module, see [Media gallery module](media-gallery-module.md).
+- **Store selector**: Use this module to show a list of nearby stores where an item is available for pickup. It lets users enter a location to find stores that are nearby. For more information about this module, see [Store selector module](store-selector.md).
+- **Warehouse and store locator**: On B2B sites, use this module to show product inventory in stores and warehouses across legal entities. For more information, see [Warehouse and store locator module](warehouse-store-locator-module.md).
+- **Social share**: Add this module to the buy box to allow users to share product information on social media. For more information, see [Social share module](social-share-module.md).
 
 ## Buy box module settings
 
-You can configure the following buy box module settings at **Site Settings \> Extensions**:
+You can configure the following buy box module settings at **Site Settings** > **Extensions**:
 
-- **Cart line quantity limit** – Use this property to specify the maximum number of each item that can be added to the cart. For example, a retailer might decide that only 10 of each product can be sold in a single transaction.
-- **Inventory** – For information about how to apply inventory settings, see [Apply inventory settings](inventory-settings.md).
-- **Add product to cart** – For information about how to apply **Add product to cart** settings, see [Add product to cart settings](add-cart-settings.md).
+- **Cart line quantity limit**: Use this property to specify the maximum number of each item that can be added to the cart. For example, a retailer might decide that only 10 of each product can be sold in a single transaction.
+- **Inventory**: For information about how to apply inventory settings, see [Apply inventory settings](inventory-settings.md).
+- **Add product to cart**: For information about how to apply **Add product to cart** settings, see [Add product to cart settings](add-cart-settings.md).
 
 ## Buy box module definition extensions in the Adventure Works theme
 
@@ -113,35 +113,21 @@ For B2B sites that use cross-legal-entity inventory lookup, add the warehouse an
 1. Configure the locator properties and optional map.
 1. Select **Save**, select **Finish editing**, and then select **Publish**.
 
-## Additional resources
+## Related information
 
-[Module library overview](starter-kit-overview.md)
-
-[Store selector module](store-selector.md)
-
-[Warehouse and store locator module](warehouse-store-locator-module.md)
-
-[Media gallery module](media-gallery-module.md)
-
-[Container module](add-container-module.md)
-
-[Cart module](add-cart-module.md)
-
-[Checkout module](add-checkout-module.md)
-
-[Order confirmation module](order-confirmation-module.md)
-
-[Header module](author-header-module.md)
-
-[Footer module](author-footer-module.md)
-
-[Social share module](social-share-module.md)
-
-[Add product to cart settings](add-cart-settings.md)
-
-[Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md)
-
-[SDK and module library updates](e-commerce-extensibility/sdk-updates.md)
-
+- [Module library overview](starter-kit-overview.md)
+- [Store selector module](store-selector.md)
+- [Warehouse and store locator module](warehouse-store-locator-module.md)
+- [Media gallery module](media-gallery-module.md)
+- [Container module](add-container-module.md)
+- [Cart module](add-cart-module.md)
+- [Checkout module](add-checkout-module.md)
+- [Order confirmation module](order-confirmation-module.md)
+- [Header module](author-header-module.md)
+- [Footer module](author-footer-module.md)
+- [Social share module](social-share-module.md)
+- [Add product to cart settings](add-cart-settings.md)
+- [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md)
+- [SDK and module library updates](e-commerce-extensibility/sdk-updates.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
