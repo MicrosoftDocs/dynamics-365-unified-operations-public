@@ -18,7 +18,7 @@ ms.dyn365.ops.version: Platform update 15
 
 [!INCLUDE [banner](../includes/banner.md)]
 
-Batch processing functionality processes alerts. You must set up batch processing before the process and deliver alerts.
+Batch processing evaluates alert rules and generates alerts for change-based and due-date events. Before the system can generate and deliver alerts, you must configure the relevant batch jobs for change-based alerts, due-date alerts, or both.
 
 Batch processing functionality supports two types of events:
 

@@ -583,6 +583,14 @@ items:
           items:
           - name: Set up interview schedules
             href: hr-interview-schedule.md
+        - name: Agency management 
+          items:
+          - name: Agency management overview
+            href: agency-management.md
+          - name: Set up Agency management
+            href: agency-procedure.md
+          - name: Troubleshoot Agency management
+            href: agency-troubleshooting.md
         - name: Upload resumes (preview)
           items:
           - name: Upload resumes

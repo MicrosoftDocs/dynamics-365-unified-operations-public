@@ -68,6 +68,8 @@ When you configure a **Barcode** data source, you can define specific rendering 
 > When you add a new **Barcode** data source, you must place it under another item (container) as a nested element.
 >
 > When you bind a **Barcode** data source to a cell element in a format, and the cell element represents either a Word content control or an Excel picture, the data source is presented in that binding as a function that has a single parameter of the **String** type. You must use this parameter to specify the text that should be transformed into a bar code image and read when a generated bar code is scanned.
+>
+> In bindings, a Barcode data source is invoked by its data source name as a function that accepts one `String` parameter; do not prefix it with `print.` (for example, use `Barcode("123")`, not `print.barcode("123")`).
 
 For more information about this feature, complete the examples in this article.
 
@@ -221,7 +223,7 @@ Next, you must bind the new format element to the data source that you just adde
 
     You don't want the name of the cell element to be returned. Therefore, you must configure an expression that returns text that contains the payable amount of the current check. Because the parent **ChequeLines** range is bound to the **model.cheques** data source, the payable amount of the current check is available in the **model.cheques.attributes.amount** field of the **Real** data type.
 
-6. In the **Formula** field, enter **print.barcode(NUMBERFORMAT(@.attributes.amount, "F2"))**.
+6. In the **Formula** field, enter **barcode(NUMBERFORMAT(@.attributes.amount, "F2"))**.
 7. Select **Save**, and then close the [ER Formula designer](general-electronic-reporting-formula-designer.md).
 8. Notice that the binding has been adjusted.
 

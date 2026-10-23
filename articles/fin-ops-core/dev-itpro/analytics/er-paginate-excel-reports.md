@@ -1,6 +1,7 @@
 ---
 title: Design an ER format to paginate generated documents in Excel
 description: Learn how to design an Electronic reporting (ER) format that paginates a generated document in Microsoft Excel.
+ai-usage: ai-assisted
 author: kfend
 ms.author: johnmichalak
 ms.topic: how-to
@@ -16,11 +17,17 @@ ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 
 # Design an ER format to paginate generated documents in Excel
 
+> [!NOTE]
+> This article demonstrates an Excel pagination pattern in Electronic reporting (ER) by using the Intrastat control report as a worked example. You can adapt the pattern to other Excel-based documents, such as invoices, by placing page breaks between repeating groups of lines.
+
 [!INCLUDE [banner](../includes/banner.md)]
 
 This article explains how a user in the System Administrator or Electronic Reporting Functional Consultant role can configure an [Electronic reporting (ER)](general-electronic-reporting.md) format to generate outbound documents in Microsoft Excel and manage document pagination.
 
-In this example, you will modify the Microsoft-provided ER format that is used to print the control report when the Intrastat declaration is [generated](../../../finance/localizations/tasks/eur-00002-eu-intrastat-declaration.md). This report lets you observe reported Intrastat transactions. Your modifications will let you manage the pagination of control reports that are generated.
+In this example, you modify the Microsoft-provided ER format that is used to print the control report when the Intrastat declaration is [generated](../../../finance/localizations/tasks/eur-00002-eu-intrastat-declaration.md). This report lets you observe reported Intrastat transactions. Your modifications let you manage the pagination of generated control reports. Although the steps use Intrastat data and templates, the pagination mechanism is configured in the ER format and Excel template and can be reused for other ER Excel output, such as invoices, statements, and confirmations.
+
+> [!NOTE]
+> **Applies to:** ER formats that generate Excel workbooks from templates. **Example scenario:** For an invoice, map the invoice header to the report or page header, repeating invoice lines to the report lines, and invoice totals or other footer content to the report or page footer. This article isn't an invoice-specific tutorial. The example uses page fitting based on generated content and the template's page setup; it doesn't configure a break after a fixed number of lines or when a key changes.
 
 The procedures in this article can be completed in the **DEMF** company. No coding is required. Before you begin, download and save the following files.
 
@@ -28,6 +35,16 @@ The procedures in this article can be completed in the **DEMF** company. No codi
 |-------------------|-----------|
 | Report template 1 | [ERIntrastatReportDemo1.xlsx](https://download.microsoft.com/download/7/2/a/72ae292a-8bb2-4b9d-8397-9764218f6fa8/ERIntrastatReportDemo1%20.xlsx) |
 | Report template 2 | [ERIntrastatReportDemo2.xlsx](https://download.microsoft.com/download/7/d/1/7d15858d-6260-4afa-9dda-d8b955e59b1a/ERIntrastatReportDemo2.xlsx) |
+
+## How Excel pagination works in ER (where the page break is defined)
+
+The ER format and the Excel template have different responsibilities:
+
+- **Excel template:** Named ranges identify the report sections that ER fills in. The template's page setup, including the paper size, helps determine how much generated content fits on a page. This example doesn't use a page-break marker cell or named range.
+- **ER format:** The [**Page** component](er-fillable-excel.md#page-component) organizes the report sections and automatically adds page breaks based on the size of the generated content and the template's page setup. Place the repeating report lines under this component. Configure non-replicated ranges at the beginning and end of the component as page headers and footers.
+- **Explicit page breaks:** If you need to force a break at a particular point, use the [**PageBreak** component](er-fillable-excel.md#page-break-component) in the ER format structure. The component itself forces Excel to start a new page; it isn't a value that you bind to an Excel marker cell.
+
+In this example, the **Page** component determines where pages break as it lays out the report lines. It doesn't define a rule to break after a fixed number of lines or when a key field changes. Those rules require a different ER format design.
 
 ## Configure the ER framework
 
@@ -149,6 +166,8 @@ Then use the custom ER format to generate the control report of the Intrastat de
     - The **ReportPageFooter\_RunningTotalAmount** cell is configured to show the amount running total for all transactions from the beginning of the report through the current page.
     - The **ReportPageFooter\_RunningTotalWeight** cell is configured to show the weight running total for transactions from the beginning of the report through the current page.
 
+    The named ranges in this template identify the sections that ER fills in; you don't need to add a page-break marker cell. ER places page breaks through the **Page** component in the format structure, not by writing a special value to a template cell.
+
     :::image type="content" source="./media/er-paginate-excel-reports-template2a.gif" alt-text="Screenshot of the layout of Excel template 2 in the desktop application.":::
 
     The **CommodityCode** cell of this template is configured to wrap cell text. Because the transaction details row is configured so that it will automatically fit the height of a row, the height of the whole row must automatically change when the text in the **CommodityCode** cell is wrapped.
@@ -176,6 +195,9 @@ Then use the custom ER format to generate the control report of the Intrastat de
 1. Select **Add**.
 1. In the **Add** dialog box, select the [Page](er-fillable-excel.md#page-component) component in the **Excel** group of components.
 1. In the **Component properties** dialog box, in the **Name** field, enter **Report page**. Then select **OK**.
+
+    The **Report page** component controls pagination for its nested components. It doesn't bind to a marker cell: when ER processes its contents, it inserts page breaks as needed for the generated content and the Excel template's page setup. To force a break at a specific point, add a **PageBreak** component at that point in the ER format structure.
+
 1. To use the **Report page header** component as a page header on every generated page, follow these steps:
 
     1. Select the **Report page header** component, and then select **Cut**.
