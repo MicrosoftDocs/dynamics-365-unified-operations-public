@@ -4,6 +4,7 @@ description: Learn about the security reports that help you understand the set o
 author: pnghub
 ms.author: johnmichalak
 ms.topic: article
+ai-usage: ai-assisted
 ms.date: 01/21/2026
 ms.reviewer: johnmichalak 
 ms.search.region: Global
@@ -19,7 +20,7 @@ ms.custom:
 
 [!INCLUDE [banner](../includes/banner.md)]
 
-Finance and operations apps provide a set of rich security reports to help you understand the set of security roles running in your environment and the set of users assigned to each role. In addition to the reports noted in this article, developers can generate a workbook containing all user security privileges for all roles by using **Visual Studio > Dynamics 365 > Addins > View related objects and licenses for all roles**.
+Finance and operations apps provide a set of rich security reports to help you understand the set of security roles running in your environment and the set of users assigned to each role.
 
 You can find each of the security reports under **System administration \> Inquiries \> Security.** A description of each report is provided in the following sections.
 
