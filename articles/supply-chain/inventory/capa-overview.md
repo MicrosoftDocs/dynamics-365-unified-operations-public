@@ -31,7 +31,7 @@ CAPA management provides features that automate the process to help drive contin
 CAPA management features in Supply Chain Management provide the following functionality:
 
 - **Unlimited and flexible CAPA processes** – A CAPA process is a user-defined list of activities that must be performed to bring a CAPA case to a satisfactory conclusion.
-- **A workflow-driven process** – The system automatically assigns CAPA work, based on the definition of your CAPA processes and CAPA worker groups. You can also require review and approval before a case is closed. Learn more in [Set up and use CAPA case approval workflows (preview)](capa-approval-workflow.md).
+- **A workflow-driven process** – The system automatically assigns CAPA work, based on the definition of your CAPA processes and CAPA worker groups. You can also require review and approval before a case is closed. Learn more in [CAPA case approval workflows](capa-approval-workflow.md).
 - **Flexible assignment of activities** – Associate specific users or groups with each part of a CAPA process.
 - **Integration with Outlook** – When work is assigned, the system can automatically send emails to notify the appropriate user that work needs their attention.
 - **Create CAPA cases at the point of need** – The person who first recognizes an issue needs attention can create a CAPA case at the point of need in the system. The system automatically links each CAPA case to the record that it was created from (for example, the specific customer, quality order, or production order that was open when the case was created).
@@ -53,4 +53,4 @@ The following table describes tasks that employees can perform when they work wi
 - [CAPA management administration](capa-admin.md)
 - [Set up CAPA case components](capa-set-up-case-components.md)
 - [Manage CAPA cases](capa-manage-cases.md)
-- [Set up and use CAPA case approval workflows (preview)](capa-approval-workflow.md)
+- [CAPA case approval workflows](capa-approval-workflow.md)

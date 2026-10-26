@@ -14,6 +14,8 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.50 (December 2026)
+          href: get-started/whats-new-scm-10-0-50.md
         - name: Supply Chain Management 10.0.49 (September 2026)
           href: get-started/whats-new-scm-10-0-49.md
         - name: Supply Chain Management 10.0.48 (June 2026)
@@ -1825,7 +1827,7 @@
           href: inventory/capa-set-up-case-components.md
         - name: Manage CAPA cases
           href: inventory/capa-manage-cases.md
-        - name: Set up and use CAPA case approval workflows (preview)
+        - name: CAPA case approval workflows (preview)
           href: inventory/capa-approval-workflow.md
       - name: Inventory operations
         items:

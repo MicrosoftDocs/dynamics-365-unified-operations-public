@@ -1,5 +1,5 @@
 ---
-title: Set up and use quality order approval workflows (preview)
+title: Quality order approval workflows (preview)
 description: Learn how to set up and use approval workflows that route quality order test results to reviewers before the quality order is validated.
 author: johanhoffmann
 ms.author: johanho
@@ -12,7 +12,7 @@ ms.custom:
 ai-usage: ai-assisted
 ---
 
-# Set up and use quality order approval workflows (preview)
+# Quality order approval workflows (preview)
 
 [!INCLUDE [banner](../includes/banner.md)]
 
@@ -193,7 +193,7 @@ To review the workflow history for a quality order, follow these steps:
 - [Quality orders](quality-orders.md)
 - [Advanced quality management overview](advanced-quality-management-overview.md)
 - [Enable quality and nonconformance management](enable-quality-management.md)
-- [Set up and use CAPA case approval workflows](capa-approval-workflow.md)
+- [CAPA case approval workflows](capa-approval-workflow.md)
 - [Workflow system overview](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md)
 - [Create workflows overview](../../fin-ops-core/fin-ops/organization-administration/create-workflow.md)
 - [Actions in workflow approval processes](../../fin-ops-core/fin-ops/organization-administration/workflow-actions.md)

@@ -1,5 +1,5 @@
 ---
-title: Set up and use CAPA case approval workflows (preview)
+title: CAPA case approval workflows (preview)
 description: Learn how to set up and use a workflow that routes corrective and preventive action (CAPA) cases for review and approval before they're closed.
 author: johanhoffmann
 ms.author: johanho
@@ -12,7 +12,7 @@ ms.custom:
 ai-usage: ai-assisted
 ---
 
-# Set up and use CAPA case approval workflows (preview)
+# CAPA case approval workflows (preview)
 
 [!INCLUDE [banner](../includes/banner.md)]
 

@@ -117,22 +117,18 @@ This feature lets workers use the production floor execution interface to report
 
 To use this feature, your system must meet the following requirements:
 
-- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.46 or later.
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.46 – 10.0.49 to run the preview version of this feature.
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.50 or later to run the general availability (GA) version of this feature.
 - The feature that's named *Serial number reporting beyond single unit* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-### Record test results from the production floor execution interface (preview)
-
-[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-<!-- KFM: Preview until further notice. -->
+### Record test results from the production floor execution interface
 
 This feature allows workers to record test results on quality orders directly from the production floor execution interface.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 To use this feature, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.46 or later.
-- The feature that's named *(Preview) Record test results from the production floor execution interface* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that's named *Record test results from the production floor execution interface* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### Auto-complete secondary operation with primary
 

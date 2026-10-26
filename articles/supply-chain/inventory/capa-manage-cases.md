@@ -144,7 +144,7 @@ The workflow for CAPA processes consists of the following steps.
 
 ## Submit a CAPA case for approval
 
-If your organization uses a CAPA case approval workflow, submit the case for approval instead of closing it manually. The system closes the case automatically after the workflow completes. The **Approval status** field shows the progress of the case. Learn more in [Set up and use CAPA case approval workflows (preview)](capa-approval-workflow.md).
+If your organization uses a CAPA case approval workflow, submit the case for approval instead of closing it manually. The system closes the case automatically after the workflow completes. The **Approval status** field shows the progress of the case. Learn more in [CAPA case approval workflows](capa-approval-workflow.md).
 
 ## Analyze CAPA case statistics
 
