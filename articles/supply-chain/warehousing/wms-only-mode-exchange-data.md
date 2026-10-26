@@ -4,7 +4,7 @@ description: Learn how to exchange data and business events between systems in W
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 09/30/2026
+ms.date: 10/26/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage, WHSConsigner, WHSConsignerGroup, WHSConsignee, WHSConsignerGroup, WHSSourceSystemItem, WHSSourceSystemInventoryStatus, EcoResStorageDimensionGroup, InventItemGroup, InventModelGroup, EcoResStorageDimensionGroup, EcoResTrackingDimensionGroup, WHSReservationHierarchy, UnitOfMeasure, WHSUOMSeqGroupTable, WHSSourceSystemProductMessage, WHSSourceSystemProductVariantMessage, WHSSourceSystemProductDocumentAttachmentMessage, WHSSourceSystemProductSpecificUnitOfMeasureConversionMessage, WHSSourceSystemProductBarcodeMessage, WHSSourceSystemProductGlobalTradeItemNumberMessage
@@ -68,7 +68,7 @@ Import the required master data into Supply Chain Management by using [data enti
 
 ### View and maintain source system product messages
 
-In Warehouse management only mode, you can view, update, and create product messages. This capability lets you quickly test integrations during the implementation process. When an externally created message is in a *Failed* message state, you can update field values and assign the updated message back into the message queue. The original message is versioned and non-editable. To view and maintain the messages, go to one of the following pages:
+In Warehouse management only mode, you can view, update, and create product messages. This capability helps you quickly test integrations during the implementation process. When an externally created message is in a *Failed* message state, you can update field values and assign the updated message back into the message queue. The original message is versioned and non-editable. To view and maintain the messages, go to one of the following pages:
 
 - **Warehouse management** > **Source system products** > **Source system product messages**
 - **Warehouse management** > **Source system products** > **Source system product variant messages**
@@ -77,7 +77,7 @@ In Warehouse management only mode, you can view, update, and create product mess
 - **Warehouse management** > **Source system products** > **Source system product global trade item number messages**
 - **Warehouse management** > **Source system products** > **Source system product specific unit of measure conversion messages**
 
-The **Warehouse integration monitoring** workspace lets you track the number of source system product messages that are *Queued* and *Failed*.
+Use the **Warehouse integration monitoring** workspace to track the number of source system product messages that are *Queued* and *Failed*.
 
 > [!NOTE]
 > You can set each source system to either allow or prevent users from manually creating messages on the listed pages. Open the relevant [source system](wms-only-mode-setup.md#source-systems) record, and set the **Enable manual source system product message creation** option to *Yes* to allow manual messages or *No* to prevent them. Unlike messages that are imported via integration, manually created messages aren't versioned.
@@ -173,7 +173,9 @@ Use inbound and outbound shipment order messages to inform Supply Chain Manageme
 > [!NOTE]
 >
 > - You can update an inbound or outbound shipment order by submitting a message that includes a matching order number and source system in the header data.
-> - You can delete an inbound or outbound shipment order by submitting a message that includes a matching order number and source system in the header data and omits all line data.
+> - You can delete an outbound shipment order by submitting a message that includes a matching order number and source system in the header data and omits all line data.
+> - For an inbound shipment order, a replacement message that omits all line data deletes the existing order if the message has no attached documents. An empty attachment record isn't considered an attached document and doesn't prevent deletion.
+> - If the inbound replacement message has an attached document, the order header is retained, omitted lines are deleted, and the document is copied to the retained order. These rules apply to messages created through both *Manual entry* and *Integration*.
 
 Systems exchange messages by using lightweight *inbound shipment order* and *outbound shipment order* documents. These documents eliminate the need to use several other types of documents that Supply Chain Management typically uses, such as sales orders, purchase orders, and transfer orders. Therefore, they have several benefits. For example, they simplify integration with enterprise resource planning (ERP) and order management systems. They also make Supply Chain Management warehouse management functionality available to a wide range of external ERP and order management systems.
 
