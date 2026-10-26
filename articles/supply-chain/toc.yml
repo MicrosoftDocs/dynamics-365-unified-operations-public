@@ -3184,6 +3184,10 @@
           - name: Report production orders as finished
             href: production-control/report-production-orders-as-finished.md
           - name: Create report-as-finished journal lines from a proposal (preview)
+            href: production-control/create-report-finished-journal-lines.md            
+          - name: Flexible production scrap reason codes (preview)
+            href: production-control/production-scrap-reason-codes.md
+          - name: Create report-as-finished journal lines from a proposal (preview)
             href: production-control/create-report-finished-journal-lines.md
           - name: Register and track batch/serial numbers for finished products and their components
             href: production-control/tracked-components.md
