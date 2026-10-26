@@ -69,18 +69,13 @@ This section describes the purpose of each type of forecast step. It also explai
 - **Fill missing values** – Specify whether the system should fill in placeholder values for time buckets if the input doesn't provide values. In most cases, you should enable this feature, because it helps produce better forecasts.
 - **Fill missing values strategy** – Select the strategy that the system should use to enter values in empty time buckets. In the current version, the only available strategy is *Zeros*. In this strategy, the system sets all missing values to *0* (zero).
 
-### Signal steps (preview)
-
-[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-<!-- KFM: Preview until further notice -->
+### Signal steps
 
 *Signal* steps represent additional time series that can be combined with the primary time series that the *Input* step provides. For example, the primary input that the *Input* step provides might represent historical sales. A *Signal* step might then provide input that represents inflation or weather data.
 
 When you add a *Signal* step, the system automatically creates a parallel branch in your model and puts the step at the top of that branch. The initial branch always has an *Input* step at the top of it. Each branch can include any number of steps, but you must eventually combine the branches by using a *Forecast with signals* step.
 
-Learn more in [Forecast with signals (preview)](forecasts-with-signals.md).
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+Learn more in [Forecast with signals](forecasts-with-signals.md).
 
 #### Signal step settings
 
@@ -218,8 +213,8 @@ When you use the STL method to handle outliers, you must also set the **Select s
 - **Created by** – The user who created the step.
 - **Model type** – Select the forecast algorithm to use. Learn about each of the available algorithms in [Demand forecasting algorithms](forecast-algorithm-types.md). The following algorithms are available:
     - *Best fit model - version 1*
-    - *Best fit model - version 2 (preview)*
-    - *Best fit model - version 3 (preview)*
+    - *Best fit model - version 2*
+    - *Best fit model - version 3*
     - *ARIMA* (auto regressive integrated moving average)
     - *ETS* (error, trend, seasonality)
     - *Prophet*
@@ -229,16 +224,11 @@ When you use the STL method to handle outliers, you must also set the **Select s
     - **Freeze manual adjustments** – Select this option to prevent the system from automatically updating any time series cells that have been manually adjusted by a user.
     - **Use time freeze rules** – Select this option to apply one or more time freeze rules to the forecasts created by this step. Then use the **Time freeze rules** field to search for and select the relevant time freeze rules. Time freeze rules are defined as logical expressions and prevent the system from automatically updating time series cells that match that expression. For example, you could create a time freeze rule that lasts two months and applies to product ID *K0001* in color *Red*. Learn more about how to work with time freeze rules at [Limit automatic time series updates with time freezes](time-freeze.md).
 
-### Forecast with signals steps (preview)
+### Forecast with signals steps
 
-[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-<!-- KFM: Preview until further notice -->
-
-*Forecast with signals* steps generate a forecast based on multiple input time series. Learn more about forecasting with signals in [Forecast with signals (preview)](forecasts-with-signals.md).
+*Forecast with signals* steps generate a forecast based on multiple input time series. Learn more about forecasting with signals in [Forecast with signals](forecasts-with-signals.md).
 
 *Forecast with signals* steps always use the XGBoost demand forecasting algorithm. Learn about this algorithm in [Demand forecasting algorithms](forecast-algorithm-types.md).
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 You can use this type of step only if your forecast model has at least two parallel branches: one that starts with an *Input* step and up to five others that start with a *Signal* step. The first branch is the one where you create the step. To specify a second branch, open the **Action** menu for the *Forecast with signals* step, select **Connect with**, and then select the step to connect to. The flowchart is then updated so that it shows the branches combining at the *Forecast with signals* step. You can add up to five signal branches.
 
@@ -309,16 +299,11 @@ Although both seasonality and cycles involve repeating patterns, there are key d
 | Cause | Calendar-based events or natural patterns | Economic, social, or structural forces |
 | Examples | Summer travel peaks or holiday shopping trends | Economic recession cycles or stock market booms and busts |
 
-### Autodetect seasonality patterns (preview)
-
-[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-<!-- KFM: Preview until further notice -->
+### Autodetect seasonality patterns
 
 Automatic seasonality detection uses an algorithm that finds seasonality patterns for each combination of a location and a product, and applies the result to forecast calculations. Seasonality patterns typically vary for different products and different locations. Therefore, auto detection often works better than applying the same pattern everywhere.
 
 To set a *Forecast* or *Handle outliers* step to use seasonality auto detection, edit the step's settings, and then set **Select seasonality detection setting** to *Auto detection*.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ### Detect seasonality using a hint
 
