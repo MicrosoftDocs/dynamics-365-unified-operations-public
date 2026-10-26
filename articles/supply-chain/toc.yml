@@ -3515,6 +3515,8 @@
         items:
         - name: Order promising
           href: sales-marketing/delivery-dates-available-promise-calculations.md
+        - name: Exclude purchase, production, or inbound transfer supply from ATP calculations (preview)
+          href: sales-marketing/available-to-promise-supply-exclusions.md
         - name: Calculate sales order delivery dates using CTP
           href: master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md
         - name: Order entry deadlines
