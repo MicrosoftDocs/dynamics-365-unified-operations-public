@@ -2,12 +2,12 @@
 title: Store selector module
 description: Learn about the store selector module and how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/29/2025
+ms.date: 10/26/2026
 ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chrgriffin
-ms.search.region: Global
 ms.author: asharchw
+ms.reviewer: mirao
+ms.search.region: Global
 ms.search.validFrom: 2020-02-10
 ms.custom: 
   - bap-template
@@ -17,36 +17,39 @@ ms.custom:
 
 [!INCLUDE [banner](includes/banner.md)]
 
-This article covers the store selector module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
+This article describes the store selector module and how to add it to site pages in Microsoft Dynamics 365 Commerce.
 
-Customers can use the store selector module to pick up a product in a selected store after an online purchase. In Commerce version 10.0.13, the store selector module also includes additional capabilities that can showcase a **Find a Store** page that shows nearby stores.
+Customers can use the store selector module to pick up a product in a selected store after an online purchase. In Commerce version 10.0.13, the store selector module also includes capabilities that showcase a **Find a Store** page that shows nearby stores.
 
-The store selector module lets users enter a location (city, state, address, and so on) to search for stores within a search radius. When the module is first opened, it uses the customer's browser location to find stores (if consent is provided).
+The store selector module lets users enter a location (city, state, address, and so on) to search for stores within a search radius. When the module opens, it uses the customer's browser location to find stores (if consent is provided).
 
 ## Store selector module usage
 
-- A store selector module can be used on a product details page (PDP) to select a store for pickup.
-- A store selector module can be used on a cart page to select a store for pickup.
-- A store selector module can be used on a standalone page that shows all available stores.
+- Use a store selector module on a product details page (PDP) to select a store for pickup.
+- Use a store selector module on a cart page to select a store for pickup.
+- Use a store selector module on a standalone page that shows all available stores.
+
+> [!NOTE]
+> For B2B sites that use cross-legal-entity inventory lookup, use the warehouse and store locator module in the header and PDP buy box. The warehouse and store locator displays stores and warehouses across configured legal entities. For more information, see [Warehouse and store locator module](warehouse-store-locator-module.md).
 
 ## Fulfillment group setup in Commerce headquarters
 
-For the store selector to display available stores, the fulfillment group must be set up in Commerce headquarters. For more information, see [Set up fulfillment groups](customer-orders-overview.md#set-up-fulfillment-groups).
+For the store selector to display available stores, set up the fulfillment group in Commerce headquarters. For more information, see [Set up fulfillment groups](customer-orders-overview.md#set-up-fulfillment-groups).
 
-In addition, for each store in the fulfillment group, the latitude and longitude of the retail store must be defined in headquarters.
+Also, define the latitude and longitude of the retail store in headquarters for each store in the fulfillment group.
 
 To enter the latitude and longitude values for a retail store in Commerce headquarters, follow these steps:
 
-1. In Commerce headquarters, go to **Organization administration \> Organizations  \> Operating unit**.
+1. In Commerce headquarters, go to **Organization administration** > **Organizations**  > **Operating unit**.
 1. Search by the operating unit number in the left pane.
-1. On the **Addresses** FastTab, select **More options -> Advanced**.
+1. On the **Addresses** FastTab, select **More options** > **Advanced**.
 
-    ![Example of store details in headquarters.](./media/Store-address.png)
+    :::image type="content" source="./media/Store-address.png" alt-text="Example of store details in headquarters." lightbox="media/store-address.png":::
 
 1. On the Action Pane, select **Edit**.
 1. On the **General** FastTab, enter values for **Latitude** and **Longitude**.
 
-    ![Example of latitude and longitude setup for a store in headquarters.](./media/Store-latitude-longitude.png)
+    :::image type="content" source="./media/Store-latitude-longitude.png" alt-text="Example of latitude and longitude setup for a store in headquarters." lightbox="./media/Store-latitude-longitude.png":::
 
 1. On the Action Pane, select **Save**.
 1. Run the 1070 **Channel configuration** distribution schedule job.
@@ -55,78 +58,79 @@ To enter the latitude and longitude values for a retail store in Commerce headqu
 
 Some stores in a fulfillment group might not be valid pickup locations. To ensure that only valid pickup locations appear as options in the store selector module, follow these steps in Commerce headquarters.
 
-1. In Commerce headquarters, go to **Retail and Commerce \> Commerce setup \> Fulfillment groups \> All stores**.
+1. In Commerce headquarters, go to **Retail and Commerce** > **Commerce setup** > **Fulfillment groups** > **All stores**.
 1. On the Action Pane, select **Edit**.
 1. Under **Setup**, for every store that isn't a valid pickup location, clear the **Is Pickup Location** checkbox.
 1. On the Action Pane, select **Save**.
 1. Run the 1070 **Channel configuration** distribution schedule job.
 
 > [!IMPORTANT]
+>
 > - Bing Maps for Enterprise is deprecated and is scheduled to be retired. If you have an enterprise license for Bing Maps for Enterprise, you can continue to use it until June 30, 2028. If you have a free or basic license for Bing Maps for Enterprise, you can continue to use it until June 30, 2025.
 > - Until the Azure Maps modules becomes available in Commerce version 10.0.45, you can manually enable Azure Maps by following the steps provided in the [Dynamics365Commerce.Solutions GitHub repository](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.54/src/OnlineSDK/Extensibility%20Samples/AzureMaps).
 
 ## Azure Maps integration
 
-The store selector module is integrated with the [Azure Maps REST application programming interfaces (APIs)](/azure/azure-maps/how-to-use-ts-rest-sdk) to use Azure Maps's Fuzzy Search features. An Azure Maps API key is required and must be added to the shared parameters page in Commerce headquarters. The integration with the Autosuggest API is used to show search suggestions when users enter locations in the search field.
+The store selector module is integrated with the [Azure Maps REST application programming interfaces (APIs)](/azure/azure-maps/how-to-use-ts-rest-sdk) to use Azure Maps's Fuzzy Search features. You need an Azure Maps API key and must add it to the shared parameters page in Commerce headquarters. The integration with the Autosuggest API is used to show search suggestions when users enter locations in the search field.
 
-For the Azure Maps REST SDK, you must ensure that the following URLs are allowed per your site's content security policy (CSP). This setup is done in Commerce site builder, by adding allowed URLs to various CSP directives for the site (for example, **img-src**). For more information, see [Content security policy](dev-itpro/manage-csp.md).
+For the Azure Maps REST SDK, you must ensure that the following URLs are allowed per your site's content security policy (CSP). You set up this configuration in Commerce site builder by adding allowed URLs to various CSP directives for the site (for example, **img-src**). For more information, see [Content security policy](dev-itpro/manage-csp.md).
 
-- To the **child-src** directive, add "blob:".
-- To the **connect-src** directive, add `https://atlas.microsoft.com/` and `https://js.monitor.azure.com/`.
-- To the **font-src** directive, add `https://atlas.microsoft.com/`.
-- To the **script-src** directive, add `https://atlas.microsoft.com/`.
-- To the **style-src** directive, add `https://atlas.microsoft.com/`.
+- Add "blob:" to the **child-src** directive.
+- Add `https://atlas.microsoft.com/` and `https://js.monitor.azure.com/` to the **connect-src** directive.
+- Add `https://atlas.microsoft.com/` to the **font-src** directive.
+- Add `https://atlas.microsoft.com/` to the **script-src** directive.
+- Add `https://atlas.microsoft.com/` to the **style-src** directive.
 
 ## Pickup in store mode
 
 The store selector module supports a **Pick up in store** mode that shows a list of stores where a product is available for pickup. It also shows store hours and product inventory for each store in the list. The store selector module requires the context of a product to render product availability and to let the user add the product to the cart, if the product's delivery mode is set to **pickup** at the selected store. For more information, see [Inventory settings](inventory-settings.md).
 
-The store selector module can be added to a buy box module on a PDP to show stores where a product is available for pickup. It can also be added to a cart module. In this case, the store selector module shows pickup options for each line item in the cart. The store selector module can also be added to other pages or modules via extensions and customizations.
+Add the store selector module to a buy box module on a product detail page (PDP) to show stores where a product is available for pickup. You can also add it to a cart module. In this case, the store selector module shows pickup options for each line item in the cart. You can also add the store selector module to other pages or modules through extensions and customizations.
 
-For this scenario to work, products should be configured so that the **pickup** delivery mode is used. Otherwise, the module isn't shown on the product pages. For more information about how to configure the delivery mode, see [Set up modes of delivery](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+For this scenario to work, configure products to use the **pickup** delivery mode. Otherwise, the module doesn't appear on the product pages. For more information about how to configure the delivery mode, see [Set up modes of delivery](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
-The following image shows an example of a store selector module used on a PDP.
+The following image shows an example of a store selector module used on a product detail page.
 
-![Example of a store selector module used on a PDP.](./media/BOPIS.PNG)
+:::image type="content" source="./media/BOPIS.PNG" alt-text="Example of a store selector module used on a PDP." lightbox="./media/BOPIS.PNG":::
 
 > [!NOTE]
-> In Commerce version 10.0.16 and later, a feature can be enabled that allows an organization to define multiple pickup modes of delivery options for customers. If this feature is enabled, the store selector module and other Commerce modules are enhanced to allow the shopper to choose from potentially multiple pickup delivery options if configured. To learn more about this feature, refer to [this documentation](./multiple-pickup-modes.md). 
+> In Commerce version 10.0.16 and later, you can enable a feature that allows an organization to define multiple pickup modes of delivery options for customers. If you enable this feature, the store selector module and other Commerce modules are enhanced to allow the shopper to choose from potentially multiple pickup delivery options if configured. To learn more about this feature, see [this documentation](./multiple-pickup-modes.md).
 
 ## Find stores mode
 
-The store selector module also supports a **Find stores** mode. This mode can be used to create a store locations page that shows available stores and their information. In this mode, the store selector module works without product context and can be used as a standalone module on any site page. In addition, if the relevant settings are turned on for the module, users can select a store as their preferred store. When a store is selected as a user's preferred store, the store ID is maintained in the browser cookie. Therefore, the user must accept a cookie consent message.
+The store selector module also supports a **Find stores** mode. Use this mode to create a store locations page that shows available stores and their information. In this mode, the store selector module works without product context and can be used as a standalone module on any site page. If you turn on the relevant settings for the module, users can select a store as their preferred store. When a store is selected as a user's preferred store, the store ID is maintained in the browser cookie. Therefore, the user must accept a cookie consent message.
 
 The following illustration shows an example of a store selector module that is used together with an Azure Maps module on a store locations page.
 
-![Example of a store selector module and Azure Maps module on a store locations page.](./media/store-locator-azure.PNG)
+:::image type="content" source="./media/store-locator-azure.PNG" alt-text="Example of a store selector module and Azure Maps module on a store locations page." lightbox="./media/store-locator-azure.PNG":::
 
 ## Render a map
 
-The store selector module can be used together with the Azure Maps module to show the store locations on a map. Learn more in [Azure Maps module](azure-maps-module.md)
+You can use the store selector module together with the Azure Maps module to show the store locations on a map. For more information, see [Azure Maps module](azure-maps-module.md).
 
 ## Store selector module properties
 
 | Property name | Value | Description |
-|---------------|-------|-------------|
+| ------------- | ----- | ----------- |
 | Heading | Text | The heading for the module. |
 | Mode | **Find stores** or **Pick up in store** | **Find stores** mode shows available stores. **Pick up in store** mode lets users select a store for pickup. |
 | Style | **Dialog** or **Inline** | The module can be rendered either inline or in a dialog box. |
-| Set as preferred store | **True** or **False** | When this property is set to **True**, users can set a preferred store. This feature requires that users accept a cookie consent message. |
-| Show all stores | **True** or **False** | When this property is set to **True**, users can bypass the **Search radius** property and view all stores. |
-| Autosuggest options: Max results | Number | This property defines the maximum number of autosuggest results that can be shown via the Azure Maps Fuzzy Search API. |
-| Search radius | Number | This property defines the search radius for stores, in miles. If no value is specified, the default search radius of 50 miles is used. |
-| Terms of service | URL |  This property specifies the terms of service URL that is required to use the Azure Maps service. |
+| Set as preferred store | **True** or **False** | When you set this property to **True**, users can set a preferred store. This feature requires that users accept a cookie consent message. |
+| Show all stores | **True** or **False** | When you set this property to **True**, users can bypass the **Search radius** property and view all stores. |
+| Autosuggest options: Max results | Number | This property defines the maximum number of autosuggest results that the Azure Maps Fuzzy Search API can show. |
+| Search radius | Number | This property defines the search radius for stores, in miles. If you don't specify a value, the default search radius is 50 miles. |
+| Terms of service | URL |  This property specifies the terms of service URL that's required to use the Azure Maps service. |
 
 ## Site settings
 
-The store selector module respects the [Add product to cart settings](add-cart-settings.md). After an item is added to the cart from the store selector module, site users will see the appropriate configured workflows.
+The store selector module respects the [Add product to cart settings](add-cart-settings.md). After an item is added to the cart from the store selector module, site users see the appropriate configured workflows.
 
 ## Add a store selector module to a page
 
-For **Pickup in store** mode, the module can be used only on PDPs and cart pages. You must set the mode to **Pickup in store** in the module's property pane.
+For **Pickup in store** mode, you can use the module only on product detail pages (PDPs) and cart pages. Set the mode to **Pickup in store** in the module's property pane.
 
-- For information on how to add a store selector module to a buy box module, see [Buy box module](add-buy-box.md). 
-- For information on how to add a store selector module to a cart module, see [Cart module](add-cart-module.md)
+- For information on how to add a store selector module to a buy box module, see [Buy box module](add-buy-box.md).
+- For information on how to add a store selector module to a cart module, see [Cart module](add-cart-module.md).
 
 To configure the store selector module to show available stores for a store locations page, follow these steps:
 
@@ -137,7 +141,7 @@ To configure the store selector module to show available stores for a store loca
 1. In the **Create a new page** dialog box, under **Page name**, enter **Store locations**, and then select **Next**.
 1. Under **Choose a template**, select the **Marketing template** that you created, and then select **Next**.
 1. Under **Choose a layout**, select a page layout (for example, **Flexible layout**), and then select **Next**.
-1. Under **Review and finish**, review the page configuration. If you need to edit the page information, select **Back**. If the page information is correct, select **Create page**. 
+1. Under **Review and finish**, review the page configuration. If you need to edit the page information, select **Back**. If the page information is correct, select **Create page**.
 1. In the **Main** slot of the new page, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **Container** module, and then select **OK**.
 1. In the **Container** slot, select the ellipsis (**...**), and then select **Add module**.
@@ -156,26 +160,18 @@ To configure the store selector module to show available stores for a store loca
 1. In the **Select modules** dialog box, select the **Azure Maps** module, and then select **OK**.
 1. In the module's properties pane, set any additional properties as you require.
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
- 
-## Additional resources
 
-[Module library overview](starter-kit-overview.md)
+## Related information
 
-[Buy box module](add-buy-box.md)
-
-[Cart module](add-cart-module.md)
-
-[Quick tour of PDP](quick-tour-pdp.md)
-
-[Quick tour of cart and checkout](quick-tour-cart-checkout.md)
-
-[Set up modes of delivery](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
-
-[Manage Azure Maps for your organization](./dev-itpro/manage-azure-maps.md)
-
-[Azure Maps REST SDK](/azure/azure-maps/how-to-use-ts-rest-sdk)
-
-[Azure Maps module](azure-maps-module.md)
-
+- [Module library overview](starter-kit-overview.md)
+- [Buy box module](add-buy-box.md)
+- [Cart module](add-cart-module.md)
+- [Quick tour of PDP](quick-tour-pdp.md)
+- [Quick tour of cart and checkout](quick-tour-cart-checkout.md)
+- [Set up modes of delivery](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+- [Manage Azure Maps for your organization](./dev-itpro/manage-azure-maps.md)
+- [Azure Maps REST SDK](/azure/azure-maps/how-to-use-ts-rest-sdk)
+- [Azure Maps module](azure-maps-module.md)
+- [Warehouse and store locator module](warehouse-store-locator-module.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
