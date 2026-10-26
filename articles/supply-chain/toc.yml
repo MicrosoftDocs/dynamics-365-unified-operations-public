@@ -3431,6 +3431,76 @@
         href: rebate-management/process-review-post.md
       - name: Manage deductions using the deduction workbench
         href: rebate-management/deduction-workbench.md
+    - name: Rental management (preview)
+      items:
+      - name: About the rental management preview
+        href: rental-management/rental-management-preview.md
+      - name: Rental management overview
+        href: rental-management/rental-management-overview.md
+      - name: Set up rental management
+        items:
+        - name: Rental management setup overview
+          href: rental-management/set-up-rental-overview.md
+        - name: Configure prerequisites for rental management
+          href: rental-management/set-up-rental-prerequisites.md
+        - name: Configure inventory and location settings
+          href: rental-management/configure-inventory-location-settings.md
+        - name: Set up billing periods and scenarios
+          href: rental-management/set-up-billing-periods-scenarios.md
+        - name: Set up rental reference data
+          href: rental-management/set-up-rental-reference-data.md
+        - name: Set up rental templates
+          href: rental-management/set-up-rental-templates.md
+        - name: Configure rental parameters
+          href: rental-management/configure-rental-parameters.md
+        - name: Set up rental rates and discounts
+          href: rental-management/set-up-rental-rates-discounts.md
+      - name: Use the Rental management workspace
+        href: rental-management/rental-management-workspace.md
+      - name: Fleet management
+        items:
+        - name: Manage fleet item master data
+          href: rental-management/manage-equipment-master-data.md
+        - name: Change fleet item master data
+          href: rental-management/change-fleet-item-master-data.md
+        - name: Add fleet items to the rental fleet
+          href: rental-management/add-equipment-to-rental-fleet.md
+        - name: Sell fleet items from the rental fleet
+          href: rental-management/sell-equipment-from-rental-fleet.md
+        - name: Track rental fleet utilization
+          href: rental-management/track-rental-fleet-utilization.md
+      - name: Rental workflow
+        items:
+        - name: Create rental quotations and contracts
+          href: rental-management/create-rental-quotations-contracts.md
+        - name: Check fleet item availability
+          href: rental-management/check-equipment-availability.md
+        - name: Reserve fleet items
+          href: rental-management/reserve-rental-equipment.md
+        - name: Manage rental attachments and bulk fleet items
+          href: rental-management/manage-rental-attachments.md
+        - name: Ship and receive fleet items
+          href: rental-management/ship-receive-rental-equipment.md
+        - name: Invoice rental contracts
+          href: rental-management/invoice-rental-contracts.md
+        - name: Call off and close rental contracts
+          href: rental-management/call-off-close-rental-contracts.md
+        - name: Sell accessories and consumables
+          href: rental-management/sell-accessories-consumables.md
+      - name: Special cases
+        items:
+        - name: Manage fleet item swaps, substitutions, and transfers
+          href: rental-management/manage-equipment-swaps-substitutions-transfers.md
+        - name: Handle stand-down credits and concessions
+          href: rental-management/handle-stand-down-credits-concessions.md
+      - name: Customers and finance
+        items:
+        - name: Manage customer and prospect records
+          href: rental-management/manage-customer-prospect-records.md
+        - name: Understand rental management financial integration
+          href: rental-management/understand-rental-financial-integration.md
+        - name: Run rental management periodic jobs
+          href: rental-management/run-rental-periodic-jobs.md
     - name: Sales and marketing
       items:
       - name: Sales and marketing overview
