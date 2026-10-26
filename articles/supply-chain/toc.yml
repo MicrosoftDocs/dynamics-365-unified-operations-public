@@ -1797,8 +1797,10 @@
           href: inventory/quality-acceptance-sampling.md
         - name: Work with quality orders
           href: inventory/quality-orders.md
-        - name: Set up and use quality order approval workflows (preview)
-          href: inventory/quality-order-approval-workflow.md
+        - name: Quality order approval workflows (preview)
+          href: inventory/quality-order-approval-workflow.md          
+        - name: Batch stability testing (preview)
+          href: inventory/quality-batch-stability-testing.md
         - name: Customer specific certificate of analysis (COA)
           href: inventory/quality-customer-specific-coa.md
         - name: Inspect the quality of goods
