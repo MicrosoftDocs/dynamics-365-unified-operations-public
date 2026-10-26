@@ -601,26 +601,6 @@ items:
           items:
           - name: Upload resumes
             href: bulk-resume-upload.md
-    - name: Preboarding (preview)
-      items:
-      - name: Overview
-        href: hr-preboarding-overview.md
-      - name: Get started
-        items:
-        - name: Prerequisites for preboarding
-          href: hr-preboarding-prerequisites.md
-        - name: Install and set up preboarding
-          href: hr-preboarding-setup.md
-        - name: Configure preboarding
-          href: hr-preboarding-configuration.md
-      - name: Manage preboarding as HR
-        href: hr-preboarding-for-hr.md
-      - name: Complete preboarding as a candidate
-        href: hr-preboarding-for-candidates.md
-      - name: Add custom fields to preboarding
-        href: hr-preboarding-custom-fields.md
-      - name: Preboarding FAQ
-        href: hr-preboarding-faq.md
     - name: Onboarding agent for HR (preview)
       items:
       - name: Onboarding agent
