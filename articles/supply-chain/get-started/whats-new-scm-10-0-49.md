@@ -125,7 +125,7 @@ The following table lists features that were removed from Feature management in 
 
 ### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.49 includes platform updates. Learn more in [Platform updates for version 10.0.49 of Finance and Operations apps (September 2026)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-49.md). <!-- KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.49 includes platform updates. Learn more in [Platform updates for version 10.0.49 of Finance and Operations apps](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-49.md).
 
 For information about the bug fixes included in each of the updates that are part of version 10.0.49, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=1156136).
 

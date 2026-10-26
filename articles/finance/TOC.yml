@@ -14,6 +14,8 @@
               items:
                 - name: What's new or changed in Finance home page
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.50 (December)
+                  href: get-started/whats-new-changed-10-0-50.md   
                 - name: Finance 10.0.49 (September)
                   href: get-started/whats-new-changed-10-0-49.md
                 - name: Finance 10.0.48 (June)
@@ -666,6 +668,8 @@
               href: accounts-receivable/archive-printed-invoices.md
             - name: Clean temporary data
               href: accounts-receivable/data-main-job.md
+            - name: Optimized Customer Entities (53 chars)
+              href: accounts-receivable/optimized-customer-data-entities.md
         - name: Budgeting
           items:
             - name: Budgeting home page

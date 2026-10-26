@@ -1,10 +1,10 @@
 ---
 title: Set up and generate positive pay files by using Electronic reporting
 description: Learn about how to set up positive pay by using Electronic reporting, including outlines on security for positive pay files.
-author: twheeloc
-ms.author: twheeloc
+author: mukumarm
+ms.author: mukumarm
 ms.topic: how-to
-ms.date: 07/28/2026
+ms.date: 10/23/2026
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -22,8 +22,8 @@ This article explains how to set up positive pay and generate positive pay files
 
 > [!NOTE]
 > Before using the **Generate bank positive pay file** function, refresh the entity list first.
-> Go to **Data management > Import / Export > Framework parameters**
-> **Entity settings** FastTab, select **Refresh entity list**.
+> Go to **Data management** > **Import / Export** > **Framework parameters**.
+> In the **Entity settings** FastTab, select **Refresh entity list**.
 
 Set up positive pay to generate an electronic list of checks that you provide to the bank. When you present a check to the bank, the bank compares it with the list of checks. If the check matches a check in the list, the bank clears it. If the check doesn't match a check in the list, the bank holds it for review.
 
@@ -32,25 +32,50 @@ Set up positive pay to generate an electronic list of checks that you provide to
 Positive pay files can contain sensitive information about payees and check amounts. Therefore, use appropriate security measures from the time you generate the files until the bank receives them. Your web browser downloads positive pay files to the location you specify. Because positive pay files can contain sensitive information, it's important that only authorized users can generate and view this information in Microsoft Dynamics 365 Finance. Use the following table to help you determine the required privileges.
 
 | Task | Privilege |
-|------|-----------|
+| ------ | ----------- |
 | Generate positive pay files from the **Bank accounts** list page or the **Bank accounts** page. | <ul><li>**Maintain bank positive pay information** (BankPositivePayProcess)</li><li>**BankPositivePayExportEntityView** (BankPositivePayExportEntityView)</li></ul> |
 | Generate positive pay files for multiple legal entities and bank accounts from the **Generate a positive pay file** page. | <ul><li>**Maintain bank positive pay information** (BankPositivePayProcess)</li><li>**BankPositivePayExportEntityView** (BankPositivePayExportEntityView)</li></ul> |
 | View positive pay files on the **Positive pay file summary** page. | **View bank positive pay information for multiple legal entities** (BankPositivePayView) |
 | Confirm a bank positive pay file on the **Positive pay file summary** page. | **Confirm positive payment file** (BankPositivePayConfirm) |
 | Recall a bank positive pay file on the **Positive pay file summary** page. | **Recall positive pay file** (BankPositivePayRecall) |
 
+## Positive pay file generation through batch processing
+
+The **Enhance positive pay file generation through batch processing** feature lets organizations generate positive pay files immediately or as background batch jobs. Positive pay files can include a large number of checks. Processing them only in an interactive user session can increase wait times and the risk of session timeouts. This feature moves the business process into the standard batch framework so high-volume processing can continue without requiring the user to keep the page open. Users can now schedule generation for a later time or configure a recurrence that aligns with bank submission windows and operational calendars.
+
+The feature supports both:
+
+- Standard bank positive pay
+- Payroll positive pay
+
+### Prerequisites
+
+To generate a positive pay file by using batch processing, use the following versions:
+
+- Dynamics 365 Finance version 10.0.50
+- **Enhance positive pay file generation through batch processing** feature
+
+### Configure an Electronic reporting destination for batch execution
+
+Choose a destination that's appropriate for your organization's operating model and bank-integration process. The available destination types depend on the ER configuration and environment.
+
+To configure the destination, follow these steps:
+
+1. Go to **Organization administration**.
+2. Use **Electronic reporting** and select **Electronic reporting destination**.
+
 ## Set up the Electronic reporting configuration
 
-1. Go to **Workspaces > Electronic reporting**.
+1. Go to **Workspaces** > **Electronic reporting**.
 1. On the tile for the **Microsoft** configuration provider, select **Repositories**.
 1. Select **Global**, and then select **Open**.
 1. If you need to connect to the repository, select the blue link in the dialog box.
-1. In the configuration list, find and select **Positive pay model > Positive pay format**.
+1. In the configuration list, find and select **Positive pay model** > **Positive pay format**.
 1. On the **Versions** FastTab, select the latest version, and then select **Import**.
 
 ## Set up a positive pay format
 
-1. Go to **Cash and bank management > Setup > Positive pay formats**.
+1. Go to **Cash and bank management** > **Setup** > **Positive pay formats**.
 1. Select **New**.
 1. Set the **Payment format** and **Description** fields.
 1. Select the **Generic electronic export format** checkbox.
@@ -63,9 +88,9 @@ For each bank account that you want to generate positive pay information for, as
 > [!IMPORTANT]
 > Enter a date in the **Positive pay start date** field. If you leave this field blank, the first positive pay file that is generated includes all checks that are created for this bank account.
 
-1. Go to **Cash and bank management > Banks accounts > Bank accounts**.
+1. Go to **Cash and bank management** > **Banks accounts** > **Bank accounts**.
 1. Open the bank account.
-1. On the **General** FastTab, set the **Positive pay format** field to the format that you created earlier.
+1. On the **General** Fast Tab, set the **Positive pay format** field to the format that you created earlier.
 1. Set the **Positive pay start date** field to the current date.
 
 ## Assign a number sequence for positive pay files
@@ -83,11 +108,37 @@ You can generate a positive pay file for a single legal entity and a single bank
 
 ## Generate a positive pay file for multiple bank accounts
 
-To generate a positive pay file for multiple bank accounts, use the **Positive pay file** periodic task. Select the positive pay format for the file, and specify whether to generate the file for all legal entities or for a selected legal entity. You can also generate the positive pay file for all bank accounts that use the specified positive pay format or for a selected bank account. In the **Cut-off date** field, enter the last check date to include in the positive pay file. The file includes all checks that aren't included in a positive pay file by the end of this check date.
+To generate a positive pay file for multiple bank accounts, use the **Positive pay file** periodic task.
+
+1. Go to **Cash and bank management > Periodic tasks**.
+2. Select the Positive Pay generation action.
+3. Select the **Positive Pay format**.
+4. Choose whether to process all companies or one company.
+5. If one company is selected, choose whether to process all applicable bank accounts or one bank account.
+6. Enter or confirm the **cutoff date**.
+7. Choose one of the following:
+   - Run immediately.
+   - Enable background processing and set the batch schedule or recurrence.
+8. Confirm the operation.
+9. Review the resulting Positive Pay record, batch history, and configured output destination as applicable.
+
+## Generate payroll positive pay
+
+To generate the payroll positive pay file, follow these steps:
+
+1. Go to **Payroll** > **Pay statement processing** > **Payroll positive pay**. The process resolves the payroll bank account from payroll payment-method configuration.
+2. Review the preselected bank account and positive pay format.
+3. Enter or confirm the cutoff date.
+4. Run immediately or configure background processing.
+5. Confirm the operation.
+
+If payroll configuration doesn't identify a valid bank account and positive pay format, the process can't start.
 
 ## View the results of positive pay file generation
 
 After the system generates the positive pay file, you can view the results on the **Positive pay file summary** page. To view the details of the individual checks, go to the **Positive pay file details** page.
+
+For batch execution, the output files are available in the **Electronic Reporting (ER) destination** location.
 
 ## Confirm a positive pay file
 
