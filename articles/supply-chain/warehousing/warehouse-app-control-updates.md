@@ -5,7 +5,8 @@ author: pefreita
 ms.author: pefreita
 ms.reviewer: kamaybac
 ms.topic: concept-article
-ms.date: 09/29/2026
+ms.date: 10/26/2026
+ai-usage: ai-assisted
 ms.search.form:
 ms.custom:
   - bap-template
@@ -21,7 +22,7 @@ For most deployments, you should install the app from an app store and let it up
 
 ## Targeted release schedule (dates subject to change)
 
-Each release becomes available in Microsoft App Center first. Progressive rollout to the app stores (Microsoft Store, Google Play, and the Apple App Store) starts later. Because rollout is gradual, a release might not appear on every device on the date that rollout begins. Availability in each store can take several additional days to reach all users. iOS releases can arrive later still because of Apple App Store review times.
+Each release becomes available in Microsoft App Center on its publication date. Progressive rollout to the app stores (Microsoft Store, Google Play, and the Apple App Store) can start on the same day or later, as shown in the following table. Because rollout is gradual, a release might not appear on every device on the date that rollout begins. Availability in each store can take several additional days to reach all users. iOS releases can arrive later still because of Apple App Store review times.
 
 The following table lists the current and scheduled releases of the Warehouse Management mobile app. It includes the following columns:
 
@@ -30,6 +31,8 @@ The following table lists the current and scheduled releases of the Warehouse Ma
 
 | Release version | Availability in Microsoft App Center | App store rollout begins | Status |
 |---|---|---|---|
+| 4.3.0.0 | Week of November 2, 2026 | To be determined | Scheduled |
+| 4.2.1.0 | October 26, 2026 | October 26, 2026 | Released |
 | 4.2.0.0 | September 29, 2026 | October 6, 2026 | Released |
 | 4.1.6.0 | September 2, 2026 | Complete | Released |
 | 4.1.5.0 | August 11, 2026 | Skipped | Released |
@@ -45,7 +48,7 @@ For a list of features and fixes included in each release, see [What's new or ch
 
 ## Plan your own update process
 
-The schedule gives you a window between App Center availability and app store rollout that you can use for validation. How you use that window is up to you. Every organization has a different device fleet, mobile device management (MDM) solution, and internal change management policy, so develop the process that fits your organization best. The following points are a starting point, not a required process.
+Use the time window between the App Center availability date and the app store rollout start date for validation. How you use that window is up to you. Every organization has a different device fleet, mobile device management (MDM) solution, and internal change management policy, so develop the process that fits your organization best. The following points are a starting point, not a required process.
 
 - **Track upcoming releases** – Check this schedule and [What's new or changed in the Warehouse Management mobile app](warehouse-app-whats-new.md) so that no version reaches your devices unannounced.
 - **Review the release notes** – Compare each release against the flows, device models, scanners, and authentication configuration that matter most to your operation.
