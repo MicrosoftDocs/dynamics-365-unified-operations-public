@@ -4,7 +4,7 @@ description: Learn how to run Warehouse management only mode with external share
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: overview
-ms.date: 09/29/2026
+ms.date: 09/30/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSSourceSystem, WHSEWManagementSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage, WHSEWInboundShipmentOrderRequest, WHSEWOutboundShipmentOrderRequest, WHSEWOutboundShipmentOrderUpdate, WHSInventoryOwner, WHSInventoryUpdateLog, WHSExternalInventoryAdjustment, WHSEWInboundShipmentOrderUpdate
@@ -61,7 +61,7 @@ The following illustration highlights the elements of the inbound process when y
 
 :::image type="content" source="media/wms-only-shared-warehouse-inbound-process.svg" alt-text="Screenshot of the inbound process for Warehouse management only mode." lightbox="media/wms-only-shared-warehouse-inbound-process.svg":::
 
-Here's a high-level description of the inbound process. Steps that start with *USMF* are done by a sales subsidiary. Steps that start with *USSW* are done by the warehousing entity.
+Here's a high-level description of the inbound process. A sales subsidiary completes steps that start with *USMF*. The warehousing entity completes steps that start with *USSW*.
 
 1. *USMF:* Create purchase orders and release them to the warehouse. The system then creates *external warehouse inbound shipment order requests*. As a result, inbound shipment order messages are delivered to the *USSW* legal entity. Process purchase orders that you release to the externally managed warehouse via a periodic background process. (Set up this background process at **Warehouse management** > **Periodic tasks** > **Create external warehouse inbound shipment order requests**.) Alternatively, manually process them by using the **Release to warehouse** option on the purchase orders page.
 1. *USSW:* The warehousing entity processes the inbound shipment order messages. As a result of this processing, *inbound shipment orders* are created.
@@ -86,6 +86,8 @@ Here's a high-level description of the outbound process. A sales subsidiary perf
 1. *USSW:* Create inventory reservations either manually or automatically (depending on your configuration).
 1. *USSW:* Release the orders for further warehouse processing, either manually or automatically. If you use outbound load planning processes, you can create loads by using the Outbound load planning workbench before you release the orders.
 1. *USSW:* Depending on the setup of your [wave template](wave-templates.md) definitions, create and release warehouse work immediately.
+1. *USSW:* In Supply Chain Management version 10.0.50 and later, when the release creates warehouse work, send an external warehouse outbound shipment order update to *USMF*. Each line contains the cumulative quantity for which work was created.
+1. *USMF:* Process the update and record the work-created quantities on the related shipment load lines. The update doesn't ship the shipment or change its processing ownership.
 1. *USSW:* Process outbound warehouse work, and update the status of the related outbound shipment order line transactions to *Picked*.
 1. *USSW:* Outbound ship confirm the loads. As a result, generate external warehouse outbound shipment order updates for *USMF*.
 1. *USMF:* During the processing of the external warehouse outbound shipment order updates, update outbound shipment data and the related sales order line transactions. The transactions become *Picked*. This update allows further processing of the packing slip and invoice. Turn on automatic [message processing](../message-processor/message-processor.md) for the *External warehouse shipment order updates* message queue.
@@ -98,6 +100,8 @@ For a more detailed description of this process and the related processes, go to
 
 > [!NOTE]
 > When you release orders or loads to the warehouse in the *USMF* legal entity, the system locks the created shipments with **Outbound shipment processing ownership** set to *External* until order data from the *USSW* legal entity is returned. If order data isn't returned, or if other issues occur, you can get update rights for the shipments by selecting the **Claim processing ownership** action on the shipments. Only admin roles should be granted permission to use this action.
+>
+> In Supply Chain Management version 10.0.50 and later, if *USMF* has processed a work-started update and recorded a work-created quantity, a confirmation message asks whether you want to claim processing ownership. The default answer is **No**. If you select **No**, processing ownership and the recorded quantities remain unchanged. If you select **Yes**, the system changes processing ownership to *Internal* and clears the recorded work-created quantities. The claim doesn't cancel or reconcile work in *USSW*. Coordinate the change with the warehouse operator before you claim ownership.
 
 ## Transfer orders (shared warehouse)
 
