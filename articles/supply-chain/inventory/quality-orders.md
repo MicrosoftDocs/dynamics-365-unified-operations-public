@@ -190,6 +190,10 @@ Use the following buttons on the Action Pane of the **Quality orders** page to v
 - **Inquiries > Non conformances** – Open a page where you can view any nonconformances that are related to the quality order.
 - **Inventory** – The commands on this menu are common across all inventory transactions. Use them to view or update details such as transactions, on-hand inventory, reservations, and marking.
 
+### Route quality orders for approval
+
+If your organization requires a second person to review test results before the material is released, you can route quality orders through an approval workflow instead of validating them directly. Learn more in [Quality order approval workflows (preview)](quality-order-approval-workflow.md).
+
 ### Create cases related to quality orders
 
 You can create cases that are related to quality orders. This way, you can track details about issues and work toward a resolution. You can use the workflow features of case management to route a case through a predefined business process to obtain additional approvals or get more information about a specific issue. You can also use the knowledge articles feature to create a knowledge base of resolutions for common issues.

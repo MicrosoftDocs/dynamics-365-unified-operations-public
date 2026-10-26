@@ -1797,6 +1797,8 @@
           href: inventory/quality-acceptance-sampling.md
         - name: Work with quality orders
           href: inventory/quality-orders.md
+        - name: Set up and use quality order approval workflows (preview)
+          href: inventory/quality-order-approval-workflow.md
         - name: Customer specific certificate of analysis (COA)
           href: inventory/quality-customer-specific-coa.md
         - name: Inspect the quality of goods
@@ -1821,6 +1823,8 @@
           href: inventory/capa-set-up-case-components.md
         - name: Manage CAPA cases
           href: inventory/capa-manage-cases.md
+        - name: Set up and use CAPA case approval workflows (preview)
+          href: inventory/capa-approval-workflow.md
       - name: Inventory operations
         items:
         - name: Inventory journals

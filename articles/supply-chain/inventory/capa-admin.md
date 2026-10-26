@@ -33,7 +33,7 @@ Before users can set up and use CAPA features, you must configure a few administ
 1. On the **Quality management** tab, set the following fields:
 
     - **CAPA administrator** – Select the worker who should administer the CAPA program. For each [CAPA worker group](capa-set-up-case-components.md), the CAPA administrator that you specify here can be selected as an automatic group member and/or a default worker.
-    - **Use case management workflow** – Select whether the case management workflow can work with CAPA cases.
+    - **Use case management workflow** – Select whether the generic case management workflow can work with CAPA cases. If the *CAPA case approval workflow* feature is turned on, CAPA cases use the CAPA case approval workflow instead, and this setting has no effect. Learn more in [Set up and use CAPA case approval workflows (preview)](capa-approval-workflow.md).
     - **Require CAPA type** – Set this option to *Yes* if users must specify a CAPA type when they create a CAPA case. If you set this option to *No*, a CAPA type is optional.
     - **Empty case category** – Select the category to apply to new, empty cases. You must select a value if you want to use CAPA.
     - **Require root cause** – Set this option to *Yes* if users must specify a root cause when they create a CAPA case. If you set this option to *No*, a root cause is optional.
@@ -56,6 +56,9 @@ To get started quickly, you can load a set of standard CAPA processes and worker
 You can set up the CAPA features to require an electronic signature from any user who closes, cancels, and/or reopens a CAPA case.
 
 An electronic signature confirms the identity of the person who is about to start or approve a computing process. In some industries, an electronic signature is as legally binding as a handwritten one.
+
+> [!NOTE]
+> You can't use [CAPA case approval workflows](capa-approval-workflow.md) while an electronic signature is required for CAPA case status changes.
 
 ### Set up the electronic signature feature
 
