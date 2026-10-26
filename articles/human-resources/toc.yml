@@ -515,6 +515,8 @@ items:
         href: hr-personnel-set-up-injury-illness-information.md
       - name: Maintain employee injury and illness information
         href: hr-personnel-maintain-employee-injury-illness-information.md
+      - name: Manage goal weights and weighted achievement
+        href: goal-weights-weighted-achievement.md
       - name: Configure job-based filtering for performance goals
         href: job-based-filter.md
     - name: Recruiting
