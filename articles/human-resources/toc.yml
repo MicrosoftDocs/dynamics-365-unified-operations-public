@@ -15,6 +15,8 @@ items:
         items:
         - name: What's new overview
           href: whats-new-home-page.md
+        - name: Human Resources 10.0.50
+          href: ./get-started/hr-whats-new-10-0-50.md
         - name: Human Resources 10.0.49
           href: ./get-started/hr-whats-new-10-0-49.md
         - name: Human Resources 10.0.48
