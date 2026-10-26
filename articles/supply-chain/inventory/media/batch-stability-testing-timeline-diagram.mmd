@@ -1,0 +1,13 @@
+flowchart LR
+    P["🟦 Jan 1<br/><b>Last passed</b><br/><br/>(Anchor)"]:::anchor
+    E["🟩 Mar 22<br/><b>Early window opens</b><br/><br/><i>Start of test window</i><br/>creates order here"]:::create
+    D["🟩 Apr 1<br/><b>Due date</b><br/><br/><i>End of interval</i><br/>creates order here"]:::create
+    L["🟥 Apr 6<br/><b>Late / grace edge</b><br/><br/>after this → overdue<br/>(no order)"]:::overdue
+
+    P -- "Interval – Early window<br/>(80 days)" --> E
+    E -. "Early window<br/>(10 days)" .-> D
+    D -. "Late window<br/>(5 days)" .-> L
+
+    classDef anchor fill:#1b4f8a,stroke:#0d2a4d,color:#ffffff,stroke-width:2px;
+    classDef create fill:#1f7a43,stroke:#0f3d21,color:#ffffff,stroke-width:2px;
+    classDef overdue fill:#a12a1c,stroke:#5d160e,color:#ffffff,stroke-width:2px;

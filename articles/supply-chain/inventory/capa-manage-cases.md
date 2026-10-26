@@ -142,6 +142,10 @@ The workflow for CAPA processes consists of the following steps.
 > 1. In the rightmost pane, select the **Related information** button :::image type="icon" source="media/related-information-button.png" border="false"::: to open the **Related information** FactBox pane.
 > 1. On the **Process tree** FastTab, review the list of stages in the current process. You can expand any stage that has been started to view the activities that belong to it. Select and hold (or right-click) an activity to open its details.
 
+## Submit a CAPA case for approval
+
+If your organization uses a CAPA case approval workflow, submit the case for approval instead of closing it manually. The system closes the case automatically after the workflow completes. The **Approval status** field shows the progress of the case. Learn more in [CAPA case approval workflows](capa-approval-workflow.md).
+
 ## Analyze CAPA case statistics
 
 Microsoft Dynamics 365 Supply Chain Management provides graphical displays that you can use to analyze CAPA case generation and progress. Use the statistics to identify trends, frequent issues, bottlenecks, and areas for improvement in your CAPA processes.

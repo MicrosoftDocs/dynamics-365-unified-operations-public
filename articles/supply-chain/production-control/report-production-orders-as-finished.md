@@ -33,4 +33,6 @@ The report as finished process has the following characteristics:
 
 You can set a production order to report as finished through the standard production order update function, or through the route and job card journals, or through the  **Report as finished** journal. Workers can also use the [production floor execution interface](production-floor-execution-use.md) to update the stage to *Reported as finished* when they report on the last job of the production order. Finally, you can add the **Report as finished** option as a process for the Warehouse Management mobile app.  
 
+To automatically generate lines in a new report-as-finished journal based on registered receipts, quantities, reversals, or tracked-component matches, see [Create report-as-finished journal lines from a proposal (preview)](create-report-finished-journal-lines.md).
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

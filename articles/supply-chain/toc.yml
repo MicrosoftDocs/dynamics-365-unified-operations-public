@@ -14,6 +14,8 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.50 (December 2026)
+          href: get-started/whats-new-scm-10-0-50.md
         - name: Supply Chain Management 10.0.49 (September 2026)
           href: get-started/whats-new-scm-10-0-49.md
         - name: Supply Chain Management 10.0.48 (June 2026)
@@ -1797,6 +1799,10 @@
           href: inventory/quality-acceptance-sampling.md
         - name: Work with quality orders
           href: inventory/quality-orders.md
+        - name: Quality order approval workflows (preview)
+          href: inventory/quality-order-approval-workflow.md          
+        - name: Batch stability testing (preview)
+          href: inventory/quality-batch-stability-testing.md
         - name: Customer specific certificate of analysis (COA)
           href: inventory/quality-customer-specific-coa.md
         - name: Inspect the quality of goods
@@ -1821,6 +1827,8 @@
           href: inventory/capa-set-up-case-components.md
         - name: Manage CAPA cases
           href: inventory/capa-manage-cases.md
+        - name: CAPA case approval workflows (preview)
+          href: inventory/capa-approval-workflow.md
       - name: Inventory operations
         items:
         - name: Inventory journals
@@ -3177,6 +3185,12 @@
             href: production-control/release-production-orders.md
           - name: Report production orders as finished
             href: production-control/report-production-orders-as-finished.md
+          - name: Create report-as-finished journal lines from a proposal (preview)
+            href: production-control/create-report-finished-journal-lines.md            
+          - name: Flexible production scrap reason codes (preview)
+            href: production-control/production-scrap-reason-codes.md
+          - name: Create report-as-finished journal lines from a proposal (preview)
+            href: production-control/create-report-finished-journal-lines.md
           - name: Register and track batch/serial numbers for finished products and their components
             href: production-control/tracked-components.md
           - name: Report as finished from the job card device
@@ -3431,6 +3445,76 @@
         href: rebate-management/process-review-post.md
       - name: Manage deductions using the deduction workbench
         href: rebate-management/deduction-workbench.md
+    - name: Rental management (preview)
+      items:
+      - name: About the rental management preview
+        href: rental-management/rental-management-preview.md
+      - name: Rental management overview
+        href: rental-management/rental-management-overview.md
+      - name: Set up rental management
+        items:
+        - name: Rental management setup overview
+          href: rental-management/set-up-rental-overview.md
+        - name: Configure prerequisites for rental management
+          href: rental-management/set-up-rental-prerequisites.md
+        - name: Configure inventory and location settings
+          href: rental-management/configure-inventory-location-settings.md
+        - name: Set up billing periods and scenarios
+          href: rental-management/set-up-billing-periods-scenarios.md
+        - name: Set up rental reference data
+          href: rental-management/set-up-rental-reference-data.md
+        - name: Set up rental templates
+          href: rental-management/set-up-rental-templates.md
+        - name: Configure rental parameters
+          href: rental-management/configure-rental-parameters.md
+        - name: Set up rental rates and discounts
+          href: rental-management/set-up-rental-rates-discounts.md
+      - name: Use the Rental management workspace
+        href: rental-management/rental-management-workspace.md
+      - name: Fleet management
+        items:
+        - name: Manage fleet item master data
+          href: rental-management/manage-equipment-master-data.md
+        - name: Change fleet item master data
+          href: rental-management/change-fleet-item-master-data.md
+        - name: Add fleet items to the rental fleet
+          href: rental-management/add-equipment-to-rental-fleet.md
+        - name: Sell fleet items from the rental fleet
+          href: rental-management/sell-equipment-from-rental-fleet.md
+        - name: Track rental fleet utilization
+          href: rental-management/track-rental-fleet-utilization.md
+      - name: Rental workflow
+        items:
+        - name: Create rental quotations and contracts
+          href: rental-management/create-rental-quotations-contracts.md
+        - name: Check fleet item availability
+          href: rental-management/check-equipment-availability.md
+        - name: Reserve fleet items
+          href: rental-management/reserve-rental-equipment.md
+        - name: Manage rental attachments and bulk fleet items
+          href: rental-management/manage-rental-attachments.md
+        - name: Ship and receive fleet items
+          href: rental-management/ship-receive-rental-equipment.md
+        - name: Invoice rental contracts
+          href: rental-management/invoice-rental-contracts.md
+        - name: Call off and close rental contracts
+          href: rental-management/call-off-close-rental-contracts.md
+        - name: Sell accessories and consumables
+          href: rental-management/sell-accessories-consumables.md
+      - name: Special cases
+        items:
+        - name: Manage fleet item swaps, substitutions, and transfers
+          href: rental-management/manage-equipment-swaps-substitutions-transfers.md
+        - name: Handle stand-down credits and concessions
+          href: rental-management/handle-stand-down-credits-concessions.md
+      - name: Customers and finance
+        items:
+        - name: Manage customer and prospect records
+          href: rental-management/manage-customer-prospect-records.md
+        - name: Understand rental management financial integration
+          href: rental-management/understand-rental-financial-integration.md
+        - name: Run rental management periodic jobs
+          href: rental-management/run-rental-periodic-jobs.md
     - name: Sales and marketing
       items:
       - name: Sales and marketing overview
@@ -3439,6 +3523,8 @@
         items:
         - name: Order promising
           href: sales-marketing/delivery-dates-available-promise-calculations.md
+        - name: Exclude purchase, production, or inbound transfer supply from ATP calculations (preview)
+          href: sales-marketing/available-to-promise-supply-exclusions.md
         - name: Calculate sales order delivery dates using CTP
           href: master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md
         - name: Order entry deadlines
@@ -3485,6 +3571,8 @@
           href: sales-marketing/tasks/confirm-sales-orders.md
         - name: Calculate sales totals
           href: sales-marketing/calculate-sales-totals.md
+        - name: Default the sales responsible worker from the customer
+          href: sales-marketing/default-sales-responsible-from-customer.md
         - name: Pay-by-link payment with the Dynamics 365 Payment Connector for Adyen (preview)
           href: sales-marketing/pay-by-link-with-adyen-connector.md
         - name: Sales order FAQs
@@ -4513,6 +4601,8 @@
           href: warehousing/wms-only-mode-external-erp.md
         - name: Warehouse management only mode with external shared warehouses
           href: warehousing/wms-only-mode-external-shared-warehouse.md
+        - name: Despatch advice for transfer orders to external shared warehouses
+          href: warehousing/wms-only-mode-transfer-order-despatch-advice.md
         - name: Exchange data between systems
           href: warehousing/wms-only-mode-exchange-data.md
         - name: Enable and configure warehouse management only mode

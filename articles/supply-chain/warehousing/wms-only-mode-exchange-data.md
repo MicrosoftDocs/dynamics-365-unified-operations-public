@@ -4,7 +4,7 @@ description: Learn how to exchange data and business events between systems in W
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 07/27/2026
+ms.date: 10/26/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage, WHSConsigner, WHSConsignerGroup, WHSConsignee, WHSConsignerGroup, WHSSourceSystemItem, WHSSourceSystemInventoryStatus, EcoResStorageDimensionGroup, InventItemGroup, InventModelGroup, EcoResStorageDimensionGroup, EcoResTrackingDimensionGroup, WHSReservationHierarchy, UnitOfMeasure, WHSUOMSeqGroupTable, WHSSourceSystemProductMessage, WHSSourceSystemProductVariantMessage, WHSSourceSystemProductDocumentAttachmentMessage, WHSSourceSystemProductSpecificUnitOfMeasureConversionMessage, WHSSourceSystemProductBarcodeMessage, WHSSourceSystemProductGlobalTradeItemNumberMessage
@@ -24,7 +24,7 @@ You can use many different integration methodologies for these three categories.
 
 ## <a name="master-data"></a>Master and reference data
 
-To keep communication consistent, both systems need to sync and have access to several types of master and reference data. One example is the product master data. You can import this type of data into Supply Chain Management by using the following messages that relate to product master data:
+To keep communication consistent, both systems need to sync and have access to several types of master and reference data. One example is the product master data. Import this type of data into Supply Chain Management by using the following messages that relate to product master data:
 
 - `WHSSourceSystemProductMessageEntity` – Create products and released products, including product masters for variants.
 - `WHSSourceSystemProductVariantMessageEntity` – Create variants for product masters where **ProductSubtype** = *ProductMaster*.
@@ -34,7 +34,7 @@ To keep communication consistent, both systems need to sync and have access to s
 - `WHSSourceSystemProductDocumentAttachmentMessageEntity` – Attach product documents, product images, and so on.
 
 > [!TIP]
-> When you import products, use [record templates](../../fin-ops-core/fin-ops/data-entities/use-record-template-new-record.md) to include the **TemplateName** value in your messages. You can also make sure that the required reference fields for the released products are assigned.
+> When you import products, use [record templates](../../fin-ops-core/fin-ops/data-entities/use-record-template-new-record.md) to include the **TemplateName** value in your messages. You can also ensure that the required reference fields for the released products are assigned.
 
 Like shipment orders, the system validates these messages during message processing. The process automatically links the product information to a [source system record](wms-only-mode-setup.md#source-systems) through the *Source system items* entity. The external system can use [business events](#business-events) to monitor how the status of messages changes during message processing.
 
@@ -48,13 +48,13 @@ You can mark only one [source system record](wms-only-mode-setup.md#source-syste
 >
 > When you use the Warehouse Management mobile app, you can use the **Source system item number** value to look up the **Item/variant number** value that's used internally.
 
-You can import the required master data into Supply Chain Management by using [data entities](../../fin-ops-core/dev-itpro/data-entities/data-entities.md). The following types of master and reference data are required to create the **Release product/Item number** value that's used in warehouse management processes:
+Import the required master data into Supply Chain Management by using [data entities](../../fin-ops-core/dev-itpro/data-entities/data-entities.md). The following types of master and reference data are required to create the **Release product/Item number** value that's used in warehouse management processes:
 
-- **Item model groups** – Each released product must be assigned to an item model group in Supply Chain Management. Therefore, at least one group must be available. The group can control business processes for batch-tracked items. The following settings are recommended for every item model group that's used with Warehouse management only mode. These settings eliminate the need to set up any costing data for the products.
+- **Item model groups** – Assign each released product to an item model group in Supply Chain Management. Therefore, at least one group must be available. The group controls business processes for batch-tracked items. The following settings are recommended for every item model group that's used with Warehouse management only mode. These settings eliminate the need to set up any costing data for the products.
 
     - **Inventory model** – Set this field to *Non-valuated*.
-    - **Post physical inventory** – Turn off this option. You can select this option only if you've already set up at least one [source system record](wms-only-mode-setup.md).
-    - **Post financial inventory** – Turn off this option. You can select this option only if you've already set up at least one [source system record](wms-only-mode-setup.md).
+    - **Post physical inventory** – Turn off this option. You can select this option only if you already set up at least one [source system record](wms-only-mode-setup.md).
+    - **Post financial inventory** – Turn off this option. You can select this option only if you already set up at least one [source system record](wms-only-mode-setup.md).
 
 - **Item groups** – Use these groups to organize business processes, especially when you use [product filter codes](filters-and-filter-codes.md). No account setup is required when you use *Non-valuated* inventory model groups.
 - **Storage dimension groups** – Enable the use of storage inventory dimensions such as sites, warehouses, locations, and license plates. Be sure to enable the **Use warehouse management processes** parameter.
@@ -68,7 +68,7 @@ You can import the required master data into Supply Chain Management by using [d
 
 ### View and maintain source system product messages
 
-In Warehouse management only mode, you can view, update, and create product messages. This capability lets you quickly test integrations during the implementation process. When an externally created message is in a *Failed* message state, you can update field values and assign the updated message back into the message queue. The original message is versioned and non-editable. To view and maintain the messages, go to one of the following pages:
+In Warehouse management only mode, you can view, update, and create product messages. This capability helps you quickly test integrations during the implementation process. When an externally created message is in a *Failed* message state, you can update field values and assign the updated message back into the message queue. The original message is versioned and non-editable. To view and maintain the messages, go to one of the following pages:
 
 - **Warehouse management** > **Source system products** > **Source system product messages**
 - **Warehouse management** > **Source system products** > **Source system product variant messages**
@@ -77,7 +77,7 @@ In Warehouse management only mode, you can view, update, and create product mess
 - **Warehouse management** > **Source system products** > **Source system product global trade item number messages**
 - **Warehouse management** > **Source system products** > **Source system product specific unit of measure conversion messages**
 
-The **Warehouse integration monitoring** workspace lets you track the number of source system product messages that are *Queued* and *Failed*.
+Use the **Warehouse integration monitoring** workspace to track the number of source system product messages that are *Queued* and *Failed*.
 
 > [!NOTE]
 > You can set each source system to either allow or prevent users from manually creating messages on the listed pages. Open the relevant [source system](wms-only-mode-setup.md#source-systems) record, and set the **Enable manual source system product message creation** option to *Yes* to allow manual messages or *No* to prevent them. Unlike messages that are imported via integration, manually created messages aren't versioned.
@@ -173,11 +173,13 @@ Use inbound and outbound shipment order messages to inform Supply Chain Manageme
 > [!NOTE]
 >
 > - You can update an inbound or outbound shipment order by submitting a message that includes a matching order number and source system in the header data.
-> - You can delete an inbound or outbound shipment order by submitting a message that includes a matching order number and source system in the header data and omits all line data.
+> - You can delete an outbound shipment order by submitting a message that includes a matching order number and source system in the header data and omits all line data.
+> - For an inbound shipment order, a replacement message that omits all line data deletes the existing order if the message has no attached documents. An empty attachment record isn't considered an attached document and doesn't prevent deletion.
+> - If the inbound replacement message has an attached document, the order header is retained, omitted lines are deleted, and the document is copied to the retained order. These rules apply to messages created through both *Manual entry* and *Integration*.
 
-Messages between systems are exchanged by using lightweight *inbound shipment order* and *outbound shipment order* documents. These documents eliminate the need to use several other types of documents that Supply Chain Management typically uses (such as sales orders, purchase orders, and transfer orders). Therefore, they have several benefits. For example, they simplify integration with enterprise resource planning (ERP) and order management systems. They also make Supply Chain Management warehouse management functionality available to a wide range of external ERP and order management systems.
+Systems exchange messages by using lightweight *inbound shipment order* and *outbound shipment order* documents. These documents eliminate the need to use several other types of documents that Supply Chain Management typically uses, such as sales orders, purchase orders, and transfer orders. Therefore, they have several benefits. For example, they simplify integration with enterprise resource planning (ERP) and order management systems. They also make Supply Chain Management warehouse management functionality available to a wide range of external ERP and order management systems.
 
-You can exchange inbound and outbound shipment order messages by using [Dataverse](/power-platform/admin/data-integrator). Alternatively, you can exchange these messages through [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md) by using shipment order message entities. You can also use the [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md) import process. For example, you can use the *Inbound shipment order messages composite entity* ()`WHSInboundShipmentOrderMessageCompositeEntity`) and *Outbound shipment order messages composite entity* (`WHSOutboundShipmentOrderMessageCompositeEntity`).
+You can exchange inbound and outbound shipment order messages by using [Dataverse](/power-platform/admin/data-integrator). Alternatively, you can exchange these messages through [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md) by using shipment order message entities. You can also use the [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md) import process. For example, you can use the *Inbound shipment order messages composite entity* (`WHSInboundShipmentOrderMessageCompositeEntity`) and *Outbound shipment order messages composite entity* (`WHSOutboundShipmentOrderMessageCompositeEntity`).
 
 You can attach documents to inbound and outbound shipment order messages by using the *Inbound shipment order message document attachment entity* (`WHSInboundShipmentOrderMessageDocumentAttachmentEntity`) and *Outbound shipment order message document attachment entity* (`WHSOutboundShipmentOrderMessageDocumentAttachmentEntity`).
 
@@ -249,6 +251,19 @@ Use external warehouse inbound and outbound shipment order updates to send shipm
 - `WHSEWOutboundShipmentOrderUpdateEntity`
 - `WHSEWOutboundShipmentOrderLineUpdateEntity`
 - `WHSEWOutboundShipmentOrderLineInventDimUpdateEntity`
+
+#### Outbound work-started updates
+
+In Supply Chain Management version 10.0.50 and later, the external shared warehouse sends a work-started update to the order-owning legal entity when release to warehouse creates picking work. The update uses `WHSEWOutboundShipmentOrderUpdateEntity` and `WHSEWOutboundShipmentOrderLineUpdateEntity`. The `WorkCreatedQty` field on each line contains the cumulative quantity (in the item's inventory unit) for which work was created.
+
+When the order-owning legal entity processes the update, it records the work-created quantities on the matching shipment load lines and changes the update status to *Accepted*. The update doesn't ship the shipment or change its processing ownership. If work is canceled and the order is released again, a new work-started update replaces the stored quantity instead of adding to it.
+
+The source system determines how the picking-started notification is sent:
+
+- **If the source system is a legal entity in the same Supply Chain Management environment** – The system sends the work-started update directly to the order-owning legal entity and doesn't raise `WHSOutboundNotificationCreatedBusinessEvent`.
+- **If the source system is an external system** – The system raises `WHSOutboundNotificationCreatedBusinessEvent` with the notification status `PickingStarted`. Use `WHSOutboundNotificationEntity`, `WHSOutboundShipmentNotificationEntity`, and `WHSOutboundShipmentLineNotificationEntity` to read the notification details.
+
+When a later shipment update is processed, the stored work-created quantity changes to the quantity that was actually picked. If processing ownership is claimed before a queued work-started update is processed, the message processor changes the update's processing status to *Canceled*. The canceled update doesn't modify the shipment. If ownership is claimed after the work-started update was processed, the system clears the stored work-created quantity. Claiming ownership doesn't cancel work in the external warehouse.
 
 ## Unannounced sales returns from another warehouse management system
 

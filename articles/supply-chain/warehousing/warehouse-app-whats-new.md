@@ -6,7 +6,7 @@ ms.author: pefreita
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: whats-new
-ms.date: 09/02/2026
+ms.date: 10/26/2026
 ms.custom:
   - bap-template
   - sfi-ropc-nochange
@@ -25,6 +25,15 @@ Starting with version 4.1.1.0, every V4 and later release is tagged with its pub
 
 > [!TIP]
 > For upcoming release dates, see [Warehouse Management mobile app release schedule](warehouse-app-control-updates.md). That article also describes optional ways to validate a release before it reaches your warehouse floor.
+
+## Release notes for version 4.2.1.0 (October 26, 2026)
+
+Version 4.2.1.0 is a hotfix release. It's available in Microsoft App Center on October 26, 2026, and progressive rollout to the app stores begins on the same day.
+
+### Bug fixes in version 4.2.1.0
+
+- **Work list detours** – Fixed an issue where the **Back** button didn't work in work list detours.
+- **Sign out** – Fixed an issue where signing out with automatic sign-in enabled didn't clear the work user session on the server.
 
 ## Release notes for version 4.1.6.0 (September 2, 2026)
 

@@ -1,0 +1,20 @@
+flowchart LR
+    Start(["For each batch of<br/>each in-scope item"]) --> Filter{"Matches the<br/>filter?"}
+    Filter -- yes --> Disp{"Skip time-based<br/>retesting?"}
+    Disp -- no --> Exp{"Batch<br/>expired?"}
+    Exp -- no --> OnHand{"On-hand<br/>&gt; 0?"}
+    OnHand -- yes --> Early{"now &lt;<br/>earliest?"}
+    Early -- no --> Late{"now &gt;<br/>latest?"}
+    Late -- no --> Unres{"Open/Failed<br/>order exists?"}
+    Unres -- no --> Create["✅ Create 1 QO<br/>&amp; stamp lineage"]:::create
+
+    Filter -- no --> S1["Skip"]:::skip
+    Disp -- yes --> S2["Skip"]:::skip
+    Exp -- yes --> S3["Skip"]:::skip
+    OnHand -- no --> S4["Skip<br/>(nothing to sample)"]:::skip
+    Early -- yes --> S5["Skip<br/>(too early)"]:::skip
+    Late -- yes --> S6["Skip<br/>(overdue)"]:::skip
+    Unres -- yes --> S7["Skip<br/>(one-in-flight /<br/>failed pause)"]:::skip
+
+    classDef skip fill:#a12a1c,stroke:#5d160e,color:#ffffff,stroke-width:2px;
+    classDef create fill:#1f7a43,stroke:#0f3d21,color:#ffffff,stroke-width:2px;

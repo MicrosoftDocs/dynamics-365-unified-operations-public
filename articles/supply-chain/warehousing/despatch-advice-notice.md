@@ -28,6 +28,8 @@ A *despatch advice* is an inbound ASN that you import as a *despatch advice mess
 > [!NOTE]
 > The *Inbound ASN* data entities remain available for importing ASNs directly, without the message processor. Learn more in [Import inbound ASNs through data entities](import-asn-data-entity.md).
 
+<a name="message-structure"></a>
+
 ## Despatch advice message structure
 
 A despatch advice message is a composite document that maps shipment details to warehouse records. It uses three entities that you import together through the *Despatch advice composite* entity (`WHSDespatchAdviceCompositeEntity`).
@@ -37,6 +39,8 @@ A despatch advice message is a composite document that maps shipment details to 
 | Header | `WHSDespatchAdviceMessageEntity` | The shipment notification, including carrier, weights, and shipper address. Becomes an inbound load and shipment. |
 | Logistic unit | `WHSDespatchAdviceLogisticUnitMessageEntity` | A physical container that's identified by a serial shipping container code (SSCC) or license plate—for example, a pallet, case, or carton. |
 | Line item | `WHSDespatchAdviceLineItemMessageEntity` | A product inside a logistic unit, with its quantity and inventory dimensions. |
+
+<a name="identify-despatch-advice"></a>
 
 ### Identify a despatch advice
 

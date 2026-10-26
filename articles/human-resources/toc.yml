@@ -15,6 +15,8 @@ items:
         items:
         - name: What's new overview
           href: whats-new-home-page.md
+        - name: Human Resources 10.0.50
+          href: ./get-started/hr-whats-new-10-0-50.md
         - name: Human Resources 10.0.49
           href: ./get-started/hr-whats-new-10-0-49.md
         - name: Human Resources 10.0.48
@@ -515,6 +517,10 @@ items:
         href: hr-personnel-set-up-injury-illness-information.md
       - name: Maintain employee injury and illness information
         href: hr-personnel-maintain-employee-injury-illness-information.md
+      - name: Manage goal weights and weighted achievement
+        href: goal-weights-weighted-achievement.md
+      - name: Configure job-based filtering for performance goals
+        href: job-based-filter.md
     - name: Recruiting
       items:
       - name: Overview
