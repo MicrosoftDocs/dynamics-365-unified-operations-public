@@ -1,12 +1,11 @@
 ---
 title: Warehouse and store locator module
 description: Learn how to configure the warehouse and store locator module for cross-legal-entity inventory visibility in Dynamics 365 Commerce.
-author:
-ms.author:
+author: yashabhatia
+ms.author: yashabhatia
 ms.reviewer: mirao
-ms.search.form:
 ms.topic: how-to
-ms.date: 10/13/2026
+ms.date: 10/26/2026
 ms.custom:
   - bap-template
 ---
@@ -18,7 +17,7 @@ ms.custom:
 The warehouse and store locator module helps business-to-business (B2B) buyers find stores and warehouses across legal entities. On a product details page (PDP), buyers can view inventory availability for the selected product or variant. In the site header, buyers can browse locations without selecting a product.
 
 > [!IMPORTANT]
-> The warehouse and store locator module is available as of Dynamics 365 Commerce version 10.0.50. In this release, the module supports inventory and location visibility only. It doesn't select a fulfillment source or support cross-legal-entity order fulfillment. Fulfillment capabilities will be available in a future release.
+> The warehouse and store locator module is available as of Dynamics 365 Commerce version 10.0.50. In this release, the module only supports inventory and location visibility. It doesn't select a fulfillment source or support cross-legal-entity order fulfillment. Fulfillment capabilities might be available in a future release.
 
 ## Prerequisites
 
@@ -26,7 +25,7 @@ To use the warehouse and store locator module, your environment must meet the fo
 
 - You must be running Dynamics 365 Commerce version 10.0.50 or later.
 - The e-commerce site must be associated with a B2B online channel. The module isn't displayed for business-to-consumer (B2C) channels.
-- Cross-legal-entity inventory lookup must be turned on in Commerce site builder. Learn more in [Apply inventory settings](inventory-settings.md).
+- Turn on cross-legal-entity inventory lookup in Commerce site builder. For more information, see [Apply inventory settings](inventory-settings.md).
 - Configure a fulfillment group that contains the stores and warehouses that buyers can view across legal entities. Include the channel's default warehouse in the fulfillment group.
 - Configure latitude and longitude values for each location that you want to display on a map.
 - Configure either the Azure Maps module or the Map module if you want to display locations on a map.
@@ -36,18 +35,18 @@ To use the warehouse and store locator module, your environment must meet the fo
 The warehouse and store locator module has two entry points. Configure a separate module instance for each entry point that you use.
 
 | Entry point | Placement | Product context | Information shown |
-|---|---|---|---|
+| ----------- | --------- | --------------- | ----------------- |
 | **Header** | **Warehouse locator** slot in the header module | No | Stores and warehouses across configured legal entities |
 | **Product detail page** | **Warehouse locator** slot in the buy box module | Yes | Stores, warehouses, and inventory availability for the selected product or variant |
 
-In PDP mode, buyers must select all required product dimensions before the module can retrieve availability for a variant.
+In product detail page mode, buyers must select all required product dimensions before the module can retrieve availability for a variant.
 
 ## Warehouse and store locator module properties
 
 The following table describes the properties that you can configure for the warehouse and store locator module.
 
 | Property name | Value | Description |
-|---|---|---|
+| ------------- | ----- | ----------- |
 | Entry point | **Top ribbon** or **Product detail page** | Determines where the module is used and whether it retrieves product-specific availability. |
 | Dialog heading | Text | Specifies the heading that appears in the locator dialog. |
 | Trigger text | Text | Specifies the text for the button or link that opens the locator. |
@@ -64,7 +63,7 @@ The following table describes the properties that you can configure for the ware
 
 ## Add the module to a header
 
-Add the module to a header to let B2B buyers browse configured stores and warehouses without selecting a product.
+Add the module to a header so B2B buyers can browse configured stores and warehouses without selecting a product.
 
 1. In Commerce site builder, go to **Fragments**, and open the header fragment for the site.
 1. Select the header module.
@@ -96,12 +95,12 @@ The map is optional. If you don't add a map module, the locator displays the loc
 
 You can add one of the following modules to the locator's **Map** slot:
 
-- **Azure Maps** – Uses the channel's Azure Maps configuration.
-- **Map** – Uses the channel's Bing Maps configuration.
+- **Azure Maps**: Uses the channel's Azure Maps configuration.
+- **Map**: Uses the channel's Bing Maps configuration.
 
-The map plots the locations currently shown in the result list. A location that doesn't have valid latitude and longitude values remains in the list but isn't plotted on the map.
+The map plots the locations currently shown in the result list. A location that doesn't have valid latitude and longitude values remains in the list, but isn't plotted on the map.
 
-For Azure Maps, configure the API key in Commerce headquarters and allow the required Azure Maps URLs in the site's content security policy (CSP). Learn more in [Azure Maps integration](store-selector.md#azure-maps-integration) and [Content security policy](dev-itpro/manage-csp.md).
+For Azure Maps, configure the API key in Commerce headquarters and allow the required Azure Maps URLs in the site's content security policy (CSP). For more information, see [Azure Maps integration](store-selector.md#azure-maps-integration) and [Content security policy](dev-itpro/manage-csp.md).
 
 ## Phase 1 behavior and limitations
 
