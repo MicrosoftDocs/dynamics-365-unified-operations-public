@@ -668,6 +668,8 @@
               href: accounts-receivable/archive-printed-invoices.md
             - name: Clean temporary data
               href: accounts-receivable/data-main-job.md
+            - name: Optimized Customer Entities (53 chars)
+              href: accounts-receivable/optimized-customer-data-entities.md
         - name: Budgeting
           items:
             - name: Budgeting home page
