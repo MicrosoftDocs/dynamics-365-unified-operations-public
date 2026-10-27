@@ -1,5 +1,5 @@
 ---
-title: Platform updates for version 10.0.50 of finance and operations apps (October 2026)
+title: Platform updates for version 10.0.50 of finance and operations apps (December 2026)
 description: This article lists the features and enhancements that are included in the platform updates for version 10.0.50 of finance and operations apps.
 author: johnmichalak
 ms.author: johnmichalak
@@ -13,7 +13,7 @@ ms.custom:
 ms.search.region: Global
 ---
 
-# Platform updates for version 10.0.50 of finance and operations apps (October 2026)
+# Platform updates for version 10.0.50 of finance and operations apps (December 2026)
 
 [!INCLUDE [banner](../includes/banner.md)]
 
