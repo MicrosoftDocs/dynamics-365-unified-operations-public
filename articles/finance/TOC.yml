@@ -4915,6 +4915,20 @@
                   href: business-performance-planning/use-excel-addin.md
                 - name: Business performance planning Excel add-in FAQ
                   href: business-performance-planning/bpp-excel-faq.md
+            - name: Demo assets
+              items:
+                - name: Business performance planning demo assets overview
+                  href: business-performance-planning/bpp-demo.md
+                - name: Get started with Business performance planning demo assets
+                  href: business-performance-planning/bpp-get-started-demo.md
+                - name: Power BI demo apps
+                  items: 
+                    - name: Explore the Financial planning and analysis demo 
+                      href: business-performance-planning/bpp-fpa.md
+                    - name: Explore the Retail sales planning demo 
+                      href: business-performance-planning/bpp-retail.md
+                - name: Business performance planning demo assets FAQ
+                  href: business-performance-planning/bpp-demo-faq.md
         - name: Electronic reporting
           items:
             - name: Electronic reporting overview

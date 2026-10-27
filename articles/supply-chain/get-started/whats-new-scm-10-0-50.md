@@ -36,7 +36,7 @@ The following table lists the features that are included in this release. We mig
 | Production control | Production scrap reason codes | [Flexible production scrap reason codes](../production-control/production-scrap-reason-codes.md) | Feature management:<br>*(Preview) Flexible production scrap reason codes* |
 | Rental management | Rental management | [Rental management overview](../rental-management/rental-management-overview.md) | Feature management:<br>*(Preview) Rental management* |
 | Sales and marketing | Automatically assign the sales responsible worker for a sales order based on the customer | [Default the sales responsible worker from the customer](../sales-marketing/default-sales-responsible-from-customer.md) | Enabled by default |
-| Sales and marketing | Exclude purchase, production, and inbound transfer supply from ATP calculations | [Exclude purchase, production, or inbound transfer supply from ATP calculations (preview)](../sales-marketing/available-to-promise-supply-exclusions.md) | Feature management:<br>*Configurable ATP with Receipt Control* |
+| Sales and marketing | Exclude purchase, production, and inbound transfer supply from ATP calculations | [Exclude purchase, production, or inbound transfer supply from ATP calculations](../sales-marketing/available-to-promise-supply-exclusions.md) | Feature management:<br>*Configurable ATP with Receipt Control* |
 | Warehouse management | Despatch advice for transfer orders to external shared warehouses | [Despatch advice messages for transfer orders to external shared warehouses](../warehousing/wms-only-mode-transfer-order-despatch-advice.md) | Enabled by default |
 
 <a name="enhancements"></a>
@@ -103,7 +103,7 @@ The following table lists the features that became mandatory in version 10.0.50.
 
 ### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.50 includes platform updates. Learn more in [Platform updates for version 10.0.50 of Finance and Operations apps (December 2026)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-50.md). <!-- KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.50 includes platform updates. Learn more in [Platform updates for version 10.0.50 of Finance and Operations apps (December 2026)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-50.md).
 
 For information about the bug fixes included in version 10.0.50, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=1198101).
 
