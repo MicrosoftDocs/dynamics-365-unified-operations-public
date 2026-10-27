@@ -2401,6 +2401,8 @@ items:
             href: copilot/mcp/mcp-vscode.md
           - name: Use ERP MCP with Microsoft Foundry
             href: copilot/mcp/mcp-foundry.md
+          - name: Add AI descriptions for Dynamics 365 ERP MCP
+            href: copilot/mcp/mcp-ai-descriptions.md
         - name: Tutorials
           items:
           - name: Extend Copilot capabilities with low-code plugins
