@@ -1,8 +1,8 @@
 ---
 title: User-configurable queries in warehouse management
 description: Learn how user-configurable queries are used in warehouse management.
-author: ivanma
-ms.author: ivanma
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: article
 ms.date: 02/18/2025
 ms.reviewer: kamaybac
