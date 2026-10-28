@@ -1,8 +1,8 @@
 ---
 title: Data entity support for user-configurable queries in warehouse management
 description: Learn how to use data entities with user-configurable queries in warehouse management.
-author: ivanma
-ms.author: ivanma
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: article
 ms.date: 02/20/2025
 ms.reviewer: kamaybac

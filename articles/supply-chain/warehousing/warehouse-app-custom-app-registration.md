@@ -4,7 +4,7 @@ description: Learn how to register your own Microsoft Entra ID application for t
 author: pefreita
 ms.author: pefreita
 ms.topic: how-to
-ms.date: 09/07/2026
+ms.date: 10/28/2026
 ms.reviewer: kamaybac
 ms.search.form: SysAADClientTable
 ms.custom:
@@ -72,6 +72,15 @@ The following procedure shows one way to register an application in Microsoft En
 
     ``` text
     com.microsoft.WarehouseManagement
+    ```
+
+1. On the **Redirect URI configuration** tab, select **Add redirect URI**.
+
+1. In the dialog, select **Mobile and desktop applications**.
+1. Set the **Redirect URI** field to the following value:
+
+    ``` text
+    ms-appx-web://microsoft.aad.brokerplugin/${clientId}
     ```
 
 1. Select **Configure** to save your settings. Close the dialog to return to the **Authentication** page, which now shows your new platform configurations.

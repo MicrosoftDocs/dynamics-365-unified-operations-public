@@ -2166,6 +2166,8 @@
                          href: localizations/brazil/brazil-reform-overview.md
                        - name: Brazil tax reform setup 
                          href: localizations/brazil/brazil-reform-setup.md
+                       - name: IS (Selective tax) in Brazil reformed tax (Preview)
+                         href: localizations/brazil/brazil-reform-is.md  
                        - name: CST and cClasstrib in Brazil Reformed Tax
                          href: localizations/brazil/brazil-reform-cst-cclasstrib.md
                        - name: CNPJ validation in Brazil Reformed Tax
@@ -2203,7 +2205,11 @@
                        - name: Fiscal notes for Credit cancellation in Brazil tax reform
                          href: localizations/brazil/brazil-reform-credit-cancellation.md 
                        - name: Fiscal notes for Not-processed invoice in Brazil tax reform
-                         href: localizations/brazil/brazil-reform-unprocessed.md                         
+                         href: localizations/brazil/brazil-reform-unprocessed.md
+                       - name: Tax assessment in Brazil reformed tax (Preview)
+                         href: localizations/brazil/brazil-reform-tax-assessment.md
+                       - name: Tax assessment APIs in Brazil Reformed Tax (Preview)
+                         href: localizations/brazil/brazil-reform-tax-assessment-api.md                        
                        - name: Work with NFS-e Service Invoices
                          href: localizations/brazil/brazil-nfs-e-service-invoices.md
                        - name: Work with NFS-e Service Invoices for Projects

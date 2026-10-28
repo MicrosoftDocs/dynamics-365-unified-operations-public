@@ -4434,6 +4434,8 @@ items:
             href: warehousing/warehouse-app-detours.md
           - name: Query data using Warehouse Management mobile app detours
             href: warehousing/warehouse-app-data-inquiry.md
+          - name: Capture photos and videos by using Warehouse Management mobile app detours (preview)
+            href: warehousing/warehouse-app-media-capture.md
           - name: Customize the company logo shown in the Warehouse Management mobile app
             href: warehousing/warehouse-app-company-logo.md
         - name: Manage mobile devices and sessions from Supply Chain Management
