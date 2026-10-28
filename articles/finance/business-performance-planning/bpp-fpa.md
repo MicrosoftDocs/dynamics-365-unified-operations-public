@@ -4,7 +4,7 @@ description: Learn how to use the Business performance planning Financial planni
 author: twheeloc
 ms.reviewer: twheeloc
 ms.topic: concept-article
-ms.date: 10/21/2026
+ms.date: 10/27/2026
 ms.author: romainpham
 ---
 
@@ -19,7 +19,7 @@ By understanding the demo, you can see how an integrated Financial planning and 
 ## Prerequisites
 
 - Install and configure the Business planning performance demo assets. For instructions, see [Get started with Business planning performance demo assets](bpp-get-started-demo.md).
-- Connect the Financial planning and analysis Power BI template app to the Demo assets environment.
+- Connect the Financial planning and analysis Power BI template app to the demo assets environment.
 - Complete the semantic model refresh successfully.
 - Users who perform planning operations have a Dynamics 365 Finance Premium license.
 - Assign the appropriate Business planning performance security role. For the complete interactive experience, assign users at least the Business planning performance contributor role.
@@ -55,18 +55,18 @@ The app contains a navigation page and nine planning and reporting pages. The **
 | **Workforce** | HCM planning | Model workforce costs and scenarios through a multidimensional planning experience. |
 | **Investment** | CAPEX planning | Plan capital expenditure and calculate depreciation outputs. |
 | **Allocate** | Cost allocation planning | Allocate corporate and shared-service expenses across business units. |
-| **Report** | P&L reporting and commentary | Consolidate planning outputs and compare actual, budget, forecast, and other scenarios. |
+| **Report** | Profit and loss reporting and commentary | Consolidate planning outputs and compare actual, budget, forecast, and other scenarios. |
 
-The pages build on one another to represent an end-to-end FP&A planning cycle. The recommended order for exploring the complete process is:
+The pages build on one another to represent an end-to-end Financial planning and analysis planning cycle. The recommended order for exploring the complete process is:
 
-1. **Control Tower**: Review plan status and copy prior-year actuals into the budget.
-1. **Account Based Budget**: Establish and adjust the budget baseline.
-1. **Revenue Driver Based Planning**: Build the revenue forecast.
-1. **OPEX Planning**: Enter departmental expense forecasts.
-1. **Workforce Planning** or **HCM Planning**: Plan position and compensation costs.
-1. **CAPEX Planning**: Enter capital projects and review depreciation.
-1. **Cost Allocation Planning**: Allocate shared expenses.
-1. **P&L Reporting & Commentary**: Consolidate and analyze the plan.
+1. **Control tower**: Review plan status and copy prior-year actuals into the budget.
+1. **Account based budget**: Establish and adjust the budget baseline.
+1. **Revenue driver based planning**: Build the revenue forecast.
+1. **OPEX planning**: Enter departmental expense forecasts.
+1. **Workforce planning** or **HCM planning**: Plan position and compensation costs.
+1. **CAPEX planning**: Enter capital projects and review depreciation.
+1. **Cost allocation planning**: Allocate shared expenses.
+1. **Profit and loss reporting and commentary**: Consolidate and analyze the plan.
 
 This sequence connects detailed planning assumptions with the consolidated profit and loss statement.
 
@@ -82,9 +82,9 @@ The **Control tower** page shows the status of the Financial planning and analys
 - Financial dimension filters.
 - Revenue, gross profit, net profit, and variance indicators.
 
-Depending on the Business planning performance security role, users can update planning status through the Table edit visual. Approval requests are processed through the Power Automate flows included with the demo assets, and the configured flow determines how approval notifications are delivered.
+Depending on the Business planning performance security role, users can update planning status through the **Table edit** visual. Approval requests are processed through the Power Automate flows included with the demo assets, and the configured flow determines how approval notifications are delivered.
 
-The **Control tower** also provides access to the Copy visual. In the demo, the Copy visual seeds the current-year budget from prior-year actuals.
+The **Control tower** also provides access to the **Copy** visual. In the demo, the **Copy** visual seeds the current-year budget from prior-year actuals.
 
 The page supports scenarios such as:
 
@@ -94,7 +94,7 @@ The page supports scenarios such as:
 - Comparing actual performance with budget and forecast.
 - Starting the budgeting cycle from prior-year actuals.
 
-## Create a Financial plan
+## Create a financial plan
 
 ### Account-based budget
 
@@ -135,7 +135,7 @@ The driver calculations configured in the demo translate operational assumptions
 - Comparing assumptions and results across scenarios.
 - Adding or copying products used for planning in the demo.
 
-Example analyses include:
+Example analysis include:
 
 - Determining the unit volume required to achieve a revenue target.
 - Reviewing how a price change affects revenue.
@@ -268,7 +268,7 @@ The page supports scenarios such as:
 
 ## Plan consolidation and analysis
 
-The **P&L reporting and commentary** page consolidates the planning outputs and analyzes the resulting profit and loss statement.
+The **Profit and loss reporting and commentary** page consolidates the planning outputs and analyzes the resulting profit and loss statement.
 
 The configured consolidation process combines outputs from the component plans. The flow then starts the reporting dataflow and produces the consolidated reporting output. This controlled finalization process separates active planning inputs from the reporting output used for review.
 
@@ -284,7 +284,7 @@ The page provides:
 
 The page supports scenarios such as:
 
-- Finalizing the configured P&L reporting output.
+- Finalizing the configured Profit and loss reporting output.
 - Comparing actual, budget, forecast, and other scenarios.
 - Analyzing financial variance.
 - Reviewing management commentary.
@@ -292,7 +292,7 @@ The page supports scenarios such as:
 - Reviewing financial performance by organization and period.
 
 > [!NOTE]
-> The consolidated P&L doesn't update automatically after every planning change. The configured finalization process determines when the component plans are combined into the reporting output.
+> The consolidated Profit and loss doesn't update automatically after every planning change. The configured finalization process determines when the component plans are combined into the reporting output.
 
 ## Business planning performance capabilities demonstrated
 
@@ -321,9 +321,9 @@ Some pages use Business planning performance visuals for data entry and workflow
 
 #### Customization and limitations
 
-Explore the demo by changing planning values, assumptions, scenarios, statuses, positions, projects, allocation percentages, and commentary. The demo writes changes to the connected Demo assets environment and can affect other users who use the same environment.
+Explore the demo by changing planning values, assumptions, scenarios, statuses, positions, projects, allocation percentages, and commentary. The demo writes changes to the connected demo assets environment and can affect other users who use the same environment.
 
-The Demo assets are designed for demonstration and evaluation. They aren't a production Financial planning and analysis implementation or production data model.
+The demo assets are designed for demonstration and evaluation. They aren't a production Financial planning and analysis implementation or production data model.
 
 Changes to the underlying planning model can affect:
 
