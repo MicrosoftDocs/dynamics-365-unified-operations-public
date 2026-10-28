@@ -4,7 +4,7 @@ description: Access links to Microsoft Dynamics 365 Finance documentation resour
 author: v-omerorhan
 ms.author: v-omerorhan
 ms.topic: overview
-ms.date: 02/24/2026
+ms.date: 10/28/2026
 ms.reviewer: johnmichalak
 ms.search.region: Türkiye
 ms.search.validFrom: 2025-02-16
@@ -102,6 +102,14 @@ This section provides guidance and a reference link on how to configure and gene
 Learn how to set up required Electronic Reporting (ER) configurations, configure legal entity and customer data, define transportation details, and generate UBL-TR–compliant DespatchAdvice XML files for electronic packing slips.
 
 - [Export of customer electronic packing slips](../../localizations/turkiye/emea-turkiye-customer-packing-slips.md)
+
+## Export of electronic waybills for transfer order shipments
+
+This section provides guidance and a reference link on how to configure and generate electronic waybills (e-Waybills) for transfer order shipments for Türkiye.
+
+Learn how to set up the required Electronic Reporting (ER) configurations, reference the e-Waybill format in the inventory parameters, define transportation details, select the serial prefix and invoice profile when you ship a transfer order, and generate UBL-TR–compliant DespatchAdvice XML files for e-Waybills.
+
+- [Export of electronic waybills for transfer order shipments](../../localizations/turkiye/emea-turkiye-electronic-transfer-orders.md)
 
 ## Use checks and promissory notes
 

@@ -4,7 +4,7 @@ description: Learn how to configure and export customer electronic packing slips
 author: v-omerorhan
 ms.author: v-omerorhan
 ms.topic: how-to
-ms.date: 08/12/2026
+ms.date: 10/28/2026
 ms.reviewer: johnmichalak
 ms.search.region: Türkiye
 ms.search.validFrom: 2026-01-19
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 10.0.45
 This article describes how to configure and use **electronic packing slips (e-packing slips)** in Microsoft Dynamics 365 Finance for Türkiye.  
 Finance supports the generation of electronic packing slip XML files in the required **UBL-TR DespatchAdvice** format.
 
-Before you begin, make sure you meet the following prerequisites:
+Before you begin, ensure you meet the following prerequisites:
 
 - Your legal entity's primary address is in Türkiye.
 - You import the Electronic reporting (ER) configurations from Microsoft Dynamics Lifecycle Services or Microsoft Dataverse.
@@ -152,15 +152,36 @@ This information maps to the **TransportMeans** elements in the UBL-TR DespatchA
 ### Driver information
 
 Driver information identifies the person responsible for transporting the goods.
-
 The following table describes driver-related fields.
 
 | Field | Description |
 | ------ | ------------- |
-| Driver | Reference to a predefined driver record. |
-| Driver name | Full name of the driver. |
+| Driver | Select the worker who transports the goods. Use this field only if the driver is registered as a worker in Finance. When you select a worker, the system automatically populates the **Driver name** field. |
+| Driver name | The full name of the driver. If you select a worker in the **Driver** field, the system populates this field automatically. If the driver isn't a worker, enter the driver's full name manually. |
+| Driver ID type | Select the type of identification for the driver: <ul><li>**TCKN** – The Turkish identification number (T.C. Kimlik Numarası) of the driver.</li><li>**Passport number** – The passport number of the driver. Use this option for drivers who don't have a Turkish identification number.</li></ul> |
+| Driver license | Enter the identification number that corresponds to the option that you select in the **Driver ID type** field. For example, if you select **TCKN**, enter the 11-digit Turkish identification number of the driver. |
 
-Turkish regulations require including the driver name in the electronic packing slip XML.
+#### Enter driver information for a worker
+
+If the driver is registered as a worker in Finance, follow these steps:
+
+1. On the **Transportation details** page, in the **Driver** field, select the worker. The **Driver name** field is automatically populated with the worker's first and last name.
+1. In the **Driver ID type** field, select **TCKN** or **Passport number**.
+1. In the **Driver license** field, enter the Turkish identification number or the passport number of the driver.
+1. Select **Save**.
+
+#### Enter driver information for an external driver
+
+If the driver isn't registered as a worker in Finance (for example, a driver from an external transport company), follow these steps:
+
+1. On the **Transportation details** page, leave the **Driver** field blank.
+1. In the **Driver name** field, enter the full name of the driver.
+1. In the **Driver ID type** field, select **TCKN** or **Passport number**.
+1. In the **Driver license** field, enter the Turkish identification number or the passport number of the driver.
+1. Select **Save**.
+
+> [!NOTE]
+> Make sure that the value in the **Driver license** field matches the selected **Driver ID type**. If the driver identification information is missing or incorrect, the generated UBL-TR DespatchAdvice document might fail validation during submission.
 
 ### Effect on electronic packing slip generation
 

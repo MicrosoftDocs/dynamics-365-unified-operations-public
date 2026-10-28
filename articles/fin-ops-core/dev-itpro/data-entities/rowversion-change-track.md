@@ -55,16 +55,16 @@ To enable row version change tracking for a table, set the **Allow Row Version C
 
 Each master planning run deletes and inserts a large number of records in various tables. Tracking these changes can cause master planning performance problems and might even result in database blocking.
 
-Hence, don't enable change tracking on the following master planning tables:
+Therefore, don't enable change tracking on the following master planning tables:
 
-> - `REQTRANS`.
-> - `REQTRANSCOV`.
-> - `REQPO`.
-> - `REQROUTE`.
-> - `REQROUTEJOB`.
-> - `WRKCTRCAPRES`.
-> - `WRKCTRCAPRESPROPERTY`.
-> - `REQDECOUPLINGPOINTHISTORY`.
+- `REQTRANS`.
+- `REQTRANSCOV`.
+- `REQPO`.
+- `REQROUTE`.
+- `REQROUTEJOB`.
+- `WRKCTRCAPRES`.
+- `WRKCTRCAPRESPROPERTY`.
+- `REQDECOUPLINGPOINTHISTORY`.
 
 ## Enable row version change tracking for data entities
 
