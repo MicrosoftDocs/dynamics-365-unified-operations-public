@@ -4,7 +4,7 @@ description: Learn about cleanup routines in Dynamics 365 Finance and Supply Cha
 author: dvliegen
 ms.author: dvliegen
 ms.topic: reference
-ms.date: 03/05/2026
+ms.date: 10/29/2026
 ms.custom: 
 ms.reviewer: johnmichalak 
 audience: IT Pro
@@ -12,6 +12,7 @@ ms.search.region: Global
 ms.search.validFrom: 2020-10-31
 ms.search.form: 
 ms.dyn365.ops.version: 10.0.13
+ai-usage: ai-assisted
 ---
 
 # Cleanup routines in Dynamics 365 Finance and Dynamics 365 Supply Chain Management
@@ -39,9 +40,21 @@ In Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management, clea
 
 Document management uses separate processes for attachment history, orphaned references, deferred deletion, and physical-file deletion. These processes aren't interchangeable. Retention determines when information becomes eligible for deletion; the corresponding cleanup process performs cleanup.
 
+Find the existing jobs at **System administration** > **Inquiries** > **Batch jobs**. The following table lists their English descriptions; descriptions can be localized or changed in your environment.
+
+| Cleanup responsibility | Batch job description | Purpose and retention dependency |
+|---|---|---|
+| Attachment-history cleanup | Deletes the document history records which have reached the end of their retention period | Removes attachment-history records that exceed **Number of days to retain history**. This is the process to check for `DOCUHISTORY` growth. It doesn't delete attachment files. |
+| Orphan-reference cleanup | Scan for orphaned document references | Processes attachment references whose parent business record no longer exists. It doesn't restore a missing physical file for an otherwise valid attachment. |
+| Deferred-deletion cleanup | Scans for deleted references which have reached the end of their retention period | Identifies deleted references that reach the end of **Number of days to defer deletion**, based on **Deleted date and time**. A retention value of `0` means indefinite recovery, not immediate deletion. |
+| Physical-file deletion | Scan for document files that have been scheduled for physical deletion | Processes files that have reached the appropriate stage of the supported deletion lifecycle. It isn't a general-purpose scanner for files without corresponding current application metadata. |
+
+> [!NOTE]
+> Changing retention doesn't remove eligible data by itself. A backlog can require many cleanup executions, and history or file-storage consumption might not fall immediately. Don't assume a fixed deletion-completion time or force product-managed schedules.
+
 Before changing retention or resuming cleanup, review audit, regulatory, legal-hold, records-management, and recovery requirements. Don't delete attachment records directly with SQL or delete permanent files directly from Azure Blob storage.
 
-For job descriptions, supported operational checks, backlog expectations, capacity monitoring, and troubleshooting, see [Maintain document management storage](../organization-administration/maintain-document-management-storage.md).
+For supported job verification and status changes, capacity monitoring, and troubleshooting, see [Maintain document management storage](../organization-administration/maintain-document-management-storage.md). If a required job can't be identified, contact Microsoft Support rather than creating a duplicate or replacement task.
 
 ## Data management
 
