@@ -5,8 +5,8 @@ author: twheeloc
 ms.author: romainpham
 ms.reviewer: twheeloc
 ms.topic: concept-article
-ms.date: 10/23/2026
-ms.author: twheeloc
+ms.date: 10/27/2026
+
 ---
 
 # Business performance planning Retail sales planning demo overview
@@ -64,13 +64,13 @@ The **Track** pages provide consolidated views of the retail planning process an
 The **Control tower** page monitors the status of the retail planning process and provides a management view of planning progress and retail performance. The page provides:
 
 - Planning status by store.
-- Status categories such as Not started, In progress, and Completed.
+- Status categories such as **Not started**, **In progress**, and **Completed**.
 - Approval status.
 - Actual, budget, forecast, and prior-year values.
 - Comparisons between actual, forecast, budget, and prior-year performance.
 - Store and SKU performance information.
 
-Depending on your Business performance planning security role, you can update planning status through the Table edit visual. Approval requests are processed through the Power Automate flows included with the demo assets. The configured flow determines how approval notifications are delivered.
+Depending on your Business performance planning security role, you can update planning status through the **Table edit** visual. Approval requests are processed through the Power Automate flows included with the demo assets. The configured flow determines how approval notifications are delivered.
 
 The page supports these uses:
 
@@ -204,7 +204,7 @@ A waterfall chart shows how price, volume, and mix contribute to the total varia
 > [!NOTE]
 > The **Price volume mix analysis** page is a reporting and diagnostic experience. The price and unit assumptions created through Business performance planning provide planning inputs for the analysis.
 
-#### Business performance planning capabilities demonstrated
+#### Business performance planning capabilities 
 
 The Retail sales planning demo includes examples of:
 
@@ -241,7 +241,7 @@ The demo assets are designed for demonstration and evaluation. They aren't a pro
 
 Avoid removing or renaming dimensions, columns, tables, cubes, or scenarios used by the preconfigured reports.
 
-The demo assets don't provide a separate reset operation. To restore the demo assets to their initial state, uninstall and reinstall the applicable demo assets solutions. For uninstall and restore procedures, see [Business performance planning demo assets FAQ](bpp-demo-faq.md).
+The demo assets don't provide a separate reset operation. To restore the demo assets to their initial state, uninstall and reinstall the applicable demo assets solutions. For more information about uninstalling and restoring, see [Business performance planning demo assets FAQ](bpp-demo-faq.md).
 
 The Retail sales planning demo isn't:
 
@@ -249,8 +249,6 @@ The Retail sales planning demo isn't:
 - A reusable template that can connect to arbitrary customer data without configuration.
 - A replacement for solution design, data integration, security design, or validation.
 - A commitment that all retail source systems and data formats are supported automatically.
-
-The demo illustrates how a retail sales planning experience can be implemented by using Business performance planning, Power BI, Dataverse, and Power Automate.
 
 #### Related content
 
