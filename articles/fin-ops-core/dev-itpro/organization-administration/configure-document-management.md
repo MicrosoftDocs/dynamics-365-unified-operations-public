@@ -1,8 +1,8 @@
 ---
 title: Configure document management
 description: Learn about how to configure document management (document handling) so that it stores file attachments and notes for records.
-author: jasongre
-ms.author: jasongre
+author: cabeln
+ms.author: cabeln
 ms.date: 10/29/2026
 ms.topic: how-to
 ms.reviewer: twheeloc
@@ -21,6 +21,18 @@ This article explains how to configure document management (document handling) s
 For the storage lifecycle, supported cleanup processes, capacity monitoring, and troubleshooting, see [Maintain document management storage](maintain-document-management-storage.md).
 
 To learn more about document management, watch the short [Document Management](https://www.youtube.com/watch?v=p4rl1CkiLN4&feature=youtu.be) video.
+
+## Before you configure document management
+
+Plan storage and retention together, then verify cleanup and monitor consumption. For a new configuration or a review of an existing environment, follow this sequence:
+
+1. [Configure document types](#configure-document-types) and their storage locations. If you use SharePoint, complete [SharePoint storage configuration](#configure-sharepoint-storage).
+2. Configure [document attachment history](#document-attachment-history) for audit requirements and [attachment recovery](#attachment-recovery) for deleted attachments. These features have separate retention settings.
+3. [Verify the corresponding cleanup processes](maintain-document-management-storage.md#verify-and-resume-cleanup-processes). A retention setting alone doesn't remove eligible history or files.
+4. [Monitor storage consumption](maintain-document-management-storage.md#monitor-storage-consumption), review execution results, and use the [troubleshooting guidance](maintain-document-management-storage.md#troubleshooting-questions-and-answers) if storage grows or attachments become inaccessible.
+
+> [!IMPORTANT]
+> **Storage capacity and enforcement:** Current [Finance and operations storage capacity guidance](/power-platform/admin/finance-operations-storage-capacity) states that exceeding storage entitlements doesn't affect service availability and that stored data remains durable. Your organization must still have the appropriate licenses for its storage use. The guidance also describes possible suspension with reasonable notice when consumption exceeds documented entitlements or usage limits. Don't assume current service availability guarantees continued availability without sufficient entitlement. Monitor consumption and obtain additional capacity when needed. For changes to enforcement policy or timing, follow the current capacity guidance; this article doesn't announce a future enforcement date.
 
 ## Configure document types
 
@@ -173,6 +185,9 @@ To enable or disable document attachment history, go to **Document management pa
 
 Retention determines when history becomes eligible for deletion; it doesn't delete history by itself. The batch job **Deletes the document history records which have reached the end of their retention period** performs history cleanup. If `DOCUHISTORY` continues growing, verify that this process is operating and review its execution results. See [Attachment-history cleanup](maintain-document-management-storage.md#attachment-history-cleanup).
 
+> [!NOTE]
+> The 180-day default is a retention period, not a cleanup-completion deadline. Eligible history isn't necessarily deleted as soon as the period expires or in a single cleanup run. An accumulated backlog can take many executions to process. Verify execution results and [monitor the storage trend](maintain-document-management-storage.md#address-an-accumulated-backlog). History cleanup doesn't delete attachment files.
+
 ### Viewing an attachment's history
 
 There are two entry points for viewing the history of a record attachment:
@@ -191,6 +206,9 @@ To enable attachment recovery, go to **Document management parameters** > **Gene
 After you enable attachment recovery, verify the existing batch job **Scans for deleted references which have reached the end of their retention period**. This batch job uses the **Number of days to defer deletion** value to determine how long a deleted attachment should be retained, based on the **Deleted date and time** value. Don't create a duplicate if you can't find the job; contact Microsoft Support.
 
 The retention setting determines eligibility, while supported cleanup processes handle expired deleted references and subsequent physical-file deletion. Before resuming cleanup, review your retention and attachment-recovery requirements. See [Verify and resume cleanup processes](maintain-document-management-storage.md#verify-and-resume-cleanup-processes).
+
+> [!NOTE]
+> The 30-day default is a recovery period, not a promise that physical files are removed on day 30. After the recovery period expires, deferred-deletion processing and physical-file deletion must complete their separate lifecycle stages. A backlog can delay removal, so file-storage consumption might not fall immediately. No fixed deletion-completion time is specified here. If the period is `0`, deleted attachments remain recoverable indefinitely rather than becoming eligible through expiry of a recovery period.
 
 ### Deleting attachments when attachment recovery is active
 

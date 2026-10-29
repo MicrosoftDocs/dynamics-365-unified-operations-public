@@ -28,9 +28,10 @@ Review retention obligations and storage capacity before you change configuratio
 
 The [Finance and operations storage capacity report](/power-platform/admin/finance-operations-storage-capacity) compares storage consumption with licensed entitlement.
 
-The current public capacity guidance states that exceeding storage entitlements doesn't affect service availability and that stored data remains durable. Your organization must nevertheless have the appropriate licenses for its storage use. The guidance also describes possible suspension with reasonable notice when consumption exceeds documented entitlements or usage limits.
+> [!IMPORTANT]
+> **Current policy and enforcement changes:** The current public capacity guidance states that exceeding storage entitlements doesn't affect service availability and that stored data remains durable. Your organization must nevertheless have the appropriate licenses for its storage use. The guidance also describes possible suspension with reasonable notice when consumption exceeds documented entitlements or usage limits. Don't assume current service availability guarantees continued availability without sufficient entitlement. For changes to enforcement policy or timing, follow the current capacity guidance; this article doesn't announce a future enforcement date.
 
-Don't treat current service availability as permission to exceed your entitlement. Monitor consumption, use supported mechanisms to remove information you no longer need to retain, and obtain additional capacity when needed. Refer to the capacity article for current licensing guidance.
+Monitor consumption, use supported mechanisms to remove information you no longer need to retain, and obtain additional capacity when needed.
 
 ### Review retention obligations
 
@@ -141,6 +142,9 @@ For general status controls, recurrence, and history settings, see [Create a bat
 ### Address an accumulated backlog
 
 If cleanup hasn't operated for an extended period, eligible information can accumulate. Restoring cleanup doesn't guarantee an immediate drop in database or file-storage consumption. A backlog can take many executions to process.
+
+> [!NOTE]
+> Retention periods aren't cleanup-completion deadlines. The default 180-day history-retention period and 30-day attachment-recovery period determine eligibility, not how long cleanup takes to finish. History cleanup removes eligible history records; it doesn't remove attachment files. Deleted file attachments pass through deferred-deletion processing and a separate physical-file deletion stage. A completed run of one process doesn't establish that another stage has finished.
 
 Verify that the appropriate process continues operating, investigate errors, and monitor trends. Information still within the approved retention period remains retained.
 
