@@ -155,7 +155,7 @@ Upload the .bacpac file that you created in the previous step to the **Database 
 Now that the UAT environment is hydrated with the golden configuration, you can begin to migrate master data. You can perform this data migration by [using data entities](../data-entities/develop-entity-for-data-migration.md). Complete your data migration activities before you copy the UAT environment to production, because you have access to the database in the UAT environment for troubleshooting.  
 
 > [!IMPORTANT]
-> Files stored in Azure blob storage aren't copied from UAT to production in the next step. This limitation includes document attachments and custom Microsoft Office templates. If your go-live requires attachments or custom templates, import those items in the production environment directly.
+> A database copy alone doesn't copy files stored in Azure Blob storage from UAT to production. This includes document attachments and custom Microsoft Office templates. If your go-live requires these items, review the supported attachment-copy option or procedure for your operation, or import them directly in production as applicable. Validate access afterward. See [Environment copy and document attachments](../organization-administration/maintain-document-management-storage.md#environment-copy-and-document-attachments).
 
 ## Copy the sandbox database to production
 

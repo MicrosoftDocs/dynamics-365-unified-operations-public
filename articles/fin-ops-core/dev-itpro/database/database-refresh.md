@@ -6,7 +6,7 @@ ms.author: laswenka
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 04/03/2026
+ms.date: 10/29/2026
 ms.reviewer: johnmichalak
 audience: IT Pro, Developer
 ms.assetid: 558598db-937e-4bfe-80c7-a861be021db1
@@ -14,6 +14,7 @@ ms.search.region: Global
 ms.search.validFrom: 2016-09-30
 ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
+ai-usage: ai-assisted
 ---
 
 # Refresh database
@@ -63,7 +64,7 @@ This operation is also referred to as [Golden configuration promotion](dbmovemen
 #### These elements are removed for all database refresh operations
 
 - Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, and BatchServerGroup tables.
-- All files stored in Azure blob storage. This removal includes document attachments (from the DocuValue and DocuDeletedValue tables) and custom Microsoft Office templates (from the DocuTemplate table).
+- Environment-specific storage references for files in Azure Blob storage, including document attachments in the DocuValue and DocuDeletedValue tables and custom Microsoft Office templates in the DocuTemplate table. Don't interpret database changes as deletion of the physical files. See [Document attachments after refresh](#document-attachments-after-refresh).
 - All batch jobs are set to **Withhold** status.
 - All users have their partition value reset to the "initial" partition record ID.
 - All Microsoft-encrypted fields are cleared, because they can't be decrypted on a different database server. An example is the **Password** field in the SysEmailSMTPPassword table.
@@ -73,6 +74,12 @@ This operation is also referred to as [Golden configuration promotion](dbmovemen
 - [Service endpoints](../business-events/managing-business-event-endpoints.md) for business events and data events are removed.
 
 Some of these elements aren't copied because they're environment-specific. Examples include BatchServerConfig and SysCorpNetPrinters records. Other elements aren't copied because of the volume of support tickets. For example, duplicate emails might be sent because Simple Mail Transfer Protocol (SMTP) is still enabled in the UAT environment, invalid integration messages might be sent because batch jobs are still enabled, and users might be enabled before admins can perform post-refresh cleanup activities.
+
+### Document attachments after refresh
+
+Attachment metadata and physical files have separate lifecycles. Validate attachment access after refresh, and review whether the supported attachment-copy operation was required and completed. Don't copy or delete blobs manually to repair attachment references.
+
+Refresh sets batch jobs to **Withhold**. Before resuming Document management cleanup, review retention obligations and verify each relevant job's intended state. For missing attachments, storage growth, and supported cleanup checks, see [Maintain document management storage](../organization-administration/maintain-document-management-storage.md#environment-copy-and-document-attachments).
 
 ### Environment administrator
 
@@ -89,7 +96,7 @@ The following list describes the requirements and conditions for a database refr
 - A refresh operation deletes the original target database.
 - The target environment is available until the database copy reaches the target server. After that point, the environment is offline until the refresh process completes.
 - The refresh affects only the application and Financial Reporting databases.
-- No **file stored in Azure blob storage is copied** from one environment to another. This restriction includes **document attachments and custom Microsoft Office templates**. These documents stay unchanged and remain in their current state.
+- A database refresh alone doesn't copy files stored in Azure Blob storage between environments. This includes document attachments and custom Microsoft Office templates. Review the supported attachment-copy option or procedure for your specific operation separately.
 - All users except the Admin user and other internal service user accounts are unavailable. This process allows the Admin user to delete or obfuscate data before allowing other users back into the system.
 - The Admin user must make required configuration changes, such as reconnecting integration endpoints to specific services or URLs.
 - All data management framework recurring import and export jobs must be fully processed and stopped in the target system before initiating the restore. In addition, select the database from the source after all recurring import and export jobs are fully processed. This step ensures there are no orphaned files in Azure storage from either system. This condition is important because orphaned files can't be processed after the database is restored in the target environment. After the restore, the integration jobs can resume.

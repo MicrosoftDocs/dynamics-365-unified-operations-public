@@ -3,12 +3,13 @@ title: Configure document management
 description: Learn about how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: jasongre
 ms.author: jasongre
-ms.date: 03/17/2026
+ms.date: 10/29/2026
 ms.topic: how-to
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update 
+ai-usage: ai-assisted
 ---
 
 # Configure document management
@@ -16,6 +17,8 @@ ms.dyn365.ops.version: July 2017 update
 [!INCLUDE [banner](../../../finance/includes/banner.md)]
 
 This article explains how to configure document management (document handling) so that it stores file attachments and notes for records. It includes information about the concepts and features that are involved in this functionality.
+
+For the storage lifecycle, supported cleanup processes, capacity monitoring, and troubleshooting, see [Maintain document management storage](maintain-document-management-storage.md).
 
 To learn more about document management, watch the short [Document Management](https://www.youtube.com/watch?v=p4rl1CkiLN4&feature=youtu.be) video.
 
@@ -159,11 +162,16 @@ The **Attach** button also shows a count of the attachments for the currently se
 
 ## Document attachment history
 
-As of version 10.0.16/Platform update 40, a history mechanism is available for record attachments. Therefore, your organization can maintain an audit of actions that are related to individual attachments. You can see when an attachment was created, marked for pending deletion, restored, deleted, or moved. You can also see who performed the action. Attachment history isn't maintained before version 10.0.16/Platform update 40. Therefore, any actions that were performed on attachments in earlier versions aren't available.
+Document attachment history provides an audit of actions related to individual attachments. You can see when an attachment was created, marked for pending deletion, restored, deleted, or moved, and who performed the action. History is available only for actions recorded while the history mechanism is enabled.
 
 ### Configuration of document attachment history
 
 To enable or disable document attachment history, go to **Document management parameters** > **General** > **History** > **Enable document history**. The default setting of the **Number of days to retain history** field is 180 days, but you can change it as you require.
+
+> [!IMPORTANT]
+> Review your audit, regulatory, legal-hold, and records-management requirements before changing retention or resuming cleanup. Cleanup can remove information that's already eligible for deletion under the current settings. Don't shorten retention solely to reduce storage consumption.
+
+Retention determines when history becomes eligible for deletion; it doesn't delete history by itself. The batch job **Deletes the document history records which have reached the end of their retention period** performs history cleanup. If `DOCUHISTORY` continues growing, verify that this process is operating and review its execution results. See [Attachment-history cleanup](maintain-document-management-storage.md#attachment-history-cleanup).
 
 ### Viewing an attachment's history
 
@@ -174,13 +182,15 @@ There are two entry points for viewing the history of a record attachment:
 
 ## Attachment recovery
 
-Platform update 29 introduced an attachment recovery feature. This feature provides a recycle bin for record attachments, so you can recover them within a configured period.
+Attachment recovery provides a recycle bin for record attachments, so you can recover them within a configured period. This recovery period is separate from attachment-history retention.
 
 ### Configuration of attachment recovery
 
 To enable attachment recovery, go to **Document management parameters** > **General** > **Deferred deletion** > **Deferred deletion enabled**. The default setting for the **Number of days to defer deletion** field is 30 days, but you can change it as you require. If you set the **Number of days to defer deletion** value to **0** (zero), deleted attachments are recoverable for an indefinite period.
 
-After you enable attachment recovery, you create a batch job named **Scans for deleted references which have reached the end of their retention period**. This batch job uses the **Number of days to defer deletion** value to determine how long a deleted attachment should be retained, based on the **Deleted date and time** value.
+After you enable attachment recovery, verify the existing batch job **Scans for deleted references which have reached the end of their retention period**. This batch job uses the **Number of days to defer deletion** value to determine how long a deleted attachment should be retained, based on the **Deleted date and time** value. Don't create a duplicate if you can't find the job; contact Microsoft Support.
+
+The retention setting determines eligibility, while supported cleanup processes handle expired deleted references and subsequent physical-file deletion. Before resuming cleanup, review your retention and attachment-recovery requirements. See [Verify and resume cleanup processes](maintain-document-management-storage.md#verify-and-resume-cleanup-processes).
 
 ### Deleting attachments when attachment recovery is active
 
@@ -353,7 +363,9 @@ By default, the system saves attachments in Azure Blob storage automatically as 
 
 ### If I accidentally delete an attachment stored in Azure Blob Storage, can I restore it?
 
-When you delete attachments that are stored in Azure Blob Storage, you permanently delete them. The system also deletes the references to those attachments. Therefore, if you accidentally delete an attachment, you can't restore or recover it.
+If you delete an attachment through the application while attachment recovery is enabled, you can recover it during the configured deferred-deletion period. See [Recovering attachments](#recovering-attachments).
+
+Application recovery doesn't restore a physical file that's already been permanently deleted from storage. Don't delete files directly from Azure Blob storage as routine maintenance. See [Use supported cleanup only](maintain-document-management-storage.md#use-supported-cleanup-only).
 
 ### Is the database information about attachments stored separately from the attachments themselves?
 
@@ -369,15 +381,15 @@ Database storage uses Azure SQL Database. File storage uses Azure Blob storage. 
 
 ### How much storage do I get for Azure Blob storage?
 
-See the [licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544). Currently, you get 40 gigabytes (GB) of storage.
+Storage entitlement depends on your licenses. See [Finance and operations storage capacity](/power-platform/admin/finance-operations-storage-capacity) and the [Dynamics 365 Licensing Guide](https://www.microsoft.com/licensing/product-licensing/dynamics365) for current entitlement information.
 
 ### What is the cost for additional storage?
 
-The cost for additional storage varies, but it's similar to the [standard Azure costs for storage](https://azure.microsoft.com/pricing/details/storage/page-blobs/). In other words, the cost is about $0.05 per GB.
+Use your organization's procurement process to obtain current pricing for finance and operations capacity add-ons. Don't use Azure Blob storage pricing as the price for licensed finance and operations capacity. See [Address a storage capacity deficit](/power-platform/admin/finance-operations-storage-capacity#address-a-storage-capacity-deficit).
 
 ### How do I know how much storage is already used?
 
-The system provides proactive communication when you're approaching your database and file storage limits. However, Microsoft Dynamics Lifecycle Services provides some information, and you can log support requests for additional information.
+Use the finance and operations storage capacity report in the Power Platform admin center to review environment-level consumption and table-level database usage. See [Monitor storage consumption](maintain-document-management-storage.md#monitor-storage-consumption).
 
 ### Is there an option to export all document attachments from the system?
 

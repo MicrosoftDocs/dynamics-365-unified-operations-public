@@ -5791,6 +5791,8 @@
                   href: ../fin-ops-core/fin-ops/data-entities/use-record-template-new-record.md?context=/dynamics365/context/finance
             - name: Configure document management
               href: ../fin-ops-core/dev-itpro/organization-administration/configure-document-management.md?context=/dynamics365/context/finance
+            - name: Maintain document management storage
+              href: ../fin-ops-core/dev-itpro/organization-administration/maintain-document-management-storage.md?context=/dynamics365/context/finance
             - name: Configure and send email
               href: ../fin-ops-core/dev-itpro/organization-administration/configure-email.md?context=/dynamics365/context/finance
             - name: Date/time data and time zones

@@ -6,13 +6,14 @@ ms.author: laswenka
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 04/03/2026
+ms.date: 10/29/2026
 ms.reviewer: johnmichalak
 audience: IT Pro, Developer
 ms.search.region: Global
 ms.search.validFrom: 2019-01-31
 ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
+ai-usage: ai-assisted
 ---
 
 # Database point-in-time restore (PITR)
@@ -41,6 +42,8 @@ When you restore a database from a previous point in time, the database is provi
 
 > [!NOTE]
 > Restore affects the tables that store references to files stored in Azure blob storage, like document attachments and custom Microsoft Office templates. However, because Azure blob storage itself isn't affected by this process, any files added after the restore point continue to exist in Azure blob storage but aren't reflected in the database.
+
+Restoring database references doesn't restore physical files that have since been deleted. Validate attachment access after restore. Don't assume attachment recovery or orphan cleanup can recreate missing file content. For supported checks and escalation guidance, see [Environment copy and document attachments](../organization-administration/maintain-document-management-storage.md#environment-copy-and-document-attachments).
 
 ### Environment administrator
 

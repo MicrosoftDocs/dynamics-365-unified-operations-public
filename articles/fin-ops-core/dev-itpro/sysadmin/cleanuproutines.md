@@ -35,6 +35,14 @@ In Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management, clea
 | System administration \> Periodic tasks \> Batch job clean-up | [Clean up the batch job table](batch-job-cleanup.md) should be used regularly to clean up the batch job table. In **Retain jobs (days)** field, specify the number of days to keep the records of batch jobs. This cleanup should be done outside business hours. |
 | System administration \> Inquiries \> Database \> Database Log \> Clean up log | <p>This cleanup routine lets you delete database logs as you require. You can delete logs for specific tables, delete specific types of database logs, or delete logs based on the date and time when they were created.</p><p>**Note:** Records electronically signed can't be deleted from logs.</p> |
 
+## Document management
+
+Document management uses separate processes for attachment history, orphaned references, deferred deletion, and physical-file deletion. These processes aren't interchangeable. Retention determines when information becomes eligible for deletion; the corresponding cleanup process performs cleanup.
+
+Before changing retention or resuming cleanup, review audit, regulatory, legal-hold, records-management, and recovery requirements. Don't delete attachment records directly with SQL or delete permanent files directly from Azure Blob storage.
+
+For job descriptions, supported operational checks, backlog expectations, capacity monitoring, and troubleshooting, see [Maintain document management storage](../organization-administration/maintain-document-management-storage.md).
+
 ## Data management
 
 | Path | Description |
