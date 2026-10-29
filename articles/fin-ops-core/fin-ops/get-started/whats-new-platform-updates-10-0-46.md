@@ -1,5 +1,5 @@
 ---
-title: Platform updates for version 10.0.46 of finance and operations apps (November 2025)
+title: Platform updates for version 10.0.46 of finance and operations apps (December 2025)
 description: This article lists the features and enhancements that are included in the platform updates for version 10.0.46 of finance and operations apps.
 author: johnmichalak
 ms.author: johnmichalak
@@ -13,15 +13,15 @@ ms.reviewer: johnmichalak
 ms.search.region: Global
 ---
 
-# Platform updates for version 10.0.46 of finance and operations apps (November 2025)
+# Platform updates for version 10.0.46 of finance and operations apps (December 2025)
 
 [!INCLUDE [banner](../includes/banner.md)]
 
 This article lists the features in the platform updates for version 10.0.46 of finance and operations apps. This version uses build number 7.0.7778.8 and is available on the following schedule:
 
 - **Preview of release:** October 2025
-- **General availability of release (self-update):** November 2025
-- **General availability of release (auto-update):** December 2025
+- **General availability of release (self-update):** December 2025
+- **General availability of release (auto-update):** February 2025
 
 ## Features included in this release
 
