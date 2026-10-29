@@ -1,5 +1,5 @@
 ---
-title: Platform updates for version 10.0.43 of finance and operations apps (December 2025)
+title: Platform updates for version 10.0.43 of finance and operations apps (March 2025)
 description: This article lists the features and enhancements that are included in the platform updates for version 10.0.43 of finance and operations apps.
 author: johnmichalak
 ms.author: johnmichalak
@@ -12,7 +12,7 @@ ms.custom:
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ---
-# Platform updates for version 10.0.43 of finance and operations apps (January 2025)
+# Platform updates for version 10.0.43 of finance and operations apps (March 2025)
 
 [!INCLUDE [banner](../includes/banner.md)]
 

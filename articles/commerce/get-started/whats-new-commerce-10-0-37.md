@@ -1,5 +1,5 @@
 ---
-title: What's new or changed in Dynamics 365 Commerce 10.0.37 (November 2023)
+title: What's new or changed in Dynamics 365 Commerce 10.0.37 (October 2023)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.37. 
 author: josaw1
 ms.date: 04/12/2024
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.37
 
 ---
 
-# What's new or changed in Dynamics 365 Commerce 10.0.37 (November 2023)
+# What's new or changed in Dynamics 365 Commerce 10.0.37 (October 2023)
 
 [!INCLUDE [banner](../includes/banner.md)]
 

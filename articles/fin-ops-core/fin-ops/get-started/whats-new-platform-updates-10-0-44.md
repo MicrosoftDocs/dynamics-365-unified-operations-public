@@ -1,5 +1,5 @@
 ---
-title: Platform updates for version 10.0.44 of finance and operations apps (April 2025)
+title: Platform updates for version 10.0.44 of finance and operations apps (June 2025)
 description: This article lists the features and enhancements that are included in the platform updates for version 10.0.44 of finance and operations apps.
 author: johnmichalak
 ms.author: johnmichalak
@@ -12,7 +12,7 @@ ms.custom:
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ---
-# Platform updates for version 10.0.44 of finance and operations apps (April 2025)
+# Platform updates for version 10.0.44 of finance and operations apps (June 2025)
 
 [!INCLUDE [banner](../includes/banner.md)]
 
