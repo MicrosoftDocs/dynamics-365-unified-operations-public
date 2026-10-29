@@ -1,5 +1,5 @@
 ---
-title: Preview features in Dynamics 365 Commerce 10.0.38 (February 2024)
+title: Preview features in Dynamics 365 Commerce 10.0.38 (December 2024)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.38. 
 author: josaw1
 ms.date: 04/12/2024
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.38
 
 ---
 
-# What's new or changed in Dynamics 365 Commerce 10.0.38 (February 2024)
+# What's new or changed in Dynamics 365 Commerce 10.0.38 (December 2024)
 
 [!INCLUDE [banner](../includes/banner.md)]
 

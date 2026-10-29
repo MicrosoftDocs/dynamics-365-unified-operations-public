@@ -1,5 +1,5 @@
 ---
-title: Preview features in Dynamics 365 Commerce 10.0.46 (October 2025)
+title: Preview features in Dynamics 365 Commerce 10.0.46 (December 2025)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.46. 
 author: johnmichalak
 ms.date: 11/05/2025
@@ -16,15 +16,15 @@ ms.dyn365.ops.version: 10.0.46
 
 ---
 
-# What's new or changed in Dynamics 365 Commerce 10.0.46 (October 2025)
+# What's new or changed in Dynamics 365 Commerce 10.0.46 (December 2025)
 
 [!INCLUDE [banner](../includes/banner.md)]
 
 This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce preview version 10.0.46. This version has a build number of 10.0.2428.15 and is available on the following schedule:
 
 - **Preview of release:** October 2025
-- **General availability of release (self-update):** November 2025
-- **General availability of release (auto-update):** December 2025
+- **General availability of release (self-update):** December 2025
+- **General availability of release (auto-update):** February 2026
 
 ## Features included in this release
 
