@@ -82,7 +82,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.48 PQU-6 | September 16, 2026 | September 16, 2026 to October 10, 2026| Completed | 10.0.2645.136 | 7.0.7996.119 |
 | 10.0.48 PQU-7 | September 30, 2026 | September 30, 2026 to October 24, 2026| Completed | 10.0.2645.147 | 7.0.7996.122 |
 | 10.0.48 PQU-8 | October 14, 2026 | October 14, 2026 to November 7, 2026| In-Progress | 10.0.2645.158 | 7.0.7996.126 |
-| 10.0.48 PQU-9 | October 28, 2026 | October 28, 2026 to November 21, 2026| In-Progress | | |
+| 10.0.48 PQU-9 | October 28, 2026 | October 28, 2026 to November 21, 2026| In-Progress | 10.0.2645.169 | 7.0.7996.131 |
 | 10.0.48 PQU-10 | November 11, 2026 | November 11, 2026 to December 5, 2026| Canceled* | | |
 | 10.0.48 PQU-11 | November 25, 2026 | November 25, 2026 to December 19, 2026| Canceled* | | |
 | 10.0.48 PQU-12 | December 9, 2026 | December 9, 2026 to January 2, 2027| Canceled* | | |
@@ -92,7 +92,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.48 PQU-16 | February 3, 2027 | February 3, 2027 to February 27, 2027| Not Started | | |
 | 10.0.48 PQU-17 | February 24, 2027 | February 24, 2027 to March 20, 2027| Not Started | | |
 | 10.0.49 PQU-1 | October 7, 2026 | October 7, 2026 to October 31, 2026 | In-Progress | 10.0.2790.83 | 7.0.8199.55 |
-| 10.0.49 PQU-2 | October 21, 2026 | October 21, 2026 to November 14, 2026 | In-Progress | 10.0.2790.93 | 7.0.8199.60 |
+| 10.0.49 PQU-2 | October 21, 2026 | October 21, 2026 to November 14, 2026 | In-Progress | 10.0.2790.105 | 7.0.8199.63 |
 | 10.0.49 PQU-3 | November 4, 2026 | November 4, 2026 to November 28, 2026 | Canceled* | | |
 | 10.0.49 PQU-4 | November 18, 2026 | November 18, 2026 to December 12, 2026 | Canceled* | | |
 | 10.0.49 PQU-5 | December 2, 2026 | December 2, 2026 to December 26, 2026 | Canceled* | | |
@@ -176,12 +176,12 @@ The following table shows the high-level train schedule. It includes a descripti
 
 | Stations | Upcoming sandbox schedule | Upcoming production schedule |
 |---|---|---|
-| Station 1 | October 14 to October 17, 2026 | N/A |
-| Station 2 | October 19 to October 22, 2026 | October 24 to October 25, 2026 |
-| Station 3 | October 19 to October 22, 2026 | October 24 to October 25, 2026 |
-| Station 4 | October 26 to October 29, 2026 | October 31 to November 1, 2026 |
-| Station 5 | November 2 to November 5, 2026 | November 7 to November 8, 2026 |
-| Station 6 | November 2 to November 5, 2026 | November 7 to November 8, 2026 |
+| Station 1 | October 28 to October 31, 2026 | N/A |
+| Station 2 | November 2 to November 5, 2026 | November 7 to November 8, 2026 |
+| Station 3 | November 2 to November 5, 2026 | November 7 to November 8, 2026 |
+| Station 4 | November 9 to November 12, 2026 | November 14 to November 15, 2026 |
+| Station 5 | November 16 to November 19, 2026 | November 21 to November 22, 2026 |
+| Station 6 | November 16 to November 19, 2026 | November 21 to November 22, 2026 |
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.49 Release-1 train schedule
 
@@ -202,11 +202,11 @@ The following table shows the high-level train schedule. It includes a descripti
 
 ### <a name="schedule"></a> [NEW] Proactive quality update upcoming 10.0.49 Release-2 train schedule
 
-**App version: 10.0.2790.93**
+**App version: 10.0.2790.105**
 
-**Platform version: 7.0.8199.60**
+**Platform version: 7.0.8199.63**
 
-**Unified Environment Provisioning Application Version: 10.0.49.4**
+**Unified Environment Provisioning Application Version: 10.0.49.5**
 
 | Stations | Upcoming sandbox schedule | Upcoming production schedule |
 |---|---|---|
