@@ -23,6 +23,8 @@ This article describes how to split and transfer fixed assets between legal enti
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
+Note: Currently, this preview feature is not supported in the following regions: RU, JP, IN, FR, PL, CZ, CN, NO, DE, SA, BR, LV, IT, BE, TH, AT, and HU. This is due to complexities related to validating regional compliance and other localization-specific scenarios.
+
 The fixed asset intercompany split and transfer feature helps organizations efficiently manage the movement of fixed assets between legal entities - whether through full transfers or partial splits - without switching between companies. It automates the mapping of asset groups, books, and key fields between source and destination entities, streamlining intercompany asset operations.
 
 This feature supports transfers based on acquisition and accumulated depreciation, and net book value. It also provides flexible options for handling service life and exchange rates. You can choose from the following options to configure the destination asset.
