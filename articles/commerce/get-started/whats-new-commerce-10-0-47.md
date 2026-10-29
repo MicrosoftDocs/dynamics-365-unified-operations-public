@@ -1,5 +1,5 @@
 ---
-title: Preview features in Dynamics 365 Commerce 10.0.47 (January 2026)
+title: Preview features in Dynamics 365 Commerce 10.0.47 (March 2026)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.47. 
 author: johnmichalak
 ms.date: 01/28/2026
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.47
 
 ---
 
-# What's new or changed in Dynamics 365 Commerce 10.0.47 (January 2026)
+# What's new or changed in Dynamics 365 Commerce 10.0.47 (March 2026)
 
 [!INCLUDE [banner](../includes/banner.md)]
 

@@ -1,6 +1,6 @@
 ---
-title: Platform updates for version 10.0.38 of finance and operations apps (February 2024)
-description: Learn about the features that are included in the platform updates for version 10.0.38 of finance and operations apps released in February 2024.
+title: Platform updates for version 10.0.38 of finance and operations apps (December 2024)
+description: Learn about the features that are included in the platform updates for version 10.0.38 of finance and operations apps released in December 2024.
 author: johnmichalak
 ms.author: johnmichalak
 ms.topic: whats-new
@@ -14,7 +14,7 @@ ms.search.region: Global
 ms.search.validFrom: 2022-10-14
 ---
 
-# Platform updates for version 10.0.38 of finance and operations apps (February 2024)
+# Platform updates for version 10.0.38 of finance and operations apps (December 2024)
 
 [!INCLUDE [banner](../includes/banner.md)]
 
