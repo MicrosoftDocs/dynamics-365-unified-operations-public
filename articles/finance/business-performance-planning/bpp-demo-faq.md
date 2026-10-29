@@ -5,7 +5,7 @@ author: twheeloc
 ms.author: romainpham
 ms.reviewer: twheeloc
 ms.topic: faq
-ms.date: 10/21/2026
+ms.date: 10/27/2026
 ai-usage: ai-assisted
 ---
 
@@ -119,7 +119,7 @@ The Business performance planning template apps include the semantic models, rep
 
 A Power BI template app is designed for packaged distribution to other Power BI customers and tenants, including through Microsoft AppSource. A workspace app distributes content from a Power BI workspace to users in an organization.
 
-The Business performance planning demo apps are distributed as Power BI template apps. For more information, see [Workspace apps in Power BI](/power-bi/consumer/end-user-apps.md).
+The Business performance planning demo apps are distributed as Power BI template apps. For more information, see [Workspace apps in Power BI](/power-bi/consumer/end-user-apps).
 
 ### Where is the Power BI template app installed?
 
@@ -141,11 +141,11 @@ Yes. You can install both template apps and connect them to the same configured 
 
 Yes. After you install and configure the template app, use the standard Power BI sharing capabilities. Business performance planning doesn't introduce a separate Power BI sharing mechanism.
 
-For more information, see [Share reports and dashboards from an app](/power-bi/explore-reports/end-user-app-view.md#share-reports-and-dashboards-from-an-app).
+For more information, see [Share reports and dashboards from an app](/power-bi/explore-reports/end-user-app-view#share-reports-and-dashboards-from-an-app).
 
 ### Can I install the same template app more than once?
 
-Power BI manages template app installation and workspace behavior. For more information, see [Current installation](/power-bi/collaborate-share/service-template-apps-install-distribute.md).
+Power BI manages template app installation and workspace behavior. For more information, see [Current installation](/power-bi/collaborate-share/service-template-apps-install-distribute).
 
 ### Can I connect the template app to another demo assets environment?
 
@@ -285,7 +285,7 @@ You must remove the existing demo asset solutions before you install the latest 
 
 ### How do I update a Power BI template app?
 
-Power BI manages template app updates. For more information, see [Install, share, and update template apps in your organization](/power-bi/collaborate-share/service-template-apps-install-distribute.md).
+Power BI manages template app updates. For more information, see [Install, share, and update template apps in your organization](/power-bi/collaborate-share/service-template-apps-install-distribute).
 
 If an updated Business performance planning template app requires an updated demo assets package, update the demo assets before you reconnect and refresh the template app.
 

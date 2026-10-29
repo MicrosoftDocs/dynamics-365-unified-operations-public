@@ -4,7 +4,7 @@ description: Learn about the Dynamics 365 Finance Business planning performance 
 ms.author: romainpham
 author: twheeloc
 ms.topic: concept-article
-ms.date: 10/21/2026
+ms.date: 10/27/2026
 ms.reviewer: twheeloc
 ---
 

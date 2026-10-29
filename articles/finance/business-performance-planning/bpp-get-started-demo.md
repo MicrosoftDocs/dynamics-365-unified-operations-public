@@ -13,18 +13,18 @@ ai-usage: ai-assisted
 
 The Dynamics 365 Finance Business planning performance demo assets provide preconfigured data, planning scenarios, automation, and Power BI experiences that you can use to explore Business planning performance. The demo assets support two scenarios: Financial Planning & Analysis and Retail Sales Planning.
 
-In this article, you set up the Business planning performance Demo Assets in a Power Platform environment, install a Power BI template app, and connect the template app to the demo data. Complete the Demo Assets configuration before you connect a Power BI template app.
+In this article, you set up the Business planning performance demo assets in a Power Platform environment, install a Power BI template app, and connect the template app to the demo data. Complete the demo assets configuration before you connect a Power BI template app.
 
 The demo has two components:
 
 - Business planning performance demo assets are deployed to a Power Platform environment and provide the Dataverse planning model, demo data, automation, and dataflows.
 - Business planning performance Power BI template apps are installed in your Power BI tenant and provide the Financial planning and analysis and Retail sales planning demo experiences.
 
-After you install a template app, you connect its semantic model to the Power Platform environment that contains the Demo Assets. You can install either template app or both, and connect them to the same Demo Assets environment.
+After you install a template app, you connect its semantic model to the Power Platform environment that contains the demo assets. You can install either template app or both, and connect them to the same demo assets environment.
 
 | Power BI template app | Scenario |
 | --- | --- |
-| Dynamics 365 Finance Business planning performance - Financial planning and analysis demo data | Financial planning, budgeting, forecasting, workforce planning, CAPEX planning, allocations, approvals, and P&L reporting. |
+| Dynamics 365 Finance Business planning performance - Financial planning and analysis demo data | Financial planning, budgeting, forecasting, workforce planning, CAPEX planning, allocations, approvals, and Profit and loss reporting. |
 | Dynamics 365 Finance Business planning performance - Retail sales planning demo | Retail sales budgeting, forecasting, store and SKU planning, inventory analysis, and price-volume-mix analysis. |
 
 ## Prerequisites
@@ -73,7 +73,7 @@ The user who installs and configures a Business planning performance Power BI te
 - Access to the template app from Microsoft AppSource.
 - An organizational account that can authenticate to the Dataverse environment.
 
-The user installs the template app in your Power BI tenant. The Business planning performance Demo Assets stay in the Power Platform environment and connect after the user installs the template app.
+The user installs the template app in your Power BI tenant. The Business planning performance demo assets stay in the Power Platform environment and connect after the user installs the template app.
 
 ### Install Business planning performance
 
@@ -91,14 +91,11 @@ Install Business planning performance in the Power Platform environment where yo
 
 ### Install the Planning demo assets package
 
-Install the Planning demo assets package in the same environment where you installed Business planning performance. The package installs the data model and supporting components required by the Financial Planning & Analysis and Retail Sales Planning demos.
-
-If you installed an earlier version of the demo assets, see **Maintain and update Business planning performance demo assets** before you install the latest package.
+Install the Planning demo assets package in the same environment where you installed Business planning performance. The package installs the data model and supporting components required by the Financial planning and analysis and Retail sales planning demos.
 
 1. In the Power Platform admin center, return to **Dynamics 365 apps**.
 1. Select **Install app**.
-1. Search for **planning demo assets**.
-1. Select the Planning Demo Assets package.
+1. Search for and select the **Planning demo assets** package.
 1. Start the installation.
 1. Wait for the installation to complete.
 
@@ -112,7 +109,7 @@ For all Business planning performance visuals except Table edit, users need acce
 
 #### Configure the connection references
 
-The demo assets use four connection references. Configure all four before you run the Demo Assets cloud flows:
+The demo assets use four connection references. Configure all four before you run the demo assets cloud flows:
 
 - Microsoft Dataverse demo data
 - Office 365 Outlook demo data
@@ -130,9 +127,9 @@ The demo assets use four connection references. Configure all four before you ru
 1. Select **Save**.
 1. Repeat the previous steps for the remaining connection references.
 
-#### Configure and run XPnA demo data setup
+#### Configure and run Financial planning and analysis demo data setup
 
-The XPnA demo data setup cloud flow initializes the environment-specific configuration for the demo assets. Don't continue until the flow completes successfully.
+The Financial planning and analysis demo data setup cloud flow initializes the environment-specific configuration for the demo assets. Don't continue until the flow completes successfully.
 
 #### Configure the flow
 
@@ -157,7 +154,7 @@ The XPnA demo data setup cloud flow initializes the environment-specific configu
 
 #### Turn on the demo cloud flows
 
-After XPnA demo data setup completes, save and turn on the cloud flows included with the demo assets. Saving each flow applies its configured connection references and environment-specific values, so save each flow before you turn it on.
+After Financial planning and analysis demo data setup completes, save and turn on the cloud flows included with the demo assets. Saving each flow applies its configured connection references and environment-specific values, so save each flow before you turn it on.
 
 1. Open **Dynamics extended planning and analysis demo data**.
 1. Select **Cloud flows**.
@@ -181,24 +178,24 @@ Configure and publish these Financial planning and analysis dataflows. The desti
 Complete the following procedure for each dataflow:
 
 1. In the Power Apps maker portal, select the demo assets environment.
-1. Go to **Dataflows**.
-1. Find the dataflow, select the ellipsis (**...**), and then select **Edit**.
-1. Locate the **OrgUrl** parameter.
-1. Enter the Dataverse environment URL without the `https://` prefix.
+2. Go to **Dataflows**.
+3. Find the dataflow, select the ellipsis (**...**), and then select **Edit**.
+4. Locate the **OrgUrl** parameter.
+5. Enter the Dataverse environment URL without the `https://` prefix.
 
    For example:
 
    `yourenvironment.crm.dynamics.com`
 
 1. Select **Apply**.
-1. If you're prompted, select **Configure connection** and authenticate with your organizational account.
-1. Verify that the source data loads.
-1. Select **Next**.
-1. Review the preconfigured destination and column mappings.
-1. Select **Publish**.
-1. Wait for publication to complete.
+7. If you're prompted, select **Configure connection** and authenticate with your organizational account.
+8. Verify that the source data loads.
+9. Select **Next**.
+10. Review the preconfigured destination and column mappings.
+11. Select **Publish**.
+12. Wait for publication to complete.
 
-#### Verify the Demo Assets configuration
+#### Verify the demo assets configuration
 
 Before you install a Power BI template app, verify the configuration.
 
@@ -207,7 +204,7 @@ For the demo assets environment, confirm that:
 - Business planning performance is installed.
 - The Planning demo assets package is installed.
 - All four connection references are configured.
-- XPnA demo data setup completed successfully.
+- You complete the financial planning and analysis demo data setup.
 - All required demo cloud flows are saved and turned on.
 - All four Financial planning and analysis dataflows are configured and published.
 - The expected demo data is available.
@@ -239,7 +236,7 @@ Choose the template app for the scenario that you want to explore. Power BI inst
 | Dynamics 365 Finance Business planning performance - Financial planning and analysis demo data | Microsoft AppSource |
 | Dynamics 365 Finance Business planning performance - Retail sales planning demo | Microsoft AppSource |
 
-1. Select the AppSource link for the template app.
+1. Select the Microsoft AppSource link for the template app.
 1. Select **Get it now**.
 1. Sign in with your Power BI account if you're prompted.
 1. Follow the instructions to install the template app.
