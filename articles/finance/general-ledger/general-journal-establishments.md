@@ -42,8 +42,6 @@ Establishments are modeled by:
 
 Only operating units that are explicitly included in this hierarchy are treated as valid establishments by the system.
 
-For more information, see Establishments.
-
 ## General ledger invoice scenarios
 
 Use general journals in the General ledger to create invoices for customers in Accounts receivable and vendors in Accounts payable. When you enable the establishment governance feature, invoices created from General ledger journals must meet the same establishment and registration ID requirements as invoices that originate from other modules. This requirement includes any journals that you created but didn't post. After you enable the feature, review all open journals for the Registration IDs and Establishments. If you set them up to default to new journals, they automatically populate when you post the existing journals.
@@ -90,4 +88,4 @@ When you set **Require registration IDs on customer invoices** to **Yes** in Acc
 
 When you set **Require registration IDS on vendor invoice** to **Yes** in Accounts payable parameters > Invoice tab, any vendor invoices posted from General journals require the Registration IDs.
 
-For more information, see Configure Registration IDs.
+For more information, see [Configure Registration IDs](../../fin-ops-core/dev-itpro/organization-administration/registration-ids?context=/dynamics365/context/finance).
