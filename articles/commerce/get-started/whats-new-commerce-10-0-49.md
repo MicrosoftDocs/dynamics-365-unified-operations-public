@@ -1,5 +1,5 @@
 ---
-title: Preview features in Dynamics 365 Commerce 10.0.49 (September 2026)
+title: What's new or changed in Dynamics 365 Commerce 10.0.49 (September 2026)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.49. 
 author: miraoms
 ms.author: mirao
@@ -22,9 +22,9 @@ ms.dyn365.ops.version: 10.0.49
 
 This article lists features that are new or changed in Microsoft Dynamics 365 Commerce preview version 10.0.49. This version has a build number of 10.0.2790 and is available on the following schedule:
 
-- **Preview of release**: July 2026
-- **General availability of release (self-update)**: September 2026
-- **General availability of release (auto-update)**: October 2026
+- **Preview of release:** July 2026
+- **General availability of release (self-update):** September 2026
+- **General availability of release (auto-update):** October 2026
 
 ## Features included in this release
 

@@ -1,5 +1,5 @@
 ---
-title: Preview features in Dynamics 365 Commerce 10.0.48 (June 2026)
+title: What's new or changed in Dynamics 365 Commerce 10.0.48 (June 2026)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.48. 
 author: johnmichalak
 ms.author: mirao
