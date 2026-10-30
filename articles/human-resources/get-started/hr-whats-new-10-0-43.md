@@ -1,5 +1,5 @@
 ---
-title: What's new or changed in Dynamics 365 Human Resources 10.0.43 (January 2025)
+title: What's new or changed in Dynamics 365 Human Resources 10.0.43 (March 2025)
 description: Learn about features that are either new or changed in the Microsoft Dynamics 365 Human Resources version 10.0.43 preview release.
 author: twheeloc
 ms.author: twheeloc
@@ -13,7 +13,7 @@ ms.reviewer: twheeloc
 ms.search.region: Global
 ---
 
-# What's new or changed in Dynamics 365 Human Resources version 10.0.43 (January 2025)
+# What's new or changed in Dynamics 365 Human Resources 10.0.43 (March 2025)
 
 [!INCLUDE [banner](../../includes/banner.md)]
 

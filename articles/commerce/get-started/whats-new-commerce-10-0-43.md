@@ -1,5 +1,5 @@
 ---
-title: Preview features in Dynamics 365 Commerce 10.0.43 (March 2025)
+title: What's new or changed in Dynamics 365 Commerce 10.0.43 (March 2025)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.43. 
 author: johnmichalak
 ms.date: 06/16/2025

@@ -15,25 +15,27 @@ ms.author: mirao
 ms.search.validFrom: 2020-02-29
 ---
 
-# What's new or changed in Dynamics 365 Commerce 
+# What's new or changed in Dynamics 365 Commerce
 
 [!INCLUDE [banner](../includes/banner.md)]
 
 ## Releases of Dynamics 365 Commerce
+
 To see what's new or changed in each release of Commerce, see the following articles.
 
 | Version | Build number | Auto-update availability | Learn more |
 |---------|--------------|--------------|-------------|
+| 10.0.49| 10.0.2790 | October 2026 | [What's new or changed in Dynamics 365 Commerce 10.0.49](whats-new-commerce-10-0-49.md) |
 | 10.0.48| 10.0.2645 | July 2026 | [What's new or changed in Dynamics 365 Commerce 10.0.48](whats-new-commerce-10-0-48.md) |
-| 10.0.47| 10.0.2527.17 | April 2026 | [What's new or changed in Dynamics 365 Commerce 10.0.47](whats-new-commerce-10-0-47.md) |
-| 10.0.46| 10.0.2428 | February 2025 | [What's new or changed in Dynamics 365 Commerce 10.0.46](whats-new-commerce-10-0-46.md) |
+| 10.0.47| 10.0.2527 | April 2026 | [What's new or changed in Dynamics 365 Commerce 10.0.47](whats-new-commerce-10-0-47.md) |
+| 10.0.46| 10.0.2428 | February 2026 | [What's new or changed in Dynamics 365 Commerce 10.0.46](whats-new-commerce-10-0-46.md) |
 | 10.0.45| 10.0.2345 | October 2025 | [What's new or changed in Dynamics 365 Commerce 10.0.45](whats-new-commerce-10-0-45.md) |
-| 10.0.44| 10.0.2263.11 | July 2025 | [What's new or changed in Dynamics 365 Commerce 10.0.44](whats-new-commerce-10-0-44.md) |
-| 10.0.43| 10.0.2177.18 | April 2025 | [What's new or changed in Dynamics 365 Commerce 10.0.43](whats-new-commerce-10-0-43.md) |
-| 10.0.42| 10.0.2095.13 | February 2025 | [What's new or changed in Dynamics 365 Commerce 10.0.42](whats-new-commerce-10-0-42.md) |
-| 10.0. 41| 10.0.2015.16 | September 2024 | [What's new or changed in Dynamics 365 Commerce 10.0.41](whats-new-commerce-10-0-41.md) |
-| 10.0. 40| 10.0.1935.5 | June 2024 | [What's new or changed in Dynamics 365 Commerce 10.0.40](whats-new-commerce-10-0-40.md) |
-| 10.0.39 | 10.0.1860.32 | April 2024 | [What's new or changed in Dynamics 365 Commerce 10.0.39](whats-new-commerce-10-0-39.md) |
+| 10.0.44| 10.0.2263 | July 2025 | [What's new or changed in Dynamics 365 Commerce 10.0.44](whats-new-commerce-10-0-44.md) |
+| 10.0.43| 10.0.2177 | April 2025 | [What's new or changed in Dynamics 365 Commerce 10.0.43](whats-new-commerce-10-0-43.md) |
+| 10.0.42| 10.0.2095 | February 2025 | [What's new or changed in Dynamics 365 Commerce 10.0.42](whats-new-commerce-10-0-42.md) |
+| 10.0.41| 10.0.2015 | September 2024 | [What's new or changed in Dynamics 365 Commerce 10.0.41](whats-new-commerce-10-0-41.md) |
+| 10.0.40| 10.0.1935 | June 2024 | [What's new or changed in Dynamics 365 Commerce 10.0.40](whats-new-commerce-10-0-40.md) |
+| 10.0.39 | 10.0.1860 | April 2024 | [What's new or changed in Dynamics 365 Commerce 10.0.39](whats-new-commerce-10-0-39.md) |
 | 10.0.38 | 10.0.1777 | February 2024 | [What's new or changed in Dynamics 365 Commerce 10.0.38](whats-new-commerce-10-0-38.md) |
 | 10.0.37 | 10.0.1725 | November 2023 | [What's new or changed in Dynamics 365 Commerce 10.0.37](whats-new-commerce-10-0-37.md) |
 | 10.0.36 | 10.0.1695 | September 2023 | [What's new or changed in Dynamics 365 Commerce 10.0.36](whats-new-commerce-10-0-36.md) |
@@ -66,10 +68,9 @@ To see what's new or changed in each release of Commerce, see the following arti
 | 10.0.9  |   10.0.383          | April 2020 | [What's new or changed in Dynamics 365 Commerce version 10.0.9](whats-new-10-0-9.md) |
 | 10.0.8  |   10.0.319          | February 2020 | [What's new or changed in Dynamics 365 Commerce version 10.0.8](whats-new-10-0-8.md) |
 
-
 ## Releases before February 2020
-To see what's new or changed in releases before February 2020, see the following articles.
 
+To see what's new or changed in releases before February 2020, see the following articles.
 
  **Release**                                                           | **Version** | **Build number** | **Availability** | **Learn more**                                                                                                                                                                                                           |
 |-----------------------------------------------------------------------|-------------|------------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -92,6 +93,4 @@ To see what's new or changed in releases before February 2020, see the following
 | Microsoft Dynamics AX                                                 | 7.0.1       | 7.0.1265.23014   | May 2016         | [What's new or changed in Dynamics AX application version 7.0.1 (May 2016)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-application-version-7-0-1-may-2016.md)          |
 | Microsoft Dynamics AX                                                 | 7.0         | 7.0.1265.3015    | February 2016    | [What's new or changed in Dynamics AX 7.0 (February 2016)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-7-0-february-2016.md)                                            |
 
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-
