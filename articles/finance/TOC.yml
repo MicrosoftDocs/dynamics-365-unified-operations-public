@@ -744,6 +744,8 @@
               href: cash-bank-management/delayed-settlements.md
             - name: Settlement overview for centralized payments
               href: cash-bank-management/settlement-overview-centralized-payments.md
+            - name: Customer and vendor settlement storage
+              href: cash-bank-management/settlement-data-storage.md
             - name: Prepayment invoices vs. prepayments
               href: accounts-payable/prepayments-invoices-vs-prepayments.md
             - name: Handling cash discounts for overpayments

@@ -1,5 +1,5 @@
 ---
-title: Preview features in Dynamics 365 Commerce 10.0.41 (September 2024)
+title: What's new or changed in Dynamics 365 Commerce 10.0.41 (September 2024)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.41. 
 author: johnmichalak
 ms.date: 04/29/2025

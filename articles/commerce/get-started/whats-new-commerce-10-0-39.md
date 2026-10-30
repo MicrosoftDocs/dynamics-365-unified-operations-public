@@ -1,5 +1,5 @@
 ---
-title: Preview features in Dynamics 365 Commerce 10.0.39 (April 2024)
+title: What's new or changed in Dynamics 365 Commerce 10.0.39 (April 2024)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.39. 
 author: v-chgri
 ms.date: 08/27/2024

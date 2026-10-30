@@ -38,17 +38,17 @@ In the following table:
 - The "autoupdate schedule production start date" column refers to the autoupdate schedule that's configured in the update settings in Lifecycle Services. See [Configure service updates through Lifecycle Services](../../dev-itpro/lifecycle-services/configure-service-updates.md).
 - The "End of service" column indicates the date when no new cumulative service updates are provided.
 
-| Release version | Preview availability | Preview latest possible update| General availability (self-update) | First autoupdate schedule for production start date | Second autoupdate schedule for production start date |End of service |
+| Release version | Preview availability | Preview latest possible update | General availability (self-update) | First autoupdate schedule for production start date | Second autoupdate schedule for production start date | End of service |
 |---|---|---|---|---|---|---|
-|CY27Q4: 10.0.53	|July 26, 2027 |August 16, 2027 | September 10, 2027 | October 1, 2027  | October 29, 2027 | May 20, 2028|
-|CY27Q3: 10.0.52	|April 23, 2027|  May 10, 2027 | June 4, 2027  |  July 2, 2027   | July 30, 2027  |  February 15, 2028|
-|CY27Q2: 10.0.51*|	January 25, 2027|	February 15, 2027	|March 12, 2027|	April 2, 2027|	April 30, 2027|	November 19, 2027|
-|CY27Q1: 10.0.50	|October 23, 2026	|November 17, 2026|	December 22, 2026|	January 31, 2027	| February 28, 2027|	August 20, 2027|
-| CY26Q4: 10.0.49\* | July 27, 2026 | August 17, 2026 | September 11, 2026 | October 2, 2026 |  October 30, 2026 |May 21, 2027 |
+| CY27Q4: 10.0.53 | July 26, 2027 | August 16, 2027 | September 10, 2027 | October 1, 2027 | October 29, 2027 | May 20, 2028 |
+| CY27Q3: 10.0.52 | April 23, 2027 | May 10, 2027 | June 4, 2027 | July 2, 2027 | July 30, 2027 | February 15, 2028 |
+| CY27Q2: 10.0.51\* | January 25, 2027 | February 15, 2027 | March 12, 2027 | April 2, 2027 | April 30, 2027 | November 19, 2027 |
+| CY27Q1: 10.0.50 | October 23, 2026 | November 17, 2026 | December 22, 2026 | January 31, 2027 | February 28, 2027 | August 20, 2027 |
+| CY26Q4: 10.0.49\* | July 27, 2026 | August 17, 2026 | September 11, 2026 | October 2, 2026 | October 30, 2026 | May 21, 2027 |
 | CY26Q3: 10.0.48 | April 24, 2026 | May 11, 2026 | June 5, 2026 | July 3, 2026 | July 31, 2026 | February 16, 2027 |
-| CY26Q2: 10.0.47\* | January 26, 2026 | February 16, 2026 | March 13, 2026 | April 3, 2026 | May 1, 2026 |November 20, 2026 |
-| CY26Q1: 10.0.46 | October 24, 2025 | November 17, 2025 | December 26, 2025 | February 1, 2026 | March 1, 2026 |August 21, 2026 |
-| CY25Q4: 10.0.45\* | July 28, 2025 | August 8, 2025 | September 12, 2025 | October 3, 2025 |  October 31, 2025 |May 22, 2026 |
+| CY26Q2: 10.0.47\* | January 26, 2026 | February 16, 2026 | March 13, 2026 | April 3, 2026 | May 1, 2026 | November 20, 2026 |
+| CY26Q1: 10.0.46 | October 24, 2025 | November 17, 2025 | December 26, 2025 | February 1, 2026 | March 1, 2026 | August 21, 2026 |
+| CY25Q4: 10.0.45\* | July 28, 2025 | August 8, 2025 | September 12, 2025 | October 3, 2025 | October 31, 2025 | May 22, 2026 |
 
 ## Service update overview
 
@@ -60,7 +60,7 @@ Service updates contain both application changes and platform changes that are c
 
 ## Release processes
 
-The Dynamics 365 team designs, develops, and validates each new release. Extensive testing is done on various test topologies. A compatibility checker also runs tests to ensure backward compatibility. 
+The Dynamics 365 team designs, develops, and validates each new release. Extensive testing is done on various test topologies. A compatibility checker also runs tests to ensure backward compatibility.
 
 All customers who take advantage of the preview have early access to the upcoming service update. The preview service update is used to validate customizations, learn about new features, and provide feedback to Microsoft. During the preview phase, customers must deploy the service update in a development/test environment. The preview release can't be used in production. After release, customers can download the package from the Shared Asset Library in Lifecycle Services. Customers must agree to the program terms at the time of installation. Sign up for access to preview packages is no longer required. One scheduled update to the preview build is included as standard with every release.
 

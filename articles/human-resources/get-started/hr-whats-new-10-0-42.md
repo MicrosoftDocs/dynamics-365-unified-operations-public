@@ -13,7 +13,7 @@ ms.reviewer: twheeloc
 ms.search.region: Global
 ---
 
-# What's new or changed in Dynamics 365 Human Resources version 10.0.42 (December 2024)
+# What's new or changed in Dynamics 365 Human Resources 10.0.42 (December 2024)
 
 [!INCLUDE [banner](../../includes/banner.md)]
 
