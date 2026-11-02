@@ -6,7 +6,8 @@ ms.author: jodahl
 ms.reviewer: kamaybac
 ms.search.form: EntAssetWorkerGroupCopyFromResourceGroup, EntAssetWorkerGroup
 ms.topic: how-to
-ms.date: 08/13/2025
+ms.date: 11/02/2026
+ai-usage: ai-assisted
 ms.custom:
   - bap-template
 ---
@@ -15,9 +16,9 @@ ms.custom:
 
 [!INCLUDE [banner](../../includes/banner.md)]
 
-This article explains maintenance workers and worker groups in Asset Management. In Asset Management, you can connect maintenance workers to functional locations. (For more information about functional locations, see [Create functional locations](../functional-locations/create-functional-locations.md).) This functionality might be useful if, for example, you're scheduling a maintenance job on a machine that is located in functional location 01, and you want to allocate maintenance workers from the same location to perform the job.
+This article explains maintenance workers and worker groups in Asset Management. In Asset Management, you can connect maintenance workers to functional locations. (For more information about functional locations, see [Create functional locations](../functional-locations/create-functional-locations.md).) This functionality might be useful if, for example, you're scheduling a maintenance job on a machine that's located in functional location 01, and you want to allocate maintenance workers from the same location to perform the job.
 
-You can also create maintenance worker groups and associate maintenance workers with them. This functionality is useful when you do simple work order scheduling, and you want to schedule a group of maintenance workers on a work order. You can use maintenance workers and maintenance worker groups to set up preferred maintenance workers and responsible maintenance workers. 
+You can also create maintenance worker groups and associate maintenance workers with them. This functionality is useful when you do simple work order scheduling, and you want to schedule a group of maintenance workers on a work order. You can use maintenance workers and maintenance worker groups to set up preferred maintenance workers and responsible maintenance workers.
 
 ## Create workers
 
@@ -26,7 +27,7 @@ You can also create maintenance worker groups and associate maintenance workers 
 1. In the **Worker** field, select the worker.
 1. Set the **Active** option to *Yes* to schedule the worker on work orders.
 
-    On the **General** FastTab, the **Resource** and **Description** fields are automatically filled in if a resource is selected for the worker. The **Calendar** field is also automatically filled in if the worker is set up as a resource and a calendar is allocated to that resource on the **Resources** page (**Organization administration** > **Resources** > **Resources**).
+    On the **General** FastTab, the **Resource** and **Description** fields are automatically filled in if you select a resource for the worker. The **Calendar** field is also automatically filled in if you set up the worker as a resource and allocate a calendar to that resource on the **Resources** page (**Organization administration** > **Resources** > **Resources**).
 
 1. On the **Groups** FastTab, select **Add**, and then select a maintenance worker group for the worker. A worker can be affiliated with more than one group.
 1. In the standard setup, a worker's affiliation with a group is effective from the date when you add the group, and it never expires. This date is shown in the **Effective** field. To see the **Effective** field, select **View** > **All**. If the worker's affiliation with a group should be limited to a specific period, use the **Effective** and **Expiration** fields to define the period.
@@ -36,6 +37,8 @@ You can also create maintenance worker groups and associate maintenance workers 
     > When you add functional locations to a worker, all active assets that are related to those functional locations appear on various menu items, such as **My active assets** and **My active functional locations**. They also appear in the asset lookups that are shown when you create a new asset, maintenance request, or work order.
 
     The fields on the **Details** FastTab show the number of maintenance worker groups and functional locations that the selected maintenance worker is related to.
+
+Creating a maintenance worker doesn't set up the worker as a project resource. The **Resource** field on the **Workers** page shows the worker's resource from the **Organization administration** > **Resources** > **Resources** page, which is used for calendars and scheduling. To allow the worker to be selected on hour registration lines on the **Work order journals** page, set up the worker as a project resource. Learn more in [Set up workers for hour registrations](../consumption/register-consumption.md#set-up-workers-for-hour-registrations).
 
 ## Create worker groups
 
