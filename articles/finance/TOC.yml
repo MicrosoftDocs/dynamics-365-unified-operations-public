@@ -1853,7 +1853,9 @@
                         - name: Sync the tax setup from the Tax Calculation feature to Finance
                           href: localizations/global/global-master-data-sync-tax-calculation-service-finance.md?context=/dynamics365/context/finance
                         - name: Automate tax feature creation based on tax master data (Preview)
-                          href: localizations/global/global-automate-tax-feature-creation.md?context=/dynamics365/context/finance                
+                          href: localizations/global/global-automate-tax-feature-creation.md?context=/dynamics365/context/finance
+                        - name: Delete tax calculation feature version
+                          href: localizations/global/global-delete-tax-calculation-feature-version.md?context=/dynamics365/context/finance    
                     - name: Determination
                       items:
                         - name: Tax calculation data model
