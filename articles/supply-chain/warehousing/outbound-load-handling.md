@@ -6,7 +6,8 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSOutboundLoadPlanningWorkbench, WHSOutboundShipmentOrder, WHSPackingSlipPostingParameters, WHSShipPlanningListPage, WHSShipmentDetails, WHSWaveTemplateTable, WHSPostMethod, WHSWorkTemplateTable, WHSLocDirTable, WHSEWManagementSystem, InventLocations 
 ms.topic: article
-ms.date: 09/29/2026
+ms.date: 10/30/2026
+ai-usage: ai-assisted
 ms.custom: bap-template
 ---
 
@@ -61,11 +62,11 @@ The following illustration provides an overview of the outbound load handling pr
 
 ### Sales order creation
 
-This process begins when [sales orders are created](../sales-marketing/tasks/create-sales-orders.md). [Reservations](../inventory/reserve-inventory-quantities.md) for order lines can be set up to occur automatically, they can be performed manually, or they can be delayed according to system setup preferences.
+This process begins when [sales orders are created](../sales-marketing/tasks/create-sales-orders.md). You can set up [reservations](../inventory/reserve-inventory-quantities.md) for order lines to occur automatically, perform them manually, or delay them according to system setup preferences.
 
 ### Create a load before the release to a warehouse
 
-A sales order must exist before an outbound load can be generated. Nevertheless, you can define outbound loads before running the [release to warehouse](#release-to-warehouse) procedure.
+A sales order must exist before you can generate an outbound load. However, you can define outbound loads before running the [release to warehouse](#release-to-warehouse) procedure.
 
 Use the [Outbound load planning workbench](../transportation/use-load-planning-workbench-plan-loads-shipments.md) and [Load building workbench](../transportation/tasks/load-building-workbench.md) processes to select the order lines and quantities that comprise a load.
 
@@ -84,6 +85,8 @@ Warehouse *work* controls any warehouse operation that a warehouse worker or [ma
 ### Outbound load shipment confirmation
 
 When you complete all the warehouse tasks for a load, run the shipment confirmation procedure. This procedure updates the **Load status** value to *Shipped*. It also changes the **Load packing slip background posting status** value from *None* to *Queued*. Depending on the configuration, you can run this process as part of an automated [background process](confirm-outbound-shipments-from-batch-jobs.md).
+
+Shipment confirmation updates the shipment and load statuses. It doesn't post the packing slip. A message that a shipment has been confirmed doesn't mean that posting is complete. Posting runs as a separate process, which can run automatically in the background. For posting statuses and errors, see [Load packing slip posting](#load-packing-slip-posting).
 
 > [!NOTE]
 > When you use the [confirm and transfer](confirm-and-transfer.md) capability, the system can create a new load for any load lines that aren't fully picked.
@@ -107,5 +110,17 @@ To enable the *Load packing slip posting* task to work in the background, you mu
 > To enable automatic distribution of sales packing slips for each shipment, based on the predetermined values, set the **Packing slip creation policy** value to *Shipment* for the load, and supply **Preallocated packing slip ID** and **Preallocated packing slip document date** values for each associated shipment in the *Packing slip posting parameters* section.
 >
 > This process automatically applies when the [externally managed warehouse](wms-only-mode-external-shared-warehouse.md) process is run.
+
+#### Print documents by warehouse or site
+
+To print a delivery note or packing content by warehouse or site, limit the print management query to the required site or warehouse. Don't select **Edit print settings** on the **Work audit template line update** page to define this scope.
+
+#### Correct posted packing slips for warehouse-managed items
+
+After you post a delivery note for items that use warehouse management processes (WMS), **Cancel** might be unavailable, and correction might fail with the following error message:
+
+> The delivery note correction can't be processed. The delivery note only contains items that are subject to warehouse management processes, as these processes aren't supported by Delivery Note correction.
+
+To correct posted packing slips for items that are enabled for warehouse management processes, do the posting from the load, not directly from the order.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

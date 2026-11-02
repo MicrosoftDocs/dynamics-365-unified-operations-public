@@ -6,7 +6,7 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form: WHSPackingWorkLocationSetup, WHSPack, WHSContainerTable, WHSCloseContainerProfile, WHSPackProfile
 ms.topic: how-to
-ms.date: 10/09/2026
+ms.date: 10/30/2026
 ai-usage: ai-assisted
 ms.custom:
   - bap-template
@@ -24,6 +24,8 @@ Packing work is automatically created when inventory that is related to source d
 > In Supply Chain Management version 10.0.45 and later, the Warehouse Management mobile app can record the worker IDs of workers that use it to do packing work. Learn more in [Create containers](warehouse-app-packing-containers.md#create-containers), [Close containers](warehouse-app-packing-containers.md#close-containers), and [Pack inventory into containers](warehouse-app-packing-containers.md#pack-inventory-into-containers).
 
 For more information about how to set up and use the container packing process, see [Pack containers for shipment](packing-containers.md).
+
+If packing notes don't appear in the packing form, check whether they're associated with the shipment. Packing instructions attached only to a product master or a product variant aren't shown as packing notes in the form.
 
 <a name="set-up-packing-location"></a>
 
@@ -57,7 +59,7 @@ You can also use this scenario as guidance for using the feature on a production
 
 ### Configure packing work for warehouse packing location
 
-To get started, you must configure the *Packing* work process for a specific warehouse and location.
+Configure the *Packing* work process for a specific warehouse and location.
 
 1. Go to **Warehouse management** > **Setup** > **Packing** > **Packing station setup**.
 1. On the Action Pane, select **New** to add a setup record.
@@ -113,10 +115,10 @@ You can set up the system so that it converts a work container into a packing st
 
 ### Prerequisites
 
-Before you can use the functionality that's described in this section, ensure your system meets the following requirements:
+Before you use the functionality that's described in this section, ensure your system meets the following requirements:
 
-- You must be running Supply Chain Management version 10.0.49 or later.
-- The packing station must be set up to create packing work, as described in [Set up a location for packing work](#set-up-packing-location).
+- You're running Supply Chain Management version 10.0.49 or later.
+- The packing station is set up to create packing work, as described in [Set up a location for packing work](#set-up-packing-location).
 
 ### When the system converts a container
 
@@ -138,9 +140,9 @@ Conversion occurs before the system creates the packing work for the put, so the
 > [!NOTE]
 > The system doesn't convert containers that are marked as error containers. Instead, the system unpacks them. It removes the container reference from the work lines and deletes the container, so that the items arrive at the packing station as unpacked inventory.
 
-### Choose how the system handles work containers put at a packing station
+### Choose how the system handles work containers you put at a packing station
 
-To choose how the system handles work containers put at a packing station, follow these steps:
+To choose how the system handles work containers you put at a packing station, follow these steps:
 
 1. Go to **Warehouse management** > **Setup** > **Warehouse management parameters**.
 1. Open the **Packing** tab.

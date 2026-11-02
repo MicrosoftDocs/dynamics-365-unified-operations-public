@@ -27242,13 +27242,11 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/cant-move-license-plate.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/cant-move-license-plate",
-      "redirect_document_id": "false"
+      "redirect_url": "/previous-versions/troubleshoot/dynamics-365/supply-chain/warehousing/cant-move-license-plate"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/cant-reduce-picked-quantities.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/cant-reduce-picked-quantities",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/inventory/outbound-process#reduce-picked-quantity-on-a-warehouse-load"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/certification-path-app-connection-error.md",
@@ -27272,8 +27270,7 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/delivery-note-correction.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/delivery-note-correction",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/warehousing/outbound-load-handling#correct-posted-packing-slips-for-warehouse-managed-items"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/dimension-location-left-blank.md",
@@ -27302,13 +27299,11 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/generate-work-immediately-load-release.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/generate-work-immediately-load-release",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/warehousing/wave-templates#generate-picking-work-when-you-release-a-load"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/invalid-license-plate.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/invalid-license-plate",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/warehousing/configure-mobile-devices-warehouse#resolve-an-invalid-license-plate-scan"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/inventory-owner-not-allowed.md",
@@ -27322,13 +27317,11 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/inventory-status-change-work-type.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/inventory-status-change-work-type",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/warehousing/control-warehouse-location-directives#inventory-status-change-work-template-lines"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/license-plate-location-invalid.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/license-plate-location-invalid",
-      "redirect_document_id": "false"
+      "redirect_url": "/previous-versions/troubleshoot/dynamics-365/supply-chain/warehousing/license-plate-location-invalid"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/license-plate-quantity-not-valid.md",
@@ -27337,8 +27330,7 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/license-plate-specified-location.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/license-plate-specified-location",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/warehousing/confirm-and-transfer#notes-and-tips"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/line-already-on-load.md",
@@ -27357,8 +27349,7 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/load-weight-positive-numbers.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/load-weight-positive-numbers",
-      "redirect_document_id": "false"
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/weight-fields-on-load-lines-dont-match-weight-fields-error#load-weight-must-be-positive"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/location-profile-set.md",
@@ -27367,13 +27358,11 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/mixed-license-plate-receiving.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/mixed-license-plate-receiving",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/warehousing/mixed-license-plate-receiving#where-it-applies"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/mobile-app-emulator-administrator.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/mobile-app-emulator-administrator",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/warehousing/configure-mobile-devices-warehouse#test-mobile-device-menu-items"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/move-basic-to-advanced-warehousing.md",
@@ -27382,8 +27371,7 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/not-enough-work-for-cluster.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/not-enough-work-for-cluster",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/warehousing/system-directed-cluster-pick#handle-insufficient-work-for-a-cluster"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/open-or-no-work-exis.md",
@@ -27397,18 +27385,15 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/packing-station-not-.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/packing-station-not-show-product-notes",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/warehousing/packing-work"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/partial-picking-warehouse-app.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/partial-picking-warehouse-app",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/warehousing/configure-mobile-devices-warehouse#menu-options"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/partial-quantity-inventory-status.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/partial-quantity-inventory-status",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/warehousing/configure-mobile-devices-warehouse#change-inventory-status-for-part-of-a-batch"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/physical-remaining-q.md",
@@ -27432,8 +27417,7 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/print-documents-by-warehouse.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/print-documents-by-warehouse",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/warehousing/outbound-load-handling#print-documents-by-warehouse-or-site"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/quantity-exceeds-ove.md",
@@ -27467,8 +27451,7 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/quantity-invalid-split-pick.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/quantity-invalid-split-pick",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/warehousing/configure-mobile-devices-warehouse#menu-options"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/released-qty-cannot-be-negative.md",
@@ -27482,8 +27465,7 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/rerelease-partially-shipped-load.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/rerelease-partially-shipped-load",
-      "redirect_document_id": "false"
+      "redirect_url": "/previous-versions/troubleshoot/dynamics-365/supply-chain/warehousing/rerelease-partially-shipped-load"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/reservations-0-inventory-available.md",
@@ -27507,8 +27489,7 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/shipment-confirmed-no-posting.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/shipment-confirmed-no-posting",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/warehousing/outbound-load-handling#outbound-load-shipment-confirmation"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/slotting-templates-inventory-batch-above.md",
@@ -27537,8 +27518,7 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/unconfirmed-purchase-orders-confirmed.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/unconfirmed-purchase-orders-confirmed",
-      "redirect_document_id": "false"
+      "redirect_url": "/previous-versions/troubleshoot/dynamics-365/supply-chain/warehousing/unconfirmed-purchase-orders-confirmed"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/unreserve-inventory-sales-line.md",
@@ -27557,8 +27537,7 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/weight-must-be-posit.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/weight-must-be-positive-error",
-      "redirect_document_id": "false"
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/weight-fields-on-load-lines-dont-match-weight-fields-error#container-weight-must-be-positive"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/when-receipting-prod.md",
@@ -27577,8 +27556,7 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/work-is-not-blocked.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/work-is-not-blocked",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/warehousing/work-blocking-reasons#work-is-already-unblocked"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/work-remains-blocked.md",
