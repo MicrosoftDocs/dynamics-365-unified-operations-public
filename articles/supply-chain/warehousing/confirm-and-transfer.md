@@ -6,7 +6,8 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:  WHSLoadTemplate,WHSWorkTemplateTable,WHSLoadPlanningWorkbench, WHSOutboundLoadPlanningWorkbench
 ms.topic: how-to
-ms.date: 09/24/2025
+ms.date: 10/30/2026
+ai-usage: ai-assisted
 ms.custom: 
   - bap-template
 ---
@@ -42,7 +43,7 @@ You can split only loads that meet all the following criteria:
 - One or more load lines have picked quantities.
 - The load status is less than loaded.
 - There's no load line data. (This data is created through license plate consolidation on the staging location, and the *Confirm and transfer* feature doesn't support license plate consolidation.)
-- No inventory is currently awaiting packing at a packing location. (To be able to split loads with the *Confirm and transfer* feature for inventory that you picked to the pack station but didn't yet pack and move to staging locations, follow the configuration steps detailed in [Packing work for packing outbound containers and processing shipments](packing-work.md)).
+- No inventory is currently awaiting packing at a packing location. (To be able to split loads with the *Confirm and transfer* feature for inventory that you picked to the pack station but didn't yet pack and move to staging locations, follow the configuration steps detailed in [Packing work for packing outbound containers and processing shipments](packing-work.md).)
 
 ## Cancelling the load
 
@@ -77,7 +78,7 @@ You must enable *Confirm and transfer* functionality for every load template whe
 This setup isn't required in all situations. The example that is shown here ensures that work can be broken by shipment to support the example scenario that is provided later in this article. You can also use other methods to achieve this result.
 
 1. Go to **Warehouse management** > **Setup** > **Work** > **Work templates**.
-1. In the grid in the upper part of the page, select an existing work template where you want to set up the *Confirm and transfer* feature. (If you plan to work through the scenario provided later in this article, and you're working with the *USMF* demo data, select the *51 Pick to stage* work template.) Alternatively, create a new work template.
+1. In the grid in the upper part of the page, select an existing work template where you want to set up the *Confirm and transfer* feature. If you plan to work through the scenario provided later in this article, and you're working with the *USMF* demo data, select the *51 Pick to stage* work template. Alternatively, create a new work template.
 1. On the Action Pane, select **Edit query** to open the **Sales** dialog box.
 1. In the **Sales** dialog box, on the **Sorting** tab, select **Add** to add a row to the grid.
 1. In the new row, set the following values:
@@ -89,7 +90,7 @@ This setup isn't required in all situations. The example that is shown here ensu
 
 1. Select **OK** to save your settings and close the **Sales** dialog box.
 1. If you receive a message that states that grouping is reset, select **Yes** to continue.
-1. In the grid in the upper part of the **Work templates** page, select the template that you just edited, and then, on the Action Pane, select **Work header breaks**.
+1. In the grid in the upper part of the **Work templates** page, select the template that you just edited. On the Action Pane, select **Work header breaks**.
 1. On the Action Pane, select **Edit** to put the page into edit mode.
 1. In the grid, set the following values:
 
@@ -102,14 +103,14 @@ This setup isn't required in all situations. The example that is shown here ensu
 
 ## Scenario
 
-This scenario shows an example where the picking process isn't yet completed, but the items that you picked so far must be loaded onto a truck and shipped anyway. Therefore, you can split the unpicked load lines onto a new load. All the data relationships automatically update.
+This scenario shows an example where the picking process isn't yet completed, but you must load the items you picked so far onto a truck and ship them. You can split the unpicked load lines onto a new load. All the data relationships automatically update.
 
 > [!NOTE]
 > The specific values that are described in this scenario are based on the *USMF* [demo data](../../fin-ops-core/dev-itpro/get-started/demo-data.md). Use this demo data while you're demonstrating or learning how to use the feature. If you don't use the *USMF* demo data, substitute your own values as required.
 
 ### Step 1: Create a load that has multiple load lines
 
-Before you can use this functionality, you must have a load that contains multiple load lines. You must also make sure that the pick locations have enough inventory for all the items on the sales orders that you create. Review the setup of the location directive (**Warehouse management** > **Setup** > **Location directives**), and make a note of the picking locations that are used for sales order picking. If you must adjust the inventory, create manual movements, use replenishment, or use any other flow, as required.
+Before you can use this functionality, you must have a load that contains multiple load lines. You must also ensure that the pick locations have enough inventory for all the items on the sales orders that you create. Review the setup of the location directive (**Warehouse management** > **Setup** > **Location directives**), and make a note of the picking locations that are used for sales order picking. If you must adjust the inventory, create manual movements, use replenishment, or use any other flow, as required.
 
 To create a qualifying load, first create three sales orders by following these steps.
 
@@ -149,7 +150,7 @@ The outbound load planning workbench uses the load template ID to build the ship
 1. Go to **Warehouse management** > **Loads** > **Outbound load planning workbench**.
 1. In the **Warehouse** field, select *51*.
 
-    You'll now build the load for the sales orders that you created.
+    You're now going to build the load for the sales orders that you created.
 
 1. On the **Sales lines** tab, in the grid, select the sales lines for the new sales orders.
 1. On the Action Pane, on the **Supply and demand** tab, in the **Add** group, select **To new load**.
@@ -173,18 +174,18 @@ The outbound load planning workbench uses the load template ID to build the ship
 
 ### Step 2: Set up the execution flow for mobile devices
 
-Mobile device tasks require worker input, such as the work ID or license plate ID. In the fields, this information typically appears for warehouse workers as bar codes on documentation, packaging, or racking. To complete the mobile device steps for scenarios, make sure that you identify the work IDs for the transactions, and the license plate IDs for the item and location in the transactions.
+Mobile device tasks require worker input, such as the work ID or license plate ID. In the fields, this information typically appears for warehouse workers as bar codes on documentation, packaging, or racking. To complete the mobile device steps for scenarios, ensure that you identify the work IDs for the transactions, and the license plate IDs for the item and location in the transactions.
 
 1. Sign in to the mobile device by using a user ID and password for warehouse *51*.
 1. Select **Outbound**.
 1. Select **Sales Picking**.
-1. Enter the work ID or the license plate ID. Enter the work ID for the first sales order, then select **Enter**.
+1. Enter the work ID or the license plate ID. Enter the work ID for the first sales order, and then select **Enter**.
 1. In the **Loc** field, enter the location that is shown to confirm the picking location. Then select **Enter**.
 1. In the **LP** field, enter the license plate ID. The license plate ID must match the item, warehouse, and location of the item that you're picking from the selected location. When you're done, select **Enter**.
-1. In the **Item** field, enter the item number to confirm the item that you're picking, then select **Enter**.
-1. In the **Qty** field, enter the quantity of the item that you're picking, then select **Enter**.
-1. In the **Target LP** field, enter a target license plate ID. Target license plates are user-defined. Be sure to enter a license plate ID that you can remember. We recommend that you use the current date plus a two-digit sequence (YYMMDD\#\#) as the format, such as *19112301*. When you're done, select **Enter**.
-1. Review the information that is shown. This information is the *Pick* information that now becomes the *Put* data for the put transaction. When you're done, select **Enter**.
+1. In the **Item** field, enter the item number to confirm the item that you're picking, and then select **Enter**.
+1. In the **Qty** field, enter the quantity of the item that you're picking, and then select **Enter**.
+1. In the **Target LP** field, enter a target license plate ID. Target license plates are user-defined. Enter a license plate ID that you can remember. Use the current date plus a two-digit sequence (YYMMDD\#\#) as the format, such as *19112301*. When you're done, select **Enter**.
+1. Review the information that's shown. This information is the *Pick* information that now becomes the *Put* data for the put transaction. When you're done, select **Enter**.
 
     - You receive a **Work Completed** message.
 
@@ -196,7 +197,7 @@ The next step is to load the two picked license plates to the truck.
 1. Select **Outbound**.
 1. Select **Sales Loading**.
 1. Enter the target license plate ID that you created for the first work ID in the previous procedure. Then select **Enter** to put the target license plate into the *STAGE* location.
-1. Enter the target license plate ID again, then select **Enter** to put the license plate into the *BAYDOOR* location.
+1. Enter the target license plate ID again, and then select **Enter** to put the license plate into the *BAYDOOR* location.
 1. Repeat steps 4 through 5 for the target license plate ID that you created for the second work ID.
 
 The two work IDs are now closed (loaded).
@@ -232,7 +233,7 @@ You can confirm that transaction relations are updated in the following ways:
 
 The *Confirm and transfer* and [*Partial shipment of a transport load*](partial-shipping-of-transport-loads.md) features both focus on flexibility in different aspects of the warehousing process. The *Partial shipment of transport load* feature enables flexibility in planning and loading, while the *Confirm and transfer* feature enables flexibility in ship-confirming a load. You can use these features alone or together.
 
-Both features allow for more adaptable handling of transport loads, accommodating partial shipments and incomplete work scenarios. For example, you can plan loads without considering specific containers or trucks. After releasing these loads to the warehouse, workers can use mobile devices to assign loads in real-time as it makes sense, loading inventory from the same or different loads onto the same truck. This flexibility allows for partial shipments based on real-time loading decisions. Once a truck is full, workers can use the *Confirm and transfer* feature to close and complete an incomplete load and optionally split or cancel remaining quantities. This way, warehouse workers can make real-time decisions on load assignments and shipment confirmations, optimizing the use of transport capacity, and warehouse operations can proceed without delays.
+Both features allow for more adaptable handling of transport loads, accommodating partial shipments and incomplete work scenarios. For example, you can plan loads without considering specific containers or trucks. After releasing these loads to the warehouse, workers can use mobile devices to assign loads in real-time as it makes sense, loading inventory from the same or different loads onto the same truck. This flexibility allows for partial shipments based on real-time loading decisions. When a truck is full, workers can use the *Confirm and transfer* feature to close and complete an incomplete load and optionally split or cancel remaining quantities. This way, warehouse workers can make real-time decisions on load assignments and shipment confirmations, optimizing the use of transport capacity, and warehouse operations can proceed without delays.
 
 ## Notes and tips
 
@@ -240,6 +241,7 @@ Both features allow for more adaptable handling of transport loads, accommodatin
 - You can change the load shipment confirmation policy for an individual load after you create it but before the loading process starts. To do so, open its **Load details** page, set **Allow load split during ship confirm** to *Yes* and then select the desired value in the **Load split shipment confirmation policy** field.
 - The **Split quantity to new load** option also works when some of the remaining work headers have a status of *In process*. Therefore, you can still use the functionality even if workers are already running the pick orders.
 - If you select **Cancel unfulfilled quantity** while there's remaining work that has a status of *Open* or *In progress*, you receive the following error message: "Unable to cancel remaining qty for load. Work exists for load."
-- If you select **Cancel unfulfilled quantity** when there's no remaining work but there are unreleased load lines on the load, you receive the following error message: "The shipment for load couldn't be confirmed because the quantity for item exceeds the percentage that is defined for under delivery." To avoid this error, you can set the **Under delivery** percentage on the unreleased load line to *100*. Unreleased lines aren't moved to a new load, but the current load is confirmed with under delivery. In this case, you can't rerelease the original order, so you have to handle it in some other way.
+- If you select **Cancel unfulfilled quantity** when there's no remaining work but there are unreleased load lines on the load, you receive the following error message: "The shipment for load couldn't be confirmed because the quantity for item exceeds the percentage that is defined for under delivery." To avoid this error, set the **Under delivery** percentage on the unreleased load line to *100*. Unreleased lines aren't moved to a new load, but the current load is confirmed with under delivery. In this case, you can't rerelease the original order, so you have to handle it in some other way.
+- If you confirm shipment for a transfer order from a warehouse enabled for warehouse management processes (WMS), you might receive the error "License plate must be specified for this location." even after the work is complete. This error occurs when **Default receipt location** is blank for the transit warehouse associated with the from warehouse. Specify a default receipt location in that transit warehouse, and ensure the location is license-plate controlled.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

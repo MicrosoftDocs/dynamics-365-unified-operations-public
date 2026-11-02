@@ -6,7 +6,8 @@ ms.author: mirzaab
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 06/22/2026
+ms.date: 10/30/2026
+ai-usage: ai-assisted
 ms.custom: 
   - bap-template
 ---
@@ -19,10 +20,10 @@ This article describes how to set up the criteria that determine whether waves a
 
 ## Settings for wave templates
 
-When you set up a wave template, you specify the following:
+When you set up a wave template, specify the following information:
 
 - The **Site** and **Warehouse** that the template creates work for.
-- The order in which the system evaluates the templates. This order determines how the templates are matched to released lines on sales orders, production orders, and kanbans. When a line is released, the system applies the first wave template whose criteria the line meets. The broader the criteria, the more likely a line is to meet them, so put the templates with the most specific criteria at the top of the list. Use the **Move up** and **Move down** buttons on the Action Pane to arrange templates in the list.
+- The order in which the system evaluates the templates. This order determines how the templates are matched to released lines on sales orders, production orders, and kanbans. When you release a line, the system applies the first wave template whose criteria the line meets. The broader the criteria, the more likely a line is to meet them, so put the templates with the most specific criteria at the top of the list. Use the **Move up** and **Move down** buttons on the Action Pane to arrange templates in the list.
 - The actions taken by each template. The wave **Methods** perform the actions that the template creates, such as creating or distributing work for each type of wave template.
 - The wave attributes (filters) that must apply to use the wave template.
 
@@ -34,12 +35,20 @@ Some settings represent strategic decisions for wave processing, as follows:
 - If the template is used to ship items for sales, transfer, and outbound shipment orders, or to move items to production for production orders or kanbans.
 - If a wave is processed manually or automatically, as follows:
 
-    - **Manual processing** – The line is added to a wave, and the inventory is reserved. However, you must select **Process** on the **All waves** list page to create the picking work for the order.
-    - **Automatic processing** – You can fully or partially automate wave processing. If you fully automate wave processing, a wave is created that includes the line from the sales order, production order, or kanban when a sales order, production order, or kanban is created. The items are deducted from on-hand inventory, and the picking work is created. If you partially automate wave processing, you can specify values that will trigger wave processing. For example, you can specify a maximum weight for shipments. Wave processing is then triggered when the total weight of the lines in the wave reaches that value.
+    - **Manual processing** – The line is added to a wave, and the system reserves the inventory. However, you must select **Process** on the **All waves** list page to create the picking work for the order.
+    - **Automatic processing** – You can fully or partially automate wave processing. If you fully automate wave processing, a wave is created that includes the line from the sales order, production order, or kanban when a sales order, production order, or kanban is created. The system deducts the items from on-hand inventory, and creates the picking work. If you partially automate wave processing, you can specify values that trigger wave processing. For example, you can specify a maximum weight for shipments. The system triggers wave processing when the total weight of the lines in the wave reaches that value.
 
-- If you assign shipments to an open wave. For example, if you promise customers that an order placed by 12:00 PM will ship within 24 hours, you can set up the wave template to automatically assign order lines to an open wave until 12:00 PM. At that time, the wave is automatically processed.
+- If you assign shipments to an open wave. For example, if you promise customers that an order placed by 12:00 PM ships within 24 hours, set up the wave template to automatically assign order lines to an open wave until 12:00 PM. At that time, the system automatically processes the wave.
 
-When a wave is processed, the system creates picking work based on the work template and location directive specified for the warehouse. The work template specifies how picking work is created, and the location directive specifies the pick and put locations.
+When the system processes a wave, it creates picking work based on the work template and location directive specified for the warehouse. The work template specifies how picking work is created, and the location directive specifies the pick and put locations.
+
+### Generate picking work when you release a load
+
+If you need picking work immediately when you release a sales or transfer order load to the warehouse, configure the applicable wave template as follows:
+
+- Set **Automate wave creation** to *Yes*.
+- Set **Process wave at release to warehouse** to *Yes*.
+- Set **Automate wave release** to *Yes*.
 
 ## Create a wave template
 
@@ -88,7 +97,7 @@ To set up a wave template, follow these steps:
 
 1. Set **Wave notification policy** to the policy you want to use for generating notifications related to waves that use this template. For an example of a wave notification policy, see [Wave execution notifications](wave-execution-notifications.md).
 
-1. On the **Methods** FastTab, the **Selected methods** pane lists the methods for the selected wave template. The wave methods perform the actions that the template creates, such as creating or distributing work. These actions are also referred to as wave steps. Wave methods are predefined for each type of wave template. You can't remove the predefined wave methods. However, you can rearrange the order of the methods and add additional methods. For example, if you’re creating a wave template for shipping, you can add methods for replenishment and containerization. Wave containerization can be added to a sequence of wave methods to define the containerization of the lines processed in a wave template. To add an additional method, do the following:
+1. On the **Methods** FastTab, the **Selected methods** pane lists the methods for the selected wave template. The wave methods perform the actions that the template creates, such as creating or distributing work. These actions are also referred to as wave steps. Wave methods are predefined for each type of wave template. You can't remove the predefined wave methods. However, you can rearrange the order of the methods and add more methods. For example, if you’re creating a wave template for shipping, you can add methods for replenishment and containerization. Wave containerization can be added to a sequence of wave methods to define the containerization of the lines processed in a wave template. To add an extra method, do the following:
 
     - Select a method on the **Remaining methods** pane, and then select the **Add** button (right arrow) to add it to the **Selected methods** pane.
     - To change the sequence, select a method, and then select **Move up** or **Move down** arrows.
@@ -96,5 +105,5 @@ To set up a wave template, follow these steps:
     > [!NOTE]
     > When you add a method, it’s automatically listed in the appropriate location in the sequence of steps.
 
-1. To set up the query that will match released lines to an appropriate wave, select **Edit query** on the Action Pane.
+1. To set up the query that matches released lines to an appropriate wave, select **Edit query** on the Action Pane.
 1. To verify that the wave template settings are valid, select **Validate template**.
