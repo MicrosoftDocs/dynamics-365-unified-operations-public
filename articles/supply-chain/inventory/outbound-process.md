@@ -6,7 +6,8 @@ ms.author: banluo
 ms.reviewer: kamaybac
 ms.search.form: WMSOrder, WMSShipment, MCRPickingWorkbench, WMSPickingRegistration, CustomFilterGroup
 ms.topic: how-to
-ms.date: 04/30/2026
+ms.date: 10/30/2026
+ai-usage: ai-assisted
 ms.custom: 
   - bap-template
 ---
@@ -21,7 +22,7 @@ This article provides an overview of the outbound process in Inventory managemen
 
 Use output orders to link sales order lines and transfer order lines with the outbound picking processes that use picking lists.
 
-When picking lists are generated from either sales orders or transfer orders, output orders and shipments are automatically created. A picking list has a one-to-one relationship with a shipment. The transfer order shipment or the sales order packing slip can be processed from the shipment.
+When you generate picking lists from either sales orders or transfer orders, the system automatically creates output orders and shipments. A picking list has a one-to-one relationship with a shipment. You can process the transfer order shipment or the sales order packing slip from the shipment.
 
 The following diagram shows an overview of the process for outbound orders.
 
@@ -31,9 +32,9 @@ Set up outbound rules to define how the program should handle the outbound proce
 
 ## Picking route status for sales and transfer orders
 
-Go to **Account receivable** > **Setup** > **Account receivable parameters**, and then, on the **Updates** tab, select a value in the **Picking route status** field.
+Go to **Accounts receivable** > **Setup** > **Accounts receivable parameters**, and then, on the **Updates** tab, select a value in the **Picking route status** field.
 
-If the **Picking route status** field is set to **Completed**, the picking process occurs automatically as part of the process of generating picking lists. If the field is set to *Activated*, the picking list lines must be manually updated.
+If you set the **Picking route status** field to *Completed*, the picking process occurs automatically as part of the process of generating picking lists. If you set the field to *Activated*, you must manually update the picking list lines.
 
 The same setup applies to transfer orders. Go to **Inventory management** > **Setup** > **Inventory and warehouse management parameters**, and then, on the **Transport** tab, select a value in the **Picking route status** field.
 
@@ -46,6 +47,13 @@ When the warehouse worker reduces the picking list quantities, the corresponding
 ## Reduce quantity
 
 Use the **Reduce quantity** parameter as part of the process of generating picking lists. The setting of this parameter works together with the **Reservation** setting that triggers a reservation process as part of the release to the warehouse.
+
+### Reduce picked quantity on a warehouse load
+
+To reduce quantities that are already picked on a warehouse load, use the **Reduce picked quantity** page. This operation differs from the **Reduce quantity** parameter used during picking list generation.
+
+1. Go to **Warehouse management** > **Loads** > **Active loads**, and select the load.
+2. On the **Load order lines** FastTab, select **Reduce picked quantity**. When you unpick to a license plate-controlled location, specify both the destination location and the destination license plate for the load line.
 
 ## Example of an outbound process for a sales order
 

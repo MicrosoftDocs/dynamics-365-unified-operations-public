@@ -6,7 +6,7 @@ ms.author: jodahl
 ms.reviewer: kamaybac
 ms.search.form: EntAssetWorkOrderJournal, EntAssetWorkOrderAddSparePart 
 ms.topic: how-to
-ms.date: 05/13/2026
+ms.date: 11/02/2026
 ai-usage: ai-assisted
 ms.custom:
   - bap-template
@@ -16,7 +16,7 @@ ms.custom:
 
 [!INCLUDE [banner](../../includes/banner.md)]
 
-When a maintenance job on a work order is complete, the next step is to register consumption and post the journals. Register consumption for the following types: hours, items, and expenses. Register and post the different consumption types on the **Work order journals** page. The journal setup in **Asset Management** is used for creating and posting separate journals for hours, items, and expenses in the **Project management and accounting** module.
+When a maintenance job on a work order is complete, register consumption and post the journals. Register consumption for the following types: hours, items, and expenses. Register and post the different consumption types on the **Work order journals** page. Use the journal setup in **Asset Management** for creating and posting separate journals for hours, items, and expenses in the **Project management and accounting** module.
 
 In some cases, you can add or delete forecast lines on a work order. The setup of a work order lifecycle state, the related project type, and the stage rules related to the project type determine if you can add or edit journal lines. Learn more about work order lifecycle states and related project stages in [Forecasts, work orders, and projects](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
 
@@ -36,6 +36,17 @@ In some cases, you can add or delete forecast lines on a work order. The setup o
 The following screenshot shows an example of hour and item registrations on a work order in **Work order journals**.
 
 :::image type="content" source="media/01-consumption.png" alt-text="Screenshot of Work order journals page showing Hours and Items sections with registration lines for posting." lightbox="media/01-consumption.png":::
+
+## Set up workers for hour registrations
+
+Hour registrations post to hour journals in the **Project management and accounting** module. Therefore, in the **Resource** field of hour registration lines, you can only select workers who are employed at the same legal entity the work order is for, and who are set up as project resources in that legal entity. Resources that you create on the **Resources** page in **Organization administration** (**Organization administration** > **Resources** > **Resources**) aren't project resources.
+
+To set up a worker as a project resource, do one of the following actions:
+
+- Go to **Human resources** > **Workers** > **Workers** and select the worker. On the Action Pane, open the **Project** tab and, in the **Set up** group, select **Project setup**. Then use the **Resource setup** page to complete the project resource setup for the worker. The **Project** tab is available only for workers who are employed in the currently selected legal entity.
+- Go to **Project management and accounting** > **Project resources** > **Resources list**. On the Action Pane, select **New resource**. In the dialog, complete the required fields to set up the worker as a project resource.
+
+If a worker isn't set up as a project resource, you can't select the worker on hour registration lines, and the lines that you create for the worker by using **Split hours** don't have a resource. Depending on your project setup, you might still be able to post hours without a resource. However, those hours aren't related to a worker, so prices and financial dimensions that are set up for the worker aren't applied.
 
 ## Split hours on work orders with several work order jobs
 
@@ -66,7 +77,7 @@ When you make consumption registrations, the system adds financial dimensions re
 > [!IMPORTANT]
 > If the [dimension link](../../cost-management/financial-dimension-links.md) feature is active (on **Inventory management** > **Setup** > **Posting** > **Dimension link**) and a financial dimension is linked to the inventory site, the linked dimension values from the site take precedence on item registrations. In this case, the values from the dimension attributes override the values that came from the related work order project.
 
->[!NOTE]
->For all three registration types, the system validates the financial dimension combination and blanks invalid combinations.
+> [!NOTE]
+> For all three registration types, the system validates the financial dimension combination and blanks invalid combinations.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
