@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/19/2026
+ms.date: 11/03/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 
@@ -132,13 +132,13 @@ For example, for intra-community acquisitions at a normal rate, you configure sa
 
 Alternatively, you configure two sales tax codes:
 
-   - **VAT_S_EU**, which has a tax rate value of -20 percent
-   - **InVAT_S_EU**, which has a tax rate value of 20 percent
+- **VAT_S_EU**, which has a tax rate value of -20 percent
+- **InVAT_S_EU**, which has a tax rate value of 20 percent
 
 You then associate the codes with lookup results in the following way:
 
-   - Associate **VAT_S_EU** with the **TaxLiabilityEUPurchaseStandardRate** lookup result of **Report field lookup**.
-   - Associate **InVAT_S_EU** with the **InputTaxEUPurchase** lookup result of **Report field lookup**.
+- Associate **VAT_S_EU** with the **TaxLiabilityEUPurchaseStandardRate** lookup result of **Report field lookup**.
+- Associate **InVAT_S_EU** with the **InputTaxEUPurchase** lookup result of **Report field lookup**.
 
 In this case, amounts that use the **VAT_S_EU** sales tax code are reflected in box 072. Amounts that use the **InVAT_S_EU** sales tax code are reflected in box 065.
 
@@ -146,16 +146,35 @@ For more information about how to configure reverse charge VAT, see [Reverse cha
 
 ## Configure system parameters
 
-To generate a VAT declaration, configure your organization's VAT number.
+To generate a VAT declaration, set up the registration IDs for your legal entity. The VAT declaration uses registration IDs that are assigned to the **VAT ID** and **EU VAT ID** registration categories. The following table shows where each registration number is reported.
 
-1. Go to **Organization administration** > **Organizations** > **Legal entities**.
+| Registration category | Where the registration number is reported |
+| --- | --- |
+| VAT ID | The `FASTNR` element in the XML file |
+| EU VAT ID | The `IDENTIFIKATIONSBEGRIFF` element in the XML file, and the **Tax number** field in the header of the Excel file |
+
+Before you begin, ensure that the registration types for Austria are assigned to the **VAT ID** and **EU VAT ID** registration categories. To assign registration categories, go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration categories**.
+
+To set up the registration IDs, follow these steps.
+
+1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. Select the legal entity, and then select **Registration IDs**.
 1. Select or create the address in Austria, and then, on the **Registration ID** FastTab, select **Add**.
 1. In the **Registration type** field, select the registration type that's dedicated to Austria and uses the **VAT ID** registration category.
-1. In the **Registration number** field, enter the VAT number.
+1. In the **Registration number** field, enter the VAT number. This number is reported in the `FASTNR` element in the XML file.
+1. On the **General** tab, in the **Effective** field, enter the date when the number becomes effective.
+1. On the **Registration ID** FastTab, select **Add** again.
+1. In the **Registration type** field, select the registration type that's dedicated to Austria and uses the **EU VAT ID** registration category.
+1. In the **Registration number** field, enter the number that must be reported as the identification term (*Identifikationsbegriff*). This number is reported in the `IDENTIFIKATIONSBEGRIFF` element in the XML file and in the **Tax number** field in the header of the Excel file.
 1. On the **General** tab, in the **Effective** field, enter the date when the number becomes effective.
 
-For more information about setting up registration categories and registration types, see [Registration IDs](../europe/emea-registration-ids.md).
+> [!NOTE]
+>
+> - If you don't set up a registration ID that uses the **EU VAT ID** registration category for the legal entity, the `IDENTIFIKATIONSBEGRIFF` element in the XML file and the **Tax number** field in the Excel file are blank. The VAT declaration doesn't use another registration number instead.
+> - The VAT declaration doesn't use the **Tax registration number** field on the **Tax registration** FastTab of the **Legal entities** page. It uses registration IDs instead, because registration IDs support legal entities that have more than one VAT registration. For more information, see [Multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md).
+> - Reporting of the **EU VAT ID** registration category is supported in version 180.33 or later of the **VAT Declaration XML (AT)** format and version 180.33.35 or later of the **VAT Declaration Excel (AT)** format.
+
+For more information about how to set up registration categories and registration types, see [Registration IDs](../../../fin-ops-core/dev-itpro/organization-administration/registration-ids.md).
 
 ## Set up a VAT declaration for Austria
 
@@ -188,7 +207,7 @@ Follow these steps to define which sales tax codes generate which boxes in the f
 1. On the **Conditions** FastTab, set the following fields to associate the sales tax codes and operations.
 
 | Field | Description |
-|-------|-------------|
+| ------- | ------------- |
 | Lookup result | Select the value of the turnover. For more information about the turnover values and their assignment to VAT declaration rows, see the [VAT declaration overview](#VAT_declaration_overview_1) section earlier in this article. |
 | Tax code | Select the sales tax code to associate with the operation. Posted tax transactions that use the selected sales tax code are collected in the appropriate declaration box. Separate sales tax codes so that one sales tax code generates amounts in only one declaration box. |
 | Transaction classifier | If you create enough sales tax codes to determine a declaration box, select **\*Not blank\***. If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one declaration box, set up a transaction classifier. The following transaction classifiers are available: **Purchase**, **PurchaseExempt** (tax-exempt purchase), **PurchaseReverseCharge** (tax receivable from a purchase reverse charge), **Sales**, **SalesExempt** (tax-exempt sale), **SalesReverseCharge** (tax payable from a purchase reverse charge or a sales reverse charge), **Use tax**. For each transaction classifier, a classifier for the credit note is also available. For example, one of these classifiers is **PurchaseCreditNote** (purchase credit note). |
@@ -210,7 +229,7 @@ Follow these steps to define which sales tax codes generate which boxes in the f
 
     > [!NOTE]
     > Be sure to associate all sales tax codes with lookup results. If any sales tax codes shouldn't generate values in the previously mentioned subsections of section 4, or in section 5, associate them with the **Other** lookup result.
-    > 
+    >
     > :::image type="content" source="../media/972efc3680f3683444f895b28cad394f.png" alt-text="Screenshot of the Application specific parameters page showing the Lookups FastTab.":::
 
 1. In the **State** field, change the value to **Completed**.
@@ -262,7 +281,7 @@ The data package contains electronic message settings to generate the VAT declar
 
 1. Go to **Tax** > **Periodic tasks** > **Declarations** > **Sales tax** > **Report sales tax for settlement period**.
 
-1.  Set the following fields.
+1. Set the following fields.
 
     | Field                     | Description                                    |
     |---------------------------|------------------------------------------------|
@@ -377,6 +396,5 @@ Follow these steps to set up electronic messages to collect data from multiple l
 1. For each new line, select **Edit query**, and specify a related settlement period for the legal entity that you specified in the **Company** field on the line.
 
     When you complete the setup, the **Collect data** function on the **Electronic messages** page collects sales tax payments from all legal entities that you defined.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
