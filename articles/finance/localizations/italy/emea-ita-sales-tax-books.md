@@ -4,7 +4,7 @@ description: Learn how to configure and generate Italian sales tax books, includ
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 05/01/2026
+ms.date: 11/03/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -21,19 +21,19 @@ ms.dyn365.ops.version: Version 1611
 
 This article explains how to configure and generate Italian sales tax books.
 
-According to Italian legislation, every value-added tax (VAT) transaction must be recorded in a tax book (*Libro IVA*) that will be used for tax reporting. To meet these legislative requirements, Microsoft Dynamics 365 Finance implements Italian sales tax books functionality.
+According to Italian legislation, you must record every value-added tax (VAT) transaction in a tax book (*Libro IVA*) that you use for tax reporting. To meet these legislative requirements, Microsoft Dynamics 365 Finance implements Italian sales tax books functionality.
 
 - Sales tax books can be of the **Purchase** or **Sales** type.
 - You can keep as many sales tax books as you require.
 - Every tax book is divided into multiple tax book sections (*Sezionale IVA*).
-- All sales tax transactions must be sequentially numbered, without gaps, and ordered by posting date within each sales tax book section.
-- A tax transaction voucher in Dynamics 365 Finance is equivalent to the Italian *Protocollo IVA* that must always be applied during posting to help guarantee chronological order by posting date.
+- You must sequentially number all sales tax transactions, without gaps, and order them by posting date within each sales tax book section.
+- A tax transaction voucher in Dynamics 365 Finance is equivalent to the Italian *Protocollo IVA* that you must always apply during posting to help guarantee chronological order by posting date.
 
-As of Finance version 10.0.39, the Italian sales tax books functionality supports reporting of Italian sales tax books in the [Electronic reporting (ER) tool](/dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting). It also accommodates reporting for [multiple VAT registrations](../global/emea-multiple-vat-registration-numbers.md).
+As of Finance version 10.0.39, the Italian sales tax books functionality supports reporting of Italian sales tax books in the [Electronic reporting (ER) tool](/dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting). It also accommodates reporting for [multiple VAT registrations](../global/emea-multa-vat-registration-numbers.md).
 
 ## Prerequisites
 
-Before you begin, you must [configure system parameters to report sales tax books for Italy](emea-ita-vat-statements-details.md).
+Before you begin, [configure system parameters to report sales tax books for Italy](emea-ita-vat-statements-details.md).
 
 ## Configure sales tax books
 
@@ -42,13 +42,13 @@ To set up Italian sales tax books, go to **Tax** \> **Setup** \> **Sales tax** \
 The following table describes the fields that are available on the **Italian sales tax books** page.
 
 | Field | Description |
-|-------|-------------|
+| ----- | ----------- |
 | Sales tax book | Enter the ID of the sales tax book. |
 | Name | Enter a description of the sales tax book. |
-| Sales tax book type | <p>Select one of the following values to specify the nature of the operations that are performed through the sales tax book sections that you'll attach to the current sales tax book:<ul><li><strong>Purchase</strong> – Select this value for purchase invoices and credit notes.</li><li><strong>Sales</strong> – Select this value for sales invoices and credit notes.</li><li><strong>Not included</strong> – Select this value for invoices and credit notes that come from countries/regions that are outside the European community. This type is used only for statistical purposes and won't be included on the final fiscal tax book reports.</li></ul> |
-| Settlement period | Select an existing sales tax settlement period. When a sales tax book is printed, if the **Update** checkbox is selected on the **Sales tax payment** page, the date in the **From date** field is compared to the selected settlement period. The settlement period is also used to identify which sales tax books and sales tax book sections must be closed when a sales tax settlement is updated for a settlement period. |
+| Sales tax book type | <p>Select one of the following values to specify the nature of the operations that you perform through the sales tax book sections that you attach to the current sales tax book:<ul><li><strong>Purchase</strong> – Select this value for purchase invoices and credit notes.</li><li><strong>Sales</strong> – Select this value for sales invoices and credit notes.</li><li><strong>Not included</strong> – Select this value for invoices and credit notes that come from countries/regions that are outside the European community. This type is used only for statistical purposes and isn't included on the final fiscal tax book reports.</li></ul> |
+| Settlement period | Select an existing sales tax settlement period. When you print a sales tax book, if you select the **Update** checkbox on the **Sales tax payment** page, the date in the **From date** field is compared to the selected settlement period. The settlement period is also used to identify which sales tax books and sales tax book sections must be closed when a sales tax settlement is updated for a settlement period. |
 | Closed to | The latest closing date from the related sales tax book sections that belong to the current sales tax book. |
-| EU sales | Select a sales tax book of the **Sales** type, and attach it to the current sales tax book of the **Purchase** type. This field is used if the selected sales tax book must include European Union (EU) purchase transactions from the current book on sales tax reports. This field is unavailable for sales tax books of the **Sales** and **Not included** types. |
+| EU sales | Select a sales tax book of the **Sales** type, and attach it to the current sales tax book of the **Purchase** type. Use this field if the selected sales tax book must include European Union (EU) purchase transactions from the current book on sales tax reports. This field is unavailable for sales tax books of the **Sales** and **Not included** types. |
 | ATECOFIN Code | Select the tax code for reporting. |
 | Include reverse transactions | Select this option to include reverse documents on the sales tax books report for the current sales tax book. |
 | Include zero lines | Select this option to include documents that have a zero amount on the sales tax books report for the current sales tax book. |
@@ -56,17 +56,17 @@ The following table describes the fields that are available on the **Italian sal
 
 ## <a id="sales-tax-book-sections"></a>Configure sales tax book sections
 
-Sales tax book sections are a repository where ledger transactions are posted according to their nature. Voucher numbering is driven by the sales tax book sections. To set up Italian sales tax book sections, go to **Tax** \> **Setup** \> **Sales tax** \> **Italian sales tax book sections**.
+Sales tax book sections are a repository where ledger transactions are posted according to their nature. Voucher numbering is driven by the sales tax book sections. To set up Italian sales tax book sections, go to **Tax** > **Setup** > **Sales tax** > **Italian sales tax book sections**.
 
 The following table describes the fields that are available on the **Italian sales tax book sections** page.
 
 | Field | Description |
-|-------|-------------|
+| ----- | ----------- |
 | Sales tax book | Select an existing sales tax book that the sales tax book section is attached to. |
 | Sales tax book section | Enter the ID of sales tax book section. |
 | Name | Enter a description of the sales tax book section. |
-| Number sequence code | <p>Select the number sequence code for the sales tax book section. You must must set up the number sequence code in advance. For more information, see <a href="emea-ita-vat-statements-details.md#number-sequences">Number sequences and number sequence groups</a>.</p><p>The number sequence code that you select depends on the type of sales tax book that the sales tax book section is attached to:</p><ul><li>For a sales tax book of the <strong>Purchase</strong> type: Select number sequence codes that are defined for purchase invoice vouchers or purchase credit note vouchers on the <strong>Accounts payable parameters</strong> page, or number sequence codes that are used on the <strong>Journal names</strong> page for vouchers where the <strong>Italian sales tax book</strong> field is set to <strong>Purchase</strong>.</li><li>For a sales tax book of the <strong>Sales</strong> type: Select number sequence codes that are defined for sales invoice vouchers, sales credit note vouchers, free text invoice vouchers, or free text credit note vouchers on the <strong>Accounts receivable parameters</strong> page, or number sequence codes that are used on the <strong>Journal names</strong> page for vouchers where the <strong>Italian sales tax book</strong> field is set to <strong>Sales</strong>.</li><li>For a sales tax book of the <strong>Not included</strong> type: Select any suitable number sequence code.</li></ul> |
-| Closed to | Enter the end date of the last closed sales tax settlement period. This field is used to filter data on the sales tax report. If it's set to a date that's earlier than the reporting period, and there are no transactions for this sales tax book section in the reporting period, the section isn't included on the report. |
+| Number sequence code | <p>Select the number sequence code for the sales tax book section. You must set up the number sequence code in advance. For more information, see <a href="emea-ita-vat-statements-details.md#number-sequences">Number sequences and number sequence groups</a>.</p><p>The number sequence code that you select depends on the type of sales tax book that the sales tax book section is attached to:</p><ul><li>For a sales tax book of the <strong>Purchase</strong> type: Select number sequence codes that are defined for purchase invoice vouchers or purchase credit note vouchers on the <strong>Accounts payable parameters</strong> page, or number sequence codes that are used on the <strong>Journal names</strong> page for vouchers where the <strong>Italian sales tax book</strong> field is set to <strong>Purchase</strong>.</li><li>For a sales tax book of the <strong>Sales</strong> type: Select number sequence codes that are defined for sales invoice vouchers, sales credit note vouchers, free text invoice vouchers, or free text credit note vouchers on the <strong>Accounts receivable parameters</strong> page, or number sequence codes that are used on the <strong>Journal names</strong> page for vouchers where the <strong>Italian sales tax book</strong> field is set to <strong>Sales</strong>.</li><li>For a sales tax book of the <strong>Not included</strong> type: Select any suitable number sequence code.</li></ul> |
+| Closed to | Enter the end date of the last closed sales tax settlement period. This field is used to filter data on the sales tax report. If you set it to a date that's earlier than the reporting period, and there are no transactions for this sales tax book section in the reporting period, the section isn't included on the report. |
 | Close Italian sales tax book section | The closing date of the Italian sales tax book for a tax period. You can't post or reverse an invoice that has a date that's earlier than the closing date of the tax period. This field is updated with the closing date of the tax period. The **Update** checkbox must also be selected on the **Sales tax payment** page. | 
 
 The **Create** button on the Action Pane of the **Italian sales tax book sections** page automatically creates all the required sales tax book sections for existing sales tax books of the **Sales** and **Purchase** types.
@@ -80,23 +80,23 @@ Every sales tax book section that's created is automatically attached to the def
 You can configure chronology control of invoice posting dates in a specific sales tax book section.
 
 1. In the **Feature management** workspace, turn on the **(Italy) Unified posting date control** feature. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-2. After the feature is enabled, a **Skip posting date control** column appears on the **Italian sales tax book sections** page. Use the checkbox in this column to specify whether posting date control is required for a selected sales tax book section.
+1. After the feature is enabled, a **Skip posting date control** column appears on the **Italian sales tax book sections** page. Use the checkbox in this column to specify whether posting date control is required for a selected sales tax book section.
 
     - If the checkbox is cleared (the default setting), the system prevents new invoices from being posted if their date is earlier than the date of the latest posted invoice.
     - If the checkbox is selected, the system allows posting of invoices that have any date.
 
-    ![Screenshot that shows the Skip posting date control column on the Italian sales tax book sections page.](../media/emea-ita-post-date-control.jpg)
+    :::image type="content" source="../media/emea-ita-post-date-control.jpg" alt-text="Screenshot of the Skip posting date control column on the Italian sales tax book sections page.":::
 
 ## Sales tax book status
 
-When a new sales tax settlement period is created, **Sales tax book status** records are automatically created for every sales tax book that exists in your legal entity. If an additional sales tax book is created, lines can be manually created for existing periods that haven't been closed.
+When you create a new sales tax settlement period, the system automatically creates **Sales tax book status** records for every sales tax book in your legal entity. If you create an additional sales tax book, you can manually create lines for existing periods that aren't closed.
 
-Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax settlement periods**, and then, on the Action Pane, select **Sales tax book status**.
+Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax settlement periods**, and then, on the Action Pane, select **Sales tax book status**.
 
 The following table describes the fields that are available on **Sales tax book status** page.
 
 | Field | Description |
-|-------|-------------|
+| ----- | ----------- |
 | Sales tax book | Select the sales tax book ID that you set up on the **Italian sales tax books** page. |
 | Name | The name of the selected sales tax book. |
 | First page number | The first page number to use on the Italian sales tax books report. |
@@ -116,28 +116,28 @@ If the **Attach report to Sales tax book status** checkbox is selected for the s
 
 ## Set up the Italian sales tax books electronic report
 
-As of Finance version 10.0.39, you can use the Italian sales tax books electronic report in PDF format. To prepare Finance to generate the Italian sales tax books electronic report in PDF format, follow these steps:
+Starting with Finance version 10.0.39, you can use the Italian sales tax books electronic report in PDF format. To prepare Finance to generate the Italian sales tax books electronic report in PDF format, follow these steps:
 
 1. Import the following ER configurations.
 
     | ER configuration name | Type | Description |
     |-----------------------|------|-------------|
     | Tax declaration model | Model | A generic model for different tax declarations. |
-    | Tax declaration model mapping (IT) | Model mapping | The model mapping for Italian sales tax books. |
+    | Tax declaration model mapping | Model mapping | A generic model mapping for VAT declarations. |
     | VAT Declaration PDF (IT) | Format (exporting) | The PDF format for Italian sales tax books. |
 
     Import the latest versions of these configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version. Use the Issue search tool in [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/v2) to find the KB article by number.
 
-    For more information about how to download ER configurations from the Microsoft global repository, see [Download ER configurations from the Global repository](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+Learn more about how to import ER configurations in [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
     > [!NOTE]
-    > After all the ER configurations from the preceding table are imported, set the **Default for model mapping** option to **Yes** for the **Tax declaration model mapping (IT)** configuration on the **Configurations** page.
+    > After you import all the ER configurations from the preceding table, set the **Default for model mapping** option to **Yes** for the **Tax declaration model mapping** configuration on the **Configurations** page.
 
 1. In the **Feature management** workspace, find and select the **VAT statement format reports** feature in the list, and then select **Enable now**.
-1. To define the **VAT Declaration PDF (IT)** format, go to **Tax** \> **Setup** \> **General ledger parameters**. On the **Sales tax** tab, in the **Tax options** section, in the **VAT statement format mapping** field, enter the format information.
+1. To define the **VAT Declaration PDF (IT)** format, go to **Tax** \> **Setup** \> **General ledger parameters**. On the **Sales tax** tab, in the **Tax options** section, enter the format information in the **VAT statement format mapping** field.
 
     > [!IMPORTANT]
-    > The **VAT Declaration PDF (IT)** ER format is generated by using data that's prepared specifically for Italian sales tax books. It's important that you set up the parameters of the sales tax authority and sales tax settlement periods according to the guidance in [Configure system parameters to report sales tax books for Italy](emea-ita-vat-statements-details.md).
+    > The **VAT Declaration PDF (IT)** ER format uses data that's prepared specifically for Italian sales tax books. Set up the parameters of the sales tax authority and sales tax settlement periods according to the guidance in [Configure system parameters to report sales tax books for Italy](emea-ita-vat-statements-details.md).
 
 ## Generate the Italian sales tax books electronic report
 
@@ -146,9 +146,9 @@ To generate the Italian sales tax books electronic report, follow these steps:
 1. Go to **Tax** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**. The **Report sales tax for settlement period** dialog box appears.
 1. In the **Settlement period** field, select the sales tax settlement period to generate the report for.
 1. In the **From date** field, specify a date in the interval of the settlement period that you want to generate the report for.
-1. In the **Sales tax payment version** field, select **Original**. If the sales tax settlement period is associated with a sales tax authority that's connected to a vendor account that has an address in Italy, **Original** is the only value that can be selected.
+1. In the **Sales tax payment version** field, select **Original**. If the sales tax settlement period is associated with a sales tax authority that's connected to a vendor account that has an address in Italy, **Original** is the only value that you can select.
 1. Select **OK**. The **Sales tax (Italy)** dialog box appears. The **Settlement period** field shows the previously selected settlement period, for reference.
-1. To generate the Italian sales tax books electronic report for a period that differs from the interval of the sales tax settlement period, use the **Variative period** checkbox. If you clear this checkbox, the **From date** and **To date** fields show the start and end dates of the period interval that the **From date** that you specified selected in the previous dialog box belongs to. If you select this checkbox, the **Last page number** value in the related **Sales tax book status** record can't be updated.
+1. To generate the Italian sales tax books electronic report for a period that differs from the interval of the sales tax settlement period, use the **Variative period** checkbox. If you clear this checkbox, the **From date** and **To date** fields show the start and end dates of the period interval that the **From date** that you specified selected in the previous dialog box belongs to. If you select this checkbox, you can't update the **Last page number** value in the related **Sales tax book status** record.
 1. In the **Sales tax book type** field, select the type of sales tax book to generate the report for. If this field is blank, the report is generated for all types.
 1. In the **From sales tax book** and **To sales tax book** fields, specify the sales tax books to generate the report for. If these fields are blank, the report is generated for all sales tax books.
 1. In the **Printout** section, select the **Sales tax books** checkbox to generate a report that includes the details of the taxable documents in the sales tax books.
