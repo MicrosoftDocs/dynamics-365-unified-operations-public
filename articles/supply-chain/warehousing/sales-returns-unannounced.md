@@ -123,11 +123,11 @@ For more information about return disposition codes and the actions that are ava
 
 To set up disposition codes that you can use on a mobile device, go to **Warehouse management** > **Setup** > **Mobile device** > **Disposition codes**. Disposition codes that you create here are available to mobile devices and can support several types of operations, including returns, sales orders, and inventory management. Disposition codes for returns must be linked to a return disposition code defined at **Sales and Marketing** > **Setup** > **Returns** > **Disposition codes**, and that assigns a return action for the code.
 
-For more information about mobile disposition codes and how to set them up, see [Set up dispositions codes](tasks/set-up-dispositions-codes.md).
+For more information about mobile disposition codes and how to set them up, see [Set up mobile device disposition codes](tasks/set-up-dispositions-codes.md).
 
 #### <a name="source-system-disposition-codes"></a> Source system disposition codes
 
-If you're using [Warehouse management only mode](wms-only-mode-overview.md), you must map local dispositions codes with the *source system disposition codes* used in each relevant [source systems](wms-only-mode-setup.md#source-systems). These codes are used when processing [inbound shipment orders](wms-only-mode-using.md#inbound-shipment-orders).
+If you're using [Warehouse management only mode](wms-only-mode-overview.md), you must map local disposition codes with the *source system disposition codes* used in each relevant [source systems](wms-only-mode-setup.md#source-systems). These codes are used when processing [inbound shipment orders](wms-only-mode-using.md#inbound-shipment-orders).
 
 To set up source system disposition codes, follow these steps:
 

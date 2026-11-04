@@ -3674,7 +3674,7 @@ items:
           items:
           - name: Return reason codes and disposition codes
             href: sales-marketing/disposition-and-return-reason-codes.md
-          - name: Set up disposition codes
+          - name: Set up return disposition codes
             href: sales-marketing/set-up-disposition-codes.md
           - name: Set up return reason codes
             href: sales-marketing/set-up-return-reason-code.md
@@ -4562,7 +4562,7 @@ items:
           href: warehousing/schedule-load-utilization.md
         - name: Schedule workload capacity
           href: warehousing/schedule-workload-capacity.md
-        - name: Set up dispositions codes
+        - name: Set up mobile device disposition codes
           href: warehousing/tasks/set-up-dispositions-codes.md
         - name: Set up unit sequence groups
           href: warehousing/unit-measure-stocking-policies.md

@@ -1,13 +1,14 @@
 ---
 title: Set up a min-max replenishment process
-description: Learn how to set up a new replenishment process that uses the minimum/maximum replenishment strategy, including a step-by-step process. 
+description: Learn how to set up a replenishment process that uses the minimum/maximum replenishment strategy, including a step-by-step process.
 author: Mirzaab
 ms.author: mirzaab
 ms.reviewer: kamaybac
-ms.search.form: WHSInventFixedLocation, InventItemIdLookupSimple, WMSLocationIdLookup, WHSLocDirTable, InventLocationIdLookup, SysQueryForm, WHSWorkTemplateTable, WHSReplenishmentTemplates, UnitOfMeasureLookup, SysQueryTableLookUp, SysQueryFieldLookUp, SysRecurrence, WHSInventFixedLocation
+ai-usage: ai-assisted
+ms.search.form: WHSInventFixedLocation, WHSLocDirTable, WHSWorkTemplateTable, WHSReplenishmentTemplates, SysRecurrence
 ms.topic: how-to
-ms.date: 06/22/2026
-ms.custom: 
+ms.date: 10/30/2026
+ms.custom:
   - bap-template
 ---
 
@@ -15,7 +16,16 @@ ms.custom:
 
 [!INCLUDE [banner](../../includes/banner.md)]
 
-This article shows how to set up a replenishment process that uses the minimum/maximum replenishment strategy. When inventory falls below the minimum level, the system creates work to replenish the location. This article also shows how to use fixed picking locations to allow restocking even if inventory falls below the minimum level, and how to enable the replenishment process to run regularly using a batch job. A warehouse manager typically carries out these tasks. You can run these procedures by using the USMF demo data company with the example values provided here, or you can run them on your own data. If you're using your own data, make sure that you have a warehouse that's enabled for warehouse management processes (WMS).
+This article shows how to set up a replenishment process that uses the minimum/maximum replenishment strategy. When inventory falls below the minimum level, the system creates work to replenish the location. This article also shows how to use fixed picking locations to allow restocking even if inventory falls below the minimum level, and how to run the replenishment process regularly by using a batch job. A warehouse manager typically carries out these tasks.
+
+You can run these procedures by using the USMF demo data company with the example values provided here, or you can run them on your own data. If you're using your own data, ensure that you have a warehouse that's enabled for warehouse management processes (WMS).
+
+The setup consists of four parts, which you must complete in order, because each part refers to the previous one:
+
+1. An optional fixed picking location, which lets the system replenish a location that has no inventory left.
+1. A location directive, which determines where inventory is picked from.
+1. A work template, which creates the pick and put work.
+1. A replenishment template, which defines the items, quantities, and locations to replenish.
 
 > [!CAUTION]
 > When the following conditions are met, the system might create replenishment work that results in a conflict when processing that work:
@@ -28,99 +38,110 @@ This article shows how to set up a replenishment process that uses the minimum/m
 
 ## Create a fixed picking location
 
-1. Go to **Warehouse management > Setup > Warehouse > Fixed locations**. This task is optional for min-max replenishment, but if you use a fixed picking location, it allows the replenishment of stock even if it falls below the minimum level, because the system can determine which items need replenishment, even when none are left.
-2. Select **New**.
-3. In the **Item number** field, enter or select a value. If you're using USMF, you can select item *A0001*.  
-4. In the **Site** field, enter or select a value. If you're using USMF, you can select site *2*.  
-5. In the **Warehouse** field, enter or select a value. If you're using USMF, you can select warehouse *24*.  
-6. In the **Location** field, enter or select a value. If you're using USMF, you can select *CP-003*.  
-7. Close the page.
+This task is optional. However, if you use a fixed picking location, the system can replenish the location even when no inventory is left there because it can determine which item belongs at the location.
+
+1. Go to **Warehouse management** > **Setup** > **Warehouse** > **Fixed locations**.
+1. On the Action Pane, select **New**.
+1. Set the following fields for the new row:
+
+    - **Item number** – Select the item that should always be stocked at the location. If you're using USMF, select item *A0001*.
+    - **Site** and **Warehouse** – Select the site and warehouse where the location is. If you're using USMF, select site *2* and warehouse *24*.
+    - **Location** – Select the picking location that's reserved for the item. If you're using USMF, select location *CP-003*.
+
+1. On the Action Pane, select **Save**.
 
 ## Create a replenishment location directive
 
-1. Go to **Warehouse management > Setup > Location directives**. Location directives are used to determine where items should be picked from in the replenishment process.
-2. In the **Work order type** field, select *Replenishment*.
-3. On the Action Pane, select **New**.
-4. In the **Name** field, type a value.
-5. In the **Work type** field, select *Pick*.
-6. In the **Site** field, enter or select a value. If you're using USMF, you can select site *2*.  
-7. In the **Warehouse** field, enter or select a value. If you're using USMF, you can select warehouse *24*.  
-8. Select **Save**.
-9. In the **Lines** section, select **New**.
-10. In the list, mark the selected row.
-11. In the **To quantity** field, enter a number. For example, you can set it to *9999*.  
-12. Select the **Allow split** checkbox. If you select this option, the work creation process allows work line quantities to be split across multiple locations.
-13. Select **Save**.
-14. In the **Location directive Actions** section, select **New**.
-15. In the list, mark the selected row.
-16. In the **Name** field, type a value.
-17. Select **Save**.
-18. On the Action Pane, select **Edit query**. Edit this query to add restrictions on where inventory can be selected from in the replenishment process. For example, you can use it to limit selection to inventory in the Bulk area of the warehouse.
-19. Select **OK**.
-20. Close the page.
+Location directives determine where items are picked from during the replenishment process.
+
+1. Go to **Warehouse management** > **Setup** > **Location directives**.
+1. In the **Work order type** field, select *Replenishment*.
+1. On the Action Pane, select **New**.
+1. Set the following fields for the new directive:
+
+    - **Name** – Enter a name that identifies the purpose of the directive.
+    - **Work type** – Select *Pick*.
+    - **Site** and **Warehouse** – Select the site and warehouse that the directive applies to. If you're using USMF, select site *2* and warehouse *24*.
+
+1. On the Action Pane, select **Save**.
+1. On the **Lines** FastTab, select **New**, and then set the following fields:
+
+    - **To quantity** – Enter the upper quantity limit that the line applies to. Set this value high enough to cover the quantities that you expect to replenish.
+    - **Allow split** – Select this check box to let the work creation process split a work line quantity across multiple locations.
+
+1. On the **Location directive actions** FastTab, select **New**, enter a **Name** for the action, and then select **Save**.
+1. With the action selected, on the Action Pane, select **Edit query** to restrict where inventory can be picked from. For example, you can limit selection to the bulk area of the warehouse. Select **OK** when you're done.
+
+Learn more about the settings that are available for location directives in [Work with location directives](../create-location-directive.md).
 
 ## Create a replenishment work template
 
-1. Go to **Warehouse management > Setup > Work > Work templates**. The work template guides the system in creating min/max replenishment work. At a minimum, it must include a work template line for a pick and a put. The work template shows as Invalid until all the necessary information has been filled in.
-2. In the **Work order type** field, select *Replenishment*.
-3. On the Action Pane, select **New**.
-4. In the **Work template** field, type a value.
-5. Select **Save**.
-6. In the **Work template details**, select **New**.
-7. In the **Work type** field, select *Pick*.
-8. In the **Work class ID** field, enter or select a value. This should be a work class related to replenishment. If you're using USMF, select *Replenish*.  
-9. In the **Work template details**, select **New**.
-10. In the list, mark the selected row.
-11. In the **Work type** field, select *Put*.
-12. In the **Work class ID** field, enter or select a value.
-13. Select **Save**.
-14. Close the page.
+The work template guides the system when it creates min/max replenishment work. At a minimum, it must include one work template line for a pick and one for a put. The template shows a status of *Invalid* until you fill in all the required information.
+
+1. Go to **Warehouse management** > **Setup** > **Work** > **Work templates**.
+1. In the **Work order type** field, select *Replenishment*.
+1. On the Action Pane, select **New**.
+1. In the **Work template** field, enter a name that identifies the template.
+1. On the Action Pane, select **Save**.
+1. On the **Work template details** FastTab toolbar, select **New**, and then set **Work type** to *Pick* and **Work class ID** to a work class that's set up for replenishment. If you're using USMF, select work class *Replenish*.
+1. Select **New** on the toolbar again, and then set **Work type** to *Put* and **Work class ID** to the appropriate work class.
+1. On the Action Pane, select **Save**.
 
 > [!NOTE]
-> When you use a replenishment template with **Replenishment type** set to *Minimum or maximum*, the location to replenish is defined as part of the replenishment template's setup and not by the location directive's *Put* work type.
+> When you use a replenishment template where the **Replenishment type** field is set to *Minimum or maximum*, you define the location to replenish as part of the replenishment template setup, not by the location directive's *Put* work type.
 
-## Create a new replenishment template
+## Create a replenishment template
 
-1. Go to **Warehouse management > Setup > Replenishment > Replenishment templates**. The replenishment template is used to define the items and quantities, and the location to replenish.
-2. On the Action Pane, select **New**.
-3. In the **Replenish template** field, type a value. Give the template a name to indicate that it's for min/max replenishment.  
-4. In the **Description** field, type a value.
-5. Select the **Allow wave demand to use unreserved quantities** checkbox. If you select this option, it enables wave demand replenishment to consume quantities that are related to min/max replenishment. For example, this might be useful if the min/max replenishment work isn't processed immediately, to avoid unnecessary demand replenishment work from being created.
-6. In the **Replenishment template details**, select **New**.
-7. In the **Sequence number** field, enter a number.
-8. In the **Description** field, type a value.
-9. In the list, mark the selected row.
-10. In the **Replenishment unit** field, enter or select a value. For example, select pcs. This setting is mandatory. It allows you to specify a different unit of measurement for replenishment work compared to the unit specified for the minimum and maximum stock levels in this template.
-11. In the **Work template** field, enter or select a value. Choose the work template that you created earlier.  
-12. In the **Minimum quantity** field, enter a number. Select the minimum quantity that should trigger replenishment. For example, set this to 50. You can leave this set to zero if you're replenishing a fixed location and the **Replenish empty fixed locations** option is set to *Yes*. Also select the **Replenish only fixed locations** option for performance reasons.
-13. In the **Maximum quantity** field, enter a number. For example, set this to 100.  
-14. In the **Unit** field, enter or select a value. Assign the unit for the minimum and maximum quantities. For example, set this to pcs.  
-15. Select the **Replenish empty fixed locations** checkbox. Select this checkbox to replenish fixed locations when they're empty. Otherwise, the only the locations where there's a quantity on hand are replenished.
-16. Select the **Replenish only fixed locations** checkbox.
-17. Select **Select products**. Use this to define which products should be replenished. If the Fixed picking locations option is selected, you also need to define the locations in this query. Variant-specific queries are available, as well as product-specific queries.
-18. Select the **Items** row.
-19. In the **Criteria** field, type a value. Select the items that should be replenished at the fixed locations. For example, type A\* to select all item numbers beginning with A.
-20. Select **Add**. Add the Location entity (unless it already exists) to be able to restrict the replenishment work to the fixed picking locations within a specific area of the warehouse.
-21. In the list, mark the selected row.
-22. Set the **Table** field to *Locations*.
-23. In the **Field** field, select *Location profile ID*.
-24. In the **Criteria** field, enter or select a value.
-25. Select **OK**.
-26. Close the page.
+The replenishment template defines the items and quantities to replenish, and the locations to replenish them to.
 
-## Set the replenishment process to run as a batch job
+1. Go to **Warehouse management** > **Setup** > **Replenishment** > **Replenishment templates**.
+1. On the Action Pane, select **New**.
+1. Set the following fields for the new template:
 
-1. Go to **Warehouse management > Replenishment > Replenishments**. The **Replenishments** page allows you to set up replenishment to run as a batch job, or to require that it's started manually.
-2. Select **Filter**.
-3. In the list, mark the selected row.
-4. In the **Criteria** field, enter or select a value.
-5. Select **OK**.
-6. Expand the **Run in the background** section.
-7. Set the **Batch processing** option to *Yes*.
-8. Select **Recurrence**.
-9. Select the **No end date** option.
-10. Set the **Recurrence pattern**. For example, select Days.  
-11. Select **OK**.
-12. Select **OK**.
+    - **Replenish template** – Enter a name that identifies the template as a min/max template.
+    - **Description** – Enter a short description of the template's purpose.
+    - **Replenishment type** – Select *Minimum or maximum*.
+    - **Allow wave demand to use unreserved quantities** – Select this check box to let wave demand replenishment consume quantities that min/max replenishment work already created but didn't reserve. This setting is useful when min/max replenishment work isn't processed immediately, because it prevents unnecessary demand replenishment work from being created.
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+1. On the **Replenishment template details** FastTab toolbar, select **New**, and then set the following fields for the new line:
+
+    - **Sequence number** – Enter a number that sets the order in which lines are evaluated when replenishment runs. You can't change this number after you save the line, and it can't be negative.
+    - **Description** – Enter a short description of what the line replenishes.
+    - **Replenishment unit** – Select the unit that replenishment work is created in. This field is required. It lets you replenish in a different unit than the one that the minimum and maximum levels are expressed in. For example, you can set minimum and maximum levels in pieces but replenish in boxes.
+    - **Demand increment** – Select whether a calculated replenishment quantity that doesn't divide evenly into whole replenishment units is rounded up or down.
+    - **Request type** – Optionally, select a request type to categorize the replenishment requests that the line generates.
+    - **Directive code** – Optionally, select the directive code that identifies which location directive to use. If you leave this field blank but the location directive has a directive code, the location directive is ignored, even if its query matches.
+    - **Work template** – Select the replenishment work template that you created earlier.
+    - **Minimum quantity** – Enter the quantity that triggers replenishment when on-hand inventory falls below it. You can leave this value at 0 if you're replenishing a fixed location and you set **Replenish empty fixed locations** to *Yes*.
+    - **Maximum quantity** – Enter the quantity to replenish up to. This value can't be less than the minimum quantity.
+    - **Unit** – Select the unit that the minimum and maximum quantities are expressed in.
+    - **Replenish empty fixed locations** – Select this check box to replenish fixed locations when they're empty. Otherwise, only locations that have an on-hand quantity are replenished.
+    - **Replenish only fixed locations** – Select this check box to limit replenishment to fixed locations. This setting is recommended for performance reasons when you replenish fixed locations.
+
+1. On the Action Pane, select **Save**.
+1. Select **Select products** to define which products the line replenishes. You can define criteria per product or per product variant.
+1. Select the **Items** row, and then, in the **Criteria** field, enter the items to replenish. For example, enter *A\** to select all item numbers that begin with *A*.
+1. To restrict replenishment to fixed picking locations in a specific area of the warehouse, select **Add** to add the **Locations** table to the query (unless it's already there). Then set **Field** to *Location profile ID* and enter the profile to restrict to in the **Criteria** field.
+1. Select **OK**.
+
+> [!NOTE]
+> If you set the **Replenishment threshold scope** field to *Zone*, the line can't use **Replenish only fixed locations**, and it can't use product variant criteria. Use fixed locations and standard min/max replenishment instead, or switch the scope back to the location level. Learn more in [Zone threshold replenishment](../zone-threshold-replenishment.md).
+
+## Run the replenishment process as a batch job
+
+Use the **Replenishments** page to run replenishment as a batch job or to require that you start it manually. Typically, min/max replenishment runs once a day, so that all picking locations are filled to the maximum level before picking starts.
+
+1. Go to **Warehouse management** > **Replenishment** > **Replenishments**.
+1. Select **Filter**, set the **Criteria** field to select the replenishment templates to run, and then select **OK**.
+1. Expand the **Run in the background** section, and set the **Batch processing** option to *Yes*.
+1. Select **Recurrence**, and then set up the schedule to use. For example, select the **No end date** option and set the recurrence pattern to run daily.
+1. Select **OK** to close the recurrence dialog, and then select **OK** to save the batch job.
+
+## Related information
+
+- [Replenishment overview](../replenishment.md)
+- [Replenishment strategies](../replenishment-strategies.md)
+- [Zone threshold replenishment](../zone-threshold-replenishment.md)
+- [Immediate replenishment](../immediate-replenishment.md)
+- [Replenishment over location capacity](../replenishment-over-location-capacity.md)
+- [Work with location directives](../create-location-directive.md)
