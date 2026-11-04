@@ -4,7 +4,7 @@ description: Learn about the modernized customer details page in Store Commerce 
 author: anush6121
 ms.author: anvenkat
 ms.topic: article
-ms.date: 08/14/2026
+ms.date: 11/05/2026
 ms.reviewer: mirao
 ms.custom:
   - bap-template
@@ -18,7 +18,7 @@ ms.custom:
 
 The modernized customer details page in Store Commerce replaces the legacy customer details view with a React-based, responsive experience. The new page surfaces existing capabilities, including Copilot customer insights and recommended products, in a redesigned layout. It also introduces a richer extensibility model for partners and ISVs.
 
-This article describes how to enable the modernized customer details page and explains what's available in versions 10.0.48 and 10.0.49.
+This article describes how to enable the modernized customer details page and explains what's available in versions 10.0.48 through 10.0.50.
 
 ## Prerequisites
 
@@ -40,7 +40,7 @@ This article describes how to enable the modernized customer details page and ex
 
 The customer details page uses React and Fluent UI, consistent with the broader Store Commerce modernization effort. The page uses a component-based structure organized into the following areas:
 
-- **Header/Customer info section**: Renders differently depending on device form factor (desktop versus phone).
+- **Header/Customer info section**: Renders differently depending on device form factor (desktop versus mobile).
 - **Command bar**: A responsive `CustomerDetailsCommandBar` component that adapts label visibility based on screen width.
 - **Tab bar**: A Fluent UI `TabList` wrapper managing navigation between the four content tabs.
 - **Tab content area**: Each tab renders independently, with key data preloaded for a faster experience.
@@ -52,7 +52,7 @@ This architecture aligns the customer details page with other modernized views i
 The page adapts to the device form factor automatically.
 
 - **Desktop**: Full-width header card with customer image, name, contact information, and a horizontal command bar with labeled buttons.
-- **Phone/mobile**: Compact header with key identifiers and a simplified action bar. All command bar actions except **Add to sale** are available in the **More actions** drawer. Contact actions, such as calling a phone number, are directly accessible from the header.
+- **Mobile**: Compact header with key identifiers and a simplified action bar. All command bar actions except **Add to sale** are available in the **More actions** drawer. Contact actions, such as calling a phone number, are directly accessible from the header.
 
 The page is organized into four tabs:
 
@@ -84,7 +84,7 @@ If the summary fails to generate, a refresh control appears on the tile to allow
 The **Recommended products** carousel appears at the bottom of the page and surfaces AI-suggested products for the customer. Up to 30 products show on desktop, and up to 10 on mobile.
 
 - **Desktop**: Fluent UI carousel with previous and next navigation.
-- **Phone and mobile**: Horizontally scrollable card list.
+- **Mobile**: Horizontally scrollable card list.
 
 Each product card includes an **Add to sale** button that adds the item directly to the cart.
 
@@ -141,7 +141,7 @@ Administrators can turn customer details page sections on or off, and reorder th
 Version 10.0.49 expands the extensibility surface for the modernized page:
 
 - An extension surface for the standalone modern address add or edit view.
-- App bar command extensibility on the compact (phone) layout.
+- App bar command extensibility on the compact mobile layout.
 - Safer extension-host lifecycle handling, including disposing of custom controls when the host unmounts.
 
 ### Improved error handling
@@ -220,9 +220,9 @@ The following table lists the sections and components that you can configure:
 
 The modernized customer details page supports the same extensibility model as the legacy customer details view. Existing extensions built for the legacy view work with the modernized page without any changes.
 
-By extending `CustomerDetailsExtensionCommandBase` from `PosApi/Extend/Views/CustomerDetailsView`, you can add custom app bar commands to the page command bar.
+### Add app bar commands
 
-The custom controls that you define for the customer details view appear in the **Additional** tab. This tab shows automatically when any custom controls are present.
+By extending `CustomerDetailsExtensionCommandBase` from `PosApi/Extend/Views/CustomerDetailsView`, you can add custom app bar commands to the page command bar.
 
 Register extensions in the POS extension manifest under `components.extend.views.CustomerDetailsView.appBarCommands`.
 
@@ -260,6 +260,17 @@ The manifest schema for a `CustomerDetailsView` extension entry is:
 | `wishListsLoadedHandler` | `WishListsLoaded` | `CustomerDetailsWishListsLoadedData` | Wishlist data finishes loading. |
 
 Assign a function to any of these handler properties in your constructor to respond to the corresponding page event.
+
+### Add custom controls
+
+The custom controls that you define for the customer details view appear in the following locations:
+
+- **Desktop and tablet layouts**: The **Additional** tab. The tab appears automatically when a custom control is visible.
+- **Mobile layouts in Commerce version 10.0.50 and later**: At the beginning of the **Account details** tab, where the **Additional** tab isn't available.
+
+The page initializes a custom control only after its host first becomes visible and retains the control when the user switches tabs. A control remains hidden until the extension reports that it's visible. These lifecycle rules help extensions avoid unnecessary initialization and preserve control state across tab changes.
+
+Custom controls must use the supported `CustomerDetailsView` extension host. Arbitrary extension-defined tabs aren't supported.
 
 ## More resources
 

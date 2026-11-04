@@ -2,7 +2,7 @@
 title: Extend POS views to add custom columns and app bar buttons
 description: Learn how you can extend existing POS views such as the Customer Add/Edit screen in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 02/18/2026
+ms.date: 11/05/2026
 ms.topic: how-to
 ms.reviewer: mirao
 ms.search.region: Global
@@ -16,7 +16,7 @@ ms.custom:
 
 [!INCLUDE [banner](../../includes/banner.md)]
 
-This article explains how you can extend existing POS views such as the Customer Add/Edit screen in Microsoft Dynamics 365 Commerce.
+This article explains how you can extend existing POS views such as the **Customer Add/Edit** screen in Microsoft Dynamics 365 Commerce.
 
 To extend the **Transaction** screen and **Welcome** screen, use the screen layout designer. To extend all other POS views, such as the **Customer Add/Edit** screen, use the Retail software development kit (SDK). This article focuses on the extension of existing POS views via the Retail SDK.
 
@@ -34,10 +34,9 @@ The following table shows the POS views that support extensions. It also indicat
 > [!NOTE]
 > Upcoming releases and hotfixes add support for more extension points in other views.
 
-
 | POS view (Release)              | Custom controls supported | Custom columns supported | Custom app bar buttons supported |
 |---------------------------------|-------------------------------|------------------------------|--------------------------------------|
-| Cart view (Screen layout based) | Yes                           | Yes                          | No                                   |
+| Cart view (Screen layout based) | Yes                           | Yes                          | Yes (mobile layouts in version 10.0.50 and later) |
 | CustomerAddEditView             | Yes                           | No                           | Yes                                  |
 | CustomerDetailsView             | Yes                           | No                           | Yes                                  |
 | SearchView                      | No                            | Yes                          | Yes                                  |
@@ -46,22 +45,22 @@ The following table shows the POS views that support extensions. It also indicat
 | SimpleProductDetailsView        | Yes                           | No                           | Yes                                  |
 | AddressAddEditView              | Yes                           | No                           | Yes                                  |
 | PaymentView                     | No                            | No                           | Yes                                  |
-| PriceCheckView                  | Yes                           | No                           | Yes                                   |
-| PriceCheckViewPhone             | No                            | No                           | Yes                                   |
-| SearchOrdersView                | No                            | Yes                          | Yes                                   |
-| SearchPickingAndReceivingView   | No                            | Yes                          | Yes                                   |
+| PriceCheckView                  | Yes                           | No                           | Yes                                  |
+| PriceCheckViewPhone             | No                            | No                           | Yes                                  |
+| SearchOrdersView                | No                            | Yes                          | Yes                                  |
+| SearchPickingAndReceivingView   | No                            | Yes                          | Yes                                  |
 | CustomerOrderHistoryView        | No                            | Yes                          | No                                   |
 | SearchStockCountView            | No                            | Yes                          | No                                   |
-| StockCountDetailsView           | No                            | Yes                          | Yes                                   |
-| ResumeCartView                  | No                            | Yes                          | Yes                                    |
-| InventoryLookupMatrixView       | No                            | No                           | Yes                                   |
-| SuspendTransactionView          | No                            | Yes                          | No                               |   
-| ManageShiftView                 | No                            | No                           | Yes                               |  
-| ReportDetailsView               | No                            | No                           | Yes                               |
-| TransferOrderDetailsView        | No                            | No                           | Yes                               |
-| FulfillmentLineView             | No                            | Yes                          | Yes                               |
-| ReturnTransactionView           | No                            | Yes                          | Yes                               |
-| PickingAndReceivingDetailsView  | No                            | Yes                          | Yes                    |
+| StockCountDetailsView           | No                            | Yes                          | Yes                                  |
+| ResumeCartView                  | No                            | Yes                          | Yes                                  |
+| InventoryLookupMatrixView       | No                            | No                           | Yes                                  |
+| SuspendTransactionView          | No                            | Yes                          | No                                   |   
+| ManageShiftView                 | No                            | No                           | Yes                                  |  
+| ReportDetailsView               | No                            | No                           | Yes                                  |
+| TransferOrderDetailsView        | No                            | No                           | Yes                                  |
+| FulfillmentLineView             | No                            | Yes                          | Yes                                  |
+| ReturnTransactionView           | No                            | Yes                          | Yes                                  |
+| PickingAndReceivingDetailsView  | No                            | Yes                          | Yes                                  |
 | PickingAndReceivingDetailsView (Advanced warehouse)  | No                            | Yes                          | Yes           |
 | SalesInvoiceDetailsView (10.0.11) | No                            | No                          | Yes           |
 | SalesInvoicesView (10.0.11) | No                            | Yes                          | No           |
@@ -69,16 +68,15 @@ The following table shows the POS views that support extensions. It also indicat
 | InventoryDocumentListView  | No                            | Yes (10.0.15)                          | Yes (10.0.13)          |
 | ManageShiftsView  | No                            | Yes (10.0.21)                          | No          |
 
-
-
 > [!NOTE]
+>
 > - The table is updated based on the latest released version and hotfix. In earlier versions, some of these extension points aren't available.
 >
 > - In Show journal (lines grid) and Return transaction view, custom columns are supported through the row sub fields. These sub fields appear as rows instead of columns, like the info code messages, serial number, or discounts values.
 
 ## Custom filter extension
 
-The POS views in the following table support custom filter extensions. **Search order views** also support using extensions to set default parameters for search in the user interface (UI). For example, if you want to add a default store search parameter, you can use an extension and show that parameter in the UI. 
+The POS views in the following table support custom filter extensions. **Search order views** also support using extensions to set default parameters for search in the user interface (UI). For example, if you want to add a default store search parameter, use an extension and show that parameter in the UI.
 
 | POS view                                   | Custom filters supported?  | Default filter parameters?    | Release |
 |--------------------------------------------|-------------------------------|-----------------------------|--------------------------------|
@@ -96,7 +94,7 @@ Sample code for custom filter extensions is available in the Retail SDK at `...\
 
 ## Add a custom column and an app bar button
 
-1. Start Microsoft Visual Studio 2015 as an administrator.
+1. Start Visual Studio 2015 as an administrator.
 1. Open the **ModernPOS** solution from **…\\RetailSDK\\POS**.
 1. In the **POS.Extensions** project, create a folder named **SearchExtension**.
 1. In the **SearchExtension** folder, create a folder named **ViewExtensions**.
@@ -400,7 +398,7 @@ Sample code for custom filter extensions is available in the Retail SDK at `...\
     }
     ```
 
-29. In the **tsconfig.json** file, comment out the extension package folders in the exclude list. The POS uses this file to include or exclude the extension. By default, the list contains the whole excluded extensions list. To include an extension as part of the POS, add the name of the extension folder, and comment out the extension in the exclude list, as shown in the following example.
+1. In the **tsconfig.json** file, comment out the extension package folders in the exclude list. The POS uses this file to include or exclude the extension. By default, the list contains the whole excluded extensions list. To include an extension as part of the POS, add the name of the extension folder, and comment out the extension in the exclude list, as shown in the following example.
 
     ```typescript
     "exclude": [
@@ -410,14 +408,14 @@ Sample code for custom filter extensions is available in the Retail SDK at `...\
     ],
     ```
 
-30. Compile and rebuild the project.
+1. Compile and rebuild the project.
 
 ## Validate the customization
 
-To validate the customization, follow these steps.
+To validate the customization, follow these steps:
 
 1. Sign in to the Store Commerce app by using **000160** as the operator ID and **123** as the password.
-1. Search for customer **2001** by using the search bar on the top. You should see the custom columns that you added.
-1. Select a customer, and then select the new app bar button. A dialog box should appear that contains details about the selected customer.
+1. Search for customer **2001** by using the search bar at the top. You see the custom columns that you added.
+1. Select a customer, and then select the new app bar button. A dialog box appears that contains details about the selected customer.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
