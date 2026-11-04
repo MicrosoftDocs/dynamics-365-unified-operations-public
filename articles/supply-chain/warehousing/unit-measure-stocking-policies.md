@@ -45,7 +45,7 @@ Each line represents one unit in the sequence. Set the following fields on it:
 
     For example, a group contains *Pcs* and *PL*, where one pallet holds 100 pieces. If you select the checkbox for *Pcs* but not for *PL*, a receipt of 250 pieces produces one license plate for each full pallet and one license plate that holds the remaining 50 pieces as a group.
 
-    To use license plate grouping on a mobile device, you must also select the **License plate grouping** option on the mobile device menu item that's used for the receipt.
+    To use license plate grouping on a mobile device, you must also set the **License plate grouping policy** field to *License plate grouping* on the mobile device menu item that's used for the receipt.
 
 - **Use unit for cycle counting** – Select this checkbox to let workers count the product in this unit. Select at most four units per group. If you select more, mobile devices don't show the extra units. If no unit in the group is selected, cycle counting fails for the products that use the group.
 - **Default unit for purchase and transfer** – Select this checkbox to suggest this unit by default when workers receive purchase orders and transfer orders on a mobile device. Only one line per group can be selected. If you select the checkbox on a second line, the system automatically clears it on the first line. For example, you can select *PL* so that pallet quantities are suggested during purchase order receiving, even though the inventory unit is *Pcs*.

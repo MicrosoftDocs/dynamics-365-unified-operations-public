@@ -26,6 +26,6 @@ Assign a disposition code an item is received or during the physical inspection 
 ## Related information
 
 - [Set up return reason codes](set-up-return-reason-code.md)
-- [Set up disposition codes](set-up-disposition-codes.md)
+- [Set up return disposition codes](set-up-disposition-codes.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
