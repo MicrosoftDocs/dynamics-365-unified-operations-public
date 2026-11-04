@@ -1,10 +1,10 @@
 ---
 title: Modern receipt designer in Commerce headquarters
-description: Learn how to use the modern React-based receipt designer in Microsoft Dynamics 365 Commerce headquarters to create, edit, preview, save, and reuse receipt format designs.
+description: Learn how to use the modern receipt designer in Microsoft Dynamics 365 Commerce headquarters to create receipt formats with tables and rich text.
 author: anush6121
 ms.author: anvenkat
 ms.topic: how-to
-ms.date: 08/12/2026
+ms.date: 11/05/2026
 ms.reviewer: mirao
 ms.search.form: RetailFormLayout
 ms.custom:
@@ -17,12 +17,13 @@ ms.custom:
 
 The modern receipt designer provides a React-based design experience for Commerce receipt formats directly from Commerce headquarters. It replaces the legacy **ClickOnce** designer launch experience with a browser-based designer that you can open from the **Receipt formats** page. The designer includes a visual canvas, template selection, reusable templates, localized field labels and preview data, custom receipt fields, validation, and preview support.
 
+In Commerce version 10.0.50, the designer also supports fixed and repeating tables and rich-text formatting for document receipts. You can use these capabilities for detailed invoices, order summaries, tax breakdowns, and other B2B and trade-counter scenarios.
+
 The modern designer saves structured receipt layout data for the new receipt format path. Store Commerce can use the structured receipt format path when you enable the modern receipt designer feature and the Commerce Scale Unit supports structured receipts.
 
 ## Prerequisites
 
-- Update Commerce headquarters and Commerce Scale Unit to versions that include the modern receipt designer and structured receipt endpoint.
-- Update Store Commerce to a version that supports structured receipt preview and printing.
+- Update Commerce headquarters, Commerce Scale Unit, Store Commerce, and Hardware Station to compatible versions before you use tables or document typography.
 - Enable the modern receipt designer feature in **Feature management** before using the structured receipt path in Store Commerce.
 - Configure existing receipt profiles, printers, and hardware profiles for registers where receipts are printed.
 
@@ -30,7 +31,7 @@ The modern designer saves structured receipt layout data for the new receipt for
 >
 > - Enable the modern receipt designer feature only after updating the Commerce Scale Unit or Retail Server to a version that supports structured receipts. When you enable the feature, Store Commerce uses the structured receipt endpoint for supported receipt flows. If the endpoint isn't available, receipt preview or printing can fail.
 >
-> - Enabling the modern receipt designer feature doesn't automatically migrate existing receipt formats. After you enable the feature, open each existing receipt format in the modern designer and select **Save** so that the modern structured layout data is created. If you don't save an existing receipt format in the modern designer, it isn't available through the modern structured receipt path.
+> - Commerce version 10.0.50 migrates supported legacy receipt layouts to the modern designer JSON format. Review migrated formats in the modern designer and test them with representative transaction data before deploying them to stores.
 
 ## Open the modern receipt designer
 
@@ -68,6 +69,44 @@ To design a receipt format, follow these steps:
 In Commerce version 10.0.49, the modern receipt designer supports user-defined receipt custom fields. Custom fields appear in the field palette with their configured captions. If a translated caption is available for the current legal entity and language, the designer shows the localized caption. If a translation isn't available, the designer falls back to the field name.
 
 Standard field labels and sample preview data are also localized in version 10.0.49. This behavior helps implementers design receipt layouts in the same language context that store users see.
+
+## Add tables
+
+Commerce version 10.0.50 supports the following table types:
+
+- **Fixed table**: Contains rows that you add and arrange in the designer. Cells can contain static text or receipt fields.
+- **Repeating table**: Defines a row that Commerce repeats for each matching record. Repeating tables support item lines, invoice lines, tenders, tax summaries, loyalty earn lines, and loyalty redeem lines. You can add repeating tables only to the **Lines** section.
+
+> [!IMPORTANT]
+> For physical printing, fixed and repeating tables and document typography are supported only through the Windows printer path in Windows Hardware Station. OPOS, Epson, Star, and Adyen printer paths reject layouts that contain these capabilities instead of producing partial or lossy output. Previews and modern HTML email receipts support tables independently of the physical printer path.
+
+To add and configure a table, follow these steps:
+
+1. In the field palette, add a fixed or repeating table to the canvas.
+1. For a repeating table, select the applicable **Line type**.
+1. Add, remove, resize, move, or reorder rows, columns, and cells.
+1. Add static text, standard receipt fields, or eligible custom fields to the cells.
+1. Configure column headings, borders, banded rows, alignment, and text formatting as required.
+1. Resolve validation errors, and then select **Save**.
+
+You can position multiple tables and ordinary fields on the same receipt line when enough space is available. Repeating fields can be blank when a value isn't available for a record. Preview and test the format with representative transactions, including transactions with no matching records and transactions with long or multiline values.
+
+> [!NOTE]
+> You can't save a layout that contains a table when content extends beyond the selected paper width. Export remains available so that an implementer can correct the layout outside the designer.
+
+## Apply rich-text formatting
+
+For compatible document formats, you can apply the following rich-text formatting to ordinary fields, table cells, and table headings:
+
+- Font family.
+- Font size from 11 through 96 pixels.
+- Normal, light, semibold, or bold font weight.
+- Italic, underline, and strike-through.
+- Text alignment.
+
+Windows uses the nearest available weight when the selected font doesn't contain the exact authored weight. If the selected font or size isn't available, Windows Hardware Station uses the configured Windows printer font and size.
+
+Thermal and mobile receipt formats continue to use their existing regular and large font sizes. The document font family and pixel-size settings don't change thermal formatting.
 
 ## Validate receipt lines
 
@@ -125,8 +164,6 @@ Supported receipt flows include:
 - Customer Transactions receipt preview and print.
 - Cash management receipts, such as bank drop, safe drop, tender removal, starting amount, tender declaration, open drawer, void transaction, suspend transaction, and gift card inquiry receipts.
 
-If you don't open and save an existing receipt format in the modern designer after enabling the feature, the modern structured receipt layout data doesn't exist for that format. Open and save existing receipt formats in the modern designer before using them with the modern structured receipt path.
-
 > [!NOTE]
 > Changes saved in the modern receipt designer aren't saved back to the legacy designer format. If the modern receipt designer feature is later disabled, changes made only in the modern designer won't appear in the legacy designer. The modern changes are available again if you re-enable the feature.
 
@@ -135,6 +172,23 @@ If you don't open and save an existing receipt format in the modern designer aft
 The structured receipt path aligns preview, print, print-all, email, and gift receipt behavior with the legacy path. Store Commerce uses receipt print behavior settings, such as **Always print**, **Prompt user**, and **Do not print**, when deciding which receipts to print.
 
 If you configure the receipt with **Prompt user**, Store Commerce prompts at checkout and prints the selected structured receipt through the configured printer. If a receipt can't be printed because the receipt or printer configuration doesn't allow printing, Store Commerce shows the same type of availability message used by the legacy receipt path.
+
+### Output support for tables and document formatting
+
+The following outputs support the table and document-formatting capabilities that were added in Commerce version 10.0.50:
+
+| Output | Support |
+| ------ | ------- |
+| Modern designer and Commerce headquarters preview | Fixed and repeating tables, table formatting, and document typography. |
+| Store Commerce receipt preview, Show journal, and Customer transactions | Fixed and repeating tables, table formatting, and document typography. |
+| Windows printer through Windows Hardware Station | Fixed and repeating tables, table formatting, document typography, images, and barcodes |
+| Modern receipt email composed by Commerce Scale Unit | HTML tables and document typography. |
+
+For physical printing, tables and document typography require the Windows printer path. OPOS, Epson, Star, and Adyen printer paths don't support these capabilities and reject the layout instead of producing partial or lossy output. Table-free receipts without document typography continue to use the existing printer paths.
+
+Windows Hardware Station keeps a table row together during pagination when possible. For document layouts from 99 through 140 columns, pagination also respects the configured document margins and the printer driver's printable area.
+
+Modern email receipts preserve tables and formatting when Commerce Scale Unit composes the receipt from the modern JSON layout. Email client font availability and CSS support can affect the final appearance. Older headquarters-composed email workflows retain their existing plain-text behavior.
 
 ## Close the designer with unsaved changes
 

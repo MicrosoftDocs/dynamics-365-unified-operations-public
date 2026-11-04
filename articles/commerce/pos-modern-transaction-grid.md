@@ -4,7 +4,7 @@ description: Learn about the modernized transaction grid in Store Commerce POS, 
 author: anush6121
 ms.author: anvenkat
 ms.topic: article
-ms.date: 08/18/2026
+ms.date: 11/05/2026
 ms.reviewer: mirao
 ms.custom:
   - bap-template
@@ -160,9 +160,22 @@ When a transaction is completed, suspended, or voided, the default button grid a
 
 In Commerce version 10.0.49 and later, the modernized transaction grid adds focused improvements that help cashiers and business-to-business (B2B) associates work through large carts and repeat transaction tasks more quickly. The improvements include transaction line search, multiselect cart line updates, bulk item add, quick operations, and keyboard shortcuts.
 
+Commerce version 10.0.50 adds Quick Add for products and customers, sales order attributes in Quick Operations, and transaction line filters for errors and warnings.
+
 Before you configure these capabilities, enable the modernized transaction grid. For more information, see [Enable the modernized transaction grid](#enable-the-modernized-transaction-grid).
 
 These improvements are optional. Enable them only for the layouts, roles, and store formats that benefit from faster high-volume transaction processing.
+
+#### Find products or customers with Quick Add
+
+In Commerce version 10.0.50 and later, associates can type product or customer information directly in the transaction numpad without first selecting **ABC**. Quick Add supports desktop and mobile layouts, whether the on-screen numpad buttons are shown or hidden.
+
+Enter a full or partial product name, item ID, or customer search value, and then submit the entry. The Quick Add dialog provides separate **Products** and **Customers** tabs:
+
+- On the **Products** tab, select a matching product to add it to the transaction. Quick Add preserves a quantity entered in the numpad and uses the standard workflows for variants, serial numbers, and products that require configuration.
+- On the **Customers** tab, select a matching customer to add the customer to the transaction.
+
+If an item ID is an exact match, Store Commerce adds the item by using the standard numpad workflow without showing an additional success message. A confirmation appears when an associate selects a product from the Quick Add search results.
 
 #### Configure transaction line search
 
@@ -180,6 +193,22 @@ To use transaction line search, open the transaction page, select the **Lines** 
 
 :::image type="content" source="media/transaction-grid-line-search.png" alt-text="Screenshot of the modern transaction grid with the transaction line search box above the Lines tab." lightbox="media/transaction-grid-line-search.png":::
 
+#### Filter transaction lines by errors or warnings
+
+In Commerce version 10.0.50 and later, associates can filter the transaction grid to show **All lines**, **Lines with errors**, or **Lines with warnings**. Each option shows the number of matching lines. The filter works together with transaction line search and multiselect, and doesn't change cart contents, totals, validation, or available actions.
+
+To configure transaction line filtering, follow these steps:
+
+1. In Commerce headquarters, go to **Retail and Commerce** > **Channel setup** > **POS setup** > **POS** > **Screen layouts**.
+1. Open the screen layout to configure, and then launch **Screen Layout Designer**.
+1. Select the transaction grid component, and then open the transaction grid customization dialog.
+1. On the **Lines** tab, select **Show transaction line filter**.
+1. Save the layout, and then run the **Channel configuration (1090)** distribution schedule job.
+
+To use the filter, select **Filter** above the transaction lines, and then select the lines to show. Select **All lines** to clear the filter. Missing serial numbers are included as warnings. If an associate scans an item that the active filter or search hides, Store Commerce confirms that the item was added but is hidden from the current results.
+
+When associates use multiselect, changing the filter doesn't clear lines that are already selected but are no longer visible. **Select all** applies only to the lines that are currently visible.
+
 #### Configure multiselect cart line updates
 
 Multiselect cart line updates let associates select multiple transaction lines and apply supported bulk actions together. Supported actions include void item, ship selected products, pick up selected products, carry out selected products, line discount percentage, line discount amount, and line comment. Button grid operations for void, line discount, and price override can also operate on the selected lines when you enable multiselect.
@@ -192,7 +221,7 @@ To configure multiselect cart line updates:
 1. On the **Lines** tab, select **Show transaction line multiselect**.
 1. Save the layout, and then run the **Channel configuration (1090)** distribution schedule job.
 
-To use multiselect cart line updates, select **Multi select** on the transaction page, select the lines to update, and then select **Actions**. Choose the bulk action to apply. If the action requires input, such as a discount value, reason code, price, or comment, enter it once for the selected lines. Eligible lines are updated together. Lines that can't be updated are skipped, and a single summary message lists the issues after the operation.
+To use multiselect cart line updates, select **Multiselect** on the transaction page, select the lines to update, and then select **Actions**. Choose the bulk action to apply. If the action requires input, such as a discount value, reason code, price, or comment, enter it once for the selected lines. Eligible lines are updated together. Lines that can't be updated are skipped, and a single summary message lists the issues after the operation.
 
 :::image type="content" source="./media/transaction-grid-multi-select.png" alt-text="Screenshot of selected transaction grid lines with the Bulk actions pane open." lightbox="./media/transaction-grid-multi-select.png":::
 
@@ -220,7 +249,9 @@ If an item has variants, the variant selection dialog appears so you can select 
 
 #### Configure the Quick Operations panel
 
-The **Quick Operations** panel lets associates complete frequently used transaction-level tasks directly on the transaction page. Supported fields include total discount percentage, total discount amount, notes, and customer purchase order (PO) number. Each field uses the same runtime operation and validation as the corresponding button grid operation.
+The **Quick Operations** panel lets associates complete frequently used transaction-level tasks directly on the transaction page. Supported built-in fields include total discount percentage, total discount amount, notes, and customer purchase order (PO) number. Each field uses the same runtime operation and validation as the corresponding button grid operation.
+
+In Commerce version 10.0.50 and later, you can also add sales order header attributes that are assigned to the channel. This capability lets associates view and edit merchant-defined transaction information without opening the transaction attributes dialog. For information about defining attribute groups, assigning them to a channel, and running the required distribution jobs, see [Define and set order attributes](dev-itpro/order-attributes.md).
 
 To configure the Quick Operations panel:
 
@@ -228,10 +259,10 @@ To configure the Quick Operations panel:
 1. Open the screen layout to configure, and then launch **Screen Layout Designer**.
 1. Add the **Quick Operations** control to the transaction page layout.
 1. Open the Quick Operations customization dialog.
-1. Select the operations to show in the panel, such as **Discount %**, **Discount amount**, **Notes**, or **Customer PO number**.
+1. Select and order the fields to show in the panel. You can mix built-in fields, such as **Discount %**, **Discount amount**, **Notes**, and **Customer PO number**, with sales order header attributes assigned to the channel.
 1. Save the layout, and then run the **Channel configuration (1090)** distribution schedule job.
 
-To use Quick Operations, enter or update values directly in the Quick Operations panel. **Save** is available only when a value is valid and changed. If an operation is canceled or rejected, the entered value is preserved and the standard error message appears.
+To use Quick Operations, enter or update values directly in the Quick Operations panel. Enumerated attributes provide a list of configured values; other supported attributes use text entry. Each row is saved independently, and **Save** is available only when a value is valid and changed. If an operation is canceled or rejected, the entered value is preserved and the standard error message appears.
 
 :::image type="content" source="./media/transaction-grid-quick-operations.png" alt-text="Screenshot of the Quick Operations panel on the transaction page." lightbox="./media/transaction-grid-quick-operations.png":::
 
@@ -257,6 +288,7 @@ To use a keyboard shortcut, open the cart view and press the configured function
 
 | Version | Enhancements |
 | ------- | ------------ |
+| 10.0.50 | Quick Add for products and customers, sales order header attributes in Quick Operations, and transaction line filters for errors and warnings. |
 | 10.0.49 | Transaction line search, multiselect cart line updates, bulk item add, Quick Operations panel improvements, and button grid keyboard shortcut enhancements. |
 | 10.0.48 | Inline actions extensibility: Configure operations, display order, and custom operations per screen layout. |
 | 10.0.47 | Quantity discount captions, threshold discount bar, refreshed and extensible cart suggestions. |

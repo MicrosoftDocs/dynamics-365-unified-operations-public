@@ -49,7 +49,7 @@ Follow these steps to enable the budget plan narrative description and revenue s
 
         1. Go to **Budgeting** > **Budget plans**.
         2. Select the budget plan to copy.
-        3. On the **Action** pane, on the **Budget plan** tab, in the **New** group, select **Copy of**.
+        3. On the Action Pane, on the **Budget plan** tab, in the **New** group, select **Copy of**.
 
         The **Copy a budget plan** dialog box that appears includes the new flags.
 

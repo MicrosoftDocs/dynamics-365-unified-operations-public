@@ -93,7 +93,7 @@ After data is populated, you can control which records are included in the repor
 To review e-reporting entries, follow these steps:
 
 1. In Finance, go to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic message items**.
-1. On the **Action** pane, select **Update status**.
+1. On the Action Pane, select **Update status**.
 1. In the dialog, in the **Processing** field, select **FR e-Reporting**.
 1. In the **Action** field, select relevant action.
 1. In the **New status** field, select the status to apply to the selected message items.

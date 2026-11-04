@@ -157,8 +157,8 @@ To set up the **ReportFieldLookup** application-specific parameter, follow these
     :::image type="content" source="../media/uk-mtd-reportfieldlookup.png" alt-text="Screenshot of downloading the UK MTD VAT ReportFieldLookup data package file from the LCS Shared asset library.":::
 
 1. To set up the **ReportFieldLookup** application-specific parameter in the system, in Finance, open the **Electronic reporting** workspace. In the configuration tree, under **Tax declaration model**, select the **VAT Declaration JSON (UK)** format.
-1. On the **Action** pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**, and then select the version of the format that you want to use. Usually, Finance runs the latest configuration version that's available in your system.
-1. To use the example of this setup that you downloaded from the Shared asset library as a preliminary step, select **Import** on the **Action** pane, and then select the file that you downloaded.
+1. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**, and then select the version of the format that you want to use. Usually, Finance runs the latest configuration version that's available in your system.
+1. To use the example of this setup that you downloaded from the Shared asset library as a preliminary step, select **Import** on the Action Pane, and then select the file that you downloaded.
 1. To manually define conditions, select **ReportFieldLookup** on the **Lookups** FastTab, and then specify criteria on the **Conditions** FastTab. You can also use the example file as a starting point to set up conditions. If you manually specify conditions for **ReportFieldLookup**, set up the **Other** value as the last condition in the list. Although this value isn't used in the **VAT Declaration JSON (UK)** format, it must be set to **Not blank** for both columns of the criteria.
 
     > [!IMPORTANT]
@@ -171,18 +171,18 @@ To set up the **ReportFieldLookup** application-specific parameter, follow these
 When your setup of **ReportFieldLookup** for the **VAT Declaration JSON (UK)** format is ready, export it, and then import it into the **VAT Declaration Excel (UK)** format.
 
 1. In the configuration tree, under **Tax declaration model**, select the **VAT Declaration JSON (UK)** format.
-1. On the **Action** pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**, and then select the version of the format that you completed the setup of **ReportFieldLookup** for.
-1. On the **Action** pane, select **Export** to save your configuration in XML format, and then close the **Application specific parameters** page.
+1. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**, and then select the version of the format that you completed the setup of **ReportFieldLookup** for.
+1. On the Action Pane, select **Export** to save your configuration in XML format, and then close the **Application specific parameters** page.
 1. In the configuration tree, under the **VAT Declaration JSON (UK)** format, select the **VAT Declaration Excel (UK)** format.
 1. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**, and then select the version of the format that you want to use.
-1. On the **Action** pane, select **Import**, select the file that you saved in step 6, and select **OK** to confirm the import.
+1. On the Action Pane, select **Import**, select the file that you saved in step 6, and select **OK** to confirm the import.
 1. Change the value of the **State** field to **Completed**, save your changes, and close the **Application specific parameters** page.
 
 > [!IMPORTANT]
 >
 > - The setup of **ReportFieldLookup** is company specific.
 > - Before you start to set up **ReportFieldLookup**, be sure to select the legal entity in which you want to generate the VAT declaration for the United Kingdom.
-> - If you want to generate the VAT declaration for the United Kingdom from multiple legal entities in Finance, set up **ReportFieldLookup** for each legal entity. To replicate the application-specific parameters from one legal entity to multiple, use the **Replicate** button on the **Action** pane of the **Application specific parameters** page.
+> - If you want to generate the VAT declaration for the United Kingdom from multiple legal entities in Finance, set up **ReportFieldLookup** for each legal entity. To replicate the application-specific parameters from one legal entity to multiple, use the **Replicate** button on the Action Pane of the **Application specific parameters** page.
 > - The setup of **ReportFieldLookup** is mandatory for all legal entities that report VAT as a VAT group.
 
 > [!TIP]
