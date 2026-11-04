@@ -2536,6 +2536,8 @@ items:
           href: unified-pricing-management/upm-discounts.md
         - name: Pricing rules for discounts and margin price adjustments
           href: unified-pricing-management/upm-margin-discount-pricing-rules.md
+        - name: Margin checks at point of sale (preview)
+          href: unified-pricing-management/upm-pos-margin-check.md
       - name: Concurrency within and across price component codes
         items:
         - name: Resolving concurrency within price component codes
