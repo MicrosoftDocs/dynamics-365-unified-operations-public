@@ -299,7 +299,7 @@ To print the exchange rate adjustment, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** or **Accounts receivable** > **Periodic tasks** > **Exchange difference invoicing**.
 1. Select an exchange difference invoice that you posted.
-1. On the **Action** pane, on the **Invoice** tab, in the **Document** group, select **Exchange rate adjustment**.
+1. On the Action Pane, on the **Invoice** tab, in the **Document** group, select **Exchange rate adjustment**.
 
 ### Print the exchange adjustment statement report
 
@@ -307,7 +307,7 @@ To print the exchange adjustment statement report, follow these steps:
 
 1. In Dynamics 365 Finance, go to **Accounts payable** or **Accounts receivable** > **Periodic tasks** > **Exchange difference invoicing**.
 1. Select an exchange difference invoice that you didn't post.
-1. On the **Action** pane, on the **Invoice** tab, in the **Document** group, select **Exchange adjustment statement**.
+1. On the Action Pane, on the **Invoice** tab, in the **Document** group, select **Exchange adjustment statement**.
 
 When you print the **Exchange adjustment statement** report, the **Reconciliation statement sent** field is marked, and the **Approve** button becomes available in the **Exchange difference invoice** section. If you select **Approve**, the **Approved** and **Approved date** fields are set.
 

@@ -357,7 +357,7 @@ To enter the address, follow these steps:
 To enter the registration numbers, follow these steps:
 
 1. Go to **Accounts receivable** > **Customers** > **All customers**.
-1. On the **Action** pane, on the **Customer** tab, in the **Registration** group, select **Registration IDs**.
+1. On the Action Pane, on the **Customer** tab, in the **Registration** group, select **Registration IDs**.
 1. Select the **Address** that the registration numbers belong to. Ensure that the **Purpose** of the selected address contains the **Delivery** and **Invoice** values.
 1. On the **Registration ID** FastTab, select **Add** to create a registration ID.
 1. In the **Registration type** field, select the [SIREN](#SIREN) registration type that you created earlier.
@@ -648,7 +648,7 @@ The current implementation allows sending only *payment reception confirmation* 
 The current implementation only supports sending *refusal* responses to your sellers. To enter responses, follow these steps:
 
 1. Go to **Accounts payable** > **Invoices** > **Pending vendor invoice**.
-1. Select a specific invoice in the list. On the **Action** pane, on the **Vendor invoice** tab, in the **Actions** group, select **Add response**.
+1. Select a specific invoice in the list. On the Action Pane, on the **Vendor invoice** tab, in the **Actions** group, select **Add response**.
 1. In the **Response code** field, select the required value from the list.
 1. In the **Reason code** field, select the value you want from the list.
 1. Select **OK**, and then close the page.
