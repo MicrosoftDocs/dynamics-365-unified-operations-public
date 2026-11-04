@@ -46,7 +46,7 @@ To process payments in Commerce headquarters via the Adyen connector, configure 
 To configure a default payment processor, follow these steps:
 
 1. Sign in to Commerce headquarters and go to **Accounts receivable** > **Payments setup** > **Payment services**.
-1. On the **Action** pane, select **New**. On the **Setup** tab, enter the following information.
+1. On the Action Pane, select **New**. On the **Setup** tab, enter the following information.
 
     | Field | Description | Sample value |
     | ----- | ----------- | ------------ |

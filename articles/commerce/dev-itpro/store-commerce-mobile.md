@@ -3,7 +3,7 @@ title: Store Commerce app for mobile platforms
 description: Learn how to get started using the Microsoft Dynamics 365 Commerce Store Commerce app for Android, iOS, and macOS.
 author: anush6121
 ms.author: anvenkat
-ms.date: 02/20/2026
+ms.date: 11/05/2026
 ms.topic: how-to
 ms.reviewer: mirao
 ms.search.region: global
@@ -105,14 +105,18 @@ If you're repurposing a screen layout included in the demo data that Microsoft p
 
 After you configure devices and registers, in Commerce headquarters go to **Retail and Commerce** > **Retail and Commerce IT** > **Distribution Schedules** and run the registers job.
 
+### Extend the mobile Cart app bar
+
+In Commerce version 10.0.50 and later, extensions can add custom commands to the bottom app bar in the mobile Cart view. Commands automatically use the app bar's overflow menu when space is limited. The extension point is available by default and doesn't require enablement in Commerce headquarters. For implementation and manifest-registration guidance, see [Add app bar commands to the mobile Cart view](cart-view-handlers.md#add-app-bar-commands-to-the-mobile-cart-view).
+
 ## Activate a device
 
 To activate a device on a Store Commerce mobile app, follow these steps:
 
 1. Open the app on the mobile device.
-1. Enter the Store Commerce for web (formerly Cloud POS, or CPOS) URL. You can find this URL on the environment details page in LCS, or on the **Channel profiles** page in Commerce headquarters (**Retail and Commerce** > **Channel setup** > **Channel profiles**).
+1. Enter the Store Commerce for web (formerly Cloud POS, or CPOS) URL. Find this URL on the environment details page in LCS, or on the **Channel profiles** page in Commerce headquarters (**Retail and Commerce** > **Channel setup** > **Channel profiles**).
 1. Sign in by using the credentials of a worker who has permission to manage devices.
-1. Select the store that is associated with the register that you created or reused in Commerce headquarters.
+1. Select the store that's associated with the register that you created or reused in Commerce headquarters.
 1. Select the register that you associated with the device that you created in Commerce headquarters.
 1. Your device is now activated. You can sign in to the register with the operator ID and password of a worker associated with the store you selected.
 

@@ -73,7 +73,7 @@ The following values are supported:
 To configure the **TransCategoryCodeLookup**, follow these steps:
 
 1. In the configuration tree, under the **Invoices Communication Model**, select the **e-Reporting XML (FR)** format.
-1. On the **Action** pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
+1. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
 1. On the **Application specific parameters** page, select the latest version of the format that you want to define conditions for.
 1. On the **Lookups** FastTab, select the **TransCategoryCodeLookup** lookup, and define the appropriate conditions.
 1. On the **Conditions** FastTab, define which combination of **Tax code**, **Sales tax group**, and **Item sales tax group** must correspond to a specific lookup result.
@@ -417,7 +417,7 @@ In Dynamics 365 Finance, this value comes from the sales tax information that yo
 You maintain the mapping between internal sales tax codes and the required UNTDID 5305 values through **External codes** that are associated with the tax setup to ensure that the code reported in the electronic report complies with the target format requirements.
 
 1. Go to **Tax** > **Indirect taxes** > **Sales tax** > **Sales tax codes**.
-1. Select a sales tax code. On the **Action** pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
+1. Select a sales tax code. On the Action Pane, on the **Sales tax code** tab, in the **Sales tax code** group, select **External codes**.
 1. In the **Overview** section, create a line for the selected sales tax code. Enter **UNTDID5305** in the **Code** field.
 1. In the **Value** section, enter an external code according to the [Duty or tax or fee category code (Subset of UNCL5305)](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNCL5305/) in the **Value** field.
 
@@ -438,7 +438,7 @@ In Dynamics 365 Finance, this value comes from the sales tax information that yo
 You maintain the mapping between internal sales tax codes and the required `VATEX` values through **External codes** that are associated with the tax setup. This setup ensures that the code reported in the electronic report complies with the target format requirements.
 
 1. Go to **Tax** \> **Setup** \> **Sales tax** \> **Sales tax exempt codes**.
-1. Select a sales tax exempt code. On the **Action** pane, select **External codes**.
+1. Select a sales tax exempt code. On the Action Pane, select **External codes**.
 1. In the **Overview** section, create a line for the selected **Sales tax exempt code**. Enter **VATEX** in the **Code** field.
 1. In the **Value** section, enter an external code according to the [VAT exemption reason code (VATEX)](https://docs.peppol.eu/poacc/billing/3.0/codelist/vatex/) in the **Value** field, such as *VATEX-FR-298SEXDECIESA*.
 

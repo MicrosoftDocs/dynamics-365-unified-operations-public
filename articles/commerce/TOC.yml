@@ -840,7 +840,7 @@
           href: ../supply-chain/unified-pricing-management/upm-pricing-management-overview.md?context=/dynamics365/context/commerce
         - name: Turn on the Unified pricing management module for your system
           href: ../supply-chain/unified-pricing-management/upm-pricing-management-enable.md?context=/dynamics365/context/commerce
-        - name: Migrate to unified pricing management
+        - name: Migrate to unified pricing management (preview)
           href: ../supply-chain/unified-pricing-management/upm-migrate-to-unified-pricing-management.md?context=/dynamics365/context/commerce
         - name: Price attributes
           items:
@@ -850,6 +850,8 @@
             href: ../supply-chain/unified-pricing-management/upm-price-attributes-setup.md?context=/dynamics365/context/commerce
           - name: Price attribute groups
             href: ../supply-chain/unified-pricing-management/upm-price-attribute-groups.md?context=/dynamics365/context/commerce
+          - name: Non-attribute based rebate management deals
+            href: ../supply-chain/unified-pricing-management/upm-enable-standard-rebates.md?context=/dynamics365/context/commerce
           - name: Customer and product price attribute groups
             href: ../supply-chain/unified-pricing-management/upm-customer-product-attribute-groups.md?context=/dynamics365/context/commerce
           - name: Add custom pricing attributes for Dynamics 365 Commerce Point of Sale
@@ -900,6 +902,8 @@
             href: ../supply-chain/unified-pricing-management/upm-discounts.md?context=/dynamics365/context/commerce
           - name: Pricing rules for discounts and margin price adjustments
             href: ../supply-chain/unified-pricing-management/upm-margin-discount-pricing-rules.md?context=/dynamics365/context/commerce
+          - name: Margin checks at point of sale (preview)
+            href: ../supply-chain/unified-pricing-management/upm-pos-margin-check.md?context=/dynamics365/context/commerce
         - name: Concurrency within and across price component codes
           items:
           - name: Resolving concurrency within price component codes
@@ -912,6 +916,8 @@
           href: ../supply-chain/unified-pricing-management/upm-simulate-prices-line-attributes.md?context=/dynamics365/context/commerce
         - name: Calculate prices and discounts without creating sales orders
           href: ../supply-chain/unified-pricing-management/upm-calculate-prices-without-sales-orders.md?context=/dynamics365/context/commerce
+        - name: Calculate prices for external systems through the pricing calculation API
+          href: ../supply-chain/unified-pricing-management/upm-pricing-calculation-api.md?context=/dynamics365/context/commerce
         - name: Pricing data import and export entities
           href: ../supply-chain/unified-pricing-management/upm-pricing-data-entities.md?context=/dynamics365/context/commerce
       - name: Recommendations

@@ -112,7 +112,7 @@ When you register free text invoices, invoices that are based on sales orders, o
 
 ### Generate e-invoices
 
-When you post an invoice, you can generate an electronic invoice from any invoice journal. Select the invoice. On the **Action** pane, on the **Invoice** tab, in the **Document** group, select **Send** > **Original**.
+When you post an invoice, you can generate an electronic invoice from any invoice journal. Select the invoice. On the Action Pane, on the **Invoice** tab, in the **Document** group, select **Send** > **Original**.
 
 :::image type="content" source="../media/emea-nor-ger-einvoice.jpg" alt-text="Screenshot of sending an e-invoice.":::
 

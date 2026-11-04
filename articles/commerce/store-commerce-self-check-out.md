@@ -4,7 +4,7 @@ description: Learn how to enable self-checkout and related features in the Micro
 author: anush6121
 ms.author: anvenkat 
 ms.topic: how-to
-ms.date: 01/29/2026
+ms.date: 11/05/2026
 ms.reviewer: mirao
 ms.custom: 
   - bap-template
@@ -17,7 +17,10 @@ ms.custom:
 This article describes how to enable self-checkout (SCO) and related features in the Microsoft Dynamics 365 Commerce Store Commerce app.
 
 > [!IMPORTANT]
+>
 > To enable the self-checkout and related features in the Store Commerce app, run Commerce version 10.0.40 or later, Store Commerce version 10.0.40 or later, and Commerce Scale Unit (CSU) version 9.50 or later.
+>
+> Register-specific self-checkout functionality profiles require Commerce version 10.0.50 or later across headquarters, Commerce Scale Unit, Store Commerce, and the offline components that you deploy.
 
 Point of sale (POS) customers can reuse existing workflows to turn on kiosk-based SCO in an existing Store Commerce app. Customers can then use SCO terminals to scan or search for items, add items to a shopping cart, and pay for items by using a credit card or debit card.
 
@@ -25,7 +28,7 @@ Point of sale (POS) customers can reuse existing workflows to turn on kiosk-base
 
 To enable the SCO feature, follow these steps:
 
-1. In Commerce headquarters, go to **Feature management** (**System administration \> Workspaces \> Feature management)**.
+1. In Commerce headquarters, go to **Feature management** (**System administration** > **Workspaces** > **Feature management**).
 1. Check for new updates.
 1. Search for and select the **Configure POS self-checkout register** feature.
 1. Select **Enable now**.
@@ -54,6 +57,30 @@ When you set the **Self-checkout** option at the register to **Yes**, the regist
 
 To restrict specific products from being offered at SCO, in headquarters go to **Released products** and set the **Blocked at self-checkout** option to **Yes**.
 
+### Assign a functionality profile to an SCO register
+
+In Commerce version 10.0.50 and later, an SCO register can use a functionality profile that's different from the store functionality profile. Use this override when SCO registers in the same store require different device settings, transaction reason codes, receipt-number settings, or fiscal defaults.
+
+To assign a functionality profile to an SCO register, follow these steps:
+
+1. In Commerce headquarters, create or select the functionality profile for the SCO register.
+1. For ordinary cash-and-carry SCO, turn off **Sales mode defaults as customer order** in the profile.
+1. Open the register at **Retail and Commerce** > **Channel setup** > **POS setup** > **Registers**.
+1. Set **Self-checkout** to **Yes**.
+1. In **Self-checkout functionality profile**, select the profile for the register. Leave the field blank to inherit the store functionality profile.
+1. Run the applicable distribution jobs:
+   - **1070 (Channel configuration)** for functionality profiles and dependent fiscal settings.
+   - **1030** for applicable info codes, reason codes, and their dependencies.
+   - **1090 (Registers)** for the register selection and applicable receipt dependencies.
+1. Complete the normal Store Commerce configuration refresh. If the register supports offline mode, complete the required offline schema and data synchronization.
+
+The override applies only when the existing self-checkout feature is enabled, the register is configured for SCO, and a profile is selected. A staffed register ignores a retained SCO override. Clearing the field restores inheritance from the store profile. If an active selected profile hasn't been synchronized to the channel, Store Commerce reports a configuration error instead of silently using the store profile.
+
+The register-specific profile supports ordinary cash-and-carry SCO. Customer-order capture, deferred payment, credit-check, expedite, notification, customer-history, inventory-mode, and Copilot settings remain store scoped. Register permissions and screen layouts continue to control the operations that employees and managers can perform.
+
+> [!NOTE]
+> Change functionality-profile assignments between shifts when possible. After distribution and refresh, validate the device behavior, required reason codes, receipt numbering, and fiscal behavior on each affected SCO register.
+
 ## Configure and activate an SCO kiosk
 
 To enable only operations that are applicable to consumers on an SCO kiosk, follow these steps:
@@ -76,6 +103,7 @@ The out-of-box customer-facing SCO layout available in the demo environment for 
 To use the out-of-box customer-facing SCO layout, go to **Retail and Commerce \> Screen layouts** and assign the SCO screen layout to the **Registers** setup.
 
 > [!NOTE]
+>
 > - In demo data, **Houston - Register 49** is set up as an SCO register, and the SCO layout (**SCO\_POC1**) is assigned to it. If you update an existing demo environment, you can set the **Self-checkout** option to **Yes** and assign the SCO layout for any register of your choice.
 > - In demo data, user **000815** is configured as an SCO customer, and user **000813** is configured as an SCO manager. If these users don't exist in your demo environment, you can assign the **SCO kiosk** permission group to the customer you want to use instead.
 > - To download the SCO out-of-the-box layout along with the permission group, use the package [https://download.microsoft.com/download/1/8/2/182fcc7e-183a-48ff-b883-ee2f329e6581/SCO demo layout and perms.zip](https://download.microsoft.com/download/1/8/2/182fcc7e-183a-48ff-b883-ee2f329e6581/SCO%20demo%20layout%20and%20perms.zip).
@@ -86,11 +114,11 @@ To use the out-of-box customer-facing SCO layout, go to **Retail and Commerce \>
 The following customer operations are supported.
 
 | Operation | Action | Description |
-|---|---|---|
+| --------- | ------ | ----------- |
 | Scan and add item to cart | Product sale | Allows a customer to scan items and add them to a transaction. If an item is restricted from SCO, an error message instructs the customer to ask a cashier for help. |
-| Add rewards number | Add loyalty card | Brings up a numeric keypad that a customer can use to enter their loyalty account number to associate themselves with the transaction. |
-| Search item code | Product sale | Brings up a numeric keypad that a customer can use to enter the item code of a product. Customers can then add the product to the cart if the bar code is missing or can't be scanned. |
-| Search | Search | Brings up a product browsing page where the customer can select products from product categories to add them to the cart. |
+| Add rewards number | Add loyalty card | Displays a numeric keypad that a customer can use to enter their loyalty account number to associate themselves with the transaction. |
+| Search item code | Product sale | Displays a numeric keypad that a customer can use to enter the item code of a product. Customers can then add the product to the cart if the barcode is missing or can't be scanned. |
+| Search | Search | Displays a product browsing page where the customer can select products from product categories to add them to the cart. |
 | Pay card | Pay card | Enables payment of a transaction using only a credit or debit card. |
 
 After payment, the system presents an option to print a receipt.

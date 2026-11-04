@@ -44,7 +44,7 @@ On the **Addresses** FastTab, specify which countries or regions, or states, the
 
 After you define the delivery modes, run the **Process delivery modes** batch job. This job makes the delivery modes available so that sales order processes for channels can use them. To run the **Process delivery modes** job, go to **Retail and Commerce** > **Retail and Commerce IT** > **Process delivery modes**. Run this job any time you add new delivery modes to a channel or make changes to existing delivery mode and channel relationships.
 
-After you run the **Process delivery modes** batch job, go to **Retail and Commerce** > **Channels** > **Call centers** > **All call centers**. On the **All call centers** page, on the **Action** pane, on the **Set up** tab, select **Modes of delivery**. The **Modes of delivery** page lists all the valid delivery modes for the selected call center channel. To edit existing delivery modes or add new delivery modes, select **Manage modes of delivery**. You must run the **Process delivery modes** job whenever you make changes.
+After you run the **Process delivery modes** batch job, go to **Retail and Commerce** > **Channels** > **Call centers** > **All call centers**. On the **All call centers** page, on the Action Pane, on the **Set up** tab, select **Modes of delivery**. The **Modes of delivery** page lists all the valid delivery modes for the selected call center channel. To edit existing delivery modes or add new delivery modes, select **Manage modes of delivery**. You must run the **Process delivery modes** job whenever you make changes.
 
 > [!NOTE]
 > If your changes impact any POS or online stores, run the corresponding CDX jobs along with **Process delivery modes** to reflect the changes in these channels.

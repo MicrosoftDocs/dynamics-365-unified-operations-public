@@ -1,8 +1,8 @@
 ---
 title: POS user interface visual configurations
 description: Learn about screen layouts for Microsoft Dynamics 365 Commerce point of sale (POS) experiences.
-author: boycez
-ms.date: 01/27/2026
+author: anush6121
+ms.date: 11/05/2026
 ms.topic: how-to
 ms.reviewer: mirao
 ms.assetid: a6868f93-02ed-4928-9f6a-3b7383e7e399
@@ -94,7 +94,7 @@ At startup, the POS application automatically selects the closest layout size th
 > The minimum resolution that full-size layouts support is 1024x768. Any layout that uses a resolution below that threshold generates a compact layout.
 
 > [!TIP]
-> You can learn the layout size that a POS screen requires by viewing the resolution in the app. Start the POS, and go to **Settings \> Session information**. POS shows the screen layout that is currently loaded, the layout size, and the resolution of the app window.
+> You can learn the layout size that a POS screen requires by viewing the resolution in the app. Start the POS, and go to **Settings** > **Session information**. POS shows the screen layout that is currently loaded, the layout size, and the resolution of the app window.
 
 :::image type="content" source="../commerce/media/POS-Session-Information.png" alt-text="Screenshot of POS session information page showing the currently loaded screen layout, layout size, and resolution of the app window.":::
 
@@ -124,50 +124,66 @@ The screen layout designer lets you configure various aspects of the POS **Trans
 
 ### Full layout designer
 
-The Full layout designer enables you to drag UI controls onto the POS **Transaction** screen and configure the settings for those controls.
+Use the Full layout designer to drag UI controls onto the POS **Transaction** screen and configure the settings for those controls.
 
 :::image type="content" source="../commerce/media/POS-Full-Layout-Designer-Landscape.png" alt-text="Screenshot of POS Full layout designer in landscape mode.":::
 
-- **Import layout/Export layout** – You can export and import POS screen layout designs as XML files, so that you can easily reuse and share them across environments. Import layout designs for the correct layout sizes. Otherwise, UI elements might not fit correctly on the screen.
+- **Import layout/Export layout** – Export and import POS screen layout designs as XML files, so you can easily reuse and share them across environments. Import layout designs for the correct layout sizes. Otherwise, UI elements might not fit correctly on the screen.
 - **Landscape/Portrait** – If the POS device lets users switch between landscape and portrait modes, you must define a screen layout for each mode. The POS automatically detects screen rotation and shows the correct layout.
 - **Layout grid** – The POS layout designer uses a 4-pixel grid. UI controls "snap" to the grid to help you correctly align the content.
-- **Designer zoom** – You can zoom the designer view in and out to better view the content on the POS screen. This feature is useful when the screen resolution on the POS differs greatly from the resolution of the screen that is used in the designer.
-- **Show/hide navigation bar** – For Full POS layouts, you can select whether the left navigation bar is visible on the **Transaction** screen. This feature is helpful for displays that have a lower resolution. To set the visibility, right-click the navigation bar in the designer, and select or clear the **Always visible** check box. If the navigation bar is hidden, POS users can still access it by using the menu in the upper left.
+- **Designer zoom** – Zoom the designer view in and out to better view the content on the POS screen. This feature is useful when the screen resolution on the POS differs greatly from the resolution of the screen that is used in the designer.
+- **Show/hide navigation bar** – For Full POS layouts, select whether the left navigation bar is visible on the **Transaction** screen. This feature is helpful for displays that have a lower resolution. To set the visibility, right-click the navigation bar in the designer, and select or clear the **Always visible** check box. If the navigation bar is hidden, POS users can still access it by using the menu in the upper left.
 
     :::image type="content" source="../commerce/media/Navigation-Bar.PNG" alt-text="Screenshot of Show/hide navigation bar.":::
 
-- **POS controls** – The POS layout designer supports the following controls. You can configure many controls by right-clicking and using the shortcut menu.
+- **POS controls** – The POS layout designer supports the following controls. Configure many controls by right-clicking and using the shortcut menu.
 
     :::image type="content" source="../commerce/media/POS-UI-Controls.png" alt-text="Screenshot of POS UI controls.":::
 
-    - **Number pad** – The number pad is the main mechanism for user input on the POS **Transaction** screen. You can configure the control so that the full number pad is shown. This option is ideal for touchscreen devices. Alternatively, you can configure it so that only the input field is shown. In this case, a physical keyboard is used for input. The number pad settings are available only for Full layouts. For Compact layouts, the full number pad is always shown on the **Transaction** screen.
-    - **Totals panel** – You can configure the totals panel in either one column or two columns, to show values such as the line count, discount amount, charges, subtotal, and tax. Compact layouts support only a single column.
-    - **Receipt panel** – The receipt panel contains the sales lines, payment lines, and delivery information for the products and services that are processed in the POS. You can specify columns, widths, and placement. In Compact layouts, you can also configure additional information that appears in the row under the main line.
-    - **Customer card** – The customer card shows information about the customer who is associated with the current transaction. You can configure the customer card to hide or show additional information.
-    - **Tab control** – You can add the tab control to a screen layout, and then put other controls, such as the number pad, customer card, or button grids, in it. The tab control is a container that helps you fit more content on the screen. The tab control is available only for Full layouts.
-    - **Image** – You can use the image control to show the store's logo or another branding image on the **Transaction** screen. The image control is available only for Full layouts.
+    - **Number pad** – The number pad is the main mechanism for user input on the POS **Transaction** screen. Configure the control so that the full number pad is shown. This option is ideal for touchscreen devices. Alternatively, configure it so that only the input field is shown. In this case, a physical keyboard is used for input. The number pad settings are available only for Full layouts. For Compact layouts, the full number pad is always shown on the **Transaction** screen.
+    - **Totals panel** – Configure the totals panel in either one column or two columns, to show values such as the line count, discount amount, charges, subtotal, and tax. Compact layouts support only a single column.
+    - **Receipt panel** – The receipt panel contains the sales lines, payment lines, and delivery information for the products and services that are processed in the POS. Specify columns, widths, and placement. In Commerce version 10.0.50 and later, both Full and Compact layouts can show configured additional information beneath the main sales line.
+    - **Customer card** – The customer card shows information about the customer who is associated with the current transaction. Configure the customer card to hide or show additional information.
+    - **Tab control** – Add the tab control to a screen layout, and then put other controls, such as the number pad, customer card, or button grids, in it. The tab control is a container that helps you fit more content on the screen. The tab control is available only for Full layouts.
+    - **Image** – Use the image control to show the store's logo or another branding image on the **Transaction** screen. The image control is available only for Full layouts.
     - **Recommended products** – If the recommended products control is configured for the environment, it shows product suggestions, based on machine learning.
     - **Custom control** – The custom control acts as a placeholder in the screen layout and lets you reserve space for custom content. The custom control is available only for Full layouts.
 
 ### Compact layout designer
 
-Like the Full layout designer, the Compact layout designer lets you configure the POS screen layout for phones and small tablets. However, the layout itself is fixed. You can configure the controls in the layout by right-clicking and using the shortcut menu. However, you can't use drag-and-drop operations for additional content.
+Like the Full layout designer, the Compact layout designer lets you configure the POS screen layout for phones and small tablets. However, the layout itself is fixed. You can configure the controls in the layout by right-clicking and using the shortcut menu. However, you can't use drag-and-drop operations for adding more content.
 
 :::image type="content" source="../commerce/media/Compact-Layout-Designer.png" alt-text="Screenshot of Compact layout designer.":::
 
+### Configure extra sales line information
+
+In Commerce version 10.0.50 and later, you can configure more fields beneath each sales line in Full desktop layouts and Compact layouts. These extra fields are independent of the primary receipt-panel columns and appear in the order that you select them.
+
+To configure extra sales line information, follow these steps:
+
+1. In the Full or Compact layout designer, right-click the **Receipt** control, and then select **Customize**.
+1. In the **Lines** section, select the primary fields that appear as receipt-panel columns.
+1. Under **Additional information**, select and order the fields that appear beneath each sales line.
+1. Use **Show field labels** to specify whether labels appear with the extra values.
+1. Save the layout, and then run the **1090 (Registers)** distribution schedule job.
+
+You can select fields from the existing sales line field catalog, including configured extension columns. By default, no extra fields are selected. You can use the same field as both a primary column and an extra field. The layout designer doesn't show live extra field values on the canvas, so validate the layout in Store Commerce after distribution.
+
+Older desktop Store Commerce clients can read the layout but don't display the configured extra fields. Deploy the Commerce version 10.0.50 designer and Store Commerce client together when you use this capability.
+
 ### Button grid designer
 
-The button grid designer lets you configure button grids that you can use on the POS welcome screen and **Transaction** screen for both Full and Compact layouts. You can use the same button grid across layouts and layout types. Like the screen layout designer, the button grid designer uses the ClickOnce deployment technology to download, install, and start the latest version of the application every time that users access it. Be sure to check the browser requirements for ClickOnce. Some browsers, such as Google Chrome, require extensions.
+Use the button grid designer to configure button grids for the POS welcome screen and **Transaction** screen. You can create grids for both Full and Compact layouts. Use the same button grid across different layouts and layout types. Like the screen layout designer, the button grid designer uses ClickOnce deployment technology to download, install, and start the latest version of the application each time users access it. Check the browser requirements for ClickOnce. Some browsers, such as Google Chrome, require extensions.
 
 :::image type="content" source="../commerce/media/Button-Grid-Designer.png" alt-text="Screenshot of Button grid designer.":::
 
 - **New button** – Select to add a new button to the button grid. By default, new buttons appear in the upper-left corner of the grid. However, you can arrange buttons by dragging them in the layout.
 
     > [!IMPORTANT]
-    > The contents of the button grid can overlap. When you arrange buttons, make sure that they don't hide other buttons.
+    > The contents of the button grid can overlap. When you arrange buttons, ensure that they don't hide other buttons.
 
 - **New design** – Select to automatically set up a button grid layout by specifying the number of buttons per row and column.
-- **Button properties** – You can configure button properties by right-clicking the button and using the shortcut menu.
+- **Button properties** – Configure button properties by right-clicking the button and using the shortcut menu.
 
     :::image type="content" source="../commerce/media/Button-grid-button-properties.png" alt-text="Screenshot of Button grid button properties.":::
 
@@ -179,7 +195,7 @@ The button grid designer lets you configure button grids that you can use on the
     - **Button text** – Specify the text that appears on the button in the POS.
     - **Hide button text** – Use this check box to hide or show the button text. Button text is often hidden for small buttons that show only an icon.
     - **Tooltip** – Specify extra Help text that appears when users mouse over the button.
-    - **Size in columns/Size in rows** – You can specify how tall and wide the button is.
+    - **Size in columns/Size in rows** – Specify how tall and wide the button is.
 
         :::image type="content" source="../commerce/media/POS-Button-Sizes-In-Rows-And-Columns.png" alt-text="Screenshot of POS button sizes in rows and columns.":::
 
@@ -193,7 +209,7 @@ The button grid designer lets you configure button grids that you can use on the
 
 :::image type="content" source="../commerce/media/Example-Button-Grid-In-POS.png" alt-text="Screenshot of example button grid in the POS.":::
 
-## Additional resources
+## More resources
 
 [Install the Retail point of sale (POS) layout designer](install-pos-layout-designer.md)
 

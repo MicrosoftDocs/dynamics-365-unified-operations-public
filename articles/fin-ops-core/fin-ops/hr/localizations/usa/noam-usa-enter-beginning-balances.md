@@ -89,7 +89,7 @@ This step manually creates an earnings statement for each worker for the last pa
     > [!NOTE]
     > Set the **Manual** slider to **Yes** in the **Line Details** tab for each earnings statement line to enter payroll beginning balances for each worker.
 
-1. On the **Action** pane, select **Release earnings statement** USA-FED-ER-FICA.
+1. On the Action Pane, select **Release earnings statement** USA-FED-ER-FICA.
 1. On the Action pane, select **Pay statement** to open the **Generate pay statements** page and set the following values:
 
     | Field              | Value     |

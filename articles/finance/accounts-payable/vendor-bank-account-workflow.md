@@ -40,7 +40,7 @@ To set up the vendor bank approval workflow feature, follow these steps:
 1. In the list of vendor bank account fields, select the **IsEnabled** checkbox for each field that requires approval.
 1. On the Action Pane, select **Save**.
 1. Go to **Accounts payable** > **Setup** > **Accounts payable workflows**.
-1. On the **Action** pane, select **New**.
+1. On the Action Pane, select **New**.
 1. In the **Create workflow** dialog box, select **Workflow approval for proposed vendor change**.
 1. The workflow editor app opens on your computer. Use it to design your workflow as you require. For more information about how to use the editor, see [Workflow system overview](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md) and its related articles.
 
