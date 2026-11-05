@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 05/04/2026
+ms.date: 11/02/2026
 ms.custom:
   - bap-template
 ai-usage: ai-assisted
@@ -45,9 +45,9 @@ The basic process of scheduling an order consists of three main steps:
 
 ## Load data into the engine
 
-The scheduling engine uses a more abstract data model than the Supply Chain Management database because it's a generic engine that handles multiple data sources. The concepts of route, secondary operations, and run time are translated into the generic job and constraint model that the engine exposes. The logic for building the model includes significant business logic and varies depending on the source data. The responsible X++ class is `WrkCtrScheduler`, which includes derived classes for planned production orders, released production orders, and project forecasts.
+The scheduling engine uses a more abstract data model than the Supply Chain Management database because it's a generic engine that handles multiple data sources. The engine translates the concepts of route, secondary operations, and run time into its generic job and constraint model. The logic for building the model includes significant business logic and varies depending on the source data. The `WrkCtrScheduler` X++ class is responsible for this logic and includes derived classes for planned production orders, released production orders, and project forecasts.
 
-For example, consider a route shown in the following table and image, which is relatively simple.
+For example, consider the following route, which is relatively simple.
 
 | Oper. No. | Priority | Setup time | Run time | Queue time after | Quantity of resources | Next |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -61,14 +61,14 @@ When you send this route to the engine, it splits the route into eight jobs, as 
 
 [![Scheduling engine jobs](media/scheduling-engine-jobs.png "Scheduling engine jobs.")](media/scheduling-engine-jobs-large.png)
 
-The standard link between two jobs is `FinishStart`, which means the end time of one job must occur before the start time of another. The setup must be done by the same resource that later handles the process, so there are `OnSameResource` constraints between them. Between the jobs for the primary and secondary operation for 10, there are `StartStart` and `FinishFinish` links, which mean the jobs must both start and end at the same time. Additionally, there are `NotOnSameResource` constraints, which prevent the same resource from being used for both primary and secondary operations.
+The standard link between two jobs is `FinishStart`, which means the end time of one job must occur before the start time of another. The same resource that handles the process must also complete the setup, so there are `OnSameResource` constraints between them. Between the jobs for the primary and secondary operation for 10, there are `StartStart` and `FinishFinish` links, which mean the jobs must both start and end at the same time. Additionally, there are `NotOnSameResource` constraints, which prevent the same resource from being used for both primary and secondary operations.
 
 For operation 20, where the quantity of resources is set to 3, the process job is split into three distinct jobs where all the jobs must run at the exact same time.
 In this case, the route group is set up to not reserve capacity for queue after times, which is why there's only a single job for the queue after.
 
 The scheduling engine understands only the concepts of jobs and doesn't recognize operations. This limitation means that during operation scheduling, the system splits operations into jobs, although these jobs aren't persisted in the database.
 
-For each job, you define what the job capacity requirement is (the number of seconds required). Depending on how the resource requirements are defined, you might also send, for each job, a list of all the potential applicable resources that the job could run on and what the capacity requirement is for that specific resource. Although you send the list of applicable resources when building the model, the engine ensures the resource assignment stays valid for the entire job duration.
+For each job, you define what the job capacity requirement is (the number of seconds required). Depending on how you define the resource requirements, you might also send, for each job, a list of all the potential applicable resources that the job could run on and what the capacity requirement is for that specific resource. Although you send the list of applicable resources when building the model, the engine ensures the resource assignment stays valid for the entire job duration.
 
 ## Scheduling engine internals
 
@@ -150,15 +150,15 @@ The system organizes the constraints in levels to handle this main business rule
 
 The main steps of the engine algorithm are:
 
-1. Find sequences (job chains) that can be solved separately.
+1. Find sequences (job chains) that you can solve separately.
 1. Try to find an initial solution for the sequence at the highest constraint level.
     1. Sort the jobs in the sequence based on job goal and priorities, so the system can find a start job.
     1. Loop through the jobs in the following sequence:
-        1. Find all constraints that need to be propagated and run propagation.
-        1. If all variables for the job are bound, then a solution for that job is found.
+        1. Find all constraints that need propagation and run propagation.
+        1. If all variables for the job are bound, the system finds a solution for that job.
         1. If one of the variables can't be bound without violating the constraints, roll back the variable binding, try a different value in the domain (for resource variable), and rerun the constraint propagation.
-1. If no solution is found, remove all constraints on the current constraint level, lower the constraint level (if any lower levels are available), and retry solution search with the new set of constraint.
-1. If a feasible solution is found, start the optimization phase, which tries to find a better solution until the optimization timeout is reached or all resource combinations are exhausted.
+1. If you don't find a solution, remove all constraints on the current constraint level, lower the constraint level (if any lower levels are available), and retry solution search with the new set of constraints.
+1. If you find a feasible solution, start the optimization phase, which tries to find a better solution until the optimization timeout is reached or all resource combinations are exhausted.
 
 The constraint solver doesn't account for the specifics of the scheduling algorithm. The "magic" happens in the definition and combination of the various constraints.
 
@@ -166,11 +166,11 @@ The constraint solver doesn't account for the specifics of the scheduling algori
 
 A large part of the (internal) constraints in the engine controls the working time and capacity of a resource. Essentially, the task is to traverse the working time slots for a resource from a given point in a given direction, and find a long enough interval in which the job's required capacity (time) can fit.
 
-To do this, the engine needs to know the working times of a resource. Unlike the main model data, the working times are *lazy loaded*, which means that they're loaded into the engine as needed. The reason for this approach is that there are often working times in Supply Chain Management for a calendar for a very long period and typically many calendars exist so the data would be quite large to preload.
+To do this, the engine needs to know the working times of a resource. Unlike the main model data, the engine *lazy loads* the working times, which means that it loads them as needed. The reason for this approach is that there are often working times in Supply Chain Management for a calendar for a very long period and typically many calendars exist, so the data would be quite large to preload.
 
 The engine requests calendar information in chunks by invoking the X++ class method `WrkCtrSchedulingInteropDataProvider.getWorkingTimes`. The request is for a specific calendar ID in a specific time interval. Depending on the state of the server cache in Supply Chain Management, each of these requests could end up in several database calls, which takes a long time (relative to the pure computational time). Also, if the calendar contains very elaborate working time definitions with many working time intervals per day, this complexity adds to the time the loading takes.
 
-When the scheduling engine loads the working-time data, it retains this data in its internal cache for the specific calendar. This retention means that if any other jobs or resources use the same calendar, the next lookups can be performed quickly from memory. One common cause of bad performance is if a separate calendar ID is used for each resource, because data is then requested for each calendar, even though the content of the calendars might be the same.
+When the scheduling engine loads the working-time data, it retains this data in its internal cache for the specific calendar. This retention means that if any other jobs or resources use the same calendar, the next lookups can perform quickly from memory. One common cause of bad performance is if you use a separate calendar ID for each resource, because data is then requested for each calendar, even though the content of the calendars might be the same.
 
 ### Finite capacity
 
@@ -214,7 +214,7 @@ When scheduling with multiple engine instances, the result isn't fully determini
 
 ## Operation scheduling performance
 
-Operation scheduling, also known as rough-cut capacity planning, can be harder to solve from an engine standpoint if finite capacity is used because more data is needed to determine feasibility.
+*Operation scheduling*, also called *rough-cut capacity planning*, can be harder to solve from an engine standpoint if finite capacity is used because more data is needed to determine feasibility.
 
 The capacity of a resource group depends on which and how many resources are members of the resource group. A resource group itself doesn't have any capacity—only when resources are members of the group does it have capacity. Because the resource group membership can vary over time, capacity must be evaluated per day.
 
@@ -259,7 +259,7 @@ The tracing functionality adds significant performance overhead, so use it only 
 
 ## Troubleshooting performance
 
-As you can see from the previous sections, some pitfalls in the setup and usage of the scheduling engine can lead to performance problems. The following checklist can help you troubleshoot these problems. Look at all the points because it's often a combination of multiple factors that leads to problems.
+As you saw in the previous sections, some pitfalls in the setup and usage of the scheduling engine can lead to performance problems. The following checklist can help you troubleshoot these problems. Look at all the points because it's often a combination of multiple factors that leads to problems.
 
 > [!TIP]
 > The following table summarizes the most common job scheduling performance problems and their recommended solutions. Use the links to jump to the detailed guidance for each area.
@@ -278,13 +278,13 @@ As you can see from the previous sections, some pitfalls in the setup and usage 
 
 ### Performing scheduling as part of MRP when it isn't needed
 
-Although routes are used for production control purposes like costing and reporting, they might not need to be considered during MRP. In some cases, having a standard production lead time specified for the item will be sufficient for planning. Set the capacity time fence to zero to turn off route scheduling. If scheduling is needed, carefully set the capacity time fence because routes might not need to be considered for the full extent of the MRP's coverage time fence.
+Although you use routes for production control purposes like costing and reporting, you might not need to consider them during MRP. In some cases, specifying a standard production lead time for the item is sufficient for planning. Set the capacity time fence to zero to turn off route scheduling. If scheduling is needed, carefully set the capacity time fence because you might not need to consider routes for the full extent of the MRP's coverage time fence.
 
-If the order isn't scheduled during MRP, then it will instead need to be scheduled when the planned order is firmed. This means that the firming process will take longer, so depending on how many of the suggested planned orders get firmed the performance gain during MRP might be lost at firming.
+If you don't schedule the order during MRP, you need to schedule it when you firm the planned order. This condition means that the firming process takes longer. Depending on how many of the suggested planned orders you firm, the performance gain during MRP might be lost at firming.
 
 ### Route with unnecessary operations
 
-When you design the route, avoid trying to model the real world exactly with all the steps the production process goes through. While this approach can be useful in some cases, it isn't good for performance because the engine's model grows larger (in terms of jobs and constraints), and more SQL statements are executed to insert and update jobs and capacity reservations. Also, there's the downstream effect of having to eventually report progress on the jobs, which automatic postings can mitigate. If the data isn't used for anything, it creates unnecessary load.
+When you design the route, avoid trying to model the real world exactly with all the steps the production process goes through. While this approach can be useful in some cases, it isn't good for performance because the engine's model grows larger (in terms of jobs and constraints), and more SQL statements execute to insert and update jobs and capacity reservations. Also, there's the downstream effect of having to eventually report progress on the jobs, which automatic postings can mitigate. If the data isn't used for anything, it creates unnecessary load.
 
 Create only the operations strictly needed for scheduling (typically bottleneck resources) or costing purposes. Instead, group many smaller distinct operations into one larger operation that represents a greater part of the process.
 
@@ -308,7 +308,7 @@ A secondary operation that has a resource load quantity greater than one means t
 
 ### Excessive use of finite capacity
 
-Using finite capacity requires the engine to load capacity information from a database, which can add computational overhead, especially in environments where resources are booked close to maximum capacity. As a result, it's important to carefully evaluate if a resource really needs to use finite capacity or they can be overbooked. Because there might be a difference among finite capacity resources in how important they are to not overbook, use the bottleneck option on a resource in combination with a separate value on the plan in "Capacity time fence for bottleneck resources." Using the bottleneck concept can enable lowering the general finite capacity time fence.
+Using finite capacity requires the engine to load capacity information from a database, which can add computational overhead, especially in environments where resources are booked close to maximum capacity. As a result, it's important to carefully evaluate if a resource really needs to use finite capacity or they can be overbooked. Because there might be a difference among finite capacity resources in how important they are to not overbook, use the bottleneck option on a resource in combination with a separate value on the plan in "Capacity time fence for bottleneck resources." By using the bottleneck concept, you can lower the general finite capacity time fence.
 
 ### Setting hard links
 
@@ -343,11 +343,11 @@ The following table lists known job scheduling errors with links to information 
 
 | Error message | Resolution |
 |---|---|
-| *Planned production order must be scheduled before it can be firmed* | [Planned production order must be scheduled before it can be firmed](/troubleshoot/dynamics-365/supply-chain/planning/planned-order-must-be-scheduled) |
-| *Production scheduling doesn't consider the safety margins* | [Production scheduling doesn't consider the safety margins](/troubleshoot/dynamics-365/supply-chain/planning/production-schedule-not-consider-safety-margins) |
+| *Planned production order must be scheduled before it can be firmed* | [Planned production order must be scheduled before it can be firmed](planning-optimization/planned-order-firming.md#troubleshoot-firming-errors) |
+| *Production scheduling doesn't consider the safety margins* | [Production scheduling doesn't consider the safety margins](planning-optimization/safety-margins.md#production-scheduling-and-safety-margins) |
 | *Master planning is scheduling more than the available capacity* | [Master planning is scheduling more than the available capacity](/troubleshoot/dynamics-365/supply-chain/planning/master-planning-not-respect-capacity-limitations) |
 | *Not enough capacity could be found* | [Not enough capacity could be found](/troubleshoot/dynamics-365/supply-chain/planning/not-enough-capacity-error)<br><br>[Fix the "Not enough capacity could be found" scheduling engine error](not-enough-capacity-error-resolution.md) |
-| *The delay value isn't updated when you reschedule a planned order* | [The delay value isn't updated when you reschedule a planned order](/troubleshoot/dynamics-365/supply-chain/planning/delay-value-not-updated) |
+| *The delay value isn't updated when you reschedule a planned order* | [The delay value isn't updated when you reschedule a planned order](delays.md#update-the-delay-when-you-reschedule-a-planned-order) |
 
 ## Related information
 

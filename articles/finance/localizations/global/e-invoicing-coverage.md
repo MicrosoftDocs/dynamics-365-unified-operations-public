@@ -2,7 +2,7 @@
 title: Supported electronic invoicing countries and regions
 description: This article describes for which countries and regions electronic invoicing is supported or planned in Microsoft Dynamics 365 Finance.
 author: ilikond
-ms.date: 07/22/2026
+ms.date: 11/05/2026
 ms.topic: concept-article
 ms.custom: 
   - bap-template
@@ -68,7 +68,7 @@ The next section contains detailed information about out-of-box e-invoicing func
 | Netherlands | Generation of electronic invoices for sales and project invoices and credit notes in the **UBL-OHNL** format. | Available |
 | New Zealand | <p>Generation of electronic invoices for sales and project invoices and credit notes in the New Zealand extension of the PEPPOL format.</p><p>Learn more: [Electronic invoicing for New Zealand](../apac/gs-apac-aus-nzl-electronic-invoices.md)</p> | Available |
 | Norway | <p>Generation of electronic invoices for sales and project invoices and credit notes in the **EHF** format.</p><p>Learn more: [Customer electronic invoices in Norway](../norway/emea-nor-e-invoices.md)</p> | Available |
-| Oman | <p>Generation of electronic invoices in the PEPPOL format and submission to the PEPPOL Delivery Network via the "last mile" third party connection.</p> <p>This will be enforced by August 2026 for the 100 largest tax paying companies in the country/region with following adoption for other groups of taxpayers by year 2028.</p>| Planned for 2026 release wave 2 or later |
+| Oman | <p>Generation of electronic invoices in the PEPPOL format and submission to the PEPPOL Delivery Network via the "last mile" third party connection.</p> <p>This requirement takes effect by August 2026 for the 100 largest taxpayers in the country/region, with the following adoption for other groups of taxpayers by 2028.</p>| Planned for 2026 release wave 2 or later |
 | Panama | <p>Generation of e-documents for invoices in the country/region-specific format. Submission to the Panamanian Tax Authority (DGI) via a third-party "last mile" connection to Edicom.</p><p>Learn more: [Electronic invoicing for Panama](../iberoamerica/ltm-panama-ei-connec-configuration.md)</p> | Available |
 | Paraguay | <p>Generation of electronic documents and electronic tax documents in the standardized country/region-specific XML format. Submission to the Paraguayan Tax Authority (SET) via a third-party "last mile" connection to Edicom.</p><p>Learn more in [Electronic invoicing for Paraguay](../iberoamerica/ltm-paraguay-electronic-invoice-configuration.md).</p> | Available |
 | Peru | Generation of electronic invoicing documents in the standard XML format based on UBL V2.1 and adopted by SUNAT, also known as CPE (Electronic Payment Vouchers). Submission to the Peruvian Tax Authority (SUNAT) via a third-party "last mile" connection to Edicom. | Planned for 2026 release wave 1 or later |
@@ -78,7 +78,7 @@ The next section contains detailed information about out-of-box e-invoicing func
 | Spain | Generation of electronic invoices for sales and project invoices and credit notes in the **FacturaE** format. | <ul><li>Available</li><li>B2B mandate is expected in 2027</li></ul> |
 | Spain | <p>Generation and submission to the governmental SII system of required data in the country/region-specific format.</p><p>Learn more: [Immediate Supply of Information on VAT (SII)](../spain/emea-esp-sii.md)</p> | Available |
 | Türkiye | Generation of e-invoices for customer invoices in the format mandated by Turkish Revenue Administration to meet e-invoicing obligations. | Available in Public preview. General availability is planned for 2025 release wave 2 |
-| United Arab Emirates | <p>Generation of electronic invoices in the Peppol International (PINT) format and submission to the PEPPOL Delivery Network via the "last mile" third party connection.</p> <p>To be enforced by 01 January 2027.</p> | Planned for 2026 release wave 2 |
+| United Arab Emirates | <p>Generation of electronic invoices for sales and project invoices and credit notes in the UAE extension of the PEPPOL International (PINT) format.</p> <p>Learn more: [Electronic invoicing for United Arab Emirates](../mea/emea-uae-e-invoices.md)</p> | Available |
 | Uruguay | <p>Generation of electronic fiscal receipts (CFE) based on the XML standard, with a syntax defined and maintained by the DGI. Submission to the Uruguayan Tax Authority (DGI) via a third-party "last mile" connection to Edicom.</p><p>Learn more: [Electronic invoicing for Uruguay](../iberoamerica/ltm-uruguay-electronic-invoice-configuration.md)</p> | Available |
 | PEPPOL| <p>Generation of electronic invoices for sales and project invoices and credit notes in the **PEPPOL** format. This country/region-independent functionality can be used "as is" if no country/region-specific amendments are supposed, or it can be used as the basis for further modifications.</p><p>Learn more:</p><ul><li>[Export of customers electronic invoices in PEPPOL BIS 3 format](https://support.microsoft.com/topic/an-update-for-european-union-to-support-export-of-customers-electronic-invoices-in-peppol-bis-3-format-for-microsoft-dynamics-365-814d09db-dae7-6c5e-034c-797687078bac)</li><li>[Import vendor electronic invoices in PEPPOL format](../europe/emea-peppol-import.md)</li></ul> | Available |
 

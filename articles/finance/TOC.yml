@@ -4522,6 +4522,8 @@
                       href: localizations/mea/uae-faf.md
                     - name: Print a sales invoice in the UAE layout
                       href: localizations/mea/uae-sales-invoice-layout.md
+                    - name: Customer electronic invoices (UAE)
+                      href: localizations/mea/emea-uae-e-invoices.md
                 - name: United Kingdom
                   items:
                     - name: United Kingdom overview

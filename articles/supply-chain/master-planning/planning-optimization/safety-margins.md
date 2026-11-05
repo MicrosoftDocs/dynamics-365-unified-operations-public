@@ -6,7 +6,8 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ReqCreatePlanWorkspace
 ms.topic: how-to
-ms.date: 07/27/2026
+ms.date: 11/02/2026
+ai-usage: ai-assisted
 ms.custom:
   - bap-template
 ---
@@ -64,6 +65,14 @@ The following illustration highlights the issue margin.
 During master planning, the system deducts the issue margin from the demand requirement date. This deduction helps ensure that you have time to react to and ship incoming demand orders. This margin acts as a buffer to ensure time for shipment and related outbound warehouse processes.
 
 When you apply an issue margin, the related supply and demand requirement dates don't match. Instead, they differ by the issue margin, because the issue margin is added between the supply *requirement date* and the demand *requirement date*.
+
+### Production scheduling and safety margins
+
+Safety margins provide a planning buffer. Master planning considers them, but manual scheduling of planned production orders doesn't.
+
+For this scenario, one option is to remove the relevant margin and update the route to include the required time, such as queue time. Make both changes together so that the time is represented on the route rather than as a planning margin. This approach can help master planning and manual scheduling produce consistent results.
+
+If you use queue time for this buffer, check that your scheduling options include it. For operations scheduling, selecting **Cancel queue time** excludes queue time. Learn more in [Operations scheduling options](../../production-control/operation-scheduling-options.md#cancel-queue-time).
 
 ## Set up safety margins
 
@@ -248,7 +257,7 @@ If delays occur and the system doesn't update the requirement dates, several oth
 3. BOM/route selection
 4. Trade agreements
 
-Make sure to test this feature thoroughly to ensure that your intended use of soft issue margins is not affected by the known limitations.
+Ensure you test this feature thoroughly to confirm that the known limitations don't affect your intended use of soft issue margins.
 
 ## Related information
 
