@@ -2,11 +2,12 @@
 title: Image component
 description: Learn how to use the Image component in the online SDK to embed images into a module in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 02/04/2026
+ms.date: 11/05/2026
 ms.topic: how-to
-ms.reviewer: mirao
-ms.search.region: Global
 ms.author: asharchw
+ms.reviewer: mirao
+ai-usage: ai-assisted
+ms.search.region: Global
 ms.search.validFrom: 2019-10-31
 ms.custom: 
   - bap-template
@@ -40,7 +41,9 @@ export interface IImageSettings {
     cropFocalRegion?: boolean;
     mode?: number;
     backgroundColor?: string;
+    format?: ImageFormat;
 }
+export type ImageFormat = 'jpg' | 'png' | 'webp';
 export interface IViewPort {
     xs: IImageDimension;
     sm?: IImageDimension;
@@ -68,9 +71,44 @@ export interface IImageDimension {
 }
 ```
 
+### Image output format
+
+The optional `format` property requests an output format from the Commerce image resizer. It doesn't change the source file in the Media library.
+
+> [!NOTE]
+> Use an online SDK version that includes `IImageSettings.format`. For settings authored in Commerce site builder, you must also enable image-format support in the environment. This property doesn't configure output formats for external image providers.
+
+| Value | Behavior |
+| ----- | -------- |
+| `'webp'` | Requests WebP output. Consider this format for opaque photographs to reduce download size. |
+| `'jpg'` | Requests JPEG output. JPEG doesn't preserve transparency. |
+| `'png'` | Requests lossless PNG output. Use this format when you must retain transparency. It can produce larger files for photographic content. |
+| Omitted | Doesn't explicitly request a format. Existing image-resizer behavior, including format selection from other settings, remains unchanged. |
+
+For example, the following settings request WebP output at quality 80 for a 600-by-772-pixel image:
+
+```typescript
+const imageSettings: IImageSettings = {
+    viewports: {
+        xs: { w: 600, h: 772 }
+    },
+    quality: 80,
+    format: 'webp'
+};
+```
+
+The SDK adds `f=webp` to image-resizer requests that use these settings. The other supported values produce `f=jpg` or `f=png`. Quality affects lossy output; it doesn't reduce file size when the output format is PNG.
+
+An explicit `format` takes precedence over the JPEG output otherwise requested by `backgroundColor`. If you combine background padding with a non-JPEG format, verify the rendered result.
+
+> [!IMPORTANT]
+> WebP as a file format supports transparency. But, don't assume that WebP output from the Commerce image resizer preserves it. Use PNG when you must retain transparency.
+
+Validate the response content type, transferred size, and visual appearance for each image path that your module uses, including fallback and zoom requests. For authoring guidance, see [Configure image output format](../media-gallery-module.md#configure-image-output-format). For performance validation, see [Optimize images](../go-live/performance-optimize-images.md#validate).
+
 ### ImageSettings viewport configuration
 
-In general, the **ImageSettings** instance automatically fills in information from the image configuration in site builder. However, if you're manually constructing the object, it's useful to know the query string parameter values that the image resizer uses to render the images, in case you need to mock the data for testing purposes.
+In general, the **ImageSettings** instance automatically fills in information from the image configuration in site builder. However, if you manually construct the object, you need to know the query string parameter values that the image resizer uses to render the images, if you need to mock the data for testing purposes.
 
 To ensure that the image resizer service handles an image correctly, set the appropriate "q" query string parameter on the **ImageDimension** instance. The format is `w=WIDTH_NUMBER&h=HEIGHT_NUMBER&m=MODE_NUMBER`, where **WIDTH_NUMBER** and **HEIGHT_NUMBER** specify the width and height values in pixels (0–3000), and **MODE_NUMBER** specifies the image resizer mode to use.
 
@@ -92,7 +130,7 @@ The following table describes the image resizer modes that the service supports.
 
 ## Example of Image component usage
 
-The following example shows how you can use the Image component and the **ImageSettings** class in a module. The example declares a **defaultImageSettings** variable to set the width, height, scaling mode, and background color values if these values aren't provided in site builder. (Site builder might not provide these values if you're debugging in a development environment where the module mocks don't provide values.)
+The following example shows how you can use the Image component and the **ImageSettings** class in a module. The example declares a **defaultImageSettings** variable to set the width, height, scaling mode, and background color values if site builder doesn't provide these values. Site builder might not provide these values if you're debugging in a development environment where the module mocks don't provide values.
 
 ```typescript
 import * as React from 'react';
@@ -162,9 +200,9 @@ In the preceding example, the module uses a **productImage** module configuratio
 
 ### Support module layouts in a theme
 
-A site [theme](theming.md) contains a THEME_NAME.theme.settings.json file that can define different module layouts, each of which has its own **ImageSettings** class. For more information, see [Configure theme settings](configure-theme-settings.md).
+A site [theme](theming.md) contains a THEME_NAME.theme.settings.json file that can define different module layouts. Each layout has its own **ImageSettings** class. For more information, see [Configure theme settings](configure-theme-settings.md).
 
-The following example shows a theme that defines a two-module layout (vertical and horizontal), where each viewport has different image sizes. All the defined layouts for a theme then appear in the module configuration in site builder, where the page author can select among them. When a module renders, the settings from the theme are passed to the image resizer service. The image resizer service can then serve the appropriately sized image, based on the browser viewport and the selected layout.
+The following example shows a theme that defines a two-module layout (vertical and horizontal), where each viewport has different image sizes. All the defined layouts for a theme appear in the module configuration in site builder, where the page author can select among them. When a module renders, the settings from the theme are passed to the image resizer service. The image resizer service can then serve the appropriately sized image, based on the browser viewport and the selected layout.
 
 ```json
 {
