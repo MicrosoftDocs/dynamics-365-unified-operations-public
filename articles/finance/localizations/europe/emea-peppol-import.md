@@ -6,7 +6,7 @@ ms.author: ikondratenko
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/06/2026
+ms.date: 11/05/2026
 ms.reviewer: johnmichalak
 ms.search.region: Europe
 ms.search.validFrom: 2023-01-01
@@ -51,7 +51,7 @@ Configure a SharePoint folder as a source location for incoming vendor invoice f
 1. In the **Format** field, select the **Vendor Invoice Import** format configuration.
 1. On the **File source** tab, in the **Name** field, assign a source name.
 1. Select **Settings**.
-1. In the **Source settings** dialog box, enable the **Sharepoint** option.
+1. In the **Source settings** dialog box, enable the **SharePoint** option.
 1. In the **Document type for input sources** field, select the document type that you created earlier.
 1. (Optional) Set up three more document types, and use them to define different *post-process* locations:
 
@@ -93,15 +93,15 @@ You can configure external codes for units of measure if specific units are expl
 
 ## Import vendor electronic invoices
 
-To run the import of vendor electronic invoices, follow these steps:
+To import vendor electronic invoices, follow these steps:
 
 1. Go to **Accounts payable** > **Periodic tasks** > **Import vendor invoices**.
-1. On **Electronic report parameters**, on the **File source** section, in the **Source settings** field, select the source location for batch mode import. If you don't define a source for batch import, the system prompts you to select a single file for import.
+1. On **Electronic report parameters**, in the **File source** section, select the source location for batch mode import in the **Source settings** field. If you don't define a source for batch import, the system prompts you to select a single file for import.
 
 > [!NOTE]
 > Leave the **Description** field empty.
 
-:::image type="content" source="emea-e-invoice-import-description.jpg" alt-text="Screenshot of empty description before the import.":::
+:::image type="content" source="emea-e-invoice-import-description.jpg" alt-text="Screenshot of the empty Description field on the Electronic report parameters page before the import.":::
 
 1. Select **OK** to immediately start the import process or to schedule the import to run in the background.
 
@@ -109,7 +109,7 @@ To run the import of vendor electronic invoices, follow these steps:
 
 The following overview describes the steps in the import process.
 
-1. The system identifies vendors by using the tax-exempt number that's defined in the vendor record. If no vendor matches the data that's being searched, the import process fails, and the system shows a related error message.
+1. The system identifies vendors by using the tax-exempt number that you define in the vendor record. If no vendor matches the data that you search for, the import process fails, and the system shows a related error message.
 1. The system identifies products that are used on invoice lines by using an external item number, which might be vendor-specific. If no product matches the external description, the import process fails, and the system shows a related error message.
 1. If units of measure are used on invoices lines, the system identifies them by using external codes values. If the system doesn't find a unit with a matching external code value, the import process fails, and the system shows a related error message.
 1. If an incoming import file contains information about purchase orders and their lines in the **Invoice\\cac:OrderReference\\cbc:ID** and **Invoice\\cac:InvoiceLine\\cac:OrderLineReference\\cbc:LineID** elements, the system uses the numbers to match invoices with purchase orders and lines that are entered in the system.
@@ -128,6 +128,7 @@ The system shows successfully imported vendor electronic invoices as pending inv
 >
 > - The import process doesn't support the import of miscellaneous charges.
 > - The import process supports only the import of line-level discounts.
+> - The import process doesn't support the import of procurement categories.
 
 ## Additional resources
 
