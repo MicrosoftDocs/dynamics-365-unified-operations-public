@@ -6,7 +6,8 @@ ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form: PurchTable, PurchTablePart, PurchOrderInReview, PurchOrderApproved, PurchOrderInDraft, PurchOrderAssignedToMe, VendPurchOrderJournalListPage, PurchTableWorkflowDropDialog, VendPurchOrderJournal
 ms.topic: how-to
-ms.date: 09/08/2026
+ms.date: 11/02/2026
+ai-usage: ai-assisted
 ms.custom:
   - bap-template
 ---
@@ -21,7 +22,7 @@ After you create a PO, it might need to go through an approval process. After th
 
 ## Approval of purchase orders
 
-POs that don't use change management have a status of *Approved* as soon as you create them, whereas POs that use change management have a status of *Draft* when you first create them. A PO that you create by firming a planned order from master planning is always set to a status of *Approved*, regardless of the change management settings. A PO creates inventory transactions only when it reaches the *Approved* status. Therefore, that inventory doesn't appear as available for reservation or marking until the order is accepted.
+POs that don't use change management have a status of *Approved* as soon as you create them, whereas POs that use change management have a status of *Draft* when you first create them. Firmed planned purchase orders are automatically set to a status of *Approved*, regardless of the change management settings. Learn more about the different behavior of derived subcontract purchase orders in [Changing purchase orders](#changing-purchase-orders). A PO creates inventory transactions only when it reaches the *Approved* status. Therefore, that inventory doesn't appear as available for reservation or marking until the order is accepted.
 
 Enable change management for POs by setting the **Activate change management** option on the **Procurement and sourcing parameters** page. When you enable change management, POs must go through an approval workflow after you complete them. Supply Chain Management has a workflow process editor where you can define a workflow to represent your approval process. This workflow can include rules for automatic approval, rules that determine who will be assigned to approve particular POs, and rules for escalating a workflow that has been waiting for approval for a long time. You can enable the change management process for all vendors or for specific vendors. You can also set up the process so that it can be overridden for individual POs.
 
@@ -56,13 +57,18 @@ A vendor might request some type of assurance that payment will be provided for 
 
 ## Changing purchase orders
 
-In some situations, you might have to change a PO after it has reached an approval status of *Approved* or *Confirmed*.
+In some situations, you might need to change a purchase order (PO) after it reaches an approval status of *Approved* or *Confirmed*.
 
-If the PO was created by using a change management process, you can make changes by recalling the order or, if the order has already been approved, by using the **Request change** action. In this case, the approval status is changed back to *Draft*, and you can then modify the order. After you've finished making changes, you might have to submit the PO for reapproval. You can configure the types of changes that require reapproval by using a **Re-approval rule for purchase orders** policy rule on the **Purchasing policies** page.
+If you create the PO by using a change management process, you can make changes by recalling the order or, if the order is already approved, by using the **Request change** action. In this case, the approval status changes back to *Draft*, and you can modify the order. After you finish making changes, you might need to submit the PO for reapproval. You can configure the types of changes that require reapproval by using a **Re-approval rule for purchase orders** policy rule on the **Purchasing policies** page.
 
-If part of the ordered quantity for a PO line has been delivered, you can't change the ordered quantity when the purchase order is in *Draft*. However, you can change the **Deliver remainder** quantity on the line for the purchase order that is in *Draft* status.
+If part of the ordered quantity for a PO line is delivered, you can't change the ordered quantity when the purchase order is in *Draft*. However, you can change the **Deliver remainder** quantity on the line for the purchase order that is in *Draft* status.
 
-After an order has been confirmed, you can no longer delete it. However, you can cancel the total quantity or any remaining quantity on an order, provided that the quantity hasn't been received or invoiced. You can then use the **Finalize** action to prevent further processing.
+> [!NOTE]
+> If you turn on **Activate change management** on the **Procurement and sourcing parameters** page, firmed derived orders (subcontract purchase orders) have a status of *In-review*. These orders are submitted to the approval workflow rather than automatically approved.
+>
+> By contrast, firmed planned purchase orders are automatically approved so that the planning engine doesn't create new planned orders while the purchase order is still in *Draft* status.
+
+After you confirm an order, you can no longer delete it. However, you can cancel the total quantity or any remaining quantity on an order, provided that the quantity isn't received or invoiced. You can then use the **Finalize** action to prevent further processing.
 
 ## Canceling purchase orders
 
@@ -70,7 +76,7 @@ Use the **Cancel** action on the header to cancel a purchase order (PO).
 
 If the quantity is partially registered, received, or invoiced, you can cancel only the remaining quantity that isn't registered, received, or invoiced. The order quantity is reduced accordingly. When you update the quantity on the line, you also update the line status. For example, the original quantity on the line is 5, and you receive a quantity of three. In this case, you can cancel only two. The line updates to *Received* status.
 
-If you add a delivery remainder to the order line and it exceeds the quantity on the order line, the **Cancel** action doesn't cancel the excess quantity. Instead, the line remains in *Open order* status because it has a remaining quantity. For example, the original quantity on the line is 5, and the delivery remainder is 7. If you cancel the order, you cancel five, and a quantity of two remains, as you can see in the inventory transactions.
+If you add a delivery remainder to the order line and it exceeds the quantity on the order line, the **Cancel** action doesn't cancel the excess quantity. Instead, the line remains in *Open order* status because it has a remaining quantity. For example, the original quantity on the line is 5, and the delivery remainder is 7. If you cancel the order, you cancel five, and a quantity of two remains, as you see in the inventory transactions.
 
 To cancel the whole quantity on a PO line, cancel the delivery remainder quantity on the line. The line updates to *Canceled* status.
 
