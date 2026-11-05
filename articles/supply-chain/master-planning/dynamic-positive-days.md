@@ -4,7 +4,8 @@ description: Learn about dynamic positive days and explains how to set up and us
 author: Henrikan
 ms.author: henrikan
 ms.topic: how-to
-ms.date: 03/21/2024
+ms.date: 11/02/2026
+ai-usage: ai-assisted
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -22,6 +23,12 @@ Dynamic positive days help increase your sales order fulfillment rate by using o
 This strategy enables sales orders that are created later than, but requested earlier than, another sales order to use existing purchase orders. It lets you fulfill all demand and, at the same time, better manage your supply and delivery dates (including when you use capable-to-promise).
 
 When the system determines which supply to peg, it doesn't just consider the lead time. It also considers the positive days. The number of positive days that apply to a given item are set on that item's item coverage group and can be overwritten at the master plan level. This strategy enables some master plans to have a higher number of positive days than others. Therefore, the plans that are used for capable-to-promise can differ from the plans that are used for day-to-day business.
+
+## Planned orders are generated even though items are in stock
+
+If master planning creates planned orders even though you have on-hand inventory and existing production orders, check **Positive days** for the relevant [coverage group](#assign-the-number-of-positive-days-to-an-item-coverage-group). Increasing this value might let master planning use existing inventory to fulfill demand instead of creating new planned orders. Check for a master-plan override that could change the effective value. For details about the planning horizon, see [Positive days](master-plans.md#positive-days).
+
+The **Positive days** value is separate from the environment-wide **Use dynamic positive days** option. This check doesn't require you to turn on dynamic positive days.
 
 ## Prerequisites
 
@@ -55,9 +62,9 @@ This section provides some example scenarios to help you understand how dynamic 
 
 ### Example scenario 1: Demand within the lead time
 
-The following scenario shows how the system handles demand that's requested for a date that's within the lead time.
+The following scenario shows how the system handles demand that you request for a date within the lead time.
 
-1. Your system is set up in the following way:
+1. Set up your system as follows:
 
     - You have an item that belongs to a coverage group that's set up with three positive days and three negative days.
     - The lead time of the item is five days.
@@ -65,25 +72,25 @@ The following scenario shows how the system handles demand that's requested for 
     - Your master plans don't include any positive day overrides.
     - You have a purchase order for the item. It's scheduled to be delivered on day 2.
 
-1. A new sales order is created for the item. The requested ship date is day 3.
+1. Create a new sales order for the item. Set the requested ship date to day 3.
 1. Because the requested ship date is within the lead time, the system pegs the new sales order to the existing purchase order.
 
 :::image type="content" source="media/dynamic-pos-days-scenario-1.png" alt-text="Timeline for example scenario 1.":::
 
 ## Example scenario 2: Demand outside the lead time
 
-The following scenario shows how the system handles demand that's requested for a date that's outside the lead time.
+The following scenario shows how the system handles demand that you request for a date outside the lead time.
 
-1. Your system is set up in the following way:
+1. Set up your system as follows:
 
     - You have an item that belongs to a coverage group that's set up with three positive days and three negative days.
     - The lead time of the item is five days.
     - Dynamic positive days are enabled.
     - Your master plans don't include any positive day overrides.
-    - You have a purchase order (PO1) for the item. It's scheduled to be delivered on day 2.
-    - You have another purchase order (PO2) for the item. It's scheduled to be delivered on day 6.
+    - You have a purchase order (PO1) for the item. It's scheduled for delivery on day 2.
+    - You have another purchase order (PO2) for the item. It's scheduled for delivery on day 6.
 
-1. The following sales orders are created for the item:
+1. Create the following sales orders for the item:
 
     - Sales order 1 (SO1) has a requested ship date of day 3.
     - Sales order 2 (SO2) has a requested ship date of day 10.
@@ -93,7 +100,7 @@ The following scenario shows how the system handles demand that's requested for 
     - Peg SO1 against existing PO1.
     - Create a new planned purchase order, and peg SO2 against it.
 
-    Because SO2 is outside the lead time, the system creates a new planned order to supply it. (There's no supply within the positive days.)
+    Because SO2 is outside the lead time, the system creates a new planned order to supply it. There's no supply within the positive days.
 
 :::image type="content" source="media/dynamic-pos-days-scenario-2.png" alt-text="Timeline for example scenario 2.":::
 
@@ -101,7 +108,7 @@ The following scenario shows how the system handles demand that's requested for 
 
 The following scenario shows how the system handles demand that's requested for a date that's within the positive days but outside the lead time.
 
-1. Your system is set up in the following way:
+1. Set up your system in the following way:
 
     - You have an item that belongs to a coverage group that's set up with three positive days and three negative days.
     - The lead time of the item is five days.
@@ -110,7 +117,7 @@ The following scenario shows how the system handles demand that's requested for 
     - You have a purchase order (PO1) for the item. It's scheduled to be delivered on day 2.
     - You have another purchase order (PO2) for the item. It's scheduled to be delivered on day 8. (Therefore, this example differs from the previous example in that PO2 is scheduled for delivery within the range of positive days.)
 
-1. The following sales orders are created for the item:
+1. Create the following sales orders for the item:
 
     - Sales order 1 (SO1) has a requested ship date of day 3.
     - Sales order 2 (SO2) has a requested ship date of day 10.

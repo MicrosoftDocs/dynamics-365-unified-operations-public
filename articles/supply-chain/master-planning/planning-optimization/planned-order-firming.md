@@ -6,7 +6,8 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ReqTransPo, ReqTransFirmLog
 ms.topic: how-to
-ms.date: 03/25/2026
+ms.date: 11/02/2026
+ai-usage: ai-assisted
 ms.custom: 
   - bap-template
 ---
@@ -68,7 +69,7 @@ Automatic firming lets you firm planned orders as part of the master planning pr
 > [!NOTE]
 > You can auto-firm planned purchase orders only for items that are associated with a vendor.
 >
-> If you turn on change tracking, derived orders (that is, subcontract purchase orders) that the system firms have a status of *In-review*.
+> If you turn on **Activate change management**, derived orders (that is, subcontract purchase orders) that the system firms have a status of *In-review*. For details, see [Approve and confirm purchase orders](../../procurement/purchase-order-approval-confirmation.md#changing-purchase-orders).
 
 ### Auto-firming with Planning Optimization vs. the deprecated master planning engine
 
@@ -82,9 +83,9 @@ You can use both Planning Optimization and the deprecated master planning engine
 
 ### Set up auto-firming and the firming time fence
 
-Turn on auto-firming by assigning an automated firming time fence to the relevant coverage setup, as described later in this section. If you don't turn on auto-firming for any coverage setup, or if you start planning from a specific page, such as the **Net requirements** page for a released product, the auto-firming process is skipped.
+Turn on auto-firming by assigning an automated firming time fence to the relevant coverage setup, as described later in this section. If you don't turn on auto-firming for any coverage setup, or if you start planning from a specific page, such as the **Net requirements** page for a released product, the system skips the auto-firming process.
 
-Grouping and marking options for auto-firming take their values from the **Standard update** tab on the **Master planning parameters** page.
+The system takes grouping and marking options for auto-firming from the **Standard update** tab on the **Master planning parameters** page.
 
 You define the auto-firming time fence by the number of days that you enter for the relevant coverage setup. You can turn on auto-firming and control the firming time fence in the following ways:
 
@@ -127,9 +128,20 @@ To firm a planned order by using the query-based firming process, follow these s
 
 ## Track firmed orders
 
-To track planned orders that you firmed, go to **Master-planning** > **Inquiries and reports** > **Master planning** > **Firming history**.
+To track planned orders that you firmed, go to **Master planning** > **Inquiries and reports** > **Master planning** > **Firming history**.
 
 > [!NOTE]
-> You can also access firming history from any of the planned order pages such as **Master-planning** > **Master planning** > **Planned orders**. The system creates firming history data for planned orders that you firm. Therefore, the firming history you see is unrelated to any planned order you select. The firming history you see is similar to the firming history you see when you access **Master-planning** > **Inquiries and reports** > **Master planning** > **Firming history**.
+> You can also access firming history from any of the planned order pages such as **Master planning** > **Master planning** > **Planned orders**. The system creates firming history data for planned orders that you firm. Therefore, the firming history you see is unrelated to any planned order you select. The firming history you see is similar to the firming history you see when you access **Master planning** > **Inquiries and reports** > **Master planning** > **Firming history**.
+
+## Troubleshoot firming errors
+
+When you firm a planned order, use the following table to resolve common errors. Each resolution applies to the specific error message.
+
+| Error code and message | Cause | Resolution |
+|---|---|---|
+| `SYS25368`: Parameters for master plan %1 do not exist. | The system can't find the settings for the specified plan because of configuration issues. | Go to **Master planning** > **Setup** > **Plans** > **Master plans**, and verify that a plan with the specified name exists. |
+| `SYS23532`: Vendor is not specified | The planned order doesn't specify a vendor. | Open the planned order. On the **Planned supply** FastTab, select a vendor in the **Vendor** field. |
+| `SYS309802`: The planned production order must be scheduled before it can be firmed. | Scheduled start and end dates are required. | Go to **Master planning** > **Master planning** > **Planned orders**, and open the relevant order. On the **General** FastTab, in the **Scheduled** section, enter dates in both **Start date** and **End date**. |
+| `PRO2614`: Item cannot have a BOM or formula | An item that has a bill of materials (BOM) or formula must use a supported production type. | Go to **Product information management** > **Products** > **Released products**, and open the relevant product. On the **Engineer** FastTab, set **Production type** to **Planning item**, **BOM**, or **formula**, as appropriate for the manufacturing process. |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

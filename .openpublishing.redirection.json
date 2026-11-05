@@ -26797,8 +26797,7 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/planning/delay-value-not-updated.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/planning/delay-value-not-updated",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/master-planning/delays#update-the-delay-when-you-reschedule-a-planned-order"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/planning/deprecated-master-planning-error.md",
@@ -26807,13 +26806,11 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/planning/firmed-directly-deri.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/planning/firmed-directly-derived-orders-processed-by-in-review-workflow",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/procurement/purchase-order-approval-confirmation#changing-purchase-orders"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/planning/item-cannot-have-bom-formula.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/planning/item-cannot-have-bom-formula",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/master-planning/planning-optimization/planned-order-firming#troubleshoot-firming-errors"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/planning/master-planning-batc.md",
@@ -26822,8 +26819,7 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/planning/no-parameters-for-master-plan.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/planning/no-parameters-for-master-plan",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/master-planning/planning-optimization/planned-order-firming#troubleshoot-firming-errors"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/planning/not-enough-capacity-error.md",
@@ -26837,8 +26833,7 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/planning/planned-order-must-be-scheduled.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/planning/planned-order-must-be-scheduled",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/master-planning/planning-optimization/planned-order-firming#troubleshoot-firming-errors"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/planning/planned-order-not-exist.md",
@@ -26852,8 +26847,7 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/planning/planned-orders-in-stock-items.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/planning/planned-orders-in-stock-items",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/master-planning/dynamic-positive-days#planned-orders-are-generated-even-though-items-are-in-stock"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/planning/planning-optimisatio.md",
@@ -26862,8 +26856,7 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/planning/prod-schedule-safety-margins.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/planning/production-schedule-not-consider-safety-margins",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/master-planning/planning-optimization/safety-margins#production-scheduling-and-safety-margins"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/planning/product-is-on-hold.md",
@@ -26882,8 +26875,7 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/planning/unable-to-upload-the.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/planning/unable-to-update-forecasted-unit-cost",
-      "redirect_document_id": "false"
+      "redirect_url": "/previous-versions/troubleshoot/dynamics-365/supply-chain/planning/unable-to-update-forecasted-unit-cost"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/planning/vendor-code-not-authorized.md",
@@ -26892,8 +26884,7 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/planning/vendor-not-specified.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/planning/vendor-not-specified",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/master-planning/planning-optimization/planned-order-firming#troubleshoot-firming-errors"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/planning/warehouse-removal-fr.md",
