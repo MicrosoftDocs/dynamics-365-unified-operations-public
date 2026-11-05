@@ -2,11 +2,12 @@
 title: Optimize images
 description: Learn how you can improve website performance by optimizing image use in Microsoft Dynamics 365 Commerce during the upgrade or go-live process.
 author: mssle
-ms.date: 01/30/2026
+ms.date: 11/05/2026
 ms.topic: how-to
+ms.author: asharchw
 ms.reviewer: mirao
 ms.search.region: Global
-ms.author: asharchw
+ai-usage: ai-assisted
 ms.search.validFrom: 2021-09-20
 ms.custom: 
   - bap-template
@@ -49,15 +50,44 @@ Downloading images can significantly affect the performance of a webpage. To red
     1. For product collection modules, clear the **Enable module lazy load** checkbox. For other modules, select the **Disable Lazy Load** checkbox.
     1. Save, preview, and publish your content.
 
+## Choose an image output format
+
+Image dimensions, output format, and compression quality affect download size in different ways. Resizing reduces pixel dimensions. Selecting an output format can reduce the bytes required to represent those pixels. The quality setting controls lossy compression. It doesn't reduce file size when the output is lossless PNG.
+
+> [!NOTE]
+> The **Image format** setting requires image-format support to be enabled in your environment and a compatible online SDK. The setting applies to images processed by the Commerce image resizer, not an external image provider.
+
+Where **Image format** is available in a module's image settings, use the following guidance:
+
+- **WebP (smallest file size)**: Consider this option for opaque product photographs and marketing images. Compare the downloaded size and visual quality with the existing output.
+- **JPEG (no transparency)**: Use this option for photographs when JPEG output is required.
+- **PNG**: Use this option for images that require transparency. Converting a JPEG photograph to PNG can increase download size without improving its detail.
+- **Original (no conversion)**: Leave the output format unspecified and retain existing image-resizer behavior. Other settings can still affect the output.
+
+> [!IMPORTANT]
+> JPEG doesn't support transparency. Don't assume that WebP output from the Commerce image resizer preserves transparency either. Use PNG for transparent images, and verify their appearance before publishing.
+
+For a media gallery, configure thumbnails, main gallery images, and zoomed images separately. For instructions, see [Configure image output format](../media-gallery-module.md#configure-image-output-format). A format selection affects the served image, not the source file in the Media library.
+
+Smaller images can download sooner and reduce data transfer, especially on slower connections. They don't guarantee an equivalent improvement in overall page load time or Largest Contentful Paint (LCP). Measure those metrics separately.
+
 ## Validate
 
-Use the following method to validate that image use is optimized.
+Use the following method to validate that your image use is optimized:
 
 - **Description or purpose:** Verify page performance.
 - **Steps to run:** Run performance tests before and after you optimize your images.
 - **Passing result:** Performance is improved after you optimize your images.
 
-## Additional resources
+When you change the image output format, also perform these checks:
+
+1. Open your browser's developer tools, disable the cache, and reload the page under the same network conditions for each comparison.
+1. Inspect image requests. Confirm the response `Content-Type` and transferred size rather than relying on the source file extension. Where the format setting is applied, the image-resizer URL includes `f=webp`, `f=jpg`, or `f=png`.
+1. Check thumbnails, main images, product variants, zoom, and full-screen views separately. Don't assume that one request represents every image path.
+1. Compare visual quality, transparency, and image download duration before and after the change.
+1. Measure page load time and LCP separately from image download duration. Publish the change only after you confirm acceptable appearance and performance.
+
+## More resources
 
 [Best practices for Dynamics 365 Commerce development](../e-commerce-extensibility/best-practices-dev.md)
 
