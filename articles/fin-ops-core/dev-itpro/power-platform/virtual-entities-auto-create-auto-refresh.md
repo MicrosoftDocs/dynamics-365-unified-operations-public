@@ -6,7 +6,7 @@ ms.author: johnmichalak
 ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 01/21/2026
+ms.date: 10/08/2026
 ms.reviewer: johnmichalak
 ---
 
@@ -25,6 +25,20 @@ This article provides information about automatic creation and refreshes of virt
 When you make changes to data entities in finance and operations apps, you can make those changes visible to Dataverse through a manual refresh. The Auto Create and Refresh capability in finance and operations apps enables automatic metadata creation or modification in Dataverse to occur immediately, reliably, and efficiently. Automatic refresh of metadata ensures timely updates in Dataverse from finance and operations apps. By enabling the Automatic Create and Refresh capability, you don't need to manually refresh finance and operations entities in Dataverse. This capability paves way to automatic creation of virtual tables in Dataverse for finance and operations apps data entities.
 
 :::image type="content" source="media/AutoCreate_Refresh_Overview.png" alt-text="Screenshot of the architecture of virtual entities for the Auto Create and Refresh capability.":::
+
+## Preview: Selective refresh of virtual entities
+
+The **(Preview) Selective Refresh of Virtual Entities** feature lets administrators choose which virtual entities participate in metadata refresh during upgrades and ongoing maintenance. Selecting only the entities you need can reduce processing time in environments with many virtual entities.
+
+This feature is disabled by default. To use it, enable **(Preview) Selective Refresh of Virtual Entities** in **Feature management**. The feature is in Public Preview and might change before general availability.
+
+After you enable the feature, open the virtual entity refresh page:
+
+1. To choose which entities can participate in automatic metadata refresh and creation, select **Show all entities**, select the entities, and select **Enable selected**. Enabling an entity only changes its eligibility; it doesn't start a refresh.
+2. To refresh metadata for specific entities now, return to the enabled-entities view, select the entities, and select **Refresh selected**. Confirm the selection to start a separate, one-time refresh operation for those entities.
+3. To exclude entities from automatic processing, select them and select **Disable selected**. While this feature is enabled, disabled entities are excluded from automatic refresh and automatic entity creation, including after deployment.
+
+Disabling an entity doesn't delete its existing virtual table in Dataverse, schedule a refresh, or cancel a metadata request that's already in progress. If you turn off the preview feature, the refresh page returns to its previous experience and legacy processing applies to eligible entities.
 
 **Auto Refresh**
 
