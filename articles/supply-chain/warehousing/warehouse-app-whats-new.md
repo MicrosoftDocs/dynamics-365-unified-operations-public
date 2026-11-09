@@ -6,7 +6,7 @@ ms.author: pefreita
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: whats-new
-ms.date: 10/26/2026
+ms.date: 11/06/2026
 ms.custom:
   - bap-template
   - sfi-ropc-nochange
@@ -25,6 +25,21 @@ Starting with version 4.1.1.0, every V4 and later release is tagged with its pub
 
 > [!TIP]
 > For upcoming release dates, see [Warehouse Management mobile app release schedule](warehouse-app-control-updates.md). That article also describes optional ways to validate a release before it reaches your warehouse floor.
+
+## Release notes for version 4.2.3.0 (November 9, 2026)
+
+Version 4.2.3.0 is a hotfix release.
+
+### New features in version 4.2.3.0
+
+- **Disable scanner when busy (Zebra devices)** – Added a **Disable scanner when busy** setting to the **Settings** > **Scanner** page. This setting is available only on Zebra devices. When you set it to *Yes*, the app stops the hardware scanner while it waits for a response from the server. The default value is *No*, so scanners keep running while the app is busy.
+
+### Bug fixes in version 4.2.3.0
+
+- **Shared device mode (Android)** – Fixed an issue where workers couldn't sign in on devices in shared device mode, such as devices enrolled through SOTI MobiControl. Sign-out now also signs the worker out of the shared device, so the next worker isn't signed in automatically as the previous user.
+- **Guest accounts (Android)** – Fixed an issue where guest users from another Microsoft Entra tenant couldn't authenticate.
+- **Location inquiry** – Fixed an issue where detail values that contain a colon (*:*) were cut off after the first colon.
+- **Customer telemetry** – Fixed an issue where some client event types, such as user actions, scans, warnings, exceptions, and authentication events, weren't sent to your Application Insights resource. All client event types are now sent. User action events now use fixed event names, and descriptive details are stored in the `message` property. Learn more in [Monitor Warehouse Management usage and performance](application-insights-monitor-usage-performance.md#technical-details-of-all-available-telemetry-data).
 
 ## Release notes for version 4.2.1.0 (October 26, 2026)
 
@@ -53,7 +68,7 @@ Version 4.1.5.0 is a cumulative update that includes new features, improvements,
 
 ### New features in version 4.1.5.0
 
-- **Camera scanning** – The camera scanner now recognizes more barcode formats. No configuration is required because the additional formats are detected automatically. You can also set the color and thickness of the scan frame that outlines the scanning area.
+- **Camera scanning** – The camera scanner now recognizes more barcode formats. No configuration is required because the app automatically detects the additional formats. You can also set the color and thickness of the scan frame that outlines the scanning area.
 - **Notification sounds** – You can now select a separate sound for success, failure, and warning notifications. A duplicate re-scan sound setting was also removed.
 - **ProGlove arm scanners** – Added the first version of the bridge for ProGlove arm scanners. Scanner input, including image capture, is now connected to the form flow. Learn more in [Integrate hardware with the Warehouse Management mobile app](warehouse-app-hardware-integration.md).
 - **Client settings** – Added an editable **Client settings** option for connections. Use these settings in enterprise environments that have specific requirements, such as environments that require Transport Layer Security (TLS) 1.2 or that require workers to sign in every time they start the app. New connections now use user name and password authentication by default.
@@ -69,7 +84,7 @@ Version 4.1.5.0 is a cumulative update that includes new features, improvements,
 - **Authentication libraries** – Updated the Microsoft Authentication Library (MSAL) and OneAuth libraries to supported versions.
 - **Security** – Applied multiple security fixes and dependency updates.
 - **Performance telemetry** – Round-trip telemetry now matches the measurements that Warehouse Management mobile app version 3 reports, so that you can compare performance between the two versions. Telemetry now also measures how long warehouse tasks take, not just how long the server takes to respond.
-- **Telemetry quality** – Numeric values are now recorded correctly in flow telemetry, and less irrelevant data is logged. Therefore, meaningful signals are easier to find.
+- **Telemetry quality** – Numeric values are now recorded correctly in flow telemetry, and the app logs less irrelevant data. Therefore, meaningful signals are easier to find.
 - **Accessibility** – Improved screen reader support and navigation across menus, work cards, the welcome screen, combo boxes, version information, headers, and announcements of selected items.
 - **VoiceOver (iOS)** – Improved VoiceOver support, especially in combo box dialog boxes.
 
