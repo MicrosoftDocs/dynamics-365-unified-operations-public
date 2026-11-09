@@ -5,7 +5,7 @@ author: pefreita
 ms.author: pefreita
 ms.reviewer: kamaybac
 ms.topic: concept-article
-ms.date: 10/26/2026
+ms.date: 11/06/2026
 ai-usage: ai-assisted
 ms.search.form:
 ms.custom:
@@ -31,7 +31,8 @@ The following table lists the current and scheduled releases of the Warehouse Ma
 
 | Release version | Availability in Microsoft App Center | App store rollout begins | Status |
 |---|---|---|---|
-| 4.3.0.0 | Week of November 2, 2026 | To be determined | Scheduled |
+| 4.3.0.0 | November 9, 2026 | Not planned (App Center only \*) | Scheduled |
+| 4.2.3.0 | November 9, 2026 | November 16, 2026 | Scheduled |
 | 4.2.1.0 | October 26, 2026 | October 26, 2026 | Released |
 | 4.2.0.0 | September 29, 2026 | October 6, 2026 | Released |
 | 4.1.6.0 | September 2, 2026 | Complete | Released |
@@ -40,6 +41,8 @@ The following table lists the current and scheduled releases of the Warehouse Ma
 | 4.1.3.0 | May 18, 2026 | Complete | Released |
 | 4.1.2.0 | May 6, 2026 | Complete | Released |
 | 4.1.1.0 | April 30, 2026 | Complete | Released |
+
+\* Version 4.3.0.0 is available only in Microsoft App Center. It won't be released to the app stores.
 
 For a list of features and fixes included in each release, see [What's new or changed in the Warehouse Management mobile app](warehouse-app-whats-new.md). For releases before version 4.1.1.0, see [Warehouse Management mobile app release notes archive](warehouse-app-whats-new-archive.md).
 
@@ -61,7 +64,7 @@ Use the time window between the App Center availability date and the app store r
 - **Stay within the support window** – Holding a version indefinitely eventually moves devices outside the rolling 12-month support window for version 4 and later releases. Learn more in [Support policy for the Warehouse Management mobile app](warehouse-app-support-info.md#version-4-and-later-support-policy).
 - **Security and platform fixes ship in current releases** – Older releases don't receive backported fixes, and operating system updates can break older builds.
 - **Back-end compatibility isn't guaranteed indefinitely** – Supply Chain Management services evolve over time, so a version that you hold for a long time might eventually stop working correctly.
-- **Manual distribution adds ownership** – If you take devices off the store update path, your organization becomes responsible for delivering every subsequent update, including security fixes. Make sure that you have a reliable mechanism to get the latest version onto your devices. The Warehouse Management mobile app is for your internal business use only. You may not republish or distribute it externally in any app store or similar distribution service.
+- **Manual distribution adds ownership** – If you take devices off the store update path, your organization becomes responsible for delivering every subsequent update, including security fixes. Ensure that you have a reliable mechanism to get the latest version onto your devices. The Warehouse Management mobile app is for your internal business use only. You may not republish or distribute it externally in any app store or similar distribution service.
 
 ## Related information
 
