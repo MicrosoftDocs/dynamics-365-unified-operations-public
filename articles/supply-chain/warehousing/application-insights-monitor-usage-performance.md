@@ -4,7 +4,7 @@ description: The Supply Chain Management tenant emit telemetry data, which lets 
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 08/10/2026
+ms.date: 11/06/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -26,20 +26,23 @@ Before you can collect and analyze Warehouse Management telemetry data, ensure t
 
 ## View telemetry data in Power BI
 
-The fastest and easiest way to get started viewing your warehousing telemetry is to download and set up the Power BI reports provided by Microsoft. The downloadable reports and instructions for how to set them up are available in the [Supply Chain Management telemetry repository on GitHub](https://github.com/microsoft/d365-scm-telemetry/tree/main/samples/PowerBI/Appsource).
+The fastest and easiest way to get started viewing your warehousing telemetry is to download and set up the Power BI reports provided by Microsoft. You can find the downloadable reports and instructions for how to set them up in the [Supply Chain Management telemetry repository on GitHub](https://github.com/microsoft/d365-scm-telemetry/tree/main/samples/PowerBI/Appsource).
 
 ## Technical details of all available telemetry data
 
-In Application Insights, telemetry data from Supply Chain Management tenants and the Warehouse Management mobile app are logged as custom events. Technical details of all custom events and all data that could be logged for each event are available in the Supply Chain Management telemetry repository on GitHub. This information can help you design your own custom Power BI reports and explore the data directly in Application Insights. The following sample query files list all of the available event IDs, field names, and version requirements:
+In Application Insights, telemetry data from Supply Chain Management tenants and the Warehouse Management mobile app are logged as custom events. You can find technical details of all custom events and all data that could be logged for each event in the Supply Chain Management telemetry repository on GitHub. This information can help you design your own custom Power BI reports and explore the data directly in Application Insights. The following sample query files list all of the available event IDs, field names, and version requirements:
 
 - For Supply Chain Management tenant telemetry details, see the [WarehouseManagement.kql example query on GitHub](https://github.com/microsoft/d365-scm-telemetry/blob/main/samples/KQL/example_queries/WarehouseManagement.kql).
 - For Warehouse Management mobile app telemetry details, see the [WarehouseMobileApp.kql example query on GitHub](https://github.com/microsoft/d365-scm-telemetry/blob/main/samples/KQL/example_queries/WarehouseMobileApp.kql).
+
+> [!NOTE]
+> Starting with Warehouse Management mobile app version 4.2.3.0, the app sends all client event types to your Application Insights resource, including user actions, scans, warnings, exceptions, and authentication events. Event names are fixed categories that keep the `Warehouse.MobileApp.` prefix. Descriptive details are stored in the `message` property, the outcome is stored in the `status` property, and the variant is stored in the `type` property. If you have queries or reports that filter on descriptive event names from earlier versions, update them to filter on these properties instead.
 
 ## Analyze how long work takes in the mobile app (preview)
 
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
-Warehouse Management mobile app version 4.1.5.0 and later emits telemetry that describes how long work takes in the app, rather than only how long the server takes to answer. Use this telemetry to find the steps where workers lose the most time, and to tell a slow server apart from a page that's simply hard to complete.
+Warehouse Management mobile app version 4.1.5.0 and later emits telemetry data that describes how long work takes in the app, in addition to how long the server takes to answer. Use this information to find the steps where workers lose the most time, and to differentiate the effect of slow server from a page that's hard to complete.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
