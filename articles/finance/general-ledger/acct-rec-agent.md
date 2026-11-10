@@ -4,7 +4,7 @@ description: Learn about the Account Reconciliation Agent in Microsoft Dynamics 
 author: twheeloc
 ms.author: bking
 ms.topic: overview
-ms.date: 09/08/2026
+ms.date: 11/02/2026
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -31,6 +31,17 @@ Here are some of the benefits:
 
 >[!NOTE]
 >To improve performance and response quality, Microsoft might automatically update the AI model used by the service. As a result, the model used to generate responses might differ from the one displayed in the user interface.
+
+>[!NOTE]
+>To use Copilot and generative AI features that require cross-region processing, the existing **Move data across regions** setting must be enabled for the environment.
+>
+>To enable the **Move data across regions** setting for each affected environment, follow these steps:
+> 1. Sign into the Power Platform admin center.
+> 2. Select **Manage** > select **Environments**.
+> 3. Select the affected environment > select **Generative AI features** > select **Edit**.
+> 4. Review the terms of use > select **Move data across regions** checkbox.
+> 5. Select **Save**.
+> No additional action is required for environments where the **Move data across region** setting is already enabled. Before enabling the setting, review the processing destinations and applicable data residency requirements at this link. Affected features may become unavailable if the setting remains disabled. For more information about this setting, see [Move data across regions for Copilots, AI agents, and generative AI features](/power-platform/admin/geographical-availability-copilot). 
 
 ## Set up the Account Reconciliation Agent
 
