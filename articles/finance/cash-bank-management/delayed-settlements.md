@@ -1,10 +1,10 @@
 ---
-title: Decouple settlement from payment journal posting
+title: Delay settlement from journal posting
 description: Learn how delayed settlement lets you post customer and vendor payment journals even when settlement can't complete.
 author: mukumarm
 ms.author: mukumarm
 ms.topic: how-to
-ms.date: 07/09/2026
+ms.date: 11/04/2026
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -13,24 +13,24 @@ ms.search.validFrom: 2026-01-01
 ms.search.form:
 ms.dyn365.ops.version: 
 ---
-# Decouple settlement from payment journal posting
+# Delay settlement from journal posting
 
 [!INCLUDE [banner](../../includes/banner.md)]
 
 When you use delayed settlement, you can post customer and vendor payment journals successfully even if the related settlement can't be completed. The payment posts immediately, and the settlement is queued and processed separately - either automatically in the background or manually from a dedicated page.
 
-This article describes the **Decouple settlement from journal posting** feature. After you turn on the feature in **Feature management**, you can enable it on the specific customer payment and vendor payment journals where you want the behavior.
+This article describes the **Delay settlement from journal posting** feature. After you turn on the feature in **Feature management**, you can enable it on the specific customer payment and vendor payment journals where you want the behavior.
 
 ## Prerequisites
 
 - Microsoft Dynamics 365 Finance version 10.0.49.
-- The **Decouple settlement from journal posting** feature turned on in Feature management.
+- The **Delay settlement from journal posting** feature turned on in Feature management.
 - The behavior applies to **Customer payment** and **Vendor payment** journals only.
 
 ## Turn on the feature
 
 1. Go to **Workspaces > Feature management**.
-1. On the **All** tab, find **Decouple settlement from journal posting**.
+1. On the **All** tab, find **Delay settlement from journal posting**.
 1. Select the feature, and then select **Enable now**.
 
 > [!IMPORTANT]
@@ -67,7 +67,7 @@ The end-to-end flow is:
 
 To enable the feature on a journal, follow these steps:
 
-1. Go to **General ledger > Journal setup > Journal names**.
+1. Go to **General ledger** > **Journal setup** > **Journal names**.
 1. Turn on delayed settlement for the journal you want.
 1. The toggle appears for customer payment and vendor payment journal types.
 
@@ -76,8 +76,8 @@ To enable the feature on a journal, follow these steps:
 Use the customer and vendor payment settings to control how delayed settlement behaves.
 
 | Setting | Controls |
-|---|---|
-| Decouple settlement on posting | Whether posting a payment journal decouples the settlement process, so the payment posts without settling immediately. |
+| --- | --- |
+| Delay settlement from journal posting | Whether posting a payment journal decouples the settlement process, so the payment posts without settling immediately. |
 | Access to **Settlement in queue** | Whether users can go to the **Settlement in queue** page to review and process delayed settlements. |
 
 ### Post a payment journal with delayed settlement
@@ -100,23 +100,21 @@ A background process automation runs continuously and picks up queued settlement
 
 To manually settle a journal, follow these steps:
 
-1. Go to **Cash and bank management > Periodic tasks > Settlement in queue**.
+1. Go to **Cash and bank management** > **Periodic tasks** > **Settlement in queue**.
 1. Select one of the following options:
 
 - **Settle now** – Trigger immediate settlement of the selected entry.
 - **Settle in batch now** – Run the settlement as a batch job.
 - **View marked transactions** – See the transactions linked to a queued settlement.
-- **Cancel settlement** – Remove the settlement mark. This action doesn't reverse the posted payment (important for vendor payments).
+- **Reset failed settlement** – Remove the settlement mark. This action doesn't reverse the posted payment (important for vendor payments).
 
-<!-- TODO: capture and add screenshot before publishing -->
-:::image type="content" source="media/settlement-in-queue.png" alt-text="Screenshot of the Settlement in queue page under Cash and bank management periodic tasks.":::
 
 ### Settlement status
 
 Each queued settlement shows a status that tells you where it is in processing.
 
 | Status | Meaning |
-|---|---|
+| --- | --- |
 | Prepared | Queued and waiting to be processed. |
 | Processing | Currently being processed. |
 | Partial success | Some marked transactions settled; others still need to be processed. |
@@ -127,7 +125,7 @@ For a **Partial success** entry, you can re-run the settlement action. The page 
 
 ## Retry a failed settlement
 
-The system doesn't automatically retry failed settlements. The background automation skips failed records, so you need to intervene manually. On the **Settlement in queue** page, review the recorded error log for the failed entry, and then select **Reset failed settlement** (or **Settle** / **Settle in batch now**) to try again.
+The system doesn't automatically retry failed settlements. The background automation skips failed records, so you need to intervene manually. On the **Settlement in queue** page, review the recorded error log for the failed entry, and then select **Reset failed settlement** or **Settle** or **Settle in batch now** to try again.
 
 > [!WARNING]
 > Automation never reprocesses a **Failed** settlement on its own. If you don't retry it from the **Settlement in queue** page, the settlement stays open indefinitely.
