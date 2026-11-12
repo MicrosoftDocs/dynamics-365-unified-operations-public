@@ -4,9 +4,10 @@ description: Learn about purchase agreements, which are contracts that commit an
 author: ShriramSivasankaran
 ms.author: shriramsiv
 ms.reviewer: kamaybac
-ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal, PurchLine, AgreementLines
+ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal, PurchLine, AgreementLines, PurchReqTable
 ms.topic: how-to
-ms.date: 09/08/2026
+ms.date: 11/06/2026
+ai-usage: ai-assisted
 ms.custom:
   - bap-template
 ---
@@ -19,7 +20,7 @@ This article provides information about purchase agreements. A purchase agreemen
 
 Purchase agreements can apply to a specific quantity of a product, a specific currency amount of a product, or a specific currency amount of the products in a procurement category. The prices and discounts of the purchase agreement override the prices and discounts that are specified in any trade agreements that exist.  
 
-On the **Purchase agreements** page, you can create, apply, and follow up on purchase agreements that exist between your organization and your vendors. For example, after you create a purchase agreement, you can order directly from it. Each purchase agreement has a validity period that is defined by the person who creates the purchase agreement. The receipt date of a purchase must be within the effective dates of this validity period.  
+On the **Purchase agreements** page, you can create, apply, and follow up on purchase agreements that exist between your organization and your vendors. For example, after you create a purchase agreement, you can order directly from it. Each purchase agreement has a validity period that you define when you create the purchase agreement. The receipt date of a purchase must be within the effective dates of this validity period.  
 
 After you create a purchase agreement, you must activate it before it becomes effective. To activate a purchase agreement, set the **Mark agreement as effective** option to *Yes*.
 
@@ -49,6 +50,10 @@ Pricing terms can vary, depending on the type of commitment. The pricing terms f
 | Product category value commitment |            |            | Yes              |                      |
 | Value commitment                  |            |            | Yes              |                      |
 
+### Price unit personalization
+
+When you open the **Purchase agreement** page in line view, you can't add the **Price unit** field to the line-view overview through personalization. Some shared fields in the agreement framework can't be included in personalizations because of the underlying data model. This limitation doesn't change which pricing fields you can update on an order line, as shown in the preceding table.
+
 ## Policies for purchase agreements
 
 The following policies affect the way that the link between a purchase agreement commitment and the corresponding PO lines works:
@@ -57,15 +62,19 @@ The following policies affect the way that the link between a purchase agreement
 - **Price and discount is fixed** – The price on an order line and the price on the related commitment must be the same. If the price is changed on the order line, the link to the commitment is broken. If the link is broken, the order line doesn't contribute to the fulfillment of the commitment.
 - **Minimum release amount and Maximum release amount** – If an amount is specified, you receive a message if you make any change to an order line that causes the order line to differ from the related commitment.
 
+### Purchase requisition maximum limits
+
+The **Max is enforced** policy applies to purchase order lines, not to the quantity or amount requested on a purchase requisition. A requisition linked to a purchase agreement can inherit the correct price information and still request more than the agreement's maximum quantity or amount. Because requisitions aren't always approved, a requisition doesn't reserve quantity or amount against the purchase agreement.
+
 ## Fulfillment calculations for purchase agreements
 
-Fulfillment quantities and amounts are shown on the **Fulfillment** tab on the **Line details** FastTab of the **Purchase agreements** page.  
+The **Fulfillment** tab on the **Line details** FastTab of the **Purchase agreements** page shows fulfillment quantities and amounts.  
 
 The **Fulfillment** area shows the remaining amount or quantity that is required to fulfill the commitment.  
 
 The **Agreement** area shows the total quantity or the total amount that the sales agreement line is valid for.  
 
-You can access the PO lines and the invoice lines that contribute to the fulfillment calculation by selecting the **Related information** action on the lines or on the header of a purchase agreement.
+Select the **Related information** action on the lines or on the header of a purchase agreement to access the PO lines and the invoice lines that contribute to the fulfillment calculation.
 
 ## Confirmations and version history for purchase agreements
 
@@ -93,11 +102,11 @@ To make sure that the agreement address is transferred, follow these steps:
 
 ## Matching policy on purchase agreements
 
-You can define a line matching policy on the header of the purchase agreement. This line matching policy will respect the accounts payable parameters line matching policy when the **Allow matching policy override** field on the **Accounts payable parameters** page (on the **Price and quantity matching** FastTab) is set to *Higher than company policy*. Documents that reference the purchase agreement will use the line matching policy that's defined on the purchase agreement header unless otherwise defined on the corresponding item, item and vendor, or category purchasing policy.
+You can define a line matching policy on the header of the purchase agreement. This line matching policy respects the accounts payable parameters line matching policy when the **Allow matching policy override** field on the **Accounts payable parameters** page (on the **Price and quantity matching** FastTab) is set to *Higher than company policy*. Documents that reference the purchase agreement use the line matching policy that's defined on the purchase agreement header unless otherwise defined on the corresponding item, item and vendor, or category purchasing policy.
 
 ## Purchase agreements and intercompany trade
 
-Intercompany trading relationships can be created between vendor accounts and customer accounts that are in different legal entities. When a sales order or PO is created for one of the parties, an intercompany order chain is created. In the order chain, the sales order and PO are created in the appropriate legal entities.  
+Intercompany trading relationships can be created between vendor accounts and customer accounts that are in different legal entities. When you create a sales order or PO for one of the parties, you create an intercompany order chain. In the order chain, you create the sales order and PO in the appropriate legal entities.  
 
 You can create a purchase agreement or sales agreement for one of the intercompany trading parties. You can then generate the corresponding sales agreement or purchase agreement for the other intercompany trading party in the other legal entity.  
 
@@ -105,7 +114,7 @@ If you create an intercompany PO that uses the intercompany purchase agreement i
 
 ## Financial dimensions on purchase agreements
 
-You can copy financial dimensions to document headers or to individual lines of a purchase agreement. If you change the dimensions in the agreement header or on the agreement line, the change doesn't affect any released orders, but it will be reflected on any new orders.
+You can copy financial dimensions to document headers or to individual lines of a purchase agreement. If you change the dimensions in the agreement header or on the agreement line, the change doesn't affect any released orders, but it reflects on any new orders.
 
 ## Related information
 

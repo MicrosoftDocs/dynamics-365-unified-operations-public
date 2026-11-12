@@ -26903,8 +26903,7 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/procurement/action-requires-full-distribution.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/action-requires-full-distribution",
-      "redirect_document_id": "false"
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/over-under-distribution#symptoms"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/procurement/approved-vendor-effective-date.md",
@@ -26933,13 +26932,11 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/procurement/default-tax-group-and-discount.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/default-tax-group-and-discount",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/procurement/set-up-vendor-accounts#fiscal-data-from-an-invoice-account"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/procurement/delivery-name-isnt-synced.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/delivery-name-isnt-synced",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/procurement/tasks/create-purchase-order#delivery-name-isnt-updated-after-an-address-change"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/procurement/invocation-target-exception.md",
@@ -26953,18 +26950,15 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/procurement/max-limit-on-requisition.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/max-limit-on-requisition",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/procurement/purchase-agreements#purchase-requisition-maximum-limits"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/procurement/not-able-to-invoice-.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/cant-invoice-original-sales-order-direct-delivery-purchase-order",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/intercompany-set-up-parameters-to-post-order#cant-invoice-the-original-sales-order-or-direct-delivery-purchase-order"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/procurement/object-reference-not-set.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/object-reference-not-set",
-      "redirect_document_id": "false"
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/over-under-distribution#symptoms"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/procurement/over-under-distribution.md",
@@ -26973,8 +26967,7 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/procurement/personalize-purchase-agreement-price.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/personalize-purchase-agreement-price",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/procurement/purchase-agreements#price-unit-personalization"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/procurement/po-language.md",
@@ -27003,8 +26996,7 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/procurement/purchase-requisition.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/cant-add-line-to-purchase-requisition-after-change",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/procurement/purchase-requisitions-workflow#add-a-line-after-requesting-a-change"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/procurement/resubmit-po-after-change.md",
@@ -27028,8 +27020,7 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/procurement/vendor-rebate-not-cumulated.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/vendor-rebate-not-cumulated",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/procurement/vendor-rebates#invoice-due-dates-and-rebate-calculation"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/procurement/voucher-number-consumed.md",

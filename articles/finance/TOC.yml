@@ -4795,6 +4795,8 @@
                   href: business-performance-analytics/set-up-security.md
                 - name: Custom report import, export, and migration
                   href: business-performance-analytics/custom-reports.md
+                - name: Configure value chains in Business performance analytics
+                  href: business-performance-analytics/configure-value-chains.md
                 - name: Reassign ownership of Business performance analytics workflow
                   href: business-performance-analytics/bpa-flow-owner.md
             - name: Key concepts in Business performance analytics

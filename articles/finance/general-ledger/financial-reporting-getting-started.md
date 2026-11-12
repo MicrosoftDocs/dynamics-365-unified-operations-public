@@ -29,7 +29,7 @@ This article describes where to access financial reporting and how to use the fi
 
 The Financial reporting add-in lets financial and business professionals create, maintain, deploy, and view financial statements. Financial reporting includes dimension support. Therefore, account segments or dimensions are immediately available. No additional tools or configuration steps are required after installation.
 
-You can get the Financial reporting add-in as a Dynamics 365 app in Power Platform admin center for supported Dynamics 365 Finance and Operations environments. Availability depends on the environment's cloud, geographic region, and applicable Dynamics 365 Finance entitlement. You enable the add-in through the applicable Finance and Operations application bundle.
+You can get the Financial reporting add-in as a Dynamics 365 app in Power Platform admin center for supported Finance and Operations environments. Availability depends on the environment's cloud, geographic region, and applicable Dynamics 365 Finance entitlement. You enable the add-in through the applicable Finance and Operations application bundle.
 
 In public cloud, the Financial reporting add-in is available in the following geographies:
 
