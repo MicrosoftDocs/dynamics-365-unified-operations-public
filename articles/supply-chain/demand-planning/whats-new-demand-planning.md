@@ -6,7 +6,7 @@ ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: whats-new
-ms.date: 08/18/2026
+ms.date: 11/11/2026
 ms.custom: 
   - bap-template
 ---
@@ -16,6 +16,23 @@ ms.custom:
 [!INCLUDE [banner](../includes/banner.md)]
 
 This article lists new features, fixes, improvements, and known issues for each released version of Demand planning in Microsoft Dynamics 365 Supply Chain Management.
+
+## Version 1.5
+
+### New features introduced in version 1.5
+
+Demand planning version 1.5 introduces the following new features:
+
+- **Sales price and sales discount tables** – New **Sales Price Data** and **Sales Discount Data** tables store pricing and discount history in Demand planning, so you can use them as forecast input such as signals.
+- **Continuous and sporadic signals** – Forecast models can now combine two types of signals. In addition to the existing *Signal* step for continuous signals (such as sales price or inflation), the new *Sporadic signal* step lets you include signals that only occur in some periods (such as sales discounts). Both signal types can feed into the same *Forecast with signals* step.
+- **View time series in a dimension breakdown** – The new **Dimension breakdown** view on the main view of a time series lets you compare dimensions (such as product, location, or brand) viewed side by side in a chart and in the time series grid.
+- **View and edit time series in a matrix grid** – You can now view and edit time series values in a matrix grid. The new **Group time by** option groups periods by month, quarter and year, which you can expand or collapse in the grid header. You can edit the total period columns and changes are desegregated proportionally.
+
+### New fixes and improvements in version 1.5
+
+This version of Demand planning introduces the following fixes and improvements:
+
+- **Migration of backend storage** – Demand planning is migrating time series data to new backend storage. Before the migration, a scheduled maintenance banner in the app announces the window during which Demand planning will be unavailable. Scheduled runs during this window are interrupted. After the migration, a maintenance complete banner is shown, and you should review and rerun any scheduled runs that didn't complete. Learn more in [Demand planning data is moving to Dataverse storage](database-migration.md).
 
 ## Version 1.4
 
@@ -69,12 +86,12 @@ This version of Demand planning includes the following fixes and improvements:
 
 ## Version 1.0.0.3424
 
-### New feature introduced in version 1.0.0.3424
+### New features introduced in version 1.0.0.3424
 
 This version of Demand planning enhances basic forecast calculations by adding two new features:
 
-- The new *Best fit model - version 2* forecast algorithm now applies naive forecasting when an input time series contains a low number of data points. This approach helps improve statistics forecasting results when input data is limited, such as for newly added products. Learn more at [Naive forecasting](naive-forecast-algorithm.md).
-- Time freeze can now preserve all manual forecast adjustments. This option ensures that all manually adjusted cell values remain at the adjusted value even after you recalculate an existing forecast. No freeze rules are required. Learn more at [Limit automatic time series updates with time freezes](time-freeze.md).
+- The new *Best fit model - version 2* forecast algorithm now applies naive forecasting when an input time series contains a low number of data points. This approach helps improve statistics forecasting results when input data is limited, such as for newly added products. Learn more in [Naive forecasting](naive-forecast-algorithm.md).
+- Time freeze can now preserve all manual forecast adjustments. This option ensures that all manually adjusted cell values remain at the adjusted value even after you recalculate an existing forecast. No freeze rules are required. Learn more in [Limit automatic time series updates with time freezes](time-freeze.md).
 
 ### New fixes and improvements in version 1.0.0.3424
 
@@ -95,7 +112,7 @@ This version of Demand planning enhances the *Copilot grid cursor* feature so th
 This version of Demand planning includes the following fixes and improvements:
 
 - Increased stability.
-- Auto-detect seasonality is improved to account for certain data compositions.
+- Improved auto-detect seasonality to account for certain data compositions.
 - Forecast calculations now respect the decimal precision set in the forecast profile.
 - Improved the performance of forecast calculations.
 

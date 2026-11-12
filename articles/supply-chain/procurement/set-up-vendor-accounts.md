@@ -6,7 +6,8 @@ ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form: smmContactPerson, VendBankAccounts, VendTable, VendOnHoldUpdate
 ms.topic: how-to
-ms.date: 09/18/2026
+ms.date: 11/10/2026
+ai-usage: ai-assisted
 ms.custom:
   - bap-template
 ---
@@ -114,6 +115,25 @@ Vendors that pass the validations are put on hold, which sets the **Vendor hold*
 ## Vendor invoice account
 
 If more than one vendor has the same billing address, or if a vendor is invoiced through a third party, specify an invoice account on the vendor record. The invoice account is the account that the invoice amount is credited to when you create a vendor invoice from a purchase order. If you don't enter an invoice account on the vendor record, the vendor account is used as the invoice account.
+
+<a name="load-default-fiscal-data"></a>
+
+### Load default fiscal data from the vendor or invoice account
+
+When you create a new purchase order, the system loads its default fiscal data from either the vendor account or the invoice account, depending on how you configure your system. Fiscal data includes information such as the sales tax group and tax-exempt number. The same setting also affects what happens when you change the invoice account for an existing purchase order.
+
+For this option to be available on your system, the *Enable defaulting of fiscal data from invoice account* feature must be enabled in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+To set this option, follow these steps:
+
+1. Go to **Accounts payable** > **Setup** > **Accounts payable parameters**.
+2. Open the **Invoice** tab.
+3. On the **Invoice** FastTab, set **Use fiscal data from invoice account** to one of the following values:
+    - *Never* – New purchase orders always take default fiscal data from the selected vendor account. If you later change the invoice account for a purchase order, the fiscal data on the purchase order remains unchanged.
+    - *Always* – New purchase orders always take default fiscal data from the selected invoice account. If you later change the invoice account for a purchase order, the fiscal data on the purchase order updates to match the new invoice account.
+    - *Ask* – Prompt the user to select which account to use. If you later change the invoice account for a purchase order, the system asks whether you want to update the fiscal data on the purchase order to match the new invoice account.
+
+For feature and configuration requirements, see [Use fiscal data from an invoice account](../../finance/localizations/europe/use-fiscal-data-from-invoice-account.md). For information about the fields updated when you change the invoice account for a legal entity in Spain, see [Use fiscal data from the invoice account](../../finance/localizations/spain/emea-esp-fiscal-data-invoice-account.md).
 
 ## Vendor bank accounts
 

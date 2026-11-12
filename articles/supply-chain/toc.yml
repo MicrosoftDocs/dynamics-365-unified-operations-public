@@ -3622,7 +3622,7 @@ items:
             href: sales-marketing/intercompany-set-up-vendors-customers-items.md
           - name: Set up charges on intercompany orders
             href: sales-marketing/intercompany-set-up-charges.md
-          - name: Set up parameters to post an intercompany order
+          - name: Post intercompany orders
             href: sales-marketing/intercompany-set-up-parameters-to-post-order.md
         - name: Synchronize intercompany information
           items:
