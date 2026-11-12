@@ -6,7 +6,8 @@ ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form: PurchTable, PurchTablePart
 ms.topic: how-to
-ms.date: 08/13/2025
+ms.date: 11/11/2026
+ai-usage: ai-assisted
 ms.custom: 
   - bap-template
 ---
@@ -36,6 +37,10 @@ If the supplier has provided a reference number for the order, you can record th
 If a purchase agreement is associated with the order, you must specify this information in the **Purchase agreement** field.  
 
 The PO header also contains information about charges that apply to the whole order instead of individual lines. Charges can be automatically added to the order if automatic charges have been set up for the vendor or the vendor's charge group. You can also manually add charges to the order header by selecting **Maintain charges** on the Action Pane.
+
+### Fiscal data defaults
+
+When you create a new purchase order, the system loads its default fiscal data from either the vendor account or the invoice account, depending on your system configuration. The same setting also affects what happens when you change the invoice account for an existing purchase order. Fiscal data includes information such as the sales tax group and tax-exempt number. Learn more about this option, and how to turn it on and configure it, in [Load default fiscal data from the vendor or invoice account](set-up-vendor-accounts.md#load-default-fiscal-data).
 
 ## Adding purchase order lines
 
