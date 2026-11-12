@@ -46,7 +46,7 @@ Attributes are based on *attribute types*. An attribute type specifies the type 
 - **Reference** – This type references other attributes.
 
 > [!NOTE]
-> Because of [limitations of the Azure search index](/rest/api/searchservice/data-type-map-for-indexers-in-azure-search), the **Decimal** attribute type isn't supported for cloud-powered search experiences. Azure Cognitive Search doesn't support converting **Decimal** attribute types to **Edm.Double** target index field types, because this conversion would decrease precision.
+> Because of [limitations of the Azure search index](/rest/api/searchservice/data-type-map-for-indexers-in-azure-search), the **Decimal** attribute type isn't supported for cloud-powered search experiences. Azure Cognitive Search doesn't support converting **Decimal** attribute types to **Edm.Double** target index field types, because this conversion would decrease precision. **DateTime** attribute type isn't supported for refinable.
 
 ### Set up attribute types
 
