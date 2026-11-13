@@ -4462,8 +4462,8 @@ items:
             href: warehousing/step-icons-titles.md
         - name: Work with the Warehouse Management mobile app
           items:
-          - name: User settings, color themes, and sound themes
-            href: warehousing/warehouse-app-user-settings-themes.md
+          - name: Warehouse Management mobile app user settings
+            href: warehousing/warehouse-app-user-settings.md
           - name: Data submission behavior in the Warehouse Management mobile app
             href: warehousing/warehouse-app-autosubmit-behavior.md
           - name: Warehouse Management mobile app calculator
