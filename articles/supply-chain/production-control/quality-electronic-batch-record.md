@@ -6,27 +6,28 @@ ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form: QMSBatchProdRecord, QMSMasterMfgRecord
 ms.topic: how-to
-ms.date: 07/27/2026
+ms.date: 11/13/2026
 ms.custom: 
   - bap-template
+ai-usage: ai-assisted
 ---
 
 # Electronic batch records (EBRs)
 
 [!INCLUDE [banner](../../includes/banner.md)]
 
-Electronic batch records (EBRs) are required by part 11 of Title 21 of the Code of Federal Regulations (21 CFR Part 11), which applies to life science and pharmaceutical industries. EBRs consist of two major components:
+Part 11 of Title 21 of the Code of Federal Regulations (21 CFR Part 11) requires electronic batch records (EBRs). These regulations apply to the life science and pharmaceutical industries. EBRs consist of two major components:
 
-- **Master manufacturing record (MMR)** – This component documents all the methods that might be used to produce an item and the various ways that the item's characteristics might be measured.
-- **Batch production record (BPR)** – This component documents the actual method that was used to produce the item and the actual value of the measurement for each of the item's characteristics. It also details the characteristics and quantities of the ingredients that were used to produce the item.
+- **Master manufacturing record (MMR)** – This component documents all the methods that you might use to produce an item and the various ways that you might measure the item's characteristics.
+- **Batch production record (BPR)** – This component documents the actual method that you used to produce the item and the actual value of the measurement for each of the item's characteristics. It also details the characteristics and quantities of the ingredients that you used to produce the item.
 
 ## Prerequisites
 
 Before you can use the features that are described in this article, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
-- The following features must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.47, both of these features are turned on by default.
-    - *Advanced quality management* (As of Supply Chain Management version 10.0.49, this feature is mandatory and can't be turned off.)
+- The following features must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.47, both of these features are turned on by default. As of Supply Chain Management version 10.0.49, they are mandatory and can't be turned off.
+    - *Advanced quality management*
     - *Electronic signature improvements*
 
 ## Turn electronic signature requirements for EBRs on or off
@@ -65,12 +66,12 @@ To enable EBRs, follow these steps:
 
 ### Set up a number sequence for EBRs
 
-Because EBRs are maintained independently of the batch order or production order, a number sequence must be established.
+Because EBRs are maintained independently of the batch order or production order, you must establish a number sequence.
 
 1. Go to **Production control** > **Setup** > **Production control parameters**.
 1. On the **Number sequences** tab, set up a new number sequence for the row where the **Reference** field is set to *Batch production record*.
 
-### Set up electronics signature requirements
+### Set up electronic signature requirements
 
 You can configure electronic signature requirements to support EBRs for the following types of production journals:
 
@@ -80,66 +81,57 @@ You can configure electronic signature requirements to support EBRs for the foll
 
 Each of these journal types provides the following electronic signature options:
 
-- **Post route card production journal** – When this option is set to *Yes*, the system notifies users that route card journals are no longer automatically posted when a batch or production order is started.
-- **Post picking list production journal (non-dispensing)** – When this option is set to *Yes*, the system notifies users that picking list journals are no longer automatically posted when a batch or production order is started. In addition, the option for reporting the batch or production order as finished is disabled. Because the system must capture the electronic signature of the users who post those activities, the report as finished production journal must be used to report a batch or production order as finished.
-- **Validate quality order** – When this option is set to *Yes*, the system requires a signature when an overall quality order is validated. However, no signature is required when individual tests of a quality order are validated.
+- **Post route card production journal** – When you set this option to *Yes*, the system notifies users that route card journals no longer post automatically when a batch or production order starts.
+- **Post picking list production journal (non-dispensing)** – When you set this option to *Yes*, the system notifies users that picking list journals no longer post automatically when a batch or production order starts. In addition, the option for reporting the batch or production order as finished is disabled. Because the system must capture the electronic signature of the users who post those activities, you must use the report as finished production journal to report a batch or production order as finished.
+- **Validate quality order** – When you set this option to *Yes*, the system requires a signature when an overall quality order is validated. However, the system doesn't require a signature when individual tests of a quality order are validated.
 
 ### Add work instructions to formula items
+
+To add work instructions to a formula line, attach a note to the line. When you create a batch order, the system copies the notes from the formula lines to the corresponding lines of the batch order. The BPR then shows the notes as work instructions for each ingredient.
+
+> [!NOTE]
+> The system copies notes from formula lines only when you create a batch order or add lines to it. If you add or change a note on a formula or BOM line after a batch order is created, the change doesn't affect that order or its BPR. To add instructions to an existing order, attach notes directly to the order's formula lines instead.
 
 To add work instructions to a formula line, follow these steps:
 
 1. Go to **Product information management** > **Products** > **Released products**.
 1. Open or select the item that uses the formula that you want to add instructions to.
-1. On the Action Pane, on the **Engineer** tab, select **Formula versions**.
+1. On the Action Pane, open the **Engineer** tab and select **Formula versions**.
 1. In the list pane, select the formula version that you want to edit.
-1. On the Action Pane, on the **Formulas** tab, select **Formula**.
-1. If the **Approved** option for the formula is set to *Yes* on the **Formula header** FastTab, you must follow these steps to remove the approval before you can edit the formula:
-
-    1. On the Action Pane, on the **Formula** tab, select **Approve formula**.
-    1. In the dialog, set the **Remove approval** option to *Yes*.
-    1. Select **OK**.
-
-1. On the **Formula lines** FastTab, select the line that you want to add instructions to.
-1. On the **Line details** FastTab, on the **Work instructions** tab, select **Add** on the toolbar to add work instructions for the selected line.
-1. In the **Type** field, select *Note*. Then, in the **Description** field, enter a short description.
-1. In the lower text box, enter the required work instructions or other comments.
-1. On the Action Pane, select **Save**.
+1. On the Action Pane, open the **Formulas** tab and select **Formula**.
+1. On the **Formula lines** FastTab, select the line that you want to add instructions to. Select exactly one line. The **Attachments** (paper clip) icon on the Action Pane indicates how many attachments already exist for that line.
+1. On the Action Pane, select the **Attachments** (paper clip) icon to open the attachments for the selected line.
+1. On the Action Pane of the **Attachments** page, select **New** > **Note**.
+1. In the **Description** field, enter a short description.
+1. In the **Notes** field, enter the required work instructions or other comments.
+1. On the Action Pane, select **Back**.
 
 ### Add work instructions to BOM items
+
+To add work instructions to a BOM line, attach a note to the line. When you create a production order, the system copies the notes from the BOM lines to the corresponding lines of the production order. The BPR then shows the notes as work instructions for each component. As with formulas, the system copies notes only when it creates the order. To add instructions to an existing order, attach notes directly to the order's BOM lines.
 
 To add work instructions to a BOM line, follow these steps:
 
 1. Go to **Product information management** > **Products** > **Released products**.
 1. Open or select the item that uses the BOM that you want to add instructions to.
-1. On the Action Pane, on the **Engineer** tab, select **BOM versions**.
+1. On the Action Pane, open the **Engineer** tab and select **BOM versions**.
 1. In the list pane, select the BOM version that you want to edit.
-1. On the Action Pane, on the **Bill of materials** tab, select **Bills of materials**.
-1. If the **Approved** option for the BOM is set to *Yes* on the **Bill of materials header** FastTab, you must follow these steps to remove the approval before you can edit the BOM:
-
-    1. On the Action Pane, on the **Bill of materials** tab, select **Approval**.
-    1. In the dialog, set the **Remove approval** option to *Yes*.
-    1. Select **OK**.
-
-1. On the **Bill of materials lines** FastTab, select the line that you want to add instructions to.
-1. On the **Line details** FastTab, on the **Work instructions** tab, select **Add** on the toolbar to add work instructions for the selected line.
-1. In the **Type** field, select *Note*. Then, in the **Description** field, enter a short description.
-1. In the lower text box, enter the required work instructions or other comments.
-1. On the Action Pane, select **Save**.
+1. On the Action Pane, open the **Bill of materials** tab and select **Bills of materials**.
+1. On the **Bill of materials lines** FastTab, select the line that you want to add instructions to. Select exactly one line. The **Attachments** (paper clip) icon on the Action Pane indicates how many attachments already exist for that line.
+1. On the Action Pane, select the **Attachments** (paper clip) icon to open the attachments for the selected line.
+1. On the Action Pane of the **Attachments** page, select **New** > **Note**.
+1. In the **Description** field, enter a short description.
+1. In the **Notes** field, enter the required work instructions or other comments.
+1. On the Action Pane, select **Back**.
 
 ### Add work instructions for routes
 
-To add work instructions for an operation line, you must edit the route. When EBRs are used, formula lines for approved routes can't be edited. To add work instructions to a route, follow these steps:
+To add work instructions for an operation line, follow these steps:
 
 1. Go to **Product information management** > **Products** > **Released products**.
 1. Open or select the item that uses the route that you want to edit.
 1. On the Action Pane, on the **Engineer** tab, in the **View** group, select **Route**.
 1. In the top section, select the route version that you want to edit.
-1. If a check mark appears in the **Approved** column for the selected route version, you must follow these steps to remove the approval before you can edit the route:
-
-    1. On the Action Pane, on the **Route version** tab, select **Approve**.
-    1. In the dialog, set the **Remove approval** option to *Yes*.
-    1. Select **OK**.
-
 1. In the bottom section, on the **Overview** tab, select the operation that you want to edit.
 1. On the **Work instructions** tab, select **New** on the toolbar to add work instructions for the selected operation.
 1. In the **Type** field, select *Note*. Then, in the **Description** field, enter a short description.
@@ -147,7 +139,7 @@ To add work instructions for an operation line, you must edit the route. When EB
 
 ### Configure test plan instructions for test groups
 
-When test plan instructions are associated with a line in a test group, quality orders that reference the test group show the instructions as read-only text. To add test plan instruction to a test group, follow these steps:
+When test plan instructions are associated with a line in a test group, quality orders that reference the test group show the instructions as read-only text. To add test plan instructions to a test group, follow these steps:
 
 1. Go to **Inventory Management** > **Setup** > **Quality control** > **Test groups**.
 1. In the top section, on the **Overview** tab, select the test group that you want to add instructions to.
@@ -158,18 +150,18 @@ When test plan instructions are associated with a line in a test group, quality 
 
 ## Work with EBRs
 
-After all the required production data is set up for a BOM or formula item, you can search for that information. This capability is the primary purpose of EBRs.
+After you set up all the required production data for a BOM or formula item, you can search for that information. This capability is the primary purpose of EBRs.
 
-As was mentioned earlier, EBRs consist of two major components:
+As mentioned earlier, EBRs consist of two major components:
 
-- **Master manufacturing record (MMR)** – This component documents all the methods that might be used to produce an item and the various ways that the item's characteristics might be measured. The MMR query contains all the BOM/formula versions that are approved for use in the manufacture of the item. It also includes the various approved route versions. In addition, the information includes quality associations that are referenced by the production process for the item. As a result of these quality associations, quality orders are automatically generated for the item. If the item is an ingredient, quality associations for that ingredient might be referenced and cause quality orders to be generated during an inspection. Other characteristics might be referenced for the ingredients or produced items to indicate the type of characteristic that is being measured. The measured characteristic might be related to a specific inventory batch dimension or to the vendor that supplied the ingredient.
+- **Master manufacturing record (MMR)** – This component documents all the methods that might be used to produce an item and the various ways that the item's characteristics might be measured. The MMR query contains all the BOM/formula versions that are approved for use in the manufacture of the item. It also includes the various approved route versions. In addition, the information includes quality associations that the production process for the item references. As a result of these quality associations, quality orders are automatically generated for the item. If the item is an ingredient, the production process might reference quality associations for that ingredient and cause quality orders to be generated during an inspection. To indicate the type of characteristic that's being measured, the production process might reference other characteristics for the ingredients or produced items. The measured characteristic might relate to a specific inventory batch dimension or to the vendor that supplied the ingredient.
 - **Batch production record (BPR)** – This component documents the actual method that was used to produce the item and the actual value of the measurement for each of the item's characteristics. It also details the characteristics and quantities of the ingredients that were used to produce the item. The BPR query contains the BOM/formula version that was used in the production process, together with the proposed ingredient quantities that were estimated for completion of the production. In addition, the information includes the exact quantities that were used, in comparison to what was estimated or proposed, and any new ingredients that were substituted during the production process.
 
-Whereas the MMR maintains the types of characteristics that might be measured for the item, the BPR maintains the actual values of those measured characteristics. The BPR contains the actual details of the quality orders that were referenced by the quality associations in the MMR.
+Whereas the MMR maintains the types of characteristics that might be measured for the item, the BPR maintains the actual values of those measured characteristics. The BPR contains the actual details of the quality orders that the quality associations in the MMR referenced.
 
 ### Run an MMR query
 
-When you run an MMR query, you first select the target item number. You can also select a site to limit the BOM/formula and route versions to that site. In addition, you can select a date and/or quantity.
+When you run an MMR query, you first select the target item number. You can also select a site to limit the BOM/formula and route versions to that site. In addition, you can select a date and quantity.
 
 The query results show all applicable route versions. The BOM/formula versions and the route version number are hyperlinks. You can use them to open the details page for the selected version. The results also show and summarize quality associations that are referenced as production or coproduct production. Select **Details** for a quality association to open the details page for it. Finally, the results show inventory batch attributes that are defined for the produced item, together with the applicable range and target value for each characteristic.
 
@@ -193,9 +185,9 @@ Results and information are shown on the following FastTabs:
 
 ### Run a BPR query
 
-When you run a BPR query, you first select either the target item number or the BPR that is associated with a specific batch or production order.
+When you run a BPR query, first select either the target item number or the BPR that's associated with a specific batch or production order.
 
-The query contains the BOM/formula version that was used in the production process, together with the proposed ingredient quantities that were estimated for completion of the production. The information also includes the exact quantities that were used, in comparison to what was estimated or proposed, and any new ingredients that were substituted during the production process. In the BPR, you can view the inventory batch attributes and any quality orders for the produced items. You can also view the inventory batch attributes, vendor batch details, and quality orders for the raw material items that were used in the production process.
+The query contains the BOM/formula version that you used in the production process, along with the proposed ingredient quantities that were estimated to complete the production. The information also includes the exact quantities that you used, compared to what was estimated or proposed, and any new ingredients that you substituted during the production process. In the BPR, you can view the inventory batch attributes and any quality orders for the produced items. You can also view the inventory batch attributes, vendor batch details, and quality orders for the raw material items that you used in the production process.
 
 To run a BPR query, follow these steps:
 
@@ -208,16 +200,16 @@ To run a BPR query, follow these steps:
 Results and information are shown on the following FastTabs:
 
 - **Production order** – This FastTab shows the batch or production order that is related to the specified BPR ID.
-- **Report as finished** – This FastTab shows the items that were produced for the batch or production order that is related to the specified BPR ID. (For formula items, the produced items include coproducts and by-products.) This FastTab is populated when the report as finished production journal is created. Use the **Inventory batch attributes** button on the toolbar to view attribute information for the selected record. (The **Inventory batch attributes** button is available only if there is batch number for the selected record.) Use the **Quality orders** button to view the quality orders for the selected record.
-- **BOM/formula** – This FastTab lists the raw material items that were used to produce the selected item.
-- **Picking list** – This FastTab shows information from the picking list production journal of the batch or production order. It's populated when the picking list production journal is created. Use the **Inventory batch attributes** button to view attribute information for the selected record. (The **Inventory batch attributes** button is available only if there is a batch number for the selected record.) Use the **Vendor batch details** button to view the vendor batch information for the selected record. (The **Vendor batch details** button is available only if there is a batch number for the selected record.) Use the **Quality orders** button to view the quality orders for the selected record.
+- **Report as finished** – This FastTab shows the items that were produced for the batch or production order that is related to the specified BPR ID. (For formula items, the produced items include coproducts and by-products.) This FastTab is populated when you create the report as finished production journal. Use the **Inventory batch attributes** button on the toolbar to view attribute information for the selected record. (The **Inventory batch attributes** button is available only if there's a batch number for the selected record.) Use the **Quality orders** button to view the quality orders for the selected record.
+- **BOM/formula** – This FastTab lists the raw material items that you used to produce the selected item.
+- **Picking list** – This FastTab shows information from the picking list production journal of the batch or production order. It's populated when you create the picking list production journal. Use the **Inventory batch attributes** button to view attribute information for the selected record. (The **Inventory batch attributes** button is available only if there's a batch number for the selected record.) Use the **Vendor batch details** button to view the vendor batch information for the selected record. (The **Vendor batch details** button is available only if there's a batch number for the selected record.) Use the **Quality orders** button to view the quality orders for the selected record.
 - **Route** – This FastTab lists the route version that is used on the batch or production order.
-- **Route card** – This FastTab shows the information from the route card production journal of the batch or production order. It's populated when the route card production journal is created.
-- **Job card** – This FastTab shows information from the job card production journal of the batch or production order. It's populated when the job card production journal is created.
+- **Route card** – This FastTab shows the information from the route card production journal of the batch or production order. It's populated when you create the route card production journal.
+- **Job card** – This FastTab shows information from the job card production journal of the batch or production order. It's populated when you create the job card production journal.
 
 ### Generate a BPR report
 
-You can view and/or print a report for a specific BPR ID. A simplified version of the report contains the same information that is reflected in a BPR query.
+You can view and print a report for a specific BPR ID. A simplified version of the report contains the same information as a BPR query.
 
 To generate a BPR report, follow these steps:
 
