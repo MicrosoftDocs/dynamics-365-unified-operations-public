@@ -1,14 +1,15 @@
 ---
 title: Configure document management
 description: Learn about how to configure document management (document handling) so that it stores file attachments and notes for records.
-author: jasongre
-ms.author: jasongre
-ms.date: 03/17/2026
+author: cabeln
+ms.author: cabeln
+ms.date: 11/13/2026
 ms.topic: how-to
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update 
+ai-usage: ai-assisted
 ---
 
 # Configure document management
@@ -17,7 +18,21 @@ ms.dyn365.ops.version: July 2017 update
 
 This article explains how to configure document management (document handling) so that it stores file attachments and notes for records. It includes information about the concepts and features that are involved in this functionality.
 
+For the storage lifecycle, supported cleanup processes, capacity monitoring, and troubleshooting, see [Maintain document management storage](maintain-document-management-storage.md).
+
 To learn more about document management, watch the short [Document Management](https://www.youtube.com/watch?v=p4rl1CkiLN4&feature=youtu.be) video.
+
+## Before you configure document management
+
+Plan storage and retention together, then verify cleanup and monitor consumption. For a new configuration or a review of an existing environment, follow this sequence:
+
+1. [Configure document types](#configure-document-types) and their storage locations. If you use SharePoint, complete [SharePoint storage configuration](#configure-sharepoint-storage).
+2. Configure [document attachment history](#document-attachment-history) for audit requirements and [attachment recovery](#attachment-recovery) for deleted attachments. These features have separate retention settings.
+3. [Verify the corresponding cleanup processes](maintain-document-management-storage.md#verify-and-resume-cleanup-processes). A retention setting alone doesn't remove eligible history or files.
+4. [Monitor storage consumption](maintain-document-management-storage.md#monitor-storage-consumption), review execution results, and use the [troubleshooting guidance](maintain-document-management-storage.md#troubleshooting-questions-and-answers) if storage grows or attachments become inaccessible.
+
+> [!IMPORTANT]
+> **Storage capacity and enforcement:** Current [Finance and operations storage capacity guidance](/power-platform/admin/finance-operations-storage-capacity) states that exceeding storage entitlements doesn't affect service availability and that stored data remains durable. Your organization must still have the appropriate licenses for its storage use. The guidance also describes possible suspension with reasonable notice when consumption exceeds documented entitlements or usage limits. Don't assume current service availability guarantees continued availability without sufficient entitlement. Monitor consumption and obtain additional capacity when needed. For changes to enforcement policy or timing, follow the current capacity guidance; this article doesn't announce a future enforcement date.
 
 ## Configure document types
 
@@ -33,26 +48,28 @@ To create a new document type, follow these steps:
 1. In the **Name** field, enter a longer name, such as **SharePoint files** or **HR Docs**.
 1. In the **Class** field, specify a class to define the behavior for the document type:
 
-    - **Attach file** – The user is prompted for a file.
-    - **Attach URL** – The user can enter a URL in the **Notes** field, such as `https://www.microsoft.com`. The **Open** button on the **Attachments** page opens the URL on a browser tab.
-    - **Simple note** – The user can add a note in the **Notes** field.
+    - **Attach file** – You're prompted for a file.
+    - **Attach URL** – You can enter a URL in the **Notes** field, such as `https://www.microsoft.com`. The **Open** button on the **Attachments** page opens the URL on a browser tab.
+    - **Simple note** – You can add a note in the **Notes** field.
 
 1. If you specify **Attach file** in the **Class** field, use the **Location** field to specify the storage mechanism.
 1. If you specify **SharePoint** in the **Location** field, select the **Edit** button (pencil symbol) and use the **Folder selection** dialog box to specify the Microsoft SharePoint address in the **SharePoint Address** field.
 
 ## Configure SharePoint storage
 
-SharePoint Online is a supported storage location for attachments. 
+SharePoint Online is a supported storage location for attachments.
 
 > [!IMPORTANT]
+>
 > - SharePoint storage is only available in Microsoft-managed environments.
 > - On-premises SharePoint (a local SharePoint server) isn't currently supported.
 > - SharePoint managed device policies aren't compatible with an integration to finance and operations apps.
 
-### One-time registration process 
-In Dynamics 365 finance and operations version 10.0.40 and later, when you enable the **SharePoint user authentication** feature, your organization needs to perform a one-time setup to use the SharePoint integration for non-interactive batch scenarios. This setup is necessary because Microsoft deprecated the Microsoft-managed high-trust connection between the finance and operations environment and SharePoint. 
+### One-time registration process
 
-With this updated SharePoint authentication mechanism, batch connections use application access. As this access isn't granted by default for tenants, an Entra ID tenant administrator needs to grant access manually one time for the tenant. To provide the required application consent for finance and operations batch scenarios to connect to SharePoint, run the following PowerShell commands.  
+In Dynamics 365 finance and operations version 10.0.40 and later, when you enable the **SharePoint user authentication** feature, your organization needs to perform a one-time setup to use the SharePoint integration for non-interactive batch scenarios. This setup is necessary because Microsoft deprecated the Microsoft-managed high-trust connection between the finance and operations environment and SharePoint.
+
+By using this updated SharePoint authentication mechanism, batch connections use application access. As this access isn't granted by default for tenants, an Entra ID tenant administrator needs to grant access manually one time for the tenant. To provide the required application consent for finance and operations batch scenarios to connect to SharePoint, run the following PowerShell commands.  
 
 ``` powershell
 
@@ -69,23 +86,25 @@ $spAppRole = $sharePointServicePrincipal.AppRoles | where {$_.Value -eq 'Sites.R
 # Assign the SharePoint 'Sites.ReadWrite.All' permission to the Microsoft Dynamics 365 finance and operations application
 New-MgServicePrincipalAppRoleAssignedTo -ServicePrincipalId $erpServicePrincipal.Id -PrincipalId $erpServicePrincipal.Id -ResourceId $sharePointServicePrincipal.Id -AppRoleId $spAppRole.Id
 ```
-> [!IMPORTANT]
-> Interactive connections use the logged-in user's context.
-> -  As conditional access can pass through the finance and operations sign-in to SharePoint, ensure that conditional access settings for SharePoint are applied to finance and operations.
-> -  Calling SharePoint as a user that isn't the currently authenticated user is no longer supported.
 
-### Setting up SharePoint inside your finance and operations environment
+> [!IMPORTANT]
+> Interactive connections use the signed-in user's context.
+>
+> - As conditional access can pass through the finance and operations sign-in to SharePoint, ensure that conditional access settings for SharePoint are applied to finance and operations.
+> - Calling SharePoint as a user that isn't the currently authenticated user is no longer supported.
+
+### Setting up SharePoint in your finance and operations environment
 
 To configure SharePoint storage, follow these steps:
 
 1. Go to the **Document management parameters** page.
 1. On the **SharePoint** tab, in the **Default SharePoint server** field, review the host name that the system automatically detects for the SharePoint site, such as contosoax7.sharepoint.com. Typically, the SharePoint host name is in the form `tenantname.sharepoint.com`, and accounts on that tenant are in the form `user1@tenantname.onmicrosoft.com`.
 
-    Typically, if you don't specify a default SharePoint server, either there's no SharePoint site for the tenant, or a valid Microsoft 365 license isn't associated with the current user (the admin).
+    Typically, if you don't specify a default SharePoint server, either there's no SharePoint site for the tenant, or the current user (the admin) doesn't have a valid Microsoft 365 license.
 
 1. Optional: Test the SharePoint connection
-    -  If you disable the **SharePoint user authentication** feature, select **Test SharePoint connection** to test the specified SharePoint host name. This action verifies that the security and license are working correctly.
-    -  If you enable the **SharePoint user authentication** feature, there are two SharePoint connection types to test. Use the **Test interactive SharePoint connection** action to test interactive scenarios by using the logged-in user's context. Use the **Test batch SharePoint connection** action to test batch scenarios by using the granted application access.  
+    - If you disable the **SharePoint user authentication** feature, select **Test SharePoint connection** to test the specified SharePoint host name. This action verifies that the security and license are working correctly.
+    - If you enable the **SharePoint user authentication** feature, there are two SharePoint connection types to test. Use the **Test interactive SharePoint connection** action to test interactive scenarios by using the signed-in user's context. Use the **Test batch SharePoint connection** action to test batch scenarios by using the granted application access.  
 1. Optional: Select **Open SharePoint** to open the specified SharePoint host name in a browser. This action doesn't verify security. It just opens the SharePoint path on a browser tab for easy exploration.
 1. Optional: On the **General** tab, turn on **Open attachments in new window**. For more information, see the [Other configuration](#other-configuration) section later in this article.
 
@@ -129,7 +148,7 @@ The attachments preview uses the Web app Open Platform Interface (WOPI) that Off
 > [!NOTE]
 > For the following situations, you must adjust the **Office Web Apps Server** value:
 >
-> - For environments in China, use `https://onenote.partner.officewebapps.cn`. 
+> - For environments in China, use `https://onenote.partner.officewebapps.cn`.
 > - For environments in the Government Community Cloud (GCC), use `https://gb4-onenote.officeapps.live.com`.
 
 ### For a Dynamics 365 Finance + Operations (on-premises) environment
@@ -148,7 +167,7 @@ Consider these configuration options:
 
 - On the **Document management parameters** page, on the **General** tab, use the **Use active document tables** option to enable the **Active document tables** allow list. If you set this option to **Yes**, you disable attachments on all other tables. Turn on this option only when it's required.
 - On the **Document management parameters** page, on the **General** tab, use the **Maximum file size in megabytes** field to set the maximum file size for attachments. When you use SharePoint as a document type, users can upload only documents that have a maximum file size of 262 megabytes (MB).
-- On the **Document management parameters** page, on the **General** tab, use the **Open attachments in new window** option to determine whether attachments are opened in place, or in a new window or on a new tab. Consider turning on this option especially if you use SharePoint to store attachments, because this option prevents the finance and operations user session from being reset when attachments are opened. This option is available as of version 10.0.23.
+- On the **Document management parameters** page, on the **General** tab, use the **Open attachments in new window** option to determine whether attachments open in place, or in a new window or on a new tab. Consider turning on this option especially if you use SharePoint to store attachments, because this option prevents the finance and operations user session from resetting when attachments open. This option is available as of version 10.0.23.
 - On the **Options** page (**Settings** > **User options**), on the **Preferences** tab, use the **Enable document handling** option to disable document handling (document management).
 
 ## Accessing document management attachments
@@ -159,11 +178,19 @@ The **Attach** button also shows a count of the attachments for the currently se
 
 ## Document attachment history
 
-As of version 10.0.16/Platform update 40, a history mechanism is available for record attachments. Therefore, your organization can maintain an audit of actions that are related to individual attachments. You can see when an attachment was created, marked for pending deletion, restored, deleted, or moved. You can also see who performed the action. Attachment history isn't maintained before version 10.0.16/Platform update 40. Therefore, any actions that were performed on attachments in earlier versions aren't available.
+Document attachment history provides an audit of actions related to individual attachments. You can see when an attachment was created, marked for pending deletion, restored, deleted, or moved, and who performed the action. History is available only for actions recorded while the history mechanism is enabled.
 
 ### Configuration of document attachment history
 
-To enable or disable document attachment history, go to **Document management parameters** > **General** > **History** > **Enable document history**. The default setting of the **Number of days to retain history** field is 180 days, but you can change it as you require.
+To enable or disable document attachment history, go to **Document management parameters** > **General** > **History** > **Enable document history**. The default setting for the **Number of days to retain history** field is 180 days, but you can change it as needed.
+
+> [!IMPORTANT]
+> Review your audit, regulatory, legal-hold, and records-management requirements before changing retention or resuming cleanup. Cleanup can remove information that's already eligible for deletion under the current settings. Don't shorten retention solely to reduce storage consumption.
+
+Retention determines when history becomes eligible for deletion; it doesn't delete history by itself. The batch job **Deletes the document history records which have reached the end of their retention period** performs history cleanup. If `DOCUHISTORY` continues growing, verify that this process is operating and review its execution results. See [Attachment-history cleanup](maintain-document-management-storage.md).
+
+> [!NOTE]
+> The 180-day default is a retention period, not a cleanup-completion deadline. Eligible history isn't necessarily deleted as soon as the period expires or in a single cleanup run. An accumulated backlog can take many executions to process. Verify execution results and [monitor the storage trend](maintain-document-management-storage.md#address-an-accumulated-backlog). History cleanup doesn't delete attachment files.
 
 ### Viewing an attachment's history
 
@@ -174,13 +201,18 @@ There are two entry points for viewing the history of a record attachment:
 
 ## Attachment recovery
 
-Platform update 29 introduced an attachment recovery feature. This feature provides a recycle bin for record attachments, so you can recover them within a configured period.
+Attachment recovery provides a recycle bin for record attachments, so you can recover them within a configured period. This recovery period is separate from attachment-history retention.
 
 ### Configuration of attachment recovery
 
 To enable attachment recovery, go to **Document management parameters** > **General** > **Deferred deletion** > **Deferred deletion enabled**. The default setting for the **Number of days to defer deletion** field is 30 days, but you can change it as you require. If you set the **Number of days to defer deletion** value to **0** (zero), deleted attachments are recoverable for an indefinite period.
 
-After you enable attachment recovery, you create a batch job named **Scans for deleted references which have reached the end of their retention period**. This batch job uses the **Number of days to defer deletion** value to determine how long a deleted attachment should be retained, based on the **Deleted date and time** value.
+After you enable attachment recovery, verify the existing batch job **Scans for deleted references which have reached the end of their retention period**. This batch job uses the **Number of days to defer deletion** value to determine how long a deleted attachment should be retained, based on the **Deleted date and time** value. Don't create a duplicate if you can't find the job; contact Microsoft Support.
+
+The retention setting determines eligibility, while supported cleanup processes handle expired deleted references and subsequent physical-file deletion. Before resuming cleanup, review your retention and attachment-recovery requirements. See [Verify and resume cleanup processes](maintain-document-management-storage.md#verify-and-resume-cleanup-processes).
+
+> [!NOTE]
+> The 30-day default is a recovery period, not a promise that physical files are removed on day 30. After the recovery period expires, deferred-deletion processing and physical-file deletion must complete their separate lifecycle stages. A backlog can delay removal, so file-storage consumption might not fall immediately. No fixed deletion-completion time is specified here. If the period is `0`, deleted attachments remain recoverable indefinitely rather than becoming eligible through expiry of a recovery period.
 
 ### Deleting attachments when attachment recovery is active
 
@@ -268,9 +300,9 @@ If you don't specify the file content type correctly, the attached document migh
 - Pass **null** for the `_fileContentType` parameter in any of the preceding APIs. This action enables the correct content type to be inferred from the file name.
 - Switch to using one of the following methods that don't include a `_fileContentType` parameter. This action helps prevent the possibility that incorrect file content types are passed.
 
-    - **attachFileForRecord()**, which replaces **attachFileToCommon()**
-    - **attachFileForReference()**, which replaces **attachFile()**
-    - **attachFileForDocuRefRecord()**, which replaces **attachFileToDocuRef()**
+  - **attachFileForRecord()**, which replaces **attachFileToCommon()**
+  - **attachFileForReference()**, which replaces **attachFile()**
+  - **attachFileForDocuRefRecord()**, which replaces **attachFileToDocuRef()**
 
 ## <a id="export-attachments"></a>Export attachments
 
@@ -353,7 +385,9 @@ By default, the system saves attachments in Azure Blob storage automatically as 
 
 ### If I accidentally delete an attachment stored in Azure Blob Storage, can I restore it?
 
-When you delete attachments that are stored in Azure Blob Storage, you permanently delete them. The system also deletes the references to those attachments. Therefore, if you accidentally delete an attachment, you can't restore or recover it.
+If you delete an attachment through the application while attachment recovery is enabled, you can recover it during the configured deferred-deletion period. See [Recovering attachments](#recovering-attachments).
+
+Application recovery doesn't restore a physical file that's already been permanently deleted from storage. Don't delete files directly from Azure Blob storage as routine maintenance. See [Use supported cleanup only](maintain-document-management-storage.md#use-supported-cleanup-only).
 
 ### Is the database information about attachments stored separately from the attachments themselves?
 
@@ -369,19 +403,19 @@ Database storage uses Azure SQL Database. File storage uses Azure Blob storage. 
 
 ### How much storage do I get for Azure Blob storage?
 
-See the [licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544). Currently, you get 40 gigabytes (GB) of storage.
+Storage entitlement depends on your licenses. See [Finance and operations storage capacity](/power-platform/admin/finance-operations-storage-capacity) and the [Dynamics 365 Licensing Guide](https://www.microsoft.com/licensing/product-licensing/dynamics365) for current entitlement information.
 
 ### What is the cost for additional storage?
 
-The cost for additional storage varies, but it's similar to the [standard Azure costs for storage](https://azure.microsoft.com/pricing/details/storage/page-blobs/). In other words, the cost is about $0.05 per GB.
+Use your organization's procurement process to obtain current pricing for finance and operations capacity add-ons. Don't use Azure Blob storage pricing as the price for licensed finance and operations capacity. See [Address a storage capacity deficit](/power-platform/admin/finance-operations-storage-capacity#address-a-storage-capacity-deficit).
 
 ### How do I know how much storage is already used?
 
-The system provides proactive communication when you're approaching your database and file storage limits. However, Microsoft Dynamics Lifecycle Services provides some information, and you can log support requests for additional information.
+Use the finance and operations storage capacity report in the Power Platform admin center to review environment-level consumption and table-level database usage. See [Monitor storage consumption](maintain-document-management-storage.md#monitor-storage-consumption).
 
 ### Is there an option to export all document attachments from the system?
 
-Although you can export attachments, this capability isn't a standard capability because the system doesn't include a standard attachment entity. You must build entities that provide attachments for a specific business document or record.
+Although you can export attachments, this capability isn't a standard feature because the system doesn't include a standard attachment entity. You must build entities that provide attachments for a specific business document or record.
 
 ### How can you extract attachments from the system?
 

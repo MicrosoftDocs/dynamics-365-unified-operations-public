@@ -1977,6 +1977,8 @@ items:
         href: ../../finance/localizations/global/setting-up-azure-key-vault-client.md?context=/dynamics365/context/ops
       - name: Cleanup routines
         href: sysadmin/cleanuproutines.md
+      - name: Maintain document management storage
+        href: organization-administration/maintain-document-management-storage.md
       - name: Invalid users
         href: ../fin-ops/sysadmin/invalid-users.md
     - name: Upgrades, updates, and hotfixes

@@ -6,7 +6,7 @@ ms.author: laswenka
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 04/03/2026
+ms.date: 11/13/2026
 ms.reviewer: johnmichalak
 audience: IT Pro, Developer
 ms.assetid: 558598db-937e-4bfe-80c7-a861be021db1
@@ -14,6 +14,7 @@ ms.search.region: Global
 ms.search.validFrom: 2016-09-30
 ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
+ai-usage: ai-assisted
 ---
 
 # Refresh database
@@ -44,13 +45,13 @@ To determine the root cause of the failure, use the **Environment change history
 
 ### Data elements that aren't copied during refresh
 
-The information in this section lists certain elements of the database that aren't copied to the target environment during a database refresh operation.
+This section lists certain elements of the database that don't copy to the target environment during a database refresh operation.
 
 #### When refreshing a production environment to a sandbox environment or a sandbox to another sandbox environment
 
 - Email addresses in the LogisticsElectronicAddress table.
-- SMTP Relay server in the SysEmailParameters table.
-- Print Management settings in the PrintMgmtSettings and PrintMgmtDocInstance tables.
+- SMTP relay server in the SysEmailParameters table.
+- Print management settings in the PrintMgmtSettings and PrintMgmtDocInstance tables.
 - All users except the admin are set to **Disabled** status.
 - Dimension log and cache status tables including DIMENSIONHASHMESSAGELOG, DIMENSIONDATAINTEGRITYLOG, DIMENSIONVALUERENAMEAUDIT, DIMENSIONVALUEDELETEAUDIT, DIMENSIONATTRIBUTEVALUECOMBINATIONSTATUS, DIMENSIONATTRIBUTEVALUEGROUPSTATUS, DIMENSIONDATAENTITYSFKCACHE, DIMENSIONREFERENCES.
 
@@ -63,7 +64,7 @@ This operation is also referred to as [Golden configuration promotion](dbmovemen
 #### These elements are removed for all database refresh operations
 
 - Environment-specific records in the SysServerConfig, SysServerSessions, SysCorpNetPrinters, SysClientSessions, BatchServerConfig, and BatchServerGroup tables.
-- All files stored in Azure blob storage. This removal includes document attachments (from the DocuValue and DocuDeletedValue tables) and custom Microsoft Office templates (from the DocuTemplate table).
+- Environment-specific storage references for files in Azure Blob storage, including document attachments in the DocuValue and DocuDeletedValue tables and custom Microsoft Office templates in the DocuTemplate table. Don't interpret database changes as deletion of the physical files. Learn more in [Document attachments after refresh](#document-attachments-after-refresh).
 - All batch jobs are set to **Withhold** status.
 - All users have their partition value reset to the "initial" partition record ID.
 - All Microsoft-encrypted fields are cleared, because they can't be decrypted on a different database server. An example is the **Password** field in the SysEmailSMTPPassword table.
@@ -73,6 +74,12 @@ This operation is also referred to as [Golden configuration promotion](dbmovemen
 - [Service endpoints](../business-events/managing-business-event-endpoints.md) for business events and data events are removed.
 
 Some of these elements aren't copied because they're environment-specific. Examples include BatchServerConfig and SysCorpNetPrinters records. Other elements aren't copied because of the volume of support tickets. For example, duplicate emails might be sent because Simple Mail Transfer Protocol (SMTP) is still enabled in the UAT environment, invalid integration messages might be sent because batch jobs are still enabled, and users might be enabled before admins can perform post-refresh cleanup activities.
+
+### Document attachments after refresh
+
+Attachment metadata and physical files have separate lifecycles. Validate attachment access after refresh, and review whether the supported attachment-copy operation was required and completed. Don't copy or delete blobs manually to repair attachment references.
+
+Refresh sets batch jobs to **Withhold**. Before resuming Document management cleanup, review retention obligations and verify each relevant job's intended state. For missing attachments, storage growth, and supported cleanup checks, see [Maintain document management storage](../organization-administration/maintain-document-management-storage.md#environment-copy-and-document-attachments).
 
 ### Environment administrator
 
@@ -89,7 +96,7 @@ The following list describes the requirements and conditions for a database refr
 - A refresh operation deletes the original target database.
 - The target environment is available until the database copy reaches the target server. After that point, the environment is offline until the refresh process completes.
 - The refresh affects only the application and Financial Reporting databases.
-- No **file stored in Azure blob storage is copied** from one environment to another. This restriction includes **document attachments and custom Microsoft Office templates**. These documents stay unchanged and remain in their current state.
+- A database refresh alone doesn't copy files stored in Azure Blob storage between environments. This condition includes document attachments and custom Microsoft Office templates. Review the supported attachment-copy option or procedure for your specific operation separately.
 - All users except the Admin user and other internal service user accounts are unavailable. This process allows the Admin user to delete or obfuscate data before allowing other users back into the system.
 - The Admin user must make required configuration changes, such as reconnecting integration endpoints to specific services or URLs.
 - All data management framework recurring import and export jobs must be fully processed and stopped in the target system before initiating the restore. In addition, select the database from the source after all recurring import and export jobs are fully processed. This step ensures there are no orphaned files in Azure storage from either system. This condition is important because orphaned files can't be processed after the database is restored in the target environment. After the restore, the integration jobs can resume.
@@ -105,17 +112,17 @@ The following list describes the requirements and conditions for a database refr
 
 ### The Restore operation fails if the sandbox customizations are incompatible with production data
 
-Even if you successfully add a customization to the sandbox environment (that is, the customer's AOT deployable package is successfully installed via Lifecycle Services), it might not succeed for production data. For example, a customer adds a unique index on **Vendor Name** to the VendTable table. You can successfully install this customization if there are no duplicate vendor names in the sandbox environment. However, when the production database is brought in as part of the Restore operation, installation might fail if there are duplicates in the dataset that is inbound to the sandbox environment. Duplicates in this dataset aren't supported. Therefore, you must remove the customization before you can have a successful Restore operation.
+Even if you successfully add a customization to the sandbox environment (that is, the customer's AOT deployable package is successfully installed via Lifecycle Services), it might not succeed for production data. For example, a customer adds a unique index on **Vendor Name** to the VendTable table. You can successfully install this customization if there are no duplicate vendor names in the sandbox environment. However, when you bring in the production database as part of the Restore operation, installation might fail if there are duplicates in the dataset that is inbound to the sandbox environment. Duplicates in this dataset aren't supported. Therefore, you must remove the customization before you can have a successful Restore operation.
 
 ### Refresh is denied for environments that run Platform update 20 or earlier
 
-The database refresh process can't currently be completed if the environment is running Platform update 20 or earlier. For more information, see the [list of currently supported platform updates](../migration-upgrade/versions-update-policy.md).
+You can't currently complete the database refresh process if the environment is running Platform update 20 or earlier. For more information, see the [list of currently supported platform updates](../migration-upgrade/versions-update-policy.md).
 
 ### Incompatible version of Financial Reporting between source and target environments
 
-The database refresh process (self-service or via a service request) can't be completed successfully if the version of Financial Reporting in the target environment is earlier than the version in the source environment. To resolve this issue, update both environments so that they have the latest version of Financial Reporting.
+The database refresh process (self-service or via a service request) can't complete successfully if the version of Financial Reporting in the target environment is earlier than the version in the source environment. To resolve this issue, update both environments so that they have the latest version of Financial Reporting.
 
-To determine the version you have installed in your source and target environments, visit the **View detailed version information** link on the **Environment Details** page.
+To determine the version installed in your source and target environments, visit the **View detailed version information** link on the **Environment Details** page.
 
 Search for **MRApplicationService** and ensure that the target environment is greater than or equal to the source environment.
 

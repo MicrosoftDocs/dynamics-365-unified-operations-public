@@ -6,13 +6,14 @@ ms.author: laswenka
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 04/03/2026
+ms.date: 11/13/2026
 ms.reviewer: johnmichalak
 audience: IT Pro, Developer
 ms.search.region: Global
 ms.search.validFrom: 2019-01-31
 ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
+ai-usage: ai-assisted
 ---
 
 # Database point-in-time restore (PITR)
@@ -42,9 +43,11 @@ When you restore a database from a previous point in time, the database is provi
 > [!NOTE]
 > Restore affects the tables that store references to files stored in Azure blob storage, like document attachments and custom Microsoft Office templates. However, because Azure blob storage itself isn't affected by this process, any files added after the restore point continue to exist in Azure blob storage but aren't reflected in the database.
 
+Restoring database references doesn't restore physical files that have since been deleted. Validate attachment access after restore. Don't assume attachment recovery or orphan cleanup can recreate missing file content. For supported checks and escalation guidance, see [Environment copy and document attachments](../organization-administration/maintain-document-management-storage.md#environment-copy-and-document-attachments).
+
 ### Environment administrator
 
-The system administrator account in the target environment (that is, the account that has a **UserId** value of **Admin**) is reset to the value that is found in the web.config file in the target environment. This value should match the value of the administrator account in Lifecycle Services. To preview which account is used, go to the **Environment Details** page for your target sandbox environment in Lifecycle Services. The value that you select in the **Environment Administrator** field when you first deploy the environment updates the system administrator in the transactional database. The tenant of the environment is the tenant of the environment administrator.
+The system administrator account in the target environment (that is, the account with a **UserId** value of **Admin**) resets to the value found in the web.config file in the target environment. This value should match the value of the administrator account in Lifecycle Services. To preview which account is used, go to the **Environment Details** page for your target sandbox environment in Lifecycle Services. The value that you select in the **Environment Administrator** field when you first deploy the environment updates the system administrator in the transactional database. The tenant of the environment is the tenant of the environment administrator.
 
 If you use the Admin User Provisioning Tool in your environment to change the value in the web.config file, the value might not match the value in Lifecycle Services. If you require a different account, you must deallocate and delete the target sandbox environment, and then redeploy it by selecting another account. You can then perform another refresh database action to restore the data.
 
