@@ -39,8 +39,7 @@ Preboarding in Dynamics 365 Human Resources (preview) is part of the Dynamics 36
 
 Follow these articles:
 
-1. [Set up the HR Recruiting app](hr-recruit-setup.md). It describes the prerequisites and
-recruitment feature.
+1. [Set up the HR Recruiting app](hr-recruit-setup.md) - describes the prerequisites and recruitment feature.
 
 1. [Set up the careers site in the HR Recruiting app](hr-recruit-career.md) - describes the installation of the **Dynamics 365 Human Resources careers** app and the activation of the site.
 
