@@ -24,8 +24,8 @@ For example, you're a manufacturer of apple juice. One of your long-time custome
 To use the features that this article describes, your system must meet the following requirements:
 
 - Run Microsoft Dynamics 365 Supply Chain Management version 10.0.44 or later.
-- Turn on the following features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.47, both features are turned on by default.
-    - *Advanced quality management* (As of Supply Chain Management version 10.0.49, this feature is mandatory and can't be turned off.)
+- Turn on the following features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.47, both features are turned on by default. As of Supply Chain Management version 10.0.49, they are mandatory and can't be turned off.
+    - *Advanced quality management*
     - *Approved customer list*
 
 ## Set up approved customers

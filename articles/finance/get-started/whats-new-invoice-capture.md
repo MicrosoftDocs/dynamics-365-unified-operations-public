@@ -4,7 +4,7 @@ description: Learn about features that are either new or changed in Invoice capt
 author: MaheshPrasadK   
 ms.author: mkarpana
 ms.topic: whats-new
-ms.date: 09/01/2026
+ms.date: 11/14/2026
 ms.update-cycle: 1095-days
 ms.reviewer: twheeloc
 ms.custom: 
@@ -28,12 +28,27 @@ This article provides information about the Invoice capture solution that automa
 ## Software lifecycle policy and cloud releases
 
 The Invoice capture solution follows the Modern Lifecycle Policy. The Modern Lifecycle Policy covers products and services that are continuously serviced and supported. For more information about this policy, see [Modern Lifecycle Policy](https://support.microsoft.com/help/30881).
-Licensed customers must stay current with updates to the Invoice Capture online service in accordance with the following servicing requirements:  
+Licensed customers must stay current with updates to the Invoice capture online service in accordance with the following servicing requirements:  
 
 - Customers who purchase subscriptions of finance and operations apps experience continuous updates that Microsoft manages. Customers can postpone one consecutive service update.
-- Customers can postpone one consecutive release of Invoice Capture.
+- Customers can postpone one consecutive release of Invoice capture.
 
-## Sept 2026
+## November 2026
+
+The November release of the Invoice capture solution version 2.11.x contains the following feature enhancement and bug fixes.
+
+| Feature | Description |
+| --- | --- |
+| Enhancements to AI recognition (preview) | Recognition rule versioning: Support for managing multiple published versions and restoring a previous version.<br> Recognition review improvements: Enhanced experience for reviewing recognized invoice values. |
+| Vendor derivation using IBAN (preview) | Vendor derivation has been enhanced to identify vendors using the IBAN information captured from invoices. |
+| Bug fix – Support voiding documents in **Failed** status | Documents in **Failed** status couldn't be voided by using the one-click action. This fix enables the void action for documents in **Failed** status. (Known issue: 6688358) |
+| Bug fix – Performance improvements on the **Link to purchase order** page | The **Link to purchase order** page experienced performance issues when loading and working with purchase order information. This fix improves the performance of the page. (Known issue: 6606811) |
+| Bug fix – Improved currency dropdown search | The currency dropdown search in Invoice capture returned inconsistent results. This fix improves the consistency of currency searches. (Known issue: 6727881) |
+| Bug fix – Support long document names for signature attachments | Signature attachments with document names longer than 100 characters prevented email imports from being processed before the channel file filter was applied. This fix allows the file filtering process to handle these attachments correctly. (Known issue: 6688382) |
+
+If you're interested in participating in the private preview, contact <mkarpana@microsoft.com> and <achansoriya@microsoft.com> with your Org ID.
+
+## September 2026
 
 The September release of the Invoice capture solution version 2.9.x contains the following feature enhancement and bug fixes.
 

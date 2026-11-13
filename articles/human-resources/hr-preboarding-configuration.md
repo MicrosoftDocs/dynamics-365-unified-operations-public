@@ -54,9 +54,9 @@ When you set **Enable preboarding** to **Yes** in the legal entity, new candidat
 When it's **No**, new candidates skip preboarding, and you can't change the other preboarding settings.
 
 In the **Offer timing type** field, select:
-**Preboarding first** - if you want candidates to complete preboarding and the pre-employment check before the offer.
-**Offer first** - if you want candidates to complete the offer before preboarding.
-You can select **Offer first** only when **Integration to new recruiting app** is set to **Yes** on the **Recruitment** tab. Without the integration, there's no offer phase, so preboarding always comes first. |
+ - **Preboarding first** - if you want candidates to complete preboarding and the pre-employment check before the offer.
+ - **Offer first** - if you want candidates to complete the offer before preboarding.
+You can select **Offer first** only when **Integration to new recruiting app** is set to **Yes** on the **Recruitment** tab. Without the integration, there's no offer phase, so preboarding always comes first. 
 
 ### Candidate portal
 

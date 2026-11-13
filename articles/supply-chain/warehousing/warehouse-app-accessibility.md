@@ -37,7 +37,7 @@ The app supports five color themes to accommodate different visual needs and env
 | **High-contrast white** | White background with bold black text and high-contrast interactive elements. Designed for workers who need maximum readability. |
 | **High-contrast black** | Black background with white text and high-contrast interactive elements. Designed for workers who need maximum readability in dark environments. |
 
-In addition to these accessibility-focused themes, the app offers over 10 color themes (such as Blue, Bronze, Cyan, and others) for personalization. Learn more in [User settings, color themes, and sound themes](warehouse-app-user-settings-themes.md).
+In addition to these accessibility-focused themes, the app offers over 10 color themes (such as Blue, Bronze, Cyan, and others) for personalization. Learn more in [Warehouse Management mobile app user settings](warehouse-app-user-settings.md).
 
 ## Button positions
 
@@ -58,5 +58,5 @@ The app supports platform-specific screen readers on all three supported platfor
 
 ## Next steps
 
-- [User settings, color themes, and sound themes](warehouse-app-user-settings-themes.md)
+- [Warehouse Management mobile app user settings](warehouse-app-user-settings.md)
 - [Mobile device user settings](mobile-device-user-settings.md)
