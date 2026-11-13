@@ -28809,6 +28809,11 @@
       "source_path": "articles/supply-chain/warehousing/tasks/set-up-mobile-device-menu.md",
       "redirect_url": "/dynamics365/supply-chain/warehousing/tasks/set-up-mobile-device-menu-item-purchase-order-putaway",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/warehouse-app-user-settings-themes.md",
+      "redirect_url": "/dynamics365/supply-chain/warehousing/warehouse-app-user-settings",
+      "redirect_document_id": true
     }
   ]
 }

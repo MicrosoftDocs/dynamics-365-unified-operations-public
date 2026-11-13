@@ -6,7 +6,7 @@ ms.author: laswenka
 ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 04/03/2026
+ms.date: 11/13/2026
 ms.reviewer: johnmichalak
 audience: IT Pro, Developer
 ms.search.region: Global 
@@ -19,9 +19,9 @@ ms.dyn365.ops.version: 8.1.3
 
 [!INCLUDE [banner](../includes/banner.md)]
 
-Database movement operations are a suite of self-service actions that you can use as part of data application lifecycle management (DataALM). "Golden configuration" refers to a common practice among customers and partners in the Microsoft Dynamics ecosystem, where a developer environment is used as a configuration store. In this approach, implementation projects store finalized global and company-specific settings in a database that can later become a baseline for Conference Room Pilots, mock go-lives, and go-lives. This tutorial shows how to prepare a golden configuration database and hydrate a target user acceptance testing (UAT) environment.
+Database movement operations are a suite of self-service actions that you can use as part of data application lifecycle management (DataALM). "Golden configuration" refers to a common practice among customers and partners in the Microsoft Dynamics ecosystem, where a developer environment is used as a configuration store. In this approach, implementation projects store finalized global and company-specific settings in a database that can later become a baseline for conference room pilots, mock go-lives, and go-lives. This tutorial shows how to prepare a golden configuration database and hydrate a target user acceptance testing (UAT) environment.
 
-In this tutorial, you learn how to:
+In this article, you learn how to:
 
 > [!div class="checklist"]
 >
@@ -29,7 +29,7 @@ In this tutorial, you learn how to:
 > - Run the import to the target UAT environment.
 > - Copy the UAT environment into a production environment.
 
-As an example of this scenario, a customer who isn't yet live is preparing for a Conference Room Pilot, mock go-live, or go-live. This scenario supports promoting a baseline golden database from a developer environment to a UAT environment and eventually to production.
+As an example of this scenario, a customer who isn't yet live is preparing for a conference room pilot, mock go-live, or go-live. This scenario supports promoting a baseline golden database from a developer environment to a UAT environment and eventually to production.
 
 ## Prerequisites
 
@@ -41,7 +41,7 @@ The developer environment must run the same *application version* as the target 
 
 ### Supported SQL Server collation
 
-The only supported collation for databases in the cloud is **SQL\_Latin1\_General\_CP1\_CI\_AS**. Make sure that your Microsoft SQL Server and database collations in development environments are set to this value. Also make sure that any configuration environments that you publish to sandbox use this collation.
+The only supported collation for databases in the cloud is **SQL\_Latin1\_General\_CP1\_CI\_AS**. Ensure that your Microsoft SQL Server and database collations in development environments are set to this value. Also ensure that any configuration environments that you publish to sandbox use this collation.
 
 ### Document the values of encrypted fields
 
@@ -56,7 +56,6 @@ Because of a technical limitation that's related to the certificate used for dat
 | FiscalEstablishment\_BR.ConsumerEFDocCsc                 | Select **Organization administration** &gt; **Fiscal establishments** &gt; **Fiscal establishments**. |
 | FiscalEstablishmentStaging.CSC                           | The Data Import/Export Framework (DIXF) uses this field. |
 | HcmPersonIdentificationNumber.PersonIdentificationNumber | Select **Human resources** &gt; **Workers** &gt; **Workers**. On the **Worker** tab, in the **Personal information** group, select **Identification numbers**. |
-| HcmWorkerActionHire.PersonIdentificationNumber           | This field is obsolete since Microsoft Dynamics AX 7.0 (February 2016). It previously appeared on the **All worker actions** page (**Human resources** &gt; **Workers** &gt; **Actions** &gt; **All worker actions**). |
 | SysEmailSMPTPassword.Password                            | Select **System administration** &gt; **Email** &gt; **Email parameters**. |
 | SysOAuthUserTokens.EncryptedAccessToken                  | Application Object Server (AOS) uses this field internally. You can ignore it. |
 | SysOAuthUserTokens.EncryptedRefreshToken                 | AOS uses this field internally. You can ignore it. |
@@ -74,10 +73,10 @@ Back up the source database by using SSMS. Right-click the source database, and 
 
 ## Prepare the database
 
-Run the following script against the AxDB\_CopyForExport database that you created in the previous section. This script makes the following changes:
+Run the following script against the `AxDB_CopyForExport` database that you created in the previous section. This script makes the following changes:
 
 - Sets the **SysGlobalConfiguration** flag to inform the application that the database is Azure-based.
-- Removes a reference to tempDB in the XU\_DisableEnableNonClusteredIndexes procedure. Azure SQL databases don't allow references to tempDB. The database synchronization process re-creates the reference later.
+- Removes a reference to tempDB in the `XU_DisableEnableNonClusteredIndexes` procedure. Azure SQL databases don't allow references to tempDB. The database synchronization process re-creates the reference later.
 - Drops users, because Microsoft Windows users aren't allowed in Azure SQL databases. You must re-create other users later so that they're correctly linked to the appropriate sign-in on the target server.
 - Clears encrypted hardware profile merchant properties.
 
@@ -143,10 +142,10 @@ Here's an explanation of the parameters:
 
 ## Import the database
 
-Upload the .bacpac file that you created in the previous step to the **Database backup** section in your Lifecycle Services project's Asset Library. Then, begin the import. The target UAT environment's databases are overwritten by the golden configuration database.
+Upload the .bacpac file that you created in the previous step to the **Database backup** section in your Lifecycle Services project's Asset Library. Then, begin the import. The golden configuration database overwrites the target UAT environment's databases.
 
 > [!NOTE]
-> Certain elements aren't copied as part of the import database step. In the golden configuration scenario, this limitation affects things such as email addresses and Print Management setup. Ideally, you populate these settings as part of the master data migration in the steps described later. These settings shouldn't be part of the golden configuration database.
+> Certain elements aren't copied as part of the import database step. In the golden configuration scenario, this limitation affects things such as email addresses and Print Management setup. Ideally, populate these settings as part of the master data migration in the steps described later. Don't include these settings in the golden configuration database.
 
 [!include [dbmovement-import](../includes/dbmovement-import.md)]
 
@@ -155,7 +154,7 @@ Upload the .bacpac file that you created in the previous step to the **Database 
 Now that the UAT environment is hydrated with the golden configuration, you can begin to migrate master data. You can perform this data migration by [using data entities](../data-entities/develop-entity-for-data-migration.md). Complete your data migration activities before you copy the UAT environment to production, because you have access to the database in the UAT environment for troubleshooting.  
 
 > [!IMPORTANT]
-> Files stored in Azure blob storage aren't copied from UAT to production in the next step. This limitation includes document attachments and custom Microsoft Office templates. If your go-live requires attachments or custom templates, import those items in the production environment directly.
+> A database copy alone doesn't copy files stored in Azure Blob storage from UAT to production. This limitation includes document attachments and custom Microsoft Office templates. If your go-live requires these items, review the supported attachment-copy option or procedure for your operation, or import them directly in production as applicable. Validate access afterward. See [Environment copy and document attachments](../organization-administration/maintain-document-management-storage.md#environment-copy-and-document-attachments).
 
 ## Copy the sandbox database to production
 
@@ -184,7 +183,7 @@ Determine the **Environment type** of your production environment and follow the
 > [!IMPORTANT]
 > Every database refresh creates a new database that resets the **Point-in-time-restore** chain of restore points.
 
-## Reconfigure environment specific settings
+### Reconfigure environment specific settings
 
 After the refresh finishes, use the **Sign off** button in Lifecycle Services to close out of the operation. You can then start to configure the environment-specific settings.
 
@@ -201,17 +200,17 @@ First, sign in to the environment by using the admin account that you find on th
 > [!NOTE]
 > As a best practice, create and run all mission-critical batch jobs that run with recurrence by using the admin account. Use a generic user such as `erp@customer.com`. Don't link the admin to a specific employee's Microsoft Entra account, because that account might be disabled later if the employee leaves the company.
 
-## Open the environment to users
+### Open the environment to users
 
 The user configuration in Sandbox is copied as-is to Production environment. Configure the users in the Sandbox environment before copying to Production to avoid any unwanted access after copying is completed.
 
 After copying is completed, if you want to update user access, go to **System administration** > **Users** > **Users**, and enable or disable the users to manage the access to Production environment. If many users must be enabled or disabled, you can complete this task more quickly by using the [Microsoft Excel add-in](../office-integration/use-excel-add-in.md#open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app).
 
-## Community tools
+#### Community tools
 
 Are you looking for more tools to help you prepare backup files from your developer environments? Here are some other sources of information:
 
-- [D365fo.Tools](https://github.com/d365collaborative/d365fo.tools/blob/development/docs/Import-D365Bacpac.md) provides many valuable tools that the community creates.
+- [Dynamics 365 finance and operations tools](https://github.com/d365collaborative/d365fo.tools/blob/development/docs/Import-D365Bacpac.md) provides many valuable tools that the community creates.
 - [Community-provided open source projects on GitHub](https://github.com/search?q=dynamics+365+finance+operations&s=stars).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

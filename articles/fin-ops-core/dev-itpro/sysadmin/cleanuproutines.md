@@ -1,10 +1,10 @@
 ---
-title: Cleanup routines in Dynamics 365 Finance and Dynamics 365 Supply Chain Management
-description: Learn about cleanup routines in Dynamics 365 Finance and Supply Chain Management, including a table defining system admin paths.
+title: Cleanup routines in Dynamics 365 finance and operations apps
+description: Learn about cleanup routines in Dynamics 365 finance and operations apps, including a table defining system admin paths.
 author: dvliegen
 ms.author: dvliegen
 ms.topic: reference
-ms.date: 03/05/2026
+ms.date: 11/13/2026
 ms.custom: 
 ms.reviewer: johnmichalak 
 audience: IT Pro
@@ -12,28 +12,51 @@ ms.search.region: Global
 ms.search.validFrom: 2020-10-31
 ms.search.form: 
 ms.dyn365.ops.version: 10.0.13
+ai-usage: ai-assisted
 ---
 
-# Cleanup routines in Dynamics 365 Finance and Dynamics 365 Supply Chain Management
+# Cleanup routines in Dynamics 365 finance and operations apps
 
 [!INCLUDE [banner](../includes/banner.md)]
 
-In Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management, cleanup routines are available in various modules. This article provides an overview of the routines that are currently available. The information is organized according to modules.
+In Dynamics 365 finance and operations apps, various modules provide cleanup routines. This article provides an overview of the available routines. The information is organized by module.
+
+Use the [Finance and operations storage capacity report](/power-platform/admin/finance-operations-storage-capacity#finance-and-operations-page) to review storage consumption and identify large database tables before selecting a cleanup routine. For guidance on removing unneeded data or purchasing additional capacity, see [Address a storage capacity deficit](/power-platform/admin/finance-operations-storage-capacity#address-a-storage-capacity-deficit).
 
 > [!IMPORTANT]
-> These cleanup routines should be run only after the business has done detailed analysis and confirmed that the data is no longer required.
+> Run these cleanup routines only after the business completes a detailed analysis and confirms that the data is no longer required.
 >
 > Always test each cleanup routine in a test environment before you run it in a production environment.
 
 ## System administration
 
 | Path | Description |
-|------|-------------|
-| System administration \> Periodic tasks \> Notification clean up | <p>This cleanup routine is used to periodically delete records from the EventInbox and EventInboxData tables.</p><p>**Recommendation:** If you don't use alert functionality, turn off the alert from the batch job.</p> |
-| System administration \> Periodic tasks \> Batch job history clean-up | This regular version of the [batch job history cleanup](batch-history-cleanup.md) routine lets you quickly clean all history entries that are older than a specified number of days. Any entry that was created earlier is deleted from the BatchJobHistory table, and also from linked tables with related records (BatchHistory and BatchConstraintsHistory). This version offers better performance optimization, since it eliminates the need for filtering. |
-| System administration \> Periodic tasks \> Batch job history clean-up (custom) | This [custom batch job history cleanup](batch-history-cleanup.md) routine should be used only when specific entries must be deleted. You can clean up selected types of batch job history records, based on criteria such as status, job description, company, or user. You can add other criteria by using the **Filter** button. |
-| System administration \> Periodic tasks \> Batch job clean-up | [Clean up the batch job table](batch-job-cleanup.md) should be used regularly to clean up the batch job table. In **Retain jobs (days)** field, specify the number of days to keep the records of batch jobs. This cleanup should be done outside business hours. |
-| System administration \> Inquiries \> Database \> Database Log \> Clean up log | <p>This cleanup routine lets you delete database logs as you require. You can delete logs for specific tables, delete specific types of database logs, or delete logs based on the date and time when they were created.</p><p>**Note:** Records electronically signed can't be deleted from logs.</p> |
+| ------ | ------------- |
+| System administration \> Periodic tasks \> Notification clean up | <p>Use this cleanup routine to periodically delete records from the EventInbox and EventInboxData tables.</p><p>**Recommendation:** If you don't use alert functionality, turn off the alert from the batch job.</p> |
+| System administration \> Periodic tasks \> Batch job history clean-up | This regular version of the [batch job history cleanup](batch-history-cleanup.md) routine lets you quickly clean all history entries that are older than a specified number of days. The routine deletes any entry that you created earlier from the BatchJobHistory table, and also deletes entries from linked tables with related records (BatchHistory and BatchConstraintsHistory). This version offers better performance optimization, since it eliminates the need for filtering. |
+| System administration \> Periodic tasks \> Batch job history clean-up (custom) | Use this [custom batch job history cleanup](batch-history-cleanup.md) routine only when you need to delete specific entries. You can clean up selected types of batch job history records, based on criteria such as status, job description, company, or user. You can add other criteria by using the **Filter** button. |
+| System administration \> Periodic tasks \> Batch job clean-up | [Clean up the batch job table](batch-job-cleanup.md) regularly to clean up the batch job table. In the **Retain jobs (days)** field, specify the number of days to keep the records of batch jobs. Perform this cleanup outside business hours. |
+| System administration \> Inquiries \> Database \> Database Log \> Clean up log | <p>This cleanup routine deletes database logs as needed. You can delete logs for specific tables, delete specific types of database logs, or delete logs based on the date and time when they were created.</p><p>**Note:** You can't delete records that are electronically signed from logs.</p> |
+
+## Document management
+
+Document management uses separate processes for attachment history, orphaned references, deferred deletion, and physical-file deletion. These processes aren't interchangeable. Retention determines when information becomes eligible for deletion; the corresponding cleanup process performs cleanup.
+
+Find the existing jobs at **System administration** > **Inquiries** > **Batch jobs**. The following table lists their English descriptions; descriptions can be localized or changed in your environment.
+
+| Cleanup responsibility | Batch job description | Purpose and retention dependency |
+| --- | --- | --- |
+| Attachment-history cleanup | Deletes the document history records that reach the end of their retention period | Removes attachment-history records that exceed **Number of days to retain history**. This process checks for `DOCUHISTORY` growth. It doesn't delete attachment files. |
+| Orphan-reference cleanup | Scans for orphaned document references | Processes attachment references whose parent business record no longer exists. It doesn't restore a missing physical file for an otherwise valid attachment. |
+| Deferred-deletion cleanup | Scans for deleted references that reach the end of their retention period | Identifies deleted references that reach the end of **Number of days to defer deletion**, based on **Deleted date and time**. A retention value of `0` means indefinite recovery, not immediate deletion. |
+| Physical-file deletion | Scans for document files that are scheduled for physical deletion | Processes files that reach the appropriate stage of the supported deletion lifecycle. It isn't a general-purpose scanner for files without corresponding current application metadata. |
+
+> [!NOTE]
+> Changing retention doesn't remove eligible data by itself. A backlog can require many cleanup executions, and history or file-storage consumption might not fall immediately. Don't assume a fixed deletion-completion time or force product-managed schedules.
+
+Before changing retention or resuming cleanup, review audit, regulatory, legal-hold, records-management, and recovery requirements. Don't delete attachment records directly with SQL or delete permanent files directly from Azure Blob storage.
+
+For supported job verification and status changes, capacity monitoring, and troubleshooting, see [Maintain document management storage](../organization-administration/maintain-document-management-storage.md). If a required job can't be identified, contact Microsoft Support rather than creating a duplicate or replacement task.
 
 ## Data management
 
@@ -45,7 +68,7 @@ In Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management, clea
 
 | Path | Description |
 |------|-------------|
-| General ledger \> Periodic tasks \> Clean up ledger journals | <p>This cleanup routine deletes General ledger, Accounts receivable, and Accounts payable journals that are posted. When you delete a posted ledger journal, all information that is related to the original transaction is removed.</p><p> Starting in Dynamics 365 Finance version 10.0.47, a new feature in Feature management improves the performance of this clean up routine. Enable the **Delete journals batch process performance improvement** feature to run more efficently in a batch by using a top picking pattern.  </p><p>**Note:** Delete this information only if you're sure that reversing the ledger journal transactions aren't necessary.</p> |
+| General ledger \> Periodic tasks \> Clean up ledger journals | <p>This cleanup routine deletes General ledger, Accounts receivable, and Accounts payable journals that are posted. When you delete a posted ledger journal, you remove all information related to the original transaction.</p><p> Starting in Dynamics 365 Finance version 10.0.47, a new feature in Feature management improves the performance of this clean up routine. Enable the **Delete journals batch process performance improvement** feature to run more efficiently in a batch by using a top picking pattern.  </p><p>**Note:** Delete this information only if you're sure that reversing the ledger journal transactions aren't necessary.</p> |
 
 ## Retail and Commerce
 
@@ -56,7 +79,7 @@ In Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management, clea
 ## Sales and marketing
 
 | Path | Description |
-|------|-------------|
+| ------ | ------------- |
 | Sales and marketing \> Periodic tasks \> Clean up \> Delete sales orders | This cleanup routine deletes selected sales orders. |
 | Sales and marketing \> Periodic tasks \> Clean up \> Delete quotations | This cleanup routine deletes selected quotations. |
 | Sales and marketing \> Periodic tasks \> Clean up \> Delete return orders | This cleanup routine deletes selected return orders. |
@@ -66,44 +89,44 @@ In Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management, clea
 ## Procurement and sourcing
 
 | Path | Description |
-|------|-------------|
-| Procurement and sourcing \> Periodic tasks \> Clean up \> Purchase update history cleanup | This cleanup routine is used to delete all updates of confirmations, picking lists, product receipts, and invoices that generate update history transactions. |
-| Procurement and sourcing \> Periodic tasks \> Clean up \> Delete requests for quotations | This cleanup routine is used to delete requests for quotation (RFQs) and RFQ replies. The corresponding RFQ journals aren't deleted but remain in the system. |
-| Procurement and sourcing \> Periodic tasks \> Clean up \> Draft consignment replenishment order journal cleanup | This cleanup routine is used to clean up draft consignment replenishment order journals. |
+| ------ | ------------- |
+| Procurement and sourcing \> Periodic tasks \> Clean up \> Purchase update history cleanup | This cleanup routine deletes all updates of confirmations, picking lists, product receipts, and invoices that generate update history transactions. |
+| Procurement and sourcing \> Periodic tasks \> Clean up \> Delete requests for quotations | This cleanup routine deletes requests for quotation (RFQs) and RFQ replies. The corresponding RFQ journals aren't deleted but remain in the system. |
+| Procurement and sourcing \> Periodic tasks \> Clean up \> Draft consignment replenishment order journal cleanup | This cleanup routine cleans up draft consignment replenishment order journals. |
 
 ## Warehouse management
 
 | Path | Description |
-|------|-------------|
-| Warehouse management \> Periodic tasks \> Clean up \> Work creation history cleanup | This cleanup routine is used to delete work creation history records from the WHSWorkCreateHistorytable table. In the dialog box, you specify the number of days to keep the history. |
-| Warehouse management \> Periodic tasks \> Clean up \> Containerization history cleanup | This cleanup routine is used to delete containerization history from the WHSContainerizationHistory table. In the dialog box, you specify the number of days to keep the history. |
-| Warehouse management \> Periodic tasks \> Clean up \> Wave processing history log cleanup | This cleanup routine is used to delete the wave processing history log records from the WHSWaveExecutionHistory table. In the dialog box, you specify the number of days to keep the history. |
-| Warehouse management \> Periodic tasks \> Clean up \> Wave batch cleanup | This cleanup routine is used to clean up batch job history records that are related to the wave processing batch group. |
-| Warehouse management \> Periodic tasks \> Clean up \> Cycle count plan cleanup | This cleanup routine is used to clean up batch job history records that are related to cycle count plan configurations. |
-| Warehouse management \> Periodic tasks \> Clean up \> Mobile device activity log cleanup | This cleanup routine is used to delete mobile device activity log records from the WHSMobileDeviceActivityLog table. In the dialog box, you specify the number of days to keep the history. |
-| Warehouse management \> Periodic tasks \> Clean up \> Work user session log cleanup | This cleanup routine is used to delete work user session records from the WHSWorkUserSessionLog table. In the dialog box, you specify the number of hours to keep records. |
-| Warehouse management \> Periodic tasks \> Clean up \> Wave labels cleanup | This cleanup routine is used to clean up the wave label records from the WHSWaveLabel table. |
-| Warehouse management \> Periodic tasks \> Clean up \> Work line history log cleanup | This cleanup routine is used to delete the temporary work history records from the WHSTmpWorkLineHistory table. In the dialog box, you specify the number of days to keep the history. |
-| Warehouse management \> Periodic tasks \> Clean up \> Clean up License plate registration history | This cleanup routine is used to delete the license plate receiving history records from the WHSLicensePlateReceivingHistory. In the dialog box, you specify the number of days to keep the history. |
-| Warehouse management \> Periodic tasks \> Clean up \> Clean up work exceptions log | This cleanup routine is used to delete work exceptions log records from the WHSWorkExceptionLog table. In the dialog box, you specify the number of days to keep in the history, the status of the entries to be deleted (that is, *Open* or *Closed*) and the maximum number of records that this operation can delete. Learn more in [View and manage the work exceptions log](../../../supply-chain/warehousing/work-exceptions-log.md). |
+| ------ | ------------- |
+| Warehouse management \> Periodic tasks \> Clean up \> Work creation history cleanup | This cleanup routine deletes work creation history records from the `WHSWorkCreateHistorytable` table. In the dialog box, specify the number of days to keep the history. |
+| Warehouse management \> Periodic tasks \> Clean up \> Containerization history cleanup | This cleanup routine deletes containerization history from the `WHSContainerizationHistory` table. In the dialog box, specify the number of days to keep the history. |
+| Warehouse management \> Periodic tasks \> Clean up \> Wave processing history log cleanup | This cleanup routine deletes wave processing history log records from the `WHSWaveExecutionHistory` table. In the dialog box, specify the number of days to keep the history. |
+| Warehouse management \> Periodic tasks \> Clean up \> Wave batch cleanup | This cleanup routine cleans up batch job history records that are related to the wave processing batch group. |
+| Warehouse management \> Periodic tasks \> Clean up \> Cycle count plan cleanup | This cleanup routine cleans up batch job history records that are related to cycle count plan configurations. |
+| Warehouse management \> Periodic tasks \> Clean up \> Mobile device activity log cleanup | This cleanup routine deletes mobile device activity log records from the `WHSMobileDeviceActivityLog` table. In the dialog box, specify the number of days to keep the history. |
+| Warehouse management \> Periodic tasks \> Clean up \> Work user session log cleanup | This cleanup routine deletes work user session records from the `WHSWorkUserSessionLog` table. In the dialog box, specify the number of hours to keep records. |
+| Warehouse management \> Periodic tasks \> Clean up \> Wave labels cleanup | This cleanup routine cleans up wave label records from the `WHSWaveLabel` table. |
+| Warehouse management \> Periodic tasks \> Clean up \> Work line history log cleanup | This cleanup routine deletes temporary work history records from the `WHSTmpWorkLineHistory` table. In the dialog box, specify the number of days to keep the history. |
+| Warehouse management \> Periodic tasks \> Clean up \> Clean up License plate registration history | This cleanup routine deletes license plate receiving history records from the `WHSLicensePlateReceivingHistory` table. In the dialog box, specify the number of days to keep the history. |
+| Warehouse management \> Periodic tasks \> Clean up \> Clean up work exceptions log | This cleanup routine deletes work exceptions log records from the `WHSWorkExceptionLog` table. In the dialog box, specify the number of days to keep in the history, the status of the entries to delete (that is, *Open* or *Closed*), and the maximum number of records that this operation can delete. To learn more, see [View and manage the work exceptions log](../../../supply-chain/warehousing/work-exceptions-log.md). |
 
 ## Inventory management
 
-The following table describes the cleanup jobs that are available for the Inventory management module. Each of them is listed under the **Inventory management** \> **Periodic tasks** \> **Clean up** path in the navigation pane at the left side of the page. You can also find any of them by entering the job name directly into the **Search for a page** field in the navigation bar at the top of the page.
+The following table describes the cleanup jobs that are available for the Inventory management module. Each job is listed under the **Inventory management** \> **Periodic tasks** \> **Clean up** path in the navigation pane at the left side of the page. You can also find any of them by entering the job name directly into the **Search for a page** field in the navigation bar at the top of the page.
 
 | Job name | Description |
-|------|-------------|
+| ------ | ------------- |
 | Calculation of location load | The `WMSLocationLoad` table tracks the weight and volume of items and pallets. The *Calculation of location load* job reduces the number of records in the `WMSLocationLoad` table and helps improve performance. |
-| Inventory journals cleanup | This cleanup routine deletes posted inventory journals. Cleaning up posted inventory journals help free system resources. |
-| Inventory settlements cleanup | <p>This cleanup routine groups closed inventory transactions or deletes canceled inventory settlements. By cleaning up closed or deleted inventory settlements, you help free up system resources.</p><p>Don't group or delete inventory settlements that are too close to the current date or fiscal year, because part of the transaction information for the settlements that are lost.</p><p>Closed inventory transactions can't be changed after they're grouped, because the transaction information for the settlements is lost.</p><p>If canceled inventory settlements are deleted, they can't be reconciled with finance transactions.</p><p>The dialog for setting up this job provides the following optional settings:</p><ul><li>**Group settlements posted before** – Enter the date before which the closed inventory transactions settlements are grouped.</li><li>**Delete canceled settlements posted before** – Enter the date before which the settlements were canceled and deleted.</li></ul> |
-| Inventory dimensions cleanup | <p>This cleanup routine maintains the `InventDim` table. It deletes all existing inventory dimensions that are defined but not used in the current company. All unused inventory dimensions are permanently deleted regardless of whether the transaction is open or closed.</p><p>This cleanup routine verifies whether each `InventDim` record is being used in any purchase order lines, sales order lines, inventory transactions, and/or on-hand inventory records. If a reference exists to `InventDim`, it's checked. If it's not used, it's deleted. If the same combination of dimensions is used later, the system creates a new `InventDim` record with a new `InventDimId` value and uses this instead.</p><p>Inventory dimension combination records that are still referenced can't be deleted because when an `InventDim` record is deleted, related transactions can't be reopened.</p><p>**Warning:** This job deletes all inventory dimensions that were created during the targeted date range and which are defined but not used in the current company. Unused inventory dimensions are deleted permanently. No alert or database log is created during the process. Don't run this job without a good reason. Be sure to schedule this process to run outside of business hours. |
+| Inventory journals cleanup | This cleanup routine deletes posted inventory journals. Cleaning up posted inventory journals helps free system resources. |
+| Inventory settlements cleanup | <p>This cleanup routine groups closed inventory transactions or deletes canceled inventory settlements. By cleaning up closed or deleted inventory settlements, you help free up system resources.</p><p>Don't group or delete inventory settlements that are too close to the current date or fiscal year, because part of the transaction information for the settlements is lost.</p><p>Closed inventory transactions can't be changed after they're grouped, because the transaction information for the settlements is lost.</p><p>If canceled inventory settlements are deleted, they can't be reconciled with finance transactions.</p><p>The dialog for setting up this job provides the following optional settings:</p><ul><li>**Group settlements posted before** – Enter the date before which the closed inventory transactions settlements are grouped.</li><li>**Delete canceled settlements posted before** – Enter the date before which the settlements were canceled and deleted.</li></ul> |
+| Inventory dimensions cleanup | <p>This cleanup routine maintains the `InventDim` table. It deletes all existing inventory dimensions that are defined but not used in the current company. All unused inventory dimensions are permanently deleted regardless of whether the transaction is open or closed.</p><p>This cleanup routine verifies whether each `InventDim` record is being used in any purchase order lines, sales order lines, inventory transactions, and on-hand inventory records. If a reference exists to `InventDim`, it's checked. If it's not used, it's deleted. If the same combination of dimensions is used later, the system creates a new `InventDim` record with a new `InventDimId` value and uses this instead.</p><p>Inventory dimension combination records that are still referenced can't be deleted because when an `InventDim` record is deleted, related transactions can't be reopened.</p><p>**Warning:** This job deletes all inventory dimensions that were created during the targeted date range and which are defined but not used in the current company. Unused inventory dimensions are deleted permanently. No alert or database log is created during the process. Don't run this job without a good reason. Be sure to schedule this process to run outside of business hours. |
 | On-hand entries cleanup | <p>This cleanup routine deletes closed and unused entries for on-hand inventory that is assigned to one or more tracking dimensions. Closed transactions are marked as closed and contain a value of *0* (zero) for all quantities and cost values. By deleting these transactions, you help improve the performance of queries for on-hand inventory. Transactions aren't deleted for on-hand inventory that isn't assigned to tracking dimensions. This cleanup routine can remove data used by reports such as the *physical inventory by inventory dimension* report, so make sure you understand the implications before running it.</p><p>The dialog for setting up this job provides the following setting:</p><ul><li>**Delete if not updated for this many days** – Closed on-hand entries that aren't updated for this number of days are deleted (default is *7*). Entries that change during this period aren't deleted</li></ul> |
 | Warehouse management on-hand cleanup | This cleanup routine deletes records in the `InventSum` and `WHSInventReserve` tables. These tables are used to store on-hand information for items that are enabled for warehouse management processes (that is, WHS items). By cleaning up these records, you significantly improve the performance of on-hand calculations. However, this cleanup routine can remove data used by reports such as the *physical inventory by inventory dimension* report, so make sure you understand the implications before running it. |
 | On-hand entries aggregation by financial dimensions | <p>This cleanup routine aggregates `InventSum` rows that have a quantity of 0 (zero) and cleans up records where **Closed** is set to *True*.</p><p>This routine handles scenarios where there are no more quantities in the `InventSum` table for a combination of inventory dimensions, but there's still a value. Although these values disappear in some cases, the current design occasionally allows values to remain.</p><p>For example, if you use batch numbers, each batch number (and the combined site, warehouse, and so on) creates a new record in the `InventSum` table. When the batch number is sold, quantity fields are set to *0* (zero). In most cases, the **Financial cost amount** and **Physical cost amount** fields are also set to *0* (zero). However, in standard cost revaluation and other scenarios, the field might still show some amount. This behavior is valid, and reflects the way that the system handles costs at the financial inventory level (for example, the site level).</p><p>Inventory values are determined by records in the `InventSum` table. In some cases, when inventory values in the past are reported, value is determined by inventory transactions (the `InventTrans` table). Therefore, when you run inventory value reports, the system initially looks at the `InventSum` table, aggregates all records to the site level, and reports the value for the item per site.</p><p>The data from the individual records at the batch-number level are never used. Therefore, this routine goes through all `InventSum` records, finds the records where there's no more quantity (that is, where **No open quantities** is set to *True*). Because there's no reason to keep these records, the system finds the `InventSum` record for the same item that has the same site, copies the values from the batch-number level to the site level, and deletes the record. Then, when you run inventory value reports, the system still finds the same correct values. Therefore, this routine reduces the number of `InventSum` records, significantly in some cases, and has a positive impact on the performance of any function that queries that table.</p> |
 | Cost calculation details | This cleanup routine cleans up cost calculation details. |
-| Transfer order update history cleanup  | This cleanup routine deletes records from the `InventTransferParmTable`, `InventTransferParmUpdate` and `InventTransferParmLine` tables. These tables are used when posting transfer orders. This cleanup helps improve the performance of any function that queries these tables. |
+| Transfer order update history cleanup | This cleanup routine deletes records from the `InventTransferParmTable`, `InventTransferParmUpdate` and `InventTransferParmLine` tables. These tables are used when posting transfer orders. This cleanup helps improve the performance of any function that queries these tables. |
 | Inventory transaction consolidation | This cleanup routine consolidates data about inventory transactions to help improve system performance. For more information about this functionality, see [Consolidate inventory transactions](../../../supply-chain/inventory/inventory-transaction-consolidation.md). |
-| Inventory on-hand report data clean up | <p>This cleanup routine deletes on-hand storage data for reports that were executed before a specific date.</p><p>The dialog for setting up this job provides the following setting:</p><ul><li>**Delete inventory on-hand report executed before** – Enter the newest date for which to keep report data. Data for reports that are older than this are deleted.</li></ul>  |
+| Inventory on-hand report data clean up | <p>This cleanup routine deletes on-hand storage data for reports that were executed before a specific date.</p><p>The dialog for setting up this job provides the following setting:</p><ul><li>**Delete inventory on-hand report executed before** – Enter the newest date for which to keep report data. Data for reports that are older than this are deleted.</li></ul> |
 | Correct inventory transfer order lines manually | <p>This cleanup routine fixes inconsistent data and corrects unexpected quantities that are related to transfer orders.</p><p>The dialog for setting up this job provides the following settings:</p><ul><li>**Recalculate transfer-related quantities** – Set to *Yes* to recalculate and correct shipped quantity, ship remaining quantity, and receive remaining quantity values.</li><li>**Recalculate inventory transactions** – Set to *Yes* to fix corrupted inventory transactions, such as received transfer orders with ordered transactions and transfer orders linked to completed output orders.</li><li>**Recalculate header status** – Set to *Yes* to correct transfer orders' header status values based on their line status values.</li><li>**Recover header** – Set to *Yes* to recover transfer orders that were unexpectedly removed even though they weren't fully received, related order lines still exist, or related inventory transactions still exist.</li></ul> |
 | Inventory journal data correction | <p>This cleanup routine deletes all on-order or ordered inventory transactions that link to posted or nonexistent inventory journals in the current company. You choose whether or not to clean up orphan unposted inventory transactions without journal lines.</p><p>**Warning:** The inventory transactions are deleted permanently. No alert or database log is created during the process. Don't run this process without a good reason, and be sure to test carefully before running it in the production environment.</p> |
 | Correct item that isn't visible in released products form manually | This cleanup routine solves display problems such as released products not displaying and e-commerce catalogs not working after you deploy a proactive quality update (PQU) for your system. It works by making sure the `InventDim` table includes a record where the `InventDimId` field has a value of *AllBlank*, and that records in the `InventItemLocation` table correctly relate to this record through the `InventItemLocation.InventDimId` field as needed. |
@@ -111,7 +134,7 @@ The following table describes the cleanup jobs that are available for the Invent
 ## Production control
 
 | Path | Description |
-|------|-------------|
+| ------ | ------------- |
 | Production control \> Periodic tasks \> Clean up \> Production journals cleanup | This cleanup routine is used to delete unused journals. |
 | Production control \> Periodic tasks \> Clean up \> Production orders cleanup | This cleanup routine is used to delete production orders that are ended. |
 | Production control \> Periodic tasks \> Clean up \> Clean up registrations | <p>We recommend that you periodically clean up registrations. This cleanup routine deletes only data that is processed.</p><p>**Note:** Make sure that you don't delete registrations that might be required later for documentation purposes.</p> |
@@ -120,8 +143,8 @@ The following table describes the cleanup jobs that are available for the Invent
 ## Cost management
 
 | Path | Description |
-|------|-------------|
-| Cost management \> Manufacturing accounting \> Clean up \> Production orders cleanup | <p>Same as **Production control \> Periodic tasks \> Clean up \> Production orders cleanup**.<br><br>This cleanup routine is used to delete production orders that ended.</p> |
+| ------ | ------------- |
+| Cost management \> Manufacturing accounting \> Clean up \> Production orders cleanup | <p>Same as **Production control \> Periodic tasks \> Clean up \> Production orders cleanup**.<br><br>Use this cleanup routine to delete production orders that ended.</p> |
 | Cost management \> Manufacturing accounting \> Clean up \> Production recalculation | Bundles production orders where the estimated costs for material and time consumption should be recalculated and schedules recalculation tasks. |
 | Cost management \> Manufacturing accounting \> Clean up \> Clean up the costing sheet cache | The CostSheetCache table is used as a temp location for cost sheets to help generate prices. This job cleans up the costing sheet cache. Records in the cache that have an age of the specified days or older are deleted. |
 
@@ -129,12 +152,12 @@ The following table describes the cleanup jobs that are available for the Invent
 
 | Path | Description |
 |------|-------------|
-| Master planning \> Master planning \> Maintain plans \> Plan version cleanup | Usually, this cleanup is done automatically. However, automatic cleanup sometimes malfunctions, and orphan data remains in the system. This orphan data slows down queries and causes the database size to grow. We recommend that you do a preventive run one time per month, when master resource planning (MRP) isn't running. |
+| Master planning \> Master planning \> Maintain plans \> Plan version cleanup | Usually, automatic cleanup removes these records. However, automatic cleanup sometimes malfunctions, and orphan data remains in the system. This orphan data slows down queries and causes the database size to grow. Run this cleanup one time per month as a preventive measure when master resource planning (MRP) isn't running. |
 
 ## Project management and accounting
 
 | Path | Description |
 |------|-------------|
-| Project management and accounting \> Periodic \> Delete project journals | <p>This cleanup routine deletes project hour fee, and beginning balance journals that have been posted. When you delete a posted ledger journal, all information that is related to the original transaction is removed.</p><p>**Note:** You should delete this information only if you're sure that you won't have to reverse the ledger journal transactions.</p> |
+| Project management and accounting \> Periodic \> Delete project journals | <p>This cleanup routine deletes project hour fee, and beginning balance journals that are posted. When you delete a posted ledger journal, you remove all information that's related to the original transaction.</p><p>**Note:** Delete this information only if you're sure that you don't need to reverse the ledger journal transactions.</p> |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

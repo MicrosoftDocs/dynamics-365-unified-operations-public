@@ -43,13 +43,13 @@ Follow these steps to create and manage user settings for your mobile devices.
     - **Device model ID** – Select the device model that the profile should apply to. If the profile should apply to all models of the selected brand, leave this field blank. The list of values includes all the models that have been defined for the brand that is selected in the **Device brand name** field. For information about how to define the list of models for each brand, see the next section.
     - **User ID** – Select the user ID of the warehouse worker that the setting profile should apply to. If the profile should apply to all workers, leave this field blank.
 
-1. On the **General** FastTab, set the user settings values that you want to apply. These settings are the same as those offered in the app itself, but the app also provides some extra settings that aren't available here in the web client (including **Server request timeout** and **Configuration mode**). Learn more about the available settings in [User settings, color themes, and sound themes](warehouse-app-user-settings-themes.md).
+1. On the **General** FastTab, set the user settings values that you want to apply. These settings are the same as those offered in the app itself, but the app also provides some extra settings that aren't available here in the web client (including **Server request timeout** and **Configuration mode**). Learn more about the available settings in [Warehouse Management mobile app user settings](warehouse-app-user-settings.md).
 
 ## Set local user settings in the Warehouse Management mobile app
 
 Workers can set their own local user settings in the Warehouse Management mobile app. These settings override the default settings set by the admin. For example, a worker might prefer to use a different theme, sound level, or text scale. When a worker signs in to the Warehouse Management mobile app, the app fetches and applies the most specific settings profile that is stored in Supply Chain Management for the matching brand, device, and user ID. When a worker changes their local settings, the app updates the settings profile that is stored in Supply Chain Management for the matching brand, device, and user ID. If no matching profile exists, a new one is created.
 
-To set local user settings in the Warehouse Management mobile app, sign in to the app and then select the **Settings** button, which is the gear icon in the top-right corner of the screen. Learn more in [User settings, color themes, and sound themes](warehouse-app-user-settings-themes.md).
+To set local user settings in the Warehouse Management mobile app, sign in to the app and then select the **Settings** button, which is the gear icon in the top-right corner of the screen. Learn more in [Warehouse Management mobile app user settings](warehouse-app-user-settings.md).
 
 ## Create and manage mobile device brands
 

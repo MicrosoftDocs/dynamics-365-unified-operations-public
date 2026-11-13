@@ -2464,6 +2464,8 @@ items:
           href: ../fin-ops-core/fin-ops/data-entities/use-record-template-new-record.md?context=/dynamics365/context/supply-chain
       - name: Configure document management
         href: ../fin-ops-core/dev-itpro/organization-administration/configure-document-management.md?context=/dynamics365/context/supply-chain
+      - name: Maintain document management storage
+        href: ../fin-ops-core/dev-itpro/organization-administration/maintain-document-management-storage.md?context=/dynamics365/context/supply-chain
       - name: Configure and send email
         href: ../fin-ops-core/dev-itpro/organization-administration/configure-email.md?context=/dynamics365/context/supply-chain
       - name: Date/time data and time zones
@@ -4462,8 +4464,8 @@ items:
             href: warehousing/step-icons-titles.md
         - name: Work with the Warehouse Management mobile app
           items:
-          - name: User settings, color themes, and sound themes
-            href: warehousing/warehouse-app-user-settings-themes.md
+          - name: Warehouse Management mobile app user settings
+            href: warehousing/warehouse-app-user-settings.md
           - name: Data submission behavior in the Warehouse Management mobile app
             href: warehousing/warehouse-app-autosubmit-behavior.md
           - name: Warehouse Management mobile app calculator
