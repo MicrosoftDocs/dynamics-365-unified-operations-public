@@ -6,7 +6,7 @@ ms.author: yufeihuang
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 07/27/2026
+ms.date: 11/13/2026
 ms.custom: 
   - bap-template
 ---
@@ -15,11 +15,11 @@ ms.custom:
 
 [!INCLUDE [banner](../includes/banner.md)]
 
-The Inventory Visibility service enables external systems to query Microsoft Dynamics 365 Supply Chain Management for inventory changes that will occur up to 180 days in the future. In this way, users who work in an external system can view future inventory availability details and make accurate projections about when orders can be delivered.
+The Inventory Visibility service enables external systems to query Microsoft Dynamics 365 Supply Chain Management for inventory changes that occur up to 360 days in the future. By using this service, users who work in an external system can view future inventory availability details and make accurate projections about when orders can be delivered.
 
-The Inventory Visibility service can import information about planned inbound and outbound inventory changes together with the related dates. Available-to-promise (ATP) functionality in Inventory Visibility can then query those time-series based inventory changes and calculate your omnichannel ATP. External systems can query and retrieve this information from Inventory Visibility in near-real time by calling its API.
+The Inventory Visibility service can import information about planned inbound and outbound inventory changes together with the related dates. Available-to-promise (ATP) functionality in Inventory Visibility can then query those time-series-based inventory changes and calculate your omnichannel ATP. External systems can query and retrieve this information from Inventory Visibility in near-real time by calling its API.
 
-The *Inventory Visibility integration with ATP* feature that is described in this article adds support for out-of-box ATP integration between Supply Chain Management and Inventory Visibility. Therefore, you can easily bring expected inventory issue and receipts together with time-series information from Supply Chain Management into Inventory Visibility. You can also post updated scheduling information back to Supply Chain Management.
+The *Inventory Visibility integration with ATP* feature that is described in this article adds support for out-of-box ATP integration between Supply Chain Management and Inventory Visibility. Therefore, you can easily bring expected inventory issues and receipts together with time-series information from Supply Chain Management into Inventory Visibility. You can also post updated scheduling information back to Supply Chain Management.
 
 ## Prerequisites
 
@@ -43,17 +43,17 @@ Inventory Visibility includes a default calculated measure that is named `@iv.@a
 
 ## Set up ATP in Inventory Visibility
 
-When ATP in Inventory Visibility is integrated with Supply Chain Management, it works just as it does when it's integrated with other systems. Learn how to set up and use ATP in Inventory Visibility in [Inventory Visibility on-hand change schedules and available to promise](inventory-visibility-available-to-promise.md).
+When you integrate ATP in Inventory Visibility with Supply Chain Management, it works the same way as when you integrate it with other systems. Learn how to set up and use ATP in Inventory Visibility in [Inventory Visibility on-hand change schedules and available to promise](inventory-visibility-available-to-promise.md).
 
 ## Work with ATP data in the Inventory Visibility app in Power Apps
 
 When you use the Inventory Visibility app in Power Apps, you can query and post ATP information.
 
 - To query ATP information, go to **Operational visibility** > **On hand query**. Be sure to enable the **Query ATP** option.
-- To post ATP information, go to **Operational visibility** > **Change schedule**. There, you can specify and submit updated schedule information.
+- To post ATP information, go to **Operational visibility** > **Change schedule**, where you can specify and submit updated schedule information.
 
 Learn more in [Use the Inventory Visibility app UI version 2](inventory-visibility-power-platform.md).
 
-## Query and post ATP data using the Inventory Visibility API
+## Query and post ATP data by using the Inventory Visibility API
 
 You can use the Inventory Visibility API to query and post ATP information. Learn more in [Submit change schedules, change events, and ATP queries through the API](inventory-visibility-available-to-promise.md#api-urls).
