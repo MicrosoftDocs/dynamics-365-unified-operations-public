@@ -52,19 +52,34 @@ To enable row version change tracking for a table, set the **Allow Row Version C
 > Before version 10.0.34, while row version change tracking functionality was in preview, the row version column was named **SysRowVersionNumber**. In version 10.0.34, the **SysRowVersionNumber** column was replaced with a new **SysRowVersion** column. The **SysRowVersionNumber** column is now obsolete. In version 10.0.39, it's removed from the metadata of out-of-box tables. Don't make any dependencies for the **SysRowVersionNumber** column.  If your code has a dependency on the older SysRowVersionNumber column, you are required to remove the dependency and test 10.0.39 in your sandbox environment before upgrading your production instance to 10.0.39.
 
 ## Where not to enable row version change tracking for tables
+The following tables support performance-critical operations or high-volume data processing. Change tracking can introduce disproportionate overhead, particularly during peak workloads, inventory processing, warehouse execution, master planning, and bulk maintenance, causing performance problems, including database blocking.
 
-Each master planning run deletes and inserts a large number of records in various tables. Tracking these changes can cause master planning performance problems and might even result in database blocking.
+Use supported business entities, source documents, purpose-built APIs, or dedicated analytical data sources instead wherever possible.
 
-Therefore, don't enable change tracking on the following master planning tables:
+Therefore, don't enable change tracking on the following tables:
 
-- `REQTRANS`.
-- `REQTRANSCOV`.
-- `REQPO`.
-- `REQROUTE`.
-- `REQROUTEJOB`.
-- `WRKCTRCAPRES`.
-- `WRKCTRCAPRESPROPERTY`.
-- `REQDECOUPLINGPOINTHISTORY`.
+| # | Table | Area | Reason to avoid change tracking |
+|---|---|---|---|
+| 1 | `INVENTTRANS` | Inventory | High volume internal operational tracking; Ultra-frequent inserts, updates and deletes |
+| 2 | `INVENTSUM` | Inventory | High-concurrency on-hand updates; SQL blocking risk |
+| 3 | `REQTRANS` | MRP | High-volume requirements generation and regeneration |
+| 4 | `REQTRANSCOV` | MRP | High-volume coverage calculations and regeneration |
+| 5 | `REQPO` | MRP | Planned orders generated, modified, and deleted during planning |
+| 6 | `WHSINVENTORYTRANSACTION` | Warehouse | High-volume warehouse transactions; Frequent inserts, updates and deletes |
+| 7 | `INVENTDIM` | Inventory | High-volume inserts and clean-up |
+| 8 | `WRKCTRCAPRES` | MRP | Capacity reservation calculations and regeneration |
+| 9 | `REQROUTE` | MRP | Planned production routing data generated during planning |
+| 10 | `REQROUTEJOB` | MRP | Planned production job scheduling and regeneration |
+| 11 | `WRKCTRCAPRESPROPERTY` | MRP | Capacity reservation properties maintained during scheduling |
+| 12 | `REQDECOUPLINGPOINTHISTORY` | MRP | Planning-generated history and potentially large data volumes |
+| 13 | `INVENTSUMLOGTTS` | Inventory / MRP | High-volume on-hand change logging and cleanup |
+| 14 | `WHSINVENTRESERVE` | Warehouse | Concurrency-sensitive warehouse reservation updates |
+| 15 | `WHSINVENTORYITEMSETELEMENT` | Warehouse | High-volume item-set creation and cleanup |
+| 16 | `INVENTTRANSORIGIN` | Inventory | High-volume inventory transaction origin records |
+| 17 | `WHSWORKLINE` | Warehouse | Frequent operational updates during warehouse execution |
+| 18 | `WHSWORKTABLE` | Warehouse | Warehouse work lifecycle and status updates |
+| 19 | `WHSINVENTORYTRANSACTIONARCHIVE` | Warehouse | High-volume warehouse transaction archival |
+| 20 | `INVENTSETTLEMENT` | Inventory costing | Large settlement and inventory recalculation workloads |
 
 ## Enable row version change tracking for data entities
 
