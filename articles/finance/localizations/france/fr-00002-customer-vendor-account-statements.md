@@ -1,24 +1,23 @@
 --- 
-title: FR-00002 Customer and vendor account statements
+title: Customer and vendor account statements for France
 description: You can print accounts statements for customers and vendors that display information for a time period that you select.
-author: kfend
-ms.author: johnmichalak
+author: liza-golub
+ms.author: egolub
 ms.topic: how-to
-ms.date: 12/05/2025
+ms.date: 11/16/2026
 ms.custom:
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: France
 ms.search.validFrom: 2016-06-30
 ms.search.form: SrsReportViewerForm
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-# FR-00002 Customer and vendor account statements
+# Customer and vendor account statements for France
 
 [!INCLUDE [banner](../../includes/banner.md)]
 
-You can print account statements for customers and vendors that display information for a time period that you select. You can use this functionality for legal entities whose primary address is in France.
+You can print account statements for customers and vendors that display information for a time period that you select. Use this functionality for legal entities whose primary address is in France.
 
 ## Print the customer account statement report
 
