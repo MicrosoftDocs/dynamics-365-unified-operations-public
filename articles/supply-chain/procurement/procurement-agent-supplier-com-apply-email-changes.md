@@ -34,7 +34,7 @@ Copilot classifies each vendor email that it reads into one of the following cat
 For the first two categories, Copilot identifies which purchase orders the email is related to and matches the information in the email to information in the system.
 
 > [!IMPORTANT]
-> The agent can read incoming PDF attachments but not Microsoft Word or Excel documents.
+> The agent can read incoming PDF and Excel attachments but not Microsoft Word documents.
 
 When you review incoming changes that are based on an email, the system shows the original email, the current information in the system, and the changes proposed. Therefore, you can more easily understand each change. After you finish reviewing the proposal and making any corrections that are required, you can apply the changes directly to the relevant purchase order.
 
@@ -47,7 +47,7 @@ You need to configure the Procurement Agent to monitor a specific email address 
 
 1. Sign in to the Microsoft Dynamics 365 Supply Chain Management environment as a user who has [permissions to manage the agent configuration](procurement-agent-supplier-com-setup-wizard.md#user-permissions).
 1. Go to **Agents** > **Agents**.
-1. On the **Library** tab, for **Speed up updates in purchase orders with Supplier communications agent**, select **Select**.
+1. On the **Library** tab, for **Review emails from vendors - Supplier communications - Procurement Agent**, select **Select**.
 1. On the **Agent configuration** page, use the dropdown menu to specify which vendors the agent should analyze emails for. Select **Any vendor** to track all vendors or **Specific vendors** to track a list of specific vendors that you provide.
 1. Select the mailbox that the agent should monitor. The dropdown menu shows all mailboxes that the sign-in user has access to. If the mailbox that you're looking for isn't in the list, you might need to share and synchronize it with Dataverse. Learn more in [Set up and configure supplier communications features of the Procurement Agent](procurement-agent-supplier-com-setup-wizard.md).
 1. Select **Activate**.
