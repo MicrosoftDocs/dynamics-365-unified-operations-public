@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 03/11/2026
+ms.date: 11/16/2026
 ms.reviewer: johnmichalak
 ms.search.region: France
 ---
@@ -29,9 +29,21 @@ To generate a compliant Fichier des écritures comptables (FEC) audit file in Mi
 - The chart of accounts that the legal entity uses for generating the FEC must comply with the standard chart of accounts of France (Livre des procédures fiscales, article A47 A-1, chapter VII: "Le numéro de compte, dont les trois premiers caractères doivent correspondre à des chiffres respectant les normes du plan comptable français"). Only main accounts starting with **1**, **2**, **3**, **4**, **5**, **6**, or **7** must be included in the FEC.
 - Use a posting profile for all customer and supplier balance accounts. These main accounts start with **41** and **40**. The **Do not allow manual entry** parameter must be enabled for them.
 - Store all the source documents for general ledger transactions during the period of time required by the accounting obligations of France.
-- Post accounting documents that are subject for FEC in EURO and in French. 
+- Post accounting documents that are subject for FEC in EURO and in French.
+- Generate the FEC of each fiscal year as part of the closing procedure, after the final year-end close, and store it in the tax archive. The archived FEC is the reference version of the closed fiscal year. For more information, see [Tax archive in France](emea-france-tax-archive.md).
 
-> [!NOTE]
-> In France, you can't change the description of main accounts and posted journals.
+## Main account names and journal names in the FEC 
+
+The FEC includes the name of each main account (*CompteLib*) and the description of the journal name that you use to post each entry (*JournalLib*). Finance reads these values from master data when you generate the file. If a main account has a name translation in French, the FEC uses the translation. As with other master data, users who have the required permissions can update these values. 
+
+French law requires that you keep accounting documents without alteration of any kind (*Code de commerce, article L123-22*). To keep the FEC of a closed fiscal year consistent with the accounting records of that year, follow these practices in legal entities in France: 
+
+- After you post entries to a main account, don't change the name of the main account or its French name translation. If you need an account that has a different name or purpose, create a new main account, and stop posting to the previous one, for example, by suspending it or by entering an end date in the **Active to** field.
+- After you post entries with a journal name, don't change its description. If you need a different description, create a new journal name.
+- Grant the security privileges that allow users to maintain main accounts and journal names only to a small group of authorized users.
+- Turn on [database logging](/dynamics365/fin-ops-core/dev-itpro/sysadmin/configure-manage-database-log) for main accounts, main account name translations, and journal names. The database log records each change, together with the previous and new values, the user, and the date and time. Include the log in the tax archive.
+- When you must provide the FEC of a closed fiscal year, for example, during a tax audit, provide the FEC that you stored in the tax archive at year-end closing. 
+
+For information about other data that's included in the FEC, such as customer and vendor names and the descriptions of posted entries, see [Protection of data that's included in the FEC](emea-france-nf203.md#protection-of-data-thats-included-in-the-fec). For information about the tax archive, see [Tax archive in France](emea-france-tax-archive.md). 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
