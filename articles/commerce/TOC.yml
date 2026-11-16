@@ -14,6 +14,8 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
+        - name: Commerce 10.0.50 (October 2026)
+          href: get-started/whats-new-commerce-10-0-50.md
         - name: Commerce 10.0.49 (September 2026)
           href: get-started/whats-new-commerce-10-0-49.md
         - name: Commerce 10.0.48 (June 2026)
@@ -444,6 +446,8 @@
               href: health-check-view-offline.md
             - name: Support for network peripherals
               href: dev-itpro/network-peripherals.md
+            - name: Label printing (preview)
+              href: label-printing.md
           - name: Screen layouts
             items:
             - name: Demo data screen layouts in Store Commerce
