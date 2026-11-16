@@ -3,7 +3,7 @@ title: Regulatory updates
 description: This article provides a list of planned and released regulatory updates for Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: egolub
-ms.date: 08/19/2026
+ms.date: 11/16/2026
 ms.topic: reference
 ms.custom: 
   - bap-template
@@ -19,7 +19,7 @@ ms.dyn365.ops.version: 10.0
 
 This article lists the regulatory updates that are planned and released in Dynamics 365 Finance supported localizations. Delivery timelines might change, and projected functionality might be different or might not be released. For more information, see [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332).
 
-Regulatory updates are features that support new or changed country/region-specific legislation. For more information about planned and released country/region-specific features, see [Dynamics 365 and Power Platform release plans](/business-applications-release-notes/index).
+Regulatory updates are features that support new or changed country/region-specific legislation. For information about planned and released features for Dynamics 365 Finance, see the [AI at Work roadmap](https://aka.ms/AIatWorkRoadmap). Release plans from earlier release waves are archived and are still available for reference in [Release plans for Dynamics 365 and Power Platform](/dynamics365/release-plans/archived-plans).
 
 Microsoft strives to implement new regulatory requirements as early as possible. The actual delivery date depends on the law announcement date, availability of the requirement details from the local authorities, the availability of the validation tools, and on the size and complexity of the change.
 
@@ -33,6 +33,12 @@ For the latest regulatory update plans, refer to the following table.
 
 |Country/region|Release date|Release version|Regulatory update|
 |--------------------|---------------|-------|-------|
+| Norway | November 2026 | 10.0.51, also available in prior versions | Regulatory update to support version 1.40 of [Standard Audit File for Tax (SAF-T) for Norway](../norway/emea-nor-satndard-audit-file-for-tax.md), which is required for accounting periods that start on or after January 1, 2027. Sales tax amounts are reported in Norwegian kroner (NOK) when tax information is in another currency, and the country from which imported goods are shipped can be reported. |
+| Japan | October 2026 | 10.0.51, also available in prior versions | Regulatory update to generate the consumption tax and local consumption tax return in the e-Tax XML format (.xtx) of the National Tax Agency (NTA) for electronic filing. [Japan consumption tax report](../japan/apac-jpn-consumption-tax-report.md) |
+| Brazil | October 2026 | 10.0.51 | Regulatory update for Technical Note (NT) 2026.007 that allows taxpayers that are subject only to IBS and CBS and that have no state registration (IE) to issue NF-e (model 55). |
+| Italy | September 2026 | 10.0.51, also available in prior versions | Updated [Modello 770](../italy/emea-ita-modello770.md) - 2026, including the new line in Quadro SX for the credit linked to the tax-exempt sum for employees that was introduced by the 2025 tax reform. |
+| Poland | October 2026 | 10.0.50 | The KSeF invoice reference number can be recorded in vendor payment journals and included in the payment title of bank transfer files, as required from August 1, 2026. |
+| France | September 2026 | 10.0.50, also available in prior versions | Direct submission of [e-Reporting](../france/emea-fra-e-reporting.md) files from Dynamics 365 Finance. Reporting periods follow the declarant's VAT regime, and document numbering was reworked so that updated transactions can be reported after a submission is accepted. |
 | Norway | August 2026 | 10.0.50, also available in prior versions | Regulatory update to support change to the authorization scopes used for VAT Return Submission API integrations from September 2026. [Register an integration point in the ID-porten web portal](../norway/emea-nor-vat-return-integration-point.md); [Prepare your environment to interoperate with ID-porten and Altinn web services](../norway/emea-nor-vat-return-setup.md). |
 | Austria | August 2026 | 10.0.50, also available in prior versions | Regulatory update to support changes in VAT declaration format for Austria from July 2026. [VAT declaration (Austria)](../austria/emea-aut-vat-declaration-austria.md). |
 | Hungary | July 2026 | 10.0.50, also available in prior versions | Regulatory update to support changes in VAT declaration format for Hungary from July 2026. [VAT declaration (Hungary)](../hungary/emea-hun-vat-declaration-hungary.md). |
