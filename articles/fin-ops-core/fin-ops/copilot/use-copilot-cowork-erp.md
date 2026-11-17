@@ -27,7 +27,7 @@ Learn more about how Copilot Cowork works in [Copilot Cowork overview](/microsof
 
 Before you can use Copilot Cowork with Dynamics 365 ERP, ensure that:
 
-- You have Microsoft 365 Copilot and Copilot Cowork access.
+- You have Microsoft Copilot and Copilot Cowork access.
 - Usage-based billing and Copilot Credits are configured for you.
 - You have a qualifying Dynamics 365 license for finance and operations apps.
 - You have access to a supported cloud finance and operations apps environment and have the appropriate finance and operations apps security roles.
