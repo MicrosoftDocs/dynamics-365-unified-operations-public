@@ -1,21 +1,23 @@
 ---
 title: Search for country/region-specific regulatory updates
 description: Access links to planned and released country/region-specific regulatory updates for Microsoft Dynamics 365 Finance for various regions.
-author: AdamTrukawka
+author: liza-golub
 ms.author: johnmichalak
 ms.topic: overview
-ms.date: 03/19/2026
+ms.date: 11/16/2026
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.custom: 
   - bap-template
 ---
 
-# Search for country/region-specific regulatory updates
+# Search for country or region-specific regulatory updates
 
 [!INCLUDE [banner](../../includes/banner.md)]
 
-This article provides links to planned and released country/region-specific regulatory updates for Microsoft Dynamics 365 Finance. You must sign in to Microsoft Dynamics Lifecycle Services (LCS) to access this information.
+This article provides links to planned and released country or region-specific regulatory updates for Microsoft Dynamics 365 Finance. You must sign in to Microsoft Dynamics Lifecycle Services (LCS) to access this information.
+
+For information about planned and released features for Dynamics 365 Finance, see the [AI at Work roadmap](https://aka.ms/AIatWorkRoadmap). For regulatory updates that were released recently, see [Regulatory updates](regulatory-updates.md).
 
 | Country or region    | Issue in LCS Issue search |
 |----------------------|---------------------------|

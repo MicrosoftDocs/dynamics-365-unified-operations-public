@@ -2976,6 +2976,20 @@
                       href: localizations/germany/germany.md
                     - name: Additional acquisition depreciation
                       href: localizations/germany/emea-deu-additional-acquisition-depreciation.md
+                    - name: Depreciation adjustments for additional acquisitions in the second year
+                      href: localizations/germany/de-00002-depreciation.md
+                    - name: VAT declaration
+                      href: localizations/germany/emea-deu-vat-declaration-germany.md
+                    - name: EU sales list
+                      href: localizations/germany/emea-deu-eu-sales-list.md
+                    - name: German Intrastat
+                      href: localizations/germany/emea-deu-intrastat.md
+                    - name: Customer electronic invoices export
+                      href: localizations/germany/emea-deu-cust-e-invoices.md
+                    - name: Use vendor electronic invoices import
+                      href: localizations/germany/emea-deu-e-invoices-import.md
+                    - name: Print a separate label for credit memos that originate from sales
+                      href: localizations/germany/emea-deu-print-separate-label-credit-memo-originating-sales.md
                     - name: Audit file
                       items:
                         - name: German audit file overview
@@ -2988,24 +3002,8 @@
                           href: localizations/germany/customize-german-audit-file-configuration.md
                         - name: Add filters to an audit file configuration
                           href: localizations/germany/emea-deu-gdpdu-data-filtering.md
-                    - name: Depreciation adjustments for additional acquisitions in the second year
-                      href: localizations/germany/de-00002-depreciation.md
-                    - name: VAT declaration
-                      href: localizations/germany/emea-deu-vat-declaration-germany.md
-                    - name: German Intrastat
-                      href: localizations/germany/emea-deu-intrastat.md
-                    - name: Customer electronic invoices export
-                      href: localizations/germany/emea-deu-cust-e-invoices.md
-                    - name: Use vendor electronic invoices import
-                      href: localizations/germany/emea-deu-e-invoices-import.md
                     - name: Journal list report
                       href: localizations/germany/emea-deu-journal-list-report.md
-                    - name: Set up electronic tax declarations
-                      href: ../fin-ops-core/fin-ops/analytics/setup-electronic-tax-declaration-germany.md?context=/dynamics365/context/finance
-                    - name: Print a separate label for credit memos that originate from sales
-                      href: localizations/germany/emea-deu-print-separate-label-credit-memo-originating-sales.md
-                    - name: EU sales list
-                      href: localizations/germany/emea-deu-eu-sales-list.md
                 - name: Guatemala
                   items:
                     - name: Guatemala overview
