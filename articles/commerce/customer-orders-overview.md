@@ -2,14 +2,14 @@
 title: Customer orders in point of sale (POS)
 description: Learn how to create and manage customer orders in Microsoft Dynamics 365 Commerce point of sale (POS).
 author: josaw1
-ms.date: 09/23/2026
+ms.date: 11/18/2026
 ms.topic: how-to
 ms.search.form: RetailFunctionalityProfile 
+ms.author: mirao
 ms.reviewer: mirao
 ms.collection: get-started
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: Global
-ms.author: mirao
 ms.search.validFrom: 2016-02-28
 ms.custom: 
   - bap-template
@@ -90,7 +90,7 @@ Ensure that you configure the POS [screen layout](./pos-screen-layouts.md) to su
 ## Work with customer orders in POS
 
 > [!NOTE]
-> Revenue recognition functionality isn't currently supported for use in Commerce channels (e-commerce, POS, call center). Don't add items configured with revenue recognition to orders created in Commerce channels.
+> Commerce channels (e-commerce, POS, call center) don't currently support revenue recognition functionality. Don't add items configured with revenue recognition to orders created in Commerce channels.
 
 ### Create a customer order for products that are shipped to the customer
 
@@ -188,15 +188,12 @@ The expedite option selected on a customer order is available on the Warehouse M
 
 ### Edit an existing customer order
 
-You can recall and edit retail orders created in either the online or store channel through POS as required.
-
-> [!IMPORTANT]
-> You can't edit all retail orders through the POS application. If the [Enable order completion](./set-up-order-processing-options.md#enable-order-completion) setting is turned on for the call center channel, orders created in a call center channel can't be edited through POS. To ensure correct payment processing, orders that originated in a call center channel and that use **Enable order completion** functionality must be edited through the call center application in headquarters.
+You can recall and edit retail orders that you created in either the online or store channel through POS.
 
 > [!NOTE]
-> Microsoft recommends that you don't edit orders and quotations in POS created by a non-call center user in headquarters. Those orders and quotes don't use the Commerce pricing engine. So, if they're edited in POS, the Commerce pricing engine reprices them.
+> Don't edit orders and quotations in POS that non-call center users create in headquarters. Those orders and quotes don't use the Commerce pricing engine. If you edit them in POS, the Commerce pricing engine reprices them.
 
-Users can edit eligible orders through the POS application even if the order is partially fulfilled. However, orders that are fully invoiced still can't be edited through POS. To enable this capability, turn on the **Edit partially fulfilled orders in Point of Sale** feature in the **Feature management** workspace. If this feature isn't enabled, or if you're using version 10.0.16 or earlier, users can only edit customer orders in POS if the order is fully open. If the feature is enabled, you can limit which stores can edit partially fulfilled orders. You can also configure the option to disable this capability for specific stores through the **Functionality profile** under the **General** tab.
+Users can edit eligible orders through the POS application even if the order is partially fulfilled. However, users can't edit orders that are fully invoiced through POS. To enable this capability, turn on the **Edit partially fulfilled orders in Point of Sale** feature in the **Feature management** workspace. If this feature isn't enabled, or if you're using version 10.0.16 or earlier, users can only edit customer orders in POS if the order is fully open. If the feature is enabled, you can limit which stores can edit partially fulfilled orders. You can also configure the option to disable this capability for specific stores through the **Functionality profile** under the **General** tab.
 
 1. Select **Recall order**.
 1. Use **Search** to enter filters to find the order, and then select **Apply**.
@@ -204,6 +201,13 @@ Users can edit eligible orders through the POS application even if the order is 
 1. From the transaction cart, make any necessary changes to the customer order. Some changes might be prohibited during editing.
 1. Complete the editing process by selecting a payment operation.
 1. To exit the editing process without saving any changes, use the **Void transaction** operation.
+
+### Edit a call center order in POS
+
+Before Commerce version 10.0.50, you couldn't edit call center orders in POS if the [Omnichannel Commerce order payments](dev-itpro/commerce-payments.md) feature was enabled or if the [Enable order completion](set-up-order-processing-options.md#enable-order-completion) setting was turned on for the call center channel. You could only edit such orders through the call center application in headquarters. However, with Commerce version 10.0.50, a feature named **Enable editing of call center orders in Point of Sale with unified payment capture** in the **Feature management** workspace lets you edit call center orders in POS, even when the **Omnichannel Commerce order payments** feature is enabled. After you turn on this feature, while editing the order in POS, you can see any payments taken from the call center in POS and any new payments taken from POS are visible in the call center.
+
+> [!NOTE]
+> The feature **Enable editing of call center orders in Point of Sale with unified payment capture** depends on another feature named **Extensibility to support incremental credit card capture**.
 
 #### Pricing impact when orders are edited
 
@@ -252,7 +256,7 @@ You can create customer orders in POS in either synchronous mode or asynchronous
 To enable creating customer orders in asynchronous mode, follow these steps:
 
 1. In headquarters, go to **Retail and Commerce** > **Channel setup** > **POS profiles** > **Functionality profiles**.
-1. Select the functionality profile that corresponds to the store that you want to enable asynchronous order creation for.
+1. Select the functionality profile that corresponds to the store where you want to enable asynchronous order creation.
 1. On the **General** FastTab, select from the following configuration options:
 
     - **Create customer order in async mode**
