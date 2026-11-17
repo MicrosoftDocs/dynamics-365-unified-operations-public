@@ -45,7 +45,7 @@ Agents can access business skills that you create and manage in finance and oper
 | Channel | Description |
 | --- | --- |
 | **Dynamics 365 ERP MCP server** | Agents that connect to the Dynamics 365 ERP MCP server from an MCP-compatible client, such as Microsoft Copilot Studio, Microsoft Foundry, or Visual Studio Code, can retrieve business skills along with the data and business logic of finance and operations apps. For more information, see [Use Model Context Protocol for finance and operations apps](../copilot-mcp.md). |
-| **Business Applications in Work IQ** | Business Applications in Work IQ brings data, processes, and operational context from business applications into Microsoft 365 Copilot and agents. Copilot experiences and agents that use Business Applications in Work IQ can access business skills from finance and operations apps. For more information, see [Business Applications in Work IQ](/power-apps/maker/data-platform/business-applications-work-iq). |
+| **Business Applications in Work IQ** | Business Applications in Work IQ brings data, processes, and operational context from business applications into Microsoft Copilot and agents. Copilot experiences and agents that use Business Applications in Work IQ can access business skills from finance and operations apps. For more information, see [Business Applications in Work IQ](/power-apps/maker/data-platform/business-applications-work-iq). |
 
 You define a skill once, and every agent that the user works with through these channels can use it. The same sharing settings determine which skills are available to a user in each channel.
 
