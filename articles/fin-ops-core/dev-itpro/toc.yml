@@ -2347,6 +2347,8 @@ items:
         href: ../dev-itpro/copilot/agent-deployment.md
       - name: Agent management
         href: ../fin-ops/copilot/agent-mgmt.md
+      - name: Dynamics 365 ERP in Work IQ (preview)
+        href: copilot/erp-in-work-iq.md
       - name: Dynamics 365 ERP apps plugin for Copilot Cowork
         items:
         - name: Enable the Dynamics 365 ERP apps plugin for Copilot Cowork
@@ -2387,6 +2389,12 @@ items:
           href: copilot/copilot-attachments.md
         - name: Customize the zero prompt experience (preview)
           href: copilot/copilot-zero-prompt.md
+        - name: ERP business skills
+          items:
+          - name: Business skills for Dynamics 365 ERP (preview)
+            href: copilot/mcp/erp-business-skills.md
+          - name: Create built-in business skills (preview)
+            href: copilot/mcp/built-in-business-skills.md
         - name: MCP for finance and operations apps
           items:
           - name: Use Model Context Protocol for finance and operations
