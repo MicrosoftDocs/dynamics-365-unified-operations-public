@@ -4,7 +4,7 @@ description: Learn about features that are either new or changed in the Microsof
 author: twheeloc
 ms.author: twheeloc
 ms.topic: whats-new
-ms.date: 10/23/2026
+ms.date: 11/16/2026
 ms.update-cycle: 1095-days
 ms.custom:   
   - bap-template
@@ -41,6 +41,8 @@ This section contains a table that lists the features included in this release w
 | Tax | Complete and create draft version in batch for Tax calculation (preview) | This feature enables completing a tax feature version and creating a new draft version as a batch job from the Tax calculation feature designer workspace. | Feature management |
 | Tax | Automatically update advanced tax calculation feature version (preview) | When enabled, this feature automatically selects a completed tax feature version as the current version for a legal entity, provided that the version does not introduce any new tax codes. | Feature management |
 | Tax | Manage condition columns in Rate matrix for Tax calculation (preview) | This preview feature enables management of condition columns in the rate matrix for Tax Calculation. Users can add, remove, and reorder condition columns and adjust the execution sequence of rate matrix lines. | Feature management |
+| Regulatory reporting | Direct submission of e-Reporting for France | You can submit e-Reporting files for France directly from Dynamics 365 Finance to the EDICOM platform through the Electronic messages functionality. You set up the connection on the **Web service settings** page. Direct submission is available in the commercial cloud. For more information, see [Electronic reporting of transactions for France (e-Reporting)](../localizations/france/emea-fra-e-reporting.md). | On by default |
+| Globalization Studio | Delete globalization feature versions | You can delete globalization feature versions that you no longer need from the **Globalization Studio** workspace. Before a version is deleted, its usage is checked. Versions that are deployed to the Electronic Invoicing service, selected in the Tax calculation parameters, or referenced elsewhere are kept. | On by default |
 
 ## Feature enhancements included in this release
 
@@ -49,6 +51,7 @@ This section contains a table that lists the enhancements included in this relea
 | Module or feature area | Feature name | More information | Enabled by |
 | --- | --- | --- | --- |
 | General ledger | Account reconciliation agent (Production ready preview) | Starting in Dynamics 365 Finance version 10.0.50, budget control reconciliation is part of the Accounting reconciliation workspace in Dynamics 365 Finance. It uses the Account reconciliation framework to compare the amounts that budget control records for source documents with the amounts that are posted to the general ledger. Each difference is listed as an exception that you can investigate and resolve. Budget to General Ledger reconciliation is applicable only when Budget control and Posting definitions are enabled. | Feature management |
+| Regulatory reporting | Enhancements to e-Reporting for France | Reporting periods follow the declarant's VAT regime, which you select in the new **VAT regime** parameter of the **FR-eRep GenerateReportFile** executable class. For **Standard VAT regime - Monthly**, transactions are reported in ten-day periods and payments monthly. For **Simplified VAT regime - Quarterly**, periods are monthly. For **Franchise in base VAT regime**, periods are two months long. Incoming invoices and their payments are reported in a separate file with issuer role code BY. A date-time stamp makes every document number unique, so updated transactions can be reported again after a report is accepted. The **Regenerate report** action adds new and pending message items and keeps the file name from the ER format. To use these enhancements, import the latest e-Reporting Electronic reporting (ER) configurations. | Feature management |
 
 ## More information
 
