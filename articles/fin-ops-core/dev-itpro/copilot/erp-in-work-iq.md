@@ -18,7 +18,7 @@ ms.search.region: Global
 [!INCLUDE [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Dynamics 365 ERP in Work IQ brings the data, business logic, and business skills of Dynamics 365 finance and operations apps into Work IQ, the intelligence layer for Microsoft 365 Copilot and agents. Work IQ connects how people work, across their email, meetings, chats, and documents, with how the business operates. With Dynamics 365 ERP in Work IQ, finance and operations apps data sits alongside Microsoft 365 productivity data and other business applications in Work IQ. Copilot and agents can answer questions from ERP data and complete governed ERP tasks, so users can get work done without leaving the flow of work.
+Dynamics 365 ERP in Work IQ brings the data, business logic, and business skills of Dynamics 365 finance and operations apps into Work IQ, the intelligence layer for Microsoft Copilot and agents. Work IQ connects how people work, across their email, meetings, chats, and documents, with how the business operates. With Dynamics 365 ERP in Work IQ, finance and operations apps data sits alongside Microsoft 365 productivity data and other business applications in Work IQ. Copilot and agents can answer questions from ERP data and complete governed ERP tasks, so users can get work done without leaving the flow of work.
 
 Dynamics 365 ERP in Work IQ extends [Business Applications in Work IQ](/power-apps/maker/data-platform/business-applications-work-iq) to finance and operations apps.
 
@@ -68,7 +68,7 @@ Before you enable Dynamics 365 ERP in Work IQ, make sure that you meet the follo
 
 ### Step 1: Set up Business Applications in Work IQ
 
-Complete all the setup steps in [Quickstart: Set up Business Applications in Work IQ](/power-platform/admin/business-applications-work-iq/quickstart?toc=/power-platform/business-applications-work-iq). These steps make Business Applications in Work IQ available to your users in Microsoft 365 Copilot and turn on Work IQ for your environment.
+Complete all the setup steps in [Quickstart: Set up Business Applications in Work IQ](/power-platform/admin/business-applications-work-iq/quickstart?toc=/power-platform/business-applications-work-iq). These steps make Business Applications in Work IQ available to your users in Microsoft Copilot and turn on Work IQ for your environment.
 
 ### Step 2: Allow the Work IQ client to access the Dynamics 365 ERP MCP server
 
@@ -130,7 +130,7 @@ The following table describes which capabilities are available in each client su
 | Microsoft Copilot Studio | Supported | Supported | Add the Work IQ MCP server as a tool in the agent. Learn more in [Work IQ in Copilot Studio](/microsoft-copilot-studio/agents-experience/add-work-iq). |
 | GitHub Copilot in Visual Studio Code | Supported | Supported | Configure a remote connection to the Work IQ MCP server. Learn more in [Work IQ MCP overview](/microsoft-365/copilot/extensibility/work-iq/mcp/overview). |
 | Third-party MCP clients, such as Claude | Supported | Supported | Configure a remote connection to the Work IQ MCP server. Learn more in [Work IQ MCP overview](/microsoft-365/copilot/extensibility/work-iq/mcp/overview). |
-| Microsoft 365 Copilot Chat | Supported | Not supported | Enable Work IQ in Copilot Chat. Learn more in [Set up Business Applications in Work IQ](/power-platform/admin/business-applications-work-iq/quickstart). |
+| Microsoft Copilot Chat | Supported | Not supported | Enable Work IQ in Copilot Chat. Learn more in [Set up Business Applications in Work IQ](/power-platform/admin/business-applications-work-iq/quickstart). |
 | Copilot Cowork | Supported | Not supported | Enable Work IQ in Copilot Cowork. Learn more in [Use the Business Applications in Work IQ plugin in Cowork](/microsoft-365/copilot/cowork/cowork-work-iq). |
 
 > [!TIP]

@@ -4,10 +4,11 @@ description: Access answers to frequently asked questions about archiving data i
 author: nandadevrmenon
 ms.author: nrajeevmenon
 ms.topic: faq
-ms.date: 09/15/2026
+ms.date: 11/16/2026
 ms.custom: 
   - bap-template
 ms.reviewer: twheeloc
+ai-usage: ai-assisted
 ---
 
 # Finance and operations apps archive with Microsoft Dataverse long term retention FAQ
@@ -132,6 +133,31 @@ To fix this problem, make sure that for each customized table field, the followi
 
 - You expose the field in the corresponding data entity through a mapped field.
 - The data entity field has the Public access modifier.
+
+### Case 3: Entity doesn't contain a required system field
+
+**Symptom**
+
+Archive job creation for a custom archive scenario fails on every retry. You see the following error message:
+
+>Entity \<EntityName\> does not contain field \<FieldName\> in Dataverse.
+
+In this message, `<EntityName>` is the name of your data entity in lowercase, for example `customworkflowheaderbientity`. `<FieldName>` is the field that's missing in Dataverse, for example `sysdataareaid`.
+
+**Cause**
+
+The archive service expects system fields on the data entity to use fixed names. For example, it expects the `DataAreaId` table column to map to an entity field named `SysDataAreaId`, which appears in Dataverse as `mserp_sysdataareaid`. If the custom entity names the field `DataAreaId`, Dataverse only has `mserp_dataareaid`, and long-term retention configuration fails.
+
+The same error occurs for any other system field that doesn't use its required name. For the full list, see [Required entity field names for system fields](archive-custom.md#required-entity-field-names-for-system-fields).
+
+**Resolution**
+
+1. In Visual Studio, rename the entity field to the required name. For example, rename `DataAreaId` to `SysDataAreaId`.
+2. For company-specific entities, set the entity's `PrimaryCompanyContext` property to `SysDataAreaId`.
+3. Build and deploy the model.
+4. In finance and operations apps, go to **Data management** \> **Framework parameters** \> **Entity settings**, and select **Refresh entity list**.
+5. Refresh the virtual entity in Dataverse. For more information, see [Virtual entity refresh troubleshooting](#case-3-virtual-entity-that-isnt-eligible-for-archival).
+6. Create the archive job again.
 
 ## What can I do if an archive job ends in an **Error** state in the workspace?
 

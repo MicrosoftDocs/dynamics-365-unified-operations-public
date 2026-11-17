@@ -1,12 +1,12 @@
 ---
 title: Suspend and resume a transaction in the point of sale (POS)
-description: Learn how users can suspend in-progress transactions and then resume them later or on a different register using Microsoft Dynamics 365 Commerce.
+description: Learn how users can suspend or pin in-progress transactions, and then resume them later or on a different register using Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 01/27/2026
+ms.date: 11/18/2026
 ms.topic: how-to
+ms.author: anvenkat
 ms.reviewer: mirao
 ms.search.region: Global
-ms.author: anvenkat
 ms.search.validFrom: 2016-11-30
 ms.assetid: 7cd68ecc-cc09-48ab-8cb8-48d5c304effa
 ms.custom: 
@@ -17,9 +17,9 @@ ms.custom:
 
 [!INCLUDE [banner](includes/banner.md)]
 
-This article explains how users can suspend in-progress transactions and then resume them later or on a different register by using Microsoft Dynamics 365 Commerce.
+This article explains how to suspend and resume transactions in Microsoft Dynamics 365 Commerce point of sale (POS), and how to pin suspended transactions for quick access.
 
-Point of sale (POS) users can suspend in-progress transactions, and then resume them later or on a different register. Users often suspend transactions to quickly free up a register for a different task without losing any progress on the current transaction. For example, a store associate starts to process a customer's transaction on a mobile device but must complete it on a register that has a cash drawer. In this case, the store associate can suspend the transaction on the mobile device, and then recall and resume it on a register.
+Store associates can suspend an in-progress transaction to free up a register without losing their progress. For example, an associate can suspend a transaction on a mobile device and then resume it on a register that has a cash drawer. For transactions that associates expect to return to frequently, pinning them provides quick access from a list in POS. Associates can pause one customer's transaction, serve another customer, and then quickly return to the pinned transaction. This capability helps associates manage interruptions and reduces the time spent finding transactions to resume.
 
 ## Configure suspend and resume functionality
 
@@ -29,6 +29,22 @@ Two [POS operations](pos-operations.md) let the POS support suspend and resume s
 
 - 503: Suspend transaction
 - 504: Recall transaction
+
+### Configure pin and resume functionality
+
+Enable transaction pinning so that store associates can quickly access suspended transactions from a pinned transaction list in POS.
+
+1. In Commerce headquarters, open **Feature management**.
+1. Enable the **Pin and Resume Suspended Transactions** feature.
+1. Open the **Button grid designer** for the button grid used by your POS layout.
+1. Configure the **Suspend transaction** button to use the standard suspend behavior, pin the transaction, or prompt the associate to choose between suspending and pinning.
+1. Configure the **Resume transaction** button to use the standard resume behavior, resume a pinned transaction, or prompt the associate to choose between the two options.
+1. Save the button grid changes.
+
+Select the button behavior that best supports your store's workflow. For example, use a prompt when associates need both standard suspension and pinning from the same button.
+
+> [!NOTE]
+> The available choices in POS depend on how the administrator configures the buttons. The procedures in this article describe a layout that prompts associates to select an action.
 
 ### Receipt template
 
@@ -50,7 +66,7 @@ Use the **Void when closing shift** option to require that users either complete
 
 Users who have sufficient privileges and a screen layout that includes the **Suspend transaction** operation can suspend a transaction so that they can recall it later or on a different register.
 
-Users can suspend transactions only if they don't contain the following types of lines:
+Users can suspend or pin transactions only if they don't contain the following types of lines:
 
 - Active payment lines
 - Gift card lines (either to issue a gift card or to add to the gift card balance)
@@ -62,6 +78,38 @@ A suspended transaction doesn't affect sales information or inventory availabili
 Users with sufficient privileges and a layout that includes the **Recall transaction** operation can recall and resume suspended transactions in the same store.
 
 To quickly and easily recall a suspended transaction, scan the barcode on the printed slip while you're viewing the list of transactions from the **Recall transaction** operation.
+
+### Pin a transaction
+
+Pin a transaction when you want to pause it and keep it readily accessible in POS. For example, if a customer leaves the checkout to find another item, you can pin their transaction and serve the next customer.
+
+1. On the transaction page, select **Suspend transaction**.
+1. When prompted to select between suspending and pinning, select **Pin transaction**.
+
+The transaction is suspended and appears in the pinned transaction list. You can start another transaction and return to the pinned transaction when you're ready.
+
+:::image type="content" source="media/suspend-or-pin-transaction.png" alt-text="Screenshot displaying a dialog to suspend or pin a transaction." lightbox="media/suspend-or-pin-transaction.png":::
+
+If the button is configured to pin transactions directly, selecting it pins the transaction without prompting you to choose an action.
+
+### Resume a pinned transaction
+
+Use the pinned transaction list to quickly return to a transaction that you previously pinned.
+
+1. Select **Resume transaction**.
+1. If prompted, choose the option **Recall pinned transaction** to resume a pinned transaction. You can recall pinned transactions by using the left panel where the pinned suspended transactions are displayed.
+1. Select the transaction that you want to resume from the pinned transaction list.
+
+The selected transaction becomes the active transaction. Continue processing it as usual.
+
+:::image type="content" source="media/pinned-transaction.png" alt-text="Screenshot of POS showing multiple pinned transactions available to resume." lightbox="media/pinned-transaction.png":::
+
+If the button is configured to resume pinned transactions directly, selecting it opens the pinned transaction list without prompting you to choose between standard and pinned transactions.
+
+> [!NOTE]
+> The pinned transaction list is local to the POS where the transaction was pinned. Don't rely on that list to find pinned transactions on another register. Use the existing suspend and resume workflow when you need to move a transaction between registers.
+
+Pinning helps you switch between transactions, but only one transaction is active at a time.
 
 ### Considerations for offline mode
 

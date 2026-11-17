@@ -4,10 +4,11 @@ description: Learn about how the archive feature in Microsoft Dynamics 365 finan
 author: git-kiran 
 ms.author: Weijiesa 
 ms.topic: how-to
-ms.date: 07/20/2026
+ms.date: 11/16/2026
 ms.custom:
   - bap-template
 ms.reviewer: twheeloc 
+ai-usage: ai-assisted
 
 ---
 
@@ -105,6 +106,30 @@ Entity naming convention - `[TableName]BiEntity`. For example, `SalesTableBiEnti
 | `Allow Row Version Change Tracking` | Yes | Enables change tracking for incremental sync. |
 | `Auto Create` | Yes | Automatically creates virtual entity in Dataverse. |
 | `Auto Refresh` | Yes | Keeps metadata synchronized with Dataverse. |
+
+#### Required entity field names for system fields
+
+The archive service maps system columns on the live table to fixed field names on the data entity. If your entity uses a different name for any of these fields, long-term retention configuration fails because Dataverse can't find the expected column. Name the entity fields exactly as shown in the following table. The Dataverse column name is `mserp_` followed by the entity field name in lowercase.
+
+| Table column | Required entity field name | Dataverse column name |
+|--------------|----------------------------|-----------------------|
+| `RecId` | `SourceKey` | `mserp_sourcekey` |
+| `DataAreaId` | `SysDataAreaId` | `mserp_sysdataareaid` |
+| `CreatedBy` | `SysCreatedBy` | `mserp_syscreatedby` |
+| `CreatedDateTime` | `CreatedOn` | `mserp_createdon` |
+| `ModifiedBy` | `SysModifiedBy` | `mserp_sysmodifiedby` |
+| `ModifiedDateTime` | `SysModifiedDateTime` | `mserp_sysmodifieddatetime` |
+| `CreatedTransactionId` | `SysCreatedTransactionId` | `mserp_syscreatedtransactionid` |
+| `ModifiedTransactionId` | `SysModifiedTransactionId` | `mserp_sysmodifiedtransactionid` |
+
+All other entity fields must use the same name as the table column.
+
+For company-specific entities, set the entity's `PrimaryCompanyContext` property to `SysDataAreaId`.
+
+> [!TIP]
+> Use one of the Microsoft BI entities listed in [Archive tables reference](archive-tables-reference.md) as a template for your custom entity. These entities already follow these naming rules.
+
+If an entity field is named incorrectly, archive job creation fails with an error. For more information, see [Entity doesn't contain a required system field](archive-faq.md#case-3-entity-doesnt-contain-a-required-system-field).
 
 ### Job contract creator classes
 

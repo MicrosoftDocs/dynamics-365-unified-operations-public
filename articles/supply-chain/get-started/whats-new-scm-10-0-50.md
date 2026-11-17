@@ -6,7 +6,7 @@ ms.author: kamaybac
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: whats-new
-ms.date: 10/12/2026
+ms.date: 11/17/2026
 ms.update-cycle: 1095-days
 ms.custom:
   - bap-template
@@ -29,6 +29,7 @@ The following table lists the features that are included in this release. We mig
 
 | Module or feature area | Feature | More information | Enabled by |
 | --- | --- | --- | --- |
+| Asset Management | Maintenance plan scheduling API | [Schedule maintenance plans by using an API](../asset-management/preventive-and-reactive-maintenance/schedule-maintenance-plans-api.md) | Feature management:<br>*Maintenance plan scheduling API* |
 | Inventory and warehouse management | Approval workflow for CAPA cases | [CAPA case approval workflows](../inventory/capa-approval-workflow.md) | Feature management:<br>*CAPA case approval workflow* |
 | Inventory and warehouse management | Approval workflow for quality orders | [Quality order approval workflows](../inventory/quality-order-approval-workflow.md) | Feature management:<br>*Quality order approval workflow* |
 | Inventory and warehouse management | Batch stability testing | [Batch stability testing](../inventory/quality-batch-stability-testing.md) | Feature management:<br>*(Preview) Batch stability testing* |
@@ -52,7 +53,6 @@ The following table lists the feature enhancements that were added in this relea
 | Module | Feature name | More information |
 |---|---|---|
 | Asset Management | *Financial tags for Asset management forecasts* | Adds support for financial tags on Asset management job type and work order forecasts.<br><br>This feature is new and turned on by default in version 10.0.50. |
-| Asset Management | *Maintenance plan scheduling API* | Adds an API that queues maintenance plan scheduling as a batch job for the maintenance plans, assets, or functional locations that you select. |
 | Inventory and warehouse management | *Financial tags for inventory to deliver* | Enables financial tag propagation for inventory-to-deliver quality and quarantine orders. |
 | Inventory and warehouse management | *Optimize transaction scope for Inventory management reports* | When this feature is enabled, Inventory management SQL Server Reporting Services (SSRS) preprocessing reports generate data outside the default report transaction scope. This approach prevents long-running transactions and reduces transaction log growth when reports process large volumes of data. Temporary report tables remain on the default connection, so extensions to report data providers can continue to read and update them.<br><br>This feature is new and turned on by default in version 10.0.50. |
 | Master Planning | *Support of production pool and production group in planned orders* | Adds the production pool and production group to planned orders. The values are copied from the released product when planned production orders, planned kanbans, planned transfer orders, planned purchase orders, and planned batch orders are created. |
