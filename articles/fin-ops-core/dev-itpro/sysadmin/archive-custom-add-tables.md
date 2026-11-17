@@ -4,7 +4,7 @@ description: Learn how to add related custom tables to existing Microsoft archiv
 author: git-kiran 
 ms.author: Weijiesa 
 ms.topic: how-to
-ms.date: 07/20/2026
+ms.date: 11/16/2026
 ms.custom:
   - bap-template
 ms.reviewer: twheeloc
@@ -234,6 +234,10 @@ To create a finance and operations data entity to enable Dataverse virtual entit
 1. Set field visibility:
    - Set all fields to **Public** visibility.
    - Keep fields that are inaccessible externally as public for archive.
+
+### Name system fields
+
+The archive service expects system fields on the entity to use fixed names. For example, map the `DataAreaId` column to an entity field named `SysDataAreaId`, not `DataAreaId`. For the full list, see [Required entity field names for system fields](archive-custom.md#required-entity-field-names-for-system-fields). If your table is company-specific, set the entity's `PrimaryCompanyContext` property to `SysDataAreaId`.
 
 ### Configure critical entity properties
 

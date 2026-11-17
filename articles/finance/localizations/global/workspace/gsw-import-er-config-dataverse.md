@@ -4,7 +4,7 @@ description: Learn how to import Electronic reporting (ER) configurations from M
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 05/14/2026
+ms.date: 11/17/2026
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -27,11 +27,28 @@ To use this functionality, you need a Dataverse environment that's connected to 
 - [Connect finance and operations apps with a new Microsoft Dataverse instance](../../../../fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv.md)
 - [Connect finance and operations apps with an existing Microsoft Dataverse instance](../../../../fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-existing-dv.md)
 
-You should also add a security role to access tables in Dataverse by following these steps:
+Also, add a security role to access tables in Dataverse by following these steps:
 
 1. Create a new security role as described in [Create or edit a security role](/power-platform/admin/create-edit-security-role).
 1. In that security role, add **Create, Read, Write, Delete, Append, Append to, Assign, Share** permissions for **Organization** to the following tables: **Electronic Reporting Configuration File, Electronic Reporting Configurations Index File, Globalization Feature File, and Globalization Features Index File**. 
 1. Assign the created security role to users as described in [Assign security roles](/power-platform/admin/assign-security-roles).
+
+### Check the Finance and Operations Virtual Entity app
+
+The Dataverse configuration repository requires the **Finance and Operations Virtual Entity** app in the Dataverse environment that's connected to your Dynamics 365 Finance environment. This app includes the components that allow Dynamics 365 Finance to connect to Dataverse. Before you import the Globalization solution, ensure that the app is installed and up to date. This check is especially important if you provisioned your finance and operations environment in the Power Platform admin center.
+
+To check the app, follow these steps:
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Manage**. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select your environment.
+1. In the command bar, expand **Resources**, and then select **Dynamics 365 apps**.
+1. In the list of apps, find **Finance and Operations Virtual Entity**, and review its status.
+
+    - If the app isn't in the list, select **Install app** in the command bar. In the side pane, select **Finance and Operations Virtual Entity**, and then select **Next**. Agree to the terms of service, and then select **Install**. You can also install the app from [Marketplace](https://marketplace.microsoft.com/product/dynamics-crm/mscrm.finance_and_operations_virtual_entity).
+    - If an update is available, select the app, and then select **Update**.
+
+For more information, see [Getting the virtual entity solution](../../../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#get-virtual-entity-solution) and [Manage Dynamics 365 apps](/power-platform/admin/manage-apps#environment-level-view-of-apps).
 
 ## Import the Globalization solution
 
@@ -49,7 +66,9 @@ Import the Globalization solution by following these steps:
 This solution adds a new type of repository for getting ER configurations in Dynamics 365 Finance. This repository is known as the Dataverse configuration repository. It provides the same user interface (UI) that Dataverse provides. Therefore, you can import single and filtered configurations.
 
 > [!NOTE]
-> To use the Dataverse configuration repository, make sure that the **Dataverse repository** feature is enabled in the **Feature management** workspace of the Dynamics 365 Finance app. The feature is enabled by default since the service update 10.0.39. However, it might be disabled in your environment.
+> To use the Dataverse configuration repository, ensure that the **Dataverse repository** feature is enabled in the **Feature management** workspace of the Dynamics 365 Finance app. The feature is enabled by default since the service update 10.0.39. However, it might be disabled in your environment.
+>
+> The Dataverse configuration repository also requires the **Finance and Operations Virtual Entity** app in your Dataverse environment. If the repository doesn't open, or if you receive an error message that states that the request to Dataverse failed, ensure that this app is installed and up to date. For more information, see [Check the Finance and Operations Virtual Entity app](#check-the-finance-and-operations-virtual-entity-app).
 
 ### Open the Dataverse configuration repository
 
@@ -129,7 +148,7 @@ To proactively validate that your environment meets all prerequisites for a conf
 
     If any prerequisite isn't met, the validation results show the specific gaps and provide guidance about how to resolve them.
 
-> [!TIP]
+> [!NOTE]
 > By checking prerequisites before you import, you can avoid failed imports and reduce troubleshooting time, especially in environments where configuration updates are applied regularly.
 
 ### Error messages for failed imports

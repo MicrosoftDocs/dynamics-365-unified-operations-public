@@ -59,4 +59,12 @@ The examples described here show that all counter registrations made on an asset
 
 :::image type="content" source="media/12-preventive-maintenance.png" alt-text="Example where the expected 2,000 km are reached every month." lightbox="media/12-preventive-maintenance.png":::
 
+## Schedule maintenance plans by using an API
+
+You can use an API to schedule maintenance plans. For example, another system can call the API to start maintenance plan scheduling when it needs an up-to-date schedule before the next scheduled run. The API queues the scheduling task as a batch job and returns the batch job ID.
+
+The API is available starting in Supply Chain Management version 10.0.50.
+
+Learn more in [Schedule maintenance plans by using an API](schedule-maintenance-plans-api.md).
+
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

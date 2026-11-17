@@ -664,6 +664,8 @@ items:
           href: asset-management/preventive-and-reactive-maintenance/maintenance-plans.md
         - name: Schedule maintenance plans
           href: asset-management/preventive-and-reactive-maintenance/schedule-maintenance-plans.md
+        - name: Schedule maintenance plans by using an API
+          href: asset-management/preventive-and-reactive-maintenance/schedule-maintenance-plans-api.md
         - name: Maintenance rounds
           href: asset-management/preventive-and-reactive-maintenance/maintenance-rounds.md
         - name: Maintenance schedule
