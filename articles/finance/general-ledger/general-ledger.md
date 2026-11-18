@@ -46,7 +46,7 @@ Every company collects and pays taxes to various tax authorities. The rules and 
 
 #### What's new and in development
 
-Go to the [Microsoft Dynamics 365 release plans](/dynamics365/release-plans/) to see what new features have been planned. 
+Visit the [roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption. 
 
 #### Financial reporting
 Go to the [Financial reporting overview](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md) article for information about financial reports.

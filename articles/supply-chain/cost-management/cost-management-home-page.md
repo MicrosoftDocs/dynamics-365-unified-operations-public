@@ -44,7 +44,7 @@ The [Cost management Power BI content](../../fin-ops-core/dev-itpro/analytics/co
 
 ### What's new and in development
 
-To see what new features are released and what new features are in development, go to the [Dynamics 365 Release Planner](https://releaseplans.microsoft.com/?app=Supply+Chain+Management).
+Visit the [roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.
 
 ### White paper
 

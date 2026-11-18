@@ -30,9 +30,9 @@ CSU Core provides the following benefits:
 - It runs on .NET Core and uses .NET version 6.
 - It's backward compatible with extensions that developers built by using the Commerce software development kit (SDK), .NET Standard 2.0, and Visual Studio 2022.
 
-## CSU Core release plan
+## CSU Core roadmap
 
-As of the Dynamics 365 Commerce version 10.0.22 release, new deployments can use CSU Core. As of the Commerce version 10.0.22 release, all new deployments use it by default. On-premises or CSU self-hosted installers use the same CSU Core platform that is built by using ASP.NET core and that runs on .NET Core.
+As of the Dynamics 365 Commerce version 10.0.22 release, new deployments can use CSU Core. As of the Commerce version 10.0.22 release, all new deployments use it by default. On-premises or CSU self-hosted installers use the same CSU Core platform that is built by using ASP.NET core and that runs on .NET Core. Visit the [roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.
 
 ## Deploy or migrate to CSU Core
 

@@ -33,7 +33,7 @@ The following learning map shows the major concepts and tasks that make up the f
 
 ### What's new and in development
 
-Go to the [Dynamics 365 Release Planner](https://releaseplans.microsoft.com/?app=Supply+Chain+Management) to see what new features are released and what new features are in development.
+Visit the [roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.
 
 ### Inventory accounting
 

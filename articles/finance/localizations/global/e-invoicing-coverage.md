@@ -36,7 +36,7 @@ The next section contains detailed information about out-of-box e-invoicing func
 ## Electronic invoicing coverage
 
 > [!NOTE]
-> Delivery timelines for planned implementations that are mentioned in the following table might change. In addition, projected functionality might not be released at all, for various reasons. For more information, see [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332).
+> Delivery timelines for planned implementations that are mentioned in the following table might change. In addition, projected functionality might not be released at all, for various reasons. For more information, see [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332). Visit the [roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.
 
 | Country/region | Description | Availability |
 |---|---|---|

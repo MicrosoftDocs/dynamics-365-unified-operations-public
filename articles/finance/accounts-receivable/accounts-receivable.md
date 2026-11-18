@@ -76,7 +76,7 @@ Accept different types of payments from customers, such as bills of exchange, ca
 
 #### What's new and in development
 
-Go to the [Microsoft Dynamics 365 Roadmap](/dynamics365/release-plans/) to see what new features are planned. 
+Visit the [roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption. 
 
 #### Blogs
 

@@ -65,7 +65,7 @@ For more information, see [Data, privacy, and security for Azure OpenAI Service]
 
 The underlying technology behind Copilot in site builder uses AI trained on a wide range of sources, but the generated content isn't always factual or suitable. Some suggestions might even include questionable or inappropriate content. You're responsible for reviewing and editing generated suggestions to ensure accuracy and appropriateness.
 
-Inaccurate responses might be returned when users interact with the system in languages other than the supported languages. For information about supported languages, see [Copilot international availability](https://go.microsoft.com/fwlink/?linkid=2263265).
+Inaccurate responses might be returned when users interact with the system in languages other than the supported languages.  
 
 ## What operational factors and settings allow for effective and responsible use of Copilot in site builder?
 

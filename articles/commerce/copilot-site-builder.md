@@ -20,7 +20,7 @@ ms.collection:
 This article describes how to use Microsoft Copilot in site builder to enrich product detail pages for Microsoft Dynamics 365 Commerce e-commerce websites.
 
 > [!NOTE]
-> - Starting in March 2024, Copilot in site builder is generally available for all Dynamics 365 Commerce customers globally. With this release, Copilot in site builder is supported in 23+ locales. For more information, see [Copilot International Availability](https://go.microsoft.com/fwlink/?linkid=2263265).
+> - Starting in March 2024, Copilot in site builder is generally available for all Dynamics 365 Commerce customers globally. With this release, Copilot in site builder is supported in 23+ locales. Visit the [roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.
 > - Depending on the hosting region for your environment, you might need to access Copilot resources that aren't in your hosting region. If so, you can allow your request to be routed to another region by following the instructions in [Enable cross-geo communication for Copilot](#enable-cross-geo-communication-for-copilot). For more information, see [Enable copilots and generative AI features](https://go.microsoft.com/fwlink/?linkid=2263523).
 
 If you run an e-commerce website, you know the importance of engaging and persuasive product enrichment and marketing content that can attract and convert your customers. However, it can be time-consuming and challenging to create such content, especially if you have a large product catalog and a diverse audience. To help with content creation, Microsoft introduced Copilot in site builder, a new AI-powered tool that helps you easily and efficiently generate high-quality content.

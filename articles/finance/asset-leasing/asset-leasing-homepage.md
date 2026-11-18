@@ -79,7 +79,7 @@ This article describes the reports that are available for asset leases.
 
 ### What's new and in development
 
-Go to the [Microsoft Dynamics 365 release plans](/dynamics365/release-plans/) to see what new features have been planned. 
+Visit the [roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption. 
 
 ### Blogs
 

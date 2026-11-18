@@ -32,7 +32,7 @@ Microsoft can't provide a specific solution, because each feature gap is differe
 
 ## Where can I track the progress of the feature gaps being filled?
 
-As for every new feature, customers must watch the Release plan and "What's new or changed" documentation. Each feature is added to these documents, and a note indicates that the feature is required to meet a business requirement that previously required the One voucher functionality.
+Visit the [roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.
 
 ## When the deprecation date is identified, where will it be communicated?
 The existing One voucher functionality won't be deprecated. 

@@ -47,7 +47,7 @@ The following learning map shows the major concepts and tasks that make up the f
 
 ### Roadmaps
 
-Go to the [Dynamics 365 and Microsoft Power Platform release planner](https://releaseplans.microsoft.com/?app=Supply+Chain+Management) to see what new features are released and what new features are in development.
+Visit the [roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.
 
 ### Blogs
 
