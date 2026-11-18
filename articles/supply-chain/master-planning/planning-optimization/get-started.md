@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 ms.topic: how-to
-ms.date: 05/05/2026
+ms.date: 11/18/2026
 ms.custom:
   - bap-template
 ai-usage: ai-assisted
@@ -32,7 +32,7 @@ You can run master planning using your current Supply Chain Management licenses.
 
 ## <a name="install-enable-po"></a>Install and enable Planning Optimization
 
-To use Planning Optimization, make sure your system has all the prerequisites in place. Then, enable its configuration key and install the Planning Optimization Add-in for Dynamics 365 Supply Chain Management.
+To use Planning Optimization, ensure your system has all the prerequisites in place. Then, enable its configuration key and install the Planning Optimization Add-in for Dynamics 365 Supply Chain Management.
 
 ### Prerequisites
 
@@ -41,24 +41,24 @@ Before you install the Planning Optimization Add-in, make sure the following pre
 - You must be running Supply Chain Management on a Lifecycle Services enabled high-availability environment, tier 2 or higher (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.23 or later. If you try to install the add-in on a OneBox environment, the installation won't complete and you'll need to cancel the installation.
 
     > [!IMPORTANT]
-    > Planning Optimization can't be installed on a development (OneBox) environment. It requires a Lifecycle Services–enabled, high-availability environment, tier 2 or higher. If you need to troubleshoot installation issues, see [Troubleshoot Planning Optimization](planning-optimization-trouble-shooting.md).
+    > You can't install Planning Optimization on a development (OneBox) environment. It requires a Lifecycle Services–enabled, high-availability environment, tier 2 or higher. If you need to troubleshoot installation issues, see [Troubleshoot Planning Optimization](planning-optimization-trouble-shooting.md).
 
 - Your system must be set up for Power Platform integration. Learn more in [Microsoft Power Platform integration with finance and operations apps](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
 
-- Your Microsoft Entra account must have a Supply Chain Management licensed assigned to it. As mentioned previously, you don't need an extra license for Planning Optimization, but you do need a Supply Chain Management license to install it. If you get an error message regarding licensing while installing the Planning Optimization Add-in, check your licenses as described in [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users).
+- Your Microsoft Entra account must have a Supply Chain Management license assigned to it. As mentioned previously, you don't need an extra license for Planning Optimization, but you do need a Supply Chain Management license to install it. If you get an error message regarding licensing while installing the Planning Optimization Add-in, check your licenses as described in [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 - You must sign in to your Power Platform environment using an account with administrator privileges and an access mode of *Read-Write*. If you get an error message regarding missing user permissions while installing the Planning Optimization Add-in, follow these steps:
     1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
     1. Open the environment where you want to install the add-in.
     1. Go to **Settings** > **Users** and select your user account from the list to see its details.
     1. From your user details page, select the **Client Access License (CAL) information** link.
-    1. On the **Client Access License (CAL) information** page, make sure that **Access Mode** is set to *Read-Write*.
+    1. On the **Client Access License (CAL) information** page, ensure that **Access Mode** is set to *Read-Write*.
   
     For more information about licenses and access modes for the Power Platform, see [Create a Power Platform admin account](/power-platform/admin/global-service-administrators-can-administer-without-license#create-a-power-platform-admin-account).
 
 ### Enable the Planning Optimization configuration key
 
-To use Planning Optimization, you must enable its configuration key. follow these steps:
+To use Planning Optimization, you must enable its configuration key. Follow these steps:
 
 1. Put your system into maintenance mode, as described in [Maintenance mode](../../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 1. Go to **System administration** > **Setup** > **License configuration**.
@@ -68,6 +68,9 @@ To use Planning Optimization, you must enable its configuration key. follow thes
 ### Install the Planning Optimization Add-in
 
 You must install the add-in from your Lifecycle Services project and then turn on the Planning Optimization functionality from the Supply Chain Management user interface.
+
+> [!TIP]
+> If you need to reinstall the app in an environment where it was previously installed, follow the instructions in [Reinstall the Planning Optimization Add-in](planning-optimization-trouble-shooting.md#reinstall-the-planning-optimization-add-in).
 
 To install the Planning Optimization Add-in:
 

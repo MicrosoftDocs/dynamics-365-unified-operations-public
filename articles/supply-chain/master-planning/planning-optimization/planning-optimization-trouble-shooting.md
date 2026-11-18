@@ -6,7 +6,7 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ReqCreatePlanWorkspace
 ms.topic: troubleshooting-general
-ms.date: 10/15/2026
+ms.date: 11/18/2026
 ms.custom:
   - bap-template
 ai-usage: ai-assisted
@@ -319,13 +319,27 @@ If you recently performed a database refresh on your environment, the Planning O
 
 A database refresh is environment-specific, and it resets the Planning Optimization service binding. This is a known behavior.
 
-**Fix**: Uninstall and reinstall the Planning Optimization Add-in for your environment from the admin center. After reinstallation, verify that the connection status shows *Connected* on the **Planning Optimization parameters** page. Learn more in [Get started with master planning](get-started.md).
+**Fix**: [Reinstall the Planning Optimization Add-in](#reinstall-the-planning-optimization-add-in) in the environment where you performed the database refresh.
 
 ### Cause 3: Temporary connectivity issue
 
 Intermittent network or service connectivity problems between your environment and the Planning Optimization service can cause this error.
 
-**Fix**: Retry the master planning run. If the error occurs repeatedly, check the **Planning Optimization parameters** page to verify the connection status. If the connection status shows *Not connected*, try reinstalling the add-in. If the status shows *Connected* and the error persists, contact Microsoft Support.
+**Fix**: Retry the master planning run. If the error occurs repeatedly, check the **Planning Optimization parameters** page to verify the connection status. If the connection status shows *Not connected*, try to [reinstall the Planning Optimization Add-in](#reinstall-the-planning-optimization-add-in). If the status shows *Connected* and the error persists, contact Microsoft Support.
+
+## Reinstall the Planning Optimization Add-in
+
+To reinstall the add-in, delete its anchor solution in the Power Apps maker portal, then install the Dynamics 365 app again in the same environment.
+
+1. Sign in to the [Power Apps maker portal](https://make.powerapps.com).
+1. In the environment selector in the upper-right corner, select the affected environment. Before deleting the solution, verify that you selected the correct environment.
+1. In the navigation pane, select **Solutions**.
+1. Find the solution with a **Display name** of *MasterPlanning Anchor Solution* and a **Name** of *msdyn_MasterPlanningAnchor*. Open its menu and select **Delete**.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), go to **Manage** > **Environments**, and select the same environment.
+1. On the command bar, select **Resources** > **Dynamics 365 apps**.
+1. On the command bar, select **Install app**.
+1. In the **Install Dynamics 365 apps** dialog, select *Planning Optimization Add-in for Dynamics 365 SCM*, and then select **Next**. Accept the terms of service and select **Install**.
+1. After the installation completes, go to **Master planning** > **Setup** > **Planning Optimization parameters** in Supply Chain Management. On the **General** tab, verify that **Connection status** shows *Connected*.
 
 ## Company information tab is blank on the Planning Optimization parameters page
 
