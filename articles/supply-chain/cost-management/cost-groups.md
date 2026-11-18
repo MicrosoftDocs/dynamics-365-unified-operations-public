@@ -17,7 +17,7 @@ ms.custom:
 
 Cost groups provide the basis for segmenting and analyzing cost contributions in a manufactured item’s calculated cost, such as the cost contributions for material, labor, and overhead. Cost group segmentation has several synonyms within manufacturing environments, such as cost breakdown, cost decomposition, or cost classification.
 
-Cost group segmentation has several synonyms within manufacturing environments, such as cost breakdown, cost decomposition, or cost classification. Cost group segmentation can serve several purposes. Here are some examples:
+Here are some examples:
 
 - It can segment costs for different types of material, such as ingredients and packaging material for a canned goods product, based on the cost groups that are assigned to items.
 - It can segment costs for different types of operations resources, such as different types of labor or machines, based on the cost groups that are assigned to cost categories that are related to operations resources and routing operations.
