@@ -4490,7 +4490,7 @@ items:
           href: inventory/warehouse-template.md
         - name: Warehouse groups
           href: warehousing/warehouse-groups.md
-        - name: Warehouse spatial locations (preview)
+        - name: Warehouse spatial locations
           items:
           - name: Warehouse spatial location overview
             href: warehousing/spatial-location-overview.md
