@@ -1,8 +1,8 @@
 ---
 title: Define configuration route
 description: Learn about defining a configuration route that determines the sequence in which the configuration groups will be presented.
-author: sgmsft
-ms.author: shwgarg
+author: Amitrive
+ms.author: amitrive
 ms.custom: bap-template
 ms.topic: how-to
 ms.date: 11/10/2022

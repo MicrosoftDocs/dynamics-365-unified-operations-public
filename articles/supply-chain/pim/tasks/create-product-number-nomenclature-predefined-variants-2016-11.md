@@ -1,8 +1,8 @@
 --- 
 title: Create a product number nomenclature for predefined product variants
 description: Learn how to set up a product number nomenclature for predefined product variants, and how you assign it to the appropriate product dimension group.
-author: sgmsft
-ms.author: shwgarg
+author: Amitrive
+ms.author: amitrive
 ms.topic: how-to
 ms.date: 08/20/2019
 ms.custom:

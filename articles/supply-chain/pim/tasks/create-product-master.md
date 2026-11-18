@@ -1,8 +1,8 @@
 ---
 title: Create a product master
 description: Learn how to create a product master for the predefined variants, including a step-by-step process using the USMF demo data company. 
-author: sgmsft
-ms.author: shwgarg
+author: Amitrive
+ms.author: amitrive
 ms.reviewer: kamaybac
 ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductInventoryDimensionGroups
 ms.topic: how-to

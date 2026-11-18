@@ -1,8 +1,8 @@
 ---
 title: Hazardous materials in products, orders, shipments, and loads
 description: Learn how to set hazardous material properties for released products and how to include hazardous materials in a sales order, shipment, or load.
-author: sgmsft
-ms.author: shwgarg
+author: Amitrive
+ms.author: amitrive
 ms.topic: article
 ms.date: 05/28/2026
 ms.custom: bap-template

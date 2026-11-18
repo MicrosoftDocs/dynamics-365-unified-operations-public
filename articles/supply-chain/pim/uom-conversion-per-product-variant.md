@@ -1,8 +1,8 @@
 ---
 title: Unit of measure conversion per product variant
 description: Learn how to set up unit of measure conversions for product variants, including outlines on setting up a product for unit conversion per variant.
-author: sgmsft
-ms.author: shwgarg
+author: Amitrive
+ms.author: amitrive
 ms.topic: article
 ms.date: 05/20/2026
 ms.custom:

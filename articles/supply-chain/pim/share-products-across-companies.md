@@ -1,8 +1,8 @@
 ---
 title: Cross-company product sharing
 description: Learn how to share released-product data across companies to reduce the volume of data that must be maintained and simplify maintaining product master data.
-author: sgmsft
-ms.author: shwgarg
+author: Amitrive
+ms.author: amitrive
 ms.topic: how-to
 ms.date: 06/22/2026
 ms.custom: bap-template

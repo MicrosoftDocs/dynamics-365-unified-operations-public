@@ -1,8 +1,8 @@
 ---
 title: Create predefined product variants
 description: Learn how to create predefined product variants for a product master, how to work with improved variant suggestions, and assign item sales tax groups.
-author: sgmsft
-ms.author: shwgarg
+author: Amitrive
+ms.author: amitrive
 ms.reviewer: kamaybac
 ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductMasterDimension, EcoResProductVariants, EcoResProductVariantSuggestions, EcoResProductVariantsPendingReleaseFormPart, EcoResProductVariantSuggestionsEnhanced
 ms.topic: how-to

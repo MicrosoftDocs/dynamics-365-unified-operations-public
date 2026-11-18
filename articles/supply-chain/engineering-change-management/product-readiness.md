@@ -1,8 +1,8 @@
 ---
 title: Product readiness
 description: Learn how you can use readiness checks to ensure that the required master data is completed for a product before it's used in transactions.
-author: sgmsft
-ms.author: shwgarg
+author: Amitrive
+ms.author: amitrive
 ms.topic: article
 ms.date: 09/28/2020
 ms.custom:

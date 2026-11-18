@@ -1,8 +1,8 @@
 --- 
 title: Create a released product for a single company
 description: Learn how to create a single released product in the context of a single legal unit, including a step-by-step process for creating released products. 
-author: sgmsft
-ms.author: shwgarg
+author: Amitrive
+ms.author: amitrive
 ms.topic: how-to
 ms.date: 05/27/2026
 ms.custom: 

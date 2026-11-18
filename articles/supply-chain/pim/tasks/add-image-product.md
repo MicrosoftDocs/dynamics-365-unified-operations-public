@@ -1,8 +1,8 @@
 --- 
 title: Add an image to a product
 description: Learn how to add an image to a product.
-author: sgmsft
-ms.author: shwgarg
+author: Amitrive
+ms.author: amitrive
 ms.topic: how-to
 ms.date: 06/25/2025
 ms.custom:

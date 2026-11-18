@@ -1,8 +1,8 @@
 ---
 title: Hazardous materials overview
 description: Access an overview of features that are related to handling and documenting hazardous materials during product information management and warehouse management.
-author: sgmsft
-ms.author: shwgarg
+author: Amitrive
+ms.author: amitrive
 ms.topic: overview
 ms.date: 05/21/2026
 ms.reviewer: kamaybac

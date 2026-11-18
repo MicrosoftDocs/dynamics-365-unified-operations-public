@@ -1,8 +1,8 @@
 ---
 title: Create a bill of materials for a dimension-based product master
 description: Learn how to create a bill of materials for a dimension-based product master, including an outline and step-by-step process for selecting the product.
-author: sgmsft
-ms.author: shwgarg
+author: Amitrive
+ms.author: amitrive
 ms.topic: how-to
 ms.date: 11/10/2022
 ms.custom: bap-template

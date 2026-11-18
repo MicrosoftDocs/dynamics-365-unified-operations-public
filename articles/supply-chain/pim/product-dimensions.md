@@ -1,8 +1,8 @@
 ---
 title: Product dimensions
 description: Learn about product dimensions, with outlines on product variants, setting up product dimensions, version product dimensions, and examples.
-author: sgmsft
-ms.author: shwgarg
+author: Amitrive
+ms.author: amitrive
 ms.reviewer: kamaybac
 ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle, EcoResVersionNameLookup, RetailStyleGroupTable
 ms.topic: how-to

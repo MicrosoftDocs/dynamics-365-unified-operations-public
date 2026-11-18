@@ -1,8 +1,8 @@
 ---
 title: Release product structures
 description: Learn how you can release complete product structures in addition to releasing products together with their engineering versions.
-author: sgmsft
-ms.author: shwgarg
+author: Amitrive
+ms.author: amitrive
 ms.topic: article
 ms.date: 05/21/2026
 ms.custom:

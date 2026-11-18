@@ -1,8 +1,8 @@
 --- 
 title: Create a product configuration model
 description: Learn how to create a product configuration model and enter basic information such as attributes and subcomponents, including a step-by-step process. 
-author: sgmsft
-ms.author: shwgarg
+author: Amitrive
+ms.author: amitrive
 ms.topic: how-to
 ms.date: 08/29/2018
 ms.custom:
