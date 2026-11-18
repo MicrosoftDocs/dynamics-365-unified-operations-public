@@ -33,7 +33,7 @@ You can set up and enter acquisition information for fixed assets, and then mana
 
 #### What's new and in development
 
-Go to the [Microsoft Dynamics 365 release plans](/dynamics365/release-plans/) to see what new features have been planned. 
+Visit the [roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption. 
 
 #### Blogs
 

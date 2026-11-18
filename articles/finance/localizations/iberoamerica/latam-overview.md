@@ -39,7 +39,7 @@ Localization capabilities are available for multiple Latin American countries or
 | Peru | [Overview](ltm-peru_overview.md) |
 | Venezuela | [Overview](venezuela.md) |
 
-For Argentina, visit [Release plans for Dynamics, Power Platform, and Cloud for Industry](/dynamics365/release-plans/).  Delivery timelines can change, and projected functionality might not be released. For more information, see [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332).
+For Argentina, visit [the roadmap](https://aka.ms/AIatWorkroadmap).  Delivery timelines can change, and projected functionality might not be released. For more information, see [Microsoft policy](https://go.microsoft.com/fwlink/p/?linkid=2007332).
 
 ## Cross-LATAM features
 

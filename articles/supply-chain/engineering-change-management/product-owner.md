@@ -1,8 +1,8 @@
 ---
 title: Product owners
 description: Learn about product owner, including overviews and step-by-step processes for creating product owner groups and assigning a product owner to a product.
-author: sgmsft
-ms.author: shwgarg
+author: Amitrive
+ms.author: amitrive
 ms.topic: article
 ms.date: 09/28/2020
 ms.custom:

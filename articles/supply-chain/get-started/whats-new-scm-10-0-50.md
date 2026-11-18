@@ -48,7 +48,7 @@ The following table lists the features that are included in this release. We mig
 
 ## Feature enhancements added in this release
 
-The following table lists the feature enhancements that were added in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they're only enhancements, they're not listed in the [AI at Work Roadmap](https://www.microsoft.com/microsoft-365/roadmap) and might not be mentioned elsewhere in the documentation. To ensure that these enhancements don't conflict with your existing customizations or preferences, most of these features are turned off by default. To use them, turn them on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) unless otherwise noted.
+The following table lists the feature enhancements that were added in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they're only enhancements, they're not listed in the [roadmap](https://www.microsoft.com/microsoft-365/roadmap) and might not be mentioned elsewhere in the documentation. To ensure that these enhancements don't conflict with your existing customizations or preferences, most of these features are turned off by default. To use them, turn them on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) unless otherwise noted.
 
 | Module | Feature name | More information |
 |---|---|---|
@@ -120,11 +120,11 @@ Demand planning in Dynamics 365 Supply Chain Management is updated regularly fol
 
 Microsoft updates Planning Optimization monthly. However, based on business requirements, the product team occasionally releases other updates between the scheduled releases. For information about the latest versions and features, go to [Planning Optimization release process and release history](../master-planning/planning-optimization/release-process.md).
 
-### AI at Work Roadmap
+### roadmap
 
 Want to know about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [AI at Work Roadmap](https://www.microsoft.com/microsoft-365/roadmap). It captures all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [roadmap](https://www.microsoft.com/microsoft-365/roadmap). It captures all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated Supply Chain Management features
 

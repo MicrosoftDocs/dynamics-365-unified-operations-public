@@ -1,8 +1,8 @@
 ---
 title: Product lifecycle states
 description: Learn how to create and use lifecycle states, which document the lifecycle state of a released product or product variant with an outline on creating new lifecycle states.
-author: sgmsft
-ms.author: shwgarg
+author: Amitrive
+ms.author: amitrive
 ms.reviewer: kamaybac
 ms.search.form: EcoResProductLifecycleState, EcoResReleasedProductLifecycleStateChanges
 ms.topic: overview

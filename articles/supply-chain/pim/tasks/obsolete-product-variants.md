@@ -1,8 +1,8 @@
 --- 
 title: Find obsolete released products or variants 
 description: Learn how to find obsolete released products or product variants and how to associate a product lifecycle state to the obsolete products. 
-author: sgmsft
-ms.author: shwgarg
+author: Amitrive
+ms.author: amitrive
 ms.topic: how-to
 ms.date: 12/10/2025
 ms.custom:

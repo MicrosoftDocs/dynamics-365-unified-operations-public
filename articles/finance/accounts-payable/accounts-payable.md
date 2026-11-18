@@ -110,7 +110,7 @@ The following topics provide information about settlements. Settlement is the pr
 
 #### What's new and in development
 
-Go to the [Microsoft Dynamics 365 release plans](/dynamics365/release-plans/) to see what new features are planned. 
+Visit the [roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption. 
 
 #### Blogs
 

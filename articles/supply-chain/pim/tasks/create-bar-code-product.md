@@ -1,8 +1,8 @@
 ---
 title: Create a bar code for a product
 description: Learn how to manually create a bar code using the item number M0001 as an example, including a step-by-step process using the USMF demo data company. 
-author: sgmsft
-ms.author: shwgarg
+author: Amitrive
+ms.author: amitrive
 ms.reviewer: kamaybac
 ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, InventItemBarcode, InventItemBarcodeLookup
 ms.topic: how-to

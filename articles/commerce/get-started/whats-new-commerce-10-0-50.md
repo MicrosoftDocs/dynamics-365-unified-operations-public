@@ -20,7 +20,7 @@ ms.dyn365.ops.version: 10.0.50
 # What's new or changed in Dynamics 365 Commerce 10.0.50 (October 2026)
 
 > [!IMPORTANT]
-> Release plans won't be published starting in September 2026. New Dynamics 365, Power Platform, and Dataverse capabilities will be published to the AI at Work roadmap beginning in September 2026. Existing release plans remain available for historical reference until further notice. For more information, see [Dynamics 365 and Power Platform: Release Plans retirement](/dynamics365/release-plans/).
+> Release plans won't be published starting in September 2026. New Dynamics 365, Power Platform, and Dataverse capabilities will be published to the roadmap beginning in September 2026. Existing release plans remain available for historical reference until further notice. For more information, see [Dynamics 365 and Power Platform: Release Plans retirement](/dynamics365/release-plans/).
 
 This article lists features that are new or changed in Microsoft Dynamics 365 Commerce preview version 10.0.50. This version has a build number of 10.0.2919 and is available on the following schedule:
 

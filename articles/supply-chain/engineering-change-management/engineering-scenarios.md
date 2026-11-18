@@ -1,8 +1,8 @@
 ---
 title: Engineering change management feature walkthrough
 description: Learn about an end-to-end walkthrough that shows how to work with engineering change management with an outline on setting up for the sample scenario.
-author: sgmsft
-ms.author: shwgarg
+author: Amitrive
+ms.author: amitrive
 ms.reviewer: kamaybac
 ms.search.form: EngChgEngineeringOrganization, EcoResProductDimensionGroup, EcoResProductLifecycleState, EngChgProductVersionNumberRule, EngChgProductReleasePolicy, EngChgProductCategoryDetails, EngChgProductParameters, EcoResProductDetailsExtended, SalesTableListPage, SalesTable, EngChgEcmRequestListPage, EngChgEcmRequestDetails, EngChgEcmHeaderDetails
 ms.topic: how-to

@@ -1,8 +1,8 @@
 ---
 title: Engineering companies and data ownership rules
 description: Learn how you can use one or more engineering companies to ensure that the master data for products is centrally created and maintained.
-author: sgmsft
-ms.author: shwgarg
+author: Amitrive
+ms.author: amitrive
 ms.topic: concept-article
 ms.date: 09/28/2020
 ms.custom: 

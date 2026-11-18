@@ -50,7 +50,7 @@ The transition for each company depends on that company's current configuration 
 - Organizations that use Dynamics 365 Human Resources have access to tooling that they can use to complete the infrastructure merge. Microsoft works with customers on the transition to help prevent any interruption in service. Customers have 12 months to make the transition, starting from the time when the migration tooling becomes available.
 - Organizations that use both Dynamics 365 Human Resources and the **Human Resources** module can move their stand-alone Human Resources infrastructure onto the finance and operations infrastructure. Another option is to use the merge tooling to bring the environments into a single environment. There's no requirement or timeframe for merging the two environments.
 
-For up-to-date information, regularly check the [Release plans](/dynamics365/release-plans/).
+Visit the [roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.
 
 ## Will customers still need custom integrations between Dynamics 365 Human Resources and the Human Resources module?
 

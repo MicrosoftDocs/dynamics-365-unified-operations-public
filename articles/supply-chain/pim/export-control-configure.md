@@ -1,8 +1,8 @@
 ---
 title: Enable and configure advanced export management
 description: Learn how to enable and configure advanced export management in Microsoft Dynamics 365 Supply Chain Management, including prerequisites.
-author: sgmsft
-ms.author: shwgarg
+author: Amitrive
+ms.author: amitrive
 ms.topic: how-to
 ms.date: 02/27/2025
 ms.custom: bap-template

@@ -19,7 +19,7 @@ This article provides an overview of help articles and other resources for Suppl
 
 ## What's new and in development
 
-Go to [Release plans for Dynamics 365, Power Platform, and Cloud for Industry](/dynamics365/release-plans/) to see what new features are released and what new features are in development.
+Visit the [roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.
 
 ## Core concepts and tasks
 

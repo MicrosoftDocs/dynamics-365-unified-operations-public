@@ -1,8 +1,8 @@
 ---
 title: Product configuration overview
 description: The need to configure products to meet special requirements is becoming the rule rather than the exception. Learn about product configuration.
-author: sgmsft
-ms.author: shwgarg
+author: Amitrive
+ms.author: amitrive
 ms.reviewer: kamaybac
 ms.search.form: PCProductConfigurationModelDetails, ConfigPartOf
 ms.topic: overview

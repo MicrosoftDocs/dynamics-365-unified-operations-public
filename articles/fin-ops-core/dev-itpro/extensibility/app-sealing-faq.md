@@ -44,7 +44,7 @@ Extension packages enable better performance at design time, faster build automa
 
 ## What is Microsoft working on to support this move?
 
-The product team is working on several areas to improve the extensibility of the product. This work ranges from platform changes that have broad impact to refactored application code that provides additional hook points. For details, see the Operations Extensibility group on Microsoft Viva Engage and the product release plans.
+The product team is working on several areas to improve the extensibility of the product. This work ranges from platform changes that have broad impact to refactored application code that provides additional hook points. For details, see the Operations Extensibility group on Microsoft Viva Engage and the [roadmap](https://aka.ms/AIatWorkroadmap).
 
 ## After the application is sealed, what should customers do in a critical situation if they must make a quick change?
 

@@ -1,8 +1,8 @@
 ---
 title: Engineering change management overview
 description: Access an overview of engineering change management, which helps you plan and manage product versioning, and manage product lifecycles and engineering changes.
-author: sgmsft
-ms.author: shwgarg
+author: Amitrive
+ms.author: amitrive
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: overview

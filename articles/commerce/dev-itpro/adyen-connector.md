@@ -194,7 +194,7 @@ The following table lists the current Dynamics 365 Commerce Payment Connector fo
 
 #### Supported card present countries/regions
 
-The following countries or regions have Commerce components available and card present support from Adyen. For current international availability of Commerce, visit the [International availability page](/dynamics365/get-started/availability).
+The following countries or regions have Commerce components available and card present support from Adyen. Learn about data residency at [Microsoft Dynamics 365 and Power Platform data residency documentation](/dynamics365/get-started/availability).
 
 | Country or region | Supported |
 | -------------- | :-------: |
@@ -234,7 +234,7 @@ The following countries or regions have Commerce components available and card p
 
 #### Supported card-not-present countries or regions
 
-Adyen supports the following countries or regions for card-not-present transactions. For details about support for a specific country or region, [contact Adyen](https://www.adyen.com/contact/sales). For information on the current international availability of Commerce, see [International availability page](/dynamics365/get-started/availability).
+Adyen supports the following countries or regions for card-not-present transactions. For details about support for a specific country or region, [contact Adyen](https://www.adyen.com/contact/sales).  
 
 | Country or region |
 | -------------- |
@@ -310,21 +310,21 @@ Adyen supports the following countries or regions for card-not-present transacti
 
 #### Supported Dynamics 365 payment features
 
-The following table shows the set of features that the Dynamics 365 Payment Connector for Adyen supports. These features use enhancements that were introduced in the payments SDK and some components in December 2018. They aren't exclusive to the Dynamics 365 Payment Connector for Adyen. For more information about how to uptake these enhancements for a different payment connector, see [Create an end-to-end payment integration for a payment terminal](/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension).
+The following table shows the set of features that the Dynamics 365 Payment Connector for Adyen supports. These features use enhancements that were introduced in the payments SDK and some components in December 2018. They aren't exclusive to the Dynamics 365 Payment Connector for Adyen. For more information about how to uptake these enhancements for a different payment connector, see [Create an end-to-end payment integration for a payment terminal](end-to-end-payment-extension.md).
 
 | Scheme | Card present | Card not present |
 | ------ | :----------: | :--------------: |
-| [Cash Out Gift Card Balance](/dynamics365/unified-operations/retail/dev-itpro/gift-card-cash-out) | ✔ | |
-| [Duplicate Payment Protection](/dynamics365/unified-operations/retail/duplicate-payment-protection) | ✔ | |
+| [Cash Out Gift Card Balance](gift-card-cash-out.md) | ✔ | |
+| [Duplicate Payment Protection](duplicate-payment-protection.md) | ✔ | |
 | Omni Channel Tokenization | ✔ | ✔ |
 | Linked Refunds | ✔ | ✔ |
-| [Save online payments](../dev-itpro/adyen-connector-listPI.md) | | ✔ |
-| [External gift cards for call center and e-commerce](./gift-card.md) | ✔ | |
-| [SCA payment redirect](../adyen_redirect.md) | | ✔ |
+| [Save online payments](adyen-connector-listPI.md) | | ✔ |
+| [External gift cards for call center and e-commerce](gift-card.md) | ✔ | |
+| [SCA payment redirect](adyen_redirect.md) | | ✔ |
 | [Dedicated payment terminals and prompts for a printer and cash drawer](../pos-multi-hws.md) | ✔ | |
 | [SDK-level tipping support through the Adyen connector](tipping.md) | ✔ | |
 | [Incremental capture for order invoicing](incremental-capture.md) | | ✔ |
-| [Wallet Payments](../wallets.md) | | ✔ |
+| [Wallet Payments](wallets.md) | | ✔ |
 | [Google Pay with Adyen](google-pay-adyen.md) | | ✔ |
 | Adyen risk management for online payments | | ✔(Starting with 10.0.43) |
 
@@ -337,6 +337,6 @@ For information on signing up for and configuring the Dynamics 365 Payment Conne
 - [Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md)
 - [Dynamics 365 Payment Connector for Adyen FAQ](adyen-connector-faq.md)
 - [Troubleshoot Dynamics 365 Payment Connector for Adyen](adyen-connector-troubleshoot.md)
-- [Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
+- [Payments FAQ](payments-retail.md)
 
 [!INCLUDE [footer-include](../../includes/footer-banner.md)]

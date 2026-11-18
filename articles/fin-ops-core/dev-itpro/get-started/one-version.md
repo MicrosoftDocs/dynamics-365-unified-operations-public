@@ -353,7 +353,7 @@ For every preview and general availability release, a searchable summary list of
 
 ### What options are available to help minimize the impact on my Commerce cloud components?
 
-Commerce cloud components require the same downtime as Dynamics 365 headquarters. In an upcoming release, the Retail Cloud Scale Unit (RCSU) is available to reduce and further schedule updates to your deployment. For more information about RCSU, see the published release information on our [documentation](/business-applications-release-notes/October18/dynamics365-retail/planned-features) and [release notes](/business-applications-release-notes/?panel=products1#pivot=products) sites.
+Commerce cloud components require the same downtime as Dynamics 365 headquarters. The Commerce Scale Unit (CSU) can help you reduce and further schedule updates to your deployment. Learn more at [Commerce Scale Unit (self-hosted)](../../../commerce/dev-itpro/retail-store-system-begin.md).
 
 ### Will there be options to take individual hotfixes for my Commerce solution components?
 

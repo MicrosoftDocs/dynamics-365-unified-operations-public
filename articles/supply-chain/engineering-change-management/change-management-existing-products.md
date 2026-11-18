@@ -1,8 +1,8 @@
 ---
 title: Enable change management on existing products
 description: Learn how you can enable change management for existing products, with a description on cases where your ability to enable change management is limited.
-author: sgmsft
-ms.author: shwgarg
+author: Amitrive
+ms.author: amitrive
 ms.topic: how-to
 ms.date: 02/05/2021
 ms.custom: 

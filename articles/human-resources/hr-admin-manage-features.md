@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Human Resources
 
 The **Feature management** workspace provides a list of features delivered in each release. By default, new features are turned off. Use the workspace to turn them on and view the documentation for them. For more information about Feature management, see [Feature management overview](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-For more information about new features in Human Resources, see [What's new in Human Resources](hr-admin-whats-new.md) and [Dynamics 365 and Power Platform Release Plan](/dynamics365/release-plans/?panel=products1#pivot=products).
+Visit the [roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption. Find more information about new features in Human Resources at [What's new in Human Resources](hr-admin-whats-new.md).
 
 All new features remain in preview for at least 30 days, and typically 30-60 days. Major features are generally available in October and April of each year following the preview period. As soon as you see new capabilities in the **Feature management** workspace, you can turn them on. Some features might be on by default.
 
@@ -91,6 +91,6 @@ Don't include personal data (any information that could identify you) in your fe
 ## See also
 
 - [What's new in Human Resources](hr-admin-whats-new.md)
-- [Dynamics 365 and Power Platform Release Plan](/dynamics365/release-plans/?panel=products1#pivot=products)
+- [roadmap](https://aka.ms/AIatWorkroadmap)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

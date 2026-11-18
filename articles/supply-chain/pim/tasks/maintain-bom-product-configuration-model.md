@@ -1,8 +1,8 @@
 --- 
 title: Maintain BOM for a product configuration model
 description: Learn about maintaining BOM for a product configuration model, including step-by-step processes for adding BOM lines and line details.
-author: sgmsft
-ms.author: shwgarg
+author: Amitrive
+ms.author: amitrive
 ms.topic: how-to
 ms.date: 08/29/2018
 ms.custom:

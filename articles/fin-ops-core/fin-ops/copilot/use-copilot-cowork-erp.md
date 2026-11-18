@@ -139,7 +139,7 @@ Each user needs an active Microsoft 365 Copilot license and a qualifying Dynamic
 - Form tabs are closed by default, and some lookups require a separate interaction.
 - Some controls and system administration forms aren't available through the MCP server.
 - MCP guidance is provided in US English. Dates, times, and numeric values use ISO formats and don't consider the user's locale.
-- The plugin is currently available in regions where Copilot Cowork is deployed. Learn more about the latest availability in [Explore Copilot products by geography and languages](https://releaseplans.microsoft.com/availability-reports/?report=copilotproductreport).
+- The plugin is currently available in regions where Copilot Cowork is deployed. Learn more about the latest availability in [Dynamics 365, Power Platform, and Copilot Studio product availability](https://aka.ms/d365-product-availability).
 
 For the complete list, see [Known limitations for the Dynamics 365 ERP MCP server](../../dev-itpro/copilot/copilot-mcp.md#known-limitations).
 

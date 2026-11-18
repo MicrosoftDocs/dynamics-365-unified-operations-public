@@ -59,9 +59,9 @@ The following resources provide information about planned and new localization f
 - [Regulatory watch and communication of regulatory updates](../../dev-itpro/lcs-solutions/regulatory-watch-communication.md)
 - [Submit alerts about country/region-specific regulatory features](../../dev-itpro/lcs-solutions/submit-localization-alerts.md)
 
-#### Dynamics 365 release plans
+#### Dynamics 365 roadmap
 
-The [Dynamics 365 release plans](/business-applications-release-notes/) provide descriptions of new and enhanced capabilities that are planned for Dynamics 365 business applications and application platforms.
+Visit the [roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.
 
 #### Finance and operations apps what's new
 

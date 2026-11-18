@@ -1,8 +1,8 @@
 ---
 title: Set up a product configuration model
 description: Learn about the steps for setting up and creating a product configuration model with a table that defines various tasks.
-author: sgmsft
-ms.author: shwgarg
+author: Amitrive
+ms.author: amitrive
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac

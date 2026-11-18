@@ -26,7 +26,7 @@ You can create and maintain a tax setup in the Tax calculation feature in Global
 
 ## Do you have any plans to support Russia, Brazil, and India?
 
-Microsoft doesn't currently plan to support Russia, Brazil, or India. For more information about country/region support, see [Release plans on Dynamics 365 and Microsoft Power Platform release plans](/dynamics365/release-plans/).
+Microsoft doesn't currently plan to support Russia, Brazil, or India. Visit the [roadmap](https://aka.ms/AIatWorkroadmap) to discover upcoming capabilities, track rollout progress, and plan adoption.
 
 Brazil tax reform taxes are supported with Tax calculation, details: [Tax Reform Overview](/dynamics365/finance/localizations/brazil/brazil-reform-overview).
 

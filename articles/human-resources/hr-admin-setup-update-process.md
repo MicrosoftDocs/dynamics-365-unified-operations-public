@@ -61,9 +61,7 @@ Releases are reviewed, tested, and validated on an internal environment. After b
 
 To learn about what's in development for Human Resources and what Microsoft has released, see the following resources:
 
-- [Dynamics 365 Human Resources roadmap](https://dynamics.microsoft.com/roadmap/human-resources/)
-
-- [Dynamics 365 Release Plans](/dynamics365/release-plans/)
+- [Roadmap](https://aka.ms/AIatWorkroadmap)  
 
 - [What's new or changed in Dynamics 365 Human Resources](hr-admin-whats-new.md)
 
@@ -93,8 +91,9 @@ While testing preview features or trying new capabilities, you might find items 
 
 ## See also
 
-[Dynamics 365 and Power Platform Release Plans](/dynamics365/release-plans)</br>
-[What's new or changed in Dynamics 365 Human Resource](hr-admin-whats-new.md)</br>
-[Software lifecycle policy](../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md)
+- [Roadmap](https://aka.ms/AIatWorkroadmap)  
+- [What's new or changed in Dynamics 365 Human Resource](hr-admin-whats-new.md)  
+- [Software lifecycle policy](../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md)
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

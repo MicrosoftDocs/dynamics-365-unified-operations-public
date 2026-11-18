@@ -1,8 +1,8 @@
 ---
 title: Engineering attributes and engineering attribute search
 description: Learn how you can use engineering attributes to specify all non-standard characteristics, to ensure that all product master data can be registered in the system.
-author: sgmsft
-ms.author: shwgarg
+author: Amitrive
+ms.author: amitrive
 ms.topic: how-to
 ms.date: 09/28/2020
 ms.custom:

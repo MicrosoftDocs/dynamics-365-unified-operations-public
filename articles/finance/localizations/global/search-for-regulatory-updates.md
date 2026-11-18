@@ -17,7 +17,7 @@ ms.custom:
 
 This article provides links to planned and released country or region-specific regulatory updates for Microsoft Dynamics 365 Finance. You must sign in to Microsoft Dynamics Lifecycle Services (LCS) to access this information.
 
-For information about planned and released features for Dynamics 365 Finance, see the [AI at Work roadmap](https://aka.ms/AIatWorkRoadmap). For regulatory updates that were released recently, see [Regulatory updates](regulatory-updates.md).
+For information about planned and released features for Dynamics 365 Finance, see the [roadmap](https://aka.ms/AIatWorkRoadmap). For regulatory updates that were released recently, see [Regulatory updates](regulatory-updates.md).
 
 | Country or region    | Issue in LCS Issue search |
 |----------------------|---------------------------|

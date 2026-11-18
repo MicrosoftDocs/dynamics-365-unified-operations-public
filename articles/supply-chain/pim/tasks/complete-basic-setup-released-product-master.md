@@ -1,8 +1,8 @@
 ---
 title: Complete basic setup of a released product master
 description: Learn how to complete the minimum setup that is required before the product master can be used in BOM versions, including a step-by-step process.  
-author: sgmsft
-ms.author: shwgarg
+author: Amitrive
+ms.author: amitrive
 ms.topic: how-to
 ms.date: 05/20/2026
 ms.custom: bap-template

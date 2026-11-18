@@ -203,7 +203,7 @@ The `NamedDestination` field of the `PrintMgmtSettings` table includes the refer
 
 To set up named destinations and force the ER framework to use the named destination, first turn on the **Allow to set up ER destinations per print management item** feature in the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md#the-feature-management-workspace) workspace.
 
-The feature enables named ER destinations for all types of business documents that can be generated in Finance by using the ER framework. For more information, see the **Configurable business documents – specific destinations via printer management settings in the reports** feature in the "Globalization" section for the "Dynamics 365 Finance" application in the Dynamics 365 and industry clouds release plan for the [2021 release wave 2](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance).
+The feature enables named ER destinations for all types of business documents that can be generated in Finance by using the ER framework. Learn more at [Configure print management record-specific ER destinations](er-named-destinations.md).
 
 ## Additional resources
 

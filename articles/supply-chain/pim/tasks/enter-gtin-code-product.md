@@ -1,8 +1,8 @@
 --- 
 title: Enter the GTIN code for a product
 description: Global Trade Item Number (GTIN) codes are assigned by the GS1 organization, including a step-by-step process for assigning GTIN codes. 
-author: sgmsft
-ms.author: shwgarg
+author: Amitrive
+ms.author: amitrive
 ms.topic: how-to
 ms.date: 05/29/2026
 ms.custom: bap-template

@@ -1,8 +1,8 @@
 ---
 title: Product configuration models overview
 description: Product configuration models let you build a generic product structure that can be used to configure many product variants for a single product.
-author: sgmsft
-ms.author: shwgarg
+author: Amitrive
+ms.author: amitrive
 ms.topic: overview
 ms.date: 05/05/2026
 ms.custom:
