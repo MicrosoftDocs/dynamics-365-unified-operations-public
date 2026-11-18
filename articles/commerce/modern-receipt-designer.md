@@ -2,9 +2,9 @@
 title: Modern receipt designer in Commerce headquarters
 description: Learn how to use the modern receipt designer in Microsoft Dynamics 365 Commerce headquarters to create receipt formats with tables and rich text.
 author: anush6121
-ms.author: anvenkat
 ms.topic: how-to
-ms.date: 11/05/2026
+ms.date: 11/18/2026
+ms.author: anvenkat
 ms.reviewer: mirao
 ms.search.form: RetailFormLayout
 ms.custom:
@@ -89,7 +89,7 @@ To add and configure a table, follow these steps:
 1. Configure column headings, borders, banded rows, alignment, and text formatting as required.
 1. Resolve validation errors, and then select **Save**.
 
-You can position multiple tables and ordinary fields on the same receipt line when enough space is available. Repeating fields can be blank when a value isn't available for a record. Preview and test the format with representative transactions, including transactions with no matching records and transactions with long or multiline values.
+You can position multiple tables and ordinary fields on the same receipt line when there's enough space. Repeating fields can be blank when a value isn't available for a record. Preview and test the format with representative transactions, including transactions with no matching records and transactions with long or multiline values.
 
 > [!NOTE]
 > You can't save a layout that contains a table when content extends beyond the selected paper width. Export remains available so that an implementer can correct the layout outside the designer.
@@ -194,7 +194,72 @@ Modern email receipts preserve tables and formatting when Commerce Scale Unit co
 
 If you change a receipt design and try to leave the page before saving, the designer reports the dirty state to the Commerce headquarters host. Commerce headquarters can then prompt before closing or navigating away, helping prevent accidental loss of receipt layout changes.
 
-## Learn more
+## Print customer order invoices in stores
+
+Starting with Commerce release version 10.0.50, store associates can print customer order invoices from the point of sale (POS) in Microsoft Dynamics 365 Commerce. Retailers can configure a separate invoice receipt, include invoice information on existing receipts, or use both options. This feature requires the modern receipt designer to be enabled.
+
+### Set up a customer order invoice receipt
+
+Use the **Customer order invoice** receipt type to print an invoice separately from other customer order receipts.
+
+1. In Commerce headquarters, go to **Retail and Commerce** > **Channel setup** > **POS setup** > **POS** > **Receipt formats**.
+1. Create a receipt format.
+1. Select **Customer order invoice** as the receipt type.
+1. Configure the print behavior for the receipt format.
+1. Open the modern receipt designer.
+1. Add the invoice fields that your business requires, such as the invoice number, invoiced lines, and invoiced total.
+1. Save the receipt design.
+1. Add the receipt format to the receipt profile used for invoice printing in the store.
+1. Verify that the receipt profile is assigned to the appropriate printer through the register's hardware profile.
+
+Enable printing for the **Customer order invoice** receipt type in each store where associates need to print separate invoices.
+
+> [!NOTE]
+> Invoice fields let you show invoiced information on the receipt. Use the invoiced lines and invoiced total when designing an invoice, rather than relying only on fields that describe the customer order.
+
+### Include invoice information on existing receipts
+
+You can also add invoice fields to an existing receipt format. For example, you can include the invoice number on a customer order receipt or add invoice details to a sales receipt instead of printing a separate invoice.
+
+1. In Commerce headquarters, open the existing receipt format.
+1. Open the modern receipt designer.
+1. Add the required invoice fields.
+1. Save the updated receipt design.
+
+Select the receipt content that matches your business needs:
+
+| Printing requirement | Configuration |
+| -------------------- | ------------- |
+| Print a separate customer order invoice | Configure and enable the **Customer order invoice** receipt type. |
+| Show the invoice number on an existing receipt | Add the invoice number field to that receipt format. |
+| Include invoice details on an existing receipt | Add the required invoice fields, such as invoiced lines and invoiced total. |
+
+The invoice number assigned in headquarters is available when customer orders are created, edited, or fulfilled at POS. You can include this number on existing receipts.
+
+> [!NOTE]
+> Printing additional invoice details on an existing receipt requires a live connection to headquarters to retrieve that information. Consider this requirement when deciding whether to include detailed invoice information on existing receipts or print a separate invoice.
+
+### Print an invoice during a customer order transaction
+
+When you enable the **Customer order invoice** receipt type for printing in the store, the following actions support invoice printing:
+
+| POS action | When the invoice prints |
+| ---------- | ----------------------- |
+| Create a customer order with carryout lines | When you complete the customer order transaction that includes carryout lines. |
+| Edit a customer order with carryout lines | When you complete the customer order transaction that includes newly added carryout lines. |
+| Quick order pickup | When you complete the pickup. |
+| Regular order pickup | When you complete the pickup. |
+
+### Reprint a customer order invoice
+
+Store associates can reprint an invoice receipt from **Show journal**.
+
+1. In POS, open **Show journal**.
+1. Find the transaction associated with the invoice.
+1. Select the transaction.
+1. Use the receipt reprint action to reprint the customer order invoice.
+
+## Related information
 
 - [Set up and design receipt formats](receipt-templates-printing.md)
 - [Send email receipts from Store Commerce](email-receipts.md)
