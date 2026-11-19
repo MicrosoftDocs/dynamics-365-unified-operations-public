@@ -6,7 +6,8 @@ ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form: IoTIntCoreScenarioManagement, IoTIntCoreScenarioConfigurationWizardV2 
 ms.topic: how-to
-ms.date: 02/10/2026
+ms.date: 11/19/2026
+ai-usage: ai-assisted
 ms.custom:
   - bap-template
 ---
@@ -28,14 +29,22 @@ To use the features described in this article, your system must meet the followi
     - *(Preview) Sensor Data Intelligence*
     - *(Preview) Sensor Data Intelligence - Auto report progress*
 
+## Known limitations
+
+Automatic progress reporting supports production jobs that run for up to seven days. This limit comes from the maximum temporal-window duration in Azure Stream Analytics. Learn more in [Sliding Window](/stream-analytics-query/sliding-window-azure-stream-analytics).
+
+For a job that runs continuously for longer than seven days, older sensor events leave the window as new events arrive. When the window saturates and the completed-cycle count stops increasing, automatic progress notifications stop. Use manual **Report as finished** to record the remaining production quantity. Learn how to report progress manually in [Pausing signals and adjusting counters](#pause-signals-and-adjust-counters).
+
+The safeguards against incorrect automatic reporting don't provide support for jobs that run longer than seven days. The [production delays scenario](sdi-scenario-production-delays.md#known-limitations) has the same duration limit. Plan production jobs and reporting expectations with this limit in mind.
+
 ## Set up the production auto report scenario
 
-To set up the production auto report scenario, you need to define the sensors that are installed on the machines, map those sensors to the corresponding resources and operations in Supply Chain Management, and define thresholds for how many sensor signals correspond to finished units for each operation. Follow these steps to set up the scenario:
+To set up the production auto report scenario, define the sensors that are installed on the machines, map those sensors to the corresponding resources and operations in Supply Chain Management, and define thresholds for how many sensor signals correspond to finished units for each operation. Follow these steps to set up the scenario:
 
 1. Go to **Production control** > **Setup** > **Sensor Data Intelligence** > **Scenarios** to open the **Scenarios** page.
 1. In the **Production auto report** box, select **Configure** to open the setup wizard for this scenario.
 1. On the **Sensors** page, select **New** to add a sensor to the grid. Then set the following fields for it:
-    - **Sensor ID** – Enter the ID of the sensor that you're using. (If you're using the Raspberry PI Azure IoT Online Simulator and have set it up as described in [Set up a simulated sensor for testing](sdi-set-up-simulated-sensor.md), enter *AssetDownTime*.)
+    - **Sensor ID** – Enter the ID of the sensor that you're using. (If you're using the Raspberry PI Azure IoT Online Simulator and set it up as described in [Set up a simulated sensor for testing](sdi-set-up-simulated-sensor.md), enter *AssetDownTime*.)
     - **Sensor description** – Enter a description of the sensor.
 1. Repeat the previous step for each sensor that you want to add now. You can come back and add more sensors at any time.
 1. Select **Next**.
@@ -44,14 +53,14 @@ To set up the production auto report scenario, you need to define the sensors th
 1. On the new row, set the **Business record** field to the resource that you're using the selected sensor to monitor.
 1. Repeat the previous step for each sensor that you want to set up now. You can come back and set up more sensors at any time.
 1. Select **Next**.
-1. On the **Set auto-reporting threshold** page, select the operation relation you want your configuration to apply to. You can find a specific operation relation by following these steps:
+1. On the **Set auto-reporting threshold** page, select the operation relation you want your configuration to apply to. Find a specific operation relation by following these steps:
     - Select the **Item relation** column heading to open a drop-down dialog box that includes search filters for the column. Enter the product that the operation relation is created for.
     - Select the **Route relation** column heading to open a drop-down dialog box that includes search filters for the column. Enter the route number that the operation relation is created for.
 
     > [!TIP]
-    > Each operation relation defines the detailed properties of an operation—such as setup time, run time, cost categories, and resource requirements—for a specific route or product. It lets each operation have several different properties depending on where it's used.
+    > Each operation relation defines the detailed properties of an operation, such as setup time, run time, cost categories, and resource requirements, for a specific route or product. It lets each operation have several different properties depending on where it's used.
 
-1. When you have found the applicable operation relation, enter values in the following columns for it:
+1. When you find the applicable operation relation, enter values in the following columns for it:
     - **Pulses per cycle** – Number of pulses the sensor emits in a production cycle.  
     - **Units per cycle** – Number of parts produced by the operation in a production cycle.
 
@@ -83,18 +92,18 @@ Counters are shown in one or two levels. The number of levels depends on the **U
 
 In the example **View counter** dialog shown in the previous image, the first‑level (left-hand) counter indicates how many pieces have been added to the box currently being filled. Each time a sensor signal is received, the level-1 counter (*Pieces per box*) increases. When the threshold of 12 pieces per box is reached, the level-1 counter resets to zero and the level-2 counter (*Boxes per pallet*) increases by one. When the level-2 threshold of 100 boxes per pallet is reached, the level-2 counter also resets to zero, indicating that a new pallet is ready to be filled. At this point, the system automatically reports a pallet as finished. The report as finished posting is processed through the message queue as an asynchronous (deferred) operation. Learn more about deferred posting in [Make finished goods physically available before posting to journals](../production-control/deferred-posting.md).
 
-### Pausing signals and adjusting counters
+### Pause signals and adjust counters
 
 If something unexpected happens, such as a dropped counter signal or a counted item that needs to be scrapped, you can pause the sensor signal and adjust the counters and report quantities as needed. Follow these steps to pause the signal, adjust counters, or adjust reported quantities:
 
 1. Open the counter dialog by selecting **View counter** from the toolbar in the job list.
-1. In the counter dialog, select the **Pause signal** button to pause the sensor signal. This allows you to report scrap, report progress, and adjust the counters without new signals coming in.
+1. In the counter dialog, select the **Pause signal** button to pause the sensor signal. This action allows you to report scrap, report progress, and adjust the counters without new signals coming in.
     - If you need to adjust the counter values, use the **+** and **–** buttons below each counter as needed.
     - If you need to report some counted quantity as scrap, select the **Report scrap** button. This action opens the **Reporting as scrap** dialog, where you can enter the quantity to be scrapped and the reason for scrapping.
     - If you need to manually report progress (for example, because a sensor signal was missed), select the **Report progress** button. This action opens the **Reporting progress** dialog, where you can enter the quantity to report as finished.
 
 1. Select the **Start signal** button to restart the sensor signal.
 
-### Navigating between multiple sensor enabled jobs
+### Navigate between multiple sensor-enabled jobs
 
-If multiple jobs in the job list are enabled for sensor controlled reporting, use the **Previous** and **Next** buttons of the **View counter** dialog to switch between jobs without closing the dialog.
+If multiple jobs in the job list are enabled for sensor-controlled reporting, use the **Previous** and **Next** buttons of the **View counter** dialog to switch between jobs without closing the dialog.

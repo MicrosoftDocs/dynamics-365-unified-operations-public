@@ -4,7 +4,8 @@ description: Learn about the production delays scenario, which generates a notif
 author: johanhoffmann
 ms.author: johanho
 ms.topic: article
-ms.date: 09/02/2022
+ms.date: 11/19/2026
+ai-usage: ai-assisted
 ms.reviewer: kamaybac
 ms.search.form: IoTIntCoreScenarioManagement, IoTIntCoreScenarioConfigurationWizardV2, IoTIntMfgResourceStatusConfiguration, IoTIntMfgResourceStatus
 ---
@@ -15,15 +16,23 @@ ms.search.form: IoTIntCoreScenarioManagement, IoTIntCoreScenarioConfigurationWiz
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-The *production delays* scenario generates a notification if production throughput falls below a specific threshold value. In this scenario, a *part-out* signal is sent to Microsoft Azure IoT Hub for each item that is produced. In Dynamics 365 Supply Chain Management, the order delay is calculated based on the amount of time that the production order is scheduled to run, the number of items that should be produced, the amount of time that the job has been running, and the number of *part-out* signals that have been received. A delay notification is generated if the number of *part-out* signals for the job falls below the threshold value.
+The *production delays* scenario generates a notification if production throughput falls below a specific threshold value. In this scenario, a sensor sends a *part-out* signal to Microsoft Azure IoT Hub for each item that you produce. In Dynamics 365 Supply Chain Management, the order delay is calculated based on the amount of time that the production order is scheduled to run, the number of items that you should produce, the amount of time that the job has been running, and the number of *part-out* signals that are received. A delay notification is generated if the number of *part-out* signals for the job falls below the threshold value.
+
+## Known limitations
+
+Delay detection supports production jobs that run for up to seven days. This limit comes from the maximum temporal-window duration in Azure Stream Analytics. Learn more in [Sliding Window](/stream-analytics-query/sliding-window-azure-stream-analytics).
+
+For jobs that run longer than seven days, older sensor events leave the window as new events arrive. Delay detection might become inaccurate, so don't rely on it beyond this duration.
+
+The [production auto report scenario](sdi-scenario-production-auto-report.md#known-limitations) has the same duration limit and requires manual reporting of remaining progress for longer-running jobs. Plan production jobs and monitoring expectations with this limit in mind.
 
 ## Scenario dependencies
 
 The *production delays* scenario has the following dependencies:
 
-- An alert can be triggered only if a production order is running on a mapped machine.
-- A signal that represents a mapped machine's *part-out* signal must be sent to IoT Hub, and a unique property name must be included.
-- A UNIX timestamp property, where the value is expressed in milliseconds (ms), must be present in the Azure IoT Hub message.
+- The system can trigger an alert only if a production order is running on a mapped machine.
+- Your sensor must send a signal that represents a mapped machine's *part-out* signal to IoT Hub, and it must include a unique property name.
+- The Azure IoT Hub message must include a UNIX timestamp property, where the value is expressed in milliseconds (ms).
 
 ## Prepare demo data for the product delays scenario
 
@@ -31,23 +40,23 @@ If you want to use a demo system to test the *production delays* scenario, use a
 
 ### Set up sensor simulator
 
-If you want to try this scenario without using a physical sensor, you can set up a simulator to generate the required signals. Learn more in [Set up a simulated sensor for testing](sdi-set-up-simulated-sensor.md).
+If you want to try this scenario without using a physical sensor, set up a simulator to generate the required signals. Learn more in [Set up a simulated sensor for testing](sdi-set-up-simulated-sensor.md).
 
 ### Verify that resource 3118 is used for product P0111
 
 A production order will be scheduled and released. Therefore, a production job is released to resource *3118* (*Foam cutting machine*). Follow these steps to verify that resource *3118* is used for product *P0111* in your demo data.
 
-1. Go to **Product information management \> Products \> Released products**.
+1. Go to **Product information management** > **Products** > **Released products**.
 1. Find and select the product where the **Item number** field is set to *P0111*.
 1. On the Action Pane, on the **Engineer** tab, in the **View** group, select **Route**.
 1. On the **Route** page, on the **Overview** tab at the bottom of the page, select the line where the **Oper. No.** field is set to *30*.
-1. On the **Resource requirements** tab at the bottom of the page, make sure that resource *3118* (*Foam cutting machine*) is associated with the operation.
+1. On the **Resource requirements** tab at the bottom of the page, ensure that resource *3118* (*Foam cutting machine*) is associated with the operation.
 
 ### Create and release a production order for product P0111
 
 Follow these steps to create and release a production order for product *P0111*.
 
-1. Go to **Production control \> Production orders \> All production orders**.
+1. Go to **Production control** > **Production orders** > **All production orders**.
 1. On the **All production orders** page, on the Action Pane, select **New batch order**.
 1. In the **Create batch** dialog box, set the following values:
 
@@ -73,10 +82,10 @@ If you haven't already done so, configure the production floor execution interfa
 
 Follow these steps to start the first job in the batch order.
 
-1. Go to **Production control \> Manufacturing execution \> Production floor execution**.
+1. Go to **Production control** > **Manufacturing execution** > **Production floor execution**.
 1. In the **Badge ID** field, enter *123*. Then select **Sign in**.
 1. If you're prompted for an absence reason, select one of the cards for absence, and then select **OK**.
-1. In the **Search** field, enter the batch order number that you previously made a note of. Then select the **Return** key.
+1. In the **Search** field, enter the batch order number that you previously made a note of. Then press **Return**.
 1. Select the order, and then select **Start job**.
 1. In the **Start job** dialog box, select **Start**.
 
@@ -84,11 +93,11 @@ Follow these steps to start the first job in the batch order.
 
 Follow these steps to set up the *production delays* scenario in Supply Chain Management.
 
-1. Go to **Production control \> Setup \> Sensor Data Intelligence \> Scenarios**.
+1. Go to **Production control** > **Setup** > **Sensor Data Intelligence** > **Scenarios**.
 1. In the **Production delays** scenario box, select **Configure** to open the setup wizard for this scenario.
 1. On the **Sensors** page, select **New** to add a sensor to the grid. Then set the following fields for it:
 
-    - **Sensor ID** – Enter the ID of the sensor that you're using. (If you're using the Raspberry PI Azure IoT Online Simulator and have set it up as described in [Set up a simulated sensor for testing](sdi-set-up-simulated-sensor.md), enter *ProductionDelay*.)
+    - **Sensor ID** – Enter the ID of the sensor that you're using. (If you're using the Raspberry PI Azure IoT Online Simulator and set it up as described in [Set up a simulated sensor for testing](sdi-set-up-simulated-sensor.md), enter *ProductionDelay*.)
     - **Sensor description** – Enter a description of the sensor.
 
 1. Repeat the previous step for each additional sensor that you want to add now. You can come back and add more sensors at any time.
@@ -110,11 +119,11 @@ Follow these steps to set up the *production delays* scenario in Supply Chain Ma
 
 ### View production delay data on the Resource status page
 
-On the **Resource status** page, supervisors can monitor a timeline of signals that are received from the sensors that are mapped to each machine resource. Follow these steps to configure the timeline.
+On the **Resource status** page, supervisors can monitor a timeline of signals that come from sensors mapped to each machine resource. Follow these steps to configure the timeline.
 
-1. Go to **Production control \> Manufacturing execution \> Resource status**.
+1. Go to **Production control** \> **Manufacturing execution** \> **Resource status**.
 1. In the **Configure** dialog box, set the following fields:
 
-    - **Resource** – Select the resources that you want to monitor. (If you're working with the demo data, select *3118*.)
+    - **Resource** – Select the resources that you want to monitor. If you're working with the demo data, select *3118*.
     - **Time series 1** – Select the record (metric key) that has the following format for its name: *ProductionJobDelayed:ActualQuantity:&lt;JobId&gt;*
     - **Display name** – Enter *Parts out signal*.
