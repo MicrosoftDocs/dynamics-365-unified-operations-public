@@ -36,7 +36,7 @@ This feature has two purposes:
 - Optimize employees' time-off use, and provide insight into the accumulation of unused time off that can create financial liabilities for the organization.
 
 ## Country/region and language requirements
-For information about the languages that this Copilot feature was validated for, see [Explore Copilot features by geography and languages](https://go.microsoft.com/fwlink/?linkid=2270154). Although the feature can be used in other languages, it might not work as intended. Language quality might vary, based on the user's interactions or system settings, and might therefore affect accuracy and the user experience.
+For information about the languages that this Copilot feature was validated for, see [Dynamics 365, Power Platform, and Copilot Studio product availability](https://aka.ms/d365-product-availability). Although you can use the feature in other languages, it might not work as intended. Language quality might vary, based on the user's interactions or system settings, and might therefore affect accuracy and the user experience.
 
 ### Version requirements
 
