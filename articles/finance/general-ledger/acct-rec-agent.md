@@ -68,8 +68,6 @@ To set up the Account Reconciliation Agent, follow these steps:
 
 The Account Reconciliation Agent evaluates exceptions and provides a recommended action for each one. You can view the agent recommendations in the **Account reconciliation** workspace.
 
-> [!NOTE]
-> The Account reconciliation agent recommends actions for voucher amount mismatch exceptions.
 
 For example, an exception of the **Voucher amount mismatch** type is raised for a transaction. When the Account Reconciliation Agent evaluates the exception, it recommends the following action: **Create journal entry**. You can either accept that recommendation or select from other available actions:
 
@@ -83,6 +81,8 @@ For example, an exception of the **Voucher amount mismatch** type is raised for 
 The Account Reconciliation Agent processes the following exception types:
 
 - Voucher amount mismatch
+- In subledger but not in ledger
+- In ledger but not in subledger
 - Pending accounting transferred to general ledger
 
 ## View agent activity in the Activity pane
