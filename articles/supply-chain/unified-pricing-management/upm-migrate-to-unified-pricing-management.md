@@ -1,6 +1,6 @@
 ---
 title: Migrate to Unified pricing management (preview)
-description: Learn how to migrate to Unified pricing management in Microsoft Dynamics 365 Commerce version 10.0.46 to simplify pricing strategies with centralized control and flexible rules.
+description: Learn how to migrate to Unified pricing management in Microsoft Dynamics 365 Commerce version 10.0.46 and later to simplify pricing strategies with centralized control and flexible rules.
 author: sherry-zheng
 ms.author: chuzheng
 ms.reviewer: v-griffinc
@@ -15,7 +15,7 @@ ms.custom:
 [!INCLUDE [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-This article explains how to migrate to Unified pricing management in Microsoft Dynamics 365 Commerce version 10.0.46 to simplify pricing strategies with centralized control and flexible rules.
+This article explains how to migrate to Unified pricing management in Microsoft Dynamics 365 Commerce version 10.0.46 and later to simplify pricing strategies with centralized control and flexible rules.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -25,23 +25,23 @@ This enhancement simplifies adoption, so you can quickly experience the benefits
 
 Unified pricing management migration is structured into three incremental phases from Commerce versions 10.0.46 to 10.0.48, so you can move at your own pace and address various user scenarios and existing Commerce pricing engine configurations.
 
-The following table describes whether various rules are supported for pricing features.
+The first rule column shows how migration handles existing rules from the legacy Commerce pricing engine. The next two columns show whether you can still create rules without price attributes after you enable Unified pricing management and whether Unified pricing management supports attribute-based rules for each feature.
 
-|Feature |Current nonattribute rule |New nonattribute rules |New attribute-based rules |
+| Feature | Existing rules in legacy Commerce pricing | Create rules without price attributes | Create attribute-based rules |
 |----------|-----------------------------|--------------------------|----------------------------|
-| Trade agreement price | Supported | Can also migrate | Supported |
+| Trade agreement price | Keep existing rules or migrate them | Supported | Supported |
 | Discount | Migrate | Not supported | Supported |
-| Shipping discount | Not supported  | Not supported | Supported |
-| Tender discount | Not supported | Not supported | Not supported |
-| Charges | Supported | No migration (migrating existing charges rules is planned) | Supported |
+| Shipping discount | Migrate starting in 10.0.47 | Not supported | Supported |
+| Tender discount | Migrate starting in 10.0.47 | Not supported | Supported |
+| Charges | Supported without migration (migration is planned) | Supported | Supported |
 | Rebate management | Supported | Supported | Supported |
-| Trade agreement discount | Supported | No migration | Not supported |
+| Trade agreement discount | No migration | Supported | Supported (use an attribute-based discount rule) |
 | Price group | Migrate to attributes | Not supported | Supported |
-| Price adjustments | Migration isn't supported. | Not supported | Supported |
+| Price adjustments | Migrate starting in 10.0.47 | Not supported | Supported |
 
 ## Prerequisites
 
-You must be running Commerce version 10.0.46 to use Unified pricing management.
+To migrate to Unified pricing management, you must be running Commerce version 10.0.46 or later.
 
 ## Migrate to Unified pricing management
 
@@ -63,7 +63,7 @@ To migrate to Unified pricing management, follow these steps:
 1. Go to **Retail and Commerce** > **Migration** > **Migrate Commerce Pricing Setup**. This page lets you run the migration job that transitions your current Commerce pricing engine data into the Unified pricing management framework.
 
     > [!NOTE]
-    > In Commerce version 10.0.46, price adjustments aren't included. Price adjustments migration support is included in Commerce version 10.0.47.
+    > Starting in Commerce version 10.0.47, you can also migrate shipping discounts, tender discounts, and price adjustments.
 
 1. Use the **Effective after date** field to select pricing rules that are still active and should be migrated.
 1. Choose whether or not to include disabled discounts and skip trade agreements.
