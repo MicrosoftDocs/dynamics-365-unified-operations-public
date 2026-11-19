@@ -2,13 +2,13 @@
 title: Set up and design receipt formats
 description: Learn how to set up and design form layouts to control how receipts, invoices, and other documents are printed in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 05/07/2026
+ms.date: 11/19/2026
 ms.topic: how-to
-ms.search.form: RetailFormLayout
+ms.author: ritakimani
 ms.reviewer: mirao
+ms.search.form: RetailFormLayout
 ms.assetid: e530dd8e-95e2-4021-90bd-ce1235f9e250
 ms.search.region: Global
-ms.author: ritakimani
 ms.search.validFrom: 2016-02-28
 ms.custom: 
   - bap-template
@@ -48,17 +48,15 @@ The receipt designer includes a **Logo** variable. Use this variable to specify 
 
 ## Print barcodes
 
-To print barcodes on receipts, you must install the **BC C39 2 to 1 Narrow** font (file: C39N2.TTF) on the Application Object Server (AOS) and SQL Server Reporting Services (SSRS) servers. This font isn't included with Windows by default, but it's installed as part of the Dynamics 365 Finance and Operations client installation.
+To print barcodes on receipts, install the **BC C39 2 to 1 Narrow** font (**C39N2.TTF**) on the client machine. You can copy the font file from a cloud-hosted environment.
 
-To install the font on the required servers, follow these steps:
+To install the font on the client machine, follow these steps:
 
-1. On a machine where the Dynamics 365 Finance and Operations client is installed, find the **C39N2.TTF** file in the `Windows\Fonts` folder.
-2. Copy the font file to the `Windows\Fonts` folder on the **AOS server**.
-3. Copy the font file to the `Windows\Fonts` folder on the **SSRS server**.
-4. Restart the **AOS service** and the **SSRS service** on each respective server.
-
-> [!NOTE]
-> If the barcodes still don't render after completing these steps, uninstall the font, reboot the SSRS server, reinstall the font, and reboot again if needed.
+1. Connect to your cloud-hosted environment.
+1. Go to the `Windows\Fonts` folder.
+1. Copy the **C39N2.TTF** file.
+1. Paste the file into the `Windows\Fonts` folder on the client machine.
+1. Install the font on the client machine.
 
 ## Design a receipt format
 
