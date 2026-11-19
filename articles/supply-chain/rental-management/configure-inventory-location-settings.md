@@ -6,7 +6,7 @@ ms.author: jodahl
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 10/23/2026
+ms.date: 11/19/2026
 ai-usage: ai-assisted
 ms.custom:
   - bap-template
@@ -268,7 +268,7 @@ Fleet locations are organized into a hierarchy with five location types:
 | Location type | Description |
 |---|---|
 | *Hub* | A main site or branch location. Has its own address and is linked to a warehouse. Can have child *Hub locations*, and one *Transit* location that's required before you can move fleet items internally out of the hub. |
-| *Hub location* | A sub-location within a *Hub* (for example, a specific area of the site such as *Ready row*, *Shop*, *Wash bay*, or *Staging area*). Inherits the hub's address and linked warehouse, and can be linked to a warehouse location in that warehouse. |
+| *Hub location* | A sub-location within a *Hub* (for example, a specific area of the site such as *Ready row*, *Shop*, *Wash bay*, or *Staging area*). Inherits the hub's address, linked warehouse, and location group, and can be linked to a warehouse location in that warehouse. |
 | *Transit* | Used when a fleet item is in transit between two locations. You can assign a *Transit* location only to a *Hub*. Can't have a parent location. |
 | *Job site* | Represents a customer's job site address. The system creates job site fleet locations automatically when a job site record is created. You can't create them manually on the **Fleet locations** page. |
 | *Default* | The system fallback location used when no other location is resolved. For example, when a customer picks up a fleet item, its physical location is effectively unknown, so the system uses the default location. Only one *Default* location can exist in the system. |
@@ -314,6 +314,7 @@ To create a hub, follow these steps:
 1. On the **Address** FastTab, add a postal address to the hub. You can also enter its **Latitude** and **Longitude**, and the **Sales tax group**. The system uses the address on delivery documents, and child hub locations inherit it. Child hub locations can't have addresses of their own. A rental quotation or contract whose **Ship to** is the pickup location takes its sales tax group from that address.
 1. Set the **Linked warehouse** to the inventory warehouse this hub represents.
 1. Assign a **Transit location**, which is an existing *Transit* location that represents the in-transit state for fleet items moving through this hub. This setting is required before you can move any fleet item internally out of this hub. Movements between job sites don't need it.
+1. If you use location-based rates or discounts, set **Location group** to the *Location* price factor for this hub. Quotation and contract lines whose pickup fleet location is this hub or one of its hub locations use it as their location price factor, and the hub's hub locations take the same value. Learn more in [Location price factors](set-up-rental-rates-discounts.md#location-price-factors).
 
 <a name="create-a-hub-location-sub-location"></a>
 
@@ -324,7 +325,7 @@ Hub locations are optional sub-locations within a hub. To create a hub location,
 1. Select **New** and enter a **Fleet location** ID and a **Description**.
 1. Set **Location type** to *Hub location*.
 1. Set **Parent location** to the hub this location belongs to. A hub location must have a hub as its parent.
-1. Optionally, set the **Linked warehouse location** to a location in the hub's linked warehouse. A hub location takes its **Linked warehouse** from its hub, and you can't change it on the hub location.
+1. Optionally, set the **Linked warehouse location** to a location in the hub's linked warehouse. A hub location takes its **Linked warehouse** and **Location group** from its hub, and you can't change them on the hub location.
 
 If you change a fleet location's **Linked warehouse**, the system clears its **Linked warehouse location**. A change on a hub also moves every hub location under it to the new warehouse, so set their warehouse locations again.
 

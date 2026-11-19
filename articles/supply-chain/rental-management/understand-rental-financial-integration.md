@@ -6,7 +6,7 @@ ms.author: jodahl
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: concept-article
-ms.date: 10/23/2026
+ms.date: 11/19/2026
 ai-usage: ai-assisted
 ms.custom:
   - bap-template
@@ -65,7 +65,7 @@ When you create and activate a rental contract:
 Rental invoicing creates an *invoice schedule* from the contract, which then generates an ordinary *sales order* that you post. The standard Accounts receivable setup numbers the order and posts the invoice, so the customer balance, the invoice journal, and settlement behave as they do for any sales invoice.
 
 1. **Generate invoice schedule** – Creates the schedule without any ledger postings. The schedule has header information (terms of payment, total amount, period, tax groups) and lines that mirror the contract lines.
-1. **Generate sales order** – Creates the sales order for the invoice schedule.
+1. **Generate order** – Creates the sales order for the invoice schedule.
 1. **Post invoice** – Posts the sales order invoice, which creates:
     - Customer balance entries in accounts receivable.
     - Revenue postings for the main rental fee. When fleet items are active on the line, the system splits the revenue across them and posts each fleet item's share separately. Learn more in [Revenue posting for rental invoices](#revenue-posting-for-rental-invoices).
@@ -410,7 +410,7 @@ Tags appear as separate columns on the posted accounting entries and can be used
 What a fleet transfer posts depends on the value tracking methods of the source and target fleet types. Learn more about the supported combinations in [Supported fleet transfers](configure-inventory-location-settings.md#supported-fleet-transfers).
 
 - **From *Inventory* to *Fixed asset*** (for example, *New* to *Rental*) – The system creates the fixed asset and posts its acquisition, as described in [Step 2 – Transfer from new fleet to rental fleet](#transfer-from-new-to-rental).
-- **From *Fixed asset* to *Inventory*** (for example, *Rental* to *Used*) – The system posts a fixed asset journal with a *Disposal - sale* line for the net book value of the fleet item's open book. The journal name comes from **Transfer journal** on the **Fixed assets** tab of the rental parameters. It then posts an inventory movement journal, using **Transfer request movement journal**, that receives the fleet item at the same value into the warehouse that's specified on the transfer request. The movement journal's offset account is the disposal line's offset account.
+- **From *Fixed asset* to *Inventory*** (for example, *Rental* to *Used*) – The system posts a fixed asset journal with a *Disposal - sale* line for the net book value of the fleet item's open book. The journal name comes from **Transfer journal** on the **Fixed assets** tab of the rental parameters. It then posts an inventory movement journal, using **Transfer request movement journal**, that receives the fleet item at the same value into the warehouse that's specified on the transfer request. The movement journal's offset account is the disposal line's offset account. When your sites are linked to a financial dimension, the movement journal uses the dimension value of the site that receives the fleet item, and a serialized fleet item takes that value too. The fleet item's other financial dimensions don't change.
 - **Between two *Fixed asset* fleet types** (for example, *Rental* to *Lease*) – The system compares the fixed asset group and book set up on the **Posting configuration for fleet types** page for the target fleet type with the fixed asset's current group and open book:
     - If neither the book nor the group changes, the system doesn't post fixed asset transactions, except for a bulk fleet item. A bulk fleet item holds one fixed asset per fleet type, so the system always posts it into the target fleet type's book, and the group-only reversal option doesn't apply to it.
     - If the book changes, the system posts a *Fleet item transfer* transaction that moves the net book value out of the source book and into the target book, which can use a different depreciation profile. The transferred amounts are summarized, unless **Transfer with details** is set to *Yes* on the **Rental parameters** page, which moves the balances at the transaction type level.

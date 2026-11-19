@@ -6,7 +6,7 @@ ms.author: jodahl
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 10/23/2026
+ms.date: 11/19/2026
 ai-usage: ai-assisted
 ms.custom:
   - bap-template
@@ -145,7 +145,7 @@ Printing also stamps the print date and moves the contract to *Printed*, where y
 
 ### Cascade header changes to the lines
 
-When you save a header change on a document that already has lines, the header-to-line update settings on the **Rental parameters** page determine whether the change is copied automatically, prompts you, or isn't copied. The settings cover changes such as the delivery address, the tax group, financial dimensions, and the estimated return date. Depending on your settings, the system also asks about updating all line addresses, retaining prices, and updating calendar calculation journals. Answer the **Retain prices** question with care: letting the cascade search for rates again can overwrite a price that you negotiated on a line. Learn more about **Update document lines** in [General FastTab of the General tab](configure-rental-parameters.md#general-fasttab-of-the-general-tab).
+When you save a header change on a document that already has lines, the header-to-line update settings on the **Rental parameters** page determine whether the change is copied automatically, prompts you, or isn't copied. The settings cover changes such as the delivery address, the tax group, financial dimensions, and the estimated return date. Depending on your settings, the system also asks about updating all line addresses, retaining prices, and updating calendar calculation journals. Answer the **Retain prices** question with care: letting the cascade search for rates again can overwrite a price that you negotiated on a line. Learn more about **Configure updates from header to document lines** in [General FastTab of the General tab](configure-rental-parameters.md#general-fasttab-of-the-general-tab).
 
 ### Apply a header discount and trace converted documents
 

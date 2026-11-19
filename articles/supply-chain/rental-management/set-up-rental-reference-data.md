@@ -6,7 +6,7 @@ ms.author: jodahl
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 10/23/2026
+ms.date: 11/19/2026
 ai-usage: ai-assisted
 ms.custom:
   - bap-template
@@ -189,7 +189,7 @@ Reason and damage codes standardize how you record rental events, explain adjust
 | Damage recovery statuses | **Rental management (Preview)** > **Setup** > **Fleet item movements** > **Damage recovery statuses** | Track progress in recovering damage costs from the responsible customer or vendor, for example, *Awaiting payment* or *Recovered*. These statuses track recovery; they don't trigger invoicing. |
 
 > [!NOTE]
-> There's no separate replace attachment reason code page. The reasons offered when you replace an attachment on a fleet item movement are *fleet item status reason codes* that have **Item movement replacement** enabled. Set them up as described in the table.
+> There's no separate replace attachment reason code page. The reasons offered when you replace an attachment on a fleet item movement are *fleet item status reason codes* that have **Fleet item movement replacement** enabled. Set them up as described in the preceding table.
 
 ## Set up reservations
 
