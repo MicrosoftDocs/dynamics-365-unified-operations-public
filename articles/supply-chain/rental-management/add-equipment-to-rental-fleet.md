@@ -6,7 +6,7 @@ ms.author: jodahl
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 10/23/2026
+ms.date: 11/19/2026
 ai-usage: ai-assisted
 ms.custom:
   - bap-template
@@ -94,7 +94,6 @@ To assign on-hand quantity to a bulk fleet item, follow these steps:
 The assigned quantity is held by an inventory blocking record for the product and its inventory dimensions, so other processes can't consume it. The system releases it when the quantity is transferred into a fleet type whose **Value tracking method** is *Fixed asset*. **Create fleet item** on a purchase order line or a movement journal line for a bulk product adds the received quantity to the bulk fleet item in the same way.
 
 You move a quantity of a bulk fleet item between fleet types with the same transfer request as other fleet items, as described in [Transfer fleet items between fleet types](#transfer-fleet-items-between-fleet-types).
-
 The change actions on the fleet item master, and the commands that create sales orders and sales quotations from fleet item availability, aren't available for bulk fleet items.
 
 ## Add re-rent fleet items
@@ -148,7 +147,7 @@ When the fleet item is transferred to a fleet type whose **Value tracking method
 - Opens the appropriate **depreciation books** (for example, rental depreciation books with revenue-based depreciation).
 - Updates the fleet item's fleet type on the fleet item master.
 
-A bulk fleet item gets one fixed asset for each fleet type whose **Value tracking method** is *Fixed asset*, and a later transfer of more quantity into the same fleet type adds to that fixed asset. Review them at **Rental management (Preview)** > **Common** > **Fleet items** > **Bulk fleet item—fixed asset**, which lists the fleet item, the fleet type, and the fixed asset.
+A bulk fleet item gets one fixed asset for each fleet type whose **Value tracking method** is *Fixed asset*, and a later transfer of more quantity into the same fleet type adds to that fixed asset. To see the fixed assets of a bulk fleet item, select it on the **Fleet items** page, and then, on the Action Pane, on the **Inquiries** tab, in the **Fleet item** group, select **Bulk fleet item - fixed asset**. To review the fixed assets of all bulk fleet items, go to **Rental management (Preview)** > **Common** > **Fleet items** > **Bulk fleet item - fixed asset**. The page lists the fleet item, the fleet type, and the fixed asset.
 
 When you later move a fleet item out of the rental fleet, the result depends on the target fleet type. A transfer to a fleet type whose **Value tracking method** is *Inventory* (for example, *Used*) disposes of the fixed asset and receives the fleet item back into inventory at its net book value. A transfer to another fleet type whose **Value tracking method** is *Fixed asset* (for example, *Lease*) moves the fixed asset into the target fleet type's book when the books differ. The fleet item can then use a different depreciation profile. Fleet transfer rules record which of the supported fleet-to-fleet combinations your organization allows.
 

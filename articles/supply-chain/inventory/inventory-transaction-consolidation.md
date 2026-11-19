@@ -80,6 +80,8 @@ The system performs the following validations during the consolidation process t
 - **Physically updated transactions that aren't financially posted** – Financially post all transactions before consolidation to prevent downstream process issues.
 - **Inconsistent inventory settlements** – Inventory settlements must sum to zero in the selected period.
 
+If you receive any of the preceding validation messages, go to **Inventory management** > **Inventory transactions** to search for transactions that don't meet the requirements.
+
 > [!NOTE]
 > The validation phase duration depends on the number of inventory transactions in your system. In environments with a high volume of inventory transactions, expect the validation to take considerable time.
 

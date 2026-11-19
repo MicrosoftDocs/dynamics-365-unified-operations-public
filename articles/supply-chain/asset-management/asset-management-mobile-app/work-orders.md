@@ -6,7 +6,7 @@ ms.author: jodahl
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 05/29/2026
+ms.date: 11/19/2026
 ms.custom: 
   - bap-template
 ---
@@ -20,7 +20,7 @@ ms.custom:
 Maintenance workers can use the Asset Management mobile app to manage and process maintenance work orders. The app supports maintenance workers through the following main capabilities:
 
 - It lists maintenance jobs and work orders that are assigned to a worker, including all information that the worker needs to process each job.
-- Workers can register the time and spare parts that are consumed for each job.
+- Workers can register the time and spare parts that they consume for each job.
 - Workers can view and update the maintenance checklist that's associated with a job.
 
 For more information about maintenance work orders in Supply Chain Management, see [Introduction to work orders](../work-orders/introduction-to-work-orders.md).
@@ -29,26 +29,27 @@ For more information about maintenance work orders in Supply Chain Management, s
 
 To view and process work orders by using the Asset Management mobile app, you must meet the following requirements:
 
-- Your user account in Supply Chain Management must be assigned the *Maintenance worker* security role. Learn more in [Onboard the Asset Management mobile app](onboard-app.md).
-- Your user account in Supply Chain Management must be associated with a human resources *Worker* record that's also set up as an Asset Management worker. Learn more in [Onboard the Asset Management mobile app](onboard-app.md).
+- Your user account in Supply Chain Management must have the *Maintenance worker* security role assigned. Learn more in [Onboard the Asset Management mobile app](onboard-app.md).
+- Your user account in Supply Chain Management must be associated with a human resources **Worker** record that's also set up as an Asset Management worker. Learn more in [Onboard the Asset Management mobile app](onboard-app.md).
 - You must sign in to Power Apps by using a domain account that matches a user account in Supply Chain Management that has the same Microsoft Entra ID username.
+- To use the project capabilities, the human resources **Worker** record that's associated with your user account must also be set up as a project resource.
 
 ## View the jobs and work orders assigned to you
 
-When you open the Asset Maintenance mobile app and sign in as a user who has the *Maintenance worker* security role, the list of jobs and work orders is shown.
+When you open the Asset Maintenance mobile app and sign in as a user who has the *Maintenance worker* security role, you see the list of jobs and work orders.
 
 The following illustration highlights the different user interface (UI) elements for working with maintenance work orders.
 
 [<img src="media/manage-work-orders-ui.png" alt="UI elements for working with maintenance work orders." title="UI elements for working with maintenance work orders" width="720" />](media/manage-work-orders-ui.png#lightbox)
 
-The job and work order list includes the UI following elements. The numbers correspond to the numbers in the previous illustration.
+The job and work order list includes the following UI elements. The numbers correspond to the numbers in the previous illustration.
 
 1. **Jobs tab** – Select this tab to view the job list. The list shows only maintenance jobs that both are assigned to you and belong to a maintenance work order that's *Active*.
 1. **Work orders tab** – Select this tab to view the work order list. The list shows only active work orders that have jobs that are assigned to you.
 1. **User image** – Select this image to view information about the app, such as terms and conditions and the current version of the app.
 1. **Legal entity identifier** – This label shows the legal entity (company) that you're currently working in. The lists show only jobs and work orders that are associated with this legal entity. If your Supply Chain Management user account is set up as an Asset Management worker in more than one legal entity, you can select this label to switch between legal entities.
 1. **Request button** – If your Supply Chain Management user account is assigned the *Maintenance requester* security role, you can use this button to create a maintenance request. For more information about this functionality, see [Maintenance requests](../manage-maintenance-requests/maintenance-request-overview.md).
-1. **Search button** – When you select this button, a search field appears. There, you can enter text to search for the ID of the work order, asset, or functional location that you're looking for.
+1. **Search button** – When you select this button, a search field appears. Enter text to search for the ID of the work order, asset, or functional location that you're looking for.
 1. **Filter button** – Select this button to filter the jobs or work orders in the list, based on the following criteria:
 
     - *Today* – Show only jobs that are scheduled for today.
@@ -87,7 +88,7 @@ The **Jobs** tab of the job details page includes the following UI elements. The
 
 ### Maintenance checklist
 
-A maintenance checklist is a set of tasks that the maintenance worker must complete to close the maintenance job. For more information about how to define a checklist for a job, including how to use item types and create groups, see [Maintenance checklists](../work-orders/maintenance-checklists.md). For more information about how to set up default checklists that can be assigned to various maintenance jobs or asset types, see [Maintenance job types, categories, variants, trades, and checklists](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
+A maintenance checklist is a set of tasks that the maintenance worker must complete to close the maintenance job. For more information about how to define a checklist for a job, including how to use item types and create groups, see [Maintenance checklists](../work-orders/maintenance-checklists.md). For more information about how to set up default checklists that you can assign to various maintenance jobs or asset types, see [Maintenance job types, categories, variants, trades, and checklists](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
 
 To view the maintenance checklist, select the **Checklist** tab at the top of the page. The following illustration highlights the different UI elements on the **Checklist** tab.
 
@@ -96,11 +97,11 @@ To view the maintenance checklist, select the **Checklist** tab at the top of th
 The **Checklist** tab of the job details page includes the following UI elements. The numbers correspond to the numbers in the previous illustration.
 
 1. **Job and Checklist tabs** – Select a tab to switch between the job details and the checklist. The numbers in parentheses on the label of the **Checklist** tab indicate the number of completed items and the total number of items on the checklist.
-1. **Checklist line number** – Each checklist item has a system-generated line number. You can use this number to refer to the checklist item when you communicate with other workers. The text color changes to green when the item is marked as completed by the worker.
-1. **Group name** – Checklist items can be grouped under a heading. (You set up group names in Supply Chain Management by creating a checklist item of the *Header* type.)
+1. **Checklist line number** – Each checklist item has a system-generated line number. Use this number to refer to the checklist item when you communicate with other workers. The text color changes to green when the worker marks the item as completed.
+1. **Group name** – You can group checklist items under a heading. Set up group names in Supply Chain Management by creating a checklist item of the *Header* type.
 1. **Checklist item title** – This text shows the title of the checklist item.
 1. **Checklist item type** – This text shows the type of checklist item (*Variable*, *Text*, or *Measurement*).
-1. **Value** – This field shows the value that has been entered for checklist items of the *Measurement* or *Variable* type. To enter these values, select the checklist item card.
+1. **Value** – This field shows the value that you enter for checklist items of the *Measurement* or *Variable* type. To enter these values, select the checklist item card.
 
 ## Work order details page
 
@@ -111,5 +112,5 @@ The work order details page shows more information about a selected work order. 
 The work order details page includes the following UI elements. The numbers correspond to the numbers in the previous illustration.
 
 1. **Work order and Jobs tabs** – Select a tab to switch between the work order details and the list of jobs that belong to the work order. The job list shows a list of job cards. Select a card to open the details page for that job.
-1. **Work order information** – Information about the work order is shown on various cards.
+1. **Work order information** – Various cards show information about the work order.
 1. **Change state button** – Select this button to change the lifecycle state of the work order. For more information about work order states, see [Work order lifecycle states](../setup-for-work-orders/work-order-lifecycle-states.md).

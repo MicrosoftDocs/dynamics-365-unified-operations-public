@@ -26,7 +26,7 @@ A call-off indicates that the customer no longer needs the fleet item and wants 
 To call off fleet items on a contract, follow these steps:
 
 1. Open the rental contract.
-1. On the Action Pane, on the **Rental** tab, in the **Call-offs** group, select **Call-offs**. To call off a single line, select the line, and then select **Call-offs** > **Create** on the lines toolbar.
+1. On the Action Pane, on the **Contract** tab, in the **Call-offs** group, select **Call-offs**. To call off a single line, select the line, and then select **Call-offs** > **Create** on the lines toolbar.
 1. On the **Fleet items** tab, select the lines to call off. Use **Select** for one line, or **Select all**.
 1. Set the **Call-off date and time**, which is when the customer stops using the fleet item. It defaults to the current date and time, and the system uses it for final billing calculations. Optionally, enter a **Contact ID** and a **Note line**.
 1. Set **Fleet item movement action**, which decides whether the call-off also creates the inbound fleet item movement for the return.

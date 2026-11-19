@@ -6,7 +6,7 @@ ms.author: jodahl
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 10/23/2026
+ms.date: 11/19/2026
 ai-usage: ai-assisted
 ms.custom:
   - bap-template
@@ -202,7 +202,9 @@ To set up a rental package, turn on **Use package** at **Rental management (Prev
 
 ## Location price factors
 
-A **Location** price factor works like the application and shift price factors. Switch it on with **Rates by location** and **Discount by location**, and then select it on the quotation or contract line. The value defaults from the rental template's default price factor values, or from **Default location** on the **Rental parameters** page.
+A **Location** price factor works like the application and shift price factors. Switch it on with **Rates by location** and **Discount by location**. To charge different rates at different branches, set the **Location group** of each hub on the **Fleet locations** page, as described in [Create a hub](configure-inventory-location-settings.md#create-a-hub). Hub locations take the location group of their hub.
+
+A quotation or contract line takes its location price factor from the **Location group** of its pickup fleet location. If the line has no pickup fleet location, or that location has no location group, the value defaults from the rental template's default price factor values, and then from **Default location** on the **Rental parameters** page. You can change the value on the line. When the line's pickup fleet location changes, either on the line or through the header, the system sets the location price factor again. If you applied a dynamic price suggestion to a line, select **Revert to base price** before you change its location price factor or move it to a pickup fleet location that has a different location group.
 
 ## Configure dynamic pricing
 

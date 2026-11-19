@@ -6,7 +6,7 @@ ms.author: jodahl
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 10/23/2026
+ms.date: 11/19/2026
 ai-usage: ai-assisted
 ms.custom:
   - bap-template
@@ -39,10 +39,10 @@ The **General** tab contains settings that apply to the overall rental managemen
 
 ### General FastTab of the General tab
 
-The **General** FastTab controls quotation expiration, whether reserved fleet items can be quoted, and defaults for best rate calculations and posting journals. Make the following settings:
+The **General** FastTab controls quotation expiration, whether fleet items on sales orders can be quoted, and defaults for best rate calculations and posting journals. Make the following settings:
 
 - **Expiration base** – Select the date from which to count the rental template's **Default expiration date** and **Maximum expiration date** values. Select *System date* to count from the current system date, or *Start date* to count from the rental's start date. Learn more in [The Quotation FastTab](set-up-rental-templates.md#the-quotation-fasttab). **Expiration time in days** on the **Other** tab is separate: it controls when a quotation appears in the workspace's **Expiring quotations** tile.
-- **Reserved fleet item can be quoted** – Set to *Yes* to allow a fleet item reserved on a sales order, or owned by a customer, to be added to a sales quotation. Set to *No* to block it. When you quote a fleet item that's reserved on a sales order, the system warns you about that order. Fleet item reservations still apply.
+- **Fleet items on sales orders can be quoted** – Set to *Yes* to allow a fleet item reserved on a sales order, or owned by a customer, to be added to a sales quotation. Set to *No* to block it. When you quote a fleet item that's reserved on a sales order, the system warns you about that order. Fleet item reservations still apply.
 - **Period** – In the **Best rate calculation defaults** group, select the period code to assign to price lines created by the best rate calculation. This setting identifies the resulting price line's period; it doesn't replace the billing scenario's pricing tiers. Learn more in [Best rate calculation, end to end](call-off-close-rental-contracts.md#best-rate-calculation-end-to-end).
 - **Transfer request movement journal** – Select an inventory journal name of type *Movement* for fleet transfers from fixed assets back to inventory.
 - **Transfer request inventory asset journal** – Select an inventory journal name of type *Fixed assets* for fleet transfers from inventory to fixed assets.
@@ -50,7 +50,7 @@ The **General** FastTab controls quotation expiration, whether reserved fleet it
 
 Create the journal names before you select them here. Learn more in [Configure posting journals](set-up-rental-reference-data.md#configure-posting-journals).
 
-On the **General** FastTab's toolbar, select **Update document lines** to configure what happens when a user changes a rental quotation or contract header. For each field shown in the dialog, choose one of the following behaviors:
+On the **General** FastTab's toolbar, select **Configure updates from header to document lines** to decide what happens when a user changes a rental quotation or contract header. For each field shown in the dialog, choose one of the following behaviors:
 
 - *Never* – Don't apply the header change to document lines.
 - *Always* – Apply the header change to document lines automatically.

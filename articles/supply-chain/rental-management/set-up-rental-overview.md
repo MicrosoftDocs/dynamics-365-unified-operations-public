@@ -6,7 +6,7 @@ ms.author: jodahl
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 10/23/2026
+ms.date: 11/19/2026
 ai-usage: ai-assisted
 ms.custom:
   - bap-template
@@ -61,18 +61,29 @@ You can import setup data through data entities. To do so, prepare the data in a
 
 | Setup area | Data entities |
 |---|---|
-| Fleet item reference data | <ul><li>Fleet item features</li><li>Fleet item translations</li><li>Fleet item availability status combinations</li><li>Excluded fleet item agreement statuses</li></ul> |
+| Parameters | <ul><li>Rental parameters</li><li>Rental rate parameters</li><li>Rental color parameters</li><li>Rental payment setups</li></ul> |
+| Fleet item reference data | <ul><li>Fleet item features</li><li>Fleet item translations</li><li>Fleet item availability status combinations</li><li>Excluded fleet item agreement statuses</li><li>Rental inspection checklist items</li></ul> |
 | Rental classes and templates | <ul><li>Rental class definitions for released products</li><li>Rental class fleet item lines</li><li>Rental class package lines</li><li>Rental template line class rules</li><li>Fleet type and fleet item or attachment eligibility</li></ul> |
-| Customers and job sites | <ul><li>Rental job sites</li><li>Rental job site customer assignments</li><li>Rental job site prospect assignments</li></ul> |
+| Customers and job sites | <ul><li>Rental customers</li><li>Rental insurances</li><li>Rental insurance type details</li><li>Rental job sites</li><li>Rental job site customer assignments</li><li>Rental job site prospect assignments</li></ul> |
 | Reservations | <ul><li>Fleet item reservation types</li><li>Fleet item reservation request setups</li><li>Fleet item reservation request setup fleet types</li><li>Fleet item reservation setups</li><li>Fleet item reservation setup fleet types</li><li>Fleet item reservation headers</li><li>Fleet item reservation lines</li></ul> |
 | Billing and pricing | <ul><li>Rental billing scenario prices</li><li>Rental period hours allowances</li><li>Rental dynamic price inventory level tiers</li><li>Rental dynamic price time utilization tiers</li><li>Rental dynamic price financial utilization tiers</li><li>Rental dynamic price past contract tiers</li><li>Rental dynamic price reservation tiers</li><li>Rental dynamic price period limits</li></ul> |
 | Rental purchase option | <ul><li>Rental purchase option prime interest rates</li><li>Rental template purchase option periods</li><li>Rental document purchase option periods</li></ul> |
 
-Three more entities are available for export only:
+The following entities are available for export only:
 
 - Rental class exceptions
+- Rental contract stand-down periods
 - Rental customer invoice journal headers
 - Rental customer invoice journal lines
+- Rental document journal headers
+- Rental document journal line items
+- Rental document journal line prices
+- Rental document journal lines
+- Rental invoice schedule headers
+- Rental invoice schedule lines
+- Rental quotation stand-down periods
+
+Three read-only entities are available only through OData, for reporting and integration: Fleet item reservations, Rental purchase orders, and Rental purchase order lines.
 
 Import the entities in the setup order described earlier in this article because the data that they carry has the same dependencies.
 

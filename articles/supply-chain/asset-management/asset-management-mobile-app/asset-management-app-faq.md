@@ -6,7 +6,7 @@ ms.author: jodahl
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: faq
-ms.date: 05/29/2026
+ms.date: 11/19/2026
 ms.custom: 
   - bap-template
 ---
@@ -17,15 +17,15 @@ ms.custom:
 
 [!INCLUDE [asset-management-sample-app](../../includes/asset-management-sample-app.md)]
 
-This article provides answers to several frequently asked questions (FAQs) about the Asset Management mobile app. It also describes a few known issues that affect the app and how to work around them.
+This article provides answers to frequently asked questions (FAQs) about the Asset Management mobile app. It also describes a few known issues that affect the app and how to work around them.
 
-## What platforms and mobile devices are supported?
+## What platforms and mobile devices does the app support?
 
 The Asset Management mobile app runs within the Power Apps mobile app. All platforms supported by the Power Apps mobile app can also run the Asset Management mobile app. For details, see [System requirements, limits, and configuration values for Power Apps](/power-apps/limits-and-config).
 
 ## Why don't I see anything when I sign in to the app?
 
-If you don't see any features in the app, you probably lack the permissions required to access them. Access to each feature is controlled by security roles assigned to your user account in Supply Chain Management. Learn more in [Configure users and workers in Supply Chain Management](onboard-app.md#roles-workers)
+If you don't see any features in the app, you probably lack the permissions required to access them. Access to each feature is controlled by security roles assigned to your user account in Supply Chain Management. Learn more in [Configure users and workers in Supply Chain Management](onboard-app.md#roles-workers).
 
 ## What versions of Supply Chain Management support the app?
 
@@ -33,7 +33,7 @@ The Asset Management mobile app requires Supply Chain Management version 10.0.36
 
 ## <a name="customize"></a>Can I customize and extend the app?
 
-Yes — the source code is now available as an open-source sample on GitHub at [microsoft/scmsamples-EnterpriseAssetManagement](https://github.com/microsoft/scmsamples-EnterpriseAssetManagement) and can be customized freely. See [Asset Management mobile app open-source release](open-source-release.md) for guidance.
+Yes — the source code is now available as an open-source sample on GitHub at [microsoft/scmsamples-EnterpriseAssetManagement](https://github.com/microsoft/scmsamples-EnterpriseAssetManagement) and you can customize it freely. See [Asset Management mobile app open-source release](open-source-release.md) for guidance.
 
 ## Does the app support offline mode?
 
@@ -41,11 +41,16 @@ No, the Asset Management mobile app doesn't currently support offline mode.
 
 ## Is there multi-language support?
 
-Yes, the Asset Management mobile app is available in all the same languages as Supply Chain Management, except for right-to-left (RTL) languages. We're awaiting RTL support from the canvas app platform and plan to add RTL support in a future release.
+Yes, the Asset Management mobile app is available in all the same languages as Supply Chain Management, except for right-to-left (RTL) languages. Microsoft is awaiting RTL support from the canvas app platform and plans to add RTL support in a future release.
 
 ## Where can I go to discuss the app with the community and submit suggestions to Microsoft?
 
 The [Asset Management](https://engage.cloud.microsoft/main/org/microsoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIyMzc3MjY5OTg1MjgifQ) community on Microsoft Viva Engage is a great place to go if you want to exchange tips, ask questions, or submit suggestions for improvement. Viva Engage community participants include Microsoft partners, customers, experts, and employees.
+
+## Why don't I see the hours that I registered?
+
+Hours registered in the app are posted to a project journal. The human resources **Worker**
+record associated with your user account must be set up both as an Asset Management worker and as a project resource. Ask your administrator to confirm both mappings.
 
 ## How can I diagnose "Error when trying to retrieve data from the network" issues?
 
@@ -63,16 +68,16 @@ The content of the HAR file might reveal an error similar to the following examp
 SecLib::CheckPrivilege failed. User: <EntraObjectID>, PrivilegeName: prvReadRelationship, PrivilegeId: <PrivilegeID>, Required Depth: Basic, BusinessUnitId: <BusinessUnitID>, MetadataCache Privileges Count: <CacheCount>, User Privileges Count: <UserPrivilegeCount>
 ```
 
-This error can occur because the *Asset Management app* role doesn't have the privileges required to read the `Relationship` table. Instead, that privilege is provided by the *Finance and Operations Basic User* role in Dataverse. To resolve this issue, add the *Finance and Operations Basic User* role to each user or team that's using the app.
+This error can occur because the *Asset Management app* role doesn't have the privileges required to read the `Relationship` table. Instead, the *Finance and Operations Basic User* role in Dataverse provides that privilege. To resolve this issue, add the *Finance and Operations Basic User* role to each user or team that's using the app.
 
 ## When updating the app, how can I solve the error: "Could not delete solution ... because it has been modified"?
 
-The update process fails with an error if it detects that the Asset Management mobile application canvas app has been customized. This helps prevent the updater from overwriting your customizations. To solve this issue, remove any customization layers by restoring the oldest version of the app. If the oldest version is over six months old, you'll need to manually delete the `msdyn_EnterpriseAssetManagementMobileV2` solution and then reinstall the app from *Dynamics 365 apps* or *Marketplace*.
+The update process fails with an error if it detects that the Asset Management mobile application canvas app is customized. This error helps prevent the updater from overwriting your customizations. To solve this issue, remove any customization layers by restoring the oldest version of the app. If the oldest version is more than six months old, you need to manually delete the `msdyn_EnterpriseAssetManagementMobileV2` solution and then reinstall the app from *Dynamics 365 apps* or *Marketplace*.
 
-Consider cloning the canvas app before removing your customizations, just in case you want to copy the customizations to the updated app.
+Consider cloning the canvas app before removing your customizations, in case you want to copy the customizations to the updated app.
 
 > [!NOTE]
-> For canvas-app customizations that need to be preserved across official updates, use the [open-source release](open-source-release.md) rather than editing in Power Apps Studio.
+> For canvas app customizations that need to be preserved across official updates, use the [open-source release](open-source-release.md) rather than editing in Power Apps Studio.
 
 ## Are there any known issues affecting the release of the Asset Management mobile app?
 
