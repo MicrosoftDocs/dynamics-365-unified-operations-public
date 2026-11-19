@@ -4,7 +4,7 @@ description: Learn how to migrate to Unified pricing management in Microsoft Dyn
 author: sherry-zheng
 ms.author: chuzheng
 ms.reviewer: v-griffinc
-ms.date: 11/25/2025
+ms.date: 11/19/2026
 ms.topic: how-to
 ms.custom: 
   - bap-template
@@ -25,19 +25,19 @@ This enhancement simplifies adoption, so you can quickly experience the benefits
 
 Unified pricing management migration is structured into three incremental phases from Commerce versions 10.0.46 to 10.0.48, so you can move at your own pace and address various user scenarios and existing Commerce pricing engine configurations.
 
-The first rule column shows how migration handles existing rules from the legacy Commerce pricing engine. The next two columns show whether you can still create rules without price attributes after you enable Unified pricing management and whether Unified pricing management supports attribute-based rules for each feature.
+The following table describes how various rules are supported for pricing features. The first rule column shows how migration handles existing rules from the legacy Commerce pricing engine. The next two columns show whether you can still create rules without price attributes after you enable Unified pricing management and whether Unified pricing management supports attribute-based rules for each feature.
 
 | Feature | Existing rules in legacy Commerce pricing | Create rules without price attributes | Create attribute-based rules |
 |----------|-----------------------------|--------------------------|----------------------------|
 | Trade agreement price | Keep existing rules or migrate them | Supported | Supported |
 | Discount | Migrate | Not supported | Supported |
-| Shipping discount | Migrate starting in 10.0.47 | Not supported | Supported |
-| Tender discount | Migrate starting in 10.0.47 | Not supported | Supported |
-| Charges | Supported without migration (migration is planned) | Supported | Supported |
+| Shipping discount | Migrate starting in version 10.0.47 | Not supported | Supported |
+| Tender discount | Migrate starting in version 10.0.47 | Not supported | Supported |
+| Charges | Supported without migration | Supported | Supported |
 | Rebate management | Supported | Supported | Supported |
 | Trade agreement discount | No migration | Supported | Supported (use an attribute-based discount rule) |
 | Price group | Migrate to attributes | Not supported | Supported |
-| Price adjustments | Migrate starting in 10.0.47 | Not supported | Supported |
+| Price adjustments | Migrate starting in version 10.0.47 | Not supported | Supported |
 
 ## Prerequisites
 
@@ -49,7 +49,7 @@ To migrate to Unified pricing management, follow these steps:
 
 1. In Dynamics 365 Commerce headquarters, go to the **Feature Management** workspace at **System administration** > **Workspaces** > **Feature management**.
 1. Search for the **Unified pricing management pricing rule performance and enhancement** feature.
-1. Select the feature, then select **Enable**.
+1. Select the feature, and then select **Enable**.
 
     > [!NOTE]
     > When you enable the feature, you unlock the migration options to migrate from the Commerce pricing engine to Unified pricing management.
