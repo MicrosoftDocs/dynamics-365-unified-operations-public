@@ -1568,6 +1568,8 @@
           href: category-search-page-overview.md
         - name: Cloud-powered search overview
           href: cloud-powered-search-overview.md
+        - name: Advanced product search (preview)
+          href: advanced-product-search.md
         - name: View product search publishing status in headquarters
           href: publish-status-headquarters.md
       - name: Reporting
