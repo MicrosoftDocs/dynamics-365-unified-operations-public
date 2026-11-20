@@ -1,62 +1,62 @@
 ---
 title: Improve the performance of Commerce order search
-description: Learn how to help improve the performance of Commerce order search by enabling the use of intermediate order totals in Microsoft Dynamics 365 Commerce.
+description: Learn how to improve the performance of order search and order history in Dynamics 365 Commerce by scheduling the Calculate sales totals job.
 author: ashishMSFT
-ms.date: 01/23/2026
+ms.date: 11/20/2026
 ms.topic: how-to
+ms.author: asharchw
 ms.reviewer: mirao
 ms.search.region: Global
-ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.custom: 
   - bap-template
+ai-usage: ai-assisted
 ---
 
 # Improve the performance of Commerce order search
 
 [!INCLUDE [banner](../includes/banner.md)]
 
-This article explains how to enable and use the **Improve Performance of Commerce Order search** feature. This feature helps improve search order performance by enabling the use of intermediate order totals that the **Calculate sales totals** job calculates. To use this feature, you must schedule a batch job.
+This article explains how to improve the performance of order search and order history in Dynamics 365 Commerce by setting up and scheduling the **Calculate sales totals** job.
 
-## Enable the Improve Performance of Commerce Order search feature
+When an order search or order history request runs, Commerce needs the total amounts for each sales order, including tax, discounts, and charges. If precalculated totals exist for an order, Commerce uses them. If they don't exist, Commerce calculates the totals while the request runs. That calculation can make order search slow or cause it to time out. For example, it can affect the **Recall order** operation in the point of sale (POS), the **Order history** page on an e-commerce site, and integrations that retrieve sales orders.
 
-To enable the **Improve Performance of Commerce Order search** feature in Commerce headquarters, follow these steps:
+The **Calculate sales totals** batch job calculates these totals ahead of time. This improvement is part of the product, and you don't have to turn it on in **Feature management**. However, you must set up and schedule the **Calculate sales totals** job.
 
-1. Open the **Feature management** workspace (**Systems administration \> Workspaces \> Feature management**).
-1. Search for the **Improve Performance of Commerce Order search** feature, and then select it.
-1. In the right pane, select **Enable now**.
+## Set up and schedule the Calculate sales totals job
 
-## Create and schedule the Calculate sales totals job
+To set up and schedule the **Calculate sales totals** job, follow these steps:
 
-To create and schedule the **Calculate sales totals** job, follow these steps:
-
-1. In Commerce headquarters, go to **System administration \> Inquiries \> Batch Jobs**.
-1. Select **New**.
-1. In the **Job description** field, enter **Calculate sales totals**.
-1. While the new job has a status of **Withhold**, follow these steps:
-
-    1. Under **Batch tasks**, select **New**.
-    1. In the **Task description** field, enter a name that's similar to the name of the batch job.
-    1. In the **Class name** field, enter **SalesTotalsCalculateBatch**.
-    1. In the **Company** field, select the company.
-    1. In the task parameters, set both the **Calculate totals for sales orders** option and the **Calculate totals for sales quotations** option to **Yes**.
-    1. Schedule the recurrence so that the job runs every 5 to 10 minutes.
-
-1. Change the status to **Waiting**.
+1. In Commerce headquarters, go to **Sales and marketing** > **Periodic tasks** > **Calculate sales totals**.
+1. In the **Calculate sales totals** dialog box, set the **Calculate totals for sales orders** option to **Yes**.
+1. If you also need totals for sales quotations, set the **Calculate totals for sales quotations** option to **Yes**.
+1. In the **Ignore documents updated before (days)** field, enter the number of days of history to include. The job skips documents that were last updated more than this number of days ago. Select a value that covers the order history that customers and store staff need to search. For example, enter **365** to include orders that were last updated within the past year.
+1. Optionally, in the **Number of threads** field, enter the number of threads to use. For more information, see [Improve the speed of calculations](#improve-the-speed-of-calculations).
+1. On the **Run in the background** FastTab, set the **Batch processing** option to **Yes**.
+1. Select **Recurrence**, and set up a recurrence so that totals stay current. The recurrence dialog defaults to every 10 minutes.
+1. Select **OK** to schedule the job.
 1. Go to **Batch job history**, and confirm that the job runs correctly.
+
+> [!NOTE]
+> Order search and order history might be slower for orders until the job calculates their totals.
 
 ## Improve the speed of calculations
 
-To help improve the speed of calculations, Microsoft recommends that you enable the **Calculate sales totals using multiple threads** feature. By using this feature, you can speed up the processing of totals when there are many sales orders and quotations.
+If you have many sales orders and quotations, you can speed up the calculation of totals by using the **Number of threads** field in the **Calculate sales totals** dialog box. This field sets the maximum number of threads that the job uses when it runs in a batch.
 
-The **Calculate sales totals using multiple threads** feature helps improve performance by enabling the system to use parallel processing when it calculates sales totals in a batch. The feature adds a new **Number of threads** field to the **Calculate sales totals** dialog box. If you choose to run the calculations in a batch, you can use this field to set the maximum number of threads. If you set the value to **0** (zero) or **1**, a single thread is used. Values above **1** enable multithreading.
+- If you set the value to **0** (zero) or **1**, the job uses a single thread.
+- If you set a value greater than **1**, the job evenly distributes the selected orders and quotations across multiple threads.
 
-### Enable the Calculate sales totals using multiple threads feature
+The number of threads that the job uses never exceeds the maximum number of batch threads that are configured for your system. If calculations take too long, increase the value. To leave more resources for other processes, decrease the value.
 
-To enable the **Calculate sales totals using multiple threads** feature in Commerce headquarters, follow these steps:
+## Troubleshoot slow order search or order history
 
-1. Open the **Feature management** workspace (**Systems administration \> Workspaces \> Feature management**).
-1. Search for the **Calculate sales totals using multiple threads** feature, and then select it.
-1. In the right pane, select **Enable now**.
+If order search or order history is slow or times out, first check the **Calculate sales totals** job:
+
+- Confirm that the job is set up with the **Calculate totals for sales orders** option set to **Yes**.
+- Confirm that the job has a recurrence and runs correctly in **Batch job history**.
+- Confirm that the **Ignore documents updated before (days)** value covers enough days to include the orders that users search for.
+
+If the issue persists and occurs as a timeout on an e-commerce site, you can increase the data action timeout values. For more information, see [Platform settings file](e-commerce-extensibility/platform-settings.md). Changing these timeout settings affects all Retail API calls.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
