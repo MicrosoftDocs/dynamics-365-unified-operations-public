@@ -356,7 +356,7 @@ This release doesn't remove or deprecate any features. Platform update 15 is cum
 
 ### Personalized product recommendations
 
-Starting February 15, 2018, retailers can't display personalized product recommendations on a point of sale (POS) device. For more information, see [Product recommendations overview](../../../commerce/product-recommendations.md).  
+Starting February 15, 2018, retailers can't display personalized product recommendations on a point of sale (POS) device. For more information, see [Product recommendations overview](../../../commerce/create-editorial-recommendation-lists.md).  
 
 | &nbsp;   | &nbsp; |
 |------------|--------------------|
@@ -462,7 +462,7 @@ Users can download this certificate from the government portal.
 
 ### Personalized product recommendations
 
-Starting February 15, 2018, retailers can't display personalized product recommendations on a point of sale (POS) device. For more information, see [Product recommendations overview](../../../commerce/product-recommendations.md).  
+Starting February 15, 2018, retailers can't display personalized product recommendations on a point of sale (POS) device. For more information, see [Product recommendations overview](../../../commerce/create-editorial-recommendation-lists.md).  
 
 |  &nbsp; |  &nbsp;|
 |------------|--------------------|

@@ -34,6 +34,7 @@ The following illustration shows the different types of product collections bein
 :::image type="content" source="./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png" alt-text="Screenshot of the different types of product collections on an e-commerce site.":::
 
 > [!NOTE]
+>
 > - Always use product collection modules to show a group of products of a similar type.
 > - Before you use product collection modules, you must first enable cloud-powered search in Commerce headquarters. For instructions on how to configure cloud-powered search, see [Configure cloud-powered search capabilities](cloud-powered-search-overview.md#configure-cloud-powered-search-capabilities).
 
@@ -89,20 +90,14 @@ The following table shows the list types that are available for selection in the
 | People also like           | A list that uses machine learning to analyze consumer purchase patterns and recommend items that are related to a given product. | Use this type of list on PDPs to show products that other customers bought. | Product context from the page | The product that the site author provides | Supported |
 | Picks for you              | A list that uses machine learning to determine customer preferences. | Use this type of list on any page. | Not applicable| Not applicable | Supported |
 
-## Additional resources
+## Related information
 
-[Module library overview](starter-kit-overview.md)
-
-[Carousel module](add-carousel.md)
-
-[Content rich block module](add-content-rich-block.md)
-
-[Container module](add-container-module.md)
-
-[Buy box module](add-buy-box.md)
-
-[Product recommendations overview](product-recommendations.md)
-
-[Quick view module](quick-view-module.md)
+- [Module library overview](starter-kit-overview.md)
+- [Carousel module](add-carousel.md)
+- [Content rich block module](add-content-rich-block.md)
+- [Container module](add-container-module.md)
+- [Buy box module](add-buy-box.md)
+- [Manually create curated recommendations](create-editorial-recommendation-lists.md)
+- [Quick view module](quick-view-module.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

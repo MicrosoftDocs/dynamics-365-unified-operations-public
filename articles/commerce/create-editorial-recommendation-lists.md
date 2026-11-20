@@ -39,29 +39,9 @@ To create a curated product recommendation list, follow these steps:
 
 :::image type="content" source="./media/examplecuratedrecolist.png" alt-text="Screenshot of an example curated recommendation list in headquarters.":::
 
-## Additional resources
+## Related information
 
-[Product recommendations overview](product-recommendations.md)
-
-[Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment](enable-adls-environment.md)
-
-[Enable product recommendations](enable-product-recommendations.md)
-
-[Enable personalized recommendations](personalized-recommendations.md)
-
-[Opt out of personalized recommendations](opt-out-personalization.md)
-
-[Enable "shop similar looks" recommendations](shop-similar-looks.md)
-
-[Add product recommendations on POS](product.md)
-
-[Add recommendations to the transaction screen](add-recommendations-control-pos-screen.md)
-
-[Adjust AI-ML recommendations results](modify-product-recommendation-results.md)
-
-[Create recommendations with demo data](product-recommendations-demo-data.md)
-
-[Product recommendations FAQ](faq-recommendations.md)
-
+- [Add product recommendations on POS](product.md)
+- [Add recommendations to the transaction screen](add-recommendations-control-pos-screen.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

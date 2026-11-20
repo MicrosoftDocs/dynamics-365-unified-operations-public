@@ -77,7 +77,7 @@ The following illustration shows an example where immersive autosuggest is being
 
 ## Sort
 
-Sort functionality enables customers to sort, search, and browse category results, and refine them by criteria such as price, product name, and product number. If you enable [Product recommendations](product-recommendations.md) in your environment, customers can also sort results based on advanced sorting criteria such as new, best-selling, and trending.
+Sort functionality enables customers to sort, search, and browse category results, and refine them by criteria such as price, product name, and product number. If you enable [Product recommendations](create-editorial-recommendation-lists.md) in your environment, customers can also sort results based on advanced sorting criteria such as new, best-selling, and trending.
 
 > [!NOTE]
 > Advanced sorting options like new, best-selling, and trending are available with Commerce SDK version 9.35 and Dynamics 365 Commerce version 10.0.20.

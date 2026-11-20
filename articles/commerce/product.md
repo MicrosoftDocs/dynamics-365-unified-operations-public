@@ -55,28 +55,9 @@ To set up product recommendations, confirm that you completed the provisioning p
 > [!NOTE]
 > To enable POS recommendations by using the RecoMock comma-separated values (CSV) file, you must deploy the CSV file to the Microsoft Dynamics Lifecycle Services (LCS) asset library before you configure the layout manager. If you use the RecoMock CSV file, you don't have to enable recommendations. The CSV file is available only for demo purposes. It's recommended for customers or solution architects who want to mimic the appearance of recommendation lists for demo purposes without having to purchase an add-on stock keeping unit (SKU).
 
-## Additional resources
+## Related information
 
-[Product recommendations overview](product-recommendations.md)
-
-[Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment](enable-adls-environment.md)
-
-[Enable product recommendations](enable-product-recommendations.md)
-
-[Enable personalized recommendations](personalized-recommendations.md)
-
-[Opt out of personalized recommendations](opt-out-personalization.md)
-
-[Enable "shop similar looks" recommendations](shop-similar-looks.md)
-
-[Add recommendations to the transaction screen](add-recommendations-control-pos-screen.md)
-
-[Adjust AI-ML recommendations results](modify-product-recommendation-results.md)
-
-[Manually create curated recommendations](create-editorial-recommendation-lists.md)
-
-[Create recommendations with demo data](product-recommendations-demo-data.md)
-
-[Product recommendations FAQ](faq-recommendations.md)
+- [Manually create curated recommendations](create-editorial-recommendation-lists.md)
+- [Add recommendations to the transaction screen](add-recommendations-control-pos-screen.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
