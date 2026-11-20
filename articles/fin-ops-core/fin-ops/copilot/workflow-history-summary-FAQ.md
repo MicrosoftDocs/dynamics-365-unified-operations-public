@@ -39,7 +39,7 @@ The AI-generated summary was evaluated based on the existing workflow history of
 ## What are the limitations of Workflow history summary? How can users minimize the impact of those limitations when they use the system?
 
 - The summary is based on the current workflow history that the user is viewing. Only the most recent actions are shown. They are arranged in chronological order by session date. 
-- This Copilot feature was validated for [these languages](https://go.microsoft.com/fwlink/?linkid=2270154). Although it can be used in other languages, it might not work as intended. Language quality might vary, based on the user's interactions or system settings, and might therefore affect accuracy and the user experience.
+- This Copilot feature was validated for the languages in [Dynamics 365, Power Platform, and Copilot Studio product availability](https://aka.ms/d365-product-availability). Although you can use it in other languages, it might not work as intended. Language quality might vary, based on the user's interactions or system settings, and might therefore affect accuracy and the user experience.
 
 ## What operational factors and settings allow for effective and responsible use of Workflow history summary?
 

@@ -42,7 +42,7 @@ The AI-generated summary was evaluated based on the existing transaction data (c
 
 The summary provides a comprehensive view of the past year's customer transactions, starting from the session date. It includes yearly aggregated data of customer invoices, customer payments, sales orders, overdue invoices, and delayed order lines. It doesn't encompass the full range of these transactions.
 
-This Copilot feature was validated for [these languages](https://go.microsoft.com/fwlink/?linkid=2270154). Although it can be used in other languages, it might not work as intended. Language quality might vary, based on the user's interactions or system settings, and might therefore affect accuracy and the user experience.
+This Copilot feature was validated for the languages in [Dynamics 365, Power Platform, and Copilot Studio product availability](https://aka.ms/d365-product-availability). Although it can be used in other languages, it might not work as intended. Language quality might vary, based on the user's interactions or system settings, and might therefore affect accuracy and the user experience.
 
 ## What operational factors and settings allow for effective and responsible use of Customer page summary?
 

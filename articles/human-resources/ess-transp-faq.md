@@ -50,7 +50,7 @@ The AI-generated summary was evaluated based on the existing transaction data (l
 
 The summary provides a comprehensive view of the employee's time-off balances. Information includes the expected amount to lose, which is calculated by using the balance, approved and not yet approved time off, and the expected accruals between now and when the balance expires. This information helps the user quickly learn how much time off they are at risk of forfeiting.
 
-This Copilot feature was validated for [these languages](https://go.microsoft.com/fwlink/?linkid=2270154). Although it can be used in other languages, it might not work as intended. Language quality might vary, based on the user's interactions or system settings, and might therefore affect accuracy and the user experience.
+This Copilot feature was validated for the languages in [Dynamics 365, Power Platform, and Copilot Studio product availability](https://aka.ms/d365-product-availability). Although it can be used in other languages, it might not work as intended. Language quality might vary, based on the user's interactions or system settings, and might therefore affect accuracy and the user experience.
 
 ## What operational factors and settings allow for effective and responsible use of Employee self service leave summary?
 

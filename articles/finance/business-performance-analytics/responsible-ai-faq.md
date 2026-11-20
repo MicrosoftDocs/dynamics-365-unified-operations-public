@@ -36,7 +36,7 @@ Security, legal, and responsible AI professionals reviewed the purpose, user int
 
 Because generative help and guidance searches only Business performance analytics documentation to form a response, it can't answer prompts that are unrelated to Business performance analytics or that aren't covered by that documentation.
 
-Additionally, this Copilot feature was validated only for the [English language](https://go.microsoft.com/fwlink/?linkid=2270154). Although it can be used in other languages, it might not work as intended. The user's interactions or system settings might affect language quality. Language quality, in turn, might affect accuracy and the user experience.
+Additionally, this Copilot feature was validated only for the English language. Although it can be used in other languages, it might not work as intended. The user's interactions or system settings might affect language quality. Language quality, in turn, might affect accuracy and the user experience.
 
 ## What operational factors and settings allow for effective and responsible use of generative help and guidance?
 
