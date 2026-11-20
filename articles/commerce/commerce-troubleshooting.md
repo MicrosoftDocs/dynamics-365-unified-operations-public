@@ -38,7 +38,7 @@ The following FAQ articles discuss issues specific to Dynamics 365 Commerce:
 - [Dynamics 365 Commerce online SDK FAQ](e-commerce-extensibility/sdk-faq.md)
 - [Dynamics 365 Payment Connector for Adyen FAQ](dev-itpro/adyen-connector-faq.md)
 - [Payments FAQ](dev-itpro/payments-retail.md)
-- [Product recommendations FAQ](faq-recommendations.md)
+- [Manually create curated recommendations](create-editorial-recommendation-lists.md)
 - [Ratings and reviews FAQ](ratings-reviews-faq.md)
 - [Retail SDK FAQ](dev-itpro/retail-sdk/sdk-faq.md)
 - [Store Commerce app FAQ](dev-itpro/store-commerce-faq.md)

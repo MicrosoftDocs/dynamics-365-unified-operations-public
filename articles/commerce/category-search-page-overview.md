@@ -39,7 +39,7 @@ The following components are essential for a category:
   - Ratings – low to high
   - Ratings – high to low
 
-- **Advanced Sorting options** are used by website visitors to sort the products using intelligent criteria. By enabling [Product recommendations](product-recommendations.md), the following sorting options are available. For more information, see the [Types of product recommendations](product-recommendations.md#types-of-product-recommendations) article.
+- **Advanced Sorting options** are used by website visitors to sort the products using intelligent criteria. By enabling [Product recommendations](create-editorial-recommendation-lists.md), the following sorting options are available.
 
   - New
   - Best-selling
@@ -89,7 +89,7 @@ The following components are essential for a search results page:
     > [!NOTE]
     > If **Display order** values are defined for the products in the navigation hierarchy, sorting by default on a category page honors the values defined in **Display order**. Otherwise, sorting is done by the **Product number**.)
 
-- **Advanced Sorting options** are used by website visitors to sort the products using intelligent criteria. By enabling [Product recommendations](product-recommendations.md), the following sorting options are available. For more information, see the [Types of product recommendations](product-recommendations.md#types-of-product-recommendations) article.
+- **Advanced Sorting options** are used by website visitors to sort the products using intelligent criteria. By enabling [Product recommendations](create-editorial-recommendation-lists.md), the following sorting options are available.
 
   - New
   - Best-selling
@@ -98,23 +98,20 @@ The following components are essential for a search results page:
 - **Pagination** lets website visitors move from one page of categorized product results to another page.
 - **Total count** provides the total number of products that are defined in a category and that match the search criteria.
 
->[!NOTE]
->These cloud-powered search capabilities are available starting in version 10.0.8. Ensure that under **Commerce Parameters > Configuration Parameters** there's an entry for "ProductSearch.UseAzureSearch set to 'true'".
+> [!NOTE]
+>
+> These cloud-powered search capabilities are available starting in version 10.0.8. Ensure that under **Commerce Parameters > Configuration Parameters** there's an entry for "ProductSearch.UseAzureSearch set to 'true'".
+>
+> :::image type="content" source="./media/CloudPoweredSearchConfigurationParameters.png" alt-text="Screenshot of configuration parameters for cloud-powered search.":::
+>
+> To use advanced sorting options such as new, best-selling, and trending, you must enable [Product recommendations](create-editorial-recommendation-lists.md) for your environment. Advanced sorting options are available with Commerce SDK version 9.35+ and Commerce version 10.0.20.
 
-:::image type="content" source="./media/CloudPoweredSearchConfigurationParameters.png" alt-text="Screenshot of configuration parameters for cloud-powered search.":::
+## Related information
 
->Additionally, to use advanced sorting options such as new, best-selling, and trending, you must enable [Product recommendations](product-recommendations.md) for your environment. Advanced sorting options are available with Commerce SDK version 9.35+ and Commerce version 10.0.20.
-
-## Additional resources
-
-[Cloud-powered search overview](cloud-powered-search-overview.md)
-
-[Home page overview](quick-tour-home-page.md)
-
-[Product details pages overview](quick-tour-pdp.md)
-
-[Cart and checkout pages overview](quick-tour-cart-checkout.md)
-
-[Account management pages overview](quick-tour-account-management.md)
+- [Cloud-powered search overview](cloud-powered-search-overview.md)
+- [Home page overview](quick-tour-home-page.md)
+- [Product details pages overview](quick-tour-pdp.md)
+- [Cart and checkout pages overview](quick-tour-cart-checkout.md)
+- [Account management pages overview](quick-tour-account-management.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

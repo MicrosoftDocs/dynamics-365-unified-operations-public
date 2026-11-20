@@ -926,38 +926,14 @@
           href: ../supply-chain/unified-pricing-management/upm-pricing-data-entities.md?context=/dynamics365/context/commerce
       - name: Recommendations
         items:
-        - name: Product recommendations overview
-          href: product-recommendations.md
-        - name: Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment
-          href: enable-ADLS-environment.md
-        - name: Enable product recommendations
-          href: enable-product-recommendations.md
-        - name: Set up an alternate dataflow
-          href: dev-itpro/set-up-alternate-data-flow.md
-        - name: Personalized recommendations
-          items:
-          - name: Enable personalized recommendations
-            href: personalized-recommendations.md
-          - name: Opt out of personalized recommendations
-            href: opt-out-personalization.md
-        - name: Enable "shop similar looks" recommendations
-          href: shop-similar-looks.md
-        - name: Enable "shop similar description" recommendations
-          href: shop-similar-description.md
         - name: POS experiences
           items:
           - name: Add product recommendations on POS
             href: product.md
           - name: Add recommendations to the transaction screen
             href: add-recommendations-control-pos-screen.md
-        - name: Adjust AI-ML-based product recommendation results
-          href: modify-product-recommendation-results.md
         - name: Manually create curated product recommendations
           href: create-editorial-recommendation-lists.md
-        - name: Create recommendations using demo data
-          href: product-recommendations-demo-data.md
-        - name: Product recommendations FAQ
-          href: faq-recommendations.md
       - name: Ratings and reviews
         items:
         - name: Ratings and reviews overview
@@ -1592,6 +1568,8 @@
           href: category-search-page-overview.md
         - name: Cloud-powered search overview
           href: cloud-powered-search-overview.md
+        - name: Advanced product search (preview)
+          href: advanced-product-search.md
         - name: View product search publishing status in headquarters
           href: publish-status-headquarters.md
       - name: Reporting

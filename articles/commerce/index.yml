@@ -197,9 +197,7 @@ additionalContent:
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/azure-data-lake-ga-version-overview
         text: Export to Azure Data Lake
       - url: /dynamics365/fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake
-        text: Export to Azure Data Lake in finance and operations apps  
-      - url: /dynamics365/commerce/enable-adls-environment
-        text: Enable Azure Data Lake Storage in a Commerce environment
+        text: Export to Azure Data Lake in finance and operations apps
     - title: Developer reference
       links:
       - url: /dynamics365/fin-ops-core/dev-itpro/dev-ref/api-reference

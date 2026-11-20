@@ -30,9 +30,6 @@ In Account management in Commerce headquarters (HQ), administrators can opt out 
 
 1. In the HQ client, on the **All customers** page, search for and select a customer.
 1. On the customer details page, on the **Retail** FastTab, in the **Privacy** section, set the **Do not track web activity** option to **Yes**.
-
-    :::image type="content" source="media/Disablepersonalizationpart2.png" alt-text="Screenshot of privacy settings.":::
-
 1. Select **Save**, and then close the page.
 
 ### Module-based opt-out experience

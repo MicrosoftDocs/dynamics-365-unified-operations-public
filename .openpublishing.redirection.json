@@ -28814,6 +28814,61 @@
       "source_path": "articles/supply-chain/warehousing/warehouse-app-user-settings-themes.md",
       "redirect_url": "/dynamics365/supply-chain/warehousing/warehouse-app-user-settings",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "articles/commerce/product-recommendations.md",
+      "redirect_url": "/dynamics365/commerce/create-editorial-recommendation-lists",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/enable-ADLS-environment.md",
+      "redirect_url": "/dynamics365/commerce/create-editorial-recommendation-lists",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/enable-product-recommendations.md",
+      "redirect_url": "/dynamics365/commerce/create-editorial-recommendation-lists",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/set-up-alternate-data-flow.md",
+      "redirect_url": "/dynamics365/commerce/create-editorial-recommendation-lists",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/personalized-recommendations.md",
+      "redirect_url": "/dynamics365/commerce/create-editorial-recommendation-lists",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/opt-out-personalization.md",
+      "redirect_url": "/dynamics365/commerce/create-editorial-recommendation-lists",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/shop-similar-description.md",
+      "redirect_url": "/dynamics365/commerce/create-editorial-recommendation-lists",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/shop-similar-looks.md",
+      "redirect_url": "/dynamics365/commerce/create-editorial-recommendation-lists",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/modify-product-recommendation-results.md",
+      "redirect_url": "/dynamics365/commerce/create-editorial-recommendation-lists",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/product-recommendations-demo-data.md",
+      "redirect_url": "/dynamics365/commerce/create-editorial-recommendation-lists",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/faq-recommendations.md",
+      "redirect_url": "/dynamics365/commerce/create-editorial-recommendation-lists",
+      "redirect_document_id": false
     }
   ]
 }

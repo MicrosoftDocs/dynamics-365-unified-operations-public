@@ -142,7 +142,7 @@ Dynamics 365 Customer Insights helps you gain a deeper understanding of your cus
 
 Use Dynamics 365 Commerce to show product recommendations on the e-commerce website and POS devices. These product recommendations are items that a customer might be interested in, and they're based on the purchase trends of other customers in online and brick-and-mortar stores.
 
-Product recommendations let customers easily and quickly find products that they might want to purchase. Use cross-selling and upselling to help customers find more products that they didn't originally intend to buy. When you use recommendations to assist with product discovery, they can help create more conversion opportunities, increase sales revenue, and enhance customer satisfaction and retention. For more information, see [Product recommendations overview](../product-recommendations.md).
+Product recommendations let customers easily and quickly find products that they might want to purchase. Use cross-selling and upselling to help customers find more products that they didn't originally intend to buy. When you use recommendations to assist with product discovery, they can help create more conversion opportunities, increase sales revenue, and enhance customer satisfaction and retention. For more information, see [Manually create curated recommendations](../create-editorial-recommendation-lists.md).
 
 #### Ratings and reviews
 

@@ -20,7 +20,7 @@ ms.custom:
 
 This article describes how to add a recommendations control to the transaction screen on a point of sale (POS) device by using the screen layout designer in Microsoft Dynamics 365 Commerce. Learn more in [Add product recommendations on POS](product.md).
 
-You can display product recommendations on your POS device when you use Commerce. To display product recommendations, add a control to the transaction screen by using the screen layout designer. 
+You can display product recommendations on your POS device when you use Commerce. To display product recommendations, add a control to the transaction screen by using the screen layout designer.
 
 ## Open Layout designer
 
@@ -30,7 +30,6 @@ You can display product recommendations on your POS device when you use Commerce
 1. Select **Layout designer**.
 1. Follow the prompts to launch the layout designer. When prompted for credentials, enter the same credentials that you used when you launched the Layout designer from **Screen layouts**.
 1. When you sign in, a page similar to the one shown in the following image appears. The layout is different depending on the customizations that were made for your store.
-
 
     :::image type="content" source="./media/screenlayout-pic-1.png" alt-text="Screenshot of layout designer interface showing a point of sale transaction screen layout with customer information panel." lightbox="./media/screenlayout-pic-1.png":::
 
@@ -78,29 +77,9 @@ Two configuration options are available. Choose the option that works best for y
 1. In the list, select **1090 Registers**.
 1. Select **Run now**.
 
-## Additional resources
+## Related information
 
-[Product recommendations overview](product-recommendations.md)
-
-[Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment](enable-adls-environment.md)
-
-[Enable product recommendations](enable-product-recommendations.md)
-
-[Enable personalized recommendations](personalized-recommendations.md)
-
-[Opt out of personalized recommendations](opt-out-personalization.md)
-
-[Enable "shop similar looks" recommendations](shop-similar-looks.md)
-
-[Add product recommendations on POS](product.md)
-
-[Adjust AI-ML recommendations results](modify-product-recommendation-results.md)
-
-[Manually create curated recommendations](create-editorial-recommendation-lists.md)
-
-[Create recommendations with demo data](product-recommendations-demo-data.md)
-
-[Product recommendations FAQ](faq-recommendations.md)
-
+- [Add product recommendations on POS](product.md)
+- [Manually create curated recommendations](create-editorial-recommendation-lists.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
