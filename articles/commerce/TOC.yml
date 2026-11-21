@@ -292,6 +292,8 @@
           href: dev-itpro/retail-mass-deployment.md
         - name: Commerce component events for diagnostics and troubleshooting
           href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
+        - name: Capture and replay real-time service traces
+          href: dev-itpro/capture-realtime-service-traces.md
         - name: Apply a deployable package
           href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?context=/dynamics365/context/commerce
         - name: Initialize seed data in new Commerce environments

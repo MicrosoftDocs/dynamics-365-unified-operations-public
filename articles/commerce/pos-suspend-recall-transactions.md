@@ -2,7 +2,7 @@
 title: Suspend and resume a transaction in the point of sale (POS)
 description: Learn how users can suspend or pin in-progress transactions, and then resume them later or on a different register using Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 11/18/2026
+ms.date: 11/21/2026
 ms.topic: how-to
 ms.author: anvenkat
 ms.reviewer: mirao
@@ -11,6 +11,7 @@ ms.search.validFrom: 2016-11-30
 ms.assetid: 7cd68ecc-cc09-48ab-8cb8-48d5c304effa
 ms.custom: 
   - bap-template
+ai-usage: ai-assisted
 ---
 
 # Suspend and resume a transaction in the point of sale (POS)
@@ -70,6 +71,14 @@ Users can suspend or pin transactions only if they don't contain the following t
 
 - Active payment lines
 - Gift card lines (either to issue a gift card or to add to the gift card balance)
+
+> [!NOTE]
+>
+> You can suspend a transaction before you accept any payment for it. After you accept a payment, the transaction contains an active payment line and you can't suspend it. For example, a customer adds three items to the cart and pays part of the total in cash or by card. The standard suspend workflow doesn't support suspending that partially paid transaction, recalling it later, and then adding more items.
+>
+> If you use pay-by-link with the Dynamics 365 Payment Connector for Adyen for cash and carry transactions, a separate flow lets cashiers (who have the required permissions) suspend a transaction by selecting **Cancel payment link** and then **Suspend payment link**. This flow is available only when the pay-by-link prerequisites are met, including the minimum component versions, the required features, and payment notifications through a Commerce environment that's linked to Dataverse. After you recall the transaction, check the payment status before you add a payment line or void the transaction. When you void a suspended transaction, unused payment links expire automatically, but used payment links remain unchanged. For more information, see the [Payment experience](dev-itpro/pay-by-link-overview.md#payment-experience-when-using-pay-by-link-for-cash-and-carry-transactions) and [Suspended transactions](dev-itpro/pay-by-link-overview.md#suspended-transactions) sections of [Enable pay by link in POS by using the Dynamics 365 Payment Connector for Adyen](dev-itpro/pay-by-link-overview.md).
+>
+> The pay-by-link flow isn't a general way to suspend partially paid transactions or transactions that have active payment lines. To request support for other suspension scenarios, submit feedback at [Dynamics 365 Application Ideas](https://ideas.dynamics.com).
 
 A suspended transaction doesn't affect sales information or inventory availability information for the store.
 
