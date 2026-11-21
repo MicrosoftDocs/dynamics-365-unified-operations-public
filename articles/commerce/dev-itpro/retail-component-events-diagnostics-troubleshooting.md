@@ -153,4 +153,8 @@ You can filter by the following criteria to refine your query:
 
 :::image type="content" source="./media/log-search-results.png" alt-text="Screenshot of search results on the Environment monitoring page.":::
 
+## Related content
+
+- [Troubleshoot POS errors when calling headquarters](troubleshoot-pos-headquarters-connection-errors.md)
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
