@@ -1,15 +1,16 @@
 ---
 title: Payments FAQ
-description: This article answers frequently ask questions about payment options in Microsoft Dynamics 365 Commerce.
+description: This article answers frequently asked questions about payment options in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 10/09/2026
+ms.date: 11/21/2026
 ms.topic: faq
+ms.author: mirao
 ms.reviewer: mirao
 ms.search.region: Global
-ms.author: mirao
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Version 1611
 ms.assetid: 99079d81-fde2-4432-8cee-82bbcc3bd57
+ai-usage: ai-assisted
 
 ---
 
@@ -17,7 +18,7 @@ ms.assetid: 99079d81-fde2-4432-8cee-82bbcc3bd57
 
 [!INCLUDE [banner](../../includes/banner.md)]
 
-This article answers frequently ask questions about payment options in Microsoft Dynamics 365 Commerce.
+This article answers frequently asked questions about payment options in Microsoft Dynamics 365 Commerce.
 
 ## What payment scenarios are supported?
 
@@ -36,7 +37,7 @@ This article answers frequently ask questions about payment options in Microsoft
 
 ## Which payment providers are supported and in what regions?
 
-- Adyen is supported for card present and card not present transactions. For a list of supported regions, visit the [Dynamics 365 Payment Connector for Adyen overview page](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3).
+- Adyen is supported for card-present and card-not-present transactions. For a list of supported regions, visit the [Dynamics 365 Payment Connector for Adyen overview page](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3).
 - PayPal is supported for online purchases. For a list of supported regions, visit the [Dynamics 365 Payment Connector for PayPal overview page](../paypal.md).
 - Mastercard Simplify is no longer supported for new customers.
 
@@ -134,9 +135,13 @@ If the issue originates from the device itself or Adyen's processing service, us
 
 If the payment connector provider issues a payment connector update, Microsoft includes the updated version of the payment connector in the next planned release of Dynamics 365 Commerce. However, you can also work directly with the payment connector provider to uptake it earlier.
 
-## Does Dynamics 365 Commerce support "cash out" or "cash back" operations during the checkout process in point of sale (POS)?
+## Does Dynamics 365 Commerce support cash-out or cash-back operations during the checkout process in point of sale (POS)?
 
 No, POS doesn't support cash-back or cash-out operations during a transaction. However, you can customize the system through extensibility by using cash return and payment operations that are similar to gift card cash-out operations.
+
+## Can I suspend a POS transaction after a payment is accepted?
+
+No. In the standard suspend workflow, you can't suspend a POS transaction that contains active payment lines, such as a partial cash or card payment. For more information, see [Suspend and resume a transaction in the point of sale (POS)](../pos-suspend-recall-transactions.md#suspend-a-transaction). For the separate flow that suspends an eligible pay by link transaction, see [Suspended transactions](pay-by-link-overview.md#suspended-transactions).
 
 ## Related information
 
