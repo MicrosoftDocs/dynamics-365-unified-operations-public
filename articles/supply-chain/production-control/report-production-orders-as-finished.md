@@ -6,7 +6,8 @@ ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form: ProdJournalTransJob, ProdJournalTransProd, ProdJournalTransRoute, ProdParmReportFinished, ProdRouteOprOverview
 ms.topic: article
-ms.date: 05/27/2026
+ms.date: 11/19/2026
+ai-usage: ai-assisted
 ms.update-cycle: 1095-days
 ms.custom:
   - bap-template
@@ -31,8 +32,16 @@ The report as finished process has the following characteristics:
 
 ## Set a production order to Reporting as finished
 
-You can set a production order to report as finished through the standard production order update function, or through the route and job card journals, or through the  **Report as finished** journal. Workers can also use the [production floor execution interface](production-floor-execution-use.md) to update the stage to *Reported as finished* when they report on the last job of the production order. Finally, you can add the **Report as finished** option as a process for the Warehouse Management mobile app.  
+You can set a production order to report as finished through the standard production order update function, through the route and job card journals, or through the **Report as finished** journal. Workers can also use the production floor execution interface to update the stage to *Reported as finished* when they report on the last job of the production order. Learn more in [How workers use the production floor execution interface](production-floor-execution-use.md). Finally, you can add the **Report as finished** option as a process for the Warehouse Management mobile app.
 
-To automatically generate lines in a new report-as-finished journal based on registered receipts, quantities, reversals, or tracked-component matches, see [Create report-as-finished journal lines from a proposal (preview)](create-report-finished-journal-lines.md).
+To automatically generate lines in a new report-as-finished journal based on registered receipts, quantities, reversals, or tracked-component matches, use a proposal. Learn more in [Create report-as-finished journal lines from a proposal (preview)](create-report-finished-journal-lines.md).
+
+## Inventory dimensions when you reverse reporting as finished
+
+When you reverse a report-as-finished operation that has marking, the system creates an open transaction with the same inventory dimensions as the reversed transaction.
+
+The reopened production receipt keeps the original batch number. The marked sales order transactions keep the same batch number.
+
+To use a different batch number, enter it on the journal line when you report the production order as finished again. When you post the report-as-finished journal, the system updates the marked sales order transactions to use the new batch number. You don't need to edit the existing transactions.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

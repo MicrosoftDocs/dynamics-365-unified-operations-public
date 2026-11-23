@@ -4,9 +4,9 @@ description: Access an overview of the outbound process in Inventory management,
 author: banluo-ms
 ms.author: banluo
 ms.reviewer: kamaybac
-ms.search.form: WMSOrder, WMSShipment, MCRPickingWorkbench, WMSPickingRegistration, CustomFilterGroup
+ms.search.form: WMSOrder, WMSShipment, MCRPickingWorkbench, WMSPickingRegistration, CustomFilterGroup, WMSPickingRoutesJournal, CustFormletterParameters
 ms.topic: how-to
-ms.date: 10/30/2026
+ms.date: 11/19/2026
 ai-usage: ai-assisted
 ms.custom: 
   - bap-template
@@ -16,7 +16,7 @@ ms.custom:
 
 [!INCLUDE [banner](../includes/banner.md)]
 
-This article provides an overview of the outbound process in Inventory management.
+In Inventory management, the outbound process uses picking lists to pick inventory for sales orders and transfer orders. Settings for picking route status, output orders, and quantity reduction control how that process runs.
 
 ## Output orders
 
@@ -53,7 +53,7 @@ Use the **Reduce quantity** parameter as part of the process of generating picki
 To reduce quantities that are already picked on a warehouse load, use the **Reduce picked quantity** page. This operation differs from the **Reduce quantity** parameter used during picking list generation.
 
 1. Go to **Warehouse management** > **Loads** > **Active loads**, and select the load.
-2. On the **Load order lines** FastTab, select **Reduce picked quantity**. When you unpick to a license plate-controlled location, specify both the destination location and the destination license plate for the load line.
+1. On the **Load order lines** FastTab, select **Reduce picked quantity**. When you unpick to a license plate-controlled location, specify both the destination location and the destination license plate for the load line.
 
 ## Example of an outbound process for a sales order
 
@@ -62,5 +62,19 @@ For this example, there's a sales order for two items. During picking list gener
 The inventory, which isn't already reserved, is reserved during picking list generation. The unavailable inventory can be either removed from the sales order or released to the warehouse for outbound processing later, when inventory is available for picking.
 
 As soon as you pick all the picking lines on the **Picking list registration** page, the associated shipment is completed. The process for sales order packing slips can then be initialized based on the picked inventory.
+
+When you split a catch-weight quantity into batches on the **Picking list registration** page, the **Pick qty** field uses the item's configured minimum quantity, not its nominal quantity. This behavior is by design.
+
+## Notes on the picking list report
+
+The picking list report can show notes from the sales order header and lines. It doesn't show notes that you attach to the picking list journal. The report reads sales order notes each time it prints. If you add a note to the sales order after you generate the picking list, the note appears on the reprint if it matches the print settings.
+
+To control which notes print on the picking list report, follow these steps.
+
+1. Go to **Accounts receivable** > **Setup** > **Forms** > **Form setup**.
+1. On the **Picking list** tab, set the following fields:
+
+    - **Include document on sheets** – Select where notes print on the report: *None*, *Line* (sales order line notes), *Header* (sales order header notes), or *All* (both).
+    - **Include documents of type** – Select the document type that a note must have to print on the report. Notes of other types don't print.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

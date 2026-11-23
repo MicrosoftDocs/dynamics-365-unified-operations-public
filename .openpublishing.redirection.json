@@ -26767,8 +26767,7 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/inventory/reverse-report-as-fi.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/inventory/reverse-report-as-finished-creates-open-transaction",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/production-control/report-production-orders-as-finished#inventory-dimensions-when-you-reverse-reporting-as-finished"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/inventory/sku-max-decimals-zero.md",
@@ -26777,18 +26776,15 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/inventory/the-field-last-test.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/inventory/last-tested-date-not-updated",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/master-planning/planning-optimization/shelf-life#set-up-shelf-life-for-a-product"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/inventory/unable-to-print-the.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/inventory/picking-list-report-not-show-new-notes-attached-to-journal",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/inventory/outbound-process#notes-on-the-picking-list-report"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/inventory/while-splitting-the.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/inventory/minimum-quantity-pick-qty-catch-weight-quantity-split-into-batches",
-      "redirect_document_id": "false"
+      "redirect_url": "/dynamics365/supply-chain/inventory/outbound-process#example-of-an-outbound-process-for-a-sales-order"
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/planning/bom-explosion-works-differently.md",
