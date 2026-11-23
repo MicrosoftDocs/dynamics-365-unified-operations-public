@@ -6,7 +6,8 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form: ReqPlanSched, CustTable, EcoResProductDetailsExtended, InventModelGroup
 ms.topic: how-to
-ms.date: 11/19/2025
+ms.date: 11/19/2026
+ai-usage: ai-assisted
 ms.custom:
   - bap-template
 ---
@@ -62,9 +63,11 @@ Use the following procedure to set up shelf life for a product.
 1. To use the shelf-life settings, on the **General** FastTab, set the **Tracking dimension group** field to a tracking dimension group that tracks the batch dimension. You can set this field only when you're first creating a product. You can't change the value for existing products.
 1. On the **Manage inventory** FastTab, set the following fields:
 
-    - **Shelf advice period in days** – Specify the period (in days) by which to check a batch of this product to ensure that it's suitable for consumption or resale. The value of this field is added to a batch's *manufacturing date* to determine its *shelf advice date*. You can configure the system to generate quality orders when a batch approaches its shelf advice date.
+    - **Shelf advice period in days** – Specify how many days to wait before checking whether a batch is still suitable for consumption or resale. To calculate the *shelf advice date*, the system adds this period to the batch's **Last tested date**. If the batch uses vendor dates, the system uses the vendor batch date instead. When the system creates a batch, it typically sets **Last tested date** to the manufacturing date or, for purchased batches that use vendor dates, to the vendor batch date. You can configure the system to generate quality orders when a batch approaches its shelf advice date.
     - **Shelf life period in days** – Specify the number of days before a batch of this product expires. This value is added to the *date of manufacture* to determine the *expiration date*. The batch is considered unusable after this date.
-    - **Best before period in days** – Specify the period (in days) after which a batch of this product is deemed still sellable but can no longer retain some of its original properties. This value is added to the *date of manufacture* to determine the *best-before date*. You can run reports to identify inventory that's past its best-before date.
+    - **Best before period in days** – Specify how many days before the expiration date a batch reaches its *best-before date*. The system subtracts this period from the batch's expiration date. After the best-before date, the batch is still sellable but might no longer retain some of its original properties. You can run reports to identify inventory that's past its best-before date.
+
+Creating multiple quality orders doesn't update the batch's **Last tested date** field. This behavior is by design.
 
 ### Set a sellable days rule for each customer
 
