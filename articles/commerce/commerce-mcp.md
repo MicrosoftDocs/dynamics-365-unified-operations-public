@@ -2,11 +2,11 @@
 title: Dynamics 365 Commerce Model Context Protocol (MCP) server (preview)
 description: Learn how the Dynamics 365 Commerce MCP server (preview) enables agentic commerce experiences for retailers, including tools, authenticated shopper workflows, client integration, and self-service enablement on a Commerce Scale Unit.
 author: ashishmsft
-ms.author: asharchw
 ms.topic: overview
+ms.date: 11/24/2026
+ms.author: asharchw
 ms.reviewer: mirao
 ms.search.region: Global
-ms.date: 09/10/2026
 ms.collection:
   - bap-ai-copilot
 ---
@@ -94,6 +94,19 @@ Promotions configured in Commerce headquarters apply automatically through the a
 | `get_order_details` | Get complete details for a specific order for any order identifier supported by Dynamics 365 Commerce. It returns the full order information. For anonymous customers looking up by confirmation number, provide the email used for the order. |
 | `search_orders` | Search customer order history using customer information or date range, or list a signed-in shopper's orders across all channels (web, store, call center, agent). It returns order summaries with status, totals, and item count. To look up a specific order by ID, use `get_order_details` instead. |
 
+### Associate-assisted returns
+
+Starting in Commerce version 10.0.50, the store MCP endpoint provides tools for authenticated associates to find purchases, prepare return carts, refund original cards after confirmation, and suspend prepared returns for completion in POS. These employee-only tools require activated-register context; shopper or anonymous authentication doesn't authorize them.
+
+| Tool | Description |
+| ---- | ----------- |
+| `find_purchase_for_return` | Find a purchase, and return eligible quantities and configured return reasons. |
+| `create_return_cart` | Prepare a priced return cart without processing a refund. |
+| `process_return_refund` | Refund the confirmed amount to original linked cards and complete the return. |
+| `suspend_return_cart` | Suspend a prepared return for recall and completion through POS. |
+
+For the prerequisites, tool parameters, confirmation requirements, and payment-safe recovery guidance, see [Commerce MCP tools for assisted returns](commerce-mcp-returns.md).
+
 ### Inventory and locations
 
 | Tool | Description |
@@ -105,7 +118,7 @@ Promotions configured in Commerce headquarters apply automatically through the a
 
 | Tool | Description |
 | ---- | ----------- |
-| `get_saved_delivery_addresses` | Return delivery addresses on file for the authenticated shopper, so the agent can offer a one-tap shipping selection instead of asking the shopper to type an address. |
+| `get_saved_delivery_addresses` | Returns delivery addresses on file for the authenticated shopper, so the agent can offer a one-tap shipping selection instead of asking the shopper to type an address. |
 
 ## Authenticated workflows for C2 shoppers
 
@@ -182,12 +195,14 @@ Commerce MCP authentication aligns with the MCP specification and the Microsoft 
 
 ### Identity model
 
-Commerce MCP supports two identity modes:
+Commerce MCP shopper workflows support two identity modes:
 
 | Mode | Used for | Token shape |
 | ---- | -------- | ----------- |
 | **User context (C2)** | Personalized data: Saved addresses, order history, customer-specific pricing, and discounts. | Entra ID bearer token carrying a delegated user assertion representing the signed-in shopper (C2). |
 | **Limited anonymous** | Guest discovery, guest cart, pay-by-link checkout for unauthenticated shoppers. | Entra ID bearer token issued for anonymous shopper access. |
+
+Employee-only return tools use an authenticated Commerce employee identity and activated-register context on the store endpoint. Neither shopper identity mode authorizes these tools. For more information, see [Commerce MCP tools for assisted returns](commerce-mcp-returns.md).
 
 ### Authorization
 
@@ -220,7 +235,6 @@ The Commerce platform handles authorization. The platform applies channel, role,
 > [!IMPORTANT]
 > Dynamics 365 Commerce MCP server is only available on cloud-hosted Commerce Scale Units. It isn't supported on self-hosted instances, including on-premises and hybrid deployments.
 > Customers and partners who plan to test authenticated workflows with Dynamics 365 Commerce MCP server should contact the Microsoft team before testing. Required backend flights must be enabled before authenticated workflows using Dynamics 365 Commerce MCP server can be validated in a given environment.
-
 
 Before you enable Commerce MCP, confirm the following prerequisites:
 
