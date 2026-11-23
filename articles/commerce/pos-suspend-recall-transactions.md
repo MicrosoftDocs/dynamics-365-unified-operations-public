@@ -90,6 +90,8 @@ To quickly and easily recall a suspended transaction, scan the barcode on the pr
 
 ### Pin a transaction
 
+[!INCLUDE [banner](includes/preview-banner.md)]
+
 Pin a transaction when you want to pause it and keep it readily accessible in POS. For example, if a customer leaves the checkout to find another item, you can pin their transaction and serve the next customer.
 
 1. On the transaction page, select **Suspend transaction**.
@@ -102,6 +104,8 @@ The transaction is suspended and appears in the pinned transaction list. You can
 If the button is configured to pin transactions directly, selecting it pins the transaction without prompting you to choose an action.
 
 ### Resume a pinned transaction
+
+[!INCLUDE [banner](includes/preview-banner.md)]
 
 Use the pinned transaction list to quickly return to a transaction that you previously pinned.
 

@@ -540,6 +540,8 @@
               href: consistent-delivery-mode-handling.md
         - name: Modern workflows in POS
           items:
+          - name: Trade point of sale
+            href: trade-point-of-sale.md
           - name: Modernized views in POS
             href: POS-UX-modernization.md
           - name: Transaction grid
