@@ -4,10 +4,11 @@ description: Learn how putaway clusters offer a way to pick multiple license pla
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: article
-ms.date: 05/29/2026
+ms.date: 11/10/2026
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
+ai-usage: ai-assisted
 ---
 
 # Putaway clusters
@@ -16,13 +17,48 @@ ms.search.form:
 
 Putaway clusters offer a way to pick multiple license plates at the same time and then take them for putaway in different locations. This process is often referred to as a *milk run*. Putaway clusters can be very useful for retail businesses, where license plates typically aren't full pallets of inventory.
 
+## Choose how work is assigned to clusters
+
+Cluster profiles control when inbound work is assigned to a cluster and when its putaway location is determined. The system evaluates the profiles in sequence-number order and selects them based on the unit restriction, work-template configuration, and query criteria for the final put work line. The system assigns the first matching profile.
+
+The **Cluster assignment timing** and **Cluster assignment rule** settings for cluster profiles support the processes listed in the following table.
+
+| Cluster assignment timing | Cluster assignment rule | Behavior |
+|---|---|---|
+| *At receipt* | *Automatic* | The system adds work to a compatible open cluster. If none exists, it generates a cluster ID when configured to do so. Otherwise, the worker supplies an ID. |
+| *At receipt* | *Manual* | The worker supplies the cluster ID during receiving. |
+| *Delayed* | N/A | The cluster is assigned manually after receiving. Receiving assigns the profile but doesn't assign a cluster. The worker later assigns the work to a cluster by scanning its work ID or target license plate. |
+
+Automatic assignment uses open putaway clusters with the same profile. For cluster profiles where **Putaway cluster per user** is set to *Yes*, the system also restricts assignment by the worker who created the work.
+
+## Choose when putaway locations are determined
+
+Use the cluster profile **Putaway cluster locate** setting to determine when location directives find the destination. Choose one of the following values:
+
+- *Receipt* – Determine locations during receiving. When you use this option, **Work unit break** is unavailable.
+- *Cluster close* – Clear final put locations when you assign the profile and determine them when the cluster closes. When you use this option, set **Work unit break** to one of the following values:
+    - *Individual* – Locate each work header separately and retain the received license plates.
+    - *Consolidate* – Combine the work and move its inventory onto a license plate whose ID is the cluster ID. The system then locates the combined work.
+
+- *User directed* – Keep final put locations blank through cluster closing. During putaway, the worker selects a work unit by scanning its work ID or license plate. The system then locates that work unit. When you use this option, set **Work unit break** to one of the following values:
+    - *Individual* – Locate each work header separately and retain the received license plates.
+    - *Consolidate* – Use cluster-based location-directive processing. When the system finds a location, it applies that location to the preceding blank put lines in the same work unit, stopping at a pick line. The system doesn't consolidate the whole cluster's work headers like it does when you consolidate using the *Cluster close* option.
+
+## Understand cluster restrictions and status
+
+The system doesn't support working with consecutive put lines for putaway-cluster assignment. For consolidated clusters, work must have a compatible work order type.
+
+Closing a cluster finishes assignment and makes it ready for putaway. Starting execution changes its status to *In process*. Passing the cluster changes its status to *Passed* and releases the worker lock.
+
+After all clustered work is complete, the status returns to *Closed*. Therefore, cluster status alone doesn't distinguish a cluster awaiting putaway from one whose work is complete. Check the associated work status.
+
 ## Setup for the example scenario
 
 ### Cluster profiles
 
-The putaway cluster profile determines where an item goes, based on the location assigned to the item at the time of receipt. If you need different clusters, create different putaway clusters, one for each mobile device menu item.
+The following example uses manual cluster assignment at receipt and determines putaway locations during receiving.
 
-1. Go to **Warehouse management > Setup > Mobile device > Cluster profiles**.
+1. Go to **Warehouse management** > **Setup** > **Mobile device** > **Cluster profiles**.
 1. On the Action Pane, select **New**.
 1. In the **Header** view, set the following values:
 
@@ -47,9 +83,9 @@ The putaway cluster profile determines where an item goes, based on the location
 
         The following values are available:
 
-        - **Receipt** – A location is found immediately during receipt.
-        - **Cluster close** – A location is found when the cluster is closed.
-        - **User directed** – A location is found when the license plate is picked from the cluster for putaway. In this case, no location is specified when the putaway work is created. During the putaway itself, the user must scan the license plate or work ID to initiate the put step. The system then finds the put location again and tells the user where to put the picked quantity.
+        - *Receipt* – A location is found immediately during receipt.
+        - *Cluster close* – A location is found when the cluster is closed.
+        - *User directed* – A location is found when the license plate is picked from the cluster for putaway. In this case, no location is specified when the putaway work is created. During the putaway itself, the user must scan the license plate or work ID to initiate the put step. The system then finds the put location again and tells the user where to put the picked quantity.
 
     - **Putaway cluster per user:** *No*
 
@@ -65,7 +101,7 @@ The putaway cluster profile determines where an item goes, based on the location
 
     - **Cluster persists as Parent License Plate:** *No*
 
-        If this option is set to *Yes*, when the put step is completed, the cluster ID becomes a parent license plate, and all items on the cluster ID link to that parent license plate.
+        If this option is set to *Yes*, the cluster ID becomes a parent license plate after putaway only when all clustered work has the same final putaway location. The received license plates become its children. This differs from consolidation, which moves inventory onto a single license plate.
 
 1. On the **Cluster sorting** FastTab, you can define putaway sorting criteria. Select **New** on the toolbar to add a line, and then set the following values:
 
@@ -112,7 +148,7 @@ Create a new mobile device menu item for receiving inventory and sorting it into
 > - Purchase order item receiving
 > - Load item receiving
 
-1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu items**.
+1. Go to **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu items**.
 1. On the Action Pane, select **New**.
 1. In the **Header** view, set the following values:
 
@@ -138,7 +174,7 @@ Create a new mobile device menu item for receiving inventory and sorting it into
 
 Create a new mobile device menu item for putting the cluster away after it is assigned.
 
-1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu items**.
+1. Go to **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu items**.
 1. On the Action Pane, select **New**.
 1. In the **Header** view, set the following values:
 
@@ -159,7 +195,7 @@ Create a new mobile device menu item for putting the cluster away after it is as
 
 Add the menu items that you just created to the inbound menu of the mobile app.
 
-1. Go to **Warehouse management > Setup > Mobile device > Mobile device menu**.
+1. Go to **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu**.
 1. On the Action Pane, select **Edit**.
 1. In the menu list, select **Inbound**.
 1. In the **Available menus and menu items** list, find and select **Receive and sort cluster**.
@@ -177,7 +213,7 @@ This scenario simulates putaway cluster processing.
 
 ### Create a purchase order
 
-1. Go to **Accounts payable > Purchase orders > All purchase orders**.
+1. Go to **Accounts payable** > **Purchase orders** > **All purchase orders**.
 1. On the Action Pane, select **New**.
 1. In **Create purchase order**, set the following values:
 
@@ -240,7 +276,7 @@ This scenario simulates putaway cluster processing.
 
 Before you can put away the items in the cluster, ensure that the cluster is closed.
 
-1. In Supply Chain Management, go to **Warehouse management > Work > Outbound > Work clusters**.
+1. In Supply Chain Management, go to **Warehouse management** > **Work** > **Outbound** > **Work clusters**.
 1. On the **Work clusters** page, in the **Work cluster** section, search the **Cluster ID** field for the cluster ID that you entered earlier.
 1. If the cluster isn't shown, it might already be closed. To determine whether the cluster is closed, select the **Show closed work** check box, and search for the cluster ID that you entered earlier. Then follow one of these steps:
 
@@ -276,6 +312,6 @@ Before you can put away the items in the cluster, ensure that the cluster is clo
 
 ## Notes and tips
 
-When the cluster ID acts as the parent license plate for a nested pallet, scanning the cluster ID automatically provides the put position. You don't need to scan any other license plate, even if the license plate generation is set to manual.
+When the cluster ID acts as the parent license plate for a nested pallet, scanning the cluster ID automatically provides the put position. You don't need to scan any other license plate, even if you set the license plate generation to manual.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
