@@ -88,39 +88,6 @@ To allow the Work IQ client, follow these steps.
 
 For more information, see [Allowed MCP clients](mcp/mcp-security.md#allowed-mcp-clients).
 
-### Step 3: Let the Work IQ data service call Dynamics 365 ERP
-A **Global Administrator** completes this step one time for each tenant. This step creates the service principal for the Work IQ data service (DORS, "Prod ADORS App") in your tenant. Then it grants this service the finance and operations apps permission `mcp.tools` for all users (admin consent).
-
-> [!NOTE]
-> This step is temporary while Microsoft performs a global rollout of the Work IQ service principal and permissions. This step isn't required after November 23, 2026. 
-
-1. Install the Microsoft Graph PowerShell module, if you don't have it: `Install-Module Microsoft.Graph -Scope CurrentUser`.
-2. In PowerShell, run these commands. Replace `<your-tenant-id>` with your tenant ID. Sign in as a Global Administrator.
-
-   ```powershell
-   Connect-MgGraph -TenantId "<your-tenant-id>" -Scopes "Application.ReadWrite.All","DelegatedPermissionGrant.ReadWrite.All"
-
-   # Make the DORS service principal. If it already exists, use it.
-   $dors = Get-MgServicePrincipal -Filter "appId eq '300e430c-5476-4a1d-b223-35194efd4e57'"
-   if (-not $dors) { $dors = New-MgServicePrincipal -AppId "300e430c-5476-4a1d-b223-35194efd4e57" }
-
-   # The F&O service principal (Microsoft Dynamics ERP). It exists in each tenant that has F&O.
-   $fno = Get-MgServicePrincipal -Filter "appId eq '00000015-0000-0000-c000-000000000000'"
-   if (-not $dors -or -not $fno) { throw "Service principal missing. Do not continue. See item 3." }
-
-   # Grant DORS the F&O permission mcp.tools for all users.
-   New-MgOauth2PermissionGrant -BodyParameter @{
-     clientId    = $dors.Id
-     consentType = "AllPrincipals"
-     resourceId  = $fno.Id
-     scope       = "mcp.tools"
-   }
-   ```
-
-If you skip this step the Work IQ data service can't get a finance and operations apps token for your users. Work IQ can't call Dynamics 365 finance and operations apps.
-
-You can validate whether the service principal and permissions were applied successfully in [Graph Explorer](https://aka.ms/ge). Get the ID of the DORS service principal: `GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=appId eq '300e430c-5476-4a1d-b223-35194efd4e57'`. Then run `GET https://graph.microsoft.com/v1.0/servicePrincipals/<id>/oauth2PermissionGrants`. If the PowerShell script completed successfully, the result has a grant with `"consentType": "AllPrincipals"` and `"scope": "mcp.tools"`.
-
 ## Where you can use Dynamics 365 ERP in Work IQ
 
 The following table describes which capabilities are available in each client surface and how to configure each one.
@@ -131,7 +98,7 @@ The following table describes which capabilities are available in each client su
 | GitHub Copilot in Visual Studio Code | Supported | Supported | Configure a remote connection to the Work IQ MCP server. Learn more in [Work IQ MCP overview](/microsoft-365/copilot/extensibility/work-iq/mcp/overview). |
 | Third-party MCP clients, such as Claude | Supported | Supported | Configure a remote connection to the Work IQ MCP server. Learn more in [Work IQ MCP overview](/microsoft-365/copilot/extensibility/work-iq/mcp/overview). |
 | Microsoft Copilot Chat | Supported | Not supported | Enable Work IQ in Copilot Chat. Learn more in [Set up Business Applications in Work IQ](/power-platform/admin/business-applications-work-iq/quickstart). |
-| Copilot Cowork | Supported | Not supported | Enable Work IQ in Copilot Cowork. Learn more in [Use the Business Applications in Work IQ plugin in Cowork](/microsoft-365/copilot/cowork/cowork-work-iq). |
+| Copilot Cowork | Supported | Supported | Enable Work IQ in Copilot Cowork. Learn more in [Use the Business Applications in Work IQ plugin in Cowork](/microsoft-365/copilot/cowork/cowork-work-iq). |
 
 > [!TIP]
 > To update records and complete business processes in finance and operations apps from Copilot Cowork, use the Dynamics 365 ERP apps plugin for Copilot Cowork. For more information, see [Enable the Dynamics 365 ERP apps plugin for Copilot Cowork](enable-copilot-cowork-erp.md).

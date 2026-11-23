@@ -4,7 +4,7 @@ description: Learn how to use payment methods in vendor payments, including prer
 author: Cpicon85
 ms.author: v-cpicon
 ms.topic: how-to
-ms.date: 01/05/2026
+ms.date: 11/23/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -15,14 +15,17 @@ ms.reviewer: johnmichalak
 
 [!include [does not apply to](includes/does-not-apply-to.md)]
 
-This article explains how to use the vendor payment process with the Latin American (LATAM) extension and the payment methods functionality in the vendor payment journal. The LATAM localization adds fields that let you provide additional data to represent payment methods according to the legislation of each country or region.
+This article explains how to use the vendor payment process with the Latin American (LATAM) extension and the payment methods functionality in the vendor payment journal. The LATAM localization adds fields that you can use to provide extra data to represent payment methods according to the legislation of each country or region.
 
 ## Prerequisites
 
-Before you complete the procedures in this article, the following prerequisites must be met:
+Before you complete the procedures in this article, make sure you meet the following prerequisites:
 
 - Enable the **LATAM** globalization feature with a valid country/region.
 - Create a document class for each payment method.
+
+> [!NOTE]
+> Globalization for LATAM doesn't currently support vendor payment proposal functionality. To post vendor payments with LATAM information, follow the LATAM-specific process described in this article.
 
 ## Add LATAM information to vendor payment journal lines
 
@@ -47,12 +50,12 @@ Follow these steps to select a bank transfer payment.
 1. On the **Payment method** page, select **New**.
 1. In the **Document class id.** field, select **TRB** as the document class ID for a bank transfer. For more information, see [Document classes for Latin America](ltm-core-document-class.md).
 1. In the **Account number** field, select a bank account.
-1. In the **Document number** field, enter the bank transfer number that's assigned by the bank. If the document class ID is configured as automatic, the number is automatically filled in.
+1. In the **Document number** field, enter the bank transfer number that the bank assigns. If the document class ID is configured as automatic, the number is automatically filled in.
 1. Close the page, and review the information in the vendor payment journal before you post.
 
 ### Use your own checks
 
-Follow these steps to record your own checks. You can use the same steps for both current-date checks and deferred (post-dated) checks, because the entry of values is similar for both types and has the same impact on the vendor account. Only the entry of additional data differs.
+Follow these steps to record your own checks. Use the same steps for both current-date checks and deferred (postdated) checks, because the entry of values is similar for both types and has the same impact on the vendor account. Only the entry of additional data differs.
 
 1. Go to **Accounts payable** \> **Payments** \> **Vendor payment journal**.
 1. On the Action Pane, select **LATAM** \> **Payment methods**.
@@ -62,10 +65,10 @@ Follow these steps to record your own checks. You can use the same steps for bot
 1. In the **Document Date** field, enter the date when the check was issued.
 1. In the **Amount in Transaction Currency** field, enter the check amount.
 1. In the **Exchange Rate** field, enter the exchange rate value. By default, if the currency isn't the base currency, the nearest exchange rate is assigned.
-1. In the **Due Date** field, enter the expiration date of the post-dated check.
+1. In the **Due Date** field, enter the expiration date of the postdated check.
 1. Close the page, and review the information in the vendor payment journal before you post.
 
-### Use checks that are received from customers
+### Use checks that you receive from customers
 
 1. Go to **Accounts payable** \> **Payments** \> **Vendor payment journal**.
 1. On the Action Pane, select **LATAM** \> **Payment methods**.
@@ -77,6 +80,6 @@ Follow these steps to record your own checks. You can use the same steps for bot
 > [!NOTE]
 > After you close the page, confirm the selection in the verification message.
 
-After the checks are selected, lines are automatically created on the **Payment method** page. The number of lines matches the number of selected checks.
+When you select the checks, the system automatically creates lines on the **Payment method** page. The number of lines matches the number of selected checks.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

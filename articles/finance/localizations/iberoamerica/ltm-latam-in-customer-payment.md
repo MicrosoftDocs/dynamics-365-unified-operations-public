@@ -3,7 +3,7 @@ title: Use the LATAM extension in customer payments journals
 description: Learn how to use payment methods in customer payments, including prerequisites and a process for adding LATAM information to customer payment journal lines.
 author: Cpicon85
 ms.author: v-cpicon
-ms.date: 01/05/2026
+ms.date: 11/23/2026
 ms.topic: how-to
 ms.custom: bap-template
 ms.reviewer: johnmichalak
@@ -15,14 +15,17 @@ ms.reviewer: johnmichalak
 
 [!include [does not apply to](includes/does-not-apply-to.md)]
 
-This article explains how to use the customer collection process with the Latin American (LATAM) extension and the payment methods functionality in the customer payment journal. The LATAM localization adds fields that let you provide additional data to represent payment methods according to the legislation of each country or region.
+This article explains how to use the customer collection process with the Latin American (LATAM) extension and the payment methods functionality in the customer payment journal. The LATAM localization adds fields that you can use to provide extra data to represent payment methods according to the legislation of each country or region.
 
 ## Prerequisites
 
-Before you complete the procedures in this article, the following prerequisites must be met:
+Before you complete the procedures in this article, make sure you meet the following prerequisites:
 
 - Enable the **LATAM** globalization feature with a valid country/region.
 - Create a document class for each payment method.
+
+> [!NOTE]
+> Globalization for LATAM doesn't currently support customer payment proposal functionality. To post customer payments with LATAM information, follow the LATAM-specific process described in this article.
 
 ## Add LATAM information to customer payment journal lines
 
@@ -52,7 +55,7 @@ Follow these steps to select a bank transfer payment.
 
 ### Use customer checks
 
-Follow these steps to record customer checks. You can use the same steps for both current-date checks and deferred (post-dated) checks, because the entry of values is similar for both types and has the same impact on the customer account. Only the entry of additional data differs.
+Follow these steps to record customer checks. Use the same steps for both current-date checks and deferred (post-dated) checks, because the entry of values is similar for both types and has the same impact on the customer account. Only the entry of additional data differs.
 
 1. Go to **Accounts receivable** \> **Payments** \> **Customer payment journal**.
 1. On the Action Pane, select **LATAM** \> **Payment methods**.

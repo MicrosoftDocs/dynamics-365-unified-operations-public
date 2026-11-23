@@ -3166,6 +3166,8 @@
         href: copilot-based-merch-insights.md
       - name: Use the Commerce MCP server (preview) for agentic commerce
         href: commerce-mcp.md
+      - name: Use Commerce MCP tools for assisted returns (preview)
+        href: commerce-mcp-returns.md
     - name: Responsible AI FAQs
       items: 
       - name: Overview
