@@ -39,6 +39,8 @@ Sales associates can capture multiple addresses for a customer. The customer's n
 
 ## Manage customer contacts in Store Commerce
 
+[!INCLUDE [banner](includes/preview-banner.md)]
+
 When a person shops on behalf of an organization, store associates need to record both the customer account and the person they're serving. Customer contacts in Microsoft Dynamics 365 Commerce let associates select a contact for a POS transaction and maintain contact details without leaving Store Commerce.
 
 ### Set up customer contacts

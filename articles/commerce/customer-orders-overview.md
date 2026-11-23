@@ -204,6 +204,8 @@ Users can edit eligible orders through the POS application even if the order is 
 
 ### Edit a call center order in POS
 
+[!INCLUDE [banner](includes/preview-banner.md)]
+
 Before Commerce version 10.0.50, you couldn't edit call center orders in POS if the [Omnichannel Commerce order payments](dev-itpro/commerce-payments.md) feature was enabled or if the [Enable order completion](set-up-order-processing-options.md#enable-order-completion) setting was turned on for the call center channel. You could only edit such orders through the call center application in headquarters. However, with Commerce version 10.0.50, a feature named **Enable editing of call center orders in Point of Sale with unified payment capture** in the **Feature management** workspace lets you edit call center orders in POS, even when the **Omnichannel Commerce order payments** feature is enabled. After you turn on this feature, while editing the order in POS, you can see any payments taken from the call center in POS and any new payments taken from POS are visible in the call center.
 
 > [!NOTE]
