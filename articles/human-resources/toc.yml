@@ -587,14 +587,14 @@ items:
           items:
           - name: Set up interview schedules
             href: hr-interview-schedule.md
-        - name: Agency management 
+        - name: Offer management (preview)
           items:
-          - name: Agency management overview
-            href: agency-management.md
-          - name: Set up Agency management
-            href: agency-procedure.md
-          - name: Troubleshoot Agency management
-            href: agency-troubleshooting.md
+           - name: Offer management overview
+             href: hr-offer-management-procedure.md
+           - name: Set up Offer management
+             href: hr-offer-management-setup.md
+           - name: Set up eSign providers for Offer management
+             href: hr-offer-management-esign.md
         - name: Upload resumes (preview)
           items:
           - name: Upload resumes
