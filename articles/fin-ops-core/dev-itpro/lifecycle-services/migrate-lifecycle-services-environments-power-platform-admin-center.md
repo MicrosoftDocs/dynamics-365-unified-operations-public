@@ -4,7 +4,8 @@ description: Learn how to prepare for and migrate finance and operations environ
 author: laneswenka
 ms.author: laswenka
 ms.topic: how-to
-ms.date: 09/22/2026
+ms.date: 11/24/2026
+ai-usage: ai-generated
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ---
@@ -34,6 +35,7 @@ After migration:
 - Use Azure Pipelines and Power Platform deployment capabilities for ALM and code deployment.
 - The environment consumes capacity under the [Power Platform capacity model](/power-platform/admin/unified-experience/finance-operations-apps-overview#transition-from-an-environment-slot-purchasing-model-to-a-capacity-based-model).
 - The Lifecycle Services environment slot isn't returned or made available for another environment. Future environment provisioning is based on available Power Platform capacity instead of Lifecycle Services environment slots.
+- To use unified admin user management (preview), you might need to install or update the Unified User Management solution first. For more information, see [Turn on unified admin user management after migration](#turn-on-unified-admin-user-management-after-migration).
 
 ## Supported environments and limitations
 
@@ -112,6 +114,24 @@ Before you migrate another environment, complete the following validation in the
 1. Perform an environment copy and validate the target environment.
 
 If validation identifies an issue, don't migrate another environment until you resolve the issue. Because migration is one-way, you can't return environment management to Lifecycle Services as a rollback action.
+
+## Turn on unified admin user management after migration
+
+[Unified admin user management](/power-platform/admin/unified-experience/unified-admin-user-management) (preview) lets you manage System Administrator users for finance and operations apps from the Power Platform admin center. A migrated environment might not have the required version of the Unified User Management solution. Until you install or update the solution, you can't turn on the **(Preview) Unified admin user management** feature in the migrated environment.
+
+After you turn on the feature, the Power Platform admin center becomes the source of truth for admin roles, and admin roles that exist only in finance and operations apps are removed. Before you turn it on, review [how admin user management works after unification](/power-platform/admin/unified-experience/unified-admin-user-management#how-admin-user-management-works-after-unification).
+
+To turn on unified admin user management in a migrated environment, follow these steps:
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), and open the migrated environment.
+1. In the command bar, expand **Resources**, and then select **Dynamics 365 apps**.
+1. Search for **Unified User Management**, and then take one of the following actions:
+   - If the status is **Update available**, select **Update**.
+   - If the solution isn't listed, select **Install app**, select **Unified User Management**, and then follow the prompts to install it.
+1. Wait until the installation or update is complete. Then confirm that the environment meets all the [prerequisites for unified admin user management](/power-platform/admin/unified-experience/unified-admin-user-management#prerequisites), including the minimum platform update and solution versions.
+1. Sign in to finance and operations apps as a user who has the System Administrator role in both Dataverse and finance and operations apps.
+1. Go to **System administration** > **Workspace** > **Feature management**, select **All**, and then turn on **(Preview) Unified admin user management**.
+1. Verify that your Dataverse environment admins appear as users in finance and operations apps.
 
 ## Resolve prerequisite check failures
 
