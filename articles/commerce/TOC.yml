@@ -984,6 +984,8 @@
             href: inventory-availability-checks.md
           - name: Enable cross-company inventory lookup for POS
             href: enable-cross-company-inventory-lookup-pos.md
+          - name: Enable real-time ATP and transfer arrival dates (preview)
+            href: inventory-lookup-atp-transfer.md
         - name: Store inventory
           items:
           - name: Store inventory management
