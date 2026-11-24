@@ -3,7 +3,7 @@ title: Trade point of sale in Dynamics 365 Commerce
 description: Learn how Dynamics 365 Commerce supports high-volume assisted sales and trade counter workflows in Store Commerce.
 author: anush6121
 ms.topic: overview
-ms.date: 11/23/2026
+ms.date: 11/24/2026
 ms.author: anvenkat
 ms.reviewer: mirao
 ms.custom:
@@ -45,5 +45,4 @@ The capabilities released in Dynamics 365 Commerce versions 10.0.49 and 10.0.50 
 | Organization contacts on POS transactions | 10.0.50 | [Manage customer contacts in Store Commerce (preview)](customer-mgmt-stores.md#manage-customer-contacts-in-store-commerce) |
 | Margin visibility and policy controls in POS | 10.0.50 | [Margin checks at point of sale (preview)](../supply-chain/unified-pricing-management/upm-pos-margin-check.md) |
 | Receipt tables and rich-text formatting | 10.0.50 | [Modern receipt designer in Commerce headquarters](modern-receipt-designer.md) |
-
-<!-- | Project inventory availability and transfer arrival dates | 10.0.50 | [Enable real-time ATP and transfer arrival dates (preview)](inventory-lookup-atp-transfer.md) | -->
+| Project inventory availability and transfer arrival dates | 10.0.50 | [Enable real-time ATP and transfer arrival dates (preview)](inventory-lookup-atp-transfer.md) |
