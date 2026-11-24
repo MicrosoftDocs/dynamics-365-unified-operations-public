@@ -1,5 +1,5 @@
 ---
-title: Set up warehouse spatial locations (preview)
+title: Set up warehouse spatial locations
 description: Learn how to assign coordinates to warehouse locations and configure sorting algorithms to optimize picking routes.
 show_latex: true
 author: ismailjad
@@ -12,15 +12,11 @@ ms.custom:
   - bap-template
 ---
 
-# Set up warehouse spatial locations (preview)
+# Set up warehouse spatial locations
 
 [!INCLUDE [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: preview until further notice -->
 
 Warehouse spatial location sorting optimizes picking routes by assigning X, Y, and Z coordinates to warehouse locations. You can configure the sorting algorithms, add the sorting step to wave processing, and set up batch processing for large-volume warehouses.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 
