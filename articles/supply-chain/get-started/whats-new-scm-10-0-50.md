@@ -120,7 +120,7 @@ Demand planning in Dynamics 365 Supply Chain Management is updated regularly fol
 
 Microsoft updates Planning Optimization monthly. However, based on business requirements, the product team occasionally releases other updates between the scheduled releases. For information about the latest versions and features, go to [Planning Optimization release process and release history](../master-planning/planning-optimization/release-process.md).
 
-### roadmap
+### Roadmap
 
 Want to know about upcoming and recently released capabilities in any of our business apps or platform?
 
