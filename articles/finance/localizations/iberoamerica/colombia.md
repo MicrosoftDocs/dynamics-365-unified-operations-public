@@ -4,7 +4,7 @@ description: Access links to Microsoft Dynamics 365 Finance documentation resour
 author: v-pedrobusto2025
 ms.author: v-pedrobusto
 ms.topic: overview
-ms.date: 07/30/2025
+ms.date: 11/25/2026
 ms.reviewer: johnmichalak
 ms.search.region: Colombia
 ms.search.validFrom: 2023-10-20
@@ -18,8 +18,9 @@ This overview provides a comprehensive guide to setting up legal entities in Col
 ## Table of contents
 
 - [Main configurations](#main-configurations)
-- [General Reports](#general-reports)
-- [Specific Reporting for Colombia](#specific-reporting-for-colombia)
+- [General reports](#general-reports)
+- [Specific reporting for Colombia](#specific-reporting-for-colombia)
+- [Electronic invoice format](#electronic-invoice-format)
 - [Additional resources](#additional-resources)
 
 ## Main configurations
@@ -28,13 +29,14 @@ This overview provides a comprehensive guide to setting up legal entities in Col
 - [Create customer and vendor records with an address in Colombia](ltm-create-customer-vendor-colombia.md)
 - [Configure sales and purchase invoices for Colombia](ltm-configure-invoices-colombia.md)
 
-## General Reports
+## General reports
+
 - [Printing configuration for General Ledger LATAM](ltm-general-ledger.md)
 - [Print a Ledger Posting report for LATAM](ltm-ledger-posting-report.md)
 - [VAT book printing configuration](ltm-vat-book.md)
-- [Pinting configuration for invoice layout](ltm-invoice-layout-print.md)
+- [Printing configuration for invoice layout](ltm-invoice-layout-print.md)
 
-## Specific Reporting for Colombia
+## Specific reporting for Colombia
 
 - [Format 1001 file for Colombia issue configuration](ltm-Colombia-format-1001.md)
 - [Format 1003 file for Colombia configuration](ltm-Colombia-format-1003.md)
@@ -45,6 +47,11 @@ This overview provides a comprehensive guide to setting up legal entities in Col
 - [Format 1009 file for Colombia configuration](ltm-Colombia-foramt-1009.md)
 - [Format 1012 file for Colombia configuration](ltm-Colombia-format-1012.md)
 
+## Electronic invoice format
+
+- [Connection configuration for Colombian electronic invoicing](ltm-colombia-electronic-invoice-configuration.md)
+- [Configure electronic invoice parameters for Colombia](ltm-colombia-configure-electronic-invoice.md)
+- [Configure the Colombia support document and adjustment note](ltm-colombia-support-document.md)
 
 ## Additional resources
 

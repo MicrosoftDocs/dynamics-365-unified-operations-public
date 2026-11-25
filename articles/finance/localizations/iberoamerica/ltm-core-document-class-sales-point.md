@@ -1,10 +1,10 @@
 ---
 title: Document class sales point for Latin America
-description: Learn about the configuration of additional settings for sales points for Latin America, including prerequisites and a process setting up sales point settings.
-author: Fhernandez0088
-ms.author: v-federicohe 
+description: Learn about the configuration of additional settings for sales points for Latin America, including prerequisites and a process for setting up sales point settings.
+author: MatiasPizmeny01
+ms.author: v-mpizmeny
 ms.topic: how-to
-ms.date: 01/05/2026
+ms.date: 11/25/2026
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -15,15 +15,25 @@ ms.reviewer: johnmichalak
 
 [!include [does not apply to](includes/does-not-apply-to.md)]
 
-On the **Document class sales point** page, you can add a configuration that has a sales point, account type, and sequence number to any document class.
+On the **Document class sales point** page, define the relationship between **sales point prefixes** and **document classes**.
+
+Use this relationship for transactions across several account types, such as **Ledger**, **Customer**, **Vendor**, **Project**, **Fixed assets**, **Bank**, or **Inventory**. Define the **sequence numbers** for document classes when you set their **mask** to **automatic**.
+
+You can also add **print notes** and assign **default financial dimension codes** that are associated with a specific document class and sales point relationship.
 
 ## Prerequisites
 
-The following prerequisites must be met before you can set up additional settings for sales points in Latin American organizations:
+Before you set up additional settings for sales points in Latin American organizations, ensure you meet the following prerequisites:
 
-- Sales point prefixes must be created.
-- Document classes must be configured.
-- Number sequences must be created.
+- The legal entity has an address in a country/region within the LATAM localization.
+- Both the region-specific LATAM feature and the general LATAM feature are enabled.
+- Sales point prefixes are created.
+  
+  Learn more in [Sales point prefixes for Latin America](ltm-core-sales-point-prefixes.md).
+- Document classes are configured.
+  
+  Learn more in [Document classes for Latin America](ltm-core-document-class.md).
+- Number sequences are created.
 
 ## Set up sales point additional settings for Latin America
 
@@ -35,32 +45,44 @@ The following prerequisites must be met before you can set up additional setting
     |----------------------|------------------------------|
     | Document class Id.   | Select a document class.     |
     | Account type         | Select an account type.      |
-    | Sales point prefix   | Select a sales point prefix. |
+    | Sales point          | Select a sales point.        |
     | Number sequence code | Select a number sequence.    |
 
-    The **Printing** section is optional and is used as additional information that's printed on the fiscal document.
+1. The **Printing** section is optional and is used as additional information that's printed on the fiscal document.
+
+> [!NOTE]
+> Some of these fields might already be used for specific elements in your base country’s reports. Refer to your country’s overview page for additional details.
+
+## Set up dimensions
+
+Use this section to define default dimension codes for each document class sales point. When you use a document class with an automatic mask in a journal, the system automatically assigns the configured dimensions to the line based on the selected combination of document class, line type, and sales point.
+
+> [!NOTE]
+> You can modify these dimensions while posting the transaction if needed.
 
 ## Set up a sales authorization code
 
-Select **Sales CA** to access the sales authorization code configuration for the sales point.
-
-- For the sales point that's assigned to the **Document class sales point** configuration, the **Validate AC** option must be enabled.
-- For the document class that's assigned to the **Document class sales point** configuration, the **Require CA number** option must be enabled.
-- For the selected document class, the document mask configuration must be automatic.
+> [!NOTE]
+> To access the sales authorization code configuration through the **Sales CA** field, the following prerequisites must be met:
+>
+> - Enable both the **Require CA number** option from the selected document class and the **Validate CA** option from the selected sales point.
+> - Set the document mask configuration to automatic for the selected document class.
 
 Follow these steps to set up a sales authorization code.
 
-1. On the **Document class sales point** page, on the Action Pane, select **Sales CA**.
+1. On **Document class sales point**, select **Sales CA** on the **Action** pane.
 1. Select **New**, and set the following fields.
 
     | Field                   | Description                                                               |
     |-------------------------|---------------------------------------------------------------------------|
-    | Authorization code (CA) | Enter the authorization code that's provided by the fiscal authority.     |
-    | Date from               | Select the first date that the authorization code is valid.               |
-    | Date to                 | Select the last date that the authorization code is valid.                |
+    | Authorization code (CA) | Enter the authorization code that the fiscal authority provides.     |
+    | Date from               | Select the first date that the authorization code is valid for.               |
+    | Date to                 | Select the last date that the authorization code is valid for.                |
     | From voucher number     | Enter the minimum document number that uses the sales authorization code. |
     | To voucher number       | Enter the maximum document number that uses the sales authorization code. |
 
 1. Select **Save**.
+
+Learn more in [Sales authorization code for Latin America](ltm-core-sales-point-prefixes.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
