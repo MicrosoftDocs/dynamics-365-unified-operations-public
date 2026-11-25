@@ -6,7 +6,8 @@ ms.author: banluo
 ms.reviewer: kamaybac
 ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria
 ms.topic: how-to
-ms.date: 05/22/2026
+ms.date: 11/25/2026
+ai-usage: ai-assisted
 ms.custom: 
   - bap-template
 ---
@@ -15,15 +16,15 @@ ms.custom:
 
 [!INCLUDE [banner](../includes/banner.md)]
 
-This article describes how you can use item tracing to identify where items or raw materials have been used, are being used, or will be used in production and sales processes.
+This article describes how you can use item tracing to identify where items or raw materials are used, or will be used, in production and sales processes.
 
-Item tracing functionality is available on the **Item tracing** page. The following sections describe how you can use item tracing, and what the options and limitations are.
+You can access the item tracing functionality on the **Item tracing** page. The following sections describe how you can use item tracing, and what the options and limitations are.
 
 ## What is item tracing?
 
-Item tracing is a business intelligence (BI) tool that provides visibility into the source and destination of items and raw materials in the supply chain. Manufacturers can trace items, raw materials, or ingredients back to the vendor, and forward through the production and sale of the finished product. Item tracing helps manufacturers comply with regulatory requirements, and also helps quality officers and production managers analyze and take action to address variances in the quality of products and materials. Here are some examples of the ways that manufacturers can use item tracing:
+Item tracing is a business intelligence (BI) tool that provides visibility into the source and destination of items and raw materials in the supply chain. Manufacturers can trace items, raw materials, or ingredients back to the vendor, and forward through the production and sale of the finished product. Item tracing helps manufacturers comply with regulatory requirements. It also helps quality officers and production managers analyze and take action to address variances in the quality of products and materials. Here are some examples of the ways that manufacturers can use item tracing:
 
-- Identify the amount of an item or raw material that is currently in inventory, and where it's stored.
+- Identify the amount of an item or raw material that's currently in inventory, and where it's stored.
 - Determine how much of the item or raw material is shipped, and which customers it was shipped to.
 - Identify any planned shipments that include the item or raw material.
 - Locate production orders that use the item or raw material, and that are planned, in progress, or reported as finished.
@@ -32,7 +33,7 @@ Item tracing is a business intelligence (BI) tool that provides visibility into 
 
 ## What can I trace, and are there any limitations?
 
-You can trace historical inventory transactions for items and raw materials, based on an item number and a tracking dimension, such as a serial number, batch number, or vendor batch number. You can trace an item or raw material only if you assign a tracking dimension to it. Because tracing is based on inventory transactions, some limitations exist when you trace items. For example, some limitations relate to transactions for projects, fixed assets, and commerce. Additionally, co-products appear in the trace details, but by-products aren't included. The trace includes all warehouse transactions from one location to another. Therefore, users might find the amount of information overwhelming. The trace displays for one legal entity at a time. The trace doesn't include cross-company capabilities in an intercompany context. You must start a new trace for each company where an item is received or issued.
+You can trace historical inventory transactions for items and raw materials, based on an item number and a tracking dimension, such as a serial number, batch number, or vendor batch number. You can trace an item or raw material only if you assign a tracking dimension to it. Because tracing is based on inventory transactions, some limitations exist when you trace items. For example, some limitations relate to transactions for projects, fixed assets, and commerce. Additionally, co-products appear in the trace details, but by-products aren't included. The trace includes all warehouse transactions from one location to another. Therefore, you might find the amount of information overwhelming. The trace displays for one legal entity at a time. The trace doesn't include cross-company capabilities in an intercompany context. You must start a new trace for each company where an item is received or issued.
 
 ## What criteria can I specify for an item trace?
 
@@ -45,22 +46,29 @@ To perform an item trace, you need to provide the item number, a tracking dimens
 | Tracking dimensions | Enter a batch number, vendor batch number, or serial number tracking dimension. When you use the batch number as a criterion, the vendor batch number is displayed if you captured that information. |
 | Storage dimensions | Optional: Trace items that are stored in a specific location. |
 | Period | Optional: Enter dates to limit the trace to a specific period. The trace details show only documents and transactions that were created between these dates. |
-| Forward or backward | Select the direction for the trace. You can trace forward or backward: <ul><li>**Backward** – Trace downstream to identify the source, the quantity that remains on hand, and any production orders that are at least partially reported as finished.</li><li>**Forward** – Trace upstream to identify the destination. You can find the sales orders, and the customers that the traced item or raw material is at least partially shipped to.</li></ul> |
+| Forward or backward | **Backward** traces an item to its sources, such as the raw materials used to produce it or the vendor that supplied it. **Forward** follows where the material was used, such as the finished products made from it and the customers who received them. Either direction can show both receipts and issues. |
 
 ## What information is included in the trace details?
 
-The results of a trace appear in chronological order in the tree on the **Details** FastTab of the **Item tracing** page. The order varies, depending on the trace direction. The details include all transactions from the purchase of the item from the vendor to the sale of the item to the customer. Trace results also include interim products that are related to the item or the tracking dimension specified in the trace criteria. The top node shows the quantity of the item, in the inventory unit, that remains on hand, based on the storage dimensions specified in the trace criteria.
+The **Details** FastTab on the **Item tracing** page shows the transactions that connect the starting item and tracking dimension to their sources or destinations. The tree can include intermediate products. It lists transactions in chronological order according to the trace direction. The top node shows the quantity on hand in the item's inventory unit for the storage dimensions in the trace criteria.
+
+For example, suppose you post an opening adjustment to receive a raw-material batch and use that batch to produce a finished batch. You then post a separate positive adjustment into the finished batch and sell some of the finished items. A forward trace from the raw-material batch can show the opening adjustment, the production consumption and receipt, and the sale. It doesn't show the separate adjustment—the batch number matches, but that receipt has no link to the production order that consumed the raw material.
+
+Choose the inquiry that answers your question:
+
+- To review all inventory transactions for the finished batch, including adjustments, go to **Inventory management** > **Inquiries and reports** > **Transactions**. On the [Inventory transactions](inventory-transactions-details.md) page, filter by the finished item number and batch number.
+- To investigate the finished batch's sources or destinations, start a new backward or forward trace using the finished item and batch number. You can also select the finished-batch node in the current trace and use **Trace from node**. The new trace follows material relationships; it isn't a list of all transactions for the batch.
 
 > [!NOTE]
 > The trace details provide a snapshot of the information that was available when the trace was done. The trace details aren't updated if the information changes after the trace is done.
 
 ## Why don't some nodes contain any details?
 
-To reduce the amount of information in the trace details, only the node for the first instance of the item or raw material includes details. If a selected node doesn't contain details, you can view the node that does contain details by selecting **Go to traced line**. You can then return to the node that you left by selecting **Go back**.
+To reduce the amount of information in the trace details, only the node for the first instance of the item or raw material includes details. If a selected node doesn't contain details, select **Go to traced line** to view the node that does contain details. You can return to the node that you left by selecting **Go back**.
 
 ## Can I view only a particular type of document? For example, can I view only production orders, customers, or vendors?
 
-Yes, from the trace details, you can open list pages that include only a particular type of document or transaction. You can access these pages from the **Tracing** menu item on the Action Pane, in the **Item**, **Sales**, **Purchase**, **Production**, and **Quality** groups. For example, to view a list of the vendors in the trace details, select **Tracing** &gt; **Purchase** &gt; **Vendors**. The list pages summarize the documents or transactions from the trace details. The **Pending transactions**, **Pending orders**, and **Not shipped sales orders** list pages also show other information that isn't included in the trace details. Additionally, they always show results as of the current date, even if a date range was specified. The following table describes the additional details that these pages can include.
+Yes, from the trace details, you can open list pages that include only a particular type of document or transaction. Access these pages from the **Tracing** menu item on the Action Pane, in the **Item**, **Sales**, **Purchase**, **Production**, and **Quality** groups. For example, to view a list of the vendors in the trace details, select **Tracing** &gt; **Purchase** &gt; **Vendors**. The list pages summarize the documents or transactions from the trace details. The **Pending transactions**, **Pending orders**, and **Not shipped sales orders** list pages also show other information that isn't included in the trace details. They always show results as of the current date, even if you specify a date range. The following table describes the additional details that these pages can include.
 
 | Lists | Description |
 |--|--|
@@ -110,10 +118,10 @@ The trace details include information about quality orders and nonconformances t
 
 ## Are there any reporting capabilities that are related to item tracing?
 
-You can generate the **Shipped to customers** report to identify the amount of the item or raw material that's shipped and the customers that it was shipped to. For an inquiry that's related to compliance, you can generate the report for all customers. For an inquiry that's related to customer service, you can generate the report for a selected customer. If the product was a raw material used in the production of a finished item, the finished item is also included.
+Generate the **Shipped to customers** report to identify the quantity of the item or raw material that you shipped and the customers that you shipped it to. For an inquiry that's related to compliance, generate the report for all customers. For an inquiry that's related to customer service, generate the report for a selected customer. If the product was a raw material used in the production of a finished item, the finished item is also included.
 
 > [!NOTE]
-> If you're using the features for deleting or archiving sales orders, the report results also include any sales orders that are deleted or archived.
+> If you're using the features for deleting or archiving sales orders, the report results also include any sales orders that you deleted or archived.
 
 ## Can I trace co-products and by-products?
 
